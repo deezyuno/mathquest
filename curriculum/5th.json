@@ -1,1 +1,12 @@
 
+{
+  "grade": "5th",
+  "skills": [
+    "decimal_operations",
+    "fraction_addition",
+    "fraction_subtraction",
+    "order_of_operations",
+    "volume",
+    "measurement_conversions"
+  ]
+}
