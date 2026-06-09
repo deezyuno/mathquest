@@ -1,9 +1,161 @@
 {
-  "grade": "mid6th",
+  "grade": "mid-6th",
   "skills": [
-    "multi_step_integers",
-    "advanced_ratios",
-    "complex_expressions",
-    "percent_applications"
+    {
+      "id": "integers_mixed",
+      "difficulty": "standard",
+      "constraints": {
+        "allowed_operations": [
+          "integer_operations_mixed_signs"
+        ],
+        "forbidden_operations": [
+          "fraction_operations",
+          "algebraic_equations"
+        ]
+      },
+      "templates": [
+        {
+          "id": "mix_001",
+          "problem": "a + b + c",
+          "constraints": {
+            "a": [-100, 100],
+            "b": [-100, 100],
+            "c": [-100, 100]
+          }
+        },
+        {
+          "id": "mix_002",
+          "problem": "a - b + c",
+          "constraints": {
+            "a": [-100, 100],
+            "b": [-100, 100],
+            "c": [-100, 100]
+          }
+        },
+        {
+          "id": "mix_003",
+          "problem": "a × b ÷ c",
+          "constraints": {
+            "a": [-20, 20],
+            "b": [-20, 20],
+            "c": [1, 12]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fractions_add_sub",
+      "difficulty": "standard",
+      "constraints": {
+        "allowed_operations": [
+          "fraction_addition_common_denominator",
+          "fraction_subtraction_common_denominator"
+        ],
+        "forbidden_operations": [
+          "fraction_division",
+          "fraction_multiplication_fraction",
+          "algebraic_fraction_equations"
+        ]
+      },
+      "templates": [
+        {
+          "id": "fas_001",
+          "problem": "a/b + c/b",
+          "constraints": {
+            "a": [1, 9],
+            "b": [2, 12],
+            "c": [1, 9]
+          }
+        },
+        {
+          "id": "fas_002",
+          "problem": "a/b - c/b",
+          "constraints": {
+            "a": [1, 9],
+            "b": [2, 12],
+            "c": [1, 9]
+          }
+        },
+        {
+          "id": "fas_003",
+          "problem": "a/b + c/d",
+          "constraints": {
+            "a": [1, 9],
+            "b": [2, 12],
+            "c": [1, 9],
+            "d": [2, 12]
+          }
+        }
+      ]
+    },
+    {
+      "id": "ratios_proportions_intro",
+      "difficulty": "standard",
+      "constraints": {
+        "allowed_operations": [
+          "ratio_reasoning",
+          "basic_proportions"
+        ],
+        "forbidden_operations": [
+          "multi_step_algebra_equations",
+          "systems_of_equations"
+        ]
+      },
+      "templates": [
+        {
+          "id": "rp_001",
+          "problem": "x/2 = 6/8"
+        },
+        {
+          "id": "rp_002",
+          "problem": "x/3 = 9/12"
+        },
+        {
+          "id": "rp_003",
+          "problem": "If 5 pencils cost $10, what is the cost of 1 pencil?"
+        }
+      ]
+    },
+    {
+      "id": "intro_algebra",
+      "difficulty": "standard",
+      "constraints": {
+        "allowed_operations": [
+          "one_step_equations",
+          "basic_two_step_equations"
+        ],
+        "forbidden_operations": [
+          "distribution",
+          "fractions_in_equations",
+          "inequalities"
+        ]
+      },
+      "templates": [
+        {
+          "id": "alg_001",
+          "problem": "x + a = b",
+          "constraints": {
+            "a": [-50, 50],
+            "b": [-50, 50]
+          }
+        },
+        {
+          "id": "alg_002",
+          "problem": "x - a = b",
+          "constraints": {
+            "a": [-50, 50],
+            "b": [-50, 50]
+          }
+        },
+        {
+          "id": "alg_003",
+          "problem": "ax = b",
+          "constraints": {
+            "a": [2, 10],
+            "b": [-100, 100]
+          }
+        }
+      ]
+    }
   ]
 }
