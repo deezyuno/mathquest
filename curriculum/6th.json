@@ -1,10 +1,179 @@
 {
   "grade": "6th",
   "skills": [
-    "integers",
-    "fraction_division",
-    "ratios",
-    "unit_rates",
-    "expressions"
+    {
+      "id": "integers",
+      "difficulty": "standard",
+      "constraints": {
+        "allowed_operations": [
+          "integer_addition",
+          "integer_subtraction",
+          "integer_multiplication",
+          "integer_division"
+        ],
+        "forbidden_operations": [
+          "fraction_operations_as_primary_skill",
+          "algebraic_equations",
+          "multi_step_equations"
+        ]
+      },
+      "templates": [
+        {
+          "id": "int_001",
+          "problem": "a + b",
+          "constraints": {
+            "a": [-100, 100],
+            "b": [-100, 100]
+          }
+        },
+        {
+          "id": "int_002",
+          "problem": "a - b",
+          "constraints": {
+            "a": [-100, 100],
+            "b": [-100, 100]
+          }
+        },
+        {
+          "id": "int_003",
+          "problem": "a × b",
+          "constraints": {
+            "a": [-20, 20],
+            "b": [-20, 20]
+          }
+        },
+        {
+          "id": "int_004",
+          "problem": "a ÷ b",
+          "constraints": {
+            "a": [-100, 100],
+            "b": [-20, 20]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fractions_basics",
+      "difficulty": "standard",
+      "constraints": {
+        "allowed_operations": [
+          "fraction_addition_same_denominator",
+          "fraction_subtraction_same_denominator",
+          "fraction_multiplication_whole_number"
+        ],
+        "forbidden_operations": [
+          "fraction_division",
+          "fraction_addition_different_denominators",
+          "algebraic_fraction_equations"
+        ]
+      },
+      "templates": [
+        {
+          "id": "fr_001",
+          "problem": "a/b + c/b",
+          "constraints": {
+            "a": [1, 9],
+            "b": [2, 12],
+            "c": [1, 9]
+          }
+        },
+        {
+          "id": "fr_002",
+          "problem": "a/b - c/b",
+          "constraints": {
+            "a": [1, 9],
+            "b": [2, 12],
+            "c": [1, 9]
+          }
+        },
+        {
+          "id": "fr_003",
+          "problem": "a × b/c",
+          "constraints": {
+            "a": [2, 10],
+            "b": [1, 9],
+            "c": [2, 12]
+          }
+        }
+      ]
+    },
+    {
+      "id": "ratios_intro",
+      "difficulty": "standard",
+      "constraints": {
+        "allowed_operations": [
+          "ratio_reading",
+          "basic_unit_rate"
+        ],
+        "forbidden_operations": [
+          "proportions_with_variables",
+          "cross_multiplication"
+        ]
+      },
+      "templates": [
+        {
+          "id": "rat_001",
+          "problem": "Write the ratio of 6 apples to 3 oranges"
+        },
+        {
+          "id": "rat_002",
+          "problem": "A car travels 120 miles in 4 hours. What is the unit rate?"
+        },
+        {
+          "id": "rat_003",
+          "problem": "Simplify the ratio 10:20"
+        }
+      ]
+    },
+    {
+      "id": "decimals",
+      "difficulty": "standard",
+      "constraints": {
+        "allowed_operations": [
+          "decimal_addition",
+          "decimal_subtraction",
+          "decimal_multiplication",
+          "decimal_division"
+        ],
+        "forbidden_operations": [
+          "percent_problems",
+          "algebraic_equations"
+        ]
+      },
+      "templates": [
+        {
+          "id": "dec_001",
+          "problem": "a + b",
+          "constraints": {
+            "a": [-100, 100],
+            "b": [-100, 100]
+          }
+        },
+        {
+          "id": "dec_002",
+          "problem": "a - b",
+          "constraints": {
+            "a": [-100, 100],
+            "b": [-100, 100]
+          }
+        },
+        {
+          "id": "dec_003",
+          "problem": "a × b",
+          "constraints": {
+            "a": [-20, 20],
+            "b": [-20, 20]
+          }
+        },
+        {
+          "id": "dec_004",
+          "problem": "a ÷ b",
+          "constraints": {
+            "a": [-100, 100],
+            "b": [-20, 20]
+          }
+        }
+      ]
+    }
   ]
 }
