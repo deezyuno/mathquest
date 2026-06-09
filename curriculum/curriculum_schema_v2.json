@@ -1,0 +1,39 @@
+{
+  "schema_version": "2.0",
+  "structure": ["grade", "skills", "templates"],
+
+  "global_rules": {
+    "enforce_skill_boundaries": true,
+    "reject_cross_grade_operations": true,
+    "no_default_arithmetic_in_higher_grades": true,
+
+    "grade_purity_rules": {
+      "5th": ["whole_numbers_only", "basic_fractions_conceptual"],
+      "mid-5th": ["whole_numbers", "intro_fractions", "no_negatives"],
+      "6th": ["integers", "fraction_operations", "decimals", "ratios_intro"],
+      "mid-6th": ["ratios", "fraction_operations_limited_scope", "decimals", "geometry_basics"],
+      "7th": ["proportions", "percent_equations", "linear_equations", "coordinate_reasoning"],
+      "mid-7th": ["multi_step_equations", "advanced_ratios", "percent_applications"],
+      "8th": ["systems", "linear_functions", "rational_expressions_intro"]
+    },
+
+    "hard_rejection_rules": [
+      "if_problem_has_only_integer_arithmetic_in_7th_or_above_reject",
+      "if_fraction_operations_appear_outside_6th_grade_or_contextual_use_reject",
+      "if_no_variable_or_real_world_context_in_7th_or_above_reject_if_skill_requires_it"
+    ]
+  },
+
+  "validation_contract": {
+    "step_1_check_grade": "must match grade_purity_rules",
+    "step_2_check_skill_alignment": "template must belong to skill",
+    "step_3_check_operations": "must not violate allowed/forbidden ops",
+    "step_4_reject_or_regenerate": true
+  },
+
+  "generation_contract": {
+    "never_infer_grade_from_math_difficulty": true,
+    "only_generate_from_templates": true,
+    "no_untyped_arithmetic_generation": true
+  }
+}
