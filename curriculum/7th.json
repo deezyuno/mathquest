@@ -1,10 +1,132 @@
 {
-  "grade": "7th",
-  "skills": [
-    "rational_numbers",
-    "proportional_relationships",
-    "simple_equations",
-    "inequalities",
-    "percents"
-  ]
+"grade": "7th",
+"skills": [
+{
+"id": "rational_numbers",
+"difficulty": "standard",
+"templates": [
+{
+"id": "rn_001",
+"problem": "a + b",
+"constraints": {
+"a": [-100, 100],
+"b": [-100, 100]
+}
+},
+{
+"id": "rn_002",
+"problem": "a - b",
+"constraints": {
+"a": [-100, 100],
+"b": [-100, 100]
+}
+},
+{
+"id": "rn_003",
+"problem": "a × b",
+"constraints": {
+"a": [-20, 20],
+"b": [-20, 20]
+}
+},
+{
+"id": "rn_004",
+"problem": "a ÷ b",
+"constraints": {
+"a": [-100, 100],
+"b": [-20, 20]
+}
+}
+]
+},
+{
+"id": "proportional_relationships",
+"difficulty": "standard",
+"templates": [
+{
+"id": "pr_001",
+"problem": "If 4 notebooks cost $12, what is the cost of 7 notebooks?"
+},
+{
+"id": "pr_002",
+"problem": "A car travels 180 miles in 3 hours. What is the unit rate?"
+},
+{
+"id": "pr_003",
+"problem": "A recipe uses 2 cups flour for 12 cookies. How much flour is needed for 30 cookies?"
+}
+]
+},
+{
+"id": "simple_equations",
+"difficulty": "standard",
+"templates": [
+{
+"id": "eq_001",
+"problem": "x + a = b",
+"constraints": {
+"a": [-50, 50],
+"b": [-50, 50]
+}
+},
+{
+"id": "eq_002",
+"problem": "ax = b",
+"constraints": {
+"a": [2, 12],
+"b": [-100, 100]
+}
+},
+{
+"id": "eq_003",
+"problem": "ax + b = c",
+"constraints": {
+"a": [2, 12],
+"b": [-50, 50],
+"c": [-100, 100]
+}
+}
+]
+},
+{
+"id": "inequalities",
+"difficulty": "standard",
+"templates": [
+{
+"id": "ineq_001",
+"problem": "x + a > b",
+"constraints": {
+"a": [-20, 20],
+"b": [-20, 20]
+}
+},
+{
+"id": "ineq_002",
+"problem": "ax < b",
+"constraints": {
+"a": [2, 12],
+"b": [-50, 50]
+}
+}
+]
+},
+{
+"id": "percents",
+"difficulty": "standard",
+"templates": [
+{
+"id": "pct_001",
+"problem": "What is 20% of 80?"
+},
+{
+"id": "pct_002",
+"problem": "A $50 item is discounted 15%. What is the sale price?"
+},
+{
+"id": "pct_003",
+"problem": "A quantity increases from 40 to 50. What is the percent increase?"
+}
+]
+}
+]
 }
