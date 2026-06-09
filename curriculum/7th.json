@@ -4,18 +4,22 @@
     {
       "id": "rational_numbers",
       "difficulty": "standard",
+      "generation_rules": {
+        "must_include_variable_or_context": true,
+        "reject_if_only_integer_arithmetic": true,
+        "reject_if_no_algebra_or_real_world_structure": true
+      },
       "constraints": {
         "allowed_operations": [
-          "integer_operations",
-          "fraction_operations_in_equations",
-          "decimal_operations",
-          "percent_operations"
+          "proportions",
+          "percent_equations",
+          "linear_equations",
+          "coordinate_reasoning"
         ],
         "forbidden_operations": [
-          "pure_fraction_addition",
-          "pure_fraction_subtraction",
-          "pure_fraction_multiplication",
-          "pure_fraction_division"
+          "integer_only_arithmetic",
+          "pure_add_subtract_multiply_divide",
+          "fraction_arithmetic_without_context"
         ]
       },
       "templates": [
@@ -29,22 +33,14 @@
         },
         {
           "id": "rn_002",
-          "problem": "x - a = b",
-          "constraints": {
-            "a": [-100, 100],
-            "b": [-100, 100]
-          }
-        },
-        {
-          "id": "rn_003",
           "problem": "ax = b",
           "constraints": {
-            "a": [-12, 12],
+            "a": [2, 12],
             "b": [-120, 120]
           }
         },
         {
-          "id": "rn_004",
+          "id": "rn_003",
           "problem": "x/a = b/c",
           "constraints": {
             "a": [2, 12],
@@ -57,189 +53,97 @@
     {
       "id": "proportional_relationships",
       "difficulty": "standard",
+      "generation_rules": {
+        "must_include_variable_or_context": true,
+        "reject_if_no_ratio_or_real_world_context": true
+      },
       "constraints": {
         "allowed_operations": [
           "unit_rate",
-          "ratio_reasoning",
-          "cross_multiplication"
+          "cross_multiplication",
+          "proportional_reasoning"
         ],
         "forbidden_operations": [
-          "fraction_arithmetic_standalone",
-          "integer_only_multi_step_arithmetic"
+          "fraction_arithmetic_only",
+          "integer_only_operations"
         ]
       },
       "templates": [
         {
           "id": "pr_001",
-          "problem": "If 4 notebooks cost $12, what is the cost of 7 notebooks?"
+          "problem": "If 4 notebooks cost $12, what is x notebooks cost?"
         },
         {
           "id": "pr_002",
-          "problem": "A car travels 180 miles in 3 hours. What is the unit rate?"
+          "problem": "Solve: x/5 = 12/20"
         },
         {
           "id": "pr_003",
-          "problem": "A recipe uses 2 cups flour for 12 cookies. How much flour is needed for 30 cookies?"
-        },
-        {
-          "id": "pr_004",
-          "problem": "Solve the proportion: x/5 = 12/20"
-        }
-      ]
-    },
-    {
-      "id": "simple_equations",
-      "difficulty": "standard",
-      "constraints": {
-        "allowed_operations": [
-          "one_step_equations",
-          "two_step_equations",
-          "distributive_property_basic"
-        ],
-        "forbidden_operations": [
-          "fraction_arithmetic_without_variables",
-          "multi_variable_equations",
-          "systems_of_equations"
-        ]
-      },
-      "templates": [
-        {
-          "id": "eq_001",
-          "problem": "x + a = b",
-          "constraints": {
-            "a": [-50, 50],
-            "b": [-50, 50]
-          }
-        },
-        {
-          "id": "eq_002",
-          "problem": "ax = b",
-          "constraints": {
-            "a": [2, 12],
-            "b": [-100, 100]
-          }
-        },
-        {
-          "id": "eq_003",
-          "problem": "ax + b = c",
-          "constraints": {
-            "a": [2, 12],
-            "b": [-50, 50],
-            "c": [-100, 100]
-          }
-        },
-        {
-          "id": "eq_004",
-          "problem": "a(x + b) = c",
-          "constraints": {
-            "a": [2, 10],
-            "b": [-10, 10],
-            "c": [-100, 100]
-          }
-        }
-      ]
-    },
-    {
-      "id": "inequalities",
-      "difficulty": "standard",
-      "constraints": {
-        "allowed_operations": [
-          "one_step_inequalities",
-          "two_step_inequalities"
-        ],
-        "forbidden_operations": [
-          "compound_inequalities",
-          "absolute_value_inequalities",
-          "fraction_based_inequalities"
-        ]
-      },
-      "templates": [
-        {
-          "id": "ineq_001",
-          "problem": "x + a > b",
-          "constraints": {
-            "a": [-20, 20],
-            "b": [-20, 20]
-          }
-        },
-        {
-          "id": "ineq_002",
-          "problem": "ax < b",
-          "constraints": {
-            "a": [2, 12],
-            "b": [-50, 50]
-          }
-        },
-        {
-          "id": "ineq_003",
-          "problem": "x - a ≥ b",
-          "constraints": {
-            "a": [-20, 20],
-            "b": [-20, 20]
-          }
+          "problem": "A car travels 180 miles in 3 hours. What is x, the unit rate?"
         }
       ]
     },
     {
       "id": "percents",
       "difficulty": "standard",
+      "generation_rules": {
+        "must_include_variable_or_context": true
+      },
       "constraints": {
         "allowed_operations": [
-          "percent_of_number",
+          "percent_equations",
           "percent_change",
-          "percent_equations"
+          "percent_of_unknown"
         ],
         "forbidden_operations": [
-          "compound_interest",
-          "reverse_percentage_multi_step_algebra"
+          "integer_only_arithmetic",
+          "pure_fraction_operations"
         ]
       },
       "templates": [
         {
           "id": "pct_001",
-          "problem": "What is 20% of 80?"
+          "problem": "What is x% of 80?"
         },
         {
           "id": "pct_002",
-          "problem": "A $50 item is discounted 15%. What is the sale price?"
+          "problem": "20 is what percent of x?"
         },
         {
           "id": "pct_003",
-          "problem": "A quantity increases from 40 to 50. What is the percent increase?"
-        },
-        {
-          "id": "pct_004",
-          "problem": "30 is what percent of 120?"
+          "problem": "A price changes from 40 to x. What is the percent change?"
         }
       ]
     },
     {
       "id": "coordinate_geometry",
       "difficulty": "standard",
+      "generation_rules": {
+        "must_include_variable_or_context": false
+      },
       "constraints": {
         "allowed_operations": [
           "plot_points",
           "identify_quadrants",
-          "basic_slope_from_two_points"
+          "slope_basic"
         ],
         "forbidden_operations": [
-          "graphing_linear_equations_from_fractions",
-          "fraction_arithmetic",
-          "systems_of_equations"
+          "integer_arithmetic_only",
+          "fraction_arithmetic"
         ]
       },
       "templates": [
         {
           "id": "cg_001",
-          "problem": "Plot the point (3, -5)"
+          "problem": "Plot (3, -5)"
         },
         {
           "id": "cg_002",
-          "problem": "Which quadrant is (-2, 4)?"
+          "problem": "What quadrant is (-2, 4)?"
         },
         {
           "id": "cg_003",
-          "problem": "Find the slope between (1,2) and (3,6)"
+          "problem": "Find slope between (1,2) and (3,6)"
         }
       ]
     }
