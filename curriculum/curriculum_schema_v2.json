@@ -1,5 +1,6 @@
 {
   "schema_version": "2.0",
+
   "structure": ["grade", "skills", "templates"],
 
   "global_rules": {
@@ -7,7 +8,7 @@
     "reject_cross_grade_operations": true,
     "no_default_arithmetic_in_higher_grades": true,
 
-    "grade_purity_rules": {
+      "grade_purity_rules": {
       "5th": ["whole_numbers_only", "basic_fractions_conceptual"],
       "mid-5th": ["whole_numbers", "intro_fractions", "no_negatives"],
       "6th": ["integers", "fraction_operations", "decimals", "ratios_intro"],
@@ -18,22 +19,57 @@
     },
 
     "hard_rejection_rules": [
-      "if_problem_has_only_integer_arithmetic_in_7th_or_above_reject",
-      "if_fraction_operations_appear_outside_6th_grade_or_contextual_use_reject",
-      "if_no_variable_or_real_world_context_in_7th_or_above_reject_if_skill_requires_it"
-    ]
+      "no_grade_may_contain_unapproved_operations",
+      "no_grade_may_use_skills_outside_grade_band",
+      "no_template_may_introduce_lower_or_higher_grade_concepts",
+      "no_pure_arithmetic_generation_outside_grade_intent",
+      "no_skill_can_override_grade_constraints"
+    ],
+
+    "universal_constraints": {
+      "5th": {
+        "allowed": ["whole_numbers", "basic_fractions_conceptual"],
+        "forbidden": ["negatives", "decimals", "fraction_operations", "algebra", "variables"]
+      },
+      "mid-5th": {
+        "allowed": ["whole_numbers", "intro_fractions", "basic_word_problems"],
+        "forbidden": ["negatives", "multi_step_algebra", "equations"]
+      },
+      "6th": {
+        "allowed": ["integers", "fraction_operations", "decimals", "ratios_intro", "basic_geometry"],
+        "forbidden": ["advanced_algebra", "systems_of_equations", "multi-step proportion_algebra"]
+      },
+      "mid-6th": {
+        "allowed": ["ratios", "fraction_operations_limited", "decimals", "geometry_basics"],
+        "forbidden": ["algebraic_equations", "fraction_division_as_primary_task", "systems_of_equations"]
+      },
+      "7th": {
+        "allowed": ["proportions", "percent_equations", "linear_equations", "coordinate_reasoning"],
+        "forbidden": ["integer_only_arithmetic", "pure_fraction_arithmetic", "basic_6th_grade_skill_as_primary_task"]
+      },
+      "mid-7th": {
+        "allowed": ["multi_step_equations", "advanced_ratios", "percent_applications"],
+        "forbidden": ["6th_grade_core_arithmetic_as_primary", "simple_integer_only_problems"]
+      },
+      "8th": {
+        "allowed": ["systems_of_equations", "linear_functions", "rational_expressions_intro"],
+        "forbidden": ["basic_arithmetic_only_tasks", "6th_grade_skill_repetition"]
+      }
+    }
   },
 
   "validation_contract": {
-    "step_1_check_grade": "must match grade_purity_rules",
-    "step_2_check_skill_alignment": "template must belong to skill",
-    "step_3_check_operations": "must not violate allowed/forbidden ops",
-    "step_4_reject_or_regenerate": true
+    "step_1": "match_grade_to_universal_constraints",
+    "step_2": "validate_skill_belongs_to_grade_band",
+    "step_3": "reject_if_any_forbidden_operation_detected",
+    "step_4": "reject_if_problem_is_lower_grade_skill_without_transformation",
+    "step_5": "regenerate_from_valid_template_only"
   },
 
   "generation_contract": {
-    "never_infer_grade_from_math_difficulty": true,
     "only_generate_from_templates": true,
-    "no_untyped_arithmetic_generation": true
+    "never_infer_math_outside_grade_band": true,
+    "no_freeform_arithmetic_generation": true,
+    "strict_grade_isolation": true
   }
 }
