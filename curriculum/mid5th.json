@@ -1,9 +1,100 @@
 {
-  "grade": "mid5th",
+  "grade": "mid-5th",
+  "description": "Solidifies core 5th grade standards while previewing 6th grade concepts. Introduces negative numbers in context, ratio language, and basic algebraic thinking — no formal equations yet.",
+  "ccss_primary": ["5.NBT.B", "5.NF.A", "5.NF.B", "5.MD.C", "5.G.A"],
+  "ccss_preview": ["6.NS.C", "6.RP.A", "6.EE.A"],
   "skills": [
-    "advanced_decimal_operations",
-    "multi_step_fractions",
-    "complex_order_of_operations",
-    "volume_word_problems"
+    {
+      "id": "fraction_operations_advanced",
+      "name": "Fraction Operations with Mixed Numbers",
+      "ccss": "5.NF.A.1, 5.NF.B.4, 5.NF.B.6",
+      "level": "solidify",
+      "templates": [
+        { "id": "fm_001", "type": "COMPUTE", "problem": "{a} {b}/{c} + {d} {e}/{c}", "constraints": { "a": [1, 5], "b": [1, 5], "c": [4, 8], "d": [1, 5], "e": [1, 5] }, "answer_type": "mixed_number" },
+        { "id": "fm_002", "type": "COMPUTE", "problem": "{a} {b}/{c} - {d} {e}/{c}", "constraints": { "a": [3, 8], "b": [3, 7], "c": [4, 8], "d": [1, 4], "e": [1, 6] }, "constraints_note": "result positive", "answer_type": "mixed_number" },
+        { "id": "fm_003", "type": "COMPUTE", "problem": "{a} {b}/{c} × {d}", "constraints": { "a": [1, 4], "b": [1, 4], "c": [3, 8], "d": [2, 5] }, "answer_type": "mixed_number" },
+        { "id": "fm_004", "type": "APPLY", "context": "cooking", "problem": "A recipe uses {a} {b}/{c} cups of flour. You want to make {d} batches. How much flour do you need in total?", "constraints": { "a": [1, 3], "b": [1, 3], "c": [4, 8], "d": [2, 4] }, "answer_type": "mixed_number" },
+        { "id": "fm_005", "type": "APPLY", "context": "construction", "problem": "A board is {a} {b}/{c} feet long. You cut off {d} {e}/{c} feet. How long is the remaining piece?", "constraints": { "a": [4, 8], "b": [3, 7], "c": [4, 8], "d": [1, 3], "e": [1, 5] }, "answer_type": "mixed_number" },
+        { "id": "fm_006", "type": "REVERSE", "problem": "{a} {b}/{c} + __ = {d} {e}/{c}. Find the missing mixed number.", "constraints": { "a": [1, 3], "b": [1, 4], "c": [6, 8], "d": [4, 7], "e": [3, 7] }, "answer_type": "mixed_number" },
+        { "id": "fm_007", "type": "COMPARE", "problem": "Which is greater: {a} {b}/{c} or {d} {e}/{c}?", "constraints": { "a": [2, 5], "b": [1, 5], "c": [6, 8], "d": [2, 5], "e": [1, 5] }, "answer_type": "comparison" },
+        { "id": "fm_008", "type": "ERROR_ANALYSIS", "problem": "A student adds {a} {b}/{c} + {d} {e}/{c} and gets {wrong}. What did they do wrong?", "constraints": { "a": [1, 4], "b": [2, 5], "c": [6, 8], "d": [1, 4], "e": [2, 5] }, "generation_note": "wrong adds wholes and fractions separately but forgets to simplify the fraction", "answer_type": "mixed_number_plus_explanation" },
+        { "id": "fm_009", "type": "CONSTRUCT", "problem": "Write two mixed numbers that add up to exactly {a}.", "constraints": { "a": [4, 8] }, "answer_type": "open_ended" },
+        { "id": "fm_010", "type": "APPLY", "context": "sports", "problem": "A runner completed {a} {b}/{c} laps in the morning and {d} {e}/{c} laps in the afternoon. How many total laps did they run?", "constraints": { "a": [2, 5], "b": [1, 3], "c": [4, 8], "d": [1, 4], "e": [1, 3] }, "answer_type": "mixed_number" }
+      ]
+    },
+    {
+      "id": "decimal_place_value",
+      "name": "Decimal Place Value and Comparison",
+      "ccss": "5.NBT.A.3, 5.NBT.A.4",
+      "level": "solidify",
+      "templates": [
+        { "id": "dpv_001", "type": "REPRESENT", "problem": "Write {a}.{b} in expanded form using fractions.", "constraints": { "a": [1, 99], "b": [100, 999] }, "answer_type": "expression" },
+        { "id": "dpv_002", "type": "COMPUTE", "problem": "Round {a}.{b} to the nearest tenth.", "constraints": { "a": [1, 99], "b": [100, 999] }, "answer_type": "numeric" },
+        { "id": "dpv_003", "type": "COMPUTE", "problem": "Round {a}.{b} to the nearest hundredth.", "constraints": { "a": [1, 20], "b": [1000, 9999] }, "answer_type": "numeric" },
+        { "id": "dpv_004", "type": "COMPARE", "problem": "Order from least to greatest: {a}.{b}, {c}.{d}, {e}.{f}, {g}.{h}", "constraints": { "a": [1, 9], "b": [100, 999], "c": [1, 9], "d": [100, 999], "e": [1, 9], "f": [100, 999], "g": [1, 9], "h": [100, 999] }, "answer_type": "ordered_list" },
+        { "id": "dpv_005", "type": "IDENTIFY", "problem": "In {a}.{b}, what digit is in the thousandths place?", "constraints": { "a": [1, 20], "b": [100, 999] }, "answer_type": "single_digit" },
+        { "id": "dpv_006", "type": "COMPARE", "problem": "Is {a}.{b} closer to {c} or {d}?", "constraints": { "a": [1, 9], "b": [1, 99], "c": [1, 9], "d": [2, 10] }, "answer_type": "comparison" },
+        { "id": "dpv_007", "type": "APPLY", "context": "science", "problem": "Three students measured the length of a worm: {a}.{b} cm, {c}.{d} cm, and {e}.{f} cm. Which measurement is the greatest?", "constraints": { "a": [4, 8], "b": [10, 99], "c": [4, 8], "d": [10, 99], "e": [4, 8], "f": [10, 99] }, "answer_type": "numeric" }
+      ]
+    },
+    {
+      "id": "multi_step_word_problems",
+      "name": "Multi-Step Word Problems",
+      "ccss": "5.NBT.B.5, 5.NBT.B.6, 5.NF.A.2",
+      "level": "solidify",
+      "templates": [
+        { "id": "ms_001", "type": "APPLY", "context": "shopping", "problem": "You have ${a}. You buy {b} notebooks for ${c} each and a pencil case for ${d}. How much money do you have left?", "constraints": { "a": [20, 50], "b": [2, 5], "c": [3, 8], "d": [4, 12] }, "answer_type": "numeric" },
+        { "id": "ms_002", "type": "APPLY", "context": "travel", "problem": "A bus travels {a} miles in the morning and {b} miles in the afternoon. The total trip is {c} miles. How many miles are left to travel?", "constraints": { "a": [50, 200], "b": [50, 200], "c": [400, 700] }, "answer_type": "numeric" },
+        { "id": "ms_003", "type": "APPLY", "context": "baking", "problem": "A baker makes {a} cookies per batch. She bakes {b} batches in the morning and {c} batches in the afternoon. She sells {d} cookies. How many are left?", "constraints": { "a": [12, 24], "b": [2, 5], "c": [2, 5], "d": [20, 60] }, "answer_type": "numeric" },
+        { "id": "ms_004", "type": "APPLY", "context": "fundraiser", "problem": "A class needs to raise ${a}. They have already raised ${b}. If {c} students each raise the same amount to meet the goal, how much does each student need to raise?", "constraints": { "a": [200, 500], "b": [50, 150], "c": [5, 20] }, "constraints_note": "(a-b) divisible by c", "answer_type": "numeric" },
+        { "id": "ms_005", "type": "APPLY", "context": "sports", "problem": "A team played {a} games. They won {b} more games than they lost. How many games did they win?", "constraints": { "a": [20, 40], "b": [2, 10] }, "constraints_note": "a and b have same parity", "answer_type": "numeric" },
+        { "id": "ms_006", "type": "IDENTIFY", "problem": "Which of these is the correct first step to solve: 'You buy {a} items at ${b} each and get ${c} change from ${d}.'? A) {a} × {b}, B) {d} - {c}, C) {d} + {c}", "constraints": { "a": [2, 6], "b": [3, 10], "c": [5, 20], "d": [20, 50] }, "answer_type": "multiple_choice" },
+        { "id": "ms_007", "type": "REVERSE", "problem": "After buying {a} items at ${b} each, you have ${c} left. How much did you start with?", "constraints": { "a": [2, 6], "b": [4, 12], "c": [5, 30] }, "answer_type": "numeric" }
+      ]
+    },
+    {
+      "id": "preview_negative_numbers",
+      "name": "Preview: Negative Numbers in Context",
+      "ccss_preview": "6.NS.C.5, 6.NS.C.6",
+      "level": "preview",
+      "note": "Introduces negative numbers through real-world contexts only. No operations on negatives — just meaning, location, and comparison.",
+      "templates": [
+        { "id": "pn_001", "type": "REPRESENT", "problem": "A submarine is {a} feet below sea level. Write this as a negative number.", "constraints": { "a": [10, 500] }, "answer_type": "numeric" },
+        { "id": "pn_002", "type": "REPRESENT", "problem": "The temperature is {a} degrees below zero. Write this as a signed number.", "constraints": { "a": [1, 40] }, "answer_type": "numeric" },
+        { "id": "pn_003", "type": "COMPARE", "problem": "Which is colder: -{a}°F or -{b}°F?", "constraints": { "a": [1, 20], "b": [1, 20] }, "answer_type": "comparison" },
+        { "id": "pn_004", "type": "IDENTIFY", "problem": "On a number line, which number is farther from zero: {a} or -{a}?", "constraints": { "a": [2, 20] }, "answer_type": "label" },
+        { "id": "pn_005", "type": "COMPARE", "problem": "A hill is {a} feet above sea level. A valley is {b} feet below sea level. Which is farther from sea level?", "constraints": { "a": [10, 500], "b": [10, 500] }, "answer_type": "comparison" },
+        { "id": "pn_006", "type": "REPRESENT", "problem": "A bank account is overdrawn by ${a}. Write this balance as a negative number and explain what it means.", "constraints": { "a": [10, 200] }, "answer_type": "numeric_plus_verbal" },
+        { "id": "pn_007", "type": "IDENTIFY", "problem": "Place these numbers on a number line: {a}, -{b}, {c}, -{d}. Which is the smallest?", "constraints": { "a": [1, 10], "b": [1, 10], "c": [1, 10], "d": [1, 10] }, "answer_type": "numeric" }
+      ]
+    },
+    {
+      "id": "preview_ratio_language",
+      "name": "Preview: Ratio Language and Thinking",
+      "ccss_preview": "6.RP.A.1",
+      "level": "preview",
+      "note": "Introduces ratio language informally. No cross-multiplication, no solving proportions. Just expressing and understanding ratios.",
+      "templates": [
+        { "id": "pr_001", "type": "REPRESENT", "problem": "There are {a} red marbles and {b} blue marbles. Write the ratio of red to blue marbles in two different ways.", "constraints": { "a": [2, 10], "b": [2, 10] }, "answer_type": "two_forms" },
+        { "id": "pr_002", "type": "IDENTIFY", "problem": "In a bag of {a} fruits, {b} are apples and the rest are oranges. What is the ratio of apples to oranges?", "constraints": { "a": [8, 20], "b": [2, 10] }, "constraints_note": "b < a", "answer_type": "ratio" },
+        { "id": "pr_003", "type": "APPLY", "context": "art", "problem": "To make orange paint, you mix {a} parts red and {b} parts yellow. If you use {c} parts red, how many parts yellow do you need to keep the same ratio?", "constraints": { "a": [1, 3], "b": [1, 3], "c": [2, 6] }, "constraints_note": "c is a multiple of a", "answer_type": "numeric" },
+        { "id": "pr_004", "type": "COMPARE", "problem": "Class A has {a} boys and {b} girls. Class B has {c} boys and {d} girls. Which class has a greater ratio of boys to girls?", "constraints": { "a": [5, 15], "b": [5, 15], "c": [5, 15], "d": [5, 15] }, "answer_type": "comparison_plus_work" },
+        { "id": "pr_005", "type": "REPRESENT", "problem": "A necklace has {a} red beads for every {b} blue beads. If there are {c} total beads, how many are red?", "constraints": { "a": [1, 4], "b": [1, 4], "c_note": "multiple of (a+b)" }, "answer_type": "numeric" }
+      ]
+    },
+    {
+      "id": "preview_algebraic_thinking",
+      "name": "Preview: Algebraic Thinking with Variables",
+      "ccss_preview": "6.EE.A.2",
+      "level": "preview",
+      "note": "Introduces variables as placeholders. Students evaluate simple expressions — no solving equations yet.",
+      "templates": [
+        { "id": "pa_001", "type": "COMPUTE", "problem": "If n = {a}, what is n + {b}?", "constraints": { "a": [2, 20], "b": [5, 30] }, "answer_type": "numeric" },
+        { "id": "pa_002", "type": "COMPUTE", "problem": "If x = {a}, what is {b} × x?", "constraints": { "a": [2, 10], "b": [3, 12] }, "answer_type": "numeric" },
+        { "id": "pa_003", "type": "REPRESENT", "problem": "A box holds {a} books. Write an expression for the number of books in n boxes.", "constraints": { "a": [6, 24] }, "answer_type": "expression" },
+        { "id": "pa_004", "type": "APPLY", "context": "money", "problem": "You earn ${a} per hour. Write an expression for how much you earn in h hours. How much do you earn in {b} hours?", "constraints": { "a": [8, 20], "b": [3, 10] }, "answer_type": "expression_plus_numeric" },
+        { "id": "pa_005", "type": "IDENTIFY", "problem": "Which expression represents '{a} more than twice a number n'? A) {a} + n, B) 2n + {a}, C) 2 + {a}n", "constraints": { "a": [3, 15] }, "answer_type": "multiple_choice" }
+      ]
+    }
   ]
 }

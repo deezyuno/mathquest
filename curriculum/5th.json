@@ -1,12 +1,142 @@
-
 {
   "grade": "5th",
+  "description": "Core 5th grade standards. No negative numbers, no algebra, no ratios. Whole numbers, fractions, decimals, basic geometry, and coordinate plane in Quadrant I only.",
+  "ccss_primary": ["5.NBT.A", "5.NBT.B", "5.NF.A", "5.NF.B", "5.MD.A", "5.MD.B", "5.MD.C", "5.G.A", "5.G.B"],
   "skills": [
-    "decimal_operations",
-    "fraction_addition",
-    "fraction_subtraction",
-    "order_of_operations",
-    "volume",
-    "measurement_conversions"
+    {
+      "id": "whole_number_operations",
+      "name": "Whole Number Operations",
+      "ccss": "5.NBT.B.5, 5.NBT.B.6",
+      "level": "solidify",
+      "templates": [
+        { "id": "wn_001", "type": "COMPUTE", "problem": "{a} × {b}", "constraints": { "a": [12, 99], "b": [12, 99] }, "answer_type": "numeric" },
+        { "id": "wn_002", "type": "COMPUTE", "problem": "{a} ÷ {b}", "constraints": { "a": [100, 9999], "b": [11, 99] }, "constraints_note": "a divisible by b", "answer_type": "numeric" },
+        { "id": "wn_003", "type": "APPLY", "context": "shopping", "problem": "A store sells {a} boxes of crayons. Each box has {b} crayons. How many crayons are there in total?", "constraints": { "a": [12, 50], "b": [12, 24] }, "answer_type": "numeric" },
+        { "id": "wn_004", "type": "APPLY", "context": "school", "problem": "{a} students are divided equally into {b} classrooms. How many students are in each classroom?", "constraints": { "a": [100, 500], "b": [10, 25] }, "constraints_note": "a divisible by b", "answer_type": "numeric" },
+        { "id": "wn_005", "type": "REVERSE", "problem": "__ × {b} = {product}. Find the missing number.", "constraints": { "b": [12, 25], "product_note": "b × random(10,50)" }, "answer_type": "numeric" },
+        { "id": "wn_006", "type": "COMPARE", "problem": "Which is greater: {a} × {b} or {c} × {d}?", "constraints": { "a": [10, 50], "b": [10, 50], "c": [10, 50], "d": [10, 50] }, "answer_type": "comparison" },
+        { "id": "wn_007", "type": "ERROR_ANALYSIS", "problem": "A student says {a} × {b} = {wrong}. What is the correct answer?", "constraints": { "a": [12, 30], "b": [12, 30] }, "generation_note": "wrong = a * b - random(10,50)", "answer_type": "numeric_plus_explanation" },
+        { "id": "wn_008", "type": "APPLY", "context": "nature", "problem": "A bird flies {a} miles each day. How far does it fly in {b} days?", "constraints": { "a": [15, 80], "b": [10, 30] }, "answer_type": "numeric" },
+        { "id": "wn_009", "type": "APPLY", "context": "food", "problem": "{a} apples are packed into bags of {b}. How many full bags can be made? How many apples are left over?", "constraints": { "a": [50, 200], "b": [6, 12] }, "answer_type": "two_numeric" },
+        { "id": "wn_010", "type": "CONSTRUCT", "problem": "Write a multiplication problem where the product is between {a} and {b}.", "constraints": { "a": [100, 500], "b": [501, 1000] }, "answer_type": "open_ended" }
+      ]
+    },
+    {
+      "id": "decimal_operations",
+      "name": "Decimal Operations",
+      "ccss": "5.NBT.B.7",
+      "level": "solidify",
+      "templates": [
+        { "id": "dec_001", "type": "COMPUTE", "problem": "{a}.{b} + {c}.{d}", "constraints": { "a": [1, 99], "b": [1, 99], "c": [1, 99], "d": [1, 99] }, "answer_type": "numeric" },
+        { "id": "dec_002", "type": "COMPUTE", "problem": "{a}.{b} - {c}.{d}", "constraints": { "a": [10, 99], "b": [10, 99], "c": [1, 50], "d": [1, 99] }, "constraints_note": "a.b > c.d", "answer_type": "numeric" },
+        { "id": "dec_003", "type": "COMPUTE", "problem": "{a}.{b} × {c}", "constraints": { "a": [1, 20], "b": [1, 9], "c": [2, 12] }, "answer_type": "numeric" },
+        { "id": "dec_004", "type": "COMPUTE", "problem": "{a}.{b} ÷ {c}", "constraints": { "a": [2, 48], "b": [0, 0], "c": [2, 8] }, "constraints_note": "a divisible by c", "answer_type": "numeric" },
+        { "id": "dec_005", "type": "APPLY", "context": "shopping", "problem": "You buy items costing ${a}.{b} and ${c}.{d}. What is the total cost?", "constraints": { "a": [1, 20], "b": [10, 99], "c": [1, 20], "d": [10, 99] }, "answer_type": "numeric" },
+        { "id": "dec_006", "type": "APPLY", "context": "measurement", "problem": "A ribbon is {a}.{b} meters long. You cut off {c}.{d} meters. How much ribbon is left?", "constraints": { "a": [5, 20], "b": [10, 99], "c": [1, 10], "d": [10, 99] }, "answer_type": "numeric" },
+        { "id": "dec_007", "type": "COMPARE", "problem": "Which is greater: {a}.{b} or {c}.{d}?", "constraints": { "a": [1, 20], "b": [1, 99], "c": [1, 20], "d": [1, 99] }, "answer_type": "comparison" },
+        { "id": "dec_008", "type": "REPRESENT", "problem": "Order these decimals from least to greatest: {a}.{b}, {c}.{d}, {e}.{f}", "constraints": { "a": [1, 9], "b": [1, 99], "c": [1, 9], "d": [1, 99], "e": [1, 9], "f": [1, 99] }, "answer_type": "ordered_list" },
+        { "id": "dec_009", "type": "APPLY", "context": "sports", "problem": "A swimmer's times for three laps were {a}.{b} seconds, {c}.{d} seconds, and {e}.{f} seconds. What was the total time?", "constraints": { "a": [20, 60], "b": [10, 99], "c": [20, 60], "d": [10, 99], "e": [20, 60], "f": [10, 99] }, "answer_type": "numeric" },
+        { "id": "dec_010", "type": "ERROR_ANALYSIS", "problem": "A student adds {a}.{b} + {c}.{d} and gets {wrong}. What did they do wrong? What is the correct answer?", "constraints": { "a": [1, 9], "b": [10, 99], "c": [1, 9], "d": [10, 99] }, "generation_note": "wrong = a+c concatenated wrong (e.g. misaligned decimals)", "answer_type": "numeric_plus_explanation" }
+      ]
+    },
+    {
+      "id": "fraction_addition_subtraction",
+      "name": "Fraction Addition and Subtraction",
+      "ccss": "5.NF.A.1, 5.NF.A.2",
+      "level": "solidify",
+      "templates": [
+        { "id": "fas_001", "type": "COMPUTE", "problem": "{a}/{b} + {c}/{b}", "constraints": { "a": [1, 7], "b": [2, 12], "c": [1, 7] }, "answer_type": "fraction_simplified" },
+        { "id": "fas_002", "type": "COMPUTE", "problem": "{a}/{b} - {c}/{b}", "constraints": { "a": [3, 9], "b": [2, 12], "c": [1, 5] }, "constraints_note": "a > c", "answer_type": "fraction_simplified" },
+        { "id": "fas_003", "type": "COMPUTE", "problem": "{a}/{b} + {c}/{d}", "constraints": { "a": [1, 5], "b": [2, 8], "c": [1, 5], "d": [2, 8] }, "constraints_note": "b != d, use unlike denominators with LCD ≤ 24", "answer_type": "fraction_simplified" },
+        { "id": "fas_004", "type": "COMPUTE", "problem": "{a}/{b} - {c}/{d}", "constraints": { "a": [2, 7], "b": [3, 10], "c": [1, 5], "d": [3, 10] }, "constraints_note": "result positive", "answer_type": "fraction_simplified" },
+        { "id": "fas_005", "type": "APPLY", "context": "cooking", "problem": "A recipe needs {a}/{b} cup of sugar and {c}/{b} cup of brown sugar. How much sugar is needed in total?", "constraints": { "a": [1, 3], "b": [4, 8], "c": [1, 3] }, "answer_type": "fraction_simplified" },
+        { "id": "fas_006", "type": "APPLY", "context": "measurement", "problem": "A board is {a}/{b} of a meter long. You cut off {c}/{d} of a meter. How much is left?", "constraints": { "a": [3, 7], "b": [8, 12], "c": [1, 4], "d": [8, 12] }, "answer_type": "fraction_simplified" },
+        { "id": "fas_007", "type": "REVERSE", "problem": "{a}/{b} + __ = {c}/{b}. What is the missing fraction?", "constraints": { "a": [1, 4], "b": [5, 12], "c": [5, 9] }, "constraints_note": "c > a", "answer_type": "fraction" },
+        { "id": "fas_008", "type": "COMPARE", "problem": "Which is greater: {a}/{b} + {c}/{b} or {d}/{b}?", "constraints": { "a": [1, 4], "b": [6, 12], "c": [1, 4], "d": [3, 9] }, "answer_type": "comparison" },
+        { "id": "fas_009", "type": "ERROR_ANALYSIS", "problem": "A student says {a}/{b} + {c}/{d} = {wrong_n}/{wrong_d}. What did they do wrong? What is the correct answer?", "constraints": { "a": [1, 3], "b": [4, 8], "c": [1, 3], "d": [3, 6] }, "generation_note": "wrong = added numerators AND denominators separately", "answer_type": "fraction_plus_explanation" },
+        { "id": "fas_010", "type": "APPLY", "context": "pizza", "problem": "Maria ate {a}/{b} of a pizza and her brother ate {c}/{b} of the same pizza. What fraction of the pizza did they eat together? What fraction is left?", "constraints": { "a": [1, 3], "b": [6, 8], "c": [1, 3] }, "constraints_note": "a + c < b", "answer_type": "two_fractions" }
+      ]
+    },
+    {
+      "id": "fraction_multiplication_division",
+      "name": "Fraction Multiplication and Division",
+      "ccss": "5.NF.B.3, 5.NF.B.4, 5.NF.B.7",
+      "level": "solidify",
+      "templates": [
+        { "id": "fmd_001", "type": "COMPUTE", "problem": "{a}/{b} × {c}", "constraints": { "a": [1, 5], "b": [2, 8], "c": [2, 10] }, "answer_type": "fraction_simplified" },
+        { "id": "fmd_002", "type": "COMPUTE", "problem": "{a}/{b} × {c}/{d}", "constraints": { "a": [1, 5], "b": [2, 8], "c": [1, 5], "d": [2, 8] }, "answer_type": "fraction_simplified" },
+        { "id": "fmd_003", "type": "COMPUTE", "problem": "{a} ÷ {b}/{c}", "constraints": { "a": [2, 8], "b": [1, 4], "c": [2, 6] }, "answer_type": "fraction_simplified" },
+        { "id": "fmd_004", "type": "COMPUTE", "problem": "{a}/{b} ÷ {c}", "constraints": { "a": [2, 8], "b": [3, 10], "c": [2, 4] }, "answer_type": "fraction_simplified" },
+        { "id": "fmd_005", "type": "APPLY", "context": "cooking", "problem": "A recipe uses {a}/{b} cup of butter per batch. How much butter is needed for {c} batches?", "constraints": { "a": [1, 3], "b": [4, 8], "c": [2, 6] }, "answer_type": "fraction_simplified" },
+        { "id": "fmd_006", "type": "APPLY", "context": "sharing", "problem": "You have {a}/{b} of a pound of chocolate. You split it equally among {c} friends. How much does each friend get?", "constraints": { "a": [2, 6], "b": [3, 8], "c": [2, 4] }, "answer_type": "fraction_simplified" },
+        { "id": "fmd_007", "type": "REVERSE", "problem": "__ × {a}/{b} = {c}/{d}. Find the missing number.", "constraints": { "a": [1, 4], "b": [2, 6], "c": [2, 8], "d": [3, 8] }, "answer_type": "fraction_simplified" },
+        { "id": "fmd_008", "type": "IDENTIFY", "problem": "Which is greater: {a}/{b} × {c} or {a}/{b} × {d}?", "constraints": { "a": [1, 3], "b": [4, 8], "c": [2, 6], "d": [2, 6] }, "constraints_note": "c != d", "answer_type": "comparison" },
+        { "id": "fmd_009", "type": "APPLY", "context": "measurement", "problem": "A garden is {a}/{b} of an acre. You plant flowers in {c}/{d} of the garden. What fraction of an acre has flowers?", "constraints": { "a": [2, 5], "b": [3, 8], "c": [1, 3], "d": [2, 5] }, "answer_type": "fraction_simplified" },
+        { "id": "fmd_010", "type": "ERROR_ANALYSIS", "problem": "A student computes {a}/{b} × {c}/{d} and gets {wrong_n}/{wrong_d}. What did they do wrong?", "constraints": { "a": [2, 4], "b": [3, 6], "c": [2, 4], "d": [3, 6] }, "generation_note": "wrong = added numerators and multiplied denominators", "answer_type": "fraction_plus_explanation" }
+      ]
+    },
+    {
+      "id": "place_value_and_powers",
+      "name": "Place Value and Powers of 10",
+      "ccss": "5.NBT.A.1, 5.NBT.A.2, 5.NBT.A.3",
+      "level": "solidify",
+      "templates": [
+        { "id": "pv_001", "type": "COMPUTE", "problem": "{a} × 10^{b}", "constraints": { "a": [2, 99], "b": [1, 4] }, "answer_type": "numeric" },
+        { "id": "pv_002", "type": "COMPUTE", "problem": "{a} ÷ 10^{b}", "constraints": { "a": [100, 9999], "b": [1, 3] }, "answer_type": "numeric" },
+        { "id": "pv_003", "type": "REPRESENT", "problem": "Write {a} in expanded form.", "constraints": { "a": [1000, 99999] }, "answer_type": "expression" },
+        { "id": "pv_004", "type": "IDENTIFY", "problem": "In the number {a}, what is the value of the digit {d}?", "constraints": { "a": [10000, 99999], "d_note": "pick one digit from a" }, "answer_type": "numeric" },
+        { "id": "pv_005", "type": "COMPARE", "problem": "Which is greater: {a} × 10^{b} or {c} × 10^{d}?", "constraints": { "a": [2, 9], "b": [2, 4], "c": [2, 9], "d": [2, 4] }, "answer_type": "comparison" },
+        { "id": "pv_006", "type": "COMPUTE", "problem": "Round {a} to the nearest {unit}.", "constraints": { "a": [1000, 99999], "unit_options": ["hundred", "thousand", "ten thousand"] }, "answer_type": "numeric" },
+        { "id": "pv_007", "type": "REPRESENT", "problem": "Write the number with a {a} in the ten-thousands place, {b} in the thousands place, {c} in the hundreds place, {d} in the tens place, and {e} in the ones place.", "constraints": { "a": [1, 9], "b": [0, 9], "c": [0, 9], "d": [0, 9], "e": [0, 9] }, "answer_type": "numeric" },
+        { "id": "pv_008", "type": "ERROR_ANALYSIS", "problem": "A student says {a} × 10^{b} = {wrong}. What is the correct answer?", "constraints": { "a": [3, 9], "b": [2, 4] }, "generation_note": "wrong = a * b (multiplied instead of using power of 10)", "answer_type": "numeric_plus_explanation" }
+      ]
+    },
+    {
+      "id": "geometry_volume",
+      "name": "Volume and 2D Geometry",
+      "ccss": "5.MD.C.3, 5.MD.C.4, 5.MD.C.5, 5.G.B.3",
+      "level": "solidify",
+      "templates": [
+        { "id": "gv_001", "type": "COMPUTE", "problem": "Find the volume of a rectangular prism with length {a}, width {b}, and height {c}.", "constraints": { "a": [2, 12], "b": [2, 12], "c": [2, 10] }, "answer_formula": "a*b*c", "answer_type": "numeric" },
+        { "id": "gv_002", "type": "APPLY", "context": "packaging", "problem": "A box is {a} inches long, {b} inches wide, and {c} inches tall. What is its volume?", "constraints": { "a": [3, 15], "b": [3, 15], "c": [2, 10] }, "answer_formula": "a*b*c", "answer_type": "numeric" },
+        { "id": "gv_003", "type": "REVERSE", "problem": "A rectangular prism has volume {v} cubic units. Its length is {a} and width is {b}. What is its height?", "constraints": { "a": [2, 8], "b": [2, 8], "v_note": "a*b*random(2,10)" }, "answer_type": "numeric" },
+        { "id": "gv_004", "type": "APPLY", "context": "aquarium", "problem": "An aquarium is {a} ft long, {b} ft wide, and {c} ft tall. How many cubic feet of water does it hold?", "constraints": { "a": [2, 6], "b": [1, 4], "c": [1, 3] }, "answer_formula": "a*b*c", "answer_type": "numeric" },
+        { "id": "gv_005", "type": "COMPARE", "problem": "Box A has dimensions {a} × {b} × {c}. Box B has dimensions {d} × {e} × {f}. Which holds more?", "constraints": { "a": [2, 8], "b": [2, 8], "c": [2, 8], "d": [2, 8], "e": [2, 8], "f": [2, 8] }, "answer_type": "comparison_plus_work" },
+        { "id": "gv_006", "type": "IDENTIFY", "problem": "A shape has 4 right angles and all sides equal. What type of quadrilateral is it?", "constraints": {}, "answer_type": "label" },
+        { "id": "gv_007", "type": "IDENTIFY", "problem": "A triangle has angles of {a}°, {b}°, and {c}°. Is it acute, right, or obtuse?", "constraints": { "a": [30, 80], "b": [30, 80], "c_note": "180 - a - b" }, "answer_type": "label" },
+        { "id": "gv_008", "type": "CONSTRUCT", "problem": "Name two different rectangular prisms that each have a volume of {v} cubic units.", "constraints": { "v": [12, 60] }, "answer_type": "open_ended" }
+      ]
+    },
+    {
+      "id": "coordinate_plane_q1",
+      "name": "Coordinate Plane — Quadrant I Only",
+      "ccss": "5.G.A.1, 5.G.A.2",
+      "level": "solidify",
+      "templates": [
+        { "id": "cp_001", "type": "IDENTIFY", "problem": "What are the coordinates of a point that is {a} units right and {b} units up from the origin?", "constraints": { "a": [1, 10], "b": [1, 10] }, "answer_type": "coordinates" },
+        { "id": "cp_002", "type": "IDENTIFY", "problem": "A point is at ({a}, {b}). How far is it from the y-axis? How far from the x-axis?", "constraints": { "a": [1, 10], "b": [1, 10] }, "answer_type": "two_numeric" },
+        { "id": "cp_003", "type": "APPLY", "context": "map", "problem": "On a grid map, the school is at ({a}, {b}) and the park is at ({c}, {b}). How far apart are they?", "constraints": { "a": [1, 5], "b": [1, 10], "c": [6, 12] }, "answer_formula": "c - a", "answer_type": "numeric" },
+        { "id": "cp_004", "type": "REPRESENT", "problem": "A line connects ({a}, {b}) and ({a}, {c}). Is this line horizontal or vertical? How long is it?", "constraints": { "a": [1, 8], "b": [1, 5], "c": [6, 12] }, "answer_type": "label_plus_numeric" },
+        { "id": "cp_005", "type": "APPLY", "context": "game", "problem": "A game piece starts at ({a}, {b}). It moves {c} units right and {d} units up. What are the new coordinates?", "constraints": { "a": [0, 5], "b": [0, 5], "c": [1, 5], "d": [1, 5] }, "answer_type": "coordinates" },
+        { "id": "cp_006", "type": "COMPARE", "problem": "Point A is at ({a}, {b}) and Point B is at ({c}, {d}). Which point is farther from the origin along the x-axis?", "constraints": { "a": [1, 10], "b": [1, 10], "c": [1, 10], "d": [1, 10] }, "answer_type": "comparison" },
+        { "id": "cp_007", "type": "REVERSE", "problem": "A point ends up at ({a}, {b}) after moving {c} units right from its starting position. What were the original coordinates?", "constraints": { "a": [4, 12], "b": [1, 10], "c": [1, 6] }, "answer_type": "coordinates" }
+      ]
+    },
+    {
+      "id": "measurement_conversion",
+      "name": "Measurement and Unit Conversion",
+      "ccss": "5.MD.A.1",
+      "level": "solidify",
+      "templates": [
+        { "id": "mc_001", "type": "COMPUTE", "problem": "Convert {a} feet to inches.", "constraints": { "a": [2, 15] }, "answer_formula": "a * 12", "answer_type": "numeric" },
+        { "id": "mc_002", "type": "COMPUTE", "problem": "Convert {a} yards to feet.", "constraints": { "a": [2, 20] }, "answer_formula": "a * 3", "answer_type": "numeric" },
+        { "id": "mc_003", "type": "COMPUTE", "problem": "Convert {a} pounds to ounces.", "constraints": { "a": [2, 10] }, "answer_formula": "a * 16", "answer_type": "numeric" },
+        { "id": "mc_004", "type": "COMPUTE", "problem": "Convert {a} gallons to quarts.", "constraints": { "a": [2, 8] }, "answer_formula": "a * 4", "answer_type": "numeric" },
+        { "id": "mc_005", "type": "APPLY", "context": "construction", "problem": "A fence needs to be {a} yards long. How many feet of fencing is that?", "constraints": { "a": [5, 30] }, "answer_formula": "a * 3", "answer_type": "numeric" },
+        { "id": "mc_006", "type": "COMPARE", "problem": "Is {a} feet greater than, less than, or equal to {b} yards?", "constraints": { "a": [6, 30], "b": [2, 10] }, "answer_type": "comparison" },
+        { "id": "mc_007", "type": "REVERSE", "problem": "{a} inches equals how many feet? Are there any inches left over?", "constraints": { "a": [13, 60] }, "answer_type": "two_numeric" },
+        { "id": "mc_008", "type": "APPLY", "context": "cooking", "problem": "A recipe calls for {a} cups of milk. How many fluid ounces is that? (1 cup = 8 fl oz)", "constraints": { "a": [2, 6] }, "answer_formula": "a * 8", "answer_type": "numeric" }
+      ]
+    }
   ]
 }

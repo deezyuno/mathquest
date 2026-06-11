@@ -1,9 +1,115 @@
 {
-  "grade": "mid7th",
+  "grade": "mid-7th",
+  "description": "Solidifies 7th grade standards while previewing 8th grade concepts: intro to linear relationships, pythagorean theorem preview, transformations intro, and systems thinking.",
+  "ccss_primary": ["7.RP.A", "7.NS.A", "7.EE.B", "7.G.B", "7.SP.C"],
+  "ccss_preview": ["8.EE.B", "8.G.A", "8.G.B", "8.F.A"],
   "skills": [
-    "multi_step_equations",
-    "complex_proportions",
-    "advanced_rational_numbers",
-    "geometry_applications"
+    {
+      "id": "multi_step_equations",
+      "name": "Multi-Step Equations and Inequalities",
+      "ccss": "7.EE.B.3, 7.EE.B.4",
+      "level": "solidify",
+      "templates": [
+        { "id": "mse_001", "type": "COMPUTE", "problem": "Solve: {a}x + {b} = {c}x + {d}", "constraints": { "a": [2, 8], "b": [-20, 20], "c": [1, 6], "d": [-20, 20] }, "constraints_note": "a != c", "answer_type": "numeric" },
+        { "id": "mse_002", "type": "COMPUTE", "problem": "Solve: {a}(x + {b}) = {c}", "constraints": { "a": [2, 6], "b": [2, 10], "c": [12, 60] }, "answer_type": "numeric" },
+        { "id": "mse_003", "type": "COMPUTE", "problem": "Solve: {a}(x - {b}) + {c} = {d}", "constraints": { "a": [2, 5], "b": [2, 8], "c": [3, 15], "d": [10, 50] }, "answer_type": "numeric" },
+        { "id": "mse_004", "type": "COMPUTE", "problem": "Solve the inequality: {a}x + {b} > {c}. Graph the solution on a number line.", "constraints": { "a": [2, 6], "b": [-15, 15], "c": [5, 40] }, "answer_type": "inequality_plus_graph" },
+        { "id": "mse_005", "type": "COMPUTE", "problem": "Solve: {a}x - {b} ≤ {c}", "constraints": { "a": [2, 8], "b": [3, 20], "c": [10, 50] }, "answer_type": "inequality" },
+        { "id": "mse_006", "type": "APPLY", "context": "money", "problem": "Company A charges ${a} plus ${b} per hour. Company B charges ${c} per hour. After how many hours is the cost equal?", "constraints": { "a": [20, 60], "b": [5, 15], "c": [10, 25] }, "constraints_note": "c > b", "answer_type": "equation_plus_numeric" },
+        { "id": "mse_007", "type": "APPLY", "context": "age", "problem": "In {a} years, a person will be {b} times as old as they are now. How old are they now?", "constraints": { "a": [4, 12], "b": [2, 4] }, "answer_type": "equation_plus_numeric" },
+        { "id": "mse_008", "type": "ERROR_ANALYSIS", "problem": "A student solves {a}x + {b} = {c}x + {d} and gets x = {wrong}. What did they do wrong?", "constraints": { "a": [3, 8], "b": [5, 20], "c": [1, 5], "d": [2, 15] }, "generation_note": "wrong = (b+d)/(a-c) (added instead of subtracted b and d)", "answer_type": "numeric_plus_explanation" },
+        { "id": "mse_009", "type": "CONSTRUCT", "problem": "Write an equation with variables on both sides whose solution is x = {s}.", "constraints": { "s": [-5, 10] }, "answer_type": "open_ended" },
+        { "id": "mse_010", "type": "REPRESENT", "problem": "Write and solve an inequality for: a number times {a} minus {b} is at most {c}.", "constraints": { "a": [3, 8], "b": [5, 20], "c": [20, 60] }, "answer_type": "inequality" }
+      ]
+    },
+    {
+      "id": "percent_applications",
+      "name": "Percent Applications",
+      "ccss": "7.RP.A.3",
+      "level": "solidify",
+      "templates": [
+        { "id": "pct_001", "type": "COMPUTE", "problem": "What is {a}% of {b}?", "constraints": { "a": [5, 75], "b": [40, 200] }, "answer_type": "numeric" },
+        { "id": "pct_002", "type": "COMPUTE", "problem": "{a} is what percent of {b}?", "constraints": { "a": [5, 80], "b": [50, 200] }, "constraints_note": "a < b, a/b gives clean percent", "answer_type": "numeric" },
+        { "id": "pct_003", "type": "APPLY", "context": "shopping", "problem": "A jacket originally costs ${a}. It is marked {b}% off. What is the final price?", "constraints": { "a": [40, 150], "b": [10, 50] }, "answer_type": "numeric" },
+        { "id": "pct_004", "type": "APPLY", "context": "tax", "problem": "A bill totals ${a}. You add a {b}% tip. What is the total amount paid?", "constraints": { "a": [20, 80], "b": [10, 25] }, "answer_type": "numeric" },
+        { "id": "pct_005", "type": "REVERSE", "problem": "After a {a}% increase, a value is {b}. What was the original value?", "constraints": { "a": [10, 50], "b": [55, 300] }, "answer_type": "numeric" },
+        { "id": "pct_006", "type": "COMPUTE", "problem": "A population of {a} increases by {b}%. What is the new population?", "constraints": { "a": [100, 2000], "b": [5, 50] }, "answer_type": "numeric" },
+        { "id": "pct_007", "type": "COMPARE", "problem": "Item A: original price ${a}, discount {b}%. Item B: original price ${c}, discount {d}%. Which saves more money?", "constraints": { "a": [40, 100], "b": [10, 40], "c": [40, 100], "d": [10, 40] }, "answer_type": "comparison_plus_work" },
+        { "id": "pct_008", "type": "APPLY", "context": "interest", "problem": "You borrow ${a} at {b}% simple interest. How much do you owe after {c} years?", "constraints": { "a": [200, 1000], "b": [3, 8], "c": [1, 4] }, "answer_formula": "a + a*b*c/100", "answer_type": "numeric" },
+        { "id": "pct_009", "type": "ERROR_ANALYSIS", "problem": "A student says {a}% of ${b} is ${wrong}. They moved the decimal incorrectly. What is the correct answer?", "constraints": { "a": [15, 40], "b": [80, 200] }, "generation_note": "wrong is off by factor of 10", "answer_type": "numeric_plus_explanation" },
+        { "id": "pct_010", "type": "CONSTRUCT", "problem": "Create a shopping scenario where the final price is ${a} after a {b}% discount. What was the original price?", "constraints": { "a": [30, 100], "b": [20, 50] }, "answer_type": "open_ended" }
+      ]
+    },
+    {
+      "id": "geometry_composite_3d",
+      "name": "Composite Figures and 3D Geometry",
+      "ccss": "7.G.B.4, 7.G.B.6",
+      "level": "solidify",
+      "templates": [
+        { "id": "gc_001", "type": "COMPUTE", "problem": "Find the area of a composite shape made of a rectangle {a} × {b} with a triangle of base {a} and height {c} on top.", "constraints": { "a": [4, 14], "b": [3, 12], "c": [2, 8] }, "answer_formula": "a*b + 0.5*a*c", "answer_type": "numeric" },
+        { "id": "gc_002", "type": "COMPUTE", "problem": "Find the area of a circle with radius {a}. Use π ≈ 3.14.", "constraints": { "a": [3, 12] }, "answer_formula": "3.14*a*a", "answer_type": "numeric" },
+        { "id": "gc_003", "type": "COMPUTE", "problem": "Find the surface area of a triangular prism with rectangular face {a} × {b}, triangular base {a} × {c} (height {d}).", "constraints": { "a": [4, 12], "b": [6, 15], "c": [4, 10], "d": [3, 8] }, "answer_type": "numeric" },
+        { "id": "gc_004", "type": "APPLY", "context": "design", "problem": "A logo is a rectangle {a} cm by {b} cm with a semicircle of diameter {a} on one end. Find the total area. Use π ≈ 3.14.", "constraints": { "a": [4, 12], "b": [6, 15] }, "answer_type": "numeric" },
+        { "id": "gc_005", "type": "REVERSE", "problem": "A circle has area {area} square units. Find its radius. Use π ≈ 3.14.", "constraints": { "area_note": "3.14 * r * r for integer r 2-10" }, "answer_type": "numeric" },
+        { "id": "gc_006", "type": "COMPARE", "problem": "Shape A: circle radius {a}. Shape B: square side {b}. Which has greater area?", "constraints": { "a": [3, 8], "b": [5, 14] }, "answer_type": "comparison_plus_work" },
+        { "id": "gc_007", "type": "APPLY", "context": "construction", "problem": "A field is a rectangle {a} m by {b} m with a semicircle of diameter {b} on each short end. Find the total area.", "constraints": { "a": [20, 50], "b": [10, 30] }, "answer_type": "numeric" },
+        { "id": "gc_008", "type": "CONSTRUCT", "problem": "Design a composite shape with total area exactly {target} square units using at least two shapes.", "constraints": { "target": [50, 200] }, "answer_type": "open_ended" }
+      ]
+    },
+    {
+      "id": "probability_compound",
+      "name": "Compound Probability",
+      "ccss": "7.SP.C.8",
+      "level": "solidify",
+      "templates": [
+        { "id": "pc_001", "type": "COMPUTE", "problem": "You flip a coin and roll a {a}-sided die. What is the probability of getting heads AND rolling a {b}?", "constraints": { "a": [4, 8], "b": [1, 6] }, "answer_formula": "1/(2*a)", "answer_type": "fraction_simplified" },
+        { "id": "pc_002", "type": "COMPUTE", "problem": "A bag has {a} red and {b} blue marbles. You draw one, replace it, then draw again. What is the probability of drawing red both times?", "constraints": { "a": [2, 6], "b": [2, 6] }, "answer_formula": "(a/(a+b))^2", "answer_type": "fraction_simplified" },
+        { "id": "pc_003", "type": "REPRESENT", "problem": "Draw a tree diagram for flipping a coin twice. List all outcomes and find P(at least one heads).", "constraints": {}, "answer_type": "diagram_plus_fraction" },
+        { "id": "pc_004", "type": "APPLY", "context": "sports", "problem": "A player makes {a}% of their free throws. What is the probability they make two in a row?", "constraints": { "a": [50, 90] }, "answer_formula": "(a/100)^2", "answer_type": "decimal" },
+        { "id": "pc_005", "type": "COMPARE", "problem": "Event A: P = {a}/{b}. Event B: P = {c}/{d}. What is the probability of both A and B occurring if independent?", "constraints": { "a": [1, 3], "b": [4, 8], "c": [1, 3], "d": [4, 8] }, "answer_type": "fraction_simplified" }
+      ]
+    },
+    {
+      "id": "preview_linear_relationships",
+      "name": "Preview: Linear Relationships and Slope (8th Grade Intro)",
+      "ccss_preview": "8.EE.B.5, 8.F.A.1, 8.F.A.3",
+      "level": "preview",
+      "note": "Introduces the concept of constant rate of change (slope) informally through tables and graphs. No y=mx+b notation yet — that is core 8th grade.",
+      "templates": [
+        { "id": "pl_001", "type": "IDENTIFY", "problem": "A table shows x: {a}, {b}, {c} and y: {d}, {e}, {f}. Is the rate of change constant? What is the rate?", "constraints": { "a": [0, 3], "b": [2, 6], "c": [4, 9] }, "generation_note": "d, e, f = k*a,k*b,k*c for integer k or add noise", "answer_type": "boolean_plus_numeric" },
+        { "id": "pl_002", "type": "APPLY", "context": "walking", "problem": "A hiker walks {a} miles per hour. Complete a table showing distance for hours 1 through 4. What is the rate of change?", "constraints": { "a": [2, 6] }, "answer_type": "table_plus_numeric" },
+        { "id": "pl_003", "type": "COMPUTE", "problem": "Between points ({a}, {b}) and ({c}, {d}), what is the constant rate of change (rise over run)?", "constraints": { "a": [0, 4], "b": [0, 8], "c": [2, 8], "d": [4, 20] }, "answer_formula": "(d-b)/(c-a)", "answer_type": "numeric" },
+        { "id": "pl_004", "type": "COMPARE", "problem": "Line A passes through (0,0) and ({a},{b}). Line B passes through (0,0) and ({c},{d}). Which has a steeper rate of change?", "constraints": { "a": [2, 6], "b": [4, 18], "c": [2, 6], "d": [4, 18] }, "answer_type": "comparison_plus_work" },
+        { "id": "pl_005", "type": "REPRESENT", "problem": "A phone plan charges ${a} per month plus ${b} per GB. Complete a table for 1, 2, 3, 4 GB and describe the pattern.", "constraints": { "a": [20, 40], "b": [5, 15] }, "answer_type": "table_plus_verbal" }
+      ]
+    },
+    {
+      "id": "preview_pythagorean_theorem",
+      "name": "Preview: The Pythagorean Theorem (8th Grade Intro)",
+      "ccss_preview": "8.G.B.7",
+      "level": "preview",
+      "note": "Introduces the Pythagorean theorem using whole-number Pythagorean triples only. No decimal answers, no square roots — just recognition and application of a² + b² = c².",
+      "templates": [
+        { "id": "pp_001", "type": "IDENTIFY", "problem": "A right triangle has legs {a} and {b}. Does the hypotenuse equal {c}? Check using a² + b² = c².", "constraints": { "triples": [[3,4,5],[5,12,13],[8,15,17],[6,8,10],[9,12,15]] }, "answer_type": "boolean_plus_work" },
+        { "id": "pp_002", "type": "COMPUTE", "problem": "A right triangle has legs {a} and {b}. Use a² + b² = c² to find the hypotenuse.", "constraints": { "triples": [[3,4,5],[5,12,13],[6,8,10]] }, "answer_type": "numeric" },
+        { "id": "pp_003", "type": "APPLY", "context": "construction", "problem": "A ladder {c} ft long leans against a wall. Its base is {a} ft from the wall. How high up the wall does it reach?", "constraints": { "triples": [[3,4,5],[5,12,13],[8,15,17]] }, "answer_type": "numeric" },
+        { "id": "pp_004", "type": "APPLY", "context": "navigation", "problem": "A park has paths going {a} blocks east and {b} blocks north. How long is the shortcut diagonally?", "constraints": { "triples": [[3,4,5],[6,8,10],[5,12,13]] }, "answer_type": "numeric" },
+        { "id": "pp_005", "type": "ERROR_ANALYSIS", "problem": "A student says a right triangle with legs {a} and {b} has hypotenuse {wrong}. They added a + b. What is the correct answer using a² + b² = c²?", "constraints": { "triples": [[3,4,5],[6,8,10]] }, "generation_note": "wrong = a + b", "answer_type": "numeric_plus_explanation" }
+      ]
+    },
+    {
+      "id": "preview_transformations",
+      "name": "Preview: Transformations on the Coordinate Plane (8th Grade Intro)",
+      "ccss_preview": "8.G.A.1, 8.G.A.3",
+      "level": "preview",
+      "note": "Introduces translations and reflections informally. No rotation formulas — just understanding movement and symmetry.",
+      "templates": [
+        { "id": "pt_001", "type": "COMPUTE", "problem": "Translate point ({a}, {b}) right {c} units and up {d} units. What are the new coordinates?", "constraints": { "a": [-6, 6], "b": [-6, 6], "c": [1, 6], "d": [1, 6] }, "answer_type": "coordinates" },
+        { "id": "pt_002", "type": "COMPUTE", "problem": "Reflect point ({a}, {b}) across the x-axis. What are the new coordinates?", "constraints": { "a": [-8, 8], "b": [-8, 8] }, "constraints_note": "b != 0", "answer_type": "coordinates" },
+        { "id": "pt_003", "type": "COMPUTE", "problem": "Reflect point ({a}, {b}) across the y-axis. What are the new coordinates?", "constraints": { "a": [-8, 8], "b": [-8, 8] }, "constraints_note": "a != 0", "answer_type": "coordinates" },
+        { "id": "pt_004", "type": "IDENTIFY", "problem": "Point A is at ({a}, {b}). After a translation, it is at ({c}, {d}). Describe the translation.", "constraints": { "a": [-5, 5], "b": [-5, 5], "c": [-8, 8], "d": [-8, 8] }, "answer_type": "verbal" },
+        { "id": "pt_005", "type": "APPLY", "context": "game", "problem": "A game piece at ({a}, {b}) is reflected across the y-axis then moved up {c} units. What are its final coordinates?", "constraints": { "a": [-6, 6], "b": [-6, 6], "c": [1, 6] }, "answer_type": "coordinates" }
+      ]
+    }
   ]
 }
