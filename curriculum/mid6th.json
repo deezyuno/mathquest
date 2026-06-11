@@ -6,7 +6,9 @@
       "difficulty": "standard",
       "constraints": {
         "allowed_operations": [
-          "integer_operations_mixed_signs"
+          "integer_operations_mixed_signs",
+          "integer_comparison",
+          "absolute_value"
         ],
         "forbidden_operations": [
           "fraction_operations",
@@ -18,27 +20,304 @@
           "id": "mix_001",
           "problem": "a + b + c",
           "constraints": {
-            "a": [-100, 100],
-            "b": [-100, 100],
-            "c": [-100, 100]
+            "a": [
+              -100,
+              100
+            ],
+            "b": [
+              -100,
+              100
+            ],
+            "c": [
+              -100,
+              100
+            ]
           }
         },
         {
           "id": "mix_002",
           "problem": "a - b + c",
           "constraints": {
-            "a": [-100, 100],
-            "b": [-100, 100],
-            "c": [-100, 100]
+            "a": [
+              -100,
+              100
+            ],
+            "b": [
+              -100,
+              100
+            ],
+            "c": [
+              -100,
+              100
+            ]
           }
         },
         {
           "id": "mix_003",
           "problem": "a × b ÷ c",
           "constraints": {
-            "a": [-20, 20],
-            "b": [-20, 20],
-            "c": [1, 12]
+            "a": [
+              -20,
+              20
+            ],
+            "b": [
+              -20,
+              20
+            ],
+            "c": [
+              1,
+              12
+            ]
+          }
+        },
+        {
+          "id": "mix_004",
+          "problem": "a + b - c",
+          "constraints": {
+            "a": [
+              -100,
+              100
+            ],
+            "b": [
+              -100,
+              100
+            ],
+            "c": [
+              -100,
+              100
+            ]
+          }
+        },
+        {
+          "id": "mix_005",
+          "problem": "a - b - c",
+          "constraints": {
+            "a": [
+              -100,
+              100
+            ],
+            "b": [
+              -100,
+              100
+            ],
+            "c": [
+              -100,
+              100
+            ]
+          }
+        },
+        {
+          "id": "mix_006",
+          "problem": "-a + b",
+          "constraints": {
+            "a": [
+              -100,
+              100
+            ],
+            "b": [
+              -100,
+              100
+            ]
+          }
+        },
+        {
+          "id": "mix_007",
+          "problem": "a + (-b)",
+          "constraints": {
+            "a": [
+              -100,
+              100
+            ],
+            "b": [
+              -100,
+              100
+            ]
+          }
+        },
+        {
+          "id": "mix_008",
+          "problem": "a × b",
+          "constraints": {
+            "a": [
+              -20,
+              20
+            ],
+            "b": [
+              -20,
+              20
+            ]
+          }
+        },
+        {
+          "id": "mix_009",
+          "problem": "a ÷ b",
+          "constraints": {
+            "a": [
+              -100,
+              100
+            ],
+            "b": [
+              -20,
+              20
+            ]
+          }
+        },
+        {
+          "id": "mix_010",
+          "problem": "|a|",
+          "constraints": {
+            "a": [
+              -100,
+              100
+            ]
+          }
+        },
+        {
+          "id": "mix_011",
+          "problem": "|a| + b",
+          "constraints": {
+            "a": [
+              -100,
+              100
+            ],
+            "b": [
+              -100,
+              100
+            ]
+          }
+        },
+        {
+          "id": "mix_012",
+          "problem": "|a| - |b|",
+          "constraints": {
+            "a": [
+              -100,
+              100
+            ],
+            "b": [
+              -100,
+              100
+            ]
+          }
+        },
+        {
+          "id": "mix_013",
+          "problem": "Which is greater: a or b?",
+          "constraints": {
+            "a": [
+              -100,
+              100
+            ],
+            "b": [
+              -100,
+              100
+            ]
+          }
+        },
+        {
+          "id": "mix_014",
+          "problem": "Which is less: a or b?",
+          "constraints": {
+            "a": [
+              -100,
+              100
+            ],
+            "b": [
+              -100,
+              100
+            ]
+          }
+        },
+        {
+          "id": "mix_015",
+          "problem": "List a, b, and c from least to greatest.",
+          "constraints": {
+            "a": [
+              -100,
+              100
+            ],
+            "b": [
+              -100,
+              100
+            ],
+            "c": [
+              -100,
+              100
+            ]
+          }
+        },
+        {
+          "id": "mix_016",
+          "problem": "The temperature was a°F and dropped b°F. What is the new temperature?",
+          "constraints": {
+            "a": [
+              -100,
+              100
+            ],
+            "b": [
+              -100,
+              100
+            ]
+          }
+        },
+        {
+          "id": "mix_017",
+          "problem": "A submarine at a feet descends b more feet. What is its new depth?",
+          "constraints": {
+            "a": [
+              -100,
+              100
+            ],
+            "b": [
+              -100,
+              100
+            ]
+          }
+        },
+        {
+          "id": "mix_018",
+          "problem": "An elevator starts at floor a and goes up b floors. What floor is it on?",
+          "constraints": {
+            "a": [
+              -100,
+              100
+            ],
+            "b": [
+              -100,
+              100
+            ]
+          }
+        },
+        {
+          "id": "mix_019",
+          "problem": "A bank account has a dollars. After a deposit of b dollars, what is the balance?",
+          "constraints": {
+            "a": [
+              -100,
+              100
+            ],
+            "b": [
+              -100,
+              100
+            ]
+          }
+        },
+        {
+          "id": "mix_020",
+          "problem": "A hiker at elevation a feet climbs b feet, then descends c feet. What is the final elevation?",
+          "constraints": {
+            "a": [
+              -100,
+              100
+            ],
+            "b": [
+              -100,
+              100
+            ],
+            "c": [
+              -100,
+              100
+            ]
           }
         }
       ]
@@ -49,7 +328,8 @@
       "constraints": {
         "allowed_operations": [
           "fraction_addition_common_denominator",
-          "fraction_subtraction_common_denominator"
+          "fraction_subtraction_common_denominator",
+          "fraction_addition_different_denominators_limited"
         ],
         "forbidden_operations": [
           "fraction_division",
@@ -62,28 +342,392 @@
           "id": "fas_001",
           "problem": "a/b + c/b",
           "constraints": {
-            "a": [1, 9],
-            "b": [2, 12],
-            "c": [1, 9]
+            "a": [
+              1,
+              9
+            ],
+            "b": [
+              2,
+              12
+            ],
+            "c": [
+              1,
+              9
+            ]
           }
         },
         {
           "id": "fas_002",
           "problem": "a/b - c/b",
           "constraints": {
-            "a": [1, 9],
-            "b": [2, 12],
-            "c": [1, 9]
+            "a": [
+              1,
+              9
+            ],
+            "b": [
+              2,
+              12
+            ],
+            "c": [
+              1,
+              9
+            ]
           }
         },
         {
           "id": "fas_003",
           "problem": "a/b + c/d",
           "constraints": {
-            "a": [1, 9],
-            "b": [2, 12],
-            "c": [1, 9],
-            "d": [2, 12]
+            "a": [
+              1,
+              9
+            ],
+            "b": [
+              2,
+              12
+            ],
+            "c": [
+              1,
+              9
+            ],
+            "d": [
+              2,
+              12
+            ]
+          }
+        },
+        {
+          "id": "fas_004",
+          "problem": "a/b - c/d",
+          "constraints": {
+            "a": [
+              1,
+              9
+            ],
+            "b": [
+              2,
+              12
+            ],
+            "c": [
+              1,
+              9
+            ],
+            "d": [
+              2,
+              12
+            ]
+          }
+        },
+        {
+          "id": "fas_005",
+          "problem": "Express a/b + c/b in simplest form",
+          "constraints": {
+            "a": [
+              1,
+              9
+            ],
+            "b": [
+              2,
+              12
+            ],
+            "c": [
+              1,
+              9
+            ]
+          }
+        },
+        {
+          "id": "fas_006",
+          "problem": "Express a/b - c/b in simplest form",
+          "constraints": {
+            "a": [
+              1,
+              9
+            ],
+            "b": [
+              2,
+              12
+            ],
+            "c": [
+              1,
+              9
+            ]
+          }
+        },
+        {
+          "id": "fas_007",
+          "problem": "a/b + c/b + e/b",
+          "constraints": {
+            "a": [
+              1,
+              9
+            ],
+            "b": [
+              2,
+              12
+            ],
+            "c": [
+              1,
+              9
+            ],
+            "e": [
+              1,
+              9
+            ]
+          }
+        },
+        {
+          "id": "fas_008",
+          "problem": "Which is greater: a/b or c/b?",
+          "constraints": {
+            "a": [
+              1,
+              9
+            ],
+            "b": [
+              2,
+              12
+            ],
+            "c": [
+              1,
+              9
+            ]
+          }
+        },
+        {
+          "id": "fas_009",
+          "problem": "Which is greater: a/b or c/d?",
+          "constraints": {
+            "a": [
+              1,
+              9
+            ],
+            "b": [
+              2,
+              12
+            ],
+            "c": [
+              1,
+              9
+            ],
+            "d": [
+              2,
+              12
+            ]
+          }
+        },
+        {
+          "id": "fas_010",
+          "problem": "Maria ate a/b of a pizza and Luis ate c/b of the same pizza. How much did they eat together?",
+          "constraints": {
+            "a": [
+              1,
+              9
+            ],
+            "b": [
+              2,
+              12
+            ],
+            "c": [
+              1,
+              9
+            ]
+          }
+        },
+        {
+          "id": "fas_011",
+          "problem": "A tank was c/b full. After using a/b of the tank, what fraction remains?",
+          "constraints": {
+            "a": [
+              1,
+              9
+            ],
+            "b": [
+              2,
+              12
+            ],
+            "c": [
+              1,
+              9
+            ]
+          }
+        },
+        {
+          "id": "fas_012",
+          "problem": "A ribbon is a/b meter long. You cut off c/b meter. How much ribbon is left?",
+          "constraints": {
+            "a": [
+              1,
+              9
+            ],
+            "b": [
+              2,
+              12
+            ],
+            "c": [
+              1,
+              9
+            ]
+          }
+        },
+        {
+          "id": "fas_013",
+          "problem": "Add: a/b + c/d. Write your answer in simplest form.",
+          "constraints": {
+            "a": [
+              1,
+              9
+            ],
+            "b": [
+              2,
+              12
+            ],
+            "c": [
+              1,
+              9
+            ],
+            "d": [
+              2,
+              12
+            ]
+          }
+        },
+        {
+          "id": "fas_014",
+          "problem": "Subtract: a/b - c/d. Write your answer in simplest form.",
+          "constraints": {
+            "a": [
+              1,
+              9
+            ],
+            "b": [
+              2,
+              12
+            ],
+            "c": [
+              1,
+              9
+            ],
+            "d": [
+              2,
+              12
+            ]
+          }
+        },
+        {
+          "id": "fas_015",
+          "problem": "On a number line, one mark is at a/b and another at c/b. What is the distance between them?",
+          "constraints": {
+            "a": [
+              1,
+              9
+            ],
+            "b": [
+              2,
+              12
+            ],
+            "c": [
+              1,
+              9
+            ]
+          }
+        },
+        {
+          "id": "fas_016",
+          "problem": "A recipe calls for a/b cup of sugar and c/b cup of flour. How many cups of dry ingredients is that?",
+          "constraints": {
+            "a": [
+              1,
+              9
+            ],
+            "b": [
+              2,
+              12
+            ],
+            "c": [
+              1,
+              9
+            ]
+          }
+        },
+        {
+          "id": "fas_017",
+          "problem": "Jake walked a/b mile in the morning and c/d mile in the afternoon. How far did he walk in all?",
+          "constraints": {
+            "a": [
+              1,
+              9
+            ],
+            "b": [
+              2,
+              12
+            ],
+            "c": [
+              1,
+              9
+            ],
+            "d": [
+              2,
+              12
+            ]
+          }
+        },
+        {
+          "id": "fas_018",
+          "problem": "A board is a/b foot long. You saw off c/b foot. How long is the remaining piece?",
+          "constraints": {
+            "a": [
+              1,
+              9
+            ],
+            "b": [
+              2,
+              12
+            ],
+            "c": [
+              1,
+              9
+            ]
+          }
+        },
+        {
+          "id": "fas_019",
+          "problem": "Order from least to greatest: a/b, c/b, e/b",
+          "constraints": {
+            "a": [
+              1,
+              9
+            ],
+            "b": [
+              2,
+              12
+            ],
+            "c": [
+              1,
+              9
+            ],
+            "e": [
+              1,
+              9
+            ]
+          }
+        },
+        {
+          "id": "fas_020",
+          "problem": "What fraction of a whole is left if you take away a/b and then c/b from 1?",
+          "constraints": {
+            "a": [
+              1,
+              9
+            ],
+            "b": [
+              2,
+              12
+            ],
+            "c": [
+              1,
+              9
+            ]
           }
         }
       ]
@@ -98,7 +742,8 @@
         ],
         "forbidden_operations": [
           "multi_step_algebra_equations",
-          "systems_of_equations"
+          "systems_of_equations",
+          "percent_applications"
         ]
       },
       "templates": [
@@ -113,6 +758,262 @@
         {
           "id": "rp_003",
           "problem": "If 5 pencils cost $10, what is the cost of 1 pencil?"
+        },
+        {
+          "id": "rp_004",
+          "problem": "x/a = b/c",
+          "constraints": {
+            "a": [
+              2,
+              8
+            ],
+            "b": [
+              2,
+              12
+            ],
+            "c": [
+              2,
+              12
+            ]
+          }
+        },
+        {
+          "id": "rp_005",
+          "problem": "Solve: x/4 = 9/12"
+        },
+        {
+          "id": "rp_006",
+          "problem": "Solve: x/5 = 15/25"
+        },
+        {
+          "id": "rp_007",
+          "problem": "Solve: 3/x = 6/10"
+        },
+        {
+          "id": "rp_008",
+          "problem": "Write the ratio of a red items to b blue items in simplest form",
+          "constraints": {
+            "a": [
+              4,
+              24
+            ],
+            "b": [
+              4,
+              24
+            ]
+          }
+        },
+        {
+          "id": "rp_009",
+          "problem": "Are the ratios a:b and c:d equivalent?",
+          "constraints": {
+            "a": [
+              2,
+              12
+            ],
+            "b": [
+              2,
+              12
+            ],
+            "c": [
+              2,
+              12
+            ],
+            "d": [
+              2,
+              12
+            ]
+          }
+        },
+        {
+          "id": "rp_010",
+          "problem": "The ratio of cats to dogs in a shelter is a:b. If there are c cats, how many dogs are there?",
+          "constraints": {
+            "a": [
+              2,
+              6
+            ],
+            "b": [
+              2,
+              6
+            ],
+            "c": [
+              6,
+              30
+            ]
+          }
+        },
+        {
+          "id": "rp_011",
+          "problem": "A map scale is 1 inch : a miles. How many miles does b inches represent?",
+          "constraints": {
+            "a": [
+              2,
+              10
+            ],
+            "b": [
+              2,
+              8
+            ]
+          }
+        },
+        {
+          "id": "rp_012",
+          "problem": "In a class, the ratio of boys to girls is a:b. If there are c students total in that ratio, how many are boys?",
+          "constraints": {
+            "a": [
+              2,
+              5
+            ],
+            "b": [
+              2,
+              5
+            ],
+            "c": [
+              14,
+              35
+            ]
+          }
+        },
+        {
+          "id": "rp_013",
+          "problem": "Solve for x: x/a = c/d",
+          "constraints": {
+            "a": [
+              2,
+              9
+            ],
+            "c": [
+              3,
+              18
+            ],
+            "d": [
+              4,
+              24
+            ]
+          }
+        },
+        {
+          "id": "rp_014",
+          "problem": "A recipe for a people uses b cups of rice. How many cups are needed for c people?",
+          "constraints": {
+            "a": [
+              2,
+              6
+            ],
+            "b": [
+              2,
+              8
+            ],
+            "c": [
+              4,
+              18
+            ]
+          }
+        },
+        {
+          "id": "rp_015",
+          "problem": "The ratio of length to width of a rectangle is a:b. If the width is c units, what is the length?",
+          "constraints": {
+            "a": [
+              2,
+              5
+            ],
+            "b": [
+              2,
+              5
+            ],
+            "c": [
+              4,
+              20
+            ]
+          }
+        },
+        {
+          "id": "rp_016",
+          "problem": "Simplify the ratio a:b to lowest terms",
+          "constraints": {
+            "a": [
+              10,
+              40
+            ],
+            "b": [
+              10,
+              40
+            ]
+          }
+        },
+        {
+          "id": "rp_017",
+          "problem": "On a team, wins to losses are in ratio a:b. If there were c losses, how many wins were there?",
+          "constraints": {
+            "a": [
+              2,
+              5
+            ],
+            "b": [
+              2,
+              5
+            ],
+            "c": [
+              4,
+              20
+            ]
+          }
+        },
+        {
+          "id": "rp_018",
+          "problem": "Solve: a/x = b/c",
+          "constraints": {
+            "a": [
+              3,
+              12
+            ],
+            "b": [
+              6,
+              18
+            ],
+            "c": [
+              8,
+              24
+            ]
+          }
+        },
+        {
+          "id": "rp_019",
+          "problem": "A mixture uses a parts sand to b parts cement. How much sand is needed for c parts cement?",
+          "constraints": {
+            "a": [
+              2,
+              5
+            ],
+            "b": [
+              2,
+              5
+            ],
+            "c": [
+              6,
+              25
+            ]
+          }
+        },
+        {
+          "id": "rp_020",
+          "problem": "Two numbers are in ratio a:b. If the smaller number is c, what is the larger number?",
+          "constraints": {
+            "a": [
+              2,
+              4
+            ],
+            "b": [
+              3,
+              6
+            ],
+            "c": [
+              4,
+              20
+            ]
+          }
         }
       ]
     },
@@ -127,7 +1028,8 @@
         "forbidden_operations": [
           "distribution",
           "fractions_in_equations",
-          "inequalities"
+          "inequalities",
+          "variables_on_both_sides"
         ]
       },
       "templates": [
@@ -135,24 +1037,2502 @@
           "id": "alg_001",
           "problem": "x + a = b",
           "constraints": {
-            "a": [-50, 50],
-            "b": [-50, 50]
+            "a": [
+              -50,
+              50
+            ],
+            "b": [
+              -50,
+              50
+            ]
           }
         },
         {
           "id": "alg_002",
           "problem": "x - a = b",
           "constraints": {
-            "a": [-50, 50],
-            "b": [-50, 50]
+            "a": [
+              -50,
+              50
+            ],
+            "b": [
+              -50,
+              50
+            ]
           }
         },
         {
           "id": "alg_003",
           "problem": "ax = b",
           "constraints": {
-            "a": [2, 10],
-            "b": [-100, 100]
+            "a": [
+              2,
+              10
+            ],
+            "b": [
+              -100,
+              100
+            ]
+          }
+        },
+        {
+          "id": "alg_004",
+          "problem": "x ÷ a = b",
+          "constraints": {
+            "a": [
+              2,
+              10
+            ],
+            "b": [
+              -50,
+              50
+            ]
+          }
+        },
+        {
+          "id": "alg_005",
+          "problem": "x/a = b",
+          "constraints": {
+            "a": [
+              2,
+              10
+            ],
+            "b": [
+              -50,
+              50
+            ]
+          }
+        },
+        {
+          "id": "alg_006",
+          "problem": "ax + b = c",
+          "constraints": {
+            "a": [
+              2,
+              9
+            ],
+            "b": [
+              -30,
+              30
+            ],
+            "c": [
+              -50,
+              50
+            ]
+          }
+        },
+        {
+          "id": "alg_007",
+          "problem": "ax - b = c",
+          "constraints": {
+            "a": [
+              2,
+              9
+            ],
+            "b": [
+              1,
+              30
+            ],
+            "c": [
+              -50,
+              50
+            ]
+          }
+        },
+        {
+          "id": "alg_008",
+          "problem": "x + a = b (Solve for x)",
+          "constraints": {
+            "a": [
+              -50,
+              50
+            ],
+            "b": [
+              -50,
+              50
+            ]
+          }
+        },
+        {
+          "id": "alg_009",
+          "problem": "A number increased by a equals b. Find the number.",
+          "constraints": {
+            "a": [
+              -50,
+              50
+            ],
+            "b": [
+              -50,
+              50
+            ]
+          }
+        },
+        {
+          "id": "alg_010",
+          "problem": "After spending $a, you have $b left. How much did you start with?",
+          "constraints": {
+            "a": [
+              5,
+              50
+            ],
+            "b": [
+              5,
+              100
+            ]
+          }
+        },
+        {
+          "id": "alg_011",
+          "problem": "You earn $a per hour. After working some hours you have $b. How many hours did you work if pay = hours × a?",
+          "constraints": {
+            "a": [
+              5,
+              15
+            ],
+            "b": [
+              20,
+              120
+            ]
+          }
+        },
+        {
+          "id": "alg_012",
+          "problem": "A package of a items costs $b total. If each item costs the same, write and solve an equation for the cost of one item.",
+          "constraints": {
+            "a": [
+              2,
+              10
+            ],
+            "b": [
+              -100,
+              100
+            ]
+          }
+        },
+        {
+          "id": "alg_013",
+          "problem": "The sum of a number and a is b. What is the number?",
+          "constraints": {
+            "a": [
+              -50,
+              50
+            ],
+            "b": [
+              -50,
+              50
+            ]
+          }
+        },
+        {
+          "id": "alg_014",
+          "problem": "A rope of length b feet is cut into a equal pieces. Write and solve for the length of one piece.",
+          "constraints": {
+            "a": [
+              2,
+              8
+            ],
+            "b": [
+              10,
+              48
+            ]
+          }
+        },
+        {
+          "id": "alg_015",
+          "problem": "Solve: x - a = b",
+          "constraints": {
+            "a": [
+              -50,
+              50
+            ],
+            "b": [
+              -50,
+              50
+            ]
+          }
+        },
+        {
+          "id": "alg_016",
+          "problem": "Triple a number, then add a, and the result is b. Find the number.",
+          "constraints": {
+            "a": [
+              -20,
+              20
+            ],
+            "b": [
+              -50,
+              50
+            ]
+          }
+        },
+        {
+          "id": "alg_017",
+          "problem": "A number divided by a equals b. Find the number.",
+          "constraints": {
+            "a": [
+              2,
+              10
+            ],
+            "b": [
+              -30,
+              30
+            ]
+          }
+        },
+        {
+          "id": "alg_018",
+          "problem": "You had some stickers. After giving away a, you have b left. How many did you start with?",
+          "constraints": {
+            "a": [
+              3,
+              25
+            ],
+            "b": [
+              5,
+              40
+            ]
+          }
+        },
+        {
+          "id": "alg_019",
+          "problem": "The product of a and a number is b. Find the number.",
+          "constraints": {
+            "a": [
+              2,
+              10
+            ],
+            "b": [
+              -100,
+              100
+            ]
+          }
+        },
+        {
+          "id": "alg_020",
+          "problem": "A farmer collects a eggs each day. After b days she has c eggs. Write and solve an equation for a.",
+          "constraints": {
+            "a": [
+              2,
+              12
+            ],
+            "b": [
+              2,
+              10
+            ],
+            "c": [
+              10,
+              80
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "decimals",
+      "difficulty": "standard",
+      "constraints": {
+        "allowed_operations": [
+          "decimal_addition",
+          "decimal_subtraction",
+          "decimal_multiplication",
+          "decimal_division",
+          "decimal_comparison"
+        ],
+        "forbidden_operations": [
+          "percent_problems",
+          "algebraic_equations",
+          "scientific_notation"
+        ]
+      },
+      "templates": [
+        {
+          "id": "dec_001",
+          "problem": "a + b",
+          "constraints": {
+            "a": [
+              1,
+              99
+            ],
+            "b": [
+              1,
+              99
+            ]
+          }
+        },
+        {
+          "id": "dec_002",
+          "problem": "a - b",
+          "constraints": {
+            "a": [
+              1,
+              99
+            ],
+            "b": [
+              1,
+              99
+            ]
+          }
+        },
+        {
+          "id": "dec_003",
+          "problem": "0.a × 0.b",
+          "constraints": {
+            "a": [
+              2,
+              15
+            ],
+            "b": [
+              2,
+              15
+            ]
+          }
+        },
+        {
+          "id": "dec_004",
+          "problem": "0.a ÷ 0.b",
+          "constraints": {
+            "a": [
+              10,
+              200
+            ],
+            "b": [
+              2,
+              12
+            ]
+          }
+        },
+        {
+          "id": "dec_005",
+          "problem": "Which decimal is greater: 0.a or 0.b?",
+          "constraints": {
+            "a": [
+              1,
+              99
+            ],
+            "b": [
+              1,
+              99
+            ]
+          }
+        },
+        {
+          "id": "dec_006",
+          "problem": "Which decimal is less: 0.a or 0.b?",
+          "constraints": {
+            "a": [
+              1,
+              99
+            ],
+            "b": [
+              1,
+              99
+            ]
+          }
+        },
+        {
+          "id": "dec_007",
+          "problem": "Arrange 0.a, 0.b, and 0.c from least to greatest.",
+          "constraints": {
+            "a": [
+              1,
+              99
+            ],
+            "b": [
+              1,
+              99
+            ],
+            "c": [
+              1,
+              99
+            ]
+          }
+        },
+        {
+          "id": "dec_008",
+          "problem": "You buy an item for $a and pay with $b. How much change do you receive?",
+          "constraints": {
+            "a": [
+              1,
+              50
+            ],
+            "b": [
+              10,
+              100
+            ]
+          }
+        },
+        {
+          "id": "dec_009",
+          "problem": "A rope is a meters long. You use b meters. How much rope remains?",
+          "constraints": {
+            "a": [
+              1,
+              99
+            ],
+            "b": [
+              1,
+              99
+            ]
+          }
+        },
+        {
+          "id": "dec_010",
+          "problem": "Three lengths measure a, b, and c meters. What is their total length?",
+          "constraints": {
+            "a": [
+              1,
+              50
+            ],
+            "b": [
+              1,
+              50
+            ],
+            "c": [
+              1,
+              50
+            ]
+          }
+        },
+        {
+          "id": "dec_011",
+          "problem": "A bottle holds a liters. You pour out b liters. How much is left?",
+          "constraints": {
+            "a": [
+              1,
+              99
+            ],
+            "b": [
+              1,
+              99
+            ]
+          }
+        },
+        {
+          "id": "dec_012",
+          "problem": "Each notebook costs $a. What is the cost of b notebooks?",
+          "constraints": {
+            "a": [
+              1,
+              15
+            ],
+            "b": [
+              2,
+              10
+            ]
+          }
+        },
+        {
+          "id": "dec_013",
+          "problem": "Split $a equally among b friends. How much does each person get?",
+          "constraints": {
+            "a": [
+              10,
+              100
+            ],
+            "b": [
+              2,
+              8
+            ]
+          }
+        },
+        {
+          "id": "dec_014",
+          "problem": "A runner completes a a-kilometer lap in b minutes. How many kilometers in 1 minute?",
+          "constraints": {
+            "a": [
+              2,
+              10
+            ],
+            "b": [
+              4,
+              20
+            ]
+          }
+        },
+        {
+          "id": "dec_015",
+          "problem": "Round a to the nearest tenth",
+          "constraints": {
+            "a": [
+              1,
+              99
+            ]
+          }
+        },
+        {
+          "id": "dec_016",
+          "problem": "On a number line, point P is at a and point Q is at b. Find the distance from P to Q.",
+          "constraints": {
+            "a": [
+              1,
+              99
+            ],
+            "b": [
+              1,
+              99
+            ]
+          }
+        },
+        {
+          "id": "dec_017",
+          "problem": "A recipe needs a cups of milk and c cups of water. How many cups of liquid in all?",
+          "constraints": {
+            "a": [
+              1,
+              5
+            ],
+            "c": [
+              1,
+              5
+            ]
+          }
+        },
+        {
+          "id": "dec_018",
+          "problem": "A fish weighs a pounds. A second fish weighs b pounds less. How much does the second fish weigh?",
+          "constraints": {
+            "a": [
+              1,
+              99
+            ],
+            "b": [
+              1,
+              99
+            ]
+          }
+        },
+        {
+          "id": "dec_019",
+          "problem": "A board a feet long is cut into b equal pieces. How long is each piece?",
+          "constraints": {
+            "a": [
+              6,
+              24
+            ],
+            "b": [
+              2,
+              6
+            ]
+          }
+        },
+        {
+          "id": "dec_020",
+          "problem": "The difference between a and b is what number?",
+          "constraints": {
+            "a": [
+              1,
+              99
+            ],
+            "b": [
+              1,
+              99
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "geometry",
+      "difficulty": "standard",
+      "constraints": {
+        "allowed_operations": [
+          "area",
+          "perimeter",
+          "volume"
+        ],
+        "forbidden_operations": [
+          "pythagorean_theorem",
+          "geometry_proofs",
+          "transformations",
+          "circle_area"
+        ]
+      },
+      "templates": [
+        {
+          "id": "geo_001",
+          "problem": "Find the area of a rectangle with length a and width b.",
+          "constraints": {
+            "a": [
+              2,
+              20
+            ],
+            "b": [
+              2,
+              20
+            ],
+            "c": [
+              2,
+              15
+            ]
+          }
+        },
+        {
+          "id": "geo_002",
+          "problem": "Find the perimeter of a rectangle with length a and width b.",
+          "constraints": {
+            "a": [
+              2,
+              20
+            ],
+            "b": [
+              2,
+              20
+            ],
+            "c": [
+              2,
+              15
+            ]
+          }
+        },
+        {
+          "id": "geo_003",
+          "problem": "Find the area of a square with side length a.",
+          "constraints": {
+            "a": [
+              2,
+              25
+            ]
+          }
+        },
+        {
+          "id": "geo_004",
+          "problem": "Find the perimeter of a square with side length a.",
+          "constraints": {
+            "a": [
+              2,
+              25
+            ]
+          }
+        },
+        {
+          "id": "geo_005",
+          "problem": "Find the volume of a rectangular prism with length a, width b, and height c.",
+          "constraints": {
+            "a": [
+              2,
+              20
+            ],
+            "b": [
+              2,
+              20
+            ],
+            "c": [
+              2,
+              15
+            ]
+          }
+        },
+        {
+          "id": "geo_006",
+          "problem": "A room is a feet long, b feet wide, and c feet high. What is its volume?",
+          "constraints": {
+            "a": [
+              2,
+              20
+            ],
+            "b": [
+              2,
+              20
+            ],
+            "c": [
+              2,
+              15
+            ]
+          }
+        },
+        {
+          "id": "geo_007",
+          "problem": "A triangle has base a and height b. Find its area.",
+          "constraints": {
+            "a": [
+              2,
+              20
+            ],
+            "b": [
+              2,
+              20
+            ],
+            "c": [
+              2,
+              15
+            ]
+          }
+        },
+        {
+          "id": "geo_008",
+          "problem": "A garden bed is a meters by b meters. How many meters of fencing are needed to go around it?",
+          "constraints": {
+            "a": [
+              2,
+              20
+            ],
+            "b": [
+              2,
+              20
+            ],
+            "c": [
+              2,
+              15
+            ]
+          }
+        },
+        {
+          "id": "geo_009",
+          "problem": "A poster is a inches tall and b inches wide. What is its area?",
+          "constraints": {
+            "a": [
+              2,
+              20
+            ],
+            "b": [
+              2,
+              20
+            ],
+            "c": [
+              2,
+              15
+            ]
+          }
+        },
+        {
+          "id": "geo_010",
+          "problem": "A box is a cm by b cm by c cm. What is the volume inside?",
+          "constraints": {
+            "a": [
+              2,
+              20
+            ],
+            "b": [
+              2,
+              20
+            ],
+            "c": [
+              2,
+              15
+            ]
+          }
+        },
+        {
+          "id": "geo_011",
+          "problem": "A rectangular pool is a meters long and b meters wide. Find the area of the pool surface.",
+          "constraints": {
+            "a": [
+              2,
+              20
+            ],
+            "b": [
+              2,
+              20
+            ],
+            "c": [
+              2,
+              15
+            ]
+          }
+        },
+        {
+          "id": "geo_012",
+          "problem": "Each side of a regular pentagon is a units. What is the perimeter?",
+          "constraints": {
+            "a": [
+              3,
+              15
+            ]
+          }
+        },
+        {
+          "id": "geo_013",
+          "problem": "A parallelogram has base a and height b. Find its area.",
+          "constraints": {
+            "a": [
+              2,
+              20
+            ],
+            "b": [
+              2,
+              20
+            ],
+            "c": [
+              2,
+              15
+            ]
+          }
+        },
+        {
+          "id": "geo_014",
+          "problem": "An L-shaped room has two rectangular parts: a by b and c by d. Find the total floor area.",
+          "constraints": {
+            "a": [
+              3,
+              12
+            ],
+            "b": [
+              3,
+              12
+            ],
+            "c": [
+              2,
+              8
+            ],
+            "d": [
+              2,
+              8
+            ]
+          }
+        },
+        {
+          "id": "geo_015",
+          "problem": "A cube has edge length a. Find its volume.",
+          "constraints": {
+            "a": [
+              2,
+              12
+            ]
+          }
+        },
+        {
+          "id": "geo_016",
+          "problem": "A cube has edge length a. Find the total length of all its edges.",
+          "constraints": {
+            "a": [
+              2,
+              12
+            ]
+          }
+        },
+        {
+          "id": "geo_017",
+          "problem": "A rectangular field is a yards long and b yards wide. How far is it to walk all the way around the field?",
+          "constraints": {
+            "a": [
+              2,
+              20
+            ],
+            "b": [
+              2,
+              20
+            ],
+            "c": [
+              2,
+              15
+            ]
+          }
+        },
+        {
+          "id": "geo_018",
+          "problem": "A triangular sail has base a feet and height b feet. What is the area of the sail?",
+          "constraints": {
+            "a": [
+              2,
+              20
+            ],
+            "b": [
+              2,
+              20
+            ],
+            "c": [
+              2,
+              15
+            ]
+          }
+        },
+        {
+          "id": "geo_019",
+          "problem": "A storage crate measures a m × b m × c m. How many cubic meters does it hold?",
+          "constraints": {
+            "a": [
+              2,
+              20
+            ],
+            "b": [
+              2,
+              20
+            ],
+            "c": [
+              2,
+              15
+            ]
+          }
+        },
+        {
+          "id": "geo_020",
+          "problem": "A picture frame border goes around a rectangle a inches by b inches. Find the perimeter of the border.",
+          "constraints": {
+            "a": [
+              2,
+              20
+            ],
+            "b": [
+              2,
+              20
+            ],
+            "c": [
+              2,
+              15
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "coordinate_plane",
+      "difficulty": "standard",
+      "constraints": {
+        "allowed_operations": [
+          "plot_points",
+          "identify_quadrants",
+          "coordinate_distance",
+          "coordinate_reading"
+        ],
+        "forbidden_operations": [
+          "slope",
+          "linear_functions",
+          "graphing_equations",
+          "transformations"
+        ]
+      },
+      "templates": [
+        {
+          "id": "cp_001",
+          "problem": "Plot the point (a, b) on the coordinate plane.",
+          "constraints": {
+            "a": [
+              -10,
+              10
+            ],
+            "b": [
+              -10,
+              10
+            ],
+            "c": [
+              -10,
+              10
+            ],
+            "d": [
+              -10,
+              10
+            ]
+          }
+        },
+        {
+          "id": "cp_002",
+          "problem": "In which quadrant is the point (a, b)?",
+          "constraints": {
+            "a": [
+              -10,
+              10
+            ],
+            "b": [
+              -10,
+              10
+            ],
+            "c": [
+              -10,
+              10
+            ],
+            "d": [
+              -10,
+              10
+            ]
+          }
+        },
+        {
+          "id": "cp_003",
+          "problem": "What is the distance between (a, b) and (c, b) on a coordinate plane?",
+          "constraints": {
+            "a": [
+              -10,
+              10
+            ],
+            "b": [
+              -10,
+              10
+            ],
+            "c": [
+              -10,
+              10
+            ],
+            "d": [
+              -10,
+              10
+            ]
+          }
+        },
+        {
+          "id": "cp_004",
+          "problem": "What is the distance between (a, b) and (a, c) on a coordinate plane?",
+          "constraints": {
+            "a": [
+              -10,
+              10
+            ],
+            "b": [
+              -10,
+              10
+            ],
+            "c": [
+              -10,
+              10
+            ],
+            "d": [
+              -10,
+              10
+            ]
+          }
+        },
+        {
+          "id": "cp_005",
+          "problem": "What is the x-coordinate of the point (a, b)?",
+          "constraints": {
+            "a": [
+              -10,
+              10
+            ],
+            "b": [
+              -10,
+              10
+            ],
+            "c": [
+              -10,
+              10
+            ],
+            "d": [
+              -10,
+              10
+            ]
+          }
+        },
+        {
+          "id": "cp_006",
+          "problem": "What is the y-coordinate of the point (a, b)?",
+          "constraints": {
+            "a": [
+              -10,
+              10
+            ],
+            "b": [
+              -10,
+              10
+            ],
+            "c": [
+              -10,
+              10
+            ],
+            "d": [
+              -10,
+              10
+            ]
+          }
+        },
+        {
+          "id": "cp_007",
+          "problem": "A point starts at (a, b) and moves c units to the right. What are its new coordinates?",
+          "constraints": {
+            "a": [
+              -10,
+              10
+            ],
+            "b": [
+              -10,
+              10
+            ],
+            "c": [
+              -10,
+              10
+            ],
+            "d": [
+              -10,
+              10
+            ]
+          }
+        },
+        {
+          "id": "cp_008",
+          "problem": "A point starts at (a, b) and moves c units up. What are its new coordinates?",
+          "constraints": {
+            "a": [
+              -10,
+              10
+            ],
+            "b": [
+              -10,
+              10
+            ],
+            "c": [
+              -10,
+              10
+            ],
+            "d": [
+              -10,
+              10
+            ]
+          }
+        },
+        {
+          "id": "cp_009",
+          "problem": "A point starts at (a, b) and moves c units to the left. What are its new coordinates?",
+          "constraints": {
+            "a": [
+              -10,
+              10
+            ],
+            "b": [
+              -10,
+              10
+            ],
+            "c": [
+              -10,
+              10
+            ],
+            "d": [
+              -10,
+              10
+            ]
+          }
+        },
+        {
+          "id": "cp_010",
+          "problem": "A point starts at (a, b) and moves c units down. What are its new coordinates?",
+          "constraints": {
+            "a": [
+              -10,
+              10
+            ],
+            "b": [
+              -10,
+              10
+            ],
+            "c": [
+              -10,
+              10
+            ],
+            "d": [
+              -10,
+              10
+            ]
+          }
+        },
+        {
+          "id": "cp_011",
+          "problem": "Which point is farther from the origin: (a, b) or (c, d)?",
+          "constraints": {
+            "a": [
+              -10,
+              10
+            ],
+            "b": [
+              -10,
+              10
+            ],
+            "c": [
+              -10,
+              10
+            ],
+            "d": [
+              -10,
+              10
+            ]
+          }
+        },
+        {
+          "id": "cp_012",
+          "problem": "Are the points (a, b) and (c, d) in the same quadrant?",
+          "constraints": {
+            "a": [
+              -10,
+              10
+            ],
+            "b": [
+              -10,
+              10
+            ],
+            "c": [
+              -10,
+              10
+            ],
+            "d": [
+              -10,
+              10
+            ]
+          }
+        },
+        {
+          "id": "cp_013",
+          "problem": "A treasure is at (a, b). You are at (c, d) on the same horizontal line. How many units away is the treasure horizontally?",
+          "constraints": {
+            "a": [
+              -10,
+              10
+            ],
+            "b": [
+              -10,
+              10
+            ],
+            "c": [
+              -10,
+              10
+            ],
+            "d": [
+              -10,
+              10
+            ]
+          }
+        },
+        {
+          "id": "cp_014",
+          "problem": "Two cities on a map grid are at (a, b) and (a, c). How far apart are they vertically?",
+          "constraints": {
+            "a": [
+              -10,
+              10
+            ],
+            "b": [
+              -10,
+              10
+            ],
+            "c": [
+              -10,
+              10
+            ],
+            "d": [
+              -10,
+              10
+            ]
+          }
+        },
+        {
+          "id": "cp_015",
+          "problem": "Name the coordinates of a point that is a units right and b units up from the origin.",
+          "constraints": {
+            "a": [
+              -10,
+              10
+            ],
+            "b": [
+              -10,
+              10
+            ],
+            "c": [
+              -10,
+              10
+            ],
+            "d": [
+              -10,
+              10
+            ]
+          }
+        },
+        {
+          "id": "cp_016",
+          "problem": "A line segment connects (a, b) and (c, b). How long is the segment?",
+          "constraints": {
+            "a": [
+              -10,
+              10
+            ],
+            "b": [
+              -10,
+              10
+            ],
+            "c": [
+              -10,
+              10
+            ],
+            "d": [
+              -10,
+              10
+            ]
+          }
+        },
+        {
+          "id": "cp_017",
+          "problem": "A line segment connects (a, b) and (a, c). How long is the segment?",
+          "constraints": {
+            "a": [
+              -10,
+              10
+            ],
+            "b": [
+              -10,
+              10
+            ],
+            "c": [
+              -10,
+              10
+            ],
+            "d": [
+              -10,
+              10
+            ]
+          }
+        },
+        {
+          "id": "cp_018",
+          "problem": "Which axis does the point (a, 0) lie on?",
+          "constraints": {
+            "a": [
+              -10,
+              10
+            ]
+          }
+        },
+        {
+          "id": "cp_019",
+          "problem": "Which axis does the point (0, b) lie on?",
+          "constraints": {
+            "b": [
+              -10,
+              10
+            ]
+          }
+        },
+        {
+          "id": "cp_020",
+          "problem": "A bug is at (a, b) and crawls to (c, d) along a straight horizontal path first. How many units does it crawl horizontally?",
+          "constraints": {
+            "a": [
+              -10,
+              10
+            ],
+            "b": [
+              -10,
+              10
+            ],
+            "c": [
+              -10,
+              10
+            ],
+            "d": [
+              -10,
+              10
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "order_of_operations",
+      "difficulty": "standard",
+      "constraints": {
+        "allowed_operations": [
+          "order_of_operations",
+          "parentheses",
+          "multiplication_before_addition"
+        ],
+        "forbidden_operations": [
+          "exponents",
+          "variables",
+          "negative_exponents"
+        ]
+      },
+      "templates": [
+        {
+          "id": "ooo_001",
+          "problem": "a + b × c - d",
+          "constraints": {
+            "a": [
+              -20,
+              20
+            ],
+            "b": [
+              -12,
+              12
+            ],
+            "c": [
+              -12,
+              12
+            ],
+            "d": [
+              -20,
+              20
+            ]
+          }
+        },
+        {
+          "id": "ooo_002",
+          "problem": "(a + b) × c - d",
+          "constraints": {
+            "a": [
+              -15,
+              15
+            ],
+            "b": [
+              -15,
+              15
+            ],
+            "c": [
+              2,
+              10
+            ],
+            "d": [
+              -30,
+              30
+            ]
+          }
+        },
+        {
+          "id": "ooo_003",
+          "problem": "a × b + c ÷ d",
+          "constraints": {
+            "a": [
+              -10,
+              10
+            ],
+            "b": [
+              -10,
+              10
+            ],
+            "c": [
+              -50,
+              50
+            ],
+            "d": [
+              2,
+              10
+            ]
+          }
+        },
+        {
+          "id": "ooo_004",
+          "problem": "a + (b - c) × d",
+          "constraints": {
+            "a": [
+              -20,
+              20
+            ],
+            "b": [
+              -15,
+              15
+            ],
+            "c": [
+              -15,
+              15
+            ],
+            "d": [
+              2,
+              8
+            ]
+          }
+        },
+        {
+          "id": "ooo_005",
+          "problem": "(a - b) ÷ c + d",
+          "constraints": {
+            "a": [
+              -30,
+              30
+            ],
+            "b": [
+              -30,
+              30
+            ],
+            "c": [
+              2,
+              6
+            ],
+            "d": [
+              -20,
+              20
+            ]
+          }
+        },
+        {
+          "id": "ooo_006",
+          "problem": "a - b × c + d",
+          "constraints": {
+            "a": [
+              -20,
+              20
+            ],
+            "b": [
+              -10,
+              10
+            ],
+            "c": [
+              -10,
+              10
+            ],
+            "d": [
+              -20,
+              20
+            ]
+          }
+        },
+        {
+          "id": "ooo_007",
+          "problem": "(a + b) ÷ c × d",
+          "constraints": {
+            "a": [
+              -20,
+              20
+            ],
+            "b": [
+              -20,
+              20
+            ],
+            "c": [
+              2,
+              6
+            ],
+            "d": [
+              2,
+              6
+            ]
+          }
+        },
+        {
+          "id": "ooo_008",
+          "problem": "a × (b + c) - d",
+          "constraints": {
+            "a": [
+              2,
+              10
+            ],
+            "b": [
+              -12,
+              12
+            ],
+            "c": [
+              -12,
+              12
+            ],
+            "d": [
+              -30,
+              30
+            ]
+          }
+        },
+        {
+          "id": "ooo_009",
+          "problem": "a + b ÷ c × d",
+          "constraints": {
+            "a": [
+              -20,
+              20
+            ],
+            "b": [
+              -40,
+              40
+            ],
+            "c": [
+              2,
+              8
+            ],
+            "d": [
+              2,
+              8
+            ]
+          }
+        },
+        {
+          "id": "ooo_010",
+          "problem": "(a × b) - (c + d)",
+          "constraints": {
+            "a": [
+              -8,
+              8
+            ],
+            "b": [
+              -8,
+              8
+            ],
+            "c": [
+              -15,
+              15
+            ],
+            "d": [
+              -15,
+              15
+            ]
+          }
+        },
+        {
+          "id": "ooo_011",
+          "problem": "a - (b + c) × d",
+          "constraints": {
+            "a": [
+              -30,
+              30
+            ],
+            "b": [
+              -10,
+              10
+            ],
+            "c": [
+              -10,
+              10
+            ],
+            "d": [
+              2,
+              6
+            ]
+          }
+        },
+        {
+          "id": "ooo_012",
+          "problem": "(a + b + c) × d",
+          "constraints": {
+            "a": [
+              -10,
+              10
+            ],
+            "b": [
+              -10,
+              10
+            ],
+            "c": [
+              -10,
+              10
+            ],
+            "d": [
+              2,
+              5
+            ]
+          }
+        },
+        {
+          "id": "ooo_013",
+          "problem": "a × b - c ÷ d",
+          "constraints": {
+            "a": [
+              -10,
+              10
+            ],
+            "b": [
+              -10,
+              10
+            ],
+            "c": [
+              -40,
+              40
+            ],
+            "d": [
+              2,
+              8
+            ]
+          }
+        },
+        {
+          "id": "ooo_014",
+          "problem": "a + b - c × d",
+          "constraints": {
+            "a": [
+              -20,
+              20
+            ],
+            "b": [
+              -20,
+              20
+            ],
+            "c": [
+              -8,
+              8
+            ],
+            "d": [
+              -8,
+              8
+            ]
+          }
+        },
+        {
+          "id": "ooo_015",
+          "problem": "(a - b) × (c + d)",
+          "constraints": {
+            "a": [
+              -12,
+              12
+            ],
+            "b": [
+              -12,
+              12
+            ],
+            "c": [
+              -10,
+              10
+            ],
+            "d": [
+              -10,
+              10
+            ]
+          }
+        },
+        {
+          "id": "ooo_016",
+          "problem": "a ÷ b + c × d",
+          "constraints": {
+            "a": [
+              -50,
+              50
+            ],
+            "b": [
+              2,
+              10
+            ],
+            "c": [
+              -8,
+              8
+            ],
+            "d": [
+              -8,
+              8
+            ]
+          }
+        },
+        {
+          "id": "ooo_017",
+          "problem": "a + (b × c - d)",
+          "constraints": {
+            "a": [
+              -20,
+              20
+            ],
+            "b": [
+              -6,
+              6
+            ],
+            "c": [
+              -6,
+              6
+            ],
+            "d": [
+              -20,
+              20
+            ]
+          }
+        },
+        {
+          "id": "ooo_018",
+          "problem": "(a + b) - c ÷ d",
+          "constraints": {
+            "a": [
+              -20,
+              20
+            ],
+            "b": [
+              -20,
+              20
+            ],
+            "c": [
+              -30,
+              30
+            ],
+            "d": [
+              2,
+              6
+            ]
+          }
+        },
+        {
+          "id": "ooo_019",
+          "problem": "a × b ÷ c + d",
+          "constraints": {
+            "a": [
+              -12,
+              12
+            ],
+            "b": [
+              -12,
+              12
+            ],
+            "c": [
+              2,
+              6
+            ],
+            "d": [
+              -20,
+              20
+            ]
+          }
+        },
+        {
+          "id": "ooo_020",
+          "problem": "a - b + c × d",
+          "constraints": {
+            "a": [
+              -20,
+              20
+            ],
+            "b": [
+              -20,
+              20
+            ],
+            "c": [
+              -8,
+              8
+            ],
+            "d": [
+              -8,
+              8
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "unit_rates",
+      "difficulty": "standard",
+      "constraints": {
+        "allowed_operations": [
+          "unit_rate",
+          "rate_calculation"
+        ],
+        "forbidden_operations": [
+          "percent_applications",
+          "multi_step_algebra_equations",
+          "cross_multiplication_complex"
+        ]
+      },
+      "templates": [
+        {
+          "id": "ur_001",
+          "problem": "If a pencils cost $b, what is the cost of 1 pencil?",
+          "constraints": {
+            "a": [
+              2,
+              12
+            ],
+            "b": [
+              4,
+              48
+            ]
+          }
+        },
+        {
+          "id": "ur_002",
+          "problem": "A car travels a miles in b hours. What is the unit rate in miles per hour?",
+          "constraints": {
+            "a": [
+              60,
+              300
+            ],
+            "b": [
+              2,
+              6
+            ]
+          }
+        },
+        {
+          "id": "ur_003",
+          "problem": "A printer makes a pages in b minutes. How many pages per minute?",
+          "constraints": {
+            "a": [
+              20,
+              120
+            ],
+            "b": [
+              2,
+              10
+            ]
+          }
+        },
+        {
+          "id": "ur_004",
+          "problem": "You read a pages in b minutes. What is your reading rate in pages per minute?",
+          "constraints": {
+            "a": [
+              10,
+              60
+            ],
+            "b": [
+              5,
+              20
+            ]
+          }
+        },
+        {
+          "id": "ur_005",
+          "problem": "A hose fills a bucket with a liters in b minutes. How many liters per minute?",
+          "constraints": {
+            "a": [
+              6,
+              30
+            ],
+            "b": [
+              2,
+              6
+            ]
+          }
+        },
+        {
+          "id": "ur_006",
+          "problem": "A baker uses a cups of flour for b batches of cookies. How many cups per batch?",
+          "constraints": {
+            "a": [
+              4,
+              24
+            ],
+            "b": [
+              2,
+              8
+            ]
+          }
+        },
+        {
+          "id": "ur_007",
+          "problem": "A cyclist rides a kilometers in b hours. Find the speed in km per hour.",
+          "constraints": {
+            "a": [
+              12,
+              72
+            ],
+            "b": [
+              2,
+              6
+            ]
+          }
+        },
+        {
+          "id": "ur_008",
+          "problem": "If a apples cost $b, what is the price per apple?",
+          "constraints": {
+            "a": [
+              3,
+              12
+            ],
+            "b": [
+              3,
+              36
+            ]
+          }
+        },
+        {
+          "id": "ur_009",
+          "problem": "A machine produces a items in b hours. How many items per hour?",
+          "constraints": {
+            "a": [
+              40,
+              200
+            ],
+            "b": [
+              2,
+              8
+            ]
+          }
+        },
+        {
+          "id": "ur_010",
+          "problem": "A snail travels a centimeters in b minutes. What is its speed in cm per minute?",
+          "constraints": {
+            "a": [
+              6,
+              30
+            ],
+            "b": [
+              2,
+              6
+            ]
+          }
+        },
+        {
+          "id": "ur_011",
+          "problem": "You earn $a for b hours of work. What is the hourly wage?",
+          "constraints": {
+            "a": [
+              24,
+              120
+            ],
+            "b": [
+              2,
+              8
+            ]
+          }
+        },
+        {
+          "id": "ur_012",
+          "problem": "A recipe makes a servings using b cups of rice. How many cups per serving?",
+          "constraints": {
+            "a": [
+              4,
+              16
+            ],
+            "b": [
+              2,
+              8
+            ]
+          }
+        },
+        {
+          "id": "ur_013",
+          "problem": "A train goes a miles in b hours. What is the unit rate?",
+          "constraints": {
+            "a": [
+              100,
+              400
+            ],
+            "b": [
+              2,
+              5
+            ]
+          }
+        },
+        {
+          "id": "ur_014",
+          "problem": "If b gallons of gas cost $a, what is the cost per gallon?",
+          "constraints": {
+            "a": [
+              10,
+              50
+            ],
+            "b": [
+              2,
+              10
+            ]
+          }
+        },
+        {
+          "id": "ur_015",
+          "problem": "A student answers a questions in b minutes. What is the rate in questions per minute?",
+          "constraints": {
+            "a": [
+              12,
+              48
+            ],
+            "b": [
+              3,
+              12
+            ]
+          }
+        },
+        {
+          "id": "ur_016",
+          "problem": "A farm collects a eggs from b chickens in one day. How many eggs per chicken?",
+          "constraints": {
+            "a": [
+              12,
+              48
+            ],
+            "b": [
+              3,
+              12
+            ]
+          }
+        },
+        {
+          "id": "ur_017",
+          "problem": "A pipe drains a liters in b seconds. What is the drainage rate in liters per second?",
+          "constraints": {
+            "a": [
+              10,
+              50
+            ],
+            "b": [
+              2,
+              10
+            ]
+          }
+        },
+        {
+          "id": "ur_018",
+          "problem": "You buy a ounces of nuts for $b. What is the cost per ounce?",
+          "constraints": {
+            "a": [
+              8,
+              32
+            ],
+            "b": [
+              4,
+              24
+            ]
+          }
+        },
+        {
+          "id": "ur_019",
+          "problem": "A sprinter runs a meters in b seconds. What is the speed in meters per second?",
+          "constraints": {
+            "a": [
+              20,
+              100
+            ],
+            "b": [
+              4,
+              10
+            ]
+          }
+        },
+        {
+          "id": "ur_020",
+          "problem": "A store sells a notebooks for $b. What is the unit price of one notebook?",
+          "constraints": {
+            "a": [
+              2,
+              10
+            ],
+            "b": [
+              6,
+              40
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "mixed_practice",
+      "difficulty": "standard",
+      "constraints": {
+        "allowed_operations": [
+          "integer_operations_mixed_signs",
+          "fraction_operations",
+          "decimal_operations",
+          "basic_proportions",
+          "unit_rate",
+          "geometry_basics",
+          "coordinate_plane",
+          "order_of_operations",
+          "one_step_equations",
+          "basic_two_step_equations"
+        ],
+        "forbidden_operations": [
+          "systems_of_equations",
+          "inequalities",
+          "distribution",
+          "slope",
+          "percent_applications",
+          "pythagorean_theorem"
+        ]
+      },
+      "templates": [
+        {
+          "id": "mp_001",
+          "problem": "Evaluate: a + b × c - d",
+          "constraints": {
+            "a": [
+              -15,
+              15
+            ],
+            "b": [
+              -8,
+              8
+            ],
+            "c": [
+              -8,
+              8
+            ],
+            "d": [
+              -15,
+              15
+            ]
+          }
+        },
+        {
+          "id": "mp_002",
+          "problem": "Solve: x + a = b",
+          "constraints": {
+            "a": [
+              -50,
+              50
+            ],
+            "b": [
+              -50,
+              50
+            ]
+          }
+        },
+        {
+          "id": "mp_003",
+          "problem": "Add the fractions a/b and c/d. Simplify if possible.",
+          "constraints": {
+            "a": [
+              1,
+              9
+            ],
+            "b": [
+              2,
+              12
+            ],
+            "c": [
+              1,
+              9
+            ],
+            "d": [
+              2,
+              12
+            ]
+          }
+        },
+        {
+          "id": "mp_004",
+          "problem": "Which is greater: -a or -b?",
+          "constraints": {
+            "a": [
+              1,
+              50
+            ],
+            "b": [
+              1,
+              50
+            ]
+          }
+        },
+        {
+          "id": "mp_005",
+          "problem": "A rectangular poster measures a cm by b cm. What is its area in square centimeters?",
+          "constraints": {
+            "a": [
+              2,
+              20
+            ],
+            "b": [
+              2,
+              20
+            ],
+            "c": [
+              2,
+              15
+            ]
+          }
+        },
+        {
+          "id": "mp_006",
+          "problem": "What is the distance between (a, b) and (c, b)?",
+          "constraints": {
+            "a": [
+              -10,
+              10
+            ],
+            "b": [
+              -10,
+              10
+            ],
+            "c": [
+              -10,
+              10
+            ],
+            "d": [
+              -10,
+              10
+            ]
+          }
+        },
+        {
+          "id": "mp_007",
+          "problem": "If a items cost $b, find the unit price.",
+          "constraints": {
+            "a": [
+              2,
+              10
+            ],
+            "b": [
+              6,
+              40
+            ]
+          }
+        },
+        {
+          "id": "mp_008",
+          "problem": "Compute: a - b + c",
+          "constraints": {
+            "a": [
+              -100,
+              100
+            ],
+            "b": [
+              -100,
+              100
+            ],
+            "c": [
+              -100,
+              100
+            ]
+          }
+        },
+        {
+          "id": "mp_009",
+          "problem": "Solve: x/a = b/c",
+          "constraints": {
+            "a": [
+              2,
+              6
+            ],
+            "b": [
+              3,
+              12
+            ],
+            "c": [
+              4,
+              18
+            ]
+          }
+        },
+        {
+          "id": "mp_010",
+          "problem": "Find the volume of a rectangular prism with length a, width b, height c.",
+          "constraints": {
+            "a": [
+              2,
+              20
+            ],
+            "b": [
+              2,
+              20
+            ],
+            "c": [
+              2,
+              15
+            ]
+          }
+        },
+        {
+          "id": "mp_011",
+          "problem": "Evaluate |a| + b when a and b are integers.",
+          "constraints": {
+            "a": [
+              -100,
+              100
+            ],
+            "b": [
+              -100,
+              100
+            ]
+          }
+        },
+        {
+          "id": "mp_012",
+          "problem": "A tank was a/b full before b/b was used. What fraction remains?",
+          "constraints": {
+            "a": [
+              1,
+              9
+            ],
+            "b": [
+              2,
+              12
+            ],
+            "c": [
+              1,
+              9
+            ]
+          }
+        },
+        {
+          "id": "mp_013",
+          "problem": "Split $a equally among b people.",
+          "constraints": {
+            "a": [
+              12,
+              96
+            ],
+            "b": [
+              2,
+              8
+            ]
+          }
+        },
+        {
+          "id": "mp_014",
+          "problem": "In which quadrant is (a, b)?",
+          "constraints": {
+            "a": [
+              -10,
+              10
+            ],
+            "b": [
+              -10,
+              10
+            ],
+            "c": [
+              -10,
+              10
+            ],
+            "d": [
+              -10,
+              10
+            ]
+          }
+        },
+        {
+          "id": "mp_015",
+          "problem": "Solve for x: a times x plus b equals c.",
+          "constraints": {
+            "a": [
+              2,
+              7
+            ],
+            "b": [
+              -20,
+              20
+            ],
+            "c": [
+              -30,
+              40
+            ]
+          }
+        },
+        {
+          "id": "mp_016",
+          "problem": "A car travels a miles in b hours. Find miles per hour.",
+          "constraints": {
+            "a": [
+              90,
+              240
+            ],
+            "b": [
+              2,
+              5
+            ]
+          }
+        },
+        {
+          "id": "mp_017",
+          "problem": "Find the perimeter of a square with side a.",
+          "constraints": {
+            "a": [
+              3,
+              20
+            ]
+          }
+        },
+        {
+          "id": "mp_018",
+          "problem": "Use order of operations to evaluate (a + b) × c, then subtract d.",
+          "constraints": {
+            "a": [
+              -10,
+              10
+            ],
+            "b": [
+              -10,
+              10
+            ],
+            "c": [
+              2,
+              6
+            ],
+            "d": [
+              -20,
+              20
+            ]
+          }
+        },
+        {
+          "id": "mp_019",
+          "problem": "Write the ratio a:b in simplest form.",
+          "constraints": {
+            "a": [
+              6,
+              30
+            ],
+            "b": [
+              9,
+              45
+            ]
+          }
+        },
+        {
+          "id": "mp_020",
+          "problem": "Calculate the area of a triangle with base a units and height b units.",
+          "constraints": {
+            "a": [
+              2,
+              20
+            ],
+            "b": [
+              2,
+              20
+            ],
+            "c": [
+              2,
+              15
+            ]
           }
         }
       ]
