@@ -1,7 +1,18 @@
 {
   "grade": "8th",
   "description": "Core 8th grade standards. Linear equations, systems, functions, Pythagorean theorem, transformations, scientific notation, and bivariate data.",
-  "ccss_primary": ["8.NS.A", "8.EE.A", "8.EE.B", "8.EE.C", "8.F.A", "8.F.B", "8.G.A", "8.G.B", "8.G.C", "8.SP.A"],
+  "ccss_primary": [
+    "8.NS.A",
+    "8.EE.A",
+    "8.EE.B",
+    "8.EE.C",
+    "8.F.A",
+    "8.F.B",
+    "8.G.A",
+    "8.G.B",
+    "8.G.C",
+    "8.SP.A"
+  ],
   "skills": [
     {
       "id": "linear_equations",
@@ -9,16 +20,225 @@
       "ccss": "8.EE.B.5, 8.EE.B.6, 8.F.A.3",
       "level": "solidify",
       "templates": [
-        { "id": "le_001", "type": "COMPUTE", "problem": "Find the slope of the line through ({a}, {b}) and ({c}, {d}).", "constraints": { "a": [-6, 6], "b": [-8, 8], "c": [-6, 6], "d": [-8, 8] }, "constraints_note": "a != c", "answer_formula": "(d-b)/(c-a)", "answer_type": "numeric" },
-        { "id": "le_002", "type": "COMPUTE", "problem": "Write the equation of a line with slope {m} and y-intercept {b} in slope-intercept form.", "constraints": { "m": [-5, 5], "b": [-10, 10] }, "constraints_note": "m != 0", "answer_type": "equation" },
-        { "id": "le_003", "type": "COMPUTE", "problem": "Find the y-intercept of y = {m}x + {b}.", "constraints": { "m": [-4, 4], "b": [-12, 12] }, "answer_type": "numeric" },
-        { "id": "le_004", "type": "IDENTIFY", "problem": "Is the line through ({a},{b}) and ({c},{d}) the same as y = {m}x + {k}? Show your work.", "constraints": { "a": [0, 4], "b": [-8, 8], "c": [2, 8], "d": [-8, 8], "m": [-3, 3], "k": [-8, 8] }, "answer_type": "boolean_plus_work" },
-        { "id": "le_005", "type": "APPLY", "context": "distance", "problem": "A car travels at {m} mph. Write an equation for distance d in terms of hours h. How far does it travel in {t} hours?", "constraints": { "m": [30, 70], "t": [2, 6] }, "answer_type": "equation_plus_numeric" },
-        { "id": "le_006", "type": "APPLY", "context": "money", "problem": "A plumber charges ${b} plus ${m} per hour. Write an equation for total cost C in terms of hours h. What is the cost for {t} hours?", "constraints": { "b": [50, 150], "m": [40, 90], "t": [2, 6] }, "answer_type": "equation_plus_numeric" },
-        { "id": "le_007", "type": "COMPARE", "problem": "Line A: y = {m1}x + {b1}. Line B: y = {m2}x + {b2}. Which line is steeper? Do they intersect?", "constraints": { "m1": [-4, 4], "b1": [-6, 6], "m2": [-4, 4], "b2": [-6, 6] }, "answer_type": "comparison_plus_explanation" },
-        { "id": "le_008", "type": "REVERSE", "problem": "A line has slope {m} and passes through ({a}, {b}). Find the y-intercept.", "constraints": { "m": [-4, 4], "a": [1, 6], "b": [-10, 10] }, "answer_formula": "b - m*a", "answer_type": "numeric" },
-        { "id": "le_009", "type": "ERROR_ANALYSIS", "problem": "A student finds the slope through ({a},{b}) and ({c},{d}) as {wrong}. What did they do wrong?", "constraints": { "a": [0, 4], "b": [0, 8], "c": [2, 8], "d": [4, 16] }, "generation_note": "wrong = (c-a)/(d-b) (flipped rise and run)", "answer_type": "numeric_plus_explanation" },
-        { "id": "le_010", "type": "CONSTRUCT", "problem": "Write the equation of a line that passes through ({a}, {b}) and has a slope of {m}.", "constraints": { "a": [-4, 4], "b": [-8, 8], "m": [-3, 3] }, "answer_type": "equation" }
+        {
+          "id": "le_001",
+          "type": "COMPUTE",
+          "problem": "Find the slope of the line through ({a}, {b}) and ({c}, {d}).",
+          "constraints": {
+            "a": [
+              -6,
+              6
+            ],
+            "b": [
+              -8,
+              8
+            ],
+            "c": [
+              -6,
+              6
+            ],
+            "d": [
+              -8,
+              8
+            ]
+          },
+          "constraints_note": "a != c",
+          "answer_formula": "(d-b)/(c-a)",
+          "answer_type": "numeric"
+        },
+        {
+          "id": "le_002",
+          "type": "COMPUTE",
+          "problem": "Write the equation of a line with slope {m} and y-intercept {b} in slope-intercept form.",
+          "constraints": {
+            "m": [
+              -5,
+              5
+            ],
+            "b": [
+              -10,
+              10
+            ]
+          },
+          "constraints_note": "m != 0",
+          "answer_type": "equation"
+        },
+        {
+          "id": "le_003",
+          "type": "COMPUTE",
+          "problem": "Find the y-intercept of y = {m}x + {b}.",
+          "constraints": {
+            "m": [
+              -4,
+              4
+            ],
+            "b": [
+              -12,
+              12
+            ]
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "le_004",
+          "type": "IDENTIFY",
+          "problem": "Is the line through ({a},{b}) and ({c},{d}) the same as y = {m}x + {k}?",
+          "constraints": {
+            "a": [
+              0,
+              4
+            ],
+            "b": [
+              -8,
+              8
+            ],
+            "c": [
+              2,
+              8
+            ],
+            "d": [
+              -8,
+              8
+            ],
+            "m": [
+              -3,
+              3
+            ],
+            "k": [
+              -8,
+              8
+            ]
+          },
+          "answer_type": "boolean"
+        },
+        {
+          "id": "le_005",
+          "type": "APPLY",
+          "context": "distance",
+          "problem": "A car travels at {m} mph. Write an equation for distance d in terms of hours h. How far does it travel in {t} hours?",
+          "constraints": {
+            "m": [
+              30,
+              70
+            ],
+            "t": [
+              2,
+              6
+            ]
+          },
+          "answer_type": "equation_plus_numeric"
+        },
+        {
+          "id": "le_006",
+          "type": "APPLY",
+          "context": "money",
+          "problem": "A plumber charges ${b} plus ${m} per hour. Write an equation for total cost C in terms of hours h. What is the cost for {t} hours?",
+          "constraints": {
+            "b": [
+              50,
+              150
+            ],
+            "m": [
+              40,
+              90
+            ],
+            "t": [
+              2,
+              6
+            ]
+          },
+          "answer_type": "equation_plus_numeric"
+        },
+        {
+          "id": "le_007",
+          "type": "COMPARE",
+          "problem": "Line A: y = {m1}x + {b1}. Line B: y = {m2}x + {b2}. Which line is steeper? Do they intersect?",
+          "constraints": {
+            "m1": [
+              -4,
+              4
+            ],
+            "b1": [
+              -6,
+              6
+            ],
+            "m2": [
+              -4,
+              4
+            ],
+            "b2": [
+              -6,
+              6
+            ]
+          },
+          "answer_type": "comparison"
+        },
+        {
+          "id": "le_008",
+          "type": "REVERSE",
+          "problem": "A line has slope {m} and passes through ({a}, {b}). Find the y-intercept.",
+          "constraints": {
+            "m": [
+              -4,
+              4
+            ],
+            "a": [
+              1,
+              6
+            ],
+            "b": [
+              -10,
+              10
+            ]
+          },
+          "answer_formula": "b - m*a",
+          "answer_type": "numeric"
+        },
+        {
+          "id": "le_009",
+          "type": "ERROR_ANALYSIS",
+          "problem": "A student finds the slope through ({a},{b}) and ({c},{d}) as {wrong}. What did they do wrong?",
+          "constraints": {
+            "a": [
+              0,
+              4
+            ],
+            "b": [
+              0,
+              8
+            ],
+            "c": [
+              2,
+              8
+            ],
+            "d": [
+              4,
+              16
+            ]
+          },
+          "generation_note": "wrong = (c-a)/(d-b) (flipped rise and run)",
+          "answer_type": "numeric"
+        },
+        {
+          "id": "le_010",
+          "type": "CONSTRUCT",
+          "problem": "Write the equation of a line that passes through ({a}, {b}) and has a slope of {m}.",
+          "constraints": {
+            "a": [
+              -4,
+              4
+            ],
+            "b": [
+              -8,
+              8
+            ],
+            "m": [
+              -3,
+              3
+            ]
+          },
+          "answer_type": "equation"
+        }
       ]
     },
     {
@@ -27,14 +247,196 @@
       "ccss": "8.EE.C.8",
       "level": "solidify",
       "templates": [
-        { "id": "sys_001", "type": "COMPUTE", "problem": "Solve by substitution:\ny = {a}x + {b}\ny = {c}x + {d}", "constraints": { "a": [1, 4], "b": [-8, 8], "c": [1, 4], "d": [-8, 8] }, "constraints_note": "a != c", "answer_type": "coordinates" },
-        { "id": "sys_002", "type": "COMPUTE", "problem": "Solve by elimination:\n{a}x + {b}y = {c}\n{d}x + {e}y = {f}", "constraints": { "a": [1, 4], "b": [1, 4], "c": [5, 30], "d": [1, 4], "e": [1, 4], "f": [5, 30] }, "answer_type": "coordinates" },
-        { "id": "sys_003", "type": "IDENTIFY", "problem": "Without solving, do these lines intersect, are they parallel, or are they the same?\ny = {a}x + {b}\ny = {a}x + {c}", "constraints": { "a": [1, 5], "b": [-8, 8], "c": [-8, 8] }, "constraints_note": "b != c for parallel, or set b=c for same line", "answer_type": "label_plus_explanation" },
-        { "id": "sys_004", "type": "APPLY", "context": "tickets", "problem": "Adult tickets cost ${a} and child tickets cost ${b}. A total of {c} tickets were sold for ${d}. How many of each were sold?", "constraints": { "a": [8, 15], "b": [4, 8], "c": [20, 50], "d_note": "a*x + b*(c-x) for valid x" }, "answer_type": "two_numeric" },
-        { "id": "sys_005", "type": "APPLY", "context": "mixing", "problem": "Solution A is {a}% acid. Solution B is {b}% acid. You need {c} liters of {d}% acid. How many liters of each?", "constraints": { "a": [10, 30], "b": [40, 80], "c": [10, 20], "d": [20, 60] }, "answer_type": "two_numeric" },
-        { "id": "sys_006", "type": "REPRESENT", "problem": "Graph the system and identify the solution:\ny = {m1}x + {b1}\ny = {m2}x + {b2}", "constraints": { "m1": [-3, 3], "b1": [-6, 6], "m2": [-3, 3], "b2": [-6, 6] }, "constraints_note": "m1 != m2", "answer_type": "coordinates" },
-        { "id": "sys_007", "type": "ERROR_ANALYSIS", "problem": "A student solves the system y = {a}x + {b}, y = {c}x + {d} and gets ({wrong_x}, {wrong_y}). Check their answer. Is it correct?", "constraints": { "a": [1, 3], "b": [-6, 6], "c": [2, 5], "d": [-6, 6] }, "answer_type": "boolean_plus_work" },
-        { "id": "sys_008", "type": "CONSTRUCT", "problem": "Write a system of two equations that has the solution ({a}, {b}).", "constraints": { "a": [-4, 4], "b": [-4, 4] }, "answer_type": "open_ended" }
+        {
+          "id": "sys_001",
+          "type": "COMPUTE",
+          "problem": "Solve by substitution:\ny = {a}x + {b}\ny = {c}x + {d}",
+          "constraints": {
+            "a": [
+              1,
+              4
+            ],
+            "b": [
+              -8,
+              8
+            ],
+            "c": [
+              1,
+              4
+            ],
+            "d": [
+              -8,
+              8
+            ]
+          },
+          "constraints_note": "a != c",
+          "answer_type": "coordinates"
+        },
+        {
+          "id": "sys_002",
+          "type": "COMPUTE",
+          "problem": "Solve by elimination:\n{a}x + {b}y = {c}\n{d}x + {e}y = {f}",
+          "constraints": {
+            "a": [
+              1,
+              4
+            ],
+            "b": [
+              1,
+              4
+            ],
+            "c": [
+              5,
+              30
+            ],
+            "d": [
+              1,
+              4
+            ],
+            "e": [
+              1,
+              4
+            ],
+            "f": [
+              5,
+              30
+            ]
+          },
+          "answer_type": "coordinates"
+        },
+        {
+          "id": "sys_003",
+          "type": "IDENTIFY",
+          "problem": "Without solving, do these lines intersect, are they parallel, or are they the same?\ny = {a}x + {b}\ny = {a}x + {c}",
+          "constraints": {
+            "a": [
+              1,
+              5
+            ],
+            "b": [
+              -8,
+              8
+            ],
+            "c": [
+              -8,
+              8
+            ]
+          },
+          "constraints_note": "b != c for parallel, or set b=c for same line",
+          "answer_type": "label"
+        },
+        {
+          "id": "sys_004",
+          "type": "APPLY",
+          "context": "tickets",
+          "problem": "Adult tickets cost ${a} and child tickets cost ${b}. A total of {c} tickets were sold for ${d}. How many of each were sold?",
+          "constraints": {
+            "a": [
+              8,
+              15
+            ],
+            "b": [
+              4,
+              8
+            ],
+            "c": [
+              20,
+              50
+            ],
+            "d_note": "a*x + b*(c-x) for valid x"
+          },
+          "answer_type": "two_numeric"
+        },
+        {
+          "id": "sys_005",
+          "type": "APPLY",
+          "context": "mixing",
+          "problem": "Solution A is {a}% acid. Solution B is {b}% acid. You need {c} liters of {d}% acid. How many liters of each?",
+          "constraints": {
+            "a": [
+              10,
+              30
+            ],
+            "b": [
+              40,
+              80
+            ],
+            "c": [
+              10,
+              20
+            ],
+            "d": [
+              20,
+              60
+            ]
+          },
+          "answer_type": "two_numeric"
+        },
+        {
+          "id": "sys_006",
+          "type": "REPRESENT",
+          "problem": "Graph the system and identify the solution:\ny = {m1}x + {b1}\ny = {m2}x + {b2}",
+          "constraints": {
+            "m1": [
+              -3,
+              3
+            ],
+            "b1": [
+              -6,
+              6
+            ],
+            "m2": [
+              -3,
+              3
+            ],
+            "b2": [
+              -6,
+              6
+            ]
+          },
+          "constraints_note": "m1 != m2",
+          "answer_type": "coordinates"
+        },
+        {
+          "id": "sys_007",
+          "type": "ERROR_ANALYSIS",
+          "problem": "A student solves the system y = {a}x + {b}, y = {c}x + {d} and gets ({wrong_x}, {wrong_y}). Check their answer. Is it correct?",
+          "constraints": {
+            "a": [
+              1,
+              3
+            ],
+            "b": [
+              -6,
+              6
+            ],
+            "c": [
+              2,
+              5
+            ],
+            "d": [
+              -6,
+              6
+            ]
+          },
+          "answer_type": "boolean"
+        },
+        {
+          "id": "sys_008",
+          "type": "CONSTRUCT",
+          "problem": "Write a system of two equations that has the solution ({a}, {b}).",
+          "constraints": {
+            "a": [
+              -4,
+              4
+            ],
+            "b": [
+              -4,
+              4
+            ]
+          },
+          "answer_type": "open_ended"
+        }
       ]
     },
     {
@@ -43,14 +445,180 @@
       "ccss": "8.F.A.1, 8.F.A.2, 8.F.B.4, 8.F.B.5",
       "level": "solidify",
       "templates": [
-        { "id": "fn_001", "type": "IDENTIFY", "problem": "Does this table represent a function? x: {a}, {b}, {c}, {d}. y: {e}, {f}, {g}, {h}.", "constraints": { "a": [1, 5], "b": [2, 6], "c": [3, 7], "d": [4, 8], "e": [1, 10], "f": [1, 10], "g": [1, 10], "h": [1, 10] }, "generation_note": "half the time repeat an x value to make it NOT a function", "answer_type": "boolean_plus_explanation" },
-        { "id": "fn_002", "type": "COMPUTE", "problem": "Given f(x) = {a}x + {b}, find f({c}).", "constraints": { "a": [2, 6], "b": [-10, 10], "c": [-5, 8] }, "answer_type": "numeric" },
-        { "id": "fn_003", "type": "COMPARE", "problem": "f(x) = {a}x + {b} and g(x) = {c}x + {d}. For x = {e}, which function has a greater value?", "constraints": { "a": [1, 5], "b": [-8, 8], "c": [1, 5], "d": [-8, 8], "e": [1, 8] }, "answer_type": "comparison_plus_work" },
-        { "id": "fn_004", "type": "APPLY", "context": "temperature", "problem": "The function C(x) = (x - 32) × 5/9 converts °F to °C. What is {a}°F in Celsius?", "constraints": { "a": [32, 212] }, "answer_type": "numeric" },
-        { "id": "fn_005", "type": "REPRESENT", "problem": "The function f(x) = {a}x + {b} represents a phone plan. Describe what the slope and y-intercept mean in context.", "constraints": { "a": [5, 15], "b": [20, 50] }, "answer_type": "verbal" },
-        { "id": "fn_006", "type": "IDENTIFY", "problem": "Is the function f(x) = {a}x + {b} linear or nonlinear? How do you know?", "constraints": { "a": [1, 6], "b": [-10, 10] }, "answer_type": "label_plus_explanation" },
-        { "id": "fn_007", "type": "REVERSE", "problem": "f(x) = {a}x + {b}. If f(x) = {result}, find x.", "constraints": { "a": [2, 6], "b": [-10, 10], "result": [-20, 40] }, "answer_type": "numeric" },
-        { "id": "fn_008", "type": "CONSTRUCT", "problem": "Write a linear function where f({a}) = {b} and the rate of change is {m}.", "constraints": { "a": [1, 5], "b": [5, 30], "m": [2, 8] }, "answer_type": "equation" }
+        {
+          "id": "fn_001",
+          "type": "IDENTIFY",
+          "problem": "Does this table represent a function? x: {a}, {b}, {c}, {d}. y: {e}, {f}, {g}, {h}.",
+          "constraints": {
+            "a": [
+              1,
+              5
+            ],
+            "b": [
+              2,
+              6
+            ],
+            "c": [
+              3,
+              7
+            ],
+            "d": [
+              4,
+              8
+            ],
+            "e": [
+              1,
+              10
+            ],
+            "f": [
+              1,
+              10
+            ],
+            "g": [
+              1,
+              10
+            ],
+            "h": [
+              1,
+              10
+            ]
+          },
+          "generation_note": "half the time repeat an x value to make it NOT a function",
+          "answer_type": "boolean"
+        },
+        {
+          "id": "fn_002",
+          "type": "COMPUTE",
+          "problem": "Given f(x) = {a}x + {b}, find f({c}).",
+          "constraints": {
+            "a": [
+              2,
+              6
+            ],
+            "b": [
+              -10,
+              10
+            ],
+            "c": [
+              -5,
+              8
+            ]
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "fn_003",
+          "type": "COMPARE",
+          "problem": "f(x) = {a}x + {b} and g(x) = {c}x + {d}. For x = {e}, which function has a greater value?",
+          "constraints": {
+            "a": [
+              1,
+              5
+            ],
+            "b": [
+              -8,
+              8
+            ],
+            "c": [
+              1,
+              5
+            ],
+            "d": [
+              -8,
+              8
+            ],
+            "e": [
+              1,
+              8
+            ]
+          },
+          "answer_type": "comparison"
+        },
+        {
+          "id": "fn_004",
+          "type": "APPLY",
+          "context": "temperature",
+          "problem": "The function C(x) = (x - 32) × 5/9 converts °F to °C. What is {a}°F in Celsius?",
+          "constraints": {
+            "a": [
+              32,
+              212
+            ]
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "fn_005",
+          "type": "REPRESENT",
+          "problem": "The function f(x) = {a}x + {b} represents a phone plan. Describe what the slope and y-intercept mean in context.",
+          "constraints": {
+            "a": [
+              5,
+              15
+            ],
+            "b": [
+              20,
+              50
+            ]
+          },
+          "answer_type": "verbal"
+        },
+        {
+          "id": "fn_006",
+          "type": "IDENTIFY",
+          "problem": "Is the function f(x) = {a}x + {b} linear or nonlinear?",
+          "constraints": {
+            "a": [
+              1,
+              6
+            ],
+            "b": [
+              -10,
+              10
+            ]
+          },
+          "answer_type": "label"
+        },
+        {
+          "id": "fn_007",
+          "type": "REVERSE",
+          "problem": "f(x) = {a}x + {b}. If f(x) = {result}, find x.",
+          "constraints": {
+            "a": [
+              2,
+              6
+            ],
+            "b": [
+              -10,
+              10
+            ],
+            "result": [
+              -20,
+              40
+            ]
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "fn_008",
+          "type": "CONSTRUCT",
+          "problem": "Write a linear function where f({a}) = {b} and the rate of change is {m}.",
+          "constraints": {
+            "a": [
+              1,
+              5
+            ],
+            "b": [
+              5,
+              30
+            ],
+            "m": [
+              2,
+              8
+            ]
+          },
+          "answer_type": "equation"
+        }
       ]
     },
     {
@@ -59,14 +627,157 @@
       "ccss": "8.G.B.7, 8.G.B.8",
       "level": "solidify",
       "templates": [
-        { "id": "pt_001", "type": "COMPUTE", "problem": "Find the hypotenuse of a right triangle with legs {a} and {b}.", "constraints": { "a": [3, 15], "b": [3, 15] }, "answer_formula": "sqrt(a*a + b*b)", "answer_type": "decimal_or_radical" },
-        { "id": "pt_002", "type": "COMPUTE", "problem": "Find the missing leg of a right triangle with hypotenuse {c} and one leg {a}.", "constraints": { "a": [3, 12], "c": [5, 17] }, "constraints_note": "c > a, result is whole number (Pythagorean triples)", "answer_type": "numeric" },
-        { "id": "pt_003", "type": "APPLY", "context": "construction", "problem": "A {a} ft ladder leans against a wall with its base {b} ft from the wall. How high up does it reach?", "constraints": { "a": [5, 17], "b": [3, 12] }, "constraints_note": "use Pythagorean triples for clean answers", "answer_type": "numeric" },
-        { "id": "pt_004", "type": "APPLY", "context": "navigation", "problem": "A boat travels {a} miles east and {b} miles north. How far is it from the starting point?", "constraints": { "a": [3, 15], "b": [4, 15] }, "answer_formula": "sqrt(a*a+b*b)", "answer_type": "decimal_1dp" },
-        { "id": "pt_005", "type": "COMPUTE", "problem": "Find the distance between points ({a}, {b}) and ({c}, {d}).", "constraints": { "a": [-4, 4], "b": [-4, 4], "c": [-4, 4], "d": [-4, 4] }, "answer_formula": "sqrt((c-a)^2+(d-b)^2)", "answer_type": "decimal_1dp" },
-        { "id": "pt_006", "type": "IDENTIFY", "problem": "Is a triangle with sides {a}, {b}, and {c} a right triangle? Use a² + b² = c².", "constraints": { "a": [3, 12], "b": [4, 15], "c": [5, 17] }, "generation_note": "half are Pythagorean triples (yes), half are not", "answer_type": "boolean_plus_work" },
-        { "id": "pt_007", "type": "APPLY", "context": "screen", "problem": "A TV screen is {a} inches wide and {b} inches tall. What is the diagonal measurement?", "constraints": { "a": [16, 40], "b": [9, 30] }, "answer_formula": "sqrt(a*a+b*b)", "answer_type": "decimal_1dp" },
-        { "id": "pt_008", "type": "ERROR_ANALYSIS", "problem": "A student finds the hypotenuse for legs {a} and {b} as {wrong}. They added a + b. What is the correct answer?", "constraints": { "a": [3, 12], "b": [4, 12] }, "generation_note": "wrong = a + b", "answer_type": "decimal_1dp_plus_explanation" }
+        {
+          "id": "pt_001",
+          "type": "COMPUTE",
+          "problem": "Find the hypotenuse of a right triangle with legs {a} and {b}.",
+          "constraints": {
+            "a": [
+              3,
+              15
+            ],
+            "b": [
+              3,
+              15
+            ]
+          },
+          "answer_formula": "sqrt(a*a + b*b)",
+          "answer_type": "decimal_or_radical"
+        },
+        {
+          "id": "pt_002",
+          "type": "COMPUTE",
+          "problem": "Find the missing leg of a right triangle with hypotenuse {c} and one leg {a}.",
+          "constraints": {
+            "a": [
+              3,
+              12
+            ],
+            "c": [
+              5,
+              17
+            ]
+          },
+          "constraints_note": "c > a, result is whole number (Pythagorean triples)",
+          "answer_type": "numeric"
+        },
+        {
+          "id": "pt_003",
+          "type": "APPLY",
+          "context": "construction",
+          "problem": "A {a} ft ladder leans against a wall with its base {b} ft from the wall. How high up does it reach?",
+          "constraints": {
+            "a": [
+              5,
+              17
+            ],
+            "b": [
+              3,
+              12
+            ]
+          },
+          "constraints_note": "use Pythagorean triples for clean answers",
+          "answer_type": "numeric"
+        },
+        {
+          "id": "pt_004",
+          "type": "APPLY",
+          "context": "navigation",
+          "problem": "A boat travels {a} miles east and {b} miles north. How far is it from the starting point?",
+          "constraints": {
+            "a": [
+              3,
+              15
+            ],
+            "b": [
+              4,
+              15
+            ]
+          },
+          "answer_formula": "sqrt(a*a+b*b)",
+          "answer_type": "decimal_1dp"
+        },
+        {
+          "id": "pt_005",
+          "type": "COMPUTE",
+          "problem": "Find the distance between points ({a}, {b}) and ({c}, {d}).",
+          "constraints": {
+            "a": [
+              -4,
+              4
+            ],
+            "b": [
+              -4,
+              4
+            ],
+            "c": [
+              -4,
+              4
+            ],
+            "d": [
+              -4,
+              4
+            ]
+          },
+          "answer_formula": "sqrt((c-a)^2+(d-b)^2)",
+          "answer_type": "decimal_1dp"
+        },
+        {
+          "id": "pt_006",
+          "type": "IDENTIFY",
+          "problem": "Is a triangle with sides {a}, {b}, and {c} a right triangle? Use a² + b² = c².",
+          "constraints": {
+            "a": [
+              3,
+              12
+            ],
+            "b": [
+              4,
+              15
+            ],
+            "c": [
+              5,
+              17
+            ]
+          },
+          "generation_note": "half are Pythagorean triples (yes), half are not",
+          "answer_type": "boolean"
+        },
+        {
+          "id": "pt_007",
+          "type": "APPLY",
+          "context": "screen",
+          "problem": "A TV screen is {a} inches wide and {b} inches tall. What is the diagonal measurement?",
+          "constraints": {
+            "a": [
+              16,
+              40
+            ],
+            "b": [
+              9,
+              30
+            ]
+          },
+          "answer_formula": "sqrt(a*a+b*b)",
+          "answer_type": "decimal_1dp"
+        },
+        {
+          "id": "pt_008",
+          "type": "ERROR_ANALYSIS",
+          "problem": "A student finds the hypotenuse for legs {a} and {b} as {wrong}. They added a + b. What is the correct answer?",
+          "constraints": {
+            "a": [
+              3,
+              12
+            ],
+            "b": [
+              4,
+              12
+            ]
+          },
+          "generation_note": "wrong = a + b",
+          "answer_type": "decimal_1dp"
+        }
       ]
     },
     {
@@ -75,14 +786,190 @@
       "ccss": "8.G.A.1, 8.G.A.2, 8.G.A.3, 8.G.A.4",
       "level": "solidify",
       "templates": [
-        { "id": "tr_001", "type": "COMPUTE", "problem": "Translate point ({a}, {b}) by ({c}, {d}). What are the new coordinates?", "constraints": { "a": [-6, 6], "b": [-6, 6], "c": [-5, 5], "d": [-5, 5] }, "answer_type": "coordinates" },
-        { "id": "tr_002", "type": "COMPUTE", "problem": "Reflect ({a}, {b}) across the x-axis.", "constraints": { "a": [-8, 8], "b": [-8, 8] }, "answer_type": "coordinates" },
-        { "id": "tr_003", "type": "COMPUTE", "problem": "Reflect ({a}, {b}) across the y-axis.", "constraints": { "a": [-8, 8], "b": [-8, 8] }, "answer_type": "coordinates" },
-        { "id": "tr_004", "type": "COMPUTE", "problem": "Rotate point ({a}, {b}) 90° counterclockwise about the origin.", "constraints": { "a": [-6, 6], "b": [-6, 6] }, "answer_formula": "(-b, a)", "answer_type": "coordinates" },
-        { "id": "tr_005", "type": "COMPUTE", "problem": "Rotate point ({a}, {b}) 180° about the origin.", "constraints": { "a": [-6, 6], "b": [-6, 6] }, "answer_formula": "(-a, -b)", "answer_type": "coordinates" },
-        { "id": "tr_006", "type": "IDENTIFY", "problem": "Triangle A has vertices ({a},{b}), ({c},{d}), ({e},{f}). Triangle B has vertices (-{a},{b}), (-{c},{d}), (-{e},{f}). What transformation maps A to B?", "constraints": { "a": [1, 5], "b": [1, 5], "c": [2, 6], "d": [3, 7], "e": [3, 7], "f": [1, 4] }, "answer_type": "label" },
-        { "id": "tr_007", "type": "APPLY", "context": "design", "problem": "A logo at ({a},{b}), ({c},{d}), ({e},{f}) is translated by ({tx},{ty}) and then reflected across the x-axis. Find the final coordinates.", "constraints": { "a": [0, 4], "b": [0, 4], "c": [2, 6], "d": [0, 4], "e": [1, 5], "f": [2, 6], "tx": [-3, 3], "ty": [-3, 3] }, "answer_type": "three_coordinates" },
-        { "id": "tr_008", "type": "COMPUTE", "problem": "A shape is dilated by scale factor {k} from the origin. Point ({a},{b}) maps to what coordinates?", "constraints": { "k": [2, 4], "a": [-4, 4], "b": [-4, 4] }, "answer_formula": "(k*a, k*b)", "answer_type": "coordinates" }
+        {
+          "id": "tr_001",
+          "type": "COMPUTE",
+          "problem": "Translate point ({a}, {b}) by ({c}, {d}). What are the new coordinates?",
+          "constraints": {
+            "a": [
+              -6,
+              6
+            ],
+            "b": [
+              -6,
+              6
+            ],
+            "c": [
+              -5,
+              5
+            ],
+            "d": [
+              -5,
+              5
+            ]
+          },
+          "answer_type": "coordinates"
+        },
+        {
+          "id": "tr_002",
+          "type": "COMPUTE",
+          "problem": "Reflect ({a}, {b}) across the x-axis.",
+          "constraints": {
+            "a": [
+              -8,
+              8
+            ],
+            "b": [
+              -8,
+              8
+            ]
+          },
+          "answer_type": "coordinates"
+        },
+        {
+          "id": "tr_003",
+          "type": "COMPUTE",
+          "problem": "Reflect ({a}, {b}) across the y-axis.",
+          "constraints": {
+            "a": [
+              -8,
+              8
+            ],
+            "b": [
+              -8,
+              8
+            ]
+          },
+          "answer_type": "coordinates"
+        },
+        {
+          "id": "tr_004",
+          "type": "COMPUTE",
+          "problem": "Rotate point ({a}, {b}) 90° counterclockwise about the origin.",
+          "constraints": {
+            "a": [
+              -6,
+              6
+            ],
+            "b": [
+              -6,
+              6
+            ]
+          },
+          "answer_formula": "(-b, a)",
+          "answer_type": "coordinates"
+        },
+        {
+          "id": "tr_005",
+          "type": "COMPUTE",
+          "problem": "Rotate point ({a}, {b}) 180° about the origin.",
+          "constraints": {
+            "a": [
+              -6,
+              6
+            ],
+            "b": [
+              -6,
+              6
+            ]
+          },
+          "answer_formula": "(-a, -b)",
+          "answer_type": "coordinates"
+        },
+        {
+          "id": "tr_006",
+          "type": "IDENTIFY",
+          "problem": "Triangle A has vertices ({a},{b}), ({c},{d}), ({e},{f}). Triangle B has vertices (-{a},{b}), (-{c},{d}), (-{e},{f}). What transformation maps A to B?",
+          "constraints": {
+            "a": [
+              1,
+              5
+            ],
+            "b": [
+              1,
+              5
+            ],
+            "c": [
+              2,
+              6
+            ],
+            "d": [
+              3,
+              7
+            ],
+            "e": [
+              3,
+              7
+            ],
+            "f": [
+              1,
+              4
+            ]
+          },
+          "answer_type": "label"
+        },
+        {
+          "id": "tr_007",
+          "type": "APPLY",
+          "context": "design",
+          "problem": "A logo at ({a},{b}), ({c},{d}), ({e},{f}) is translated by ({tx},{ty}) and then reflected across the x-axis. Find the final coordinates.",
+          "constraints": {
+            "a": [
+              0,
+              4
+            ],
+            "b": [
+              0,
+              4
+            ],
+            "c": [
+              2,
+              6
+            ],
+            "d": [
+              0,
+              4
+            ],
+            "e": [
+              1,
+              5
+            ],
+            "f": [
+              2,
+              6
+            ],
+            "tx": [
+              -3,
+              3
+            ],
+            "ty": [
+              -3,
+              3
+            ]
+          },
+          "answer_type": "three_coordinates"
+        },
+        {
+          "id": "tr_008",
+          "type": "COMPUTE",
+          "problem": "A shape is dilated by scale factor {k} from the origin. Point ({a},{b}) maps to what coordinates?",
+          "constraints": {
+            "k": [
+              2,
+              4
+            ],
+            "a": [
+              -4,
+              4
+            ],
+            "b": [
+              -4,
+              4
+            ]
+          },
+          "answer_formula": "(k*a, k*b)",
+          "answer_type": "coordinates"
+        }
       ]
     },
     {
@@ -91,14 +978,160 @@
       "ccss": "8.EE.A.1, 8.EE.A.2, 8.EE.A.3, 8.EE.A.4",
       "level": "solidify",
       "templates": [
-        { "id": "sn_001", "type": "REPRESENT", "problem": "Write {a} in scientific notation.", "constraints": { "a_note": "large number like 45000, 3200000, 0.0056" }, "answer_type": "scientific_notation" },
-        { "id": "sn_002", "type": "REPRESENT", "problem": "Write {a} × 10^{b} in standard form.", "constraints": { "a": [1, 9], "b": [-5, 6] }, "answer_type": "numeric" },
-        { "id": "sn_003", "type": "COMPUTE", "problem": "({a} × 10^{b}) × ({c} × 10^{d})", "constraints": { "a": [1, 9], "b": [2, 8], "c": [1, 9], "d": [2, 8] }, "answer_type": "scientific_notation" },
-        { "id": "sn_004", "type": "COMPUTE", "problem": "({a} × 10^{b}) ÷ ({c} × 10^{d})", "constraints": { "a": [2, 9], "b": [4, 10], "c": [1, 5], "d": [1, 6] }, "answer_type": "scientific_notation" },
-        { "id": "sn_005", "type": "COMPARE", "problem": "Which is greater: {a} × 10^{b} or {c} × 10^{d}?", "constraints": { "a": [1, 9], "b": [3, 9], "c": [1, 9], "d": [3, 9] }, "answer_type": "comparison" },
-        { "id": "sn_006", "type": "APPLY", "context": "science", "problem": "A red blood cell is {a} × 10^{b} meters wide. A virus is {c} × 10^{d} meters wide. How many times wider is the red blood cell?", "constraints": { "a": [8, 9], "b": [-6, -5], "c": [1, 3], "d": [-8, -7] }, "answer_type": "numeric" },
-        { "id": "sn_007", "type": "COMPUTE", "problem": "Evaluate: {a}^{b}", "constraints": { "a": [2, 5], "b": [2, 5] }, "answer_type": "numeric" },
-        { "id": "sn_008", "type": "COMPUTE", "problem": "Evaluate: {a}^{-b}", "constraints": { "a": [2, 5], "b": [1, 3] }, "answer_type": "fraction_simplified" }
+        {
+          "id": "sn_001",
+          "type": "REPRESENT",
+          "problem": "Write {a} in scientific notation.",
+          "constraints": {
+            "a_note": "large number like 45000, 3200000, 0.0056"
+          },
+          "answer_type": "scientific_notation"
+        },
+        {
+          "id": "sn_002",
+          "type": "REPRESENT",
+          "problem": "Write {a} × 10^{b} in standard form.",
+          "constraints": {
+            "a": [
+              1,
+              9
+            ],
+            "b": [
+              -5,
+              6
+            ]
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "sn_003",
+          "type": "COMPUTE",
+          "problem": "({a} × 10^{b}) × ({c} × 10^{d})",
+          "constraints": {
+            "a": [
+              1,
+              9
+            ],
+            "b": [
+              2,
+              8
+            ],
+            "c": [
+              1,
+              9
+            ],
+            "d": [
+              2,
+              8
+            ]
+          },
+          "answer_type": "scientific_notation"
+        },
+        {
+          "id": "sn_004",
+          "type": "COMPUTE",
+          "problem": "({a} × 10^{b}) ÷ ({c} × 10^{d})",
+          "constraints": {
+            "a": [
+              2,
+              9
+            ],
+            "b": [
+              4,
+              10
+            ],
+            "c": [
+              1,
+              5
+            ],
+            "d": [
+              1,
+              6
+            ]
+          },
+          "answer_type": "scientific_notation"
+        },
+        {
+          "id": "sn_005",
+          "type": "COMPARE",
+          "problem": "Which is greater: {a} × 10^{b} or {c} × 10^{d}?",
+          "constraints": {
+            "a": [
+              1,
+              9
+            ],
+            "b": [
+              3,
+              9
+            ],
+            "c": [
+              1,
+              9
+            ],
+            "d": [
+              3,
+              9
+            ]
+          },
+          "answer_type": "comparison"
+        },
+        {
+          "id": "sn_006",
+          "type": "APPLY",
+          "context": "science",
+          "problem": "A red blood cell is {a} × 10^{b} meters wide. A virus is {c} × 10^{d} meters wide. How many times wider is the red blood cell?",
+          "constraints": {
+            "a": [
+              8,
+              9
+            ],
+            "b": [
+              -6,
+              -5
+            ],
+            "c": [
+              1,
+              3
+            ],
+            "d": [
+              -8,
+              -7
+            ]
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "sn_007",
+          "type": "COMPUTE",
+          "problem": "Evaluate: {a}^{b}",
+          "constraints": {
+            "a": [
+              2,
+              5
+            ],
+            "b": [
+              2,
+              5
+            ]
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "sn_008",
+          "type": "COMPUTE",
+          "problem": "Evaluate: {a}^{-b}",
+          "constraints": {
+            "a": [
+              2,
+              5
+            ],
+            "b": [
+              1,
+              3
+            ]
+          },
+          "answer_type": "fraction_simplified"
+        }
       ]
     },
     {
@@ -107,12 +1140,94 @@
       "ccss": "8.SP.A.1, 8.SP.A.2, 8.SP.A.3",
       "level": "solidify",
       "templates": [
-        { "id": "bv_001", "type": "IDENTIFY", "problem": "A scatter plot shows as x increases, y also increases. Is the association positive, negative, or none?", "constraints": {}, "answer_type": "label_plus_explanation" },
-        { "id": "bv_002", "type": "APPLY", "context": "line_of_fit", "problem": "The line of best fit for a data set is y = {m}x + {b}. Predict y when x = {c}.", "constraints": { "m": [2, 8], "b": [5, 30], "c": [4, 15] }, "answer_type": "numeric" },
-        { "id": "bv_003", "type": "INTERPRET", "problem": "A line of best fit is y = {m}x + {b} where x = hours studied and y = test score. What does the slope {m} mean in context?", "constraints": { "m": [3, 8], "b": [40, 70] }, "answer_type": "verbal" },
-        { "id": "bv_004", "type": "INTERPRET", "problem": "A line of best fit has slope {m} and y-intercept {b}. What does the y-intercept mean in context?", "constraints": { "m": [2, 6], "b": [10, 50] }, "answer_type": "verbal" },
-        { "id": "bv_005", "type": "COMPARE", "problem": "Scatter plot A has a tight cluster around the line of best fit. Scatter plot B has points spread far from it. Which shows a stronger association?", "constraints": {}, "answer_type": "comparison_plus_explanation" },
-        { "id": "bv_006", "type": "APPLY", "context": "prediction", "problem": "Using the equation y = {m}x + {b}, predict the value of x when y = {target}.", "constraints": { "m": [3, 8], "b": [10, 40], "target": [30, 100] }, "answer_type": "numeric" }
+        {
+          "id": "bv_001",
+          "type": "IDENTIFY",
+          "problem": "A scatter plot shows as x increases, y also increases. Is the association positive, negative, or none?",
+          "constraints": {},
+          "answer_type": "label"
+        },
+        {
+          "id": "bv_002",
+          "type": "APPLY",
+          "context": "line_of_fit",
+          "problem": "The line of best fit for a data set is y = {m}x + {b}. Predict y when x = {c}.",
+          "constraints": {
+            "m": [
+              2,
+              8
+            ],
+            "b": [
+              5,
+              30
+            ],
+            "c": [
+              4,
+              15
+            ]
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "bv_003",
+          "type": "INTERPRET",
+          "problem": "A line of best fit is y = {m}x + {b} where x = hours studied and y = test score. What does the slope {m} mean in context?",
+          "constraints": {
+            "m": [
+              3,
+              8
+            ],
+            "b": [
+              40,
+              70
+            ]
+          },
+          "answer_type": "verbal"
+        },
+        {
+          "id": "bv_004",
+          "type": "INTERPRET",
+          "problem": "A line of best fit has slope {m} and y-intercept {b}. What does the y-intercept mean in context?",
+          "constraints": {
+            "m": [
+              2,
+              6
+            ],
+            "b": [
+              10,
+              50
+            ]
+          },
+          "answer_type": "verbal"
+        },
+        {
+          "id": "bv_005",
+          "type": "COMPARE",
+          "problem": "Scatter plot A has a tight cluster around the line of best fit. Scatter plot B has points spread far from it. Which shows a stronger association?",
+          "constraints": {},
+          "answer_type": "comparison"
+        },
+        {
+          "id": "bv_006",
+          "type": "APPLY",
+          "context": "prediction",
+          "problem": "Using the equation y = {m}x + {b}, predict the value of x when y = {target}.",
+          "constraints": {
+            "m": [
+              3,
+              8
+            ],
+            "b": [
+              10,
+              40
+            ],
+            "target": [
+              30,
+              100
+            ]
+          },
+          "answer_type": "numeric"
+        }
       ]
     }
   ]

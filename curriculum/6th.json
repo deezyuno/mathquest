@@ -1,7 +1,17 @@
 {
   "grade": "6th",
   "description": "Core 6th grade standards. Introduces negative numbers, ratios, one-step equations, coordinate plane all 4 quadrants, and statistical thinking.",
-  "ccss_primary": ["6.NS.A", "6.NS.B", "6.NS.C", "6.RP.A", "6.EE.A", "6.EE.B", "6.G.A", "6.SP.A", "6.SP.B"],
+  "ccss_primary": [
+    "6.NS.A",
+    "6.NS.B",
+    "6.NS.C",
+    "6.RP.A",
+    "6.EE.A",
+    "6.EE.B",
+    "6.G.A",
+    "6.SP.A",
+    "6.SP.B"
+  ],
   "skills": [
     {
       "id": "dividing_fractions",
@@ -9,16 +19,244 @@
       "ccss": "6.NS.A.1",
       "level": "solidify",
       "templates": [
-        { "id": "df_001", "type": "COMPUTE", "problem": "{a}/{b} ÷ {c}/{d}", "constraints": { "a": [1, 5], "b": [2, 8], "c": [1, 5], "d": [2, 8] }, "answer_type": "fraction_simplified" },
-        { "id": "df_002", "type": "COMPUTE", "problem": "{a} ÷ {b}/{c}", "constraints": { "a": [2, 10], "b": [1, 4], "c": [2, 6] }, "answer_type": "fraction_simplified" },
-        { "id": "df_003", "type": "COMPUTE", "problem": "{a}/{b} ÷ {c}", "constraints": { "a": [2, 8], "b": [3, 10], "c": [2, 4] }, "answer_type": "fraction_simplified" },
-        { "id": "df_004", "type": "APPLY", "context": "cooking", "problem": "You have {a}/{b} of a cup of sugar. Each batch of cookies needs {c}/{d} cup. How many batches can you make?", "constraints": { "a": [3, 8], "b": [4, 8], "c": [1, 3], "d": [4, 8] }, "answer_type": "fraction_simplified" },
-        { "id": "df_005", "type": "APPLY", "context": "measurement", "problem": "A rope is {a}/{b} of a meter long. You cut it into pieces that are each {c}/{d} of a meter. How many pieces do you get?", "constraints": { "a": [3, 8], "b": [4, 10], "c": [1, 3], "d": [4, 10] }, "answer_type": "numeric" },
-        { "id": "df_006", "type": "REVERSE", "problem": "__ ÷ {a}/{b} = {c}. Find the missing number.", "constraints": { "a": [1, 4], "b": [2, 6], "c": [2, 8] }, "answer_type": "fraction_simplified" },
-        { "id": "df_007", "type": "ERROR_ANALYSIS", "problem": "A student says {a}/{b} ÷ {c}/{d} = {wrong_n}/{wrong_d}. They forgot to flip the second fraction. What is the correct answer?", "constraints": { "a": [2, 5], "b": [3, 8], "c": [1, 4], "d": [3, 8] }, "answer_type": "fraction_plus_explanation" },
-        { "id": "df_008", "type": "COMPARE", "problem": "Which is greater: {a}/{b} ÷ {c}/{d} or {a}/{b} ÷ {e}/{f}?", "constraints": { "a": [2, 5], "b": [4, 8], "c": [1, 3], "d": [4, 8], "e": [2, 4], "f": [4, 8] }, "answer_type": "comparison_plus_work" },
-        { "id": "df_009", "type": "CONSTRUCT", "problem": "Write a word problem that requires dividing {a}/{b} by {c}/{d}. Solve it.", "constraints": { "a": [2, 4], "b": [3, 6], "c": [1, 2], "d": [3, 6] }, "answer_type": "open_ended" },
-        { "id": "df_010", "type": "IDENTIFY", "problem": "Without calculating, will {a}/{b} ÷ {c}/{d} be greater or less than {a}/{b}? Explain.", "constraints": { "a": [2, 6], "b": [3, 8], "c": [1, 1], "d": [2, 4] }, "answer_type": "comparison_plus_explanation" }
+        {
+          "id": "df_001",
+          "type": "COMPUTE",
+          "problem": "{a}/{b} ÷ {c}/{d}",
+          "constraints": {
+            "a": [
+              1,
+              5
+            ],
+            "b": [
+              2,
+              8
+            ],
+            "c": [
+              1,
+              5
+            ],
+            "d": [
+              2,
+              8
+            ]
+          },
+          "answer_type": "fraction_simplified"
+        },
+        {
+          "id": "df_002",
+          "type": "COMPUTE",
+          "problem": "{a} ÷ {b}/{c}",
+          "constraints": {
+            "a": [
+              2,
+              10
+            ],
+            "b": [
+              1,
+              4
+            ],
+            "c": [
+              2,
+              6
+            ]
+          },
+          "answer_type": "fraction_simplified"
+        },
+        {
+          "id": "df_003",
+          "type": "COMPUTE",
+          "problem": "{a}/{b} ÷ {c}",
+          "constraints": {
+            "a": [
+              2,
+              8
+            ],
+            "b": [
+              3,
+              10
+            ],
+            "c": [
+              2,
+              4
+            ]
+          },
+          "answer_type": "fraction_simplified"
+        },
+        {
+          "id": "df_004",
+          "type": "APPLY",
+          "context": "cooking",
+          "problem": "You have {a}/{b} of a cup of sugar. Each batch of cookies needs {c}/{d} cup. How many batches can you make?",
+          "constraints": {
+            "a": [
+              3,
+              8
+            ],
+            "b": [
+              4,
+              8
+            ],
+            "c": [
+              1,
+              3
+            ],
+            "d": [
+              4,
+              8
+            ]
+          },
+          "answer_type": "fraction_simplified"
+        },
+        {
+          "id": "df_005",
+          "type": "APPLY",
+          "context": "measurement",
+          "problem": "A rope is {a}/{b} of a meter long. You cut it into pieces that are each {c}/{d} of a meter. How many pieces do you get?",
+          "constraints": {
+            "a": [
+              3,
+              8
+            ],
+            "b": [
+              4,
+              10
+            ],
+            "c": [
+              1,
+              3
+            ],
+            "d": [
+              4,
+              10
+            ]
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "df_006",
+          "type": "REVERSE",
+          "problem": "__ ÷ {a}/{b} = {c}. Find the missing number.",
+          "constraints": {
+            "a": [
+              1,
+              4
+            ],
+            "b": [
+              2,
+              6
+            ],
+            "c": [
+              2,
+              8
+            ]
+          },
+          "answer_type": "fraction_simplified"
+        },
+        {
+          "id": "df_007",
+          "type": "ERROR_ANALYSIS",
+          "problem": "A student says {a}/{b} ÷ {c}/{d} = {wrong_n}/{wrong_d}. They forgot to flip the second fraction. What is the correct answer?",
+          "constraints": {
+            "a": [
+              2,
+              5
+            ],
+            "b": [
+              3,
+              8
+            ],
+            "c": [
+              1,
+              4
+            ],
+            "d": [
+              3,
+              8
+            ]
+          },
+          "answer_type": "fraction"
+        },
+        {
+          "id": "df_008",
+          "type": "COMPARE",
+          "problem": "Which is greater: {a}/{b} ÷ {c}/{d} or {a}/{b} ÷ {e}/{f}?",
+          "constraints": {
+            "a": [
+              2,
+              5
+            ],
+            "b": [
+              4,
+              8
+            ],
+            "c": [
+              1,
+              3
+            ],
+            "d": [
+              4,
+              8
+            ],
+            "e": [
+              2,
+              4
+            ],
+            "f": [
+              4,
+              8
+            ]
+          },
+          "answer_type": "comparison"
+        },
+        {
+          "id": "df_009",
+          "type": "CONSTRUCT",
+          "problem": "Write a word problem that requires dividing {a}/{b} by {c}/{d}. Solve it.",
+          "constraints": {
+            "a": [
+              2,
+              4
+            ],
+            "b": [
+              3,
+              6
+            ],
+            "c": [
+              1,
+              2
+            ],
+            "d": [
+              3,
+              6
+            ]
+          },
+          "answer_type": "open_ended"
+        },
+        {
+          "id": "df_010",
+          "type": "IDENTIFY",
+          "problem": "Without calculating, will {a}/{b} ÷ {c}/{d} be greater or less than {a}/{b}?",
+          "constraints": {
+            "a": [
+              2,
+              6
+            ],
+            "b": [
+              3,
+              8
+            ],
+            "c": [
+              1,
+              1
+            ],
+            "d": [
+              2,
+              4
+            ]
+          },
+          "answer_type": "comparison"
+        }
       ]
     },
     {
@@ -27,16 +265,176 @@
       "ccss": "6.NS.C.5, 6.NS.C.6",
       "level": "solidify",
       "templates": [
-        { "id": "int_001", "type": "COMPUTE", "problem": "{a} + {b}", "constraints": { "a": [-50, 50], "b": [-50, 50] }, "answer_type": "numeric" },
-        { "id": "int_002", "type": "COMPUTE", "problem": "{a} - {b}", "constraints": { "a": [-50, 50], "b": [-50, 50] }, "answer_type": "numeric" },
-        { "id": "int_003", "type": "COMPUTE", "problem": "{a} × {b}", "constraints": { "a": [-12, 12], "b": [-12, 12] }, "answer_type": "numeric" },
-        { "id": "int_004", "type": "COMPUTE", "problem": "{a} ÷ {b}", "constraints": { "a": [-144, 144], "b": [-12, 12] }, "constraints_note": "b != 0, a divisible by b", "answer_type": "numeric" },
-        { "id": "int_005", "type": "APPLY", "context": "temperature", "problem": "The temperature was {a}°F and dropped {b}°F. What is the new temperature?", "constraints": { "a": [-10, 30], "b": [5, 40] }, "answer_formula": "a - b", "answer_type": "numeric" },
-        { "id": "int_006", "type": "APPLY", "context": "finance", "problem": "A business gained ${a} on Monday and lost ${b} on Tuesday. What was the net change?", "constraints": { "a": [50, 500], "b": [50, 500] }, "answer_type": "numeric" },
-        { "id": "int_007", "type": "IDENTIFY", "problem": "Without calculating, will {a} × {b} be positive or negative? Explain.", "constraints": { "a": [-15, -2], "b": [2, 15] }, "answer_type": "sign_plus_explanation" },
-        { "id": "int_008", "type": "COMPARE", "problem": "Order from least to greatest: {a}, {b}, {c}, {d}", "constraints": { "a": [-20, 20], "b": [-20, 20], "c": [-20, 20], "d": [-20, 20] }, "answer_type": "ordered_list" },
-        { "id": "int_009", "type": "REVERSE", "problem": "__ × {a} = {product}. Find the missing integer.", "constraints": { "a": [-8, -2], "product_note": "a * random(-8,8)" }, "answer_type": "numeric" },
-        { "id": "int_010", "type": "ERROR_ANALYSIS", "problem": "A student says {a} - {b} = {wrong}. What is the correct answer?", "constraints": { "a": [-10, 5], "b": [-10, 5] }, "generation_note": "wrong = a + b", "answer_type": "numeric_plus_explanation" }
+        {
+          "id": "int_001",
+          "type": "COMPUTE",
+          "problem": "{a} + {b}",
+          "constraints": {
+            "a": [
+              -50,
+              50
+            ],
+            "b": [
+              -50,
+              50
+            ]
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "int_002",
+          "type": "COMPUTE",
+          "problem": "{a} - {b}",
+          "constraints": {
+            "a": [
+              -50,
+              50
+            ],
+            "b": [
+              -50,
+              50
+            ]
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "int_003",
+          "type": "COMPUTE",
+          "problem": "{a} × {b}",
+          "constraints": {
+            "a": [
+              -12,
+              12
+            ],
+            "b": [
+              -12,
+              12
+            ]
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "int_004",
+          "type": "COMPUTE",
+          "problem": "{a} ÷ {b}",
+          "constraints": {
+            "a": [
+              -144,
+              144
+            ],
+            "b": [
+              -12,
+              12
+            ]
+          },
+          "constraints_note": "b != 0, a divisible by b",
+          "answer_type": "numeric"
+        },
+        {
+          "id": "int_005",
+          "type": "APPLY",
+          "context": "temperature",
+          "problem": "The temperature was {a}°F and dropped {b}°F. What is the new temperature?",
+          "constraints": {
+            "a": [
+              -10,
+              30
+            ],
+            "b": [
+              5,
+              40
+            ]
+          },
+          "answer_formula": "a - b",
+          "answer_type": "numeric"
+        },
+        {
+          "id": "int_006",
+          "type": "APPLY",
+          "context": "finance",
+          "problem": "A business gained ${a} on Monday and lost ${b} on Tuesday. What was the net change?",
+          "constraints": {
+            "a": [
+              50,
+              500
+            ],
+            "b": [
+              50,
+              500
+            ]
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "int_007",
+          "type": "IDENTIFY",
+          "problem": "Without calculating, will {a} × {b} be positive or negative?",
+          "constraints": {
+            "a": [
+              -15,
+              -2
+            ],
+            "b": [
+              2,
+              15
+            ]
+          },
+          "answer_type": "sign"
+        },
+        {
+          "id": "int_008",
+          "type": "COMPARE",
+          "problem": "Order from least to greatest: {a}, {b}, {c}, {d}",
+          "constraints": {
+            "a": [
+              -20,
+              20
+            ],
+            "b": [
+              -20,
+              20
+            ],
+            "c": [
+              -20,
+              20
+            ],
+            "d": [
+              -20,
+              20
+            ]
+          },
+          "answer_type": "ordered_list"
+        },
+        {
+          "id": "int_009",
+          "type": "REVERSE",
+          "problem": "__ × {a} = {product}. Find the missing integer.",
+          "constraints": {
+            "a": [
+              -8,
+              -2
+            ],
+            "product_note": "a * random(-8,8)"
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "int_010",
+          "type": "ERROR_ANALYSIS",
+          "problem": "A student says {a} - {b} = {wrong}. What is the correct answer?",
+          "constraints": {
+            "a": [
+              -10,
+              5
+            ],
+            "b": [
+              -10,
+              5
+            ]
+          },
+          "generation_note": "wrong = a + b",
+          "answer_type": "numeric"
+        }
       ]
     },
     {
@@ -45,16 +443,205 @@
       "ccss": "6.RP.A.1, 6.RP.A.2, 6.RP.A.3",
       "level": "solidify",
       "templates": [
-        { "id": "rp_001", "type": "COMPUTE", "problem": "Simplify the ratio {a}:{b}.", "constraints": { "a": [6, 48], "b": [6, 48] }, "answer_type": "ratio" },
-        { "id": "rp_002", "type": "COMPUTE", "problem": "A car travels {a} miles in {b} hours. What is the unit rate in miles per hour?", "constraints": { "a": [60, 300], "b": [2, 6] }, "constraints_note": "a divisible by b", "answer_type": "unit_rate" },
-        { "id": "rp_003", "type": "IDENTIFY", "problem": "Are the ratios {a}:{b} and {c}:{d} equivalent? Show your work.", "constraints": { "a": [2, 6], "b": [3, 9], "c": [4, 18], "d": [6, 27] }, "answer_type": "boolean_plus_work" },
-        { "id": "rp_004", "type": "APPLY", "context": "recipe", "problem": "A recipe for {a} servings uses {b} cups of oats. How many cups are needed for {c} servings?", "constraints": { "a": [2, 6], "b": [1, 4], "c": [8, 24] }, "answer_type": "numeric" },
-        { "id": "rp_005", "type": "REPRESENT", "problem": "Complete the ratio table:\n| Items | {a} | {b} | ? | ? |\n| Cost ($) | {c} | ? | {d} | ? |", "constraints": { "a": [2, 5], "b": [4, 10], "c": [4, 20], "d": [20, 60] }, "answer_type": "table" },
-        { "id": "rp_006", "type": "COMPARE", "problem": "Store A: {a} items for ${b}. Store B: {c} items for ${d}. Which is the better deal?", "constraints": { "a": [3, 8], "b": [6, 24], "c": [4, 10], "d": [8, 30] }, "answer_type": "comparison_plus_work" },
-        { "id": "rp_007", "type": "APPLY", "context": "map", "problem": "A map scale is 1 inch = {a} miles. Two cities are {b} inches apart on the map. How far apart are they?", "constraints": { "a": [10, 50], "b": [2, 8] }, "answer_type": "numeric" },
-        { "id": "rp_008", "type": "REVERSE", "problem": "A unit rate is ${a} per item. How many items can you buy with ${b}?", "constraints": { "a": [3, 12], "b": [24, 96] }, "constraints_note": "b divisible by a", "answer_type": "numeric" },
-        { "id": "rp_009", "type": "APPLY", "context": "mixing", "problem": "Paint is mixed at a ratio of {a} parts blue to {b} parts white. How much blue is needed for {c} parts white?", "constraints": { "a": [1, 4], "b": [1, 4], "c": [4, 20] }, "constraints_note": "c divisible by b", "answer_type": "numeric" },
-        { "id": "rp_010", "type": "ERROR_ANALYSIS", "problem": "A student says the unit rate for {a} items costing ${b} is ${c} per item. Is that right?", "constraints": { "a": [4, 12], "b": [12, 48] }, "generation_note": "c = b * a (wrong — multiplied instead of divided)", "answer_type": "boolean_plus_numeric" }
+        {
+          "id": "rp_001",
+          "type": "COMPUTE",
+          "problem": "Simplify the ratio {a}:{b}.",
+          "constraints": {
+            "a": [
+              6,
+              48
+            ],
+            "b": [
+              6,
+              48
+            ]
+          },
+          "answer_type": "ratio"
+        },
+        {
+          "id": "rp_002",
+          "type": "COMPUTE",
+          "problem": "A car travels {a} miles in {b} hours. What is the unit rate in miles per hour?",
+          "constraints": {
+            "a": [
+              60,
+              300
+            ],
+            "b": [
+              2,
+              6
+            ]
+          },
+          "constraints_note": "a divisible by b",
+          "answer_type": "unit_rate"
+        },
+        {
+          "id": "rp_003",
+          "type": "IDENTIFY",
+          "problem": "Are the ratios {a}:{b} and {c}:{d} equivalent?",
+          "constraints": {
+            "a": [
+              2,
+              6
+            ],
+            "b": [
+              3,
+              9
+            ],
+            "c": [
+              4,
+              18
+            ],
+            "d": [
+              6,
+              27
+            ]
+          },
+          "answer_type": "boolean"
+        },
+        {
+          "id": "rp_004",
+          "type": "APPLY",
+          "context": "recipe",
+          "problem": "A recipe for {a} servings uses {b} cups of oats. How many cups are needed for {c} servings?",
+          "constraints": {
+            "a": [
+              2,
+              6
+            ],
+            "b": [
+              1,
+              4
+            ],
+            "c": [
+              8,
+              24
+            ]
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "rp_005",
+          "type": "REPRESENT",
+          "problem": "Complete the ratio table:\n| Items | {a} | {b} | ? | ? |\n| Cost ($) | {c} | ? | {d} | ? |",
+          "constraints": {
+            "a": [
+              2,
+              5
+            ],
+            "b": [
+              4,
+              10
+            ],
+            "c": [
+              4,
+              20
+            ],
+            "d": [
+              20,
+              60
+            ]
+          },
+          "answer_type": "table"
+        },
+        {
+          "id": "rp_006",
+          "type": "COMPARE",
+          "problem": "Store A: {a} items for ${b}. Store B: {c} items for ${d}. Which is the better deal?",
+          "constraints": {
+            "a": [
+              3,
+              8
+            ],
+            "b": [
+              6,
+              24
+            ],
+            "c": [
+              4,
+              10
+            ],
+            "d": [
+              8,
+              30
+            ]
+          },
+          "answer_type": "comparison"
+        },
+        {
+          "id": "rp_007",
+          "type": "APPLY",
+          "context": "map",
+          "problem": "A map scale is 1 inch = {a} miles. Two cities are {b} inches apart on the map. How far apart are they?",
+          "constraints": {
+            "a": [
+              10,
+              50
+            ],
+            "b": [
+              2,
+              8
+            ]
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "rp_008",
+          "type": "REVERSE",
+          "problem": "A unit rate is ${a} per item. How many items can you buy with ${b}?",
+          "constraints": {
+            "a": [
+              3,
+              12
+            ],
+            "b": [
+              24,
+              96
+            ]
+          },
+          "constraints_note": "b divisible by a",
+          "answer_type": "numeric"
+        },
+        {
+          "id": "rp_009",
+          "type": "APPLY",
+          "context": "mixing",
+          "problem": "Paint is mixed at a ratio of {a} parts blue to {b} parts white. How much blue is needed for {c} parts white?",
+          "constraints": {
+            "a": [
+              1,
+              4
+            ],
+            "b": [
+              1,
+              4
+            ],
+            "c": [
+              4,
+              20
+            ]
+          },
+          "constraints_note": "c divisible by b",
+          "answer_type": "numeric"
+        },
+        {
+          "id": "rp_010",
+          "type": "ERROR_ANALYSIS",
+          "problem": "A student says the unit rate for {a} items costing ${b} is ${c} per item. Is that right?",
+          "constraints": {
+            "a": [
+              4,
+              12
+            ],
+            "b": [
+              12,
+              48
+            ]
+          },
+          "generation_note": "c = b * a (wrong — multiplied instead of divided)",
+          "answer_type": "boolean_plus_numeric"
+        }
       ]
     },
     {
@@ -63,16 +650,172 @@
       "ccss": "6.EE.B.5, 6.EE.B.6, 6.EE.B.7",
       "level": "solidify",
       "templates": [
-        { "id": "eq_001", "type": "COMPUTE", "problem": "Solve: x + {a} = {b}", "constraints": { "a": [5, 40], "b": [10, 60] }, "answer_type": "numeric" },
-        { "id": "eq_002", "type": "COMPUTE", "problem": "Solve: x - {a} = {b}", "constraints": { "a": [5, 40], "b": [5, 50] }, "answer_type": "numeric" },
-        { "id": "eq_003", "type": "COMPUTE", "problem": "Solve: {a}x = {b}", "constraints": { "a": [2, 12], "b": [12, 120] }, "constraints_note": "b divisible by a", "answer_type": "numeric" },
-        { "id": "eq_004", "type": "COMPUTE", "problem": "Solve: x ÷ {a} = {b}", "constraints": { "a": [2, 10], "b": [3, 20] }, "answer_type": "numeric" },
-        { "id": "eq_005", "type": "REPRESENT", "problem": "Write an equation for: a number decreased by {a} equals {b}. Then solve it.", "constraints": { "a": [5, 30], "b": [10, 50] }, "answer_type": "equation_plus_numeric" },
-        { "id": "eq_006", "type": "APPLY", "context": "money", "problem": "You split ${a} equally among {b} friends. Write and solve an equation for each person's share.", "constraints": { "a": [24, 120], "b": [2, 8] }, "constraints_note": "a divisible by b", "answer_type": "equation_plus_numeric" },
-        { "id": "eq_007", "type": "IDENTIFY", "problem": "Which value of x satisfies {a}x = {b}: x = {w}, x = {r}, or x = {s}?", "constraints": { "a": [3, 9], "b": [18, 81] }, "generation_note": "one of w, r, s = b/a exactly", "answer_type": "multiple_choice" },
-        { "id": "eq_008", "type": "APPLY", "context": "age", "problem": "Your age plus {a} equals {b}. Write and solve an equation to find your age.", "constraints": { "a": [3, 15], "b": [15, 30] }, "answer_type": "equation_plus_numeric" },
-        { "id": "eq_009", "type": "ERROR_ANALYSIS", "problem": "A student solves x + {a} = {b} and gets x = {wrong}. What did they do wrong?", "constraints": { "a": [5, 20], "b": [15, 40] }, "generation_note": "wrong = a + b (added instead of subtracted)", "answer_type": "numeric_plus_explanation" },
-        { "id": "eq_010", "type": "CONSTRUCT", "problem": "Write a word problem that can be solved with the equation x + {a} = {b}.", "constraints": { "a": [10, 30], "b": [20, 60] }, "answer_type": "open_ended" }
+        {
+          "id": "eq_001",
+          "type": "COMPUTE",
+          "problem": "Solve: x + {a} = {b}",
+          "constraints": {
+            "a": [
+              5,
+              40
+            ],
+            "b": [
+              10,
+              60
+            ]
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "eq_002",
+          "type": "COMPUTE",
+          "problem": "Solve: x - {a} = {b}",
+          "constraints": {
+            "a": [
+              5,
+              40
+            ],
+            "b": [
+              5,
+              50
+            ]
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "eq_003",
+          "type": "COMPUTE",
+          "problem": "Solve: {a}x = {b}",
+          "constraints": {
+            "a": [
+              2,
+              12
+            ],
+            "b": [
+              12,
+              120
+            ]
+          },
+          "constraints_note": "b divisible by a",
+          "answer_type": "numeric"
+        },
+        {
+          "id": "eq_004",
+          "type": "COMPUTE",
+          "problem": "Solve: x ÷ {a} = {b}",
+          "constraints": {
+            "a": [
+              2,
+              10
+            ],
+            "b": [
+              3,
+              20
+            ]
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "eq_005",
+          "type": "REPRESENT",
+          "problem": "Write an equation for: a number decreased by {a} equals {b}. Then solve it.",
+          "constraints": {
+            "a": [
+              5,
+              30
+            ],
+            "b": [
+              10,
+              50
+            ]
+          },
+          "answer_type": "equation_plus_numeric"
+        },
+        {
+          "id": "eq_006",
+          "type": "APPLY",
+          "context": "money",
+          "problem": "You split ${a} equally among {b} friends. Write and solve an equation for each person's share.",
+          "constraints": {
+            "a": [
+              24,
+              120
+            ],
+            "b": [
+              2,
+              8
+            ]
+          },
+          "constraints_note": "a divisible by b",
+          "answer_type": "equation_plus_numeric"
+        },
+        {
+          "id": "eq_007",
+          "type": "IDENTIFY",
+          "problem": "Which value of x satisfies {a}x = {b}: x = {w}, x = {r}, or x = {s}?",
+          "constraints": {
+            "a": [
+              3,
+              9
+            ],
+            "b": [
+              18,
+              81
+            ]
+          },
+          "generation_note": "one of w, r, s = b/a exactly",
+          "answer_type": "multiple_choice"
+        },
+        {
+          "id": "eq_008",
+          "type": "APPLY",
+          "context": "age",
+          "problem": "Your age plus {a} equals {b}. Write and solve an equation to find your age.",
+          "constraints": {
+            "a": [
+              3,
+              15
+            ],
+            "b": [
+              15,
+              30
+            ]
+          },
+          "answer_type": "equation_plus_numeric"
+        },
+        {
+          "id": "eq_009",
+          "type": "ERROR_ANALYSIS",
+          "problem": "A student solves x + {a} = {b} and gets x = {wrong}. What did they do wrong?",
+          "constraints": {
+            "a": [
+              5,
+              20
+            ],
+            "b": [
+              15,
+              40
+            ]
+          },
+          "generation_note": "wrong = a + b (added instead of subtracted)",
+          "answer_type": "numeric"
+        },
+        {
+          "id": "eq_010",
+          "type": "CONSTRUCT",
+          "problem": "Write a word problem that can be solved with the equation x + {a} = {b}.",
+          "constraints": {
+            "a": [
+              10,
+              30
+            ],
+            "b": [
+              20,
+              60
+            ]
+          },
+          "answer_type": "open_ended"
+        }
       ]
     },
     {
@@ -81,14 +824,157 @@
       "ccss": "6.EE.A.1, 6.EE.A.2, 6.EE.A.3, 6.EE.A.4",
       "level": "solidify",
       "templates": [
-        { "id": "exp_001", "type": "COMPUTE", "problem": "Evaluate {a}x + {b} when x = {c}.", "constraints": { "a": [2, 8], "b": [1, 20], "c": [1, 10] }, "answer_type": "numeric" },
-        { "id": "exp_002", "type": "COMPUTE", "problem": "Evaluate {a}² + {b}.", "constraints": { "a": [2, 10], "b": [1, 20] }, "answer_type": "numeric" },
-        { "id": "exp_003", "type": "REPRESENT", "problem": "Write an expression for: {a} times a number n, minus {b}.", "constraints": { "a": [2, 8], "b": [1, 15] }, "answer_type": "expression" },
-        { "id": "exp_004", "type": "IDENTIFY", "problem": "Are {a}(x + {b}) and {a}x + {c} equivalent? (Hint: {c} = {a} × {b})", "constraints": { "a": [2, 6], "b": [3, 8] }, "generation_note": "c = a * b", "answer_type": "boolean_plus_explanation" },
-        { "id": "exp_005", "type": "COMPUTE", "problem": "Simplify: {a}x + {b}x", "constraints": { "a": [2, 8], "b": [2, 8] }, "answer_type": "expression" },
-        { "id": "exp_006", "type": "APPLY", "context": "geometry", "problem": "A rectangle has length {a}n and width {b}. Write an expression for its perimeter.", "constraints": { "a": [2, 5], "b": [3, 10] }, "answer_type": "expression" },
-        { "id": "exp_007", "type": "COMPARE", "problem": "Evaluate both expressions when n = {c}: Expression A: {a}n + {b}. Expression B: {d}n - {e}. Which is greater?", "constraints": { "a": [2, 5], "b": [5, 15], "c": [2, 8], "d": [2, 5], "e": [1, 10] }, "answer_type": "comparison_plus_work" },
-        { "id": "exp_008", "type": "ERROR_ANALYSIS", "problem": "A student evaluates {a}x + {b} when x = {c} and gets {wrong}. What is the correct answer?", "constraints": { "a": [3, 6], "b": [5, 15], "c": [2, 8] }, "generation_note": "wrong = a*c + b + random(1,5)", "answer_type": "numeric_plus_explanation" }
+        {
+          "id": "exp_001",
+          "type": "COMPUTE",
+          "problem": "Evaluate {a}x + {b} when x = {c}.",
+          "constraints": {
+            "a": [
+              2,
+              8
+            ],
+            "b": [
+              1,
+              20
+            ],
+            "c": [
+              1,
+              10
+            ]
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "exp_002",
+          "type": "COMPUTE",
+          "problem": "Evaluate {a}² + {b}.",
+          "constraints": {
+            "a": [
+              2,
+              10
+            ],
+            "b": [
+              1,
+              20
+            ]
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "exp_003",
+          "type": "REPRESENT",
+          "problem": "Write an expression for: {a} times a number n, minus {b}.",
+          "constraints": {
+            "a": [
+              2,
+              8
+            ],
+            "b": [
+              1,
+              15
+            ]
+          },
+          "answer_type": "expression"
+        },
+        {
+          "id": "exp_004",
+          "type": "IDENTIFY",
+          "problem": "Are {a}(x + {b}) and {a}x + {c} equivalent? (Hint: {c} = {a} × {b})",
+          "constraints": {
+            "a": [
+              2,
+              6
+            ],
+            "b": [
+              3,
+              8
+            ]
+          },
+          "generation_note": "c = a * b",
+          "answer_type": "boolean"
+        },
+        {
+          "id": "exp_005",
+          "type": "COMPUTE",
+          "problem": "Simplify: {a}x + {b}x",
+          "constraints": {
+            "a": [
+              2,
+              8
+            ],
+            "b": [
+              2,
+              8
+            ]
+          },
+          "answer_type": "expression"
+        },
+        {
+          "id": "exp_006",
+          "type": "APPLY",
+          "context": "geometry",
+          "problem": "A rectangle has length {a}n and width {b}. Write an expression for its perimeter.",
+          "constraints": {
+            "a": [
+              2,
+              5
+            ],
+            "b": [
+              3,
+              10
+            ]
+          },
+          "answer_type": "expression"
+        },
+        {
+          "id": "exp_007",
+          "type": "COMPARE",
+          "problem": "Evaluate both expressions when n = {c}: Expression A: {a}n + {b}. Expression B: {d}n - {e}. Which is greater?",
+          "constraints": {
+            "a": [
+              2,
+              5
+            ],
+            "b": [
+              5,
+              15
+            ],
+            "c": [
+              2,
+              8
+            ],
+            "d": [
+              2,
+              5
+            ],
+            "e": [
+              1,
+              10
+            ]
+          },
+          "answer_type": "comparison"
+        },
+        {
+          "id": "exp_008",
+          "type": "ERROR_ANALYSIS",
+          "problem": "A student evaluates {a}x + {b} when x = {c} and gets {wrong}. What is the correct answer?",
+          "constraints": {
+            "a": [
+              3,
+              6
+            ],
+            "b": [
+              5,
+              15
+            ],
+            "c": [
+              2,
+              8
+            ]
+          },
+          "generation_note": "wrong = a*c + b + random(1,5)",
+          "answer_type": "numeric"
+        }
       ]
     },
     {
@@ -97,14 +983,153 @@
       "ccss": "6.G.A.1, 6.G.A.2, 6.G.A.4",
       "level": "solidify",
       "templates": [
-        { "id": "geo_001", "type": "COMPUTE", "problem": "Find the area of a triangle with base {a} cm and height {b} cm.", "constraints": { "a": [4, 20], "b": [3, 16] }, "answer_formula": "0.5*a*b", "answer_type": "numeric" },
-        { "id": "geo_002", "type": "COMPUTE", "problem": "Find the area of a parallelogram with base {a} and height {b}.", "constraints": { "a": [4, 20], "b": [3, 16] }, "answer_formula": "a*b", "answer_type": "numeric" },
-        { "id": "geo_003", "type": "COMPUTE", "problem": "Find the surface area of a rectangular prism: length {a}, width {b}, height {c}.", "constraints": { "a": [2, 12], "b": [2, 12], "c": [2, 10] }, "answer_formula": "2*(a*b+b*c+a*c)", "answer_type": "numeric" },
-        { "id": "geo_004", "type": "COMPUTE", "problem": "Find the volume of a rectangular prism: length {a}, width {b}, height {c}.", "constraints": { "a": [2, 15], "b": [2, 15], "c": [2, 12] }, "answer_formula": "a*b*c", "answer_type": "numeric" },
-        { "id": "geo_005", "type": "APPLY", "context": "packaging", "problem": "A cereal box is {a} cm long, {b} cm wide, and {c} cm tall. How much cardboard is needed to make the box?", "constraints": { "a": [8, 25], "b": [4, 12], "c": [20, 35] }, "answer_formula": "2*(a*b+b*c+a*c)", "answer_type": "numeric" },
-        { "id": "geo_006", "type": "REVERSE", "problem": "A triangle has area {area} sq units and base {a}. What is its height?", "constraints": { "a": [4, 20], "area_note": "0.5*a*random(3,14)" }, "answer_type": "numeric" },
-        { "id": "geo_007", "type": "COMPARE", "problem": "Shape A: triangle base {a} height {b}. Shape B: parallelogram base {c} height {d}. Which has greater area?", "constraints": { "a": [6, 18], "b": [6, 18], "c": [4, 14], "d": [4, 14] }, "answer_type": "comparison_plus_work" },
-        { "id": "geo_008", "type": "CONSTRUCT", "problem": "Design a rectangular prism with volume {v} cubic units. State length, width, and height.", "constraints": { "v": [24, 120] }, "answer_type": "open_ended" }
+        {
+          "id": "geo_001",
+          "type": "COMPUTE",
+          "problem": "Find the area of a triangle with base {a} cm and height {b} cm.",
+          "constraints": {
+            "a": [
+              4,
+              20
+            ],
+            "b": [
+              3,
+              16
+            ]
+          },
+          "answer_formula": "0.5*a*b",
+          "answer_type": "numeric"
+        },
+        {
+          "id": "geo_002",
+          "type": "COMPUTE",
+          "problem": "Find the area of a parallelogram with base {a} and height {b}.",
+          "constraints": {
+            "a": [
+              4,
+              20
+            ],
+            "b": [
+              3,
+              16
+            ]
+          },
+          "answer_formula": "a*b",
+          "answer_type": "numeric"
+        },
+        {
+          "id": "geo_003",
+          "type": "COMPUTE",
+          "problem": "Find the surface area of a rectangular prism: length {a}, width {b}, height {c}.",
+          "constraints": {
+            "a": [
+              2,
+              12
+            ],
+            "b": [
+              2,
+              12
+            ],
+            "c": [
+              2,
+              10
+            ]
+          },
+          "answer_formula": "2*(a*b+b*c+a*c)",
+          "answer_type": "numeric"
+        },
+        {
+          "id": "geo_004",
+          "type": "COMPUTE",
+          "problem": "Find the volume of a rectangular prism: length {a}, width {b}, height {c}.",
+          "constraints": {
+            "a": [
+              2,
+              15
+            ],
+            "b": [
+              2,
+              15
+            ],
+            "c": [
+              2,
+              12
+            ]
+          },
+          "answer_formula": "a*b*c",
+          "answer_type": "numeric"
+        },
+        {
+          "id": "geo_005",
+          "type": "APPLY",
+          "context": "packaging",
+          "problem": "A cereal box is {a} cm long, {b} cm wide, and {c} cm tall. How much cardboard is needed to make the box?",
+          "constraints": {
+            "a": [
+              8,
+              25
+            ],
+            "b": [
+              4,
+              12
+            ],
+            "c": [
+              20,
+              35
+            ]
+          },
+          "answer_formula": "2*(a*b+b*c+a*c)",
+          "answer_type": "numeric"
+        },
+        {
+          "id": "geo_006",
+          "type": "REVERSE",
+          "problem": "A triangle has area {area} sq units and base {a}. What is its height?",
+          "constraints": {
+            "a": [
+              4,
+              20
+            ],
+            "area_note": "0.5*a*random(3,14)"
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "geo_007",
+          "type": "COMPARE",
+          "problem": "Shape A: triangle base {a} height {b}. Shape B: parallelogram base {c} height {d}. Which has greater area?",
+          "constraints": {
+            "a": [
+              6,
+              18
+            ],
+            "b": [
+              6,
+              18
+            ],
+            "c": [
+              4,
+              14
+            ],
+            "d": [
+              4,
+              14
+            ]
+          },
+          "answer_type": "comparison"
+        },
+        {
+          "id": "geo_008",
+          "type": "CONSTRUCT",
+          "problem": "Design a rectangular prism with volume {v} cubic units. State length, width, and height.",
+          "constraints": {
+            "v": [
+              24,
+              120
+            ]
+          },
+          "answer_type": "open_ended"
+        }
       ]
     },
     {
@@ -113,14 +1138,168 @@
       "ccss": "6.NS.C.6, 6.NS.C.8",
       "level": "solidify",
       "templates": [
-        { "id": "cp_001", "type": "IDENTIFY", "problem": "In which quadrant is ({a}, {b})? What are the signs of x and y in that quadrant?", "constraints": { "a": [-8, 8], "b": [-8, 8] }, "constraints_note": "a != 0, b != 0", "answer_type": "quadrant_plus_signs" },
-        { "id": "cp_002", "type": "COMPUTE", "problem": "Find the distance between ({a}, {y}) and ({b}, {y}) using absolute value.", "constraints": { "a": [-8, 0], "b": [1, 8], "y": [-6, 6] }, "answer_formula": "abs(b-a)", "answer_type": "numeric" },
-        { "id": "cp_003", "type": "COMPUTE", "problem": "Find the distance between ({x}, {a}) and ({x}, {b}).", "constraints": { "x": [-6, 6], "a": [-8, 0], "b": [1, 8] }, "answer_formula": "abs(b-a)", "answer_type": "numeric" },
-        { "id": "cp_004", "type": "APPLY", "context": "city_map", "problem": "A city map has the library at ({a}, {y}) and the post office at ({b}, {y}). Each unit = {s} blocks. How far apart are they?", "constraints": { "a": [-6, 0], "b": [1, 6], "y": [-4, 4], "s": [1, 3] }, "answer_formula": "s*abs(b-a)", "answer_type": "numeric" },
-        { "id": "cp_005", "type": "COMPUTE", "problem": "A rectangle has vertices at ({a},{b}), ({c},{b}), ({c},{d}), ({a},{d}). Find its perimeter and area.", "constraints": { "a": [-6, 0], "b": [-6, 0], "c": [1, 6], "d": [1, 6] }, "answer_type": "two_numeric" },
-        { "id": "cp_006", "type": "REVERSE", "problem": "Point A is at ({a},{b}). Point B is {d} units directly above A. What are B's coordinates?", "constraints": { "a": [-6, 6], "b": [-6, 0], "d": [2, 8] }, "answer_type": "coordinates" },
-        { "id": "cp_007", "type": "ERROR_ANALYSIS", "problem": "A student says the distance between ({a},{y}) and ({b},{y}) is {wrong}. What is the correct answer?", "constraints": { "a": [-6, -1], "b": [1, 6], "y": [-5, 5] }, "generation_note": "wrong = a + b", "answer_type": "numeric_plus_explanation" },
-        { "id": "cp_008", "type": "CONSTRUCT", "problem": "Name two points in Quadrant II that are {d} units apart on a horizontal line.", "constraints": { "d": [3, 8] }, "answer_type": "open_ended" }
+        {
+          "id": "cp_001",
+          "type": "IDENTIFY",
+          "problem": "In which quadrant is ({a}, {b})? What are the signs of x and y in that quadrant?",
+          "constraints": {
+            "a": [
+              -8,
+              8
+            ],
+            "b": [
+              -8,
+              8
+            ]
+          },
+          "constraints_note": "a != 0, b != 0",
+          "answer_type": "quadrant_plus_signs"
+        },
+        {
+          "id": "cp_002",
+          "type": "COMPUTE",
+          "problem": "Find the distance between ({a}, {y}) and ({b}, {y}) using absolute value.",
+          "constraints": {
+            "a": [
+              -8,
+              0
+            ],
+            "b": [
+              1,
+              8
+            ],
+            "y": [
+              -6,
+              6
+            ]
+          },
+          "answer_formula": "abs(b-a)",
+          "answer_type": "numeric"
+        },
+        {
+          "id": "cp_003",
+          "type": "COMPUTE",
+          "problem": "Find the distance between ({x}, {a}) and ({x}, {b}).",
+          "constraints": {
+            "x": [
+              -6,
+              6
+            ],
+            "a": [
+              -8,
+              0
+            ],
+            "b": [
+              1,
+              8
+            ]
+          },
+          "answer_formula": "abs(b-a)",
+          "answer_type": "numeric"
+        },
+        {
+          "id": "cp_004",
+          "type": "APPLY",
+          "context": "city_map",
+          "problem": "A city map has the library at ({a}, {y}) and the post office at ({b}, {y}). Each unit = {s} blocks. How far apart are they?",
+          "constraints": {
+            "a": [
+              -6,
+              0
+            ],
+            "b": [
+              1,
+              6
+            ],
+            "y": [
+              -4,
+              4
+            ],
+            "s": [
+              1,
+              3
+            ]
+          },
+          "answer_formula": "s*abs(b-a)",
+          "answer_type": "numeric"
+        },
+        {
+          "id": "cp_005",
+          "type": "COMPUTE",
+          "problem": "A rectangle has vertices at ({a},{b}), ({c},{b}), ({c},{d}), ({a},{d}). Find its perimeter and area.",
+          "constraints": {
+            "a": [
+              -6,
+              0
+            ],
+            "b": [
+              -6,
+              0
+            ],
+            "c": [
+              1,
+              6
+            ],
+            "d": [
+              1,
+              6
+            ]
+          },
+          "answer_type": "two_numeric"
+        },
+        {
+          "id": "cp_006",
+          "type": "REVERSE",
+          "problem": "Point A is at ({a},{b}). Point B is {d} units directly above A. What are B's coordinates?",
+          "constraints": {
+            "a": [
+              -6,
+              6
+            ],
+            "b": [
+              -6,
+              0
+            ],
+            "d": [
+              2,
+              8
+            ]
+          },
+          "answer_type": "coordinates"
+        },
+        {
+          "id": "cp_007",
+          "type": "ERROR_ANALYSIS",
+          "problem": "A student says the distance between ({a},{y}) and ({b},{y}) is {wrong}. What is the correct answer?",
+          "constraints": {
+            "a": [
+              -6,
+              -1
+            ],
+            "b": [
+              1,
+              6
+            ],
+            "y": [
+              -5,
+              5
+            ]
+          },
+          "generation_note": "wrong = a + b",
+          "answer_type": "numeric"
+        },
+        {
+          "id": "cp_008",
+          "type": "CONSTRUCT",
+          "problem": "Name two points in Quadrant II that are {d} units apart on a horizontal line.",
+          "constraints": {
+            "d": [
+              3,
+              8
+            ]
+          },
+          "answer_type": "open_ended"
+        }
       ]
     },
     {
@@ -129,13 +1308,192 @@
       "ccss": "6.SP.A.1, 6.SP.A.2, 6.SP.A.3, 6.SP.B.5",
       "level": "solidify",
       "templates": [
-        { "id": "sp_001", "type": "COMPUTE", "problem": "Find the mean of: {a}, {b}, {c}, {d}, {e}", "constraints": { "a": [10, 50], "b": [10, 50], "c": [10, 50], "d": [10, 50], "e": [10, 50] }, "answer_type": "numeric" },
-        { "id": "sp_002", "type": "COMPUTE", "problem": "Find the median of: {a}, {b}, {c}, {d}, {e}", "constraints": { "a": [1, 30], "b": [1, 30], "c": [1, 30], "d": [1, 30], "e": [1, 30] }, "answer_type": "numeric" },
-        { "id": "sp_003", "type": "COMPUTE", "problem": "Find the mode and range of: {a}, {b}, {c}, {a}, {d}, {b}", "constraints": { "a": [1, 20], "b": [1, 20], "c": [1, 20], "d": [1, 20] }, "answer_type": "two_numeric" },
-        { "id": "sp_004", "type": "REVERSE", "problem": "The mean of four numbers is {m}. Three of them are {a}, {b}, {c}. What is the fourth?", "constraints": { "m": [10, 30], "a": [5, 40], "b": [5, 40], "c": [5, 40] }, "answer_formula": "4*m-a-b-c", "answer_type": "numeric" },
-        { "id": "sp_005", "type": "APPLY", "context": "grades", "problem": "A student scored {a}, {b}, {c}, {d} on four tests. What score is needed on a 5th test for a mean of {target}?", "constraints": { "a": [60, 95], "b": [60, 95], "c": [60, 95], "d": [60, 95], "target": [70, 90] }, "answer_type": "numeric" },
-        { "id": "sp_006", "type": "ERROR_ANALYSIS", "problem": "A student finds the median of {a}, {b}, {c}, {d}, {e} by averaging the smallest and largest. What is wrong? What is correct?", "constraints": { "a": [5, 20], "b": [5, 20], "c": [5, 20], "d": [5, 20], "e": [5, 20] }, "answer_type": "explanation_plus_numeric" },
-        { "id": "sp_007", "type": "COMPARE", "problem": "Group A mean = {a}, median = {b}. Group B mean = {c}, median = {d}. Which group has more consistent data? Explain.", "constraints": { "a": [60, 85], "b": [60, 85], "c": [60, 85], "d": [60, 85] }, "answer_type": "comparison_plus_explanation" }
+        {
+          "id": "sp_001",
+          "type": "COMPUTE",
+          "problem": "Find the mean of: {a}, {b}, {c}, {d}, {e}",
+          "constraints": {
+            "a": [
+              10,
+              50
+            ],
+            "b": [
+              10,
+              50
+            ],
+            "c": [
+              10,
+              50
+            ],
+            "d": [
+              10,
+              50
+            ],
+            "e": [
+              10,
+              50
+            ]
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "sp_002",
+          "type": "COMPUTE",
+          "problem": "Find the median of: {a}, {b}, {c}, {d}, {e}",
+          "constraints": {
+            "a": [
+              1,
+              30
+            ],
+            "b": [
+              1,
+              30
+            ],
+            "c": [
+              1,
+              30
+            ],
+            "d": [
+              1,
+              30
+            ],
+            "e": [
+              1,
+              30
+            ]
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "sp_003",
+          "type": "COMPUTE",
+          "problem": "Find the mode and range of: {a}, {b}, {c}, {a}, {d}, {b}",
+          "constraints": {
+            "a": [
+              1,
+              20
+            ],
+            "b": [
+              1,
+              20
+            ],
+            "c": [
+              1,
+              20
+            ],
+            "d": [
+              1,
+              20
+            ]
+          },
+          "answer_type": "two_numeric"
+        },
+        {
+          "id": "sp_004",
+          "type": "REVERSE",
+          "problem": "The mean of four numbers is {m}. Three of them are {a}, {b}, {c}. What is the fourth?",
+          "constraints": {
+            "m": [
+              10,
+              30
+            ],
+            "a": [
+              5,
+              40
+            ],
+            "b": [
+              5,
+              40
+            ],
+            "c": [
+              5,
+              40
+            ]
+          },
+          "answer_formula": "4*m-a-b-c",
+          "answer_type": "numeric"
+        },
+        {
+          "id": "sp_005",
+          "type": "APPLY",
+          "context": "grades",
+          "problem": "A student scored {a}, {b}, {c}, {d} on four tests. What score is needed on a 5th test for a mean of {target}?",
+          "constraints": {
+            "a": [
+              60,
+              95
+            ],
+            "b": [
+              60,
+              95
+            ],
+            "c": [
+              60,
+              95
+            ],
+            "d": [
+              60,
+              95
+            ],
+            "target": [
+              70,
+              90
+            ]
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "sp_006",
+          "type": "ERROR_ANALYSIS",
+          "problem": "A student finds the median of {a}, {b}, {c}, {d}, {e} by averaging the smallest and largest. What is wrong? What is correct?",
+          "constraints": {
+            "a": [
+              5,
+              20
+            ],
+            "b": [
+              5,
+              20
+            ],
+            "c": [
+              5,
+              20
+            ],
+            "d": [
+              5,
+              20
+            ],
+            "e": [
+              5,
+              20
+            ]
+          },
+          "answer_type": "explanation_plus_numeric"
+        },
+        {
+          "id": "sp_007",
+          "type": "COMPARE",
+          "problem": "Group A mean = {a}, median = {b}. Group B mean = {c}, median = {d}. Which group has more consistent data?",
+          "constraints": {
+            "a": [
+              60,
+              85
+            ],
+            "b": [
+              60,
+              85
+            ],
+            "c": [
+              60,
+              85
+            ],
+            "d": [
+              60,
+              85
+            ]
+          },
+          "answer_type": "comparison"
+        }
       ]
     }
   ]

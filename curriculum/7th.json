@@ -1,7 +1,16 @@
 {
   "grade": "7th",
   "description": "Core 7th grade standards. Proportional relationships, rational number operations, expressions with distribution, two-step equations, probability, and geometry with scale.",
-  "ccss_primary": ["7.RP.A", "7.NS.A", "7.EE.A", "7.EE.B", "7.G.A", "7.G.B", "7.SP.A", "7.SP.C"],
+  "ccss_primary": [
+    "7.RP.A",
+    "7.NS.A",
+    "7.EE.A",
+    "7.EE.B",
+    "7.G.A",
+    "7.G.B",
+    "7.SP.A",
+    "7.SP.C"
+  ],
   "skills": [
     {
       "id": "proportional_relationships",
@@ -9,18 +18,227 @@
       "ccss": "7.RP.A.1, 7.RP.A.2, 7.RP.A.3",
       "level": "solidify",
       "templates": [
-        { "id": "pr_001", "type": "COMPUTE", "problem": "Find the unit rate: {a} miles in {b} hours.", "constraints": { "a": [45, 300], "b": [2, 6] }, "constraints_note": "a divisible by b", "answer_type": "unit_rate" },
-        { "id": "pr_002", "type": "IDENTIFY", "problem": "Is the relationship proportional? Hours: {a}, {b}, {c}. Miles: {d}, {e}, {f}.", "constraints": { "a": [1, 3], "b": [2, 6], "c": [3, 9] }, "generation_note": "half the time proportional, half not", "answer_type": "boolean_plus_explanation" },
-        { "id": "pr_003", "type": "COMPUTE", "problem": "y varies proportionally with x. When x = {a}, y = {b}. Find y when x = {c}.", "constraints": { "a": [2, 8], "b": [6, 40], "c": [4, 20] }, "answer_type": "numeric" },
-        { "id": "pr_004", "type": "APPLY", "context": "shopping", "problem": "{a} pounds of apples cost ${b}. At this rate, how much do {c} pounds cost?", "constraints": { "a": [2, 5], "b": [3, 15], "c": [6, 20] }, "answer_type": "numeric" },
-        { "id": "pr_005", "type": "REPRESENT", "problem": "A table shows x: {a}, {b}, {c} and y: {d}, {e}, {f}. Write the equation y = kx.", "constraints": { "a": [1, 4], "b": [2, 8], "c": [3, 12] }, "generation_note": "d=k*a, e=k*b, f=k*c for integer k", "answer_type": "equation" },
-        { "id": "pr_006", "type": "APPLY", "context": "percent", "problem": "A shirt costs ${a}. It is on sale for {b}% off. What is the sale price?", "constraints": { "a": [20, 80], "b": [10, 50] }, "answer_type": "numeric" },
-        { "id": "pr_007", "type": "APPLY", "context": "tax", "problem": "A meal costs ${a}. Tax is {b}%. What is the total cost including tax?", "constraints": { "a": [10, 60], "b": [5, 10] }, "answer_type": "numeric" },
-        { "id": "pr_008", "type": "REVERSE", "problem": "After a {b}% discount, an item costs ${a}. What was the original price?", "constraints": { "a": [18, 80], "b": [10, 50] }, "answer_type": "numeric" },
-        { "id": "pr_009", "type": "COMPARE", "problem": "Plan A: ${a} per month. Plan B: ${b} for {c} months. Which is cheaper per month?", "constraints": { "a": [15, 40], "b": [60, 180], "c": [3, 6] }, "answer_type": "comparison_plus_work" },
-        { "id": "pr_010", "type": "ERROR_ANALYSIS", "problem": "A student says {a}% of ${b} is ${wrong}. What is the correct answer?", "constraints": { "a": [10, 50], "b": [40, 200] }, "generation_note": "wrong = a * b (forgot /100)", "answer_type": "numeric_plus_explanation" },
-        { "id": "pr_011", "type": "APPLY", "context": "interest", "problem": "You invest ${a} at {b}% simple interest per year. How much interest do you earn in {c} years?", "constraints": { "a": [200, 1000], "b": [2, 8], "c": [1, 5] }, "answer_formula": "a*b*c/100", "answer_type": "numeric" },
-        { "id": "pr_012", "type": "CONSTRUCT", "problem": "Create a proportional table where the constant of proportionality is {k}. Include 4 pairs of values.", "constraints": { "k": [3, 12] }, "answer_type": "open_ended" }
+        {
+          "id": "pr_001",
+          "type": "COMPUTE",
+          "problem": "Find the unit rate: {a} miles in {b} hours.",
+          "constraints": {
+            "a": [
+              45,
+              300
+            ],
+            "b": [
+              2,
+              6
+            ]
+          },
+          "constraints_note": "a divisible by b",
+          "answer_type": "unit_rate"
+        },
+        {
+          "id": "pr_002",
+          "type": "IDENTIFY",
+          "problem": "Is the relationship proportional? Hours: {a}, {b}, {c}. Miles: {d}, {e}, {f}.",
+          "constraints": {
+            "a": [
+              1,
+              3
+            ],
+            "b": [
+              2,
+              6
+            ],
+            "c": [
+              3,
+              9
+            ]
+          },
+          "generation_note": "half the time proportional, half not",
+          "answer_type": "boolean"
+        },
+        {
+          "id": "pr_003",
+          "type": "COMPUTE",
+          "problem": "y varies proportionally with x. When x = {a}, y = {b}. Find y when x = {c}.",
+          "constraints": {
+            "a": [
+              2,
+              8
+            ],
+            "b": [
+              6,
+              40
+            ],
+            "c": [
+              4,
+              20
+            ]
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "pr_004",
+          "type": "APPLY",
+          "context": "shopping",
+          "problem": "{a} pounds of apples cost ${b}. At this rate, how much do {c} pounds cost?",
+          "constraints": {
+            "a": [
+              2,
+              5
+            ],
+            "b": [
+              3,
+              15
+            ],
+            "c": [
+              6,
+              20
+            ]
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "pr_005",
+          "type": "REPRESENT",
+          "problem": "A table shows x: {a}, {b}, {c} and y: {d}, {e}, {f}. Write the equation y = kx.",
+          "constraints": {
+            "a": [
+              1,
+              4
+            ],
+            "b": [
+              2,
+              8
+            ],
+            "c": [
+              3,
+              12
+            ]
+          },
+          "generation_note": "d=k*a, e=k*b, f=k*c for integer k",
+          "answer_type": "equation"
+        },
+        {
+          "id": "pr_006",
+          "type": "APPLY",
+          "context": "percent",
+          "problem": "A shirt costs ${a}. It is on sale for {b}% off. What is the sale price?",
+          "constraints": {
+            "a": [
+              20,
+              80
+            ],
+            "b": [
+              10,
+              50
+            ]
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "pr_007",
+          "type": "APPLY",
+          "context": "tax",
+          "problem": "A meal costs ${a}. Tax is {b}%. What is the total cost including tax?",
+          "constraints": {
+            "a": [
+              10,
+              60
+            ],
+            "b": [
+              5,
+              10
+            ]
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "pr_008",
+          "type": "REVERSE",
+          "problem": "After a {b}% discount, an item costs ${a}. What was the original price?",
+          "constraints": {
+            "a": [
+              18,
+              80
+            ],
+            "b": [
+              10,
+              50
+            ]
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "pr_009",
+          "type": "COMPARE",
+          "problem": "Plan A: ${a} per month. Plan B: ${b} for {c} months. Which is cheaper per month?",
+          "constraints": {
+            "a": [
+              15,
+              40
+            ],
+            "b": [
+              60,
+              180
+            ],
+            "c": [
+              3,
+              6
+            ]
+          },
+          "answer_type": "comparison"
+        },
+        {
+          "id": "pr_010",
+          "type": "ERROR_ANALYSIS",
+          "problem": "A student says {a}% of ${b} is ${wrong}. What is the correct answer?",
+          "constraints": {
+            "a": [
+              10,
+              50
+            ],
+            "b": [
+              40,
+              200
+            ]
+          },
+          "generation_note": "wrong = a * b (forgot /100)",
+          "answer_type": "numeric"
+        },
+        {
+          "id": "pr_011",
+          "type": "APPLY",
+          "context": "interest",
+          "problem": "You invest ${a} at {b}% simple interest per year. How much interest do you earn in {c} years?",
+          "constraints": {
+            "a": [
+              200,
+              1000
+            ],
+            "b": [
+              2,
+              8
+            ],
+            "c": [
+              1,
+              5
+            ]
+          },
+          "answer_formula": "a*b*c/100",
+          "answer_type": "numeric"
+        },
+        {
+          "id": "pr_012",
+          "type": "CONSTRUCT",
+          "problem": "Create a proportional table where the constant of proportionality is {k}. Include 4 pairs of values.",
+          "constraints": {
+            "k": [
+              3,
+              12
+            ]
+          },
+          "answer_type": "open_ended"
+        }
       ]
     },
     {
@@ -29,16 +247,242 @@
       "ccss": "7.NS.A.1, 7.NS.A.2, 7.NS.A.3",
       "level": "solidify",
       "templates": [
-        { "id": "rn_001", "type": "COMPUTE", "problem": "{a}/{b} + {c}/{d}", "constraints": { "a": [-8, 8], "b": [2, 10], "c": [-8, 8], "d": [2, 10] }, "constraints_note": "includes negative fractions", "answer_type": "fraction_simplified" },
-        { "id": "rn_002", "type": "COMPUTE", "problem": "{a}/{b} - {c}/{d}", "constraints": { "a": [-6, 6], "b": [3, 10], "c": [-6, 6], "d": [3, 10] }, "answer_type": "fraction_simplified" },
-        { "id": "rn_003", "type": "COMPUTE", "problem": "{a}/{b} × {c}/{d}", "constraints": { "a": [-5, 5], "b": [2, 8], "c": [-5, 5], "d": [2, 8] }, "answer_type": "fraction_simplified" },
-        { "id": "rn_004", "type": "COMPUTE", "problem": "{a}/{b} ÷ {c}/{d}", "constraints": { "a": [-5, 5], "b": [2, 8], "c": [1, 5], "d": [2, 8] }, "answer_type": "fraction_simplified" },
-        { "id": "rn_005", "type": "COMPUTE", "problem": "{a}.{b} + {c}.{d}", "constraints": { "a": [-20, 20], "b": [1, 99], "c": [-20, 20], "d": [1, 99] }, "answer_type": "decimal" },
-        { "id": "rn_006", "type": "APPLY", "context": "temperature", "problem": "The temperature changed by {a}/{b}°F each hour for {c} hours. What was the total change?", "constraints": { "a": [-5, 5], "b": [2, 4], "c": [2, 8] }, "answer_type": "fraction_simplified" },
-        { "id": "rn_007", "type": "IDENTIFY", "problem": "Will {a}/{b} + {c}/{d} be positive or negative? Explain without calculating.", "constraints": { "a": [-8, -1], "b": [2, 8], "c": [1, 8], "d": [2, 8] }, "answer_type": "sign_plus_explanation" },
-        { "id": "rn_008", "type": "REVERSE", "problem": "__ + {a}/{b} = {c}/{d}. Find the missing rational number.", "constraints": { "a": [1, 5], "b": [3, 8], "c": [1, 8], "d": [3, 8] }, "answer_type": "fraction_simplified" },
-        { "id": "rn_009", "type": "APPLY", "context": "finance", "problem": "A stock gained ${a}.{b} on Monday and lost ${c}.{d} on Tuesday. What was the net change?", "constraints": { "a": [1, 20], "b": [10, 99], "c": [1, 20], "d": [10, 99] }, "answer_type": "decimal" },
-        { "id": "rn_010", "type": "ERROR_ANALYSIS", "problem": "A student computes -{a}/{b} + {c}/{b} and gets {wrong}/{b}. What did they do wrong?", "constraints": { "a": [2, 8], "b": [6, 12], "c": [3, 9] }, "generation_note": "wrong = -(a+c) (student treated both as negative)", "answer_type": "fraction_plus_explanation" }
+        {
+          "id": "rn_001",
+          "type": "COMPUTE",
+          "problem": "{a}/{b} + {c}/{d}",
+          "constraints": {
+            "a": [
+              -8,
+              8
+            ],
+            "b": [
+              2,
+              10
+            ],
+            "c": [
+              -8,
+              8
+            ],
+            "d": [
+              2,
+              10
+            ]
+          },
+          "constraints_note": "includes negative fractions",
+          "answer_type": "fraction_simplified"
+        },
+        {
+          "id": "rn_002",
+          "type": "COMPUTE",
+          "problem": "{a}/{b} - {c}/{d}",
+          "constraints": {
+            "a": [
+              -6,
+              6
+            ],
+            "b": [
+              3,
+              10
+            ],
+            "c": [
+              -6,
+              6
+            ],
+            "d": [
+              3,
+              10
+            ]
+          },
+          "answer_type": "fraction_simplified"
+        },
+        {
+          "id": "rn_003",
+          "type": "COMPUTE",
+          "problem": "{a}/{b} × {c}/{d}",
+          "constraints": {
+            "a": [
+              -5,
+              5
+            ],
+            "b": [
+              2,
+              8
+            ],
+            "c": [
+              -5,
+              5
+            ],
+            "d": [
+              2,
+              8
+            ]
+          },
+          "answer_type": "fraction_simplified"
+        },
+        {
+          "id": "rn_004",
+          "type": "COMPUTE",
+          "problem": "{a}/{b} ÷ {c}/{d}",
+          "constraints": {
+            "a": [
+              -5,
+              5
+            ],
+            "b": [
+              2,
+              8
+            ],
+            "c": [
+              1,
+              5
+            ],
+            "d": [
+              2,
+              8
+            ]
+          },
+          "answer_type": "fraction_simplified"
+        },
+        {
+          "id": "rn_005",
+          "type": "COMPUTE",
+          "problem": "{a}.{b} + {c}.{d}",
+          "constraints": {
+            "a": [
+              -20,
+              20
+            ],
+            "b": [
+              1,
+              99
+            ],
+            "c": [
+              -20,
+              20
+            ],
+            "d": [
+              1,
+              99
+            ]
+          },
+          "answer_type": "decimal"
+        },
+        {
+          "id": "rn_006",
+          "type": "APPLY",
+          "context": "temperature",
+          "problem": "The temperature changed by {a}/{b}°F each hour for {c} hours. What was the total change?",
+          "constraints": {
+            "a": [
+              -5,
+              5
+            ],
+            "b": [
+              2,
+              4
+            ],
+            "c": [
+              2,
+              8
+            ]
+          },
+          "answer_type": "fraction_simplified"
+        },
+        {
+          "id": "rn_007",
+          "type": "IDENTIFY",
+          "problem": "Will {a}/{b} + {c}/{d} be positive or negative? Explain without calculating.",
+          "constraints": {
+            "a": [
+              -8,
+              -1
+            ],
+            "b": [
+              2,
+              8
+            ],
+            "c": [
+              1,
+              8
+            ],
+            "d": [
+              2,
+              8
+            ]
+          },
+          "answer_type": "sign"
+        },
+        {
+          "id": "rn_008",
+          "type": "REVERSE",
+          "problem": "__ + {a}/{b} = {c}/{d}. Find the missing rational number.",
+          "constraints": {
+            "a": [
+              1,
+              5
+            ],
+            "b": [
+              3,
+              8
+            ],
+            "c": [
+              1,
+              8
+            ],
+            "d": [
+              3,
+              8
+            ]
+          },
+          "answer_type": "fraction_simplified"
+        },
+        {
+          "id": "rn_009",
+          "type": "APPLY",
+          "context": "finance",
+          "problem": "A stock gained ${a}.{b} on Monday and lost ${c}.{d} on Tuesday. What was the net change?",
+          "constraints": {
+            "a": [
+              1,
+              20
+            ],
+            "b": [
+              10,
+              99
+            ],
+            "c": [
+              1,
+              20
+            ],
+            "d": [
+              10,
+              99
+            ]
+          },
+          "answer_type": "decimal"
+        },
+        {
+          "id": "rn_010",
+          "type": "ERROR_ANALYSIS",
+          "problem": "A student computes -{a}/{b} + {c}/{b} and gets {wrong}/{b}. What did they do wrong?",
+          "constraints": {
+            "a": [
+              2,
+              8
+            ],
+            "b": [
+              6,
+              12
+            ],
+            "c": [
+              3,
+              9
+            ]
+          },
+          "generation_note": "wrong = -(a+c) (student treated both as negative)",
+          "answer_type": "fraction"
+        }
       ]
     },
     {
@@ -47,18 +491,226 @@
       "ccss": "7.EE.A.1, 7.EE.A.2, 7.EE.B.3, 7.EE.B.4",
       "level": "solidify",
       "templates": [
-        { "id": "ee_001", "type": "COMPUTE", "problem": "Expand: {a}(x + {b})", "constraints": { "a": [2, 8], "b": [2, 10] }, "answer_type": "expression" },
-        { "id": "ee_002", "type": "COMPUTE", "problem": "Expand: {a}(x - {b})", "constraints": { "a": [2, 8], "b": [2, 10] }, "answer_type": "expression" },
-        { "id": "ee_003", "type": "COMPUTE", "problem": "Simplify: {a}x + {b}x - {c}", "constraints": { "a": [2, 8], "b": [2, 8], "c": [3, 20] }, "answer_type": "expression" },
-        { "id": "ee_004", "type": "COMPUTE", "problem": "Solve: {a}x + {b} = {c}", "constraints": { "a": [2, 8], "b": [-20, 20], "c": [-40, 60] }, "answer_type": "numeric" },
-        { "id": "ee_005", "type": "COMPUTE", "problem": "Solve: {a}x - {b} = {c}", "constraints": { "a": [2, 8], "b": [3, 25], "c": [-30, 50] }, "answer_type": "numeric" },
-        { "id": "ee_006", "type": "COMPUTE", "problem": "Solve: x/{a} + {b} = {c}", "constraints": { "a": [2, 6], "b": [2, 15], "c": [5, 30] }, "answer_type": "numeric" },
-        { "id": "ee_007", "type": "APPLY", "context": "money", "problem": "You earn ${a} per hour plus a ${b} bonus. You want to earn at least ${c} total. Write and solve an equation for the hours needed.", "constraints": { "a": [8, 20], "b": [10, 50], "c": [50, 200] }, "answer_type": "equation_plus_numeric" },
-        { "id": "ee_008", "type": "APPLY", "context": "geometry", "problem": "A rectangle has perimeter {p}. Its length is {a} more than twice its width. Write and solve for the width.", "constraints": { "p": [40, 100], "a": [2, 10] }, "answer_type": "equation_plus_numeric" },
-        { "id": "ee_009", "type": "ERROR_ANALYSIS", "problem": "A student solves {a}x + {b} = {c} and gets x = {wrong}. What step did they do wrong?", "constraints": { "a": [2, 6], "b": [4, 16], "c": [20, 50] }, "generation_note": "wrong = (c+b)/a (added b instead of subtracting)", "answer_type": "numeric_plus_explanation" },
-        { "id": "ee_010", "type": "CONSTRUCT", "problem": "Write a two-step equation whose solution is x = {s}.", "constraints": { "s": [-10, 10] }, "answer_type": "open_ended" },
-        { "id": "ee_011", "type": "REPRESENT", "problem": "Write an expression using distribution for the area of a rectangle with width {a} and length (x + {b}).", "constraints": { "a": [2, 6], "b": [3, 10] }, "answer_type": "expression" },
-        { "id": "ee_012", "type": "COMPUTE", "problem": "Solve: {a}(x + {b}) = {c}", "constraints": { "a": [2, 5], "b": [2, 8], "c": [20, 60] }, "constraints_note": "c divisible by a", "answer_type": "numeric" }
+        {
+          "id": "ee_001",
+          "type": "COMPUTE",
+          "problem": "Expand: {a}(x + {b})",
+          "constraints": {
+            "a": [
+              2,
+              8
+            ],
+            "b": [
+              2,
+              10
+            ]
+          },
+          "answer_type": "expression"
+        },
+        {
+          "id": "ee_002",
+          "type": "COMPUTE",
+          "problem": "Expand: {a}(x - {b})",
+          "constraints": {
+            "a": [
+              2,
+              8
+            ],
+            "b": [
+              2,
+              10
+            ]
+          },
+          "answer_type": "expression"
+        },
+        {
+          "id": "ee_003",
+          "type": "COMPUTE",
+          "problem": "Simplify: {a}x + {b}x - {c}",
+          "constraints": {
+            "a": [
+              2,
+              8
+            ],
+            "b": [
+              2,
+              8
+            ],
+            "c": [
+              3,
+              20
+            ]
+          },
+          "answer_type": "expression"
+        },
+        {
+          "id": "ee_004",
+          "type": "COMPUTE",
+          "problem": "Solve: {a}x + {b} = {c}",
+          "constraints": {
+            "a": [
+              2,
+              8
+            ],
+            "b": [
+              -20,
+              20
+            ],
+            "c": [
+              -40,
+              60
+            ]
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "ee_005",
+          "type": "COMPUTE",
+          "problem": "Solve: {a}x - {b} = {c}",
+          "constraints": {
+            "a": [
+              2,
+              8
+            ],
+            "b": [
+              3,
+              25
+            ],
+            "c": [
+              -30,
+              50
+            ]
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "ee_006",
+          "type": "COMPUTE",
+          "problem": "Solve: x/{a} + {b} = {c}",
+          "constraints": {
+            "a": [
+              2,
+              6
+            ],
+            "b": [
+              2,
+              15
+            ],
+            "c": [
+              5,
+              30
+            ]
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "ee_007",
+          "type": "APPLY",
+          "context": "money",
+          "problem": "You earn ${a} per hour plus a ${b} bonus. You want to earn at least ${c} total. Write and solve an equation for the hours needed.",
+          "constraints": {
+            "a": [
+              8,
+              20
+            ],
+            "b": [
+              10,
+              50
+            ],
+            "c": [
+              50,
+              200
+            ]
+          },
+          "answer_type": "equation_plus_numeric"
+        },
+        {
+          "id": "ee_008",
+          "type": "APPLY",
+          "context": "geometry",
+          "problem": "A rectangle has perimeter {p}. Its length is {a} more than twice its width. Write and solve for the width.",
+          "constraints": {
+            "p": [
+              40,
+              100
+            ],
+            "a": [
+              2,
+              10
+            ]
+          },
+          "answer_type": "equation_plus_numeric"
+        },
+        {
+          "id": "ee_009",
+          "type": "ERROR_ANALYSIS",
+          "problem": "A student solves {a}x + {b} = {c} and gets x = {wrong}. What step did they do wrong?",
+          "constraints": {
+            "a": [
+              2,
+              6
+            ],
+            "b": [
+              4,
+              16
+            ],
+            "c": [
+              20,
+              50
+            ]
+          },
+          "generation_note": "wrong = (c+b)/a (added b instead of subtracting)",
+          "answer_type": "numeric"
+        },
+        {
+          "id": "ee_010",
+          "type": "CONSTRUCT",
+          "problem": "Write a two-step equation whose solution is x = {s}.",
+          "constraints": {
+            "s": [
+              -10,
+              10
+            ]
+          },
+          "answer_type": "open_ended"
+        },
+        {
+          "id": "ee_011",
+          "type": "REPRESENT",
+          "problem": "Write an expression using distribution for the area of a rectangle with width {a} and length (x + {b}).",
+          "constraints": {
+            "a": [
+              2,
+              6
+            ],
+            "b": [
+              3,
+              10
+            ]
+          },
+          "answer_type": "expression"
+        },
+        {
+          "id": "ee_012",
+          "type": "COMPUTE",
+          "problem": "Solve: {a}(x + {b}) = {c}",
+          "constraints": {
+            "a": [
+              2,
+              5
+            ],
+            "b": [
+              2,
+              8
+            ],
+            "c": [
+              20,
+              60
+            ]
+          },
+          "constraints_note": "c divisible by a",
+          "answer_type": "numeric"
+        }
       ]
     },
     {
@@ -67,16 +719,155 @@
       "ccss": "7.G.A.1, 7.G.A.2, 7.G.B.4, 7.G.B.5, 7.G.B.6",
       "level": "solidify",
       "templates": [
-        { "id": "geo_001", "type": "COMPUTE", "problem": "A scale drawing has scale {a} cm = {b} m. An object measures {c} cm on the drawing. What is its actual length?", "constraints": { "a": [1, 4], "b": [2, 10], "c": [3, 20] }, "answer_type": "numeric" },
-        { "id": "geo_002", "type": "COMPUTE", "problem": "Two angles are supplementary. One measures {a}°. What is the other?", "constraints": { "a": [30, 150] }, "answer_formula": "180 - a", "answer_type": "numeric" },
-        { "id": "geo_003", "type": "COMPUTE", "problem": "Two angles are complementary. One measures {a}°. What is the other?", "constraints": { "a": [10, 80] }, "answer_formula": "90 - a", "answer_type": "numeric" },
-        { "id": "geo_004", "type": "COMPUTE", "problem": "Find the area of a circle with radius {a}. Use π ≈ 3.14.", "constraints": { "a": [2, 12] }, "answer_formula": "3.14*a*a", "answer_type": "numeric" },
-        { "id": "geo_005", "type": "COMPUTE", "problem": "Find the circumference of a circle with diameter {a}. Use π ≈ 3.14.", "constraints": { "a": [4, 20] }, "answer_formula": "3.14*a", "answer_type": "numeric" },
-        { "id": "geo_006", "type": "APPLY", "context": "map", "problem": "A map scale is 1 in = {a} miles. Two cities are {b} in apart on the map. How far apart are they?", "constraints": { "a": [20, 100], "b": [2, 8] }, "answer_type": "numeric" },
-        { "id": "geo_007", "type": "REVERSE", "problem": "A circle has circumference {c}. Find its radius. Use π ≈ 3.14.", "constraints": { "c_note": "3.14 * random(3,15)" }, "answer_type": "numeric" },
-        { "id": "geo_008", "type": "APPLY", "context": "construction", "problem": "A circular fountain has radius {a} ft. What is the area of the surrounding grass if the total circular yard has radius {b} ft?", "constraints": { "a": [3, 8], "b": [8, 15] }, "answer_formula": "3.14*(b*b - a*a)", "answer_type": "numeric" },
-        { "id": "geo_009", "type": "IDENTIFY", "problem": "Two angles formed by intersecting lines are vertical angles. One is {a}°. What is the other?", "constraints": { "a": [30, 150] }, "answer_type": "numeric" },
-        { "id": "geo_010", "type": "COMPUTE", "problem": "Find the area of a trapezoid with bases {a} and {b} and height {c}.", "constraints": { "a": [4, 16], "b": [6, 20], "c": [3, 12] }, "answer_formula": "0.5*(a+b)*c", "answer_type": "numeric" }
+        {
+          "id": "geo_001",
+          "type": "COMPUTE",
+          "problem": "A scale drawing has scale {a} cm = {b} m. An object measures {c} cm on the drawing. What is its actual length?",
+          "constraints": {
+            "a": [
+              1,
+              4
+            ],
+            "b": [
+              2,
+              10
+            ],
+            "c": [
+              3,
+              20
+            ]
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "geo_002",
+          "type": "COMPUTE",
+          "problem": "Two angles are supplementary. One measures {a}°. What is the other?",
+          "constraints": {
+            "a": [
+              30,
+              150
+            ]
+          },
+          "answer_formula": "180 - a",
+          "answer_type": "numeric"
+        },
+        {
+          "id": "geo_003",
+          "type": "COMPUTE",
+          "problem": "Two angles are complementary. One measures {a}°. What is the other?",
+          "constraints": {
+            "a": [
+              10,
+              80
+            ]
+          },
+          "answer_formula": "90 - a",
+          "answer_type": "numeric"
+        },
+        {
+          "id": "geo_004",
+          "type": "COMPUTE",
+          "problem": "Find the area of a circle with radius {a}. Use π ≈ 3.14.",
+          "constraints": {
+            "a": [
+              2,
+              12
+            ]
+          },
+          "answer_formula": "3.14*a*a",
+          "answer_type": "numeric"
+        },
+        {
+          "id": "geo_005",
+          "type": "COMPUTE",
+          "problem": "Find the circumference of a circle with diameter {a}. Use π ≈ 3.14.",
+          "constraints": {
+            "a": [
+              4,
+              20
+            ]
+          },
+          "answer_formula": "3.14*a",
+          "answer_type": "numeric"
+        },
+        {
+          "id": "geo_006",
+          "type": "APPLY",
+          "context": "map",
+          "problem": "A map scale is 1 in = {a} miles. Two cities are {b} in apart on the map. How far apart are they?",
+          "constraints": {
+            "a": [
+              20,
+              100
+            ],
+            "b": [
+              2,
+              8
+            ]
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "geo_007",
+          "type": "REVERSE",
+          "problem": "A circle has circumference {c}. Find its radius. Use π ≈ 3.14.",
+          "constraints": {
+            "c_note": "3.14 * random(3,15)"
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "geo_008",
+          "type": "APPLY",
+          "context": "construction",
+          "problem": "A circular fountain has radius {a} ft. What is the area of the surrounding grass if the total circular yard has radius {b} ft?",
+          "constraints": {
+            "a": [
+              3,
+              8
+            ],
+            "b": [
+              8,
+              15
+            ]
+          },
+          "answer_formula": "3.14*(b*b - a*a)",
+          "answer_type": "numeric"
+        },
+        {
+          "id": "geo_009",
+          "type": "IDENTIFY",
+          "problem": "Two angles formed by intersecting lines are vertical angles. One is {a}°. What is the other?",
+          "constraints": {
+            "a": [
+              30,
+              150
+            ]
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "geo_010",
+          "type": "COMPUTE",
+          "problem": "Find the area of a trapezoid with bases {a} and {b} and height {c}.",
+          "constraints": {
+            "a": [
+              4,
+              16
+            ],
+            "b": [
+              6,
+              20
+            ],
+            "c": [
+              3,
+              12
+            ]
+          },
+          "answer_formula": "0.5*(a+b)*c",
+          "answer_type": "numeric"
+        }
       ]
     },
     {
@@ -85,16 +876,175 @@
       "ccss": "7.SP.C.5, 7.SP.C.6, 7.SP.C.7, 7.SP.C.8",
       "level": "solidify",
       "templates": [
-        { "id": "prob_001", "type": "COMPUTE", "problem": "A bag has {a} red and {b} blue marbles. What is the probability of picking red?", "constraints": { "a": [2, 8], "b": [2, 8] }, "answer_formula": "a/(a+b)", "answer_type": "fraction_simplified" },
-        { "id": "prob_002", "type": "COMPUTE", "problem": "A die is rolled. What is the probability of rolling a number greater than {a}?", "constraints": { "a": [2, 5] }, "answer_type": "fraction_simplified" },
-        { "id": "prob_003", "type": "APPLY", "context": "spinner", "problem": "A spinner has {a} equal sections numbered 1 to {a}. What is the probability of landing on an even number?", "constraints": { "a": [4, 10] }, "answer_type": "fraction_simplified" },
-        { "id": "prob_004", "type": "COMPUTE", "problem": "A bag has {a} red, {b} blue, and {c} green marbles. What is the probability of NOT picking green?", "constraints": { "a": [2, 6], "b": [2, 6], "c": [2, 6] }, "answer_formula": "(a+b)/(a+b+c)", "answer_type": "fraction_simplified" },
-        { "id": "prob_005", "type": "APPLY", "context": "cards", "problem": "A deck has {a} cards numbered 1–{a}. You draw one. What is the probability it is a multiple of {b}?", "constraints": { "a": [10, 20], "b": [2, 5] }, "answer_type": "fraction_simplified" },
-        { "id": "prob_006", "type": "COMPARE", "problem": "Event A has probability {a}/{b}. Event B has probability {c}/{d}. Which is more likely?", "constraints": { "a": [1, 5], "b": [6, 12], "c": [2, 6], "d": [6, 12] }, "answer_type": "comparison_plus_work" },
-        { "id": "prob_007", "type": "COMPUTE", "problem": "You flip a coin and roll a die. List the sample space. How many outcomes are there?", "constraints": {}, "answer_type": "list_plus_numeric" },
-        { "id": "prob_008", "type": "APPLY", "context": "experiment", "problem": "In {a} trials, an event occurred {b} times. What is the experimental probability? How does it compare to the theoretical probability of {c}/{d}?", "constraints": { "a": [20, 100], "b": [5, 40], "c": [1, 3], "d": [4, 8] }, "answer_type": "fraction_plus_comparison" },
-        { "id": "prob_009", "type": "REVERSE", "problem": "The probability of an event is {a}/{b}. Out of {c} trials, how many times would you expect it to occur?", "constraints": { "a": [1, 3], "b": [4, 8], "c": [24, 80] }, "answer_type": "numeric" },
-        { "id": "prob_010", "type": "ERROR_ANALYSIS", "problem": "A student says P(A) + P(not A) = {wrong}. What is correct and why?", "constraints": { "wrong": [0, 0] }, "generation_note": "wrong = 0 (student confused complement rule)", "answer_type": "numeric_plus_explanation" }
+        {
+          "id": "prob_001",
+          "type": "COMPUTE",
+          "problem": "A bag has {a} red and {b} blue marbles. What is the probability of picking red?",
+          "constraints": {
+            "a": [
+              2,
+              8
+            ],
+            "b": [
+              2,
+              8
+            ]
+          },
+          "answer_formula": "a/(a+b)",
+          "answer_type": "fraction_simplified"
+        },
+        {
+          "id": "prob_002",
+          "type": "COMPUTE",
+          "problem": "A die is rolled. What is the probability of rolling a number greater than {a}?",
+          "constraints": {
+            "a": [
+              2,
+              5
+            ]
+          },
+          "answer_type": "fraction_simplified"
+        },
+        {
+          "id": "prob_003",
+          "type": "APPLY",
+          "context": "spinner",
+          "problem": "A spinner has {a} equal sections numbered 1 to {a}. What is the probability of landing on an even number?",
+          "constraints": {
+            "a": [
+              4,
+              10
+            ]
+          },
+          "answer_type": "fraction_simplified"
+        },
+        {
+          "id": "prob_004",
+          "type": "COMPUTE",
+          "problem": "A bag has {a} red, {b} blue, and {c} green marbles. What is the probability of NOT picking green?",
+          "constraints": {
+            "a": [
+              2,
+              6
+            ],
+            "b": [
+              2,
+              6
+            ],
+            "c": [
+              2,
+              6
+            ]
+          },
+          "answer_formula": "(a+b)/(a+b+c)",
+          "answer_type": "fraction_simplified"
+        },
+        {
+          "id": "prob_005",
+          "type": "APPLY",
+          "context": "cards",
+          "problem": "A deck has {a} cards numbered 1–{a}. You draw one. What is the probability it is a multiple of {b}?",
+          "constraints": {
+            "a": [
+              10,
+              20
+            ],
+            "b": [
+              2,
+              5
+            ]
+          },
+          "answer_type": "fraction_simplified"
+        },
+        {
+          "id": "prob_006",
+          "type": "COMPARE",
+          "problem": "Event A has probability {a}/{b}. Event B has probability {c}/{d}. Which is more likely?",
+          "constraints": {
+            "a": [
+              1,
+              5
+            ],
+            "b": [
+              6,
+              12
+            ],
+            "c": [
+              2,
+              6
+            ],
+            "d": [
+              6,
+              12
+            ]
+          },
+          "answer_type": "comparison"
+        },
+        {
+          "id": "prob_007",
+          "type": "COMPUTE",
+          "problem": "You flip a coin and roll a die. List the sample space. How many outcomes are there?",
+          "constraints": {},
+          "answer_type": "list_plus_numeric"
+        },
+        {
+          "id": "prob_008",
+          "type": "APPLY",
+          "context": "experiment",
+          "problem": "In {a} trials, an event occurred {b} times. What is the experimental probability? How does it compare to the theoretical probability of {c}/{d}?",
+          "constraints": {
+            "a": [
+              20,
+              100
+            ],
+            "b": [
+              5,
+              40
+            ],
+            "c": [
+              1,
+              3
+            ],
+            "d": [
+              4,
+              8
+            ]
+          },
+          "answer_type": "fraction_plus_comparison"
+        },
+        {
+          "id": "prob_009",
+          "type": "REVERSE",
+          "problem": "The probability of an event is {a}/{b}. Out of {c} trials, how many times would you expect it to occur?",
+          "constraints": {
+            "a": [
+              1,
+              3
+            ],
+            "b": [
+              4,
+              8
+            ],
+            "c": [
+              24,
+              80
+            ]
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "prob_010",
+          "type": "ERROR_ANALYSIS",
+          "problem": "A student says P(A) + P(not A) = {wrong}. What is correct and why?",
+          "constraints": {
+            "wrong": [
+              0,
+              0
+            ]
+          },
+          "generation_note": "wrong = 0 (student confused complement rule)",
+          "answer_type": "numeric"
+        }
       ]
     },
     {
@@ -103,11 +1053,119 @@
       "ccss": "7.SP.A.1, 7.SP.A.2, 7.SP.B.3, 7.SP.B.4",
       "level": "solidify",
       "templates": [
-        { "id": "si_001", "type": "IDENTIFY", "problem": "A researcher surveys {a} students from a school of {b}. Is this sample likely representative? What could make it biased?", "constraints": { "a": [10, 50], "b": [200, 1000] }, "answer_type": "boolean_plus_explanation" },
-        { "id": "si_002", "type": "COMPUTE", "problem": "Find the mean absolute deviation (MAD) of: {a}, {b}, {c}, {d}, {e}", "constraints": { "a": [10, 40], "b": [10, 40], "c": [10, 40], "d": [10, 40], "e": [10, 40] }, "answer_type": "numeric" },
-        { "id": "si_003", "type": "COMPARE", "problem": "Class A: mean = {a}, MAD = {b}. Class B: mean = {c}, MAD = {d}. Which class has more consistent scores?", "constraints": { "a": [70, 85], "b": [2, 8], "c": [70, 85], "d": [2, 8] }, "answer_type": "comparison_plus_explanation" },
-        { "id": "si_004", "type": "APPLY", "context": "survey", "problem": "A survey of {a} students found {b}% prefer lunch option A. The school has {c} students. How many would you predict prefer option A?", "constraints": { "a": [20, 50], "b": [20, 80], "c": [200, 600] }, "answer_type": "numeric" },
-        { "id": "si_005", "type": "REPRESENT", "problem": "Two data sets: Set A has mean {a} and median {b}. Set B has mean {c} and median {d}. Which measure better represents each set? Explain.", "constraints": { "a": [60, 80], "b": [55, 85], "c": [60, 80], "d": [55, 85] }, "answer_type": "comparison_plus_explanation" }
+        {
+          "id": "si_001",
+          "type": "IDENTIFY",
+          "problem": "A researcher surveys {a} students from a school of {b}. Is this sample likely representative? What could make it biased?",
+          "constraints": {
+            "a": [
+              10,
+              50
+            ],
+            "b": [
+              200,
+              1000
+            ]
+          },
+          "answer_type": "boolean"
+        },
+        {
+          "id": "si_002",
+          "type": "COMPUTE",
+          "problem": "Find the mean absolute deviation (MAD) of: {a}, {b}, {c}, {d}, {e}",
+          "constraints": {
+            "a": [
+              10,
+              40
+            ],
+            "b": [
+              10,
+              40
+            ],
+            "c": [
+              10,
+              40
+            ],
+            "d": [
+              10,
+              40
+            ],
+            "e": [
+              10,
+              40
+            ]
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "si_003",
+          "type": "COMPARE",
+          "problem": "Class A: mean = {a}, MAD = {b}. Class B: mean = {c}, MAD = {d}. Which class has more consistent scores?",
+          "constraints": {
+            "a": [
+              70,
+              85
+            ],
+            "b": [
+              2,
+              8
+            ],
+            "c": [
+              70,
+              85
+            ],
+            "d": [
+              2,
+              8
+            ]
+          },
+          "answer_type": "comparison"
+        },
+        {
+          "id": "si_004",
+          "type": "APPLY",
+          "context": "survey",
+          "problem": "A survey of {a} students found {b}% prefer lunch option A. The school has {c} students. How many would you predict prefer option A?",
+          "constraints": {
+            "a": [
+              20,
+              50
+            ],
+            "b": [
+              20,
+              80
+            ],
+            "c": [
+              200,
+              600
+            ]
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "si_005",
+          "type": "REPRESENT",
+          "problem": "Two data sets: Set A has mean {a} and median {b}. Set B has mean {c} and median {d}. Which measure better represents each set?",
+          "constraints": {
+            "a": [
+              60,
+              80
+            ],
+            "b": [
+              55,
+              85
+            ],
+            "c": [
+              60,
+              80
+            ],
+            "d": [
+              55,
+              85
+            ]
+          },
+          "answer_type": "comparison"
+        }
       ]
     }
   ]
