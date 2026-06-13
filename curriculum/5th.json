@@ -132,7 +132,7 @@
         {
           "id": "wn_007",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student says {a} × {b} = {wrong}. What is the correct answer?",
+          "problem": "A student multiplies {a} × {b} and gets the wrong answer. What is the correct answer?",
           "constraints": {
             "a": [
               12,
@@ -445,7 +445,7 @@
         {
           "id": "dec_010",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student adds {a}.{b} + {c}.{d} and gets {wrong}. What did they do wrong? What is the correct answer?",
+          "problem": "A student adds {a}.{b} + {c}.{d} incorrectly by misaligning the decimal places. What is the correct answer?",
           "constraints": {
             "a": [
               1,
@@ -668,7 +668,7 @@
         {
           "id": "fas_009",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student says {a}/{b} + {c}/{d} = {wrong_n}/{wrong_d}. What did they do wrong? What is the correct answer?",
+          "problem": "A student adds {a}/{b} + {c}/{d} incorrectly by adding numerators and denominators separately. What is the correct answer?",
           "constraints": {
             "a": [
               1,
@@ -933,7 +933,7 @@
         {
           "id": "fmd_010",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student computes {a}/{b} × {c}/{d} and gets {wrong_n}/{wrong_d}. What did they do wrong?",
+          "problem": "A student computes {a}/{b} × {c}/{d} incorrectly by adding numerators and multiplying denominators. What is the correct answer?",
           "constraints": {
             "a": [
               2,
@@ -1095,7 +1095,7 @@
         {
           "id": "pv_008",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student says {a} × 10^{b} = {wrong}. What is the correct answer?",
+          "problem": "A student computes {a} × 10^{b} incorrectly. What is the correct answer?",
           "constraints": {
             "a": [
               3,

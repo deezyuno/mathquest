@@ -162,7 +162,7 @@
         {
           "id": "df_007",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student says {a}/{b} ÷ {c}/{d} = {wrong_n}/{wrong_d}. They forgot to flip the second fraction. What is the correct answer?",
+          "problem": "A student divides {a}/{b} ÷ {c}/{d} incorrectly by not flipping the second fraction. What is the correct answer?",
           "constraints": {
             "a": [
               2,
@@ -434,7 +434,7 @@
         {
           "id": "int_010",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student says {a} - {b} = {wrong}. What is the correct answer?",
+          "problem": "A student subtracts {a} - {b} and gets the wrong answer. What is the correct answer?",
           "constraints": {
             "a": [
               -10,
@@ -813,7 +813,7 @@
         {
           "id": "eq_009",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student solves x + {a} = {b} and gets x = {wrong}. What did they do wrong?",
+          "problem": "A student solves x + {a} = {b} incorrectly by adding {a} instead of subtracting. What is the correct value of x?",
           "constraints": {
             "a": [
               5,
@@ -987,7 +987,7 @@
         {
           "id": "exp_008",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student evaluates {a}x + {b} when x = {c} and gets {wrong}. What is the correct answer?",
+          "problem": "A student evaluates {a}x + {b} when x = {c} and gets the wrong answer. What is the correct answer?",
           "constraints": {
             "a": [
               3,
@@ -1302,7 +1302,7 @@
         {
           "id": "cp_007",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student says the distance between ({a},{y}) and ({b},{y}) is {wrong}. What is the correct answer?",
+          "problem": "A student finds the distance between ({a},{y}) and ({b},{y}) incorrectly. What is the correct distance?",
           "constraints": {
             "a": [
               -6,

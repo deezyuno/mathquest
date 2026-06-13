@@ -412,7 +412,7 @@
         {
           "id": "int_008",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student says {a} - {b} = {wrong}. What is the correct answer and what did they likely do wrong?",
+          "problem": "A student computes {a} - {b} incorrectly by adding instead of subtracting. What is the correct answer?",
           "constraints": {
             "a": [
               -10,
@@ -1055,7 +1055,7 @@
         {
           "id": "ee_010",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student solved {a}x + {b} = {c} and got x = {wrong}. What did they do wrong? What is the correct answer?",
+          "problem": "A student solved {a}x + {b} = {c} incorrectly by dividing before subtracting b. What is the correct value of x?",
           "constraints": {
             "a": [
               2,
@@ -1366,7 +1366,7 @@
         {
           "id": "geo_010",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student found the area of a triangle with base {a} and height {b} to be {wrong} square units. What did they do wrong? What is the correct area?",
+          "problem": "A student found the area of a triangle with base {a} and height {b} incorrectly by forgetting to multiply by 1/2. What is the correct area?",
           "constraints": {
             "a": [
               6,
@@ -1713,7 +1713,7 @@
         {
           "id": "cp_010",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student says the distance between ({a}, {y}) and ({b}, {y}) is {wrong}. What is correct? What did they do wrong?",
+          "problem": "A student finds the distance between ({a}, {y}) and ({b}, {y}) incorrectly by adding the coordinates instead of using the absolute difference. What is the correct distance?",
           "constraints": {
             "a": [
               -6,

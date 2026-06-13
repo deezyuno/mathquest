@@ -177,7 +177,7 @@
         {
           "id": "mse_008",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student solves {a}x + {b} = {c}x + {d} and gets x = {wrong}. What did they do wrong?",
+          "problem": "A student solves {a}x + {b} = {c}x + {d} incorrectly by adding b and d instead of subtracting. What is the correct value of x?",
           "constraints": {
             "a": [
               3,
@@ -394,7 +394,7 @@
         {
           "id": "pct_009",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student says {a}% of ${b} is ${wrong}. They moved the decimal incorrectly. What is the correct answer?",
+          "problem": "A student finds {a}% of ${b} incorrectly by moving the decimal point incorrectly. What is the correct answer?",
           "constraints": {
             "a": [
               15,
@@ -890,7 +890,7 @@
         {
           "id": "pp_005",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student says a right triangle with legs {a} and {b} has hypotenuse {wrong}. They added a + b. What is the correct answer using a² + b² = c²?",
+          "problem": "A student finds the hypotenuse of a right triangle with legs {a} and {b} incorrectly by adding a + b. What is the correct answer using a² + b² = c²?",
           "constraints": {
             "triples": [
               [

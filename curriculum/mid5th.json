@@ -220,7 +220,7 @@
         {
           "id": "fm_008",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student adds {a} {b}/{c} + {d} {e}/{c} and gets {wrong}. What did they do wrong?",
+          "problem": "A student adds {a} {b}/{c} + {d} {e}/{c} incorrectly and does not simplify the result. What is the correct sum?",
           "constraints": {
             "a": [
               1,

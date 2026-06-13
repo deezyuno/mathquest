@@ -200,7 +200,7 @@
         {
           "id": "le_009",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student finds the slope through ({a},{b}) and ({c},{d}) as {wrong}. What did they do wrong?",
+          "problem": "A student finds the slope through ({a},{b}) and ({c},{d}) incorrectly by using (c-a)/(d-b) instead of rise over run. What is the correct slope?",
           "constraints": {
             "a": [
               0,
@@ -404,7 +404,7 @@
         {
           "id": "sys_007",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student solves the system y = {a}x + {b}, y = {c}x + {d} and gets ({wrong_x}, {wrong_y}). Check their answer. Is it correct?",
+          "problem": "A student solves the system y = {a}x + {b}, y = {c}x + {d} and submits an incorrect ordered pair. Is their answer correct?",
           "constraints": {
             "a": [
               1,
@@ -773,7 +773,7 @@
         {
           "id": "pt_008",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student finds the hypotenuse for legs {a} and {b} as {wrong}. They added a + b. What is the correct answer?",
+          "problem": "A student finds the hypotenuse for legs {a} and {b} incorrectly by adding a + b. What is the correct answer?",
           "constraints": {
             "a": [
               3,

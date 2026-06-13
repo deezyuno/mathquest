@@ -197,7 +197,7 @@
         {
           "id": "pr_010",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student says {a}% of ${b} is ${wrong}. What is the correct answer?",
+          "problem": "A student finds {a}% of ${b} incorrectly by forgetting to divide by 100. What is the correct answer?",
           "constraints": {
             "a": [
               10,
@@ -480,7 +480,7 @@
         {
           "id": "rn_010",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student computes -{a}/{b} + {c}/{b} and gets {wrong}/{b}. What did they do wrong?",
+          "problem": "A student computes -{a}/{b} + {c}/{b} incorrectly by treating both terms as negative. What is the correct answer?",
           "constraints": {
             "a": [
               2,
@@ -665,7 +665,7 @@
         {
           "id": "ee_009",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student solves {a}x + {b} = {c} and gets x = {wrong}. What step did they do wrong?",
+          "problem": "A student solves {a}x + {b} = {c} incorrectly by adding b instead of subtracting before dividing. What is the correct value of x?",
           "constraints": {
             "a": [
               2,
@@ -1064,7 +1064,7 @@
         {
           "id": "prob_010",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student says P(A) + P(not A) = {wrong}. What is correct and why?",
+          "problem": "A student incorrectly says P(A) + P(not A) = 0. What is the correct sum?",
           "constraints": {
             "wrong": [
               0,
