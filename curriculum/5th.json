@@ -33,7 +33,8 @@
               99
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a * b"
         },
         {
           "id": "wn_002",
@@ -50,7 +51,8 @@
             ]
           },
           "constraints_note": "a divisible by b",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a / b"
         },
         {
           "id": "wn_003",
@@ -67,7 +69,8 @@
               24
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a * b"
         },
         {
           "id": "wn_004",
@@ -85,7 +88,8 @@
             ]
           },
           "constraints_note": "a divisible by b",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a / b"
         },
         {
           "id": "wn_005",
@@ -98,7 +102,8 @@
             ],
             "product_note": "b × random(10,50)"
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "product / b"
         },
         {
           "id": "wn_006",
@@ -139,7 +144,8 @@
             ]
           },
           "generation_note": "wrong = a * b - random(10,50)",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a * b"
         },
         {
           "id": "wn_008",
@@ -156,7 +162,8 @@
               30
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a * b"
         },
         {
           "id": "wn_009",
@@ -221,7 +228,8 @@
               99
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "(a + b/100) + (c + d/100)"
         },
         {
           "id": "dec_002",
@@ -246,7 +254,8 @@
             ]
           },
           "constraints_note": "a.b > c.d",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "(a + b/100) - (c + d/100)"
         },
         {
           "id": "dec_003",
@@ -266,7 +275,8 @@
               12
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "(a + b/10) * c"
         },
         {
           "id": "dec_004",
@@ -287,7 +297,8 @@
             ]
           },
           "constraints_note": "a divisible by c",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "(a + b/10) / c"
         },
         {
           "id": "dec_005",
@@ -312,7 +323,8 @@
               99
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a + b + c"
         },
         {
           "id": "dec_006",
@@ -337,7 +349,8 @@
               99
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a - b"
         },
         {
           "id": "dec_007",
@@ -426,7 +439,8 @@
               99
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a + b + c"
         },
         {
           "id": "dec_010",
@@ -451,7 +465,8 @@
             ]
           },
           "generation_note": "wrong = a+c concatenated wrong (e.g. misaligned decimals)",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a + b/100 + c + d/100"
         }
       ]
     },
@@ -479,7 +494,8 @@
               7
             ]
           },
-          "answer_type": "fraction_simplified"
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a + c) / b"
         },
         {
           "id": "fas_002",
@@ -500,7 +516,8 @@
             ]
           },
           "constraints_note": "a > c",
-          "answer_type": "fraction_simplified"
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a - c) / b"
         },
         {
           "id": "fas_003",
@@ -525,7 +542,8 @@
             ]
           },
           "constraints_note": "b != d, use unlike denominators with LCD ≤ 24",
-          "answer_type": "fraction_simplified"
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a * d + c * b) / (b * d)"
         },
         {
           "id": "fas_004",
@@ -550,7 +568,8 @@
             ]
           },
           "constraints_note": "result positive",
-          "answer_type": "fraction_simplified"
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a * d - c * b) / (b * d)"
         },
         {
           "id": "fas_005",
@@ -571,7 +590,8 @@
               3
             ]
           },
-          "answer_type": "fraction_simplified"
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a + c) / b"
         },
         {
           "id": "fas_006",
@@ -596,7 +616,8 @@
               12
             ]
           },
-          "answer_type": "fraction_simplified"
+          "answer_type": "fraction_simplified",
+          "answer_formula": "a - b"
         },
         {
           "id": "fas_007",
@@ -617,7 +638,8 @@
             ]
           },
           "constraints_note": "c > a",
-          "answer_type": "fraction"
+          "answer_type": "fraction",
+          "answer_formula": "(c - a) / b"
         },
         {
           "id": "fas_008",
@@ -666,7 +688,8 @@
             ]
           },
           "generation_note": "wrong = added numerators AND denominators separately",
-          "answer_type": "fraction"
+          "answer_type": "fraction",
+          "answer_formula": "(a * d + c * b) / (b * d)"
         },
         {
           "id": "fas_010",
@@ -688,7 +711,8 @@
             ]
           },
           "constraints_note": "a + c < b",
-          "answer_type": "two_fractions"
+          "answer_type": "two_fractions",
+          "answer_formula": "(a + c) / b"
         }
       ]
     },
@@ -716,7 +740,8 @@
               10
             ]
           },
-          "answer_type": "fraction_simplified"
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a/b) * c"
         },
         {
           "id": "fmd_002",
@@ -740,7 +765,8 @@
               8
             ]
           },
-          "answer_type": "fraction_simplified"
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a/b) * (c/d)"
         },
         {
           "id": "fmd_003",
@@ -760,7 +786,8 @@
               6
             ]
           },
-          "answer_type": "fraction_simplified"
+          "answer_type": "fraction_simplified",
+          "answer_formula": "a / (b/c)"
         },
         {
           "id": "fmd_004",
@@ -780,7 +807,8 @@
               4
             ]
           },
-          "answer_type": "fraction_simplified"
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a/b) / c"
         },
         {
           "id": "fmd_005",
@@ -801,7 +829,8 @@
               6
             ]
           },
-          "answer_type": "fraction_simplified"
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a * c) / b"
         },
         {
           "id": "fmd_006",
@@ -822,7 +851,8 @@
               4
             ]
           },
-          "answer_type": "fraction_simplified"
+          "answer_type": "fraction_simplified",
+          "answer_formula": "a / (b * c)"
         },
         {
           "id": "fmd_007",
@@ -846,7 +876,8 @@
               8
             ]
           },
-          "answer_type": "fraction_simplified"
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(c * b) / (a * d)"
         },
         {
           "id": "fmd_008",
@@ -896,7 +927,8 @@
               5
             ]
           },
-          "answer_type": "fraction_simplified"
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a * c) / (b * d)"
         },
         {
           "id": "fmd_010",
@@ -921,7 +953,8 @@
             ]
           },
           "generation_note": "wrong = added numerators and multiplied denominators",
-          "answer_type": "fraction"
+          "answer_type": "fraction",
+          "answer_formula": "(a * d) / (b * c)"
         }
       ]
     },
@@ -945,7 +978,8 @@
               4
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a * 10^b"
         },
         {
           "id": "pv_002",
@@ -961,7 +995,8 @@
               3
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a / 10^b"
         },
         {
           "id": "pv_003",
@@ -1072,7 +1107,8 @@
             ]
           },
           "generation_note": "wrong = a * b (multiplied instead of using power of 10)",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a * pow(10, b)"
         }
       ]
     },
@@ -1140,7 +1176,8 @@
             ],
             "v_note": "a*b*random(2,10)"
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "v / (a * b)"
         },
         {
           "id": "gv_004",
@@ -1312,7 +1349,8 @@
               12
             ]
           },
-          "answer_type": "label_plus_numeric"
+          "answer_type": "label_plus_numeric",
+          "answer_formula": "abs(c - b)"
         },
         {
           "id": "cp_005",

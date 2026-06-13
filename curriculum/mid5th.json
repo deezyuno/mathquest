@@ -46,7 +46,8 @@
               5
             ]
           },
-          "answer_type": "mixed_number"
+          "answer_type": "mixed_number",
+          "answer_formula": "(a + d) + (b + e) / c"
         },
         {
           "id": "fm_002",
@@ -75,7 +76,8 @@
             ]
           },
           "constraints_note": "result positive",
-          "answer_type": "mixed_number"
+          "answer_type": "mixed_number",
+          "answer_formula": "(a - d) + (b - e) / c"
         },
         {
           "id": "fm_003",
@@ -99,7 +101,8 @@
               5
             ]
           },
-          "answer_type": "mixed_number"
+          "answer_type": "mixed_number",
+          "answer_formula": "(a + b/c) * d"
         },
         {
           "id": "fm_004",
@@ -124,7 +127,8 @@
               4
             ]
           },
-          "answer_type": "mixed_number"
+          "answer_type": "mixed_number",
+          "answer_formula": "((a * c + b) * d) / c"
         },
         {
           "id": "fm_005",
@@ -153,7 +157,8 @@
               5
             ]
           },
-          "answer_type": "mixed_number"
+          "answer_type": "mixed_number",
+          "answer_formula": "(a - c) / b"
         },
         {
           "id": "fm_006",
@@ -181,7 +186,8 @@
               7
             ]
           },
-          "answer_type": "mixed_number"
+          "answer_type": "mixed_number",
+          "answer_formula": "(d - a) + (e - b) / c"
         },
         {
           "id": "fm_007",
@@ -238,7 +244,8 @@
             ]
           },
           "generation_note": "wrong adds wholes and fractions separately but forgets to simplify the fraction",
-          "answer_type": "mixed_number"
+          "answer_type": "mixed_number",
+          "answer_formula": "(a + d) + (b + e) / c"
         },
         {
           "id": "fm_009",
@@ -279,7 +286,8 @@
               3
             ]
           },
-          "answer_type": "mixed_number"
+          "answer_type": "mixed_number",
+          "answer_formula": "(a + d) + (b + e) / c"
         }
       ]
     },
@@ -391,7 +399,8 @@
               999
             ]
           },
-          "answer_type": "single_digit"
+          "answer_type": "single_digit",
+          "answer_formula": "b % 10"
         },
         {
           "id": "dpv_006",
@@ -481,7 +490,8 @@
               12
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a - b * c - d"
         },
         {
           "id": "ms_002",
@@ -502,7 +512,8 @@
               700
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a + b"
         },
         {
           "id": "ms_003",
@@ -527,7 +538,8 @@
               60
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a * b"
         },
         {
           "id": "ms_004",
@@ -549,7 +561,8 @@
             ]
           },
           "constraints_note": "(a-b) divisible by c",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "(a - b) / c"
         },
         {
           "id": "ms_005",
@@ -567,7 +580,8 @@
             ]
           },
           "constraints_note": "a and b have same parity",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "(a + b) / 2"
         },
         {
           "id": "ms_006",
@@ -611,7 +625,8 @@
               30
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a * b + c"
         }
       ]
     },
@@ -632,7 +647,8 @@
               500
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "-a"
         },
         {
           "id": "pn_002",
@@ -644,7 +660,8 @@
               40
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "-a"
         },
         {
           "id": "pn_003",
@@ -788,7 +805,8 @@
             ]
           },
           "constraints_note": "c is a multiple of a",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "c * b / a"
         },
         {
           "id": "pr_004",
@@ -829,7 +847,8 @@
             ],
             "c_note": "multiple of (a+b)"
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "c * a / (a + b)"
         }
       ]
     },
@@ -854,7 +873,8 @@
               30
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a + b"
         },
         {
           "id": "pa_002",
@@ -870,7 +890,8 @@
               12
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a * b"
         },
         {
           "id": "pa_003",
@@ -899,7 +920,8 @@
               10
             ]
           },
-          "answer_type": "expression_plus_numeric"
+          "answer_type": "expression_plus_numeric",
+          "answer_formula": "a * h"
         },
         {
           "id": "pa_005",

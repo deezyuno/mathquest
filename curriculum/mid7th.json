@@ -44,7 +44,8 @@
             ]
           },
           "constraints_note": "a != c",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "(d - b) / (a - c)"
         },
         {
           "id": "mse_002",
@@ -64,7 +65,8 @@
               60
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "c / a - b"
         },
         {
           "id": "mse_003",
@@ -88,7 +90,8 @@
               50
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "(d - c) / a + b"
         },
         {
           "id": "mse_004",
@@ -150,7 +153,8 @@
             ]
           },
           "constraints_note": "c > b",
-          "answer_type": "equation_plus_numeric"
+          "answer_type": "equation_plus_numeric",
+          "answer_formula": "b + m * t"
         },
         {
           "id": "mse_007",
@@ -167,7 +171,8 @@
               4
             ]
           },
-          "answer_type": "equation_plus_numeric"
+          "answer_type": "equation_plus_numeric",
+          "answer_formula": "a / (b - 1)"
         },
         {
           "id": "mse_008",
@@ -192,7 +197,8 @@
             ]
           },
           "generation_note": "wrong = (b+d)/(a-c) (added instead of subtracted b and d)",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "(d - b) / (a - c)"
         },
         {
           "id": "mse_009",
@@ -248,7 +254,8 @@
               200
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "(a / 100) * b"
         },
         {
           "id": "pct_002",
@@ -265,7 +272,8 @@
             ]
           },
           "constraints_note": "a < b, a/b gives clean percent",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "100 * a / b"
         },
         {
           "id": "pct_003",
@@ -282,7 +290,8 @@
               50
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a - (b / 100) * a"
         },
         {
           "id": "pct_004",
@@ -299,7 +308,8 @@
               25
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a * (1 + b/100)"
         },
         {
           "id": "pct_005",
@@ -315,7 +325,8 @@
               300
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "b / (1 + a/100)"
         },
         {
           "id": "pct_006",
@@ -331,7 +342,8 @@
               50
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a * (1 + b/100)"
         },
         {
           "id": "pct_007",
@@ -394,7 +406,8 @@
             ]
           },
           "generation_note": "wrong is off by factor of 10",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "(a / 100) * b"
         },
         {
           "id": "pct_010",
@@ -476,7 +489,8 @@
               8
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "2 * (a*b + b*c + a*c)"
         },
         {
           "id": "gc_004",
@@ -493,7 +507,8 @@
               15
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a * b + 0.5 * 3.14 * (a/2) * (a/2)"
         },
         {
           "id": "gc_005",
@@ -502,7 +517,8 @@
           "constraints": {
             "area_note": "3.14 * r * r for integer r 2-10"
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "sqrt(area / 3.14)"
         },
         {
           "id": "gc_006",
@@ -535,7 +551,8 @@
               30
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a * b + 0.5 * 3.14 * (b/2) * (b/2)"
         },
         {
           "id": "gc_008",
@@ -634,7 +651,8 @@
               8
             ]
           },
-          "answer_type": "fraction_simplified"
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a * c) / (b * d)"
         }
       ]
     },
@@ -664,7 +682,8 @@
             ]
           },
           "generation_note": "d, e, f = k*a,k*b,k*c for integer k or add noise",
-          "answer_type": "boolean_plus_numeric"
+          "answer_type": "boolean_plus_numeric",
+          "answer_formula": "d / a"
         },
         {
           "id": "pl_002",
@@ -811,7 +830,8 @@
               ]
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "sqrt(a*a + b*b)"
         },
         {
           "id": "pp_003",
@@ -837,7 +857,8 @@
               ]
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "sqrt(c*c - a*a)"
         },
         {
           "id": "pp_004",
@@ -863,7 +884,8 @@
               ]
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "sqrt(a*a + b*b)"
         },
         {
           "id": "pp_005",
@@ -884,7 +906,8 @@
             ]
           },
           "generation_note": "wrong = a + b",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "sqrt(a*a + b*b)"
         }
       ]
     },

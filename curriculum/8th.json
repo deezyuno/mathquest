@@ -77,7 +77,8 @@
               12
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "b"
         },
         {
           "id": "le_004",
@@ -126,7 +127,8 @@
               6
             ]
           },
-          "answer_type": "equation_plus_numeric"
+          "answer_type": "equation_plus_numeric",
+          "answer_formula": "m * t"
         },
         {
           "id": "le_006",
@@ -147,7 +149,8 @@
               6
             ]
           },
-          "answer_type": "equation_plus_numeric"
+          "answer_type": "equation_plus_numeric",
+          "answer_formula": "b + m * t"
         },
         {
           "id": "le_007",
@@ -217,7 +220,8 @@
             ]
           },
           "generation_note": "wrong = (c-a)/(d-b) (flipped rise and run)",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "(d - b) / (c - a)"
         },
         {
           "id": "le_010",
@@ -504,7 +508,8 @@
               8
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a * c + b"
         },
         {
           "id": "fn_003",
@@ -545,7 +550,8 @@
               212
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "(a - 32) * 5 / 9"
         },
         {
           "id": "fn_005",
@@ -597,7 +603,8 @@
               40
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "(result - b) / a"
         },
         {
           "id": "fn_008",
@@ -659,7 +666,8 @@
             ]
           },
           "constraints_note": "c > a, result is whole number (Pythagorean triples)",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "sqrt(c*c - a*a)"
         },
         {
           "id": "pt_003",
@@ -677,7 +685,8 @@
             ]
           },
           "constraints_note": "use Pythagorean triples for clean answers",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "sqrt(a*a - b*b)"
         },
         {
           "id": "pt_004",
@@ -776,7 +785,8 @@
             ]
           },
           "generation_note": "wrong = a + b",
-          "answer_type": "decimal_1dp"
+          "answer_type": "decimal_1dp",
+          "answer_formula": "sqrt(a*a + b*b)"
         }
       ]
     },
@@ -1001,7 +1011,8 @@
               6
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a * pow(10, b)"
         },
         {
           "id": "sn_003",
@@ -1098,7 +1109,8 @@
               -7
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "(a / c) * pow(10, b - d)"
         },
         {
           "id": "sn_007",
@@ -1114,7 +1126,8 @@
               5
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "pow(a, b)"
         },
         {
           "id": "sn_008",
@@ -1130,7 +1143,8 @@
               3
             ]
           },
-          "answer_type": "fraction_simplified"
+          "answer_type": "fraction_simplified",
+          "answer_formula": "1 / pow(a, b)"
         }
       ]
     },
@@ -1166,7 +1180,8 @@
               15
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "m * c + b"
         },
         {
           "id": "bv_003",
@@ -1226,7 +1241,8 @@
               100
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "(target - b) / m"
         }
       ]
     }

@@ -70,7 +70,8 @@
               50
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "abs(a)"
         },
         {
           "id": "rn_004",
@@ -87,7 +88,8 @@
               20
             ]
           },
-          "answer_type": "comparison_plus_numeric"
+          "answer_type": "comparison_plus_numeric",
+          "answer_formula": "abs(a - b)"
         },
         {
           "id": "rn_005",
@@ -104,7 +106,8 @@
               -10
             ]
           },
-          "answer_type": "comparison_plus_numeric"
+          "answer_type": "comparison_plus_numeric",
+          "answer_formula": "abs(a - b)"
         },
         {
           "id": "rn_006",
@@ -144,7 +147,8 @@
               500
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "-a"
         },
         {
           "id": "rn_008",
@@ -298,7 +302,8 @@
               50
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a + b"
         },
         {
           "id": "int_002",
@@ -314,7 +319,8 @@
               50
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a - b"
         },
         {
           "id": "int_003",
@@ -330,7 +336,8 @@
               12
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a * b"
         },
         {
           "id": "int_004",
@@ -347,7 +354,8 @@
             ]
           },
           "constraints_note": "b != 0, a must be divisible by b",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a / b"
         },
         {
           "id": "int_005",
@@ -398,7 +406,8 @@
               8
             ]
           },
-          "answer_type": "equation_plus_numeric"
+          "answer_type": "equation_plus_numeric",
+          "answer_formula": "a * b"
         },
         {
           "id": "int_008",
@@ -415,7 +424,8 @@
             ]
           },
           "generation_note": "wrong = a + b (student added instead of subtracting a negative)",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a - b"
         },
         {
           "id": "int_009",
@@ -432,7 +442,8 @@
             ]
           },
           "generation_note": "Choose product divisible by a",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "product / a"
         },
         {
           "id": "int_010",
@@ -476,7 +487,8 @@
               30
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a + b + c + d"
         },
         {
           "id": "int_012",
@@ -501,7 +513,8 @@
               15
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a - b + c"
         },
         {
           "id": "int_013",
@@ -533,7 +546,8 @@
               15
             ]
           },
-          "answer_type": "expression_plus_numeric"
+          "answer_type": "expression_plus_numeric",
+          "answer_formula": "a + b + c"
         },
         {
           "id": "int_015",
@@ -553,7 +567,8 @@
               5
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "(a + b) * c"
         }
       ]
     },
@@ -634,7 +649,8 @@
             ]
           },
           "constraints_note": "a must be divisible by b",
-          "answer_type": "unit_rate"
+          "answer_type": "unit_rate",
+          "answer_formula": "a / b"
         },
         {
           "id": "rr_005",
@@ -679,7 +695,8 @@
               24
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "c * b / a"
         },
         {
           "id": "rr_007",
@@ -696,7 +713,8 @@
               10
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a * b"
         },
         {
           "id": "rr_008",
@@ -741,7 +759,8 @@
             ]
           },
           "constraints_note": "b divisible by a",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "b / a"
         },
         {
           "id": "rr_010",
@@ -758,7 +777,8 @@
             ]
           },
           "generation_note": "c = b * a (student multiplied instead of divided)",
-          "answer_type": "boolean_plus_numeric"
+          "answer_type": "boolean_plus_numeric",
+          "answer_formula": "b / a"
         },
         {
           "id": "rr_011",
@@ -779,7 +799,8 @@
               20
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "c * a / b"
         },
         {
           "id": "rr_012",
@@ -828,7 +849,8 @@
               20
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "c * a / b"
         },
         {
           "id": "rr_015",
@@ -880,7 +902,8 @@
               10
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a * c + b"
         },
         {
           "id": "ee_002",
@@ -896,7 +919,8 @@
               30
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "x + a = b"
         },
         {
           "id": "ee_003",
@@ -913,7 +937,8 @@
             ]
           },
           "constraints_note": "b divisible by a",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "b / a"
         },
         {
           "id": "ee_004",
@@ -933,7 +958,8 @@
               40
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "(c - b) / a"
         },
         {
           "id": "ee_005",
@@ -965,7 +991,8 @@
               40
             ]
           },
-          "answer_type": "equation_plus_numeric"
+          "answer_type": "equation_plus_numeric",
+          "answer_formula": "b + a"
         },
         {
           "id": "ee_007",
@@ -983,7 +1010,8 @@
             ]
           },
           "constraints_note": "b divisible by a",
-          "answer_type": "equation_plus_numeric"
+          "answer_type": "equation_plus_numeric",
+          "answer_formula": "b / a"
         },
         {
           "id": "ee_008",
@@ -1000,7 +1028,8 @@
               15
             ]
           },
-          "answer_type": "equation_plus_numeric"
+          "answer_type": "equation_plus_numeric",
+          "answer_formula": "a / 2 - b"
         },
         {
           "id": "ee_009",
@@ -1042,7 +1071,8 @@
             ]
           },
           "generation_note": "wrong = c/a (student ignored adding b first)",
-          "answer_type": "explanation_plus_numeric"
+          "answer_type": "explanation_plus_numeric",
+          "answer_formula": "(c - b) / a"
         },
         {
           "id": "ee_011",
@@ -1062,7 +1092,8 @@
               50
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "(result - b * a)"
         },
         {
           "id": "ee_012",
@@ -1079,7 +1110,8 @@
             ]
           },
           "answer_type": "numeric",
-          "ccss_preview": "7.EE.A — intro to exponents in expressions"
+          "ccss_preview": "7.EE.A — intro to exponents in expressions",
+          "answer_formula": "a * b * b"
         },
         {
           "id": "ee_013",
@@ -1096,7 +1128,8 @@
               15
             ]
           },
-          "answer_type": "expression_plus_numeric"
+          "answer_type": "expression_plus_numeric",
+          "answer_formula": "a + b"
         },
         {
           "id": "ee_014",
@@ -1285,7 +1318,8 @@
             ]
           },
           "constraints_note": "a divisible by b",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a / b"
         },
         {
           "id": "geo_008",
@@ -1302,7 +1336,8 @@
             ]
           },
           "constraints_note": "a divisible by b",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a / b"
         },
         {
           "id": "geo_009",
@@ -1343,7 +1378,8 @@
             ]
           },
           "generation_note": "wrong = a * b (forgot to multiply by 1/2)",
-          "answer_type": "explanation_plus_numeric"
+          "answer_type": "explanation_plus_numeric",
+          "answer_formula": "0.5 * a * b"
         },
         {
           "id": "geo_011",
@@ -1455,7 +1491,8 @@
               8
             ]
           },
-          "answer_type": "comparison_plus_numeric"
+          "answer_type": "comparison_plus_numeric",
+          "answer_formula": "abs(a*b*c - d*e*f)"
         }
       ]
     },
@@ -1692,7 +1729,8 @@
             ]
           },
           "generation_note": "wrong = a + b (student added instead of using absolute value of difference)",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "abs(b - a)"
         },
         {
           "id": "cp_011",
@@ -1790,7 +1828,8 @@
             ]
           },
           "generation_note": "Base = abs(b-a). Side lengths use distance formula only for the two slant sides.",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "abs(b - a) + sqrt(pow(x - a, 2) + pow(c - y, 2)) + sqrt(pow(x - b, 2) + pow(c - y, 2))"
         },
         {
           "id": "cp_015",
@@ -1822,7 +1861,8 @@
               5
             ]
           },
-          "answer_type": "comparison_plus_numeric"
+          "answer_type": "comparison_plus_numeric",
+          "answer_formula": "abs(abs(bx - ax) - abs(dx - cx))"
         }
       ]
     },
@@ -1887,7 +1927,8 @@
               30
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "c"
         },
         {
           "id": "sp_003",
@@ -2034,7 +2075,8 @@
               20
             ]
           },
-          "answer_type": "explanation_plus_numeric"
+          "answer_type": "explanation_plus_numeric",
+          "answer_formula": "c"
         },
         {
           "id": "sp_009",
@@ -2091,7 +2133,8 @@
             ]
           },
           "answer_type": "numeric",
-          "ccss_preview": "Bridges to 7.SP.B — variability measures"
+          "ccss_preview": "Bridges to 7.SP.B — variability measures",
+          "answer_formula": "((abs(a-m)+abs(b-m)+abs(c-m)+abs(d-m)+abs(e-m))/5)"
         },
         {
           "id": "sp_011",
@@ -2332,7 +2375,8 @@
               80
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a + t1 + t2 + t3"
         },
         {
           "id": "pn_005",

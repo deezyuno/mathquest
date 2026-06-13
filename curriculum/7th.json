@@ -33,7 +33,8 @@
             ]
           },
           "constraints_note": "a divisible by b",
-          "answer_type": "unit_rate"
+          "answer_type": "unit_rate",
+          "answer_formula": "a / b"
         },
         {
           "id": "pr_002",
@@ -74,7 +75,8 @@
               20
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "c * b / a"
         },
         {
           "id": "pr_004",
@@ -95,7 +97,8 @@
               20
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "c * b / a"
         },
         {
           "id": "pr_005",
@@ -133,7 +136,8 @@
               50
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a - (b / 100) * a"
         },
         {
           "id": "pr_007",
@@ -150,7 +154,8 @@
               10
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a + (b / 100) * a"
         },
         {
           "id": "pr_008",
@@ -166,7 +171,8 @@
               50
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a / (1 - b/100)"
         },
         {
           "id": "pr_009",
@@ -203,7 +209,8 @@
             ]
           },
           "generation_note": "wrong = a * b (forgot /100)",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "(a / 100) * b"
         },
         {
           "id": "pr_011",
@@ -270,7 +277,8 @@
             ]
           },
           "constraints_note": "includes negative fractions",
-          "answer_type": "fraction_simplified"
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a * d + c * b) / (b * d)"
         },
         {
           "id": "rn_002",
@@ -294,7 +302,8 @@
               10
             ]
           },
-          "answer_type": "fraction_simplified"
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a * d - c * b) / (b * d)"
         },
         {
           "id": "rn_003",
@@ -318,7 +327,8 @@
               8
             ]
           },
-          "answer_type": "fraction_simplified"
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a/b) * (c/d)"
         },
         {
           "id": "rn_004",
@@ -342,7 +352,8 @@
               8
             ]
           },
-          "answer_type": "fraction_simplified"
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a/b) / (c/d)"
         },
         {
           "id": "rn_005",
@@ -366,7 +377,8 @@
               99
             ]
           },
-          "answer_type": "decimal"
+          "answer_type": "decimal",
+          "answer_formula": "(a + b/100) + (c + d/100)"
         },
         {
           "id": "rn_006",
@@ -387,7 +399,8 @@
               8
             ]
           },
-          "answer_type": "fraction_simplified"
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a * c) / b"
         },
         {
           "id": "rn_007",
@@ -435,7 +448,8 @@
               8
             ]
           },
-          "answer_type": "fraction_simplified"
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(c * b - a * d) / (b * d)"
         },
         {
           "id": "rn_009",
@@ -460,7 +474,8 @@
               99
             ]
           },
-          "answer_type": "decimal"
+          "answer_type": "decimal",
+          "answer_formula": "a + b - c - d"
         },
         {
           "id": "rn_010",
@@ -481,7 +496,8 @@
             ]
           },
           "generation_note": "wrong = -(a+c) (student treated both as negative)",
-          "answer_type": "fraction"
+          "answer_type": "fraction",
+          "answer_formula": "(-a + c) / b"
         }
       ]
     },
@@ -561,7 +577,8 @@
               60
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "(c - b) / a"
         },
         {
           "id": "ee_005",
@@ -581,7 +598,8 @@
               50
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "(c + b) / a"
         },
         {
           "id": "ee_006",
@@ -601,7 +619,8 @@
               30
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "(c - b) * a"
         },
         {
           "id": "ee_007",
@@ -622,7 +641,8 @@
               200
             ]
           },
-          "answer_type": "equation_plus_numeric"
+          "answer_type": "equation_plus_numeric",
+          "answer_formula": "b / a"
         },
         {
           "id": "ee_008",
@@ -639,7 +659,8 @@
               10
             ]
           },
-          "answer_type": "equation_plus_numeric"
+          "answer_type": "equation_plus_numeric",
+          "answer_formula": "a / 2 - b"
         },
         {
           "id": "ee_009",
@@ -660,7 +681,8 @@
             ]
           },
           "generation_note": "wrong = (c+b)/a (added b instead of subtracting)",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "(c - b) / a"
         },
         {
           "id": "ee_010",
@@ -709,7 +731,8 @@
             ]
           },
           "constraints_note": "c divisible by a",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "c / a - b"
         }
       ]
     },
@@ -737,7 +760,8 @@
               20
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "(b / a) * c"
         },
         {
           "id": "geo_002",
@@ -806,7 +830,8 @@
               8
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a * b"
         },
         {
           "id": "geo_007",
@@ -815,7 +840,8 @@
           "constraints": {
             "c_note": "3.14 * random(3,15)"
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "c / (2 * 3.14)"
         },
         {
           "id": "geo_008",
@@ -845,7 +871,8 @@
               150
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a"
         },
         {
           "id": "geo_010",
@@ -903,7 +930,8 @@
               5
             ]
           },
-          "answer_type": "fraction_simplified"
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(6 - a) / 6"
         },
         {
           "id": "prob_003",
@@ -1030,7 +1058,8 @@
               80
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "c * a / b"
         },
         {
           "id": "prob_010",
@@ -1043,7 +1072,8 @@
             ]
           },
           "generation_note": "wrong = 0 (student confused complement rule)",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "1"
         }
       ]
     },
@@ -1095,7 +1125,8 @@
               40
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "((abs(a-m)+abs(b-m)+abs(c-m)+abs(d-m)+abs(e-m))/5)"
         },
         {
           "id": "si_003",
@@ -1140,7 +1171,8 @@
               600
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "c * b / 100"
         },
         {
           "id": "si_005",

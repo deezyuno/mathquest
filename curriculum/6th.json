@@ -41,7 +41,8 @@
               8
             ]
           },
-          "answer_type": "fraction_simplified"
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a/b) / (c/d)"
         },
         {
           "id": "df_002",
@@ -61,7 +62,8 @@
               6
             ]
           },
-          "answer_type": "fraction_simplified"
+          "answer_type": "fraction_simplified",
+          "answer_formula": "a / (b/c)"
         },
         {
           "id": "df_003",
@@ -81,7 +83,8 @@
               4
             ]
           },
-          "answer_type": "fraction_simplified"
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a/b) / c"
         },
         {
           "id": "df_004",
@@ -106,7 +109,8 @@
               8
             ]
           },
-          "answer_type": "fraction_simplified"
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a * d) / (b * c)"
         },
         {
           "id": "df_005",
@@ -131,7 +135,8 @@
               10
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "(a * d) / (b * c)"
         },
         {
           "id": "df_006",
@@ -151,7 +156,8 @@
               8
             ]
           },
-          "answer_type": "fraction_simplified"
+          "answer_type": "fraction_simplified",
+          "answer_formula": "c * b / a"
         },
         {
           "id": "df_007",
@@ -175,7 +181,8 @@
               8
             ]
           },
-          "answer_type": "fraction"
+          "answer_type": "fraction",
+          "answer_formula": "(a * d) / (b * c)"
         },
         {
           "id": "df_008",
@@ -279,7 +286,8 @@
               50
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a + b"
         },
         {
           "id": "int_002",
@@ -295,7 +303,8 @@
               50
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a - b"
         },
         {
           "id": "int_003",
@@ -311,7 +320,8 @@
               12
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a * b"
         },
         {
           "id": "int_004",
@@ -328,7 +338,8 @@
             ]
           },
           "constraints_note": "b != 0, a divisible by b",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a / b"
         },
         {
           "id": "int_005",
@@ -363,7 +374,8 @@
               500
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a + b - c - d"
         },
         {
           "id": "int_007",
@@ -416,7 +428,8 @@
             ],
             "product_note": "a * random(-8,8)"
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "product / a"
         },
         {
           "id": "int_010",
@@ -433,7 +446,8 @@
             ]
           },
           "generation_note": "wrong = a + b",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a - b"
         }
       ]
     },
@@ -474,7 +488,8 @@
             ]
           },
           "constraints_note": "a divisible by b",
-          "answer_type": "unit_rate"
+          "answer_type": "unit_rate",
+          "answer_formula": "a / b"
         },
         {
           "id": "rp_003",
@@ -519,7 +534,8 @@
               24
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "c * b / a"
         },
         {
           "id": "rp_005",
@@ -584,7 +600,8 @@
               8
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a * b"
         },
         {
           "id": "rp_008",
@@ -601,7 +618,8 @@
             ]
           },
           "constraints_note": "b divisible by a",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "b / a"
         },
         {
           "id": "rp_009",
@@ -623,7 +641,8 @@
             ]
           },
           "constraints_note": "c divisible by b",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "c * a / b"
         },
         {
           "id": "rp_010",
@@ -640,7 +659,8 @@
             ]
           },
           "generation_note": "c = b * a (wrong — multiplied instead of divided)",
-          "answer_type": "boolean_plus_numeric"
+          "answer_type": "boolean_plus_numeric",
+          "answer_formula": "b / a"
         }
       ]
     },
@@ -664,7 +684,8 @@
               60
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "b - a"
         },
         {
           "id": "eq_002",
@@ -680,7 +701,8 @@
               50
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "b + a"
         },
         {
           "id": "eq_003",
@@ -697,7 +719,8 @@
             ]
           },
           "constraints_note": "b divisible by a",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "b / a"
         },
         {
           "id": "eq_004",
@@ -713,7 +736,8 @@
               20
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a * b"
         },
         {
           "id": "eq_005",
@@ -729,7 +753,8 @@
               50
             ]
           },
-          "answer_type": "equation_plus_numeric"
+          "answer_type": "equation_plus_numeric",
+          "answer_formula": "b + a"
         },
         {
           "id": "eq_006",
@@ -747,7 +772,8 @@
             ]
           },
           "constraints_note": "a divisible by b",
-          "answer_type": "equation_plus_numeric"
+          "answer_type": "equation_plus_numeric",
+          "answer_formula": "a / b"
         },
         {
           "id": "eq_007",
@@ -781,7 +807,8 @@
               30
             ]
           },
-          "answer_type": "equation_plus_numeric"
+          "answer_type": "equation_plus_numeric",
+          "answer_formula": "b - a"
         },
         {
           "id": "eq_009",
@@ -798,7 +825,8 @@
             ]
           },
           "generation_note": "wrong = a + b (added instead of subtracted)",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "b - a"
         },
         {
           "id": "eq_010",
@@ -842,7 +870,8 @@
               10
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a * c + b"
         },
         {
           "id": "exp_002",
@@ -858,7 +887,8 @@
               20
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "(a*a) + b"
         },
         {
           "id": "exp_003",
@@ -973,7 +1003,8 @@
             ]
           },
           "generation_note": "wrong = a*c + b + random(1,5)",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a * c + b"
         }
       ]
     },
@@ -1092,7 +1123,8 @@
             ],
             "area_note": "0.5*a*random(3,14)"
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "2 * area / a"
         },
         {
           "id": "geo_007",
@@ -1286,7 +1318,8 @@
             ]
           },
           "generation_note": "wrong = a + b",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "abs(b - a)"
         },
         {
           "id": "cp_008",
@@ -1334,7 +1367,8 @@
               50
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "(a + b + c + d + e) / 5"
         },
         {
           "id": "sp_002",
@@ -1362,7 +1396,8 @@
               30
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "c"
         },
         {
           "id": "sp_003",
@@ -1440,7 +1475,8 @@
               90
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "5 * target - a - b - c - d"
         },
         {
           "id": "sp_006",
@@ -1468,7 +1504,8 @@
               20
             ]
           },
-          "answer_type": "explanation_plus_numeric"
+          "answer_type": "explanation_plus_numeric",
+          "answer_formula": "(a + b + c + d + e) / 5"
         },
         {
           "id": "sp_007",
