@@ -333,7 +333,7 @@
           "id": "sys_004",
           "type": "APPLY",
           "context": "tickets",
-          "problem": "Adult tickets cost ${a} and child tickets cost ${b}. A total of {c} tickets were sold for ${d}. How many of each were sold?",
+          "problem": "Adult tickets cost ${a} and child tickets cost ${b}. A total of {c} tickets were sold for a known total revenue. How many of each were sold?",
           "constraints": {
             "a": [
               8,
@@ -991,7 +991,7 @@
         {
           "id": "sn_001",
           "type": "REPRESENT",
-          "problem": "Write {a} in scientific notation.",
+          "problem": "Write the given number in scientific notation.",
           "constraints": {
             "a_note": "large number like 45000, 3200000, 0.0056"
           },
@@ -1132,7 +1132,7 @@
         {
           "id": "sn_008",
           "type": "COMPUTE",
-          "problem": "Evaluate: {a}^{-b}",
+          "problem": "Evaluate: 1 / ({a}^{b})",
           "constraints": {
             "a": [
               2,

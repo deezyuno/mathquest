@@ -420,7 +420,7 @@
         {
           "id": "int_009",
           "type": "REVERSE",
-          "problem": "__ × {a} = {product}. Find the missing integer.",
+          "problem": "Find the missing integer in __ × {a} = ? (the product is a whole-number multiple of {a}).",
           "constraints": {
             "a": [
               -8,
@@ -647,7 +647,7 @@
         {
           "id": "rp_010",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student says the unit rate for {a} items costing ${b} is ${c} per item. Is that right?",
+          "problem": "A student says the unit rate for {a} items costing ${b} is wrong (they multiplied price by quantity). Is that right? What is the correct unit rate?",
           "constraints": {
             "a": [
               4,
@@ -778,7 +778,7 @@
         {
           "id": "eq_007",
           "type": "IDENTIFY",
-          "problem": "Which value of x satisfies {a}x = {b}: x = {w}, x = {r}, or x = {s}?",
+          "problem": "Which value of x satisfies {a}x = {b}?",
           "constraints": {
             "a": [
               3,
@@ -909,7 +909,7 @@
         {
           "id": "exp_004",
           "type": "IDENTIFY",
-          "problem": "Are {a}(x + {b}) and {a}x + {c} equivalent? (Hint: {c} = {a} × {b})",
+          "problem": "Are {a}(x + {b}) and {a}x + ({a} × {b}) equivalent?",
           "constraints": {
             "a": [
               2,
@@ -1115,7 +1115,7 @@
         {
           "id": "geo_006",
           "type": "REVERSE",
-          "problem": "A triangle has area {area} sq units and base {a}. What is its height?",
+          "problem": "A triangle with base {a} has a known whole-number area. What is its height?",
           "constraints": {
             "a": [
               4,

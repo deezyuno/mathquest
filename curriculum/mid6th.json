@@ -430,7 +430,7 @@
         {
           "id": "int_009",
           "type": "REVERSE",
-          "problem": "__ × {a} = {product}. Find the missing number.",
+          "problem": "Find the missing number in __ × {a} = ? (the product is a whole-number multiple of {a}).",
           "constraints": {
             "a": [
               -10,
@@ -765,7 +765,7 @@
         {
           "id": "rr_010",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student says the unit rate for {a} items for ${b} is ${c} per item. Is that correct? What is the right unit rate?",
+          "problem": "A student says the unit rate for {a} items for ${b} is wrong (they multiplied instead of divided). Is that correct? What is the right unit rate?",
           "constraints": {
             "a": [
               4,
@@ -1034,7 +1034,7 @@
         {
           "id": "ee_009",
           "type": "IDENTIFY",
-          "problem": "Which value of x makes {a}x - {b} = {c} true: x = {w}, x = {r}, or x = {s}?",
+          "problem": "Which value of x makes {a}x - {b} = {c} true?",
           "constraints": {
             "a": [
               2,
@@ -1443,7 +1443,7 @@
         {
           "id": "geo_014",
           "type": "REPRESENT",
-          "problem": "A net is unfolded from a box. It shows {a} rectangles. Two are {b} × {c} and four are {b} × {d} or {c} × {d}. What is the surface area of the box?",
+          "problem": "A net is unfolded from a box. It shows six rectangles: two are {b} × {c} and four are {b} × {d} or {c} × {d}. What is the surface area of the box?",
           "constraints": {
             "b": [
               2,
@@ -1990,7 +1990,7 @@
         {
           "id": "sp_005",
           "type": "IDENTIFY",
-          "problem": "Is this question statistical or not statistical: '{q}'?",
+          "problem": "Is the given question statistical or not statistical?",
           "question_bank": [
             "How tall are students in our class?",
             "How tall is the teacher?",
@@ -2202,7 +2202,7 @@
         {
           "id": "pr_001",
           "type": "IDENTIFY",
-          "problem": "A car travels {a} miles in 1 hour, {b} miles in 2 hours, {c} miles in 3 hours. Is this a proportional relationship?",
+          "problem": "A car's distance over 1, 2, and 3 hours is recorded. Is this a proportional relationship?",
           "constraints": {
             "note": "Half the time make it proportional (b=2a, c=3a). Half make it not proportional."
           },
@@ -2305,7 +2305,7 @@
         {
           "id": "pn_001",
           "type": "REPRESENT",
-          "problem": "Show {a} + ({b}) on a number line. Start at {a}, move {abs_b} units in the {direction} direction. Where do you land?",
+          "problem": "Show {a} + ({b}) on a number line. Start at {a} and move according to the sign and magnitude of {b}. Where do you land?",
           "constraints": {
             "a": [
               -10,
@@ -2356,7 +2356,7 @@
           "id": "pn_004",
           "type": "APPLY",
           "context": "finance",
-          "problem": "A bank account has ${a}. The owner makes {b} transactions: {t1}, {t2}, {t3}. What is the final balance?",
+          "problem": "A bank account has ${a}. The owner makes three transactions: {t1}, {t2}, {t3}. What is the final balance?",
           "constraints": {
             "a": [
               50,

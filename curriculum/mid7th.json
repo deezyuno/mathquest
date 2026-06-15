@@ -513,7 +513,7 @@
         {
           "id": "gc_005",
           "type": "REVERSE",
-          "problem": "A circle has area {area} square units. Find its radius. Use π ≈ 3.14.",
+          "problem": "A circle has a known area in square units (using π ≈ 3.14). Find its radius.",
           "constraints": {
             "area_note": "3.14 * r * r for integer r 2-10"
           },
@@ -666,7 +666,7 @@
         {
           "id": "pl_001",
           "type": "IDENTIFY",
-          "problem": "A table shows x: {a}, {b}, {c} and y: {d}, {e}, {f}. Is the rate of change constant? What is the rate?",
+          "problem": "A table shows x: {a}, {b}, {c} with corresponding y-values. Is the rate of change constant? What is the rate?",
           "constraints": {
             "a": [
               0,
@@ -775,7 +775,7 @@
         {
           "id": "pp_001",
           "type": "IDENTIFY",
-          "problem": "A right triangle has legs {a} and {b}. Does the hypotenuse equal {c}? Check using a² + b² = c².",
+          "problem": "A right triangle formed from a Pythagorean triple is shown. Does the stated hypotenuse match a² + b² = c²?",
           "constraints": {
             "triples": [
               [
@@ -810,7 +810,7 @@
         {
           "id": "pp_002",
           "type": "COMPUTE",
-          "problem": "A right triangle has legs {a} and {b}. Use a² + b² = c² to find the hypotenuse.",
+          "problem": "A right triangle formed from a Pythagorean triple is shown. Use a² + b² = c² to find the hypotenuse.",
           "constraints": {
             "triples": [
               [
@@ -837,7 +837,7 @@
           "id": "pp_003",
           "type": "APPLY",
           "context": "construction",
-          "problem": "A ladder {c} ft long leans against a wall. Its base is {a} ft from the wall. How high up the wall does it reach?",
+          "problem": "A ladder of known length leans against a wall. Its base is a known distance from the wall. How high up the wall does it reach?",
           "constraints": {
             "triples": [
               [
@@ -864,7 +864,7 @@
           "id": "pp_004",
           "type": "APPLY",
           "context": "navigation",
-          "problem": "A park has paths going {a} blocks east and {b} blocks north. How long is the shortcut diagonally?",
+          "problem": "A park has paths going a known distance east and a known distance north. How long is the diagonal shortcut?",
           "constraints": {
             "triples": [
               [
@@ -890,7 +890,7 @@
         {
           "id": "pp_005",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student finds the hypotenuse of a right triangle with legs {a} and {b} incorrectly by adding a + b. What is the correct answer using a² + b² = c²?",
+          "problem": "A student finds the hypotenuse of a right triangle incorrectly by adding the leg lengths. What is the correct answer using a² + b² = c²?",
           "constraints": {
             "triples": [
               [

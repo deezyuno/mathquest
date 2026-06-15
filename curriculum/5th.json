@@ -94,7 +94,7 @@
         {
           "id": "wn_005",
           "type": "REVERSE",
-          "problem": "__ × {b} = {product}. Find the missing number.",
+          "problem": "Find the missing factor in __ × {b} = ? (the product is a whole-number multiple of {b}).",
           "constraints": {
             "b": [
               12,
@@ -1013,7 +1013,7 @@
         {
           "id": "pv_004",
           "type": "IDENTIFY",
-          "problem": "In the number {a}, what is the value of the digit {d}?",
+          "problem": "In the number {a}, pick one digit and state its place value.",
           "constraints": {
             "a": [
               10000,
@@ -1050,7 +1050,7 @@
         {
           "id": "pv_006",
           "type": "COMPUTE",
-          "problem": "Round {a} to the nearest {unit}.",
+          "problem": "Round {a} to the nearest hundred, thousand, or ten thousand.",
           "constraints": {
             "a": [
               1000,
@@ -1164,7 +1164,7 @@
         {
           "id": "gv_003",
           "type": "REVERSE",
-          "problem": "A rectangular prism has volume {v} cubic units. Its length is {a} and width is {b}. What is its height?",
+          "problem": "A rectangular prism has a whole-number volume that is a multiple of {a} × {b}. Its length is {a} and width is {b}. What is its height?",
           "constraints": {
             "a": [
               2,
@@ -1243,7 +1243,7 @@
         {
           "id": "gv_007",
           "type": "IDENTIFY",
-          "problem": "A triangle has angles of {a}°, {b}°, and {c}°. Is it acute, right, or obtuse?",
+          "problem": "A triangle has angles of {a}° and {b}°. The third angle completes the triangle. Is the triangle acute, right, or obtuse?",
           "constraints": {
             "a": [
               30,

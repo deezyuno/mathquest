@@ -39,7 +39,7 @@
         {
           "id": "pr_002",
           "type": "IDENTIFY",
-          "problem": "Is the relationship proportional? Hours: {a}, {b}, {c}. Miles: {d}, {e}, {f}.",
+          "problem": "Is the relationship proportional? Hours: {a}, {b}, {c}. Miles are recorded for each hour.",
           "constraints": {
             "a": [
               1,
@@ -103,7 +103,7 @@
         {
           "id": "pr_005",
           "type": "REPRESENT",
-          "problem": "A table shows x: {a}, {b}, {c} and y: {d}, {e}, {f}. Write the equation y = kx.",
+          "problem": "A table shows x-values {a}, {b}, {c} with corresponding y-values in a proportional relationship. Write the equation y = kx.",
           "constraints": {
             "a": [
               1,
@@ -836,7 +836,7 @@
         {
           "id": "geo_007",
           "type": "REVERSE",
-          "problem": "A circle has circumference {c}. Find its radius. Use π ≈ 3.14.",
+          "problem": "A circle has a known circumference (using π ≈ 3.14). Find its radius.",
           "constraints": {
             "c_note": "3.14 * random(3,15)"
           },

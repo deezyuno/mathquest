@@ -835,7 +835,7 @@
         {
           "id": "pr_005",
           "type": "REPRESENT",
-          "problem": "A necklace has {a} red beads for every {b} blue beads. If there are {c} total beads, how many are red?",
+          "problem": "A necklace has {a} red beads for every {b} blue beads. If the total number of beads is a whole-number multiple of {a} + {b}, how many are red?",
           "constraints": {
             "a": [
               1,
