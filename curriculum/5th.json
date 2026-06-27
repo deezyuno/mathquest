@@ -184,19 +184,61 @@
         },
         {
           "id": "wn_010",
-          "type": "CONSTRUCT",
-          "problem": "Write a multiplication problem where the product is between {a} and {b}.",
+          "type": "REVERSE",
+          "problem": "Find the missing factor: __ × {b} = {p}.",
+          "constraints": {
+            "b": [
+              12,
+              25
+            ],
+            "p_note": "b * random(10, 50)"
+          },
+          "answer_type": "numeric",
+          "answer_formula": "p / b",
+          "generation_note": "p = b * random(10,50)"
+        },
+        {
+          "id": "wn_011",
+          "type": "COMPUTE",
+          "problem": "{a} + {b} × {c}",
           "constraints": {
             "a": [
-              100,
-              500
+              2,
+              20
             ],
             "b": [
-              501,
-              1000
+              2,
+              12
+            ],
+            "c": [
+              2,
+              12
             ]
           },
-          "answer_type": "open_ended"
+          "answer_type": "numeric",
+          "answer_formula": "a + b * c"
+        },
+        {
+          "id": "wn_012",
+          "type": "COMPUTE",
+          "problem": "({a} + {b}) ÷ {c}",
+          "constraints": {
+            "a": [
+              10,
+              80
+            ],
+            "b": [
+              10,
+              80
+            ],
+            "c": [
+              2,
+              12
+            ]
+          },
+          "constraints_note": "(a + b) divisible by c",
+          "answer_type": "numeric",
+          "answer_formula": "(a + b) / c"
         }
       ]
     },
@@ -378,8 +420,8 @@
         },
         {
           "id": "dec_008",
-          "type": "REPRESENT",
-          "problem": "Order these decimals from least to greatest: {a}.{b}, {c}.{d}, {e}.{f}",
+          "type": "COMPARE",
+          "problem": "Which is greatest: {a}.{b}, {c}.{d}, or {e}.{f}?",
           "constraints": {
             "a": [
               1,
@@ -406,7 +448,7 @@
               99
             ]
           },
-          "answer_type": "ordered_list"
+          "answer_type": "comparison"
         },
         {
           "id": "dec_009",
@@ -467,6 +509,39 @@
           "generation_note": "wrong = a+c concatenated wrong (e.g. misaligned decimals)",
           "answer_type": "numeric",
           "answer_formula": "a + b/100 + c + d/100"
+        },
+        {
+          "id": "dec_011",
+          "type": "COMPUTE",
+          "problem": "Round {a}.{b} to the nearest tenth.",
+          "constraints": {
+            "a": [
+              1,
+              99
+            ],
+            "b": [
+              10,
+              99
+            ]
+          },
+          "answer_type": "numeric"
+        },
+        {
+          "id": "dec_012",
+          "type": "COMPUTE",
+          "problem": "{a}.{b} × 10",
+          "constraints": {
+            "a": [
+              1,
+              99
+            ],
+            "b": [
+              1,
+              9
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "(a + b/10) * 10"
         }
       ]
     },
@@ -695,7 +770,7 @@
           "id": "fas_010",
           "type": "APPLY",
           "context": "pizza",
-          "problem": "Maria ate {a}/{b} of a pizza and her brother ate {c}/{b} of the same pizza. What fraction of the pizza did they eat together? What fraction is left?",
+          "problem": "Maria ate {a}/{b} of a pizza and her brother ate {c}/{b} of the same pizza. What fraction of the pizza did they eat together?",
           "constraints": {
             "a": [
               1,
@@ -711,8 +786,32 @@
             ]
           },
           "constraints_note": "a + c < b",
-          "answer_type": "two_fractions",
+          "answer_type": "fraction_simplified",
           "answer_formula": "(a + c) / b"
+        },
+        {
+          "id": "fas_011",
+          "type": "COMPARE",
+          "problem": "Use <, >, or = to compare: {a}/{b} ___ {c}/{d}",
+          "constraints": {
+            "a": [
+              1,
+              8
+            ],
+            "b": [
+              2,
+              12
+            ],
+            "c": [
+              1,
+              8
+            ],
+            "d": [
+              2,
+              12
+            ]
+          },
+          "answer_type": "symbol"
         }
       ]
     },
@@ -1000,15 +1099,28 @@
         },
         {
           "id": "pv_003",
-          "type": "REPRESENT",
-          "problem": "Write {a} in expanded form.",
+          "type": "COMPUTE",
+          "problem": "What is {a} × 1000 + {b} × 100 + {c} × 10 + {d}?",
           "constraints": {
             "a": [
-              1000,
-              99999
+              1,
+              9
+            ],
+            "b": [
+              0,
+              9
+            ],
+            "c": [
+              0,
+              9
+            ],
+            "d": [
+              0,
+              9
             ]
           },
-          "answer_type": "expression"
+          "answer_type": "numeric",
+          "answer_formula": "a * 1000 + b * 100 + c * 10 + d"
         },
         {
           "id": "pv_004",
@@ -1235,15 +1347,21 @@
         },
         {
           "id": "gv_006",
-          "type": "IDENTIFY",
-          "problem": "A shape has 4 right angles and all sides equal. What type of quadrilateral is it?",
-          "constraints": {},
-          "answer_type": "label"
+          "type": "COMPUTE",
+          "problem": "A square has side length {a}. What is its perimeter?",
+          "constraints": {
+            "a": [
+              3,
+              20
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "4 * a"
         },
         {
           "id": "gv_007",
-          "type": "IDENTIFY",
-          "problem": "A triangle has angles of {a}° and {b}°. The third angle completes the triangle. Is the triangle acute, right, or obtuse?",
+          "type": "COMPUTE",
+          "problem": "A triangle has angles of {a}° and {b}°. What is the measure of the third angle?",
           "constraints": {
             "a": [
               30,
@@ -1255,19 +1373,47 @@
             ],
             "c_note": "180 - a - b"
           },
-          "answer_type": "label"
+          "answer_type": "numeric",
+          "answer_formula": "180 - a - b"
         },
         {
           "id": "gv_008",
-          "type": "CONSTRUCT",
-          "problem": "Name two different rectangular prisms that each have a volume of {v} cubic units.",
+          "type": "REVERSE",
+          "problem": "A rectangular prism has volume {v} cubic units, length {a}, and width {b}. What is its height?",
           "constraints": {
             "v": [
               12,
               60
+            ],
+            "a": [
+              2,
+              8
+            ],
+            "b": [
+              2,
+              8
             ]
           },
-          "answer_type": "open_ended"
+          "answer_type": "numeric",
+          "constraints_note": "v divisible by a*b",
+          "answer_formula": "v / (a * b)"
+        },
+        {
+          "id": "gv_009",
+          "type": "COMPUTE",
+          "problem": "Find the perimeter of a rectangle with length {a} and width {b}.",
+          "constraints": {
+            "a": [
+              3,
+              20
+            ],
+            "b": [
+              3,
+              20
+            ]
+          },
+          "answer_formula": "2 * (a + b)",
+          "answer_type": "numeric"
         }
       ]
     },
@@ -1279,8 +1425,8 @@
       "templates": [
         {
           "id": "cp_001",
-          "type": "IDENTIFY",
-          "problem": "What are the coordinates of a point that is {a} units right and {b} units up from the origin?",
+          "type": "COMPUTE",
+          "problem": "A point is {a} units right and {b} units up from the origin. What is its x-coordinate?",
           "constraints": {
             "a": [
               1,
@@ -1291,7 +1437,8 @@
               10
             ]
           },
-          "answer_type": "coordinates"
+          "answer_type": "numeric",
+          "answer_formula": "a"
         },
         {
           "id": "cp_002",
@@ -1333,8 +1480,8 @@
         },
         {
           "id": "cp_004",
-          "type": "REPRESENT",
-          "problem": "A line connects ({a}, {b}) and ({a}, {c}). Is this line horizontal or vertical? How long is it?",
+          "type": "COMPUTE",
+          "problem": "A line connects ({a}, {b}) and ({a}, {c}). How long is the line segment?",
           "constraints": {
             "a": [
               1,
@@ -1349,14 +1496,14 @@
               12
             ]
           },
-          "answer_type": "label_plus_numeric",
+          "answer_type": "numeric",
           "answer_formula": "abs(c - b)"
         },
         {
           "id": "cp_005",
-          "type": "APPLY",
+          "type": "COMPUTE",
           "context": "game",
-          "problem": "A game piece starts at ({a}, {b}). It moves {c} units right and {d} units up. What are the new coordinates?",
+          "problem": "A game piece starts at ({a}, {b}). It moves {c} units right and {d} units up. What is its new y-coordinate?",
           "constraints": {
             "a": [
               0,
@@ -1375,7 +1522,8 @@
               5
             ]
           },
-          "answer_type": "coordinates"
+          "answer_type": "numeric",
+          "answer_formula": "b + d"
         },
         {
           "id": "cp_006",
@@ -1404,7 +1552,7 @@
         {
           "id": "cp_007",
           "type": "REVERSE",
-          "problem": "A point ends up at ({a}, {b}) after moving {c} units right from its starting position. What were the original coordinates?",
+          "problem": "A point ends up at ({a}, {b}) after moving {c} units right from its starting position. What was its starting x-coordinate?",
           "constraints": {
             "a": [
               4,
@@ -1419,7 +1567,29 @@
               6
             ]
           },
-          "answer_type": "coordinates"
+          "answer_type": "numeric",
+          "answer_formula": "a - c"
+        },
+        {
+          "id": "cp_008",
+          "type": "COMPUTE",
+          "problem": "Find the horizontal distance between ({a}, {b}) and ({c}, {b}).",
+          "constraints": {
+            "a": [
+              1,
+              8
+            ],
+            "b": [
+              1,
+              10
+            ],
+            "c": [
+              9,
+              15
+            ]
+          },
+          "answer_formula": "c - a",
+          "answer_type": "numeric"
         }
       ]
     },
@@ -1535,6 +1705,27 @@
             ]
           },
           "answer_formula": "a * 8",
+          "answer_type": "numeric"
+        },
+        {
+          "id": "mc_009",
+          "type": "COMPUTE",
+          "problem": "Find the mean of {a}, {b}, and {c}.",
+          "constraints": {
+            "a": [
+              10,
+              50
+            ],
+            "b": [
+              10,
+              50
+            ],
+            "c": [
+              10,
+              50
+            ]
+          },
+          "answer_formula": "(a + b + c) / 3",
           "answer_type": "numeric"
         }
       ]

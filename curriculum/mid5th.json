@@ -249,15 +249,32 @@
         },
         {
           "id": "fm_009",
-          "type": "CONSTRUCT",
-          "problem": "Write two mixed numbers that add up to exactly {a}.",
+          "type": "COMPUTE",
+          "problem": "What is {a} {b}/{c} + {d} {e}/{c}?",
           "constraints": {
             "a": [
+              1,
+              3
+            ],
+            "b": [
+              1,
+              4
+            ],
+            "c": [
               4,
               8
+            ],
+            "d": [
+              1,
+              3
+            ],
+            "e": [
+              1,
+              4
             ]
           },
-          "answer_type": "open_ended"
+          "answer_type": "mixed_number",
+          "answer_formula": "(a + d) + (b + e) / c"
         },
         {
           "id": "fm_010",
@@ -288,6 +305,31 @@
           },
           "answer_type": "mixed_number",
           "answer_formula": "(a + d) + (b + e) / c"
+        },
+        {
+          "id": "fm_011",
+          "type": "COMPUTE",
+          "problem": "{a}/{b} + {c}/{d}",
+          "constraints": {
+            "a": [
+              1,
+              5
+            ],
+            "b": [
+              4,
+              8
+            ],
+            "c": [
+              1,
+              5
+            ],
+            "d": [
+              4,
+              8
+            ]
+          },
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a * d + c * b) / (b * d)"
         }
       ]
     },
@@ -299,8 +341,8 @@
       "templates": [
         {
           "id": "dpv_001",
-          "type": "REPRESENT",
-          "problem": "Write {a}.{b} in expanded form using fractions.",
+          "type": "COMPUTE",
+          "problem": "What is {a} + {b}/1000 + {c}/100 + {d}/10?",
           "constraints": {
             "a": [
               1,
@@ -309,9 +351,19 @@
             "b": [
               100,
               999
+            ],
+            "c": [
+              0,
+              9
+            ],
+            "d": [
+              0,
+              9
             ]
           },
-          "answer_type": "expression"
+          "answer_type": "numeric",
+          "generation_note": "b gives hundredths/thousandths digits from expanded fraction form",
+          "answer_formula": "a + b/1000 + c/100 + d/10"
         },
         {
           "id": "dpv_002",
@@ -348,7 +400,7 @@
         {
           "id": "dpv_004",
           "type": "COMPARE",
-          "problem": "Order from least to greatest: {a}.{b}, {c}.{d}, {e}.{f}, {g}.{h}",
+          "problem": "Which is least: {a}.{b}, {c}.{d}, {e}.{f}, or {g}.{h}?",
           "constraints": {
             "a": [
               1,
@@ -383,11 +435,11 @@
               999
             ]
           },
-          "answer_type": "ordered_list"
+          "answer_type": "comparison"
         },
         {
           "id": "dpv_005",
-          "type": "IDENTIFY",
+          "type": "COMPUTE",
           "problem": "In {a}.{b}, what digit is in the thousandths place?",
           "constraints": {
             "a": [
@@ -399,7 +451,7 @@
               999
             ]
           },
-          "answer_type": "single_digit",
+          "answer_type": "numeric",
           "answer_formula": "b % 10"
         },
         {
@@ -458,6 +510,64 @@
             ]
           },
           "answer_type": "numeric"
+        },
+        {
+          "id": "dpv_008",
+          "type": "COMPUTE",
+          "problem": "{a}.{b} + {c}.{d}",
+          "constraints": {
+            "a": [
+              1,
+              50
+            ],
+            "b": [
+              100,
+              999
+            ],
+            "c": [
+              1,
+              50
+            ],
+            "d": [
+              100,
+              999
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "(a + b/1000) + (c + d/1000)"
+        },
+        {
+          "id": "dpv_009",
+          "type": "COMPUTE",
+          "problem": "Find the mean of {a}.{b}, {c}.{d}, and {e}.{f}.",
+          "constraints": {
+            "a": [
+              4,
+              8
+            ],
+            "b": [
+              100,
+              999
+            ],
+            "c": [
+              4,
+              8
+            ],
+            "d": [
+              100,
+              999
+            ],
+            "e": [
+              4,
+              8
+            ],
+            "f": [
+              100,
+              999
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "(a + b/1000 + c + d/1000 + e + f/1000) / 3"
         }
       ]
     },
@@ -585,8 +695,8 @@
         },
         {
           "id": "ms_006",
-          "type": "IDENTIFY",
-          "problem": "Which of these is the correct first step to solve: 'You buy {a} items at ${b} each and get ${c} change from ${d}.'? A) {a} × {b}, B) {d} - {c}, C) {d} + {c}",
+          "type": "COMPUTE",
+          "problem": "You buy {a} items at ${b} each and get ${c} change from ${d}. How much did you spend?",
           "constraints": {
             "a": [
               2,
@@ -605,7 +715,8 @@
               50
             ]
           },
-          "answer_type": "multiple_choice"
+          "answer_type": "numeric",
+          "answer_formula": "d - c"
         },
         {
           "id": "ms_007",
@@ -627,6 +738,44 @@
           },
           "answer_type": "numeric",
           "answer_formula": "a * b + c"
+        },
+        {
+          "id": "ms_008",
+          "type": "COMPUTE",
+          "problem": "{a} × {b} + {c}",
+          "constraints": {
+            "a": [
+              12,
+              50
+            ],
+            "b": [
+              2,
+              9
+            ],
+            "c": [
+              10,
+              99
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a * b + c"
+        },
+        {
+          "id": "ms_009",
+          "type": "COMPUTE",
+          "problem": "Find the perimeter of a rectangle with length {a} and width {b}.",
+          "constraints": {
+            "a": [
+              4,
+              20
+            ],
+            "b": [
+              3,
+              16
+            ]
+          },
+          "answer_formula": "2 * (a + b)",
+          "answer_type": "numeric"
         }
       ]
     },
@@ -681,15 +830,16 @@
         },
         {
           "id": "pn_004",
-          "type": "IDENTIFY",
-          "problem": "On a number line, which number is farther from zero: {a} or -{a}?",
+          "type": "COMPUTE",
+          "problem": "What is the distance from zero to {a}?",
           "constraints": {
             "a": [
               2,
               20
             ]
           },
-          "answer_type": "label"
+          "answer_type": "numeric",
+          "answer_formula": "abs(a)"
         },
         {
           "id": "pn_005",
@@ -709,15 +859,16 @@
         },
         {
           "id": "pn_006",
-          "type": "REPRESENT",
-          "problem": "A bank account is overdrawn by ${a}. Write this balance as a negative number and explain what it means.",
+          "type": "COMPUTE",
+          "problem": "A bank account is overdrawn by ${a}. Write this balance as a signed number.",
           "constraints": {
             "a": [
               10,
               200
             ]
           },
-          "answer_type": "numeric_plus_verbal"
+          "answer_type": "numeric",
+          "answer_formula": "-a"
         },
         {
           "id": "pn_007",
@@ -754,8 +905,8 @@
       "templates": [
         {
           "id": "pr_001",
-          "type": "REPRESENT",
-          "problem": "There are {a} red marbles and {b} blue marbles. Write the ratio of red to blue marbles in two different ways.",
+          "type": "COMPUTE",
+          "problem": "There are {a} red marbles and {b} blue marbles. How many blue marbles per red marble? (Give blue ÷ red as a decimal to the nearest tenth.)",
           "constraints": {
             "a": [
               2,
@@ -766,12 +917,13 @@
               10
             ]
           },
-          "answer_type": "two_forms"
+          "answer_type": "numeric",
+          "answer_formula": "b / a"
         },
         {
           "id": "pr_002",
-          "type": "IDENTIFY",
-          "problem": "In a bag of {a} fruits, {b} are apples and the rest are oranges. What is the ratio of apples to oranges?",
+          "type": "COMPUTE",
+          "problem": "In a bag of {a} fruits, {b} are apples. How many oranges are there?",
           "constraints": {
             "a": [
               8,
@@ -783,7 +935,8 @@
             ]
           },
           "constraints_note": "b < a",
-          "answer_type": "ratio"
+          "answer_type": "numeric",
+          "answer_formula": "a - b"
         },
         {
           "id": "pr_003",
@@ -849,6 +1002,28 @@
           },
           "answer_type": "numeric",
           "answer_formula": "c * a / (a + b)"
+        },
+        {
+          "id": "pr_006",
+          "type": "COMPUTE",
+          "problem": "The ratio of cats to dogs is {a}:{b}. If there are {c} cats, how many dogs are there?",
+          "constraints": {
+            "a": [
+              1,
+              4
+            ],
+            "b": [
+              1,
+              4
+            ],
+            "c": [
+              4,
+              20
+            ]
+          },
+          "constraints_note": "c is a multiple of a",
+          "answer_type": "numeric",
+          "answer_formula": "c * b / a"
         }
       ]
     },
@@ -895,21 +1070,26 @@
         },
         {
           "id": "pa_003",
-          "type": "REPRESENT",
-          "problem": "A box holds {a} books. Write an expression for the number of books in n boxes.",
+          "type": "COMPUTE",
+          "problem": "A box holds {a} books. How many books are in {b} boxes?",
           "constraints": {
             "a": [
               6,
               24
+            ],
+            "b": [
+              2,
+              10
             ]
           },
-          "answer_type": "expression"
+          "answer_type": "numeric",
+          "answer_formula": "a * b"
         },
         {
           "id": "pa_004",
-          "type": "APPLY",
+          "type": "COMPUTE",
           "context": "money",
-          "problem": "You earn ${a} per hour. Write an expression for how much you earn in h hours. How much do you earn in {b} hours?",
+          "problem": "You earn ${a} per hour. How much do you earn in {b} hours?",
           "constraints": {
             "a": [
               8,
@@ -920,20 +1100,63 @@
               10
             ]
           },
-          "answer_type": "expression_plus_numeric",
-          "answer_formula": "a * h"
+          "answer_type": "numeric",
+          "answer_formula": "a * b"
         },
         {
           "id": "pa_005",
-          "type": "IDENTIFY",
-          "problem": "Which expression represents '{a} more than twice a number n'? A) {a} + n, B) 2n + {a}, C) 2 + {a}n",
+          "type": "COMPUTE",
+          "problem": "If n = {a}, what is 2n + {b}?",
           "constraints": {
             "a": [
               3,
               15
+            ],
+            "b": [
+              3,
+              15
             ]
           },
-          "answer_type": "multiple_choice"
+          "answer_type": "numeric",
+          "answer_formula": "2 * a + b"
+        },
+        {
+          "id": "pa_006",
+          "type": "COMPUTE",
+          "problem": "If n = {a}, what is {b}n - {c}?",
+          "constraints": {
+            "a": [
+              2,
+              12
+            ],
+            "b": [
+              2,
+              8
+            ],
+            "c": [
+              1,
+              20
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "b * a - c"
+        },
+        {
+          "id": "pa_007",
+          "type": "COMPUTE",
+          "problem": "If x = {a}, what is x² + {b}?",
+          "constraints": {
+            "a": [
+              2,
+              10
+            ],
+            "b": [
+              1,
+              25
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a * a + b"
         }
       ]
     }

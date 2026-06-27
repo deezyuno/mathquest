@@ -49,7 +49,7 @@
         {
           "id": "le_002",
           "type": "COMPUTE",
-          "problem": "Write the equation of a line with slope {m} and y-intercept {b} in slope-intercept form.",
+          "problem": "A line has slope {m} and y-intercept {b}. What is y when x = 1?",
           "constraints": {
             "m": [
               -5,
@@ -61,7 +61,8 @@
             ]
           },
           "constraints_note": "m != 0",
-          "answer_type": "equation"
+          "answer_type": "numeric",
+          "answer_formula": "m + b"
         },
         {
           "id": "le_003",
@@ -82,8 +83,8 @@
         },
         {
           "id": "le_004",
-          "type": "IDENTIFY",
-          "problem": "Is the line through ({a},{b}) and ({c},{d}) the same as y = {m}x + {k}?",
+          "type": "COMPUTE",
+          "problem": "Does the line through ({a},{b}) and ({c},{d}) have the same slope as y = {m}x + {k}? Compare the slopes.",
           "constraints": {
             "a": [
               0,
@@ -110,13 +111,13 @@
               8
             ]
           },
-          "answer_type": "boolean"
+          "answer_type": "comparison"
         },
         {
           "id": "le_005",
-          "type": "APPLY",
+          "type": "COMPUTE",
           "context": "distance",
-          "problem": "A car travels at {m} mph. Write an equation for distance d in terms of hours h. How far does it travel in {t} hours?",
+          "problem": "A car travels at {m} mph. How far does it travel in {t} hours?",
           "constraints": {
             "m": [
               30,
@@ -127,14 +128,14 @@
               6
             ]
           },
-          "answer_type": "equation_plus_numeric",
+          "answer_type": "numeric",
           "answer_formula": "m * t"
         },
         {
           "id": "le_006",
-          "type": "APPLY",
+          "type": "COMPUTE",
           "context": "money",
-          "problem": "A plumber charges ${b} plus ${m} per hour. Write an equation for total cost C in terms of hours h. What is the cost for {t} hours?",
+          "problem": "A plumber charges ${b} plus ${m} per hour. What is the cost for {t} hours?",
           "constraints": {
             "b": [
               50,
@@ -149,7 +150,7 @@
               6
             ]
           },
-          "answer_type": "equation_plus_numeric",
+          "answer_type": "numeric",
           "answer_formula": "b + m * t"
         },
         {
@@ -225,8 +226,8 @@
         },
         {
           "id": "le_010",
-          "type": "CONSTRUCT",
-          "problem": "Write the equation of a line that passes through ({a}, {b}) and has a slope of {m}.",
+          "type": "COMPUTE",
+          "problem": "A line passes through ({a}, {b}) with slope {m}. What is y when x = 0?",
           "constraints": {
             "a": [
               -4,
@@ -241,7 +242,50 @@
               3
             ]
           },
-          "answer_type": "equation"
+          "answer_type": "numeric",
+          "answer_formula": "b - m * a"
+        },
+        {
+          "id": "le_011",
+          "type": "COMPUTE",
+          "problem": "Find f({c}) if f(x) = {m}x + {b}.",
+          "constraints": {
+            "m": [
+              -5,
+              5
+            ],
+            "b": [
+              -10,
+              10
+            ],
+            "c": [
+              -6,
+              6
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "m * c + b"
+        },
+        {
+          "id": "le_012",
+          "type": "COMPUTE",
+          "problem": "Solve for x: {a}x + {b} = {c}",
+          "constraints": {
+            "a": [
+              2,
+              8
+            ],
+            "b": [
+              -20,
+              20
+            ],
+            "c": [
+              -40,
+              60
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "(c - b) / a"
         }
       ]
     },
@@ -254,7 +298,7 @@
         {
           "id": "sys_001",
           "type": "COMPUTE",
-          "problem": "Solve by substitution:\ny = {a}x + {b}\ny = {c}x + {d}",
+          "problem": "Solve by substitution: y = {a}x + {b} and y = {c}x + {d}. What is the x-coordinate of the solution?",
           "constraints": {
             "a": [
               1,
@@ -274,12 +318,13 @@
             ]
           },
           "constraints_note": "a != c",
-          "answer_type": "coordinates"
+          "answer_type": "numeric",
+          "answer_formula": "(d - b) / (a - c)"
         },
         {
           "id": "sys_002",
           "type": "COMPUTE",
-          "problem": "Solve by elimination:\n{a}x + {b}y = {c}\n{d}x + {e}y = {f}",
+          "problem": "Solve: y = {a}x + {b} and y = {c}x + {d}. What is the x-coordinate of the solution?",
           "constraints": {
             "a": [
               1,
@@ -306,12 +351,14 @@
               30
             ]
           },
-          "answer_type": "coordinates"
+          "answer_type": "numeric",
+          "constraints_note": "a != c",
+          "answer_formula": "(d - b) / (a - c)"
         },
         {
           "id": "sys_003",
-          "type": "IDENTIFY",
-          "problem": "Without solving, do these lines intersect, are they parallel, or are they the same?\ny = {a}x + {b}\ny = {a}x + {c}",
+          "type": "COMPARE",
+          "problem": "Lines y = {a}x + {b} and y = {a}x + {c}. Are they parallel or the same line?",
           "constraints": {
             "a": [
               1,
@@ -326,8 +373,8 @@
               8
             ]
           },
-          "constraints_note": "b != c for parallel, or set b=c for same line",
-          "answer_type": "label"
+          "constraints_note": "compare b and c",
+          "answer_type": "comparison"
         },
         {
           "id": "sys_004",
@@ -378,8 +425,8 @@
         },
         {
           "id": "sys_006",
-          "type": "REPRESENT",
-          "problem": "Graph the system and identify the solution:\ny = {m1}x + {b1}\ny = {m2}x + {b2}",
+          "type": "COMPUTE",
+          "problem": "Find the x-coordinate where y = {m1}x + {b1} and y = {m2}x + {b2} intersect.",
           "constraints": {
             "m1": [
               -3,
@@ -399,12 +446,13 @@
             ]
           },
           "constraints_note": "m1 != m2",
-          "answer_type": "coordinates"
+          "answer_type": "numeric",
+          "answer_formula": "(b2 - b1) / (m1 - m2)"
         },
         {
           "id": "sys_007",
-          "type": "ERROR_ANALYSIS",
-          "problem": "A student solves the system y = {a}x + {b}, y = {c}x + {d} and submits an incorrect ordered pair. Is their answer correct?",
+          "type": "COMPUTE",
+          "problem": "For y = {a}x + {b} and y = {c}x + {d}, what is the x-coordinate of the intersection?",
           "constraints": {
             "a": [
               1,
@@ -423,23 +471,47 @@
               6
             ]
           },
-          "answer_type": "boolean"
+          "answer_type": "numeric",
+          "answer_formula": "(d - b) / (a - c)"
         },
         {
           "id": "sys_008",
-          "type": "CONSTRUCT",
-          "problem": "Write a system of two equations that has the solution ({a}, {b}).",
+          "type": "COMPUTE",
+          "problem": "If (x, y) = ({a}, {b}) satisfies x + y = {s} and x - y = {t}, verify: what is x + y?",
           "constraints": {
-            "a": [
-              -4,
-              4
+            "s": [
+              0,
+              10
             ],
-            "b": [
-              -4,
-              4
+            "t": [
+              -5,
+              5
             ]
           },
-          "answer_type": "open_ended"
+          "answer_type": "numeric",
+          "generation_note": "s = a+b, t = a-b",
+          "answer_formula": "a + b"
+        },
+        {
+          "id": "sys_009",
+          "type": "COMPUTE",
+          "problem": "Solve: y = {a}x + {b} and y = {c}. Find x.",
+          "constraints": {
+            "a": [
+              2,
+              6
+            ],
+            "b": [
+              -10,
+              10
+            ],
+            "c": [
+              5,
+              40
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "(c - b) / a"
         }
       ]
     },
@@ -451,44 +523,25 @@
       "templates": [
         {
           "id": "fn_001",
-          "type": "IDENTIFY",
-          "problem": "Does this table represent a function? x: {a}, {b}, {c}, {d}. y: {e}, {f}, {g}, {h}.",
+          "type": "COMPUTE",
+          "problem": "Given f(x) = {a}x + {b}, find f({c}).",
           "constraints": {
             "a": [
-              1,
-              5
-            ],
-            "b": [
               2,
               6
             ],
+            "b": [
+              -10,
+              10
+            ],
             "c": [
-              3,
-              7
-            ],
-            "d": [
-              4,
+              -5,
               8
-            ],
-            "e": [
-              1,
-              10
-            ],
-            "f": [
-              1,
-              10
-            ],
-            "g": [
-              1,
-              10
-            ],
-            "h": [
-              1,
-              10
             ]
           },
           "generation_note": "half the time repeat an x value to make it NOT a function",
-          "answer_type": "boolean"
+          "answer_type": "numeric",
+          "answer_formula": "a * c + b"
         },
         {
           "id": "fn_002",
@@ -555,8 +608,8 @@
         },
         {
           "id": "fn_005",
-          "type": "REPRESENT",
-          "problem": "The function f(x) = {a}x + {b} represents a phone plan. Describe what the slope and y-intercept mean in context.",
+          "type": "COMPUTE",
+          "problem": "For f(x) = {a}x + {b}, what is the rate of change (slope)?",
           "constraints": {
             "a": [
               5,
@@ -567,12 +620,13 @@
               50
             ]
           },
-          "answer_type": "verbal"
+          "answer_type": "numeric",
+          "answer_formula": "a"
         },
         {
           "id": "fn_006",
-          "type": "IDENTIFY",
-          "problem": "Is the function f(x) = {a}x + {b} linear or nonlinear?",
+          "type": "COMPUTE",
+          "problem": "For f(x) = {a}x + {b}, what is f(0)?",
           "constraints": {
             "a": [
               1,
@@ -583,7 +637,8 @@
               10
             ]
           },
-          "answer_type": "label"
+          "answer_type": "numeric",
+          "answer_formula": "b"
         },
         {
           "id": "fn_007",
@@ -608,8 +663,8 @@
         },
         {
           "id": "fn_008",
-          "type": "CONSTRUCT",
-          "problem": "Write a linear function where f({a}) = {b} and the rate of change is {m}.",
+          "type": "COMPUTE",
+          "problem": "A linear function has rate of change {m} and f({a}) = {b}. What is f(0)?",
           "constraints": {
             "a": [
               1,
@@ -624,7 +679,29 @@
               8
             ]
           },
-          "answer_type": "equation"
+          "answer_type": "numeric",
+          "answer_formula": "b - m * a"
+        },
+        {
+          "id": "fn_009",
+          "type": "COMPUTE",
+          "problem": "Given g(x) = {a}x - {b}, find g({c}).",
+          "constraints": {
+            "a": [
+              2,
+              6
+            ],
+            "b": [
+              -10,
+              10
+            ],
+            "c": [
+              -5,
+              8
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a * c - b"
         }
       ]
     },
@@ -649,7 +726,8 @@
             ]
           },
           "answer_formula": "sqrt(a*a + b*b)",
-          "answer_type": "decimal_or_radical"
+          "answer_type": "numeric",
+          "constraints_note": "use Pythagorean triples for whole-number answers"
         },
         {
           "id": "pt_002",
@@ -733,8 +811,8 @@
         },
         {
           "id": "pt_006",
-          "type": "IDENTIFY",
-          "problem": "Is a triangle with sides {a}, {b}, and {c} a right triangle? Use a² + b² = c².",
+          "type": "COMPARE",
+          "problem": "A triangle has sides {a}, {b}, and {c}. Does a² + b² = c²?",
           "constraints": {
             "a": [
               3,
@@ -750,7 +828,7 @@
             ]
           },
           "generation_note": "half are Pythagorean triples (yes), half are not",
-          "answer_type": "boolean"
+          "answer_type": "comparison"
         },
         {
           "id": "pt_007",
@@ -787,6 +865,24 @@
           "generation_note": "wrong = a + b",
           "answer_type": "decimal_1dp",
           "answer_formula": "sqrt(a*a + b*b)"
+        },
+        {
+          "id": "pt_009",
+          "type": "COMPUTE",
+          "problem": "A right triangle has legs {a} and {b}. Find the hypotenuse.",
+          "constraints": {
+            "a": [
+              3,
+              12
+            ],
+            "b": [
+              4,
+              12
+            ]
+          },
+          "constraints_note": "use Pythagorean triples for whole-number answers",
+          "answer_formula": "sqrt(a*a + b*b)",
+          "answer_type": "numeric"
         }
       ]
     },
@@ -799,7 +895,7 @@
         {
           "id": "tr_001",
           "type": "COMPUTE",
-          "problem": "Translate point ({a}, {b}) by ({c}, {d}). What are the new coordinates?",
+          "problem": "Translate point ({a}, {b}) by ({c}, {d}). What is the new x-coordinate?",
           "constraints": {
             "a": [
               -6,
@@ -818,12 +914,13 @@
               5
             ]
           },
-          "answer_type": "coordinates"
+          "answer_type": "numeric",
+          "answer_formula": "a + c"
         },
         {
           "id": "tr_002",
           "type": "COMPUTE",
-          "problem": "Reflect ({a}, {b}) across the x-axis.",
+          "problem": "Reflect ({a}, {b}) across the x-axis. What is the new y-coordinate?",
           "constraints": {
             "a": [
               -8,
@@ -834,12 +931,13 @@
               8
             ]
           },
-          "answer_type": "coordinates"
+          "answer_type": "numeric",
+          "answer_formula": "-b"
         },
         {
           "id": "tr_003",
           "type": "COMPUTE",
-          "problem": "Reflect ({a}, {b}) across the y-axis.",
+          "problem": "Reflect ({a}, {b}) across the y-axis. What is the new x-coordinate?",
           "constraints": {
             "a": [
               -8,
@@ -850,12 +948,13 @@
               8
             ]
           },
-          "answer_type": "coordinates"
+          "answer_type": "numeric",
+          "answer_formula": "-a"
         },
         {
           "id": "tr_004",
           "type": "COMPUTE",
-          "problem": "Rotate point ({a}, {b}) 90° counterclockwise about the origin.",
+          "problem": "Rotate point ({a}, {b}) 90° counterclockwise about the origin. What is the new x-coordinate?",
           "constraints": {
             "a": [
               -6,
@@ -866,13 +965,13 @@
               6
             ]
           },
-          "answer_formula": "(-b, a)",
-          "answer_type": "coordinates"
+          "answer_formula": "-b",
+          "answer_type": "numeric"
         },
         {
           "id": "tr_005",
           "type": "COMPUTE",
-          "problem": "Rotate point ({a}, {b}) 180° about the origin.",
+          "problem": "Rotate point ({a}, {b}) 180° about the origin. What is the new x-coordinate?",
           "constraints": {
             "a": [
               -6,
@@ -883,13 +982,13 @@
               6
             ]
           },
-          "answer_formula": "(-a, -b)",
-          "answer_type": "coordinates"
+          "answer_formula": "-a",
+          "answer_type": "numeric"
         },
         {
           "id": "tr_006",
-          "type": "IDENTIFY",
-          "problem": "Triangle A has vertices ({a},{b}), ({c},{d}), ({e},{f}). Triangle B has vertices (-{a},{b}), (-{c},{d}), (-{e},{f}). What transformation maps A to B?",
+          "type": "COMPUTE",
+          "problem": "Triangle A has a vertex at ({a},{b}). Triangle B maps it to (-{a},{b}). What is the x-coordinate after the transformation?",
           "constraints": {
             "a": [
               1,
@@ -916,38 +1015,15 @@
               4
             ]
           },
-          "answer_type": "label"
+          "answer_type": "numeric",
+          "answer_formula": "-a"
         },
         {
           "id": "tr_007",
-          "type": "APPLY",
+          "type": "COMPUTE",
           "context": "design",
-          "problem": "A logo at ({a},{b}), ({c},{d}), ({e},{f}) is translated by ({tx},{ty}) and then reflected across the x-axis. Find the final coordinates.",
+          "problem": "A point at ({a},{b}) is translated by ({tx},{ty}) then reflected across the x-axis. What is its final y-coordinate?",
           "constraints": {
-            "a": [
-              0,
-              4
-            ],
-            "b": [
-              0,
-              4
-            ],
-            "c": [
-              2,
-              6
-            ],
-            "d": [
-              0,
-              4
-            ],
-            "e": [
-              1,
-              5
-            ],
-            "f": [
-              2,
-              6
-            ],
             "tx": [
               -3,
               3
@@ -957,12 +1033,13 @@
               3
             ]
           },
-          "answer_type": "three_coordinates"
+          "answer_type": "numeric",
+          "answer_formula": "-(b + ty)"
         },
         {
           "id": "tr_008",
           "type": "COMPUTE",
-          "problem": "A shape is dilated by scale factor {k} from the origin. Point ({a},{b}) maps to what coordinates?",
+          "problem": "A shape is dilated by scale factor {k} from the origin. Point ({a},{b}) maps to what x-coordinate?",
           "constraints": {
             "k": [
               2,
@@ -977,8 +1054,8 @@
               4
             ]
           },
-          "answer_formula": "(k*a, k*b)",
-          "answer_type": "coordinates"
+          "answer_formula": "k * a",
+          "answer_type": "numeric"
         }
       ]
     },
@@ -990,12 +1067,20 @@
       "templates": [
         {
           "id": "sn_001",
-          "type": "REPRESENT",
-          "problem": "Write the given number in scientific notation.",
+          "type": "COMPUTE",
+          "problem": "Write {a} × 10^{b} in standard form.",
           "constraints": {
-            "a_note": "large number like 45000, 3200000, 0.0056"
+            "a": [
+              1,
+              9
+            ],
+            "b": [
+              3,
+              8
+            ]
           },
-          "answer_type": "scientific_notation"
+          "answer_type": "numeric",
+          "answer_formula": "a * pow(10, b)"
         },
         {
           "id": "sn_002",
@@ -1017,7 +1102,7 @@
         {
           "id": "sn_003",
           "type": "COMPUTE",
-          "problem": "({a} × 10^{b}) × ({c} × 10^{d})",
+          "problem": "({a} × 10^{b}) × ({c} × 10^{d}). Write the result in standard form.",
           "constraints": {
             "a": [
               1,
@@ -1036,12 +1121,13 @@
               8
             ]
           },
-          "answer_type": "scientific_notation"
+          "answer_type": "numeric",
+          "answer_formula": "a * c * pow(10, b + d)"
         },
         {
           "id": "sn_004",
           "type": "COMPUTE",
-          "problem": "({a} × 10^{b}) ÷ ({c} × 10^{d})",
+          "problem": "({a} × 10^{b}) ÷ ({c} × 10^{d}). Write the result in standard form.",
           "constraints": {
             "a": [
               2,
@@ -1060,7 +1146,8 @@
               6
             ]
           },
-          "answer_type": "scientific_notation"
+          "answer_type": "numeric",
+          "answer_formula": "(a / c) * pow(10, b - d)"
         },
         {
           "id": "sn_005",
@@ -1145,6 +1232,40 @@
           },
           "answer_type": "fraction_simplified",
           "answer_formula": "1 / pow(a, b)"
+        },
+        {
+          "id": "sn_009",
+          "type": "COMPUTE",
+          "problem": "Evaluate: {a}^{b}",
+          "constraints": {
+            "a": [
+              2,
+              5
+            ],
+            "b": [
+              2,
+              4
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "pow(a, b)"
+        },
+        {
+          "id": "sn_010",
+          "type": "COMPUTE",
+          "problem": "Write {a} × 10^{b} as a standard number.",
+          "constraints": {
+            "a": [
+              1,
+              9
+            ],
+            "b": [
+              2,
+              5
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a * pow(10, b)"
         }
       ]
     },
@@ -1156,10 +1277,10 @@
       "templates": [
         {
           "id": "bv_001",
-          "type": "IDENTIFY",
-          "problem": "A scatter plot shows as x increases, y also increases. Is the association positive, negative, or none?",
+          "type": "COMPARE",
+          "problem": "As x increases, y increases. Is the association positive or negative?",
           "constraints": {},
-          "answer_type": "label"
+          "answer_type": "comparison"
         },
         {
           "id": "bv_002",
@@ -1185,24 +1306,21 @@
         },
         {
           "id": "bv_003",
-          "type": "INTERPRET",
-          "problem": "A line of best fit is y = {m}x + {b} where x = hours studied and y = test score. What does the slope {m} mean in context?",
+          "type": "COMPUTE",
+          "problem": "A line of best fit is y = {m}x + {b} for hours studied (x) and test score (y). What is the predicted score for {c} hours?",
           "constraints": {
-            "m": [
-              3,
-              8
-            ],
-            "b": [
-              40,
-              70
+            "c": [
+              2,
+              10
             ]
           },
-          "answer_type": "verbal"
+          "answer_type": "numeric",
+          "answer_formula": "m * c + b"
         },
         {
           "id": "bv_004",
-          "type": "INTERPRET",
-          "problem": "A line of best fit has slope {m} and y-intercept {b}. What does the y-intercept mean in context?",
+          "type": "COMPUTE",
+          "problem": "A line of best fit is y = {m}x + {b}. What is the predicted y-value when x = 0?",
           "constraints": {
             "m": [
               2,
@@ -1213,7 +1331,8 @@
               50
             ]
           },
-          "answer_type": "verbal"
+          "answer_type": "numeric",
+          "answer_formula": "b"
         },
         {
           "id": "bv_005",
@@ -1230,6 +1349,48 @@
           "constraints": {
             "m": [
               3,
+              8
+            ],
+            "b": [
+              10,
+              40
+            ],
+            "target": [
+              30,
+              100
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "(target - b) / m"
+        },
+        {
+          "id": "bv_007",
+          "type": "COMPUTE",
+          "problem": "Using y = {m}x + {b}, find y when x = {c}.",
+          "constraints": {
+            "m": [
+              2,
+              8
+            ],
+            "b": [
+              5,
+              30
+            ],
+            "c": [
+              3,
+              12
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "m * c + b"
+        },
+        {
+          "id": "bv_008",
+          "type": "COMPUTE",
+          "problem": "Using y = {m}x + {b}, find x when y = {target}.",
+          "constraints": {
+            "m": [
+              2,
               8
             ],
             "b": [

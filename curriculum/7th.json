@@ -38,8 +38,8 @@
         },
         {
           "id": "pr_002",
-          "type": "IDENTIFY",
-          "problem": "Is the relationship proportional? Hours: {a}, {b}, {c}. Miles are recorded for each hour.",
+          "type": "COMPUTE",
+          "problem": "Hours 1, 2, and 3 correspond to {a}, {b}, and {c} miles. What is the unit rate in miles per hour for hour 1?",
           "constraints": {
             "a": [
               1,
@@ -55,7 +55,8 @@
             ]
           },
           "generation_note": "half the time proportional, half not",
-          "answer_type": "boolean"
+          "answer_type": "numeric",
+          "answer_formula": "a"
         },
         {
           "id": "pr_003",
@@ -102,24 +103,22 @@
         },
         {
           "id": "pr_005",
-          "type": "REPRESENT",
-          "problem": "A table shows x-values {a}, {b}, {c} with corresponding y-values in a proportional relationship. Write the equation y = kx.",
+          "type": "COMPUTE",
+          "problem": "In a proportional relationship, when x = {a}, y = {d}. When x = 1, what is y?",
           "constraints": {
             "a": [
               1,
               4
             ],
-            "b": [
-              2,
-              8
-            ],
-            "c": [
-              3,
-              12
+            "d": [
+              4,
+              20
             ]
           },
           "generation_note": "d=k*a, e=k*b, f=k*c for integer k",
-          "answer_type": "equation"
+          "answer_type": "numeric",
+          "constraints_note": "d divisible by a",
+          "answer_formula": "d / a"
         },
         {
           "id": "pr_006",
@@ -236,15 +235,55 @@
         },
         {
           "id": "pr_012",
-          "type": "CONSTRUCT",
-          "problem": "Create a proportional table where the constant of proportionality is {k}. Include 4 pairs of values.",
+          "type": "COMPUTE",
+          "problem": "If y = {k}x, find y when x = {a}.",
           "constraints": {
             "k": [
               3,
               12
+            ],
+            "a": [
+              2,
+              8
             ]
           },
-          "answer_type": "open_ended"
+          "answer_type": "numeric",
+          "answer_formula": "k * a"
+        },
+        {
+          "id": "pr_013",
+          "type": "COMPUTE",
+          "problem": "What is {a}% of {b}?",
+          "constraints": {
+            "a": [
+              5,
+              75
+            ],
+            "b": [
+              20,
+              200
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "(a / 100) * b"
+        },
+        {
+          "id": "pr_014",
+          "type": "COMPUTE",
+          "problem": "y varies proportionally with x. When x = {a}, y = {b}. Find y when x = 1.",
+          "constraints": {
+            "a": [
+              2,
+              8
+            ],
+            "b": [
+              6,
+              48
+            ]
+          },
+          "constraints_note": "b divisible by a",
+          "answer_type": "numeric",
+          "answer_formula": "b / a"
         }
       ]
     },
@@ -404,8 +443,8 @@
         },
         {
           "id": "rn_007",
-          "type": "IDENTIFY",
-          "problem": "Will {a}/{b} + {c}/{d} be positive or negative? Explain without calculating.",
+          "type": "COMPUTE",
+          "problem": "Compute {a}/{b} + {c}/{d}.",
           "constraints": {
             "a": [
               -8,
@@ -424,7 +463,8 @@
               8
             ]
           },
-          "answer_type": "sign"
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a * d + c * b) / (b * d)"
         },
         {
           "id": "rn_008",
@@ -498,6 +538,56 @@
           "generation_note": "wrong = -(a+c) (student treated both as negative)",
           "answer_type": "fraction",
           "answer_formula": "(-a + c) / b"
+        },
+        {
+          "id": "rn_011",
+          "type": "COMPUTE",
+          "problem": "{a}/{b} + {c}/{d}",
+          "constraints": {
+            "a": [
+              -6,
+              6
+            ],
+            "b": [
+              2,
+              8
+            ],
+            "c": [
+              -6,
+              6
+            ],
+            "d": [
+              2,
+              8
+            ]
+          },
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a * d + c * b) / (b * d)"
+        },
+        {
+          "id": "rn_012",
+          "type": "COMPUTE",
+          "problem": "|{a}/{b}| + |{c}/{d}|",
+          "constraints": {
+            "a": [
+              -5,
+              5
+            ],
+            "b": [
+              2,
+              8
+            ],
+            "c": [
+              -5,
+              5
+            ],
+            "d": [
+              2,
+              8
+            ]
+          },
+          "answer_type": "fraction_simplified",
+          "answer_formula": "abs(a/b) + abs(c/d)"
         }
       ]
     },
@@ -510,7 +600,7 @@
         {
           "id": "ee_001",
           "type": "COMPUTE",
-          "problem": "Expand: {a}(x + {b})",
+          "problem": "Evaluate {a}(x + {b}) when x = {c}.",
           "constraints": {
             "a": [
               2,
@@ -519,14 +609,19 @@
             "b": [
               2,
               10
+            ],
+            "c": [
+              1,
+              8
             ]
           },
-          "answer_type": "expression"
+          "answer_type": "numeric",
+          "answer_formula": "a * (c + b)"
         },
         {
           "id": "ee_002",
           "type": "COMPUTE",
-          "problem": "Expand: {a}(x - {b})",
+          "problem": "Evaluate {a}(x - {b}) when x = {c}.",
           "constraints": {
             "a": [
               2,
@@ -535,14 +630,19 @@
             "b": [
               2,
               10
+            ],
+            "c": [
+              3,
+              12
             ]
           },
-          "answer_type": "expression"
+          "answer_type": "numeric",
+          "answer_formula": "a * (c - b)"
         },
         {
           "id": "ee_003",
           "type": "COMPUTE",
-          "problem": "Simplify: {a}x + {b}x - {c}",
+          "problem": "Evaluate {a}x + {b}x - {c} when x = {d}.",
           "constraints": {
             "a": [
               2,
@@ -555,9 +655,14 @@
             "c": [
               3,
               20
+            ],
+            "d": [
+              1,
+              6
             ]
           },
-          "answer_type": "expression"
+          "answer_type": "numeric",
+          "answer_formula": "(a + b) * d - c"
         },
         {
           "id": "ee_004",
@@ -624,9 +729,9 @@
         },
         {
           "id": "ee_007",
-          "type": "APPLY",
+          "type": "COMPUTE",
           "context": "money",
-          "problem": "You earn ${a} per hour plus a ${b} bonus. You want to earn at least ${c} total. Write and solve an equation for the hours needed.",
+          "problem": "You earn ${a} per hour plus a ${b} bonus. How many hours must you work to earn at least ${c}?",
           "constraints": {
             "a": [
               8,
@@ -641,14 +746,14 @@
               200
             ]
           },
-          "answer_type": "equation_plus_numeric",
-          "answer_formula": "b / a"
+          "answer_type": "numeric",
+          "answer_formula": "(c - b) / a"
         },
         {
           "id": "ee_008",
-          "type": "APPLY",
+          "type": "COMPUTE",
           "context": "geometry",
-          "problem": "A rectangle has perimeter {p}. Its length is {a} more than twice its width. Write and solve for the width.",
+          "problem": "A rectangle has perimeter {p} and length is {a} more than twice its width w. If w = {b}, what is the length?",
           "constraints": {
             "p": [
               40,
@@ -657,10 +762,14 @@
             "a": [
               2,
               10
+            ],
+            "b": [
+              3,
+              12
             ]
           },
-          "answer_type": "equation_plus_numeric",
-          "answer_formula": "a / 2 - b"
+          "answer_type": "numeric",
+          "answer_formula": "2 * b + a"
         },
         {
           "id": "ee_009",
@@ -686,20 +795,34 @@
         },
         {
           "id": "ee_010",
-          "type": "CONSTRUCT",
-          "problem": "Write a two-step equation whose solution is x = {s}.",
+          "type": "COMPUTE",
+          "problem": "Solve: {a}x + {b} = {c} given that the solution is x = {s}. Verify by computing {a}×{s} + {b}.",
           "constraints": {
+            "a": [
+              2,
+              5
+            ],
+            "b": [
+              5,
+              20
+            ],
+            "c": [
+              15,
+              50
+            ],
             "s": [
               -10,
               10
             ]
           },
-          "answer_type": "open_ended"
+          "answer_type": "numeric",
+          "generation_note": "c = a*s + b",
+          "answer_formula": "a * s + b"
         },
         {
           "id": "ee_011",
-          "type": "REPRESENT",
-          "problem": "Write an expression using distribution for the area of a rectangle with width {a} and length (x + {b}).",
+          "type": "COMPUTE",
+          "problem": "A rectangle has width {a} and length (x + {b}). Find the area when x = {c}.",
           "constraints": {
             "a": [
               2,
@@ -708,9 +831,14 @@
             "b": [
               3,
               10
+            ],
+            "c": [
+              1,
+              8
             ]
           },
-          "answer_type": "expression"
+          "answer_type": "numeric",
+          "answer_formula": "a * (c + b)"
         },
         {
           "id": "ee_012",
@@ -733,6 +861,49 @@
           "constraints_note": "c divisible by a",
           "answer_type": "numeric",
           "answer_formula": "c / a - b"
+        },
+        {
+          "id": "ee_013",
+          "type": "COMPUTE",
+          "problem": "Evaluate {a}x + {b} when x = {c}.",
+          "constraints": {
+            "a": [
+              2,
+              8
+            ],
+            "b": [
+              -20,
+              20
+            ],
+            "c": [
+              -8,
+              8
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a * c + b"
+        },
+        {
+          "id": "ee_014",
+          "type": "COMPUTE",
+          "problem": "Solve: {a}(x - {b}) = {c}",
+          "constraints": {
+            "a": [
+              2,
+              5
+            ],
+            "b": [
+              2,
+              8
+            ],
+            "c": [
+              12,
+              60
+            ]
+          },
+          "constraints_note": "c divisible by a",
+          "answer_type": "numeric",
+          "answer_formula": "c / a + b"
         }
       ]
     },
@@ -894,6 +1065,23 @@
           },
           "answer_formula": "0.5*(a+b)*c",
           "answer_type": "numeric"
+        },
+        {
+          "id": "geo_011",
+          "type": "COMPUTE",
+          "problem": "Find the area of a rectangle with length {a} and width {b}.",
+          "constraints": {
+            "a": [
+              4,
+              20
+            ],
+            "b": [
+              3,
+              16
+            ]
+          },
+          "answer_formula": "a * b",
+          "answer_type": "numeric"
         }
       ]
     },
@@ -1011,15 +1199,16 @@
         {
           "id": "prob_007",
           "type": "COMPUTE",
-          "problem": "You flip a coin and roll a die. List the sample space. How many outcomes are there?",
+          "problem": "You flip a coin and roll a die. How many possible outcomes are there?",
           "constraints": {},
-          "answer_type": "list_plus_numeric"
+          "answer_type": "numeric",
+          "answer_formula": "12"
         },
         {
           "id": "prob_008",
-          "type": "APPLY",
+          "type": "COMPUTE",
           "context": "experiment",
-          "problem": "In {a} trials, an event occurred {b} times. What is the experimental probability? How does it compare to the theoretical probability of {c}/{d}?",
+          "problem": "In {a} trials, an event occurred {b} times. What is the experimental probability as a decimal to the nearest hundredth?",
           "constraints": {
             "a": [
               20,
@@ -1038,7 +1227,8 @@
               8
             ]
           },
-          "answer_type": "fraction_plus_comparison"
+          "answer_type": "decimal",
+          "answer_formula": "b / a"
         },
         {
           "id": "prob_009",
@@ -1074,6 +1264,23 @@
           "generation_note": "wrong = 0 (student confused complement rule)",
           "answer_type": "numeric",
           "answer_formula": "1"
+        },
+        {
+          "id": "prob_011",
+          "type": "COMPUTE",
+          "problem": "A bag has {a} red and {b} blue marbles. What is P(not red)?",
+          "constraints": {
+            "a": [
+              2,
+              8
+            ],
+            "b": [
+              2,
+              8
+            ]
+          },
+          "answer_formula": "b/(a+b)",
+          "answer_type": "fraction_simplified"
         }
       ]
     },
@@ -1085,8 +1292,8 @@
       "templates": [
         {
           "id": "si_001",
-          "type": "IDENTIFY",
-          "problem": "A researcher surveys {a} students from a school of {b}. Is this sample likely representative? What could make it biased?",
+          "type": "COMPUTE",
+          "problem": "A researcher surveys {a} students from a school of {b}. What percent of the school is in the sample? (Round to the nearest whole percent.)",
           "constraints": {
             "a": [
               10,
@@ -1097,7 +1304,8 @@
               1000
             ]
           },
-          "answer_type": "boolean"
+          "answer_type": "numeric",
+          "answer_formula": "100 * a / b"
         },
         {
           "id": "si_002",
@@ -1197,6 +1405,35 @@
             ]
           },
           "answer_type": "comparison"
+        },
+        {
+          "id": "si_006",
+          "type": "COMPUTE",
+          "problem": "Find the mean of: {a}, {b}, {c}, {d}, {e}",
+          "constraints": {
+            "a": [
+              10,
+              40
+            ],
+            "b": [
+              10,
+              40
+            ],
+            "c": [
+              10,
+              40
+            ],
+            "d": [
+              10,
+              40
+            ],
+            "e": [
+              10,
+              40
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "(a + b + c + d + e) / 5"
         }
       ]
     }

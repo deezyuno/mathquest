@@ -96,7 +96,7 @@
         {
           "id": "mse_004",
           "type": "COMPUTE",
-          "problem": "Solve the inequality: {a}x + {b} > {c}. Graph the solution on a number line.",
+          "problem": "Solve: {a}x + {b} = {c}. What is x?",
           "constraints": {
             "a": [
               2,
@@ -111,12 +111,13 @@
               40
             ]
           },
-          "answer_type": "inequality_plus_graph"
+          "answer_type": "numeric",
+          "answer_formula": "(c - b) / a"
         },
         {
           "id": "mse_005",
           "type": "COMPUTE",
-          "problem": "Solve: {a}x - {b} ≤ {c}",
+          "problem": "Solve: {a}x - {b} = {c}. What is x?",
           "constraints": {
             "a": [
               2,
@@ -131,11 +132,12 @@
               50
             ]
           },
-          "answer_type": "inequality"
+          "answer_type": "numeric",
+          "answer_formula": "(c + b) / a"
         },
         {
           "id": "mse_006",
-          "type": "APPLY",
+          "type": "COMPUTE",
           "context": "money",
           "problem": "Company A charges ${a} plus ${b} per hour. Company B charges ${c} per hour. After how many hours is the cost equal?",
           "constraints": {
@@ -153,12 +155,12 @@
             ]
           },
           "constraints_note": "c > b",
-          "answer_type": "equation_plus_numeric",
-          "answer_formula": "b + m * t"
+          "answer_type": "numeric",
+          "answer_formula": "a / (c - b)"
         },
         {
           "id": "mse_007",
-          "type": "APPLY",
+          "type": "COMPUTE",
           "context": "age",
           "problem": "In {a} years, a person will be {b} times as old as they are now. How old are they now?",
           "constraints": {
@@ -171,7 +173,7 @@
               4
             ]
           },
-          "answer_type": "equation_plus_numeric",
+          "answer_type": "numeric",
           "answer_formula": "a / (b - 1)"
         },
         {
@@ -202,20 +204,22 @@
         },
         {
           "id": "mse_009",
-          "type": "CONSTRUCT",
-          "problem": "Write an equation with variables on both sides whose solution is x = {s}.",
+          "type": "COMPUTE",
+          "problem": "Solve: {a}x + {b} = {c}x + {d} given the solution is x = {s}. Compute {a}×{s} + {b}.",
           "constraints": {
             "s": [
               -5,
               10
             ]
           },
-          "answer_type": "open_ended"
+          "answer_type": "numeric",
+          "generation_note": "choose coefficients so solution is s",
+          "answer_formula": "a * s + b"
         },
         {
           "id": "mse_010",
-          "type": "REPRESENT",
-          "problem": "Write and solve an inequality for: a number times {a} minus {b} is at most {c}.",
+          "type": "COMPUTE",
+          "problem": "A number times {a} minus {b} equals {c}. What is the number?",
           "constraints": {
             "a": [
               3,
@@ -230,7 +234,50 @@
               60
             ]
           },
-          "answer_type": "inequality"
+          "answer_type": "numeric",
+          "answer_formula": "(c + b) / a"
+        },
+        {
+          "id": "mse_011",
+          "type": "COMPUTE",
+          "problem": "Solve: {a}x + {b} = {c}",
+          "constraints": {
+            "a": [
+              2,
+              8
+            ],
+            "b": [
+              -20,
+              20
+            ],
+            "c": [
+              -40,
+              60
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "(c - b) / a"
+        },
+        {
+          "id": "mse_012",
+          "type": "COMPUTE",
+          "problem": "Solve: {a}x - {b} = {c}",
+          "constraints": {
+            "a": [
+              2,
+              8
+            ],
+            "b": [
+              3,
+              25
+            ],
+            "c": [
+              -30,
+              50
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "(c + b) / a"
         }
       ]
     },
@@ -411,8 +458,8 @@
         },
         {
           "id": "pct_010",
-          "type": "CONSTRUCT",
-          "problem": "Create a shopping scenario where the final price is ${a} after a {b}% discount. What was the original price?",
+          "type": "REVERSE",
+          "problem": "After a {b}% discount, the final price is ${a}. What was the original price?",
           "constraints": {
             "a": [
               30,
@@ -423,7 +470,43 @@
               50
             ]
           },
-          "answer_type": "open_ended"
+          "answer_type": "numeric",
+          "answer_formula": "a / (1 - b/100)"
+        },
+        {
+          "id": "pct_011",
+          "type": "COMPUTE",
+          "problem": "What is {a}% of {b}?",
+          "constraints": {
+            "a": [
+              5,
+              75
+            ],
+            "b": [
+              40,
+              200
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "(a / 100) * b"
+        },
+        {
+          "id": "pct_012",
+          "type": "COMPUTE",
+          "problem": "{a} is what percent of {b}?",
+          "constraints": {
+            "a": [
+              5,
+              80
+            ],
+            "b": [
+              50,
+              200
+            ]
+          },
+          "constraints_note": "100 * a / b is a whole number",
+          "answer_type": "numeric",
+          "answer_formula": "100 * a / b"
         }
       ]
     },
@@ -556,15 +639,54 @@
         },
         {
           "id": "gc_008",
-          "type": "CONSTRUCT",
-          "problem": "Design a composite shape with total area exactly {target} square units using at least two shapes.",
+          "type": "COMPUTE",
+          "problem": "Find the area of a composite shape: rectangle {a} × {b} plus triangle base {a} height {c}.",
           "constraints": {
-            "target": [
-              50,
-              200
+            "a": [
+              4,
+              14
+            ],
+            "b": [
+              3,
+              12
+            ],
+            "c": [
+              2,
+              8
             ]
           },
-          "answer_type": "open_ended"
+          "answer_type": "numeric",
+          "answer_formula": "a * b + 0.5 * a * c"
+        },
+        {
+          "id": "gc_009",
+          "type": "COMPUTE",
+          "problem": "Find the area of a rectangle with length {a} and width {b}.",
+          "constraints": {
+            "a": [
+              4,
+              20
+            ],
+            "b": [
+              3,
+              16
+            ]
+          },
+          "answer_formula": "a * b",
+          "answer_type": "numeric"
+        },
+        {
+          "id": "gc_010",
+          "type": "COMPUTE",
+          "problem": "Two angles are supplementary. One measures {a}°. Find the other.",
+          "constraints": {
+            "a": [
+              30,
+              150
+            ]
+          },
+          "answer_formula": "180 - a",
+          "answer_type": "numeric"
         }
       ]
     },
@@ -610,10 +732,11 @@
         },
         {
           "id": "pc_003",
-          "type": "REPRESENT",
-          "problem": "Draw a tree diagram for flipping a coin twice. List all outcomes and find P(at least one heads).",
+          "type": "COMPUTE",
+          "problem": "You flip a coin twice. What is the probability of at least one heads?",
           "constraints": {},
-          "answer_type": "diagram_plus_fraction"
+          "answer_type": "fraction_simplified",
+          "answer_formula": "3/4"
         },
         {
           "id": "pc_004",
@@ -633,6 +756,31 @@
           "id": "pc_005",
           "type": "COMPARE",
           "problem": "Event A: P = {a}/{b}. Event B: P = {c}/{d}. What is the probability of both A and B occurring if independent?",
+          "constraints": {
+            "a": [
+              1,
+              3
+            ],
+            "b": [
+              4,
+              8
+            ],
+            "c": [
+              1,
+              3
+            ],
+            "d": [
+              4,
+              8
+            ]
+          },
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a * c) / (b * d)"
+        },
+        {
+          "id": "pc_006",
+          "type": "COMPUTE",
+          "problem": "P(event A) = {a}/{b} and P(event B) = {c}/{d}. If independent, find P(A and B).",
           "constraints": {
             "a": [
               1,
@@ -687,16 +835,17 @@
         },
         {
           "id": "pl_002",
-          "type": "APPLY",
+          "type": "COMPUTE",
           "context": "walking",
-          "problem": "A hiker walks {a} miles per hour. Complete a table showing distance for hours 1 through 4. What is the rate of change?",
+          "problem": "A hiker walks {a} miles per hour. How far does the hiker walk in 3 hours?",
           "constraints": {
             "a": [
               2,
               6
             ]
           },
-          "answer_type": "table_plus_numeric"
+          "answer_type": "numeric",
+          "answer_formula": "3 * a"
         },
         {
           "id": "pl_003",
@@ -749,8 +898,8 @@
         },
         {
           "id": "pl_005",
-          "type": "REPRESENT",
-          "problem": "A phone plan charges ${a} per month plus ${b} per GB. Complete a table for 1, 2, 3, 4 GB and describe the pattern.",
+          "type": "COMPUTE",
+          "problem": "A phone plan charges ${a} per month plus ${b} per GB. What is the cost for 3 GB?",
           "constraints": {
             "a": [
               20,
@@ -761,7 +910,33 @@
               15
             ]
           },
-          "answer_type": "table_plus_verbal"
+          "answer_type": "numeric",
+          "answer_formula": "a + 3 * b"
+        },
+        {
+          "id": "pl_006",
+          "type": "COMPUTE",
+          "problem": "Between ({a}, {b}) and ({c}, {d}), find the rate of change (rise over run).",
+          "constraints": {
+            "a": [
+              0,
+              4
+            ],
+            "b": [
+              0,
+              8
+            ],
+            "c": [
+              2,
+              8
+            ],
+            "d": [
+              4,
+              20
+            ]
+          },
+          "answer_formula": "(d - b) / (c - a)",
+          "answer_type": "numeric"
         }
       ]
     },
@@ -774,38 +949,12 @@
       "templates": [
         {
           "id": "pp_001",
-          "type": "IDENTIFY",
-          "problem": "A right triangle formed from a Pythagorean triple is shown. Does the stated hypotenuse match a² + b² = c²?",
+          "type": "COMPUTE",
+          "problem": "A right triangle has legs {a} and {b}. Does a² + b² equal {c}²?",
           "constraints": {
-            "triples": [
-              [
-                3,
-                4,
-                5
-              ],
-              [
-                5,
-                12,
-                13
-              ],
-              [
-                8,
-                15,
-                17
-              ],
-              [
-                6,
-                8,
-                10
-              ],
-              [
-                9,
-                12,
-                15
-              ]
-            ]
+            "triples_note": "use Pythagorean triples from constraints"
           },
-          "answer_type": "boolean"
+          "answer_type": "comparison"
         },
         {
           "id": "pp_002",
@@ -921,7 +1070,7 @@
         {
           "id": "pt_001",
           "type": "COMPUTE",
-          "problem": "Translate point ({a}, {b}) right {c} units and up {d} units. What are the new coordinates?",
+          "problem": "Translate point ({a}, {b}) right {c} units and up {d} units. What is the new x-coordinate?",
           "constraints": {
             "a": [
               -6,
@@ -940,12 +1089,13 @@
               6
             ]
           },
-          "answer_type": "coordinates"
+          "answer_type": "numeric",
+          "answer_formula": "a + c"
         },
         {
           "id": "pt_002",
           "type": "COMPUTE",
-          "problem": "Reflect point ({a}, {b}) across the x-axis. What are the new coordinates?",
+          "problem": "Reflect point ({a}, {b}) across the x-axis. What is the new y-coordinate?",
           "constraints": {
             "a": [
               -8,
@@ -957,12 +1107,13 @@
             ]
           },
           "constraints_note": "b != 0",
-          "answer_type": "coordinates"
+          "answer_type": "numeric",
+          "answer_formula": "-b"
         },
         {
           "id": "pt_003",
           "type": "COMPUTE",
-          "problem": "Reflect point ({a}, {b}) across the y-axis. What are the new coordinates?",
+          "problem": "Reflect point ({a}, {b}) across the y-axis. What is the new x-coordinate?",
           "constraints": {
             "a": [
               -8,
@@ -974,12 +1125,13 @@
             ]
           },
           "constraints_note": "a != 0",
-          "answer_type": "coordinates"
+          "answer_type": "numeric",
+          "answer_formula": "-a"
         },
         {
           "id": "pt_004",
-          "type": "IDENTIFY",
-          "problem": "Point A is at ({a}, {b}). After a translation, it is at ({c}, {d}). Describe the translation.",
+          "type": "COMPUTE",
+          "problem": "Point A is at ({a}, {b}). After a translation it is at ({c}, {d}). How many units did it move horizontally?",
           "constraints": {
             "a": [
               -5,
@@ -998,13 +1150,14 @@
               8
             ]
           },
-          "answer_type": "verbal"
+          "answer_type": "numeric",
+          "answer_formula": "c - a"
         },
         {
           "id": "pt_005",
-          "type": "APPLY",
+          "type": "COMPUTE",
           "context": "game",
-          "problem": "A game piece at ({a}, {b}) is reflected across the y-axis then moved up {c} units. What are its final coordinates?",
+          "problem": "A game piece at ({a}, {b}) is reflected across the y-axis then moved up {c} units. What is its final y-coordinate?",
           "constraints": {
             "a": [
               -6,
@@ -1019,7 +1172,8 @@
               6
             ]
           },
-          "answer_type": "coordinates"
+          "answer_type": "numeric",
+          "answer_formula": "b + c"
         }
       ]
     }
