@@ -14,9 +14,9 @@
   ],
   "skills": [
     {
-      "id": "whole_number_operations",
-      "name": "Whole Number Operations",
-      "ccss": "5.NBT.B.5, 5.NBT.B.6",
+      "id": "whole_number_multiplication",
+      "name": "Whole Number Multiplication",
+      "ccss": "5.NBT.B.5",
       "level": "solidify",
       "templates": [
         {
@@ -37,24 +37,6 @@
           "answer_formula": "a * b"
         },
         {
-          "id": "wn_002",
-          "type": "COMPUTE",
-          "problem": "{a} ÷ {b}",
-          "constraints": {
-            "a": [
-              100,
-              9999
-            ],
-            "b": [
-              11,
-              99
-            ]
-          },
-          "constraints_note": "a divisible by b",
-          "answer_type": "numeric",
-          "answer_formula": "a / b"
-        },
-        {
           "id": "wn_003",
           "type": "APPLY",
           "context": "shopping",
@@ -71,25 +53,6 @@
           },
           "answer_type": "numeric",
           "answer_formula": "a * b"
-        },
-        {
-          "id": "wn_004",
-          "type": "APPLY",
-          "context": "school",
-          "problem": "{a} students are divided equally into {b} classrooms. How many students are in each classroom?",
-          "constraints": {
-            "a": [
-              100,
-              500
-            ],
-            "b": [
-              10,
-              25
-            ]
-          },
-          "constraints_note": "a divisible by b",
-          "answer_type": "numeric",
-          "answer_formula": "a / b"
         },
         {
           "type": "APPLY",
@@ -171,25 +134,6 @@
           "id": "wn_008"
         },
         {
-          "type": "APPLY",
-          "problem": "There are {a} apples packed {b} per bag. How many full bags can be filled?",
-          "answer_type": "numeric",
-          "answer_formula": "a / b",
-          "constraints": {
-            "a": [
-              50,
-              200
-            ],
-            "b": [
-              6,
-              12
-            ]
-          },
-          "constraints_note": "a divisible by b",
-          "context": "food",
-          "id": "wn_009"
-        },
-        {
           "id": "wn_010",
           "type": "REVERSE",
           "problem": "Find the missing factor: __ × {b} = {p}.",
@@ -207,7 +151,79 @@
           "answer_formula": "p / b",
           "generation_note": "p divisible by b; answer is p/b",
           "constraints_note": "p divisible by b"
+        }
+      ]
+    },
+    {
+      "id": "whole_number_division",
+      "name": "Whole Number Division",
+      "ccss": "5.NBT.B.6",
+      "level": "solidify",
+      "templates": [
+        {
+          "id": "wn_002",
+          "type": "COMPUTE",
+          "problem": "{a} ÷ {b}",
+          "constraints": {
+            "a": [
+              100,
+              9999
+            ],
+            "b": [
+              11,
+              99
+            ]
+          },
+          "constraints_note": "a divisible by b",
+          "answer_type": "numeric",
+          "answer_formula": "a / b"
         },
+        {
+          "id": "wn_004",
+          "type": "APPLY",
+          "context": "school",
+          "problem": "{a} students are divided equally into {b} classrooms. How many students are in each classroom?",
+          "constraints": {
+            "a": [
+              100,
+              500
+            ],
+            "b": [
+              10,
+              25
+            ]
+          },
+          "constraints_note": "a divisible by b",
+          "answer_type": "numeric",
+          "answer_formula": "a / b"
+        },
+        {
+          "type": "APPLY",
+          "problem": "There are {a} apples packed {b} per bag. How many full bags can be filled?",
+          "answer_type": "numeric",
+          "answer_formula": "a / b",
+          "constraints": {
+            "a": [
+              50,
+              200
+            ],
+            "b": [
+              6,
+              12
+            ]
+          },
+          "constraints_note": "a divisible by b",
+          "context": "food",
+          "id": "wn_009"
+        }
+      ]
+    },
+    {
+      "id": "order_of_operations",
+      "name": "Order of Operations",
+      "ccss": "5.OA.A.1, 5.OA.A.2",
+      "level": "solidify",
+      "templates": [
         {
           "id": "wn_011",
           "type": "COMPUTE",
