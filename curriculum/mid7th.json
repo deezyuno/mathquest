@@ -50,7 +50,7 @@
         {
           "id": "mse_002",
           "type": "COMPUTE",
-          "problem": "Solve: {a}(x + {b}) = {c}",
+          "problem": "Solve: {a}(x + {b}) - {c} = {d}",
           "constraints": {
             "a": [
               2,
@@ -61,12 +61,16 @@
               10
             ],
             "c": [
-              12,
-              60
+              3,
+              15
+            ],
+            "d": [
+              10,
+              50
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "c / a - b"
+          "answer_formula": "(d + c) / a - b"
         },
         {
           "id": "mse_003",
@@ -96,28 +100,33 @@
         {
           "id": "mse_004",
           "type": "COMPUTE",
-          "problem": "Solve: {a}x + {b} = {c}. What is x?",
+          "problem": "Solve: {a}(x + {b}) = {c}x + {d}",
           "constraints": {
             "a": [
               2,
               6
             ],
             "b": [
-              -15,
-              15
+              2,
+              10
             ],
             "c": [
+              1,
+              5
+            ],
+            "d": [
               5,
               40
             ]
           },
+          "constraints_note": "a != c",
           "answer_type": "numeric",
-          "answer_formula": "(c - b) / a"
+          "answer_formula": "(d - a*b) / (a - c)"
         },
         {
           "id": "mse_005",
           "type": "COMPUTE",
-          "problem": "Solve: {a}x - {b} = {c}. What is x?",
+          "problem": "Solve: ({a}x - {b}) / {c} = {d}",
           "constraints": {
             "a": [
               2,
@@ -128,12 +137,16 @@
               20
             ],
             "c": [
-              10,
-              50
+              2,
+              6
+            ],
+            "d": [
+              2,
+              12
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "(c + b) / a"
+          "answer_formula": "(d * c + b) / a"
         },
         {
           "id": "mse_006",
@@ -207,20 +220,6 @@
           "type": "COMPUTE",
           "problem": "Solve: {a}x + {b} = {c}x + {d} given the solution is x = {s}. Compute {a}×{s} + {b}.",
           "constraints": {
-            "s": [
-              -5,
-              10
-            ]
-          },
-          "answer_type": "numeric",
-          "generation_note": "choose coefficients so solution is s",
-          "answer_formula": "a * s + b"
-        },
-        {
-          "id": "mse_010",
-          "type": "COMPUTE",
-          "problem": "A number times {a} minus {b} equals {c}. What is the number?",
-          "constraints": {
             "a": [
               3,
               8
@@ -230,54 +229,94 @@
               20
             ],
             "c": [
-              20,
-              60
+              1,
+              5
+            ],
+            "d": [
+              2,
+              15
+            ],
+            "s": [
+              -5,
+              10
             ]
           },
+          "generation_note": "choose a,b,c,d so solution is s (a*s+b = c*s+d)",
           "answer_type": "numeric",
-          "answer_formula": "(c + b) / a"
+          "answer_formula": "a * s + b"
+        },
+        {
+          "id": "mse_010",
+          "type": "COMPUTE",
+          "problem": "Three times a number plus {a} equals {b} times the number minus {c}. What is the number?",
+          "constraints": {
+            "a": [
+              5,
+              20
+            ],
+            "b": [
+              4,
+              9
+            ],
+            "c": [
+              2,
+              15
+            ]
+          },
+          "constraints_note": "b != 3",
+          "answer_type": "numeric",
+          "answer_formula": "(a + c) / (b - 3)"
         },
         {
           "id": "mse_011",
           "type": "COMPUTE",
-          "problem": "Solve: {a}x + {b} = {c}",
+          "problem": "Solve: {a}(x - {b}) + {c}x = {d}",
           "constraints": {
             "a": [
               2,
-              8
+              6
             ],
             "b": [
-              -20,
-              20
+              2,
+              10
             ],
             "c": [
-              -40,
-              60
+              1,
+              5
+            ],
+            "d": [
+              10,
+              80
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "(c - b) / a"
+          "answer_formula": "(d + a*b) / (a + c)"
         },
         {
           "id": "mse_012",
           "type": "COMPUTE",
-          "problem": "Solve: {a}x - {b} = {c}",
+          "problem": "Solve: {a}x + {b} = {c}(x - {d})",
           "constraints": {
             "a": [
-              2,
-              8
+              1,
+              5
             ],
             "b": [
-              3,
+              4,
               25
             ],
             "c": [
-              -30,
-              50
+              2,
+              8
+            ],
+            "d": [
+              2,
+              12
             ]
           },
+          "constraints_note": "c != a",
           "answer_type": "numeric",
-          "answer_formula": "(c + b) / a"
+          "answer_formula": "(b + c*d) / (c - a)"
         }
       ]
     },
@@ -289,20 +328,25 @@
       "templates": [
         {
           "id": "pct_001",
-          "type": "COMPUTE",
-          "problem": "What is {a}% of {b}?",
+          "type": "APPLY",
+          "context": "shopping",
+          "problem": "A ${a} item is marked up {b}%, then {c}% sales tax is added. What is the final price?",
           "constraints": {
             "a": [
-              5,
-              75
-            ],
-            "b": [
               40,
               200
+            ],
+            "b": [
+              10,
+              40
+            ],
+            "c": [
+              5,
+              10
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "(a / 100) * b"
+          "answer_formula": "a*(1+b/100)*(1+c/100)"
         },
         {
           "id": "pct_002",
@@ -395,7 +439,7 @@
         {
           "id": "pct_007",
           "type": "COMPARE",
-          "problem": "Item A: original price ${a}, discount {b}%. Item B: original price ${c}, discount {d}%. Which saves more money?",
+          "problem": "Item A: original price ${a}, discount {b}%. Item B: original price ${c}, discount {d}%. How much more is the larger savings than the smaller savings?",
           "constraints": {
             "a": [
               40,
@@ -414,7 +458,8 @@
               40
             ]
           },
-          "answer_type": "comparison"
+          "answer_type": "numeric",
+          "answer_formula": "abs(a*(b/100) - c*(d/100))"
         },
         {
           "id": "pct_008",
@@ -475,38 +520,47 @@
         },
         {
           "id": "pct_011",
-          "type": "COMPUTE",
-          "problem": "What is {a}% of {b}?",
+          "type": "APPLY",
+          "context": "games",
+          "problem": "After a {a}% increase and then a {b}% decrease, a ${c} game price becomes what?",
           "constraints": {
             "a": [
-              5,
-              75
+              10,
+              40
             ],
             "b": [
-              40,
-              200
+              5,
+              30
+            ],
+            "c": [
+              20,
+              80
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "(a / 100) * b"
+          "answer_formula": "c*(1+a/100)*(1-b/100)"
         },
         {
           "id": "pct_012",
-          "type": "COMPUTE",
-          "problem": "{a} is what percent of {b}?",
+          "type": "APPLY",
+          "context": "shopping",
+          "problem": "A ${a} coat is {b}% off, then an extra {c}% off the sale price. What is the final price?",
           "constraints": {
             "a": [
-              5,
-              80
-            ],
-            "b": [
               50,
               200
+            ],
+            "b": [
+              10,
+              40
+            ],
+            "c": [
+              5,
+              25
             ]
           },
-          "constraints_note": "100 * a / b is a whole number",
           "answer_type": "numeric",
-          "answer_formula": "100 * a / b"
+          "answer_formula": "a*(1-b/100)*(1-c/100)"
         }
       ]
     },
@@ -540,20 +594,26 @@
         {
           "id": "gc_002",
           "type": "COMPUTE",
-          "problem": "Find the area of a circle with radius {a}. Use π ≈ 3.14.",
+          "context": "weather",
+          "problem": "A weather radar covers a circle of radius {a} km with a square blind zone of side {b} km in the center. What area can the radar still scan? Use π ≈ 3.14.",
           "constraints": {
             "a": [
-              3,
-              12
+              5,
+              15
+            ],
+            "b": [
+              2,
+              6
             ]
           },
-          "answer_formula": "3.14*a*a",
+          "constraints_note": "3.14*a*a > b*b",
+          "answer_formula": "3.14*a*a - b*b",
           "answer_type": "numeric"
         },
         {
           "id": "gc_003",
           "type": "COMPUTE",
-          "problem": "Find the surface area of a triangular prism with rectangular face {a} × {b}, triangular base {a} × {c} (height {d}).",
+          "problem": "Find the surface area of a rectangular prism with dimensions {a} × {b} × {c}.",
           "constraints": {
             "a": [
               4,
@@ -564,16 +624,12 @@
               15
             ],
             "c": [
-              4,
-              10
-            ],
-            "d": [
               3,
-              8
+              10
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "2 * (a*b + b*c + a*c)"
+          "answer_formula": "2*(a*b + b*c + a*c)"
         },
         {
           "id": "gc_004",
@@ -596,17 +652,21 @@
         {
           "id": "gc_005",
           "type": "REVERSE",
-          "problem": "A circle has a known area in square units (using π ≈ 3.14). Find its radius.",
+          "problem": "A circle has area {a}. Using π ≈ 3.14, find its radius.",
           "constraints": {
-            "area_note": "3.14 * r * r for integer r 2-10"
+            "a": [
+              12,
+              314
+            ]
           },
+          "generation_note": "choose a = 3.14 * r * r for integer r in 2-10",
           "answer_type": "numeric",
-          "answer_formula": "sqrt(area / 3.14)"
+          "answer_formula": "sqrt(a / 3.14)"
         },
         {
           "id": "gc_006",
           "type": "COMPARE",
-          "problem": "Shape A: circle radius {a}. Shape B: square side {b}. Which has greater area?",
+          "problem": "Shape A: circle radius {a}. Shape B: square side {b}. By how much does the larger area exceed the smaller? Use π ≈ 3.14.",
           "constraints": {
             "a": [
               3,
@@ -617,13 +677,14 @@
               14
             ]
           },
-          "answer_type": "comparison"
+          "answer_type": "numeric",
+          "answer_formula": "abs(3.14*a*a - b*b)"
         },
         {
           "id": "gc_007",
           "type": "APPLY",
           "context": "construction",
-          "problem": "A field is a rectangle {a} m by {b} m with a semicircle of diameter {b} on each short end. Find the total area.",
+          "problem": "A field is a rectangle {a} m by {b} m with a semicircle of diameter {b} on each short end. Find the total area. Use π ≈ 3.14.",
           "constraints": {
             "a": [
               20,
@@ -635,12 +696,13 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a * b + 0.5 * 3.14 * (b/2) * (b/2)"
+          "answer_formula": "a * b + 3.14 * (b/2) * (b/2)"
         },
         {
           "id": "gc_008",
           "type": "COMPUTE",
-          "problem": "Find the area of a composite shape: rectangle {a} × {b} plus triangle base {a} height {c}.",
+          "context": "music",
+          "problem": "A music stage is a rectangle {a} m by {b} m with a semicircle of diameter {a} attached along one side. Find the total area. Use π ≈ 3.14.",
           "constraints": {
             "a": [
               4,
@@ -649,43 +711,51 @@
             "b": [
               3,
               12
-            ],
-            "c": [
-              2,
-              8
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a * b + 0.5 * a * c"
+          "answer_formula": "a * b + 0.5 * 3.14 * (a/2) * (a/2)"
         },
         {
           "id": "gc_009",
           "type": "COMPUTE",
-          "problem": "Find the area of a rectangle with length {a} and width {b}.",
+          "problem": "Find the surface area of a square prism with base side {a} and height {b}.",
           "constraints": {
             "a": [
-              4,
-              20
+              3,
+              12
             ],
             "b": [
-              3,
-              16
+              4,
+              20
             ]
           },
-          "answer_formula": "a * b",
+          "answer_formula": "2*a*a + 4*a*b",
           "answer_type": "numeric"
         },
         {
           "id": "gc_010",
           "type": "COMPUTE",
-          "problem": "Two angles are supplementary. One measures {a}°. Find the other.",
+          "problem": "A composite figure is a trapezoid with bases {a} and {b} and height {c}, attached to a rectangle {b} by {d}. Find the total area.",
           "constraints": {
             "a": [
-              30,
-              150
+              4,
+              16
+            ],
+            "b": [
+              6,
+              20
+            ],
+            "c": [
+              3,
+              12
+            ],
+            "d": [
+              2,
+              10
             ]
           },
-          "answer_formula": "180 - a",
+          "answer_formula": "0.5*(a+b)*c + b*d",
           "answer_type": "numeric"
         }
       ]
@@ -754,8 +824,8 @@
         },
         {
           "id": "pc_005",
-          "type": "COMPARE",
-          "problem": "Event A: P = {a}/{b}. Event B: P = {c}/{d}. What is the probability of both A and B occurring if independent?",
+          "type": "COMPUTE",
+          "problem": "Independent events: P(A) = {a}/{b} and P(B) = {c}/{d}. Enter P(A and B) as a decimal rounded to the nearest hundredth.",
           "constraints": {
             "a": [
               1,
@@ -774,33 +844,25 @@
               8
             ]
           },
-          "answer_type": "fraction_simplified",
+          "answer_type": "decimal",
           "answer_formula": "(a * c) / (b * d)"
         },
         {
           "id": "pc_006",
           "type": "COMPUTE",
-          "problem": "P(event A) = {a}/{b} and P(event B) = {c}/{d}. If independent, find P(A and B).",
+          "problem": "P(A) = {a}/100 and P(B) = {b}/100. If independent, enter P(A and B) as a decimal.",
           "constraints": {
             "a": [
-              1,
-              3
+              20,
+              80
             ],
             "b": [
-              4,
-              8
-            ],
-            "c": [
-              1,
-              3
-            ],
-            "d": [
-              4,
-              8
+              20,
+              80
             ]
           },
-          "answer_type": "fraction_simplified",
-          "answer_formula": "(a * c) / (b * d)"
+          "answer_type": "decimal",
+          "answer_formula": "(a/100)*(b/100)"
         }
       ]
     },
@@ -813,39 +875,53 @@
       "templates": [
         {
           "id": "pl_001",
-          "type": "IDENTIFY",
-          "problem": "A table shows x: {a}, {b}, {c} with corresponding y-values. Is the rate of change constant? What is the rate?",
+          "type": "COMPUTE",
+          "problem": "A car travels {b} miles in {a} hours, then {c} miles in the next equal time interval of {a} hours. What is the constant rate of change in miles per hour?",
           "constraints": {
             "a": [
-              0,
+              1,
               3
             ],
             "b": [
-              2,
-              6
+              20,
+              60
             ],
             "c": [
-              4,
-              9
+              40,
+              120
             ]
           },
           "generation_note": "d, e, f = k*a,k*b,k*c for integer k or add noise",
-          "answer_type": "boolean_plus_numeric",
-          "answer_formula": "d / a"
+          "answer_type": "numeric",
+          "answer_formula": "(c - b) / a",
+          "context": "travel",
+          "constraints_note": "(c-b) divisible by a; a > 0"
         },
         {
           "id": "pl_002",
           "type": "COMPUTE",
           "context": "walking",
-          "problem": "A hiker walks {a} miles per hour. How far does the hiker walk in 3 hours?",
+          "problem": "A hiker walks at {a} mph for {b} hours, then at {c} mph for {d} hours. How many miles did the hiker walk in total?",
           "constraints": {
             "a": [
               2,
-              6
+              5
+            ],
+            "b": [
+              1,
+              4
+            ],
+            "c": [
+              1,
+              4
+            ],
+            "d": [
+              1,
+              4
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "3 * a"
+          "answer_formula": "a*b + c*d"
         },
         {
           "id": "pl_003",
@@ -875,7 +951,7 @@
         {
           "id": "pl_004",
           "type": "COMPARE",
-          "problem": "Line A passes through (0,0) and ({a},{b}). Line B passes through (0,0) and ({c},{d}). Which has a steeper rate of change?",
+          "problem": "Line A passes through (0,0) and ({a},{b}). Line B passes through (0,0) and ({c},{d}). By how much does the steeper rate of change exceed the other?",
           "constraints": {
             "a": [
               2,
@@ -894,7 +970,8 @@
               18
             ]
           },
-          "answer_type": "comparison"
+          "answer_type": "numeric",
+          "answer_formula": "abs(b/a - d/c)"
         },
         {
           "id": "pl_005",
@@ -916,26 +993,24 @@
         {
           "id": "pl_006",
           "type": "COMPUTE",
-          "problem": "Between ({a}, {b}) and ({c}, {d}), find the rate of change (rise over run).",
+          "context": "growth",
+          "problem": "A plant grows from height {a} cm to height {b} cm over {c} weeks. What is the average growth rate in cm per week?",
           "constraints": {
             "a": [
-              0,
-              4
+              5,
+              20
             ],
             "b": [
-              0,
-              8
+              25,
+              60
             ],
             "c": [
               2,
               8
-            ],
-            "d": [
-              4,
-              20
             ]
           },
-          "answer_formula": "(d - b) / (c - a)",
+          "constraints_note": "b > a",
+          "answer_formula": "(b - a) / c",
           "answer_type": "numeric"
         }
       ]
@@ -950,35 +1025,40 @@
         {
           "id": "pp_001",
           "type": "COMPUTE",
-          "problem": "A right triangle has legs {a} and {b}. Does a² + b² equal {c}²?",
+          "problem": "A right triangle has legs {a} and {b} and hypotenuse {c}. Compute a² + b² - c².",
           "constraints": {
-            "triples_note": "use Pythagorean triples from constraints"
+            "a": [
+              3,
+              15
+            ],
+            "b": [
+              4,
+              15
+            ],
+            "c": [
+              5,
+              25
+            ]
           },
-          "answer_type": "comparison"
+          "constraints_note": "use Pythagorean triples so a²+b²=c² (answer 0)",
+          "answer_type": "numeric",
+          "answer_formula": "a*a + b*b - c*c"
         },
         {
           "id": "pp_002",
           "type": "COMPUTE",
-          "problem": "A right triangle formed from a Pythagorean triple is shown. Use a² + b² = c² to find the hypotenuse.",
+          "problem": "A right triangle has legs {a} and {b}. Find the hypotenuse using a² + b² = c².",
           "constraints": {
-            "triples": [
-              [
-                3,
-                4,
-                5
-              ],
-              [
-                5,
-                12,
-                13
-              ],
-              [
-                6,
-                8,
-                10
-              ]
+            "a": [
+              3,
+              12
+            ],
+            "b": [
+              4,
+              15
             ]
           },
+          "constraints_note": "use Pythagorean triples for whole-number answers",
           "answer_type": "numeric",
           "answer_formula": "sqrt(a*a + b*b)"
         },
@@ -986,26 +1066,18 @@
           "id": "pp_003",
           "type": "APPLY",
           "context": "construction",
-          "problem": "A ladder of known length leans against a wall. Its base is a known distance from the wall. How high up the wall does it reach?",
+          "problem": "A {c}-foot ladder leans against a wall. Its base is {a} feet from the wall. How high up the wall does it reach?",
           "constraints": {
-            "triples": [
-              [
-                3,
-                4,
-                5
-              ],
-              [
-                5,
-                12,
-                13
-              ],
-              [
-                8,
-                15,
-                17
-              ]
+            "a": [
+              3,
+              12
+            ],
+            "c": [
+              5,
+              17
             ]
           },
+          "constraints_note": "use Pythagorean triples; c is hypotenuse, a is one leg",
           "answer_type": "numeric",
           "answer_formula": "sqrt(c*c - a*a)"
         },
@@ -1013,47 +1085,36 @@
           "id": "pp_004",
           "type": "APPLY",
           "context": "navigation",
-          "problem": "A park has paths going a known distance east and a known distance north. How long is the diagonal shortcut?",
+          "problem": "A park path goes {a} miles east and then {b} miles north. How long is the diagonal shortcut?",
           "constraints": {
-            "triples": [
-              [
-                3,
-                4,
-                5
-              ],
-              [
-                6,
-                8,
-                10
-              ],
-              [
-                5,
-                12,
-                13
-              ]
+            "a": [
+              3,
+              15
+            ],
+            "b": [
+              4,
+              15
             ]
           },
+          "constraints_note": "use Pythagorean triples for whole-number answers",
           "answer_type": "numeric",
           "answer_formula": "sqrt(a*a + b*b)"
         },
         {
           "id": "pp_005",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student finds the hypotenuse of a right triangle incorrectly by adding the leg lengths. What is the correct answer using a² + b² = c²?",
+          "problem": "A student finds the hypotenuse of a right triangle with legs {a} and {b} by adding the legs. Using a² + b² = c², what is the correct hypotenuse?",
           "constraints": {
-            "triples": [
-              [
-                3,
-                4,
-                5
-              ],
-              [
-                6,
-                8,
-                10
-              ]
+            "a": [
+              3,
+              12
+            ],
+            "b": [
+              4,
+              15
             ]
           },
+          "constraints_note": "use Pythagorean triples for whole-number answers",
           "generation_note": "wrong = a + b",
           "answer_type": "numeric",
           "answer_formula": "sqrt(a*a + b*b)"

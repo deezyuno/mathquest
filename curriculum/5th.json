@@ -92,23 +92,28 @@
           "answer_formula": "a / b"
         },
         {
-          "id": "wn_005",
-          "type": "REVERSE",
-          "problem": "Find the missing factor in __ × {b} = ? (the product is a whole-number multiple of {b}).",
-          "constraints": {
-            "b": [
-              12,
-              25
-            ],
-            "product_note": "b × random(10,50)"
-          },
+          "type": "APPLY",
+          "problem": "A tablet downloads {a} megabytes each second for {b} seconds. How many megabytes were downloaded?",
           "answer_type": "numeric",
-          "answer_formula": "product / b"
+          "answer_formula": "a * b",
+          "constraints": {
+            "a": [
+              12,
+              48
+            ],
+            "b": [
+              10,
+              30
+            ]
+          },
+          "context": "technology",
+          "id": "wn_005"
         },
         {
-          "id": "wn_006",
           "type": "COMPARE",
-          "problem": "Which is greater: {a} × {b} or {c} × {d}?",
+          "problem": "How much greater is {a} × {b} than {c} × {d}?",
+          "answer_type": "numeric",
+          "answer_formula": "abs(a*b - c*d)",
           "constraints": {
             "a": [
               10,
@@ -127,7 +132,7 @@
               50
             ]
           },
-          "answer_type": "comparison"
+          "id": "wn_006"
         },
         {
           "id": "wn_007",
@@ -148,28 +153,28 @@
           "answer_formula": "a * b"
         },
         {
-          "id": "wn_008",
           "type": "APPLY",
-          "context": "nature",
-          "problem": "A bird flies {a} miles each day. How far does it fly in {b} days?",
+          "problem": "A band practices {a} minutes each rehearsal. They have {b} rehearsals this month. How many total practice minutes is that?",
+          "answer_type": "numeric",
+          "answer_formula": "a * b",
           "constraints": {
             "a": [
               15,
-              80
+              45
             ],
             "b": [
-              10,
-              30
+              4,
+              12
             ]
           },
-          "answer_type": "numeric",
-          "answer_formula": "a * b"
+          "context": "music",
+          "id": "wn_008"
         },
         {
-          "id": "wn_009",
           "type": "APPLY",
-          "context": "food",
-          "problem": "{a} apples are packed into bags of {b}. How many full bags can be made? How many apples are left over?",
+          "problem": "There are {a} apples packed {b} per bag. How many full bags can be filled?",
+          "answer_type": "numeric",
+          "answer_formula": "a / b",
           "constraints": {
             "a": [
               50,
@@ -180,7 +185,9 @@
               12
             ]
           },
-          "answer_type": "two_numeric"
+          "constraints_note": "a divisible by b",
+          "context": "food",
+          "id": "wn_009"
         },
         {
           "id": "wn_010",
@@ -191,11 +198,15 @@
               12,
               25
             ],
-            "p_note": "b * random(10, 50)"
+            "p": [
+              100,
+              500
+            ]
           },
           "answer_type": "numeric",
           "answer_formula": "p / b",
-          "generation_note": "p = b * random(10,50)"
+          "generation_note": "p divisible by b; answer is p/b",
+          "constraints_note": "p divisible by b"
         },
         {
           "id": "wn_011",
@@ -366,7 +377,7 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a + b + c"
+          "answer_formula": "(a + b/100) + (c + d/100)"
         },
         {
           "id": "dec_006",
@@ -392,12 +403,13 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a - b"
+          "answer_formula": "(a + b/100) - (c + d/100)"
         },
         {
-          "id": "dec_007",
           "type": "COMPARE",
-          "problem": "Which is greater: {a}.{b} or {c}.{d}?",
+          "problem": "How much greater is {a}.{b} than {c}.{d}?",
+          "answer_type": "numeric",
+          "answer_formula": "abs((a+b/100)-(c+d/100))",
           "constraints": {
             "a": [
               1,
@@ -416,12 +428,13 @@
               99
             ]
           },
-          "answer_type": "comparison"
+          "id": "dec_007"
         },
         {
-          "id": "dec_008",
-          "type": "COMPARE",
-          "problem": "Which is greatest: {a}.{b}, {c}.{d}, or {e}.{f}?",
+          "type": "APPLY",
+          "problem": "Item A costs ${a}.{b} and item B costs ${c}.{d}. How much more does the more expensive item cost?",
+          "answer_type": "numeric",
+          "answer_formula": "abs((a+b/100)-(c+d/100))",
           "constraints": {
             "a": [
               1,
@@ -438,17 +451,10 @@
             "d": [
               1,
               99
-            ],
-            "e": [
-              1,
-              9
-            ],
-            "f": [
-              1,
-              99
             ]
           },
-          "answer_type": "comparison"
+          "context": "shopping",
+          "id": "dec_008"
         },
         {
           "id": "dec_009",
@@ -482,7 +488,7 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a + b + c"
+          "answer_formula": "(a + b/100) + (c + d/100) + (e + f/100)"
         },
         {
           "id": "dec_010",
@@ -511,20 +517,22 @@
           "answer_formula": "a + b/100 + c + d/100"
         },
         {
-          "id": "dec_011",
           "type": "COMPUTE",
-          "problem": "Round {a}.{b} to the nearest tenth.",
+          "problem": "Round {a}.{b} to the nearest whole number.",
+          "answer_type": "numeric",
+          "answer_formula": "a",
           "constraints": {
             "a": [
               1,
               99
             ],
             "b": [
-              10,
-              99
+              0,
+              4
             ]
           },
-          "answer_type": "numeric"
+          "constraints_note": "b < 5 so rounds down to a",
+          "id": "dec_011"
         },
         {
           "id": "dec_012",
@@ -596,8 +604,8 @@
         },
         {
           "id": "fas_003",
-          "type": "COMPUTE",
-          "problem": "{a}/{b} + {c}/{d}",
+          "type": "APPLY",
+          "problem": "A recipe uses {a}/{b} cup of milk and {c}/{d} cup of cream. Enter the numerator of the total when written over denominator {b}×{d}.",
           "constraints": {
             "a": [
               1,
@@ -617,34 +625,36 @@
             ]
           },
           "constraints_note": "b != d, use unlike denominators with LCD ≤ 24",
-          "answer_type": "fraction_simplified",
-          "answer_formula": "(a * d + c * b) / (b * d)"
+          "answer_type": "numeric",
+          "answer_formula": "a * d + c * b",
+          "context": "cooking"
         },
         {
           "id": "fas_004",
-          "type": "COMPUTE",
-          "problem": "{a}/{b} - {c}/{d}",
+          "type": "APPLY",
+          "problem": "A board is {a}/{b} meter long. You cut off {c}/{d} meter. Enter the numerator of the remaining length over denominator {b}×{d}.",
           "constraints": {
             "a": [
-              2,
-              7
+              3,
+              8
             ],
             "b": [
-              3,
+              4,
               10
             ],
             "c": [
               1,
-              5
+              4
             ],
             "d": [
-              3,
+              4,
               10
             ]
           },
-          "constraints_note": "result positive",
-          "answer_type": "fraction_simplified",
-          "answer_formula": "(a * d - c * b) / (b * d)"
+          "constraints_note": "a/b > c/d",
+          "answer_type": "numeric",
+          "answer_formula": "a * d - c * b",
+          "context": "measurement"
         },
         {
           "id": "fas_005",
@@ -669,30 +679,22 @@
           "answer_formula": "(a + c) / b"
         },
         {
-          "id": "fas_006",
           "type": "APPLY",
-          "context": "measurement",
-          "problem": "A board is {a}/{b} of a meter long. You cut off {c}/{d} of a meter. How much is left?",
+          "problem": "A rain gauge collected {a} millimeters on Monday and {b} millimeters on Tuesday. How many millimeters were collected in all?",
+          "answer_type": "numeric",
+          "answer_formula": "a + b",
           "constraints": {
             "a": [
-              3,
-              7
+              12,
+              48
             ],
             "b": [
-              8,
-              12
-            ],
-            "c": [
-              1,
-              4
-            ],
-            "d": [
-              8,
-              12
+              10,
+              40
             ]
           },
-          "answer_type": "fraction_simplified",
-          "answer_formula": "a - b"
+          "context": "weather",
+          "id": "fas_006"
         },
         {
           "id": "fas_007",
@@ -717,13 +719,14 @@
           "answer_formula": "(c - a) / b"
         },
         {
-          "id": "fas_008",
-          "type": "COMPARE",
-          "problem": "Which is greater: {a}/{b} + {c}/{b} or {d}/{b}?",
+          "type": "COMPUTE",
+          "problem": "Find {a}/{b} - {c}/{b} as a single fraction with denominator {b}. Enter the numerator.",
+          "answer_type": "numeric",
+          "answer_formula": "a - c",
           "constraints": {
             "a": [
-              1,
-              4
+              3,
+              8
             ],
             "b": [
               6,
@@ -732,13 +735,10 @@
             "c": [
               1,
               4
-            ],
-            "d": [
-              3,
-              9
             ]
           },
-          "answer_type": "comparison"
+          "constraints_note": "a > c",
+          "id": "fas_008"
         },
         {
           "id": "fas_009",
@@ -767,35 +767,36 @@
           "answer_formula": "(a * d + c * b) / (b * d)"
         },
         {
-          "id": "fas_010",
           "type": "APPLY",
-          "context": "pizza",
-          "problem": "Maria ate {a}/{b} of a pizza and her brother ate {c}/{b} of the same pizza. What fraction of the pizza did they eat together?",
+          "problem": "A shelter has {a} dogs. {b}/{c} of them got walks today. How many dogs got walks?",
+          "answer_type": "numeric",
+          "answer_formula": "a * b / c",
           "constraints": {
             "a": [
-              1,
-              3
+              12,
+              36
             ],
             "b": [
-              6,
-              8
-            ],
-            "c": [
               1,
               3
+            ],
+            "c": [
+              4,
+              6
             ]
           },
-          "constraints_note": "a + c < b",
-          "answer_type": "fraction_simplified",
-          "answer_formula": "(a + c) / b"
+          "constraints_note": "a divisible by c",
+          "context": "animals",
+          "id": "fas_010"
         },
         {
-          "id": "fas_011",
           "type": "COMPARE",
-          "problem": "Use <, >, or = to compare: {a}/{b} ___ {c}/{d}",
+          "problem": "How much greater is {a}/{b} than {c}/{b}? Enter the numerator of the difference with denominator {b}.",
+          "answer_type": "numeric",
+          "answer_formula": "a - c",
           "constraints": {
             "a": [
-              1,
+              3,
               8
             ],
             "b": [
@@ -804,14 +805,11 @@
             ],
             "c": [
               1,
-              8
-            ],
-            "d": [
-              2,
-              12
+              4
             ]
           },
-          "answer_type": "symbol"
+          "constraints_note": "a > c; same denominator b",
+          "id": "fas_011"
         }
       ]
     },
@@ -979,9 +977,10 @@
           "answer_formula": "(c * b) / (a * d)"
         },
         {
-          "id": "fmd_008",
           "type": "IDENTIFY",
-          "problem": "Which is greater: {a}/{b} × {c} or {a}/{b} × {d}?",
+          "problem": "How much greater is {a}/{b} × {c} than {a}/{b} × {d}? Enter the numerator of the difference with denominator {b}.",
+          "answer_type": "numeric",
+          "answer_formula": "abs(a*c - a*d)",
           "constraints": {
             "a": [
               1,
@@ -1001,7 +1000,7 @@
             ]
           },
           "constraints_note": "c != d",
-          "answer_type": "comparison"
+          "id": "fmd_008"
         },
         {
           "id": "fmd_009",
@@ -1053,7 +1052,7 @@
           },
           "generation_note": "wrong = added numerators and multiplied denominators",
           "answer_type": "fraction",
-          "answer_formula": "(a * d) / (b * c)"
+          "answer_formula": "(a * c) / (b * d)"
         }
       ]
     },
@@ -1123,22 +1122,32 @@
           "answer_formula": "a * 1000 + b * 100 + c * 10 + d"
         },
         {
-          "id": "pv_004",
           "type": "IDENTIFY",
-          "problem": "In the number {a}, pick one digit and state its place value.",
+          "problem": "In the number {a}, what is the place value of the digit {d}?",
+          "answer_type": "numeric",
+          "answer_formula": "d * 10**p",
           "constraints": {
             "a": [
               10000,
               99999
             ],
-            "d_note": "pick one digit from a"
+            "d": [
+              1,
+              9
+            ],
+            "p": [
+              0,
+              4
+            ]
           },
-          "answer_type": "numeric"
+          "constraints_note": "d appears in a at place 10^p; answer is d * 10^p",
+          "id": "pv_004"
         },
         {
-          "id": "pv_005",
           "type": "COMPARE",
-          "problem": "Which is greater: {a} × 10^{b} or {c} × 10^{d}?",
+          "problem": "How much greater is {a} × 10^{b} than {c} × 10^{d}?",
+          "answer_type": "numeric",
+          "answer_formula": "abs(a * 10**b - c * 10**d)",
           "constraints": {
             "a": [
               2,
@@ -1157,29 +1166,26 @@
               4
             ]
           },
-          "answer_type": "comparison"
+          "id": "pv_005"
         },
         {
-          "id": "pv_006",
           "type": "COMPUTE",
-          "problem": "Round {a} to the nearest hundred, thousand, or ten thousand.",
+          "problem": "Round {a} to the nearest hundred.",
+          "answer_type": "numeric",
+          "answer_formula": "round(a / 100) * 100",
           "constraints": {
             "a": [
               1000,
               99999
-            ],
-            "unit_options": [
-              "hundred",
-              "thousand",
-              "ten thousand"
             ]
           },
-          "answer_type": "numeric"
+          "id": "pv_006"
         },
         {
-          "id": "pv_007",
           "type": "REPRESENT",
           "problem": "Write the number with a {a} in the ten-thousands place, {b} in the thousands place, {c} in the hundreds place, {d} in the tens place, and {e} in the ones place.",
+          "answer_type": "numeric",
+          "answer_formula": "a*10000 + b*1000 + c*100 + d*10 + e",
           "constraints": {
             "a": [
               1,
@@ -1202,7 +1208,7 @@
               9
             ]
           },
-          "answer_type": "numeric"
+          "id": "pv_007"
         },
         {
           "id": "pv_008",
@@ -1252,71 +1258,72 @@
           "answer_type": "numeric"
         },
         {
-          "id": "gv_002",
           "type": "APPLY",
-          "context": "packaging",
-          "problem": "A box is {a} inches long, {b} inches wide, and {c} inches tall. What is its volume?",
-          "constraints": {
-            "a": [
-              3,
-              15
-            ],
-            "b": [
-              3,
-              15
-            ],
-            "c": [
-              2,
-              10
-            ]
-          },
-          "answer_formula": "a*b*c",
-          "answer_type": "numeric"
-        },
-        {
-          "id": "gv_003",
-          "type": "REVERSE",
-          "problem": "A rectangular prism has a whole-number volume that is a multiple of {a} × {b}. Its length is {a} and width is {b}. What is its height?",
-          "constraints": {
-            "a": [
-              2,
-              8
-            ],
-            "b": [
-              2,
-              8
-            ],
-            "v_note": "a*b*random(2,10)"
-          },
+          "problem": "A concrete slab is {a} feet long, {b} feet wide, and {c} feet thick. What is its volume in cubic feet?",
           "answer_type": "numeric",
-          "answer_formula": "v / (a * b)"
-        },
-        {
-          "id": "gv_004",
-          "type": "APPLY",
-          "context": "aquarium",
-          "problem": "An aquarium is {a} ft long, {b} ft wide, and {c} ft tall. How many cubic feet of water does it hold?",
+          "answer_formula": "a * b * c",
           "constraints": {
             "a": [
-              2,
-              6
+              8,
+              20
             ],
             "b": [
-              1,
-              4
+              6,
+              12
             ],
             "c": [
               1,
               3
             ]
           },
-          "answer_formula": "a*b*c",
-          "answer_type": "numeric"
+          "context": "construction",
+          "id": "gv_002"
         },
         {
-          "id": "gv_005",
+          "type": "APPLY",
+          "problem": "On a map, 1 inch represents {a} miles. Two towns are {b} inches apart on the map. How many miles apart are the towns?",
+          "answer_type": "numeric",
+          "answer_formula": "a * b",
+          "constraints": {
+            "a": [
+              5,
+              25
+            ],
+            "b": [
+              2,
+              12
+            ]
+          },
+          "context": "maps",
+          "id": "gv_003"
+        },
+        {
+          "type": "APPLY",
+          "problem": "Cans are stacked in {a} layers. Each layer has {b} rows with {c} cans in each row. How many cans are there in all?",
+          "answer_type": "numeric",
+          "answer_formula": "a * b * c",
+          "constraints": {
+            "a": [
+              2,
+              6
+            ],
+            "b": [
+              4,
+              10
+            ],
+            "c": [
+              3,
+              8
+            ]
+          },
+          "context": "shopping",
+          "id": "gv_004"
+        },
+        {
           "type": "COMPARE",
-          "problem": "Box A has dimensions {a} × {b} × {c}. Box B has dimensions {d} × {e} × {f}. Which holds more?",
+          "problem": "How much greater is the volume of prism A ({a}×{b}×{c}) than prism B ({d}×{e}×{f})?",
+          "answer_type": "numeric",
+          "answer_formula": "abs(a*b*c - d*e*f)",
           "constraints": {
             "a": [
               2,
@@ -1343,7 +1350,7 @@
               8
             ]
           },
-          "answer_type": "comparison"
+          "id": "gv_005"
         },
         {
           "id": "gv_006",
@@ -1441,9 +1448,10 @@
           "answer_formula": "a"
         },
         {
-          "id": "cp_002",
           "type": "IDENTIFY",
-          "problem": "A point is at ({a}, {b}). How far is it from the y-axis? How far from the x-axis?",
+          "problem": "A point is at ({a}, {b}). How far is it from the y-axis?",
+          "answer_type": "numeric",
+          "answer_formula": "a",
           "constraints": {
             "a": [
               1,
@@ -1454,7 +1462,7 @@
               10
             ]
           },
-          "answer_type": "two_numeric"
+          "id": "cp_002"
         },
         {
           "id": "cp_003",
@@ -1526,9 +1534,10 @@
           "answer_formula": "b + d"
         },
         {
-          "id": "cp_006",
-          "type": "COMPARE",
-          "problem": "Point A is at ({a}, {b}) and Point B is at ({c}, {d}). Which point is farther from the origin along the x-axis?",
+          "type": "COMPUTE",
+          "problem": "Point A is at ({a}, {b}) and Point B is at ({c}, {d}). What is the absolute difference of their x-coordinates?",
+          "answer_type": "numeric",
+          "answer_formula": "abs(a - c)",
           "constraints": {
             "a": [
               1,
@@ -1547,7 +1556,7 @@
               10
             ]
           },
-          "answer_type": "comparison"
+          "id": "cp_006"
         },
         {
           "id": "cp_007",
@@ -1571,9 +1580,10 @@
           "answer_formula": "a - c"
         },
         {
-          "id": "cp_008",
-          "type": "COMPUTE",
-          "problem": "Find the horizontal distance between ({a}, {b}) and ({c}, {b}).",
+          "type": "APPLY",
+          "problem": "A game token is at ({a}, {b}) and moves straight up to ({a}, {c}). How many units did it move?",
+          "answer_type": "numeric",
+          "answer_formula": "c - b",
           "constraints": {
             "a": [
               1,
@@ -1581,15 +1591,16 @@
             ],
             "b": [
               1,
-              10
+              8
             ],
             "c": [
               9,
               15
             ]
           },
-          "answer_formula": "c - a",
-          "answer_type": "numeric"
+          "constraints_note": "c > b",
+          "context": "games",
+          "id": "cp_008"
         }
       ]
     },
@@ -1652,23 +1663,28 @@
           "answer_type": "numeric"
         },
         {
-          "id": "mc_005",
           "type": "APPLY",
-          "context": "construction",
-          "problem": "A fence needs to be {a} yards long. How many feet of fencing is that?",
+          "problem": "A train travels {a} miles each hour for {b} hours. How far does it go?",
+          "answer_type": "numeric",
+          "answer_formula": "a * b",
           "constraints": {
             "a": [
-              5,
-              30
+              40,
+              80
+            ],
+            "b": [
+              2,
+              8
             ]
           },
-          "answer_formula": "a * 3",
-          "answer_type": "numeric"
+          "context": "travel",
+          "id": "mc_005"
         },
         {
-          "id": "mc_006",
           "type": "COMPARE",
-          "problem": "Is {a} feet greater than, less than, or equal to {b} yards?",
+          "problem": "How many more inches is {a} feet than {b} yards? (Enter the difference in inches.)",
+          "answer_type": "numeric",
+          "answer_formula": "abs(a*12 - b*36)",
           "constraints": {
             "a": [
               6,
@@ -1679,19 +1695,20 @@
               10
             ]
           },
-          "answer_type": "comparison"
+          "id": "mc_006"
         },
         {
-          "id": "mc_007",
           "type": "REVERSE",
-          "problem": "{a} inches equals how many feet? Are there any inches left over?",
+          "problem": "Convert {a} inches to feet. How many whole feet is that? (Ignore leftover inches.)",
+          "answer_type": "numeric",
+          "answer_formula": "(a - (a % 12)) / 12",
           "constraints": {
             "a": [
               13,
               60
             ]
           },
-          "answer_type": "two_numeric"
+          "id": "mc_007"
         },
         {
           "id": "mc_008",

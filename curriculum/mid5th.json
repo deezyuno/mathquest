@@ -133,32 +133,20 @@
         {
           "id": "fm_005",
           "type": "APPLY",
-          "context": "construction",
-          "problem": "A board is {a} {b}/{c} feet long. You cut off {d} {e}/{c} feet. How long is the remaining piece?",
+          "context": "technology",
+          "problem": "A battery starts at {a}% charge. After using a device it drops by {b} percentage points. What percent charge remains?",
           "constraints": {
             "a": [
-              4,
-              8
+              50,
+              100
             ],
             "b": [
-              3,
-              7
-            ],
-            "c": [
-              4,
-              8
-            ],
-            "d": [
-              1,
-              3
-            ],
-            "e": [
-              1,
-              5
+              5,
+              40
             ]
           },
-          "answer_type": "mixed_number",
-          "answer_formula": "(a - c) / b"
+          "answer_type": "numeric",
+          "answer_formula": "a - b"
         },
         {
           "id": "fm_006",
@@ -192,144 +180,117 @@
         {
           "id": "fm_007",
           "type": "COMPARE",
-          "problem": "Which is greater: {a} {b}/{c} or {d} {e}/{c}?",
+          "problem": "How much greater is {a} {b}/{c} than {d} {e}/{c}? Enter the difference as a number of {c}ths (numerator with denominator {c}).",
           "constraints": {
             "a": [
-              2,
-              5
+              3,
+              6
             ],
             "b": [
-              1,
-              5
+              3,
+              7
             ],
             "c": [
               6,
               8
             ],
             "d": [
-              2,
-              5
+              1,
+              3
             ],
             "e": [
               1,
-              5
+              4
             ]
           },
-          "answer_type": "comparison"
+          "answer_type": "numeric",
+          "answer_formula": "(a - d) * c + (b - e)",
+          "constraints_note": "first mixed number greater than second"
         },
         {
           "id": "fm_008",
-          "type": "ERROR_ANALYSIS",
-          "problem": "A student adds {a} {b}/{c} + {d} {e}/{c} incorrectly and does not simplify the result. What is the correct sum?",
+          "type": "APPLY",
+          "context": "school",
+          "problem": "A classroom has {a} rows of desks with {b} desks in each row. If {c} desks are removed, how many desks remain?",
           "constraints": {
             "a": [
-              1,
-              4
-            ],
-            "b": [
-              2,
-              5
-            ],
-            "c": [
-              6,
+              3,
               8
             ],
-            "d": [
-              1,
-              4
-            ],
-            "e": [
-              2,
-              5
-            ]
-          },
-          "generation_note": "wrong adds wholes and fractions separately but forgets to simplify the fraction",
-          "answer_type": "mixed_number",
-          "answer_formula": "(a + d) + (b + e) / c"
-        },
-        {
-          "id": "fm_009",
-          "type": "COMPUTE",
-          "problem": "What is {a} {b}/{c} + {d} {e}/{c}?",
-          "constraints": {
-            "a": [
-              1,
-              3
-            ],
             "b": [
-              1,
-              4
-            ],
-            "c": [
               4,
               8
             ],
-            "d": [
+            "c": [
               1,
-              3
-            ],
-            "e": [
-              1,
-              4
+              10
             ]
           },
-          "answer_type": "mixed_number",
-          "answer_formula": "(a + d) + (b + e) / c"
+          "answer_type": "numeric",
+          "answer_formula": "a * b - c",
+          "constraints_note": "a * b > c"
+        },
+        {
+          "id": "fm_009",
+          "type": "APPLY",
+          "context": "shopping",
+          "problem": "A store sells batteries in packs of {b}. You buy {a} packs and {c} loose batteries. How many batteries do you have in all?",
+          "constraints": {
+            "a": [
+              2,
+              8
+            ],
+            "b": [
+              4,
+              12
+            ],
+            "c": [
+              1,
+              10
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a * b + c"
         },
         {
           "id": "fm_010",
           "type": "APPLY",
-          "context": "sports",
-          "problem": "A runner completed {a} {b}/{c} laps in the morning and {d} {e}/{c} laps in the afternoon. How many total laps did they run?",
+          "context": "music",
+          "problem": "A song has {a} sections with {b} measures each, plus {c} extra measures at the end. How many measures are in the song?",
           "constraints": {
             "a": [
               2,
-              5
-            ],
-            "b": [
-              1,
-              3
-            ],
-            "c": [
-              4,
               8
             ],
-            "d": [
-              1,
-              4
+            "b": [
+              4,
+              16
             ],
-            "e": [
+            "c": [
               1,
-              3
+              12
             ]
           },
-          "answer_type": "mixed_number",
-          "answer_formula": "(a + d) + (b + e) / c"
+          "answer_type": "numeric",
+          "answer_formula": "a * b + c"
         },
         {
           "id": "fm_011",
-          "type": "COMPUTE",
-          "problem": "{a}/{b} + {c}/{d}",
+          "type": "APPLY",
+          "context": "travel",
+          "problem": "A trip takes {a} hours on a train and then {b} more hours on a bus. How many hours did the trip take?",
           "constraints": {
             "a": [
               1,
-              5
+              8
             ],
             "b": [
-              4,
-              8
-            ],
-            "c": [
               1,
-              5
-            ],
-            "d": [
-              4,
-              8
+              6
             ]
           },
-          "answer_type": "fraction_simplified",
-          "answer_formula": "(a * d + c * b) / (b * d)"
+          "answer_type": "numeric",
+          "answer_formula": "a + b"
         }
       ]
     },
@@ -368,18 +329,20 @@
         {
           "id": "dpv_002",
           "type": "COMPUTE",
-          "problem": "Round {a}.{b} to the nearest tenth.",
+          "context": "science",
+          "problem": "Write {a} and {b} hundredths as a decimal, then multiply by 100. What whole number do you get?",
           "constraints": {
             "a": [
               1,
               99
             ],
             "b": [
-              100,
-              999
+              0,
+              99
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a * 100 + b"
         },
         {
           "id": "dpv_003",
@@ -395,12 +358,14 @@
               9999
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "round((a + b/10000)*100)/100",
+          "constraints_note": "b is four decimal digits (ten-thousandths)"
         },
         {
           "id": "dpv_004",
           "type": "COMPARE",
-          "problem": "Which is least: {a}.{b}, {c}.{d}, {e}.{f}, or {g}.{h}?",
+          "problem": "How much greater is {a}.{b} than {c}.{d}? Enter the positive difference.",
           "constraints": {
             "a": [
               1,
@@ -417,25 +382,10 @@
             "d": [
               100,
               999
-            ],
-            "e": [
-              1,
-              9
-            ],
-            "f": [
-              100,
-              999
-            ],
-            "g": [
-              1,
-              9
-            ],
-            "h": [
-              100,
-              999
             ]
           },
-          "answer_type": "comparison"
+          "answer_type": "numeric",
+          "answer_formula": "abs((a + b/1000) - (c + d/1000))"
         },
         {
           "id": "dpv_005",
@@ -457,7 +407,7 @@
         {
           "id": "dpv_006",
           "type": "COMPARE",
-          "problem": "Is {a}.{b} closer to {c} or {d}?",
+          "problem": "What is the absolute difference between {a}.{b} and {c}?",
           "constraints": {
             "a": [
               1,
@@ -469,20 +419,17 @@
             ],
             "c": [
               1,
-              9
-            ],
-            "d": [
-              2,
               10
             ]
           },
-          "answer_type": "comparison"
+          "answer_type": "numeric",
+          "answer_formula": "abs((a + b/100) - c)"
         },
         {
           "id": "dpv_007",
           "type": "APPLY",
           "context": "science",
-          "problem": "Three students measured the length of a worm: {a}.{b} cm, {c}.{d} cm, and {e}.{f} cm. Which measurement is the greatest?",
+          "problem": "Student A measured a worm at {a}.{b} cm and student B measured {c}.{d} cm. How much greater is the longer measurement? Enter the positive difference.",
           "constraints": {
             "a": [
               4,
@@ -499,42 +446,36 @@
             "d": [
               10,
               99
-            ],
-            "e": [
-              4,
-              8
-            ],
-            "f": [
-              10,
-              99
-            ]
-          },
-          "answer_type": "numeric"
-        },
-        {
-          "id": "dpv_008",
-          "type": "COMPUTE",
-          "problem": "{a}.{b} + {c}.{d}",
-          "constraints": {
-            "a": [
-              1,
-              50
-            ],
-            "b": [
-              100,
-              999
-            ],
-            "c": [
-              1,
-              50
-            ],
-            "d": [
-              100,
-              999
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "(a + b/1000) + (c + d/1000)"
+          "answer_formula": "abs((a + b/100) - (c + d/100))"
+        },
+        {
+          "id": "dpv_008",
+          "type": "APPLY",
+          "context": "shopping",
+          "problem": "A phone case costs ${a}.{b} and a charger costs ${c}.{d}. What is the combined cost?",
+          "constraints": {
+            "a": [
+              5,
+              30
+            ],
+            "b": [
+              10,
+              99
+            ],
+            "c": [
+              5,
+              40
+            ],
+            "d": [
+              10,
+              99
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "(a + b/100) + (c + d/100)"
         },
         {
           "id": "dpv_009",
@@ -623,7 +564,8 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a + b"
+          "answer_formula": "c - (a + b)",
+          "constraints_note": "c >= a + b"
         },
         {
           "id": "ms_003",
@@ -644,12 +586,13 @@
               5
             ],
             "d": [
-              20,
-              60
+              10,
+              40
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a * b"
+          "answer_formula": "a * (b + c) - d",
+          "constraints_note": "a*(b+c) > d"
         },
         {
           "id": "ms_004",
@@ -762,8 +705,9 @@
         },
         {
           "id": "ms_009",
-          "type": "COMPUTE",
-          "problem": "Find the perimeter of a rectangle with length {a} and width {b}.",
+          "type": "APPLY",
+          "context": "construction",
+          "problem": "A rectangular patio is {a} meters long and {b} meters wide. What is the area of the patio in square meters?",
           "constraints": {
             "a": [
               4,
@@ -774,8 +718,8 @@
               16
             ]
           },
-          "answer_formula": "2 * (a + b)",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a * b"
         }
       ]
     },
@@ -801,21 +745,28 @@
         },
         {
           "id": "pn_002",
-          "type": "REPRESENT",
-          "problem": "The temperature is {a} degrees below zero. Write this as a signed number.",
+          "type": "APPLY",
+          "context": "weather",
+          "problem": "The temperature starts at {a} degrees and drops by {b} degrees. What is the temperature now?",
           "constraints": {
             "a": [
-              1,
-              40
+              20,
+              90
+            ],
+            "b": [
+              5,
+              20
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "-a"
+          "answer_formula": "a - b",
+          "constraints_note": "non-negative result"
         },
         {
           "id": "pn_003",
           "type": "COMPARE",
-          "problem": "Which is colder: -{a}°F or -{b}°F?",
+          "context": "weather",
+          "problem": "How many degrees colder is -{a}°F than -{b}°F? Enter the positive difference.",
           "constraints": {
             "a": [
               1,
@@ -826,7 +777,8 @@
               20
             ]
           },
-          "answer_type": "comparison"
+          "answer_type": "numeric",
+          "answer_formula": "abs(a - b)"
         },
         {
           "id": "pn_004",
@@ -844,7 +796,7 @@
         {
           "id": "pn_005",
           "type": "COMPARE",
-          "problem": "A hill is {a} feet above sea level. A valley is {b} feet below sea level. Which is farther from sea level?",
+          "problem": "A hill is {a} feet above sea level and a valley is {b} feet below sea level. What is the total elevation difference in feet?",
           "constraints": {
             "a": [
               10,
@@ -855,25 +807,32 @@
               500
             ]
           },
-          "answer_type": "comparison"
+          "answer_type": "numeric",
+          "answer_formula": "a + b"
         },
         {
           "id": "pn_006",
-          "type": "COMPUTE",
-          "problem": "A bank account is overdrawn by ${a}. Write this balance as a signed number.",
+          "type": "APPLY",
+          "context": "money",
+          "problem": "You have ${a} in your wallet and spend ${b}. How much money remains?",
           "constraints": {
             "a": [
-              10,
-              200
+              20,
+              100
+            ],
+            "b": [
+              5,
+              40
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "-a"
+          "answer_formula": "a - b",
+          "constraints_note": "a > b"
         },
         {
           "id": "pn_007",
           "type": "IDENTIFY",
-          "problem": "Place these numbers on a number line: {a}, -{b}, {c}, -{d}. Which is the smallest?",
+          "problem": "Among {a}, -{b}, {c}, and -{d}, what is the smallest value?",
           "constraints": {
             "a": [
               1,
@@ -892,7 +851,8 @@
               10
             ]
           },
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "min(a, -b, c, -d)"
         }
       ]
     },
@@ -964,7 +924,7 @@
         {
           "id": "pr_004",
           "type": "COMPARE",
-          "problem": "Class A has {a} boys and {b} girls. Class B has {c} boys and {d} girls. Which class has a greater ratio of boys to girls?",
+          "problem": "Class A has {a} boys and {b} girls. Class B has {c} boys and {d} girls. How much greater is Class A's boys-to-girls ratio (a/b) than Class B's (c/d)? Enter the absolute difference.",
           "constraints": {
             "a": [
               5,
@@ -983,12 +943,13 @@
               15
             ]
           },
-          "answer_type": "comparison"
+          "answer_type": "numeric",
+          "answer_formula": "abs(a/b - c/d)"
         },
         {
           "id": "pr_005",
           "type": "REPRESENT",
-          "problem": "A necklace has {a} red beads for every {b} blue beads. If the total number of beads is a whole-number multiple of {a} + {b}, how many are red?",
+          "problem": "A necklace has {a} red beads for every {b} blue beads. If there are {c} beads total, how many are red?",
           "constraints": {
             "a": [
               1,
@@ -998,15 +959,19 @@
               1,
               4
             ],
-            "c_note": "multiple of (a+b)"
+            "c": [
+              6,
+              24
+            ]
           },
           "answer_type": "numeric",
-          "answer_formula": "c * a / (a + b)"
+          "answer_formula": "c * a / (a + b)",
+          "constraints_note": "c is a multiple of (a+b)"
         },
         {
           "id": "pr_006",
-          "type": "COMPUTE",
-          "problem": "The ratio of cats to dogs is {a}:{b}. If there are {c} cats, how many dogs are there?",
+          "type": "APPLY",
+          "problem": "In a band, the ratio of flutes to drums is {a}:{b}. If there are {c} flutes, how many drums are there?",
           "constraints": {
             "a": [
               1,
@@ -1021,9 +986,10 @@
               20
             ]
           },
-          "constraints_note": "c is a multiple of a",
+          "constraints_note": "c divisible by a",
           "answer_type": "numeric",
-          "answer_formula": "c * b / a"
+          "answer_formula": "c * b / a",
+          "context": "music"
         }
       ]
     },
@@ -1070,16 +1036,17 @@
         },
         {
           "id": "pa_003",
-          "type": "COMPUTE",
-          "problem": "A box holds {a} books. How many books are in {b} boxes?",
+          "type": "APPLY",
+          "context": "animals",
+          "problem": "A zoo uses {a} feed carts each day, and each cart holds {b} scoops of feed. How many scoops are used in one day?",
           "constraints": {
             "a": [
-              6,
-              24
-            ],
-            "b": [
               2,
               10
+            ],
+            "b": [
+              6,
+              24
             ]
           },
           "answer_type": "numeric",
@@ -1143,20 +1110,25 @@
         },
         {
           "id": "pa_007",
-          "type": "COMPUTE",
-          "problem": "If x = {a}, what is x² + {b}?",
+          "type": "APPLY",
+          "context": "games",
+          "problem": "In a game, you score {a} points in each of {b} rounds, then get a bonus of {c} points. What is your total score?",
           "constraints": {
             "a": [
               2,
-              10
+              15
             ],
             "b": [
+              2,
+              8
+            ],
+            "c": [
               1,
               25
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a * a + b"
+          "answer_formula": "a * b + c"
         }
       ]
     }

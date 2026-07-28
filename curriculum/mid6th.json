@@ -22,24 +22,25 @@
       "templates": [
         {
           "id": "rn_001",
-          "type": "COMPUTE",
-          "problem": "Plot {a} and {b} on a number line. Which is greater?",
+          "type": "COMPARE",
+          "problem": "How much greater is {a} than {b}?",
           "constraints": {
             "a": [
-              -10,
-              10
+              -5,
+              20
             ],
             "b": [
-              -10,
-              10
+              -20,
+              5
             ]
           },
-          "answer_type": "comparison"
+          "answer_type": "numeric",
+          "answer_formula": "abs(a - b)"
         },
         {
           "id": "rn_002",
           "type": "COMPARE",
-          "problem": "Which is least: {a}, {b}, {c}, or {d}?",
+          "problem": "Find the spread of {a}, {b}, {c}, and {d} by subtracting the least value from the greatest value.",
           "constraints": {
             "a": [
               -20,
@@ -58,7 +59,8 @@
               20
             ]
           },
-          "answer_type": "comparison"
+          "answer_type": "numeric",
+          "answer_formula": "max(a, b, c, d) - min(a, b, c, d)"
         },
         {
           "id": "rn_003",
@@ -75,68 +77,58 @@
         },
         {
           "id": "rn_004",
-          "type": "APPLY",
+          "type": "COMPARE",
           "context": "temperature",
-          "problem": "The temperature on Monday was {a}°F. On Tuesday it was {b}°F. Which day was colder? How much colder?",
+          "problem": "Find |{a}| - |{b}|.",
           "constraints": {
             "a": [
-              -20,
-              20
+              -15,
+              15
             ],
             "b": [
-              -20,
-              20
+              -15,
+              15
             ]
           },
-          "answer_type": "comparison_plus_numeric",
-          "answer_formula": "abs(a - b)"
+          "answer_type": "numeric",
+          "answer_formula": "abs(a) - abs(b)"
         },
         {
           "id": "rn_005",
-          "type": "APPLY",
+          "type": "COMPARE",
           "context": "elevation",
-          "problem": "A submarine is at {a} feet and a fish is at {b} feet. Which is deeper? What is the difference in their depths?",
+          "problem": "On a number line, how far is {a} from {b}?",
           "constraints": {
             "a": [
-              -500,
-              -10
+              -20,
+              20
             ],
             "b": [
-              -500,
-              -10
+              -20,
+              20
             ]
           },
-          "answer_type": "comparison_plus_numeric",
+          "answer_type": "numeric",
           "answer_formula": "abs(a - b)"
         },
         {
           "id": "rn_006",
           "type": "COMPUTE",
-          "problem": "Which value is between {a} and {b}: {c}, {d}, or {e}? Enter the value that is between them.",
+          "problem": "Find the midpoint between {a} and {b} on a number line.",
           "constraints": {
             "a": [
               -10,
               0
             ],
             "b": [
-              1,
-              10
-            ],
-            "c": [
-              -15,
-              15
-            ],
-            "d": [
-              -15,
-              15
-            ],
-            "e": [
-              -15,
-              15
+              2,
+              12
             ]
           },
           "answer_type": "numeric",
-          "generation_note": "one of c,d,e lies strictly between a and b"
+          "generation_note": "one of c,d,e lies strictly between a and b",
+          "constraints_note": "(a+b) even so midpoint whole",
+          "answer_formula": "(a + b) / 2"
         },
         {
           "id": "rn_007",
@@ -154,55 +146,66 @@
         {
           "id": "rn_008",
           "type": "COMPARE",
-          "problem": "Use <, >, or = to compare {a} and {b}.",
+          "problem": "Compute |{a}| - |{b}|. Enter the result.",
           "constraints": {
             "a": [
-              -10,
-              -1
+              -12,
+              12
             ],
             "b": [
-              1,
-              10
-            ],
-            "c": [
-              -10,
-              10
+              -12,
+              12
             ]
           },
-          "answer_type": "symbol"
+          "answer_type": "numeric",
+          "answer_formula": "abs(a) - abs(b)"
         },
         {
           "id": "rn_009",
-          "type": "REVERSE",
-          "problem": "A number and its absolute value are both {a}. What could the number be? Give both answers.",
+          "type": "COMPUTE",
+          "problem": "What is the sum of the opposites of {a} and {b}?",
           "constraints": {
             "a": [
-              1,
-              50
+              -15,
+              15
+            ],
+            "b": [
+              -15,
+              15
             ]
           },
-          "answer_type": "two_numeric"
+          "answer_type": "numeric",
+          "answer_formula": "-a + -b"
         },
         {
           "id": "rn_010",
           "type": "COMPARE",
-          "problem": "Compare {a} and {b}. Which is greater?",
+          "problem": "How much greater is {a}/{b} than {c}/{d}? Enter the numerator of the difference over denominator {b}×{d}.",
           "constraints": {
             "a": [
-              -15,
-              -1
+              1,
+              9
             ],
             "b": [
+              2,
+              9
+            ],
+            "c": [
               1,
-              10
+              9
+            ],
+            "d": [
+              2,
+              9
             ]
           },
-          "answer_type": "comparison"
+          "answer_type": "numeric",
+          "answer_formula": "a * d - c * b"
         },
         {
           "id": "rn_011",
-          "type": "COMPARE",
-          "problem": "Use <, >, or = to compare: |{a}| ___ |{b}|",
+          "type": "COMPUTE",
+          "problem": "How much greater is |{a}| than |{b}|?",
           "constraints": {
             "a": [
               -20,
@@ -213,7 +216,8 @@
               20
             ]
           },
-          "answer_type": "symbol"
+          "answer_type": "numeric",
+          "answer_formula": "abs(abs(a)-abs(b))"
         },
         {
           "id": "rn_012",
@@ -273,20 +277,27 @@
         },
         {
           "id": "rn_015",
-          "type": "COMPUTE",
-          "problem": "Write the opposite of {a}. Then write the opposite of the opposite.",
+          "type": "APPLY",
+          "problem": "A temperature starts at {a}°C and changes by {b}°C. What is the new temperature?",
           "constraints": {
             "a": [
-              -30,
+              -10,
               30
+            ],
+            "b": [
+              -15,
+              15
             ]
           },
-          "answer_type": "two_numeric"
+          "answer_type": "numeric",
+          "context": "weather",
+          "answer_formula": "a + b"
         },
         {
           "id": "rn_016",
-          "type": "COMPUTE",
-          "problem": "|{a}| + |{b}|",
+          "type": "APPLY",
+          "context": "finance",
+          "problem": "A stock price moved from {a} to {b}. What is the absolute change |{b} - {a}|?",
           "constraints": {
             "a": [
               -40,
@@ -298,7 +309,7 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "abs(a) + abs(b)"
+          "answer_formula": "abs(b - a)"
         },
         {
           "id": "rn_017",
@@ -332,8 +343,9 @@
         },
         {
           "id": "rn_019",
-          "type": "COMPARE",
-          "problem": "Use <, >, or = to compare: |{a}| ___ |{b}|",
+          "type": "APPLY",
+          "context": "temperature",
+          "problem": "Morning temperature was {a}°F and afternoon was {b}°F. How much greater is |{a}| than |{b}|?",
           "constraints": {
             "a": [
               -25,
@@ -344,7 +356,8 @@
               25
             ]
           },
-          "answer_type": "symbol"
+          "answer_type": "numeric",
+          "answer_formula": "abs(abs(a)-abs(b))"
         },
         {
           "id": "rn_020",
@@ -373,89 +386,102 @@
       "templates": [
         {
           "id": "int_001",
-          "type": "COMPUTE",
-          "problem": "{a} + {b}",
+          "type": "APPLY",
+          "context": "sports",
+          "problem": "A hockey team's score change over three periods was {a}, then {b}, then {c}. What was the net change?",
           "constraints": {
             "a": [
-              -50,
-              50
+              -40,
+              40
             ],
             "b": [
-              -50,
-              50
+              -40,
+              40
+            ],
+            "c": [
+              -40,
+              40
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a + b + c"
+        },
+        {
+          "id": "int_002",
+          "type": "APPLY",
+          "context": "altitude",
+          "problem": "A drone is at {a} meters. It changes altitude by {b} meters. What is its new altitude?",
+          "constraints": {
+            "a": [
+              -200,
+              200
+            ],
+            "b": [
+              -150,
+              150
             ]
           },
           "answer_type": "numeric",
           "answer_formula": "a + b"
         },
         {
-          "id": "int_002",
-          "type": "COMPUTE",
-          "problem": "{a} - {b}",
-          "constraints": {
-            "a": [
-              -50,
-              50
-            ],
-            "b": [
-              -50,
-              50
-            ]
-          },
-          "answer_type": "numeric",
-          "answer_formula": "a - b"
-        },
-        {
           "id": "int_003",
-          "type": "COMPUTE",
-          "problem": "{a} × {b}",
+          "type": "APPLY",
+          "context": "science",
+          "problem": "A lab cools a sample by {a}°C per minute for {b} minutes, then multiplies the total change by a scale factor of {c}. What is the scaled total change?",
           "constraints": {
             "a": [
-              -12,
-              12
+              -8,
+              -1
             ],
             "b": [
-              -12,
-              12
+              2,
+              8
+            ],
+            "c": [
+              -6,
+              -1
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a * b"
+          "answer_formula": "a * b * c"
         },
         {
           "id": "int_004",
-          "type": "COMPUTE",
-          "problem": "{a} ÷ {b}",
+          "type": "APPLY",
+          "context": "travel",
+          "problem": "A submarine's depth change of {a} feet happened evenly over {b} hours. What was the change per hour?",
           "constraints": {
             "a": [
               -144,
-              144
+              -12
             ],
             "b": [
-              -12,
+              2,
               12
             ]
           },
-          "constraints_note": "b != 0, a must be divisible by b",
           "answer_type": "numeric",
-          "answer_formula": "a / b"
+          "answer_formula": "a / b",
+          "constraints_note": "b != 0; a divisible by b"
         },
         {
           "id": "int_005",
-          "type": "COMPUTE",
-          "problem": "Compute {a} × {b}.",
+          "type": "APPLY",
+          "context": "debt",
+          "problem": "A store writes off ${a} of debt for each of {b} accounts. What is the total change to the store's books (as a negative amount)?",
           "constraints": {
             "a": [
-              -20,
-              20
+              5,
+              40
             ],
             "b": [
-              -20,
-              20
+              2,
+              10
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a * b"
+          "answer_formula": "-a * b"
         },
         {
           "id": "int_006",
@@ -514,40 +540,45 @@
         {
           "id": "int_009",
           "type": "REVERSE",
-          "problem": "Find the missing number in __ × {a} = ? (the product is a whole-number multiple of {a}).",
+          "problem": "Find x if x × {a} = {p}.",
           "constraints": {
             "a": [
               -10,
               -2
             ],
-            "product_range": [
-              -60,
-              60
+            "p": [
+              -80,
+              80
             ]
           },
-          "generation_note": "Choose product divisible by a",
           "answer_type": "numeric",
-          "answer_formula": "product / a"
+          "answer_formula": "p / a",
+          "constraints_note": "p divisible by a; a != 0"
         },
         {
           "id": "int_010",
           "type": "COMPARE",
-          "problem": "Without calculating, which is greater: {a} × {b} or {a} × {c}?",
+          "problem": "How much greater is {a} + {b} than {c} + {d}?",
           "constraints": {
             "a": [
-              -8,
-              -2
+              -20,
+              20
             ],
             "b": [
-              -5,
-              -1
+              -20,
+              20
             ],
             "c": [
-              1,
-              5
+              -20,
+              20
+            ],
+            "d": [
+              -20,
+              20
             ]
           },
-          "answer_type": "comparison"
+          "answer_type": "numeric",
+          "answer_formula": "abs((a + b) - (c + d))"
         },
         {
           "id": "int_011",
@@ -598,7 +629,7 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a - b + c"
+          "answer_formula": "a - b + c - d"
         },
         {
           "id": "int_013",
@@ -683,37 +714,42 @@
         {
           "id": "int_017",
           "type": "COMPUTE",
-          "problem": "({a}) × ({b})",
+          "problem": "{a} × ({b} - {c})",
           "constraints": {
             "a": [
               -12,
               12
             ],
             "b": [
-              -12,
-              12
+              -20,
+              20
+            ],
+            "c": [
+              -20,
+              20
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a * b"
+          "answer_formula": "a * (b - c)"
         },
         {
           "id": "int_018",
-          "type": "COMPUTE",
-          "problem": "({a}) ÷ ({b})",
+          "type": "APPLY",
+          "context": "weather",
+          "problem": "Over {b} days, the total temperature change was {a}°F. What was the average change per day?",
           "constraints": {
             "a": [
-              -144,
-              144
+              -120,
+              120
             ],
             "b": [
-              -12,
+              2,
               12
             ]
           },
-          "constraints_note": "b != 0, a divisible by b",
           "answer_type": "numeric",
-          "answer_formula": "a / b"
+          "answer_formula": "a / b",
+          "constraints_note": "b != 0; a divisible by b"
         },
         {
           "id": "int_019",
@@ -785,8 +821,9 @@
         },
         {
           "id": "rr_002",
-          "type": "COMPUTE",
-          "problem": "The ratio of cats to dogs is {a}:{b}. If there are {c} cats, how many dogs are there?",
+          "type": "APPLY",
+          "context": "music",
+          "problem": "The ratio of violins to cellos in an orchestra is {a}:{b}. If there are {c} violins, how many cellos are there?",
           "constraints": {
             "a": [
               2,
@@ -797,18 +834,18 @@
               12
             ],
             "c": [
-              6,
+              8,
               48
             ]
           },
           "answer_type": "numeric",
-          "constraints_note": "c is a multiple of a",
+          "constraints_note": "c divisible by a",
           "answer_formula": "c * b / a"
         },
         {
           "id": "rr_003",
-          "type": "COMPARE",
-          "problem": "Compare {a} × {d} and {b} × {c}. Are the ratios {a}:{b} and {c}:{d} equivalent?",
+          "type": "COMPUTE",
+          "problem": "For ratios {a}:{b} and {c}:{d}, compute |{a}×{d} - {b}×{c}|. Enter 0 if the ratios are equivalent.",
           "constraints": {
             "a": [
               2,
@@ -827,49 +864,53 @@
               36
             ]
           },
-          "answer_type": "comparison"
+          "answer_type": "numeric",
+          "answer_formula": "abs(a * d - b * c)"
         },
         {
           "id": "rr_004",
-          "type": "COMPUTE",
-          "problem": "A car travels {a} miles in {b} hours. Find the unit rate in miles per hour.",
+          "type": "APPLY",
+          "context": "train",
+          "problem": "A train travels {a} miles in {b} hours. What is its speed in miles per hour?",
           "constraints": {
             "a": [
-              60,
-              400
+              120,
+              480
             ],
             "b": [
               2,
               8
             ]
           },
-          "constraints_note": "a must be divisible by b",
-          "answer_type": "unit_rate",
-          "answer_formula": "a / b"
+          "answer_type": "numeric",
+          "answer_formula": "a / b",
+          "constraints_note": "a divisible by b"
         },
         {
           "id": "rr_005",
           "type": "COMPARE",
-          "problem": "Store A sells {a} items for ${b}. Store B sells {c} items for ${d}. Which is the better deal per item?",
+          "problem": "Store A sells {a} ounces for . Store B sells {c} ounces for . Enter |b*c - d*a|.",
           "constraints": {
             "a": [
-              3,
-              10
+              2,
+              8
             ],
             "b": [
-              6,
-              30
+              4,
+              20
             ],
             "c": [
-              4,
-              12
+              2,
+              8
             ],
             "d": [
-              8,
-              36
+              4,
+              20
             ]
           },
-          "answer_type": "comparison"
+          "answer_type": "numeric",
+          "context": "shopping",
+          "answer_formula": "abs(b * c - d * a)"
         },
         {
           "id": "rr_006",
@@ -961,20 +1002,22 @@
         {
           "id": "rr_010",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student says the unit rate for {a} items for ${b} is wrong (they multiplied instead of divided). Is that correct? What is the right unit rate?",
+          "problem": "A student wrongly multiplies and says a car traveling {a} miles in {b} hours goes {a}*{b} mph. What is the correct unit rate in mph?",
           "constraints": {
             "a": [
-              4,
-              12
+              60,
+              300
             ],
             "b": [
-              8,
-              36
+              2,
+              6
             ]
           },
           "generation_note": "c = b * a (student multiplied instead of divided)",
-          "answer_type": "boolean_plus_numeric",
-          "answer_formula": "b / a"
+          "answer_type": "numeric",
+          "answer_formula": "a / b",
+          "context": "travel",
+          "constraints_note": "a divisible by b"
         },
         {
           "id": "rr_011",
@@ -1058,31 +1101,102 @@
         {
           "id": "rr_015",
           "type": "COMPARE",
-          "problem": "Runner A finishes {a} km in {b} minutes. Runner B finishes {c} km in {d} minutes. Who is faster?",
+          "problem": "Find |{a}×{d} - {b}×{c}| for ratios {a}:{b} and {c}:{d}.",
           "constraints": {
             "a": [
-              4,
-              12
+              1,
+              9
             ],
             "b": [
-              20,
-              60
+              1,
+              9
             ],
             "c": [
-              4,
-              12
+              1,
+              9
             ],
             "d": [
-              20,
-              60
+              1,
+              9
             ]
           },
-          "answer_type": "comparison"
+          "answer_type": "numeric",
+          "answer_formula": "abs(a * d - b * c)"
         },
         {
           "id": "rr_016",
-          "type": "COMPUTE",
-          "problem": "If {a}:{b} = {c}:x, find x.",
+          "type": "APPLY",
+          "context": "construction",
+          "problem": "A construction crew mixes concrete in the proportion {a}:{b} = {c}:x (cement bags to sand bags). Find x, the sand bags needed.",
+          "constraints": {
+            "a": [
+              3,
+              9
+            ],
+            "b": [
+              4,
+              12
+            ],
+            "c": [
+              6,
+              30
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "c * b / a",
+          "constraints_note": "a divides c*b"
+        },
+        {
+          "id": "rr_017",
+          "type": "APPLY",
+          "context": "cycling",
+          "problem": "A cyclist rides {a} kilometers in {b} hours. At that rate, how many kilometers will they ride in {c} hours?",
+          "constraints": {
+            "a": [
+              30,
+              120
+            ],
+            "b": [
+              2,
+              5
+            ],
+            "c": [
+              3,
+              8
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "c * a / b",
+          "constraints_note": "a divisible by b"
+        },
+        {
+          "id": "rr_018",
+          "type": "APPLY",
+          "context": "survey",
+          "problem": "{a} out of {b} voters support a new park. How many supporters would you expect in a town of {c} voters at the same rate?",
+          "constraints": {
+            "a": [
+              2,
+              9
+            ],
+            "b": [
+              10,
+              20
+            ],
+            "c": [
+              100,
+              500
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "c * a / b",
+          "constraints_note": "b divides a*c"
+        },
+        {
+          "id": "rr_019",
+          "type": "APPLY",
+          "context": "art_supplies",
+          "problem": "Paint sticks are packed in a ratio of {a} red to {b} blue. A kit has {c} red sticks. How many blue sticks should it have?",
           "constraints": {
             "a": [
               2,
@@ -1093,89 +1207,32 @@
               9
             ],
             "c": [
-              4,
-              24
+              6,
+              36
             ]
           },
-          "constraints_note": "c is a multiple of a",
           "answer_type": "numeric",
-          "answer_formula": "c * b / a"
-        },
-        {
-          "id": "rr_017",
-          "type": "COMPUTE",
-          "problem": "{a} miles in {b} hours. What is the unit rate in miles per hour?",
-          "constraints": {
-            "a": [
-              60,
-              300
-            ],
-            "b": [
-              2,
-              6
-            ]
-          },
-          "constraints_note": "a divisible by b",
-          "answer_type": "numeric",
-          "answer_formula": "a / b"
-        },
-        {
-          "id": "rr_018",
-          "type": "COMPUTE",
-          "problem": "{a} out of {b} is what percent?",
-          "constraints": {
-            "a": [
-              5,
-              40
-            ],
-            "b": [
-              20,
-              80
-            ]
-          },
-          "constraints_note": "100 * a / b is a whole number",
-          "answer_type": "numeric",
-          "answer_formula": "100 * a / b"
-        },
-        {
-          "id": "rr_019",
-          "type": "COMPUTE",
-          "problem": "The ratio of red to blue is {a}:{b}. If there are {c} red, how many blue are there?",
-          "constraints": {
-            "a": [
-              1,
-              5
-            ],
-            "b": [
-              1,
-              5
-            ],
-            "c": [
-              4,
-              25
-            ]
-          },
-          "constraints_note": "c is a multiple of a",
-          "answer_type": "numeric",
-          "answer_formula": "c * b / a"
+          "answer_formula": "c * b / a",
+          "constraints_note": "c divisible by a"
         },
         {
           "id": "rr_020",
-          "type": "COMPUTE",
-          "problem": "{a} items for ${b}. What is the price per item?",
+          "type": "APPLY",
+          "context": "bulk_buy",
+          "problem": "A warehouse pack of {a} batteries costs ${b}. What is the price per battery?",
           "constraints": {
             "a": [
-              2,
-              12
+              4,
+              20
             ],
             "b": [
-              6,
-              48
+              8,
+              60
             ]
           },
-          "constraints_note": "b divisible by a",
           "answer_type": "numeric",
-          "answer_formula": "b / a"
+          "answer_formula": "b / a",
+          "constraints_note": "b divisible by a"
         }
       ]
     },
@@ -1187,29 +1244,35 @@
       "templates": [
         {
           "id": "ee_001",
-          "type": "COMPUTE",
-          "problem": "Evaluate {a}x + {b} when x = {c}.",
+          "type": "APPLY",
+          "problem": "A team's score expression is {a}x + {b} - {c}. If x = {d}, what is the score?",
           "constraints": {
             "a": [
               2,
               9
             ],
             "b": [
-              -20,
-              20
+              5,
+              30
             ],
             "c": [
-              -10,
+              1,
+              15
+            ],
+            "d": [
+              1,
               10
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a * c + b"
+          "answer_formula": "a * d + b - c",
+          "context": "sports"
         },
         {
           "id": "ee_002",
-          "type": "COMPUTE",
-          "problem": "Solve for x: x + {a} = {b}",
+          "type": "APPLY",
+          "context": "score",
+          "problem": "A game score is x. After adding {a} bonus points the score is {b}. What was x?",
           "constraints": {
             "a": [
               -30,
@@ -1217,29 +1280,30 @@
             ],
             "b": [
               -30,
-              30
+              60
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "x + a = b"
+          "answer_formula": "b - a"
         },
         {
           "id": "ee_003",
-          "type": "COMPUTE",
-          "problem": "Solve for x: {a}x = {b}",
+          "type": "APPLY",
+          "context": "rows",
+          "problem": "Chairs are arranged in {a} equal rows with x chairs each. There are {b} chairs total. Find x.",
           "constraints": {
             "a": [
-              2,
+              3,
               12
             ],
             "b": [
-              -120,
-              120
+              12,
+              96
             ]
           },
-          "constraints_note": "b divisible by a",
           "answer_type": "numeric",
-          "answer_formula": "b / a"
+          "answer_formula": "b / a",
+          "constraints_note": "b divisible by a; a != 0"
         },
         {
           "id": "ee_004",
@@ -1339,25 +1403,26 @@
         },
         {
           "id": "ee_009",
-          "type": "COMPUTE",
-          "problem": "Solve: {a}x - {b} = {c}.",
+          "type": "APPLY",
+          "context": "tickets",
+          "problem": "Tickets cost ${a} each. After a ${b} discount on the total, the amount paid is ${c}. How many tickets were bought? Solve {a}x - {b} = {c}.",
           "constraints": {
             "a": [
-              2,
-              6
+              4,
+              12
             ],
             "b": [
-              1,
+              2,
               20
             ],
             "c": [
-              1,
-              40
+              10,
+              80
             ]
           },
-          "generation_note": "One of w, r, s satisfies the equation exactly",
           "answer_type": "numeric",
-          "answer_formula": "(c + b) / a"
+          "answer_formula": "(c + b) / a",
+          "constraints_note": "(c+b) divisible by a; x whole"
         },
         {
           "id": "ee_010",
@@ -1384,7 +1449,7 @@
         {
           "id": "ee_011",
           "type": "REVERSE",
-          "problem": "When x = {a}, the expression {b}x + c equals {result}. Find c.",
+          "problem": "When x = {a}, the expression {b}x + k equals {result}. Find k.",
           "constraints": {
             "a": [
               2,
@@ -1400,7 +1465,7 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "(result - b * a)"
+          "answer_formula": "result - b * a"
         },
         {
           "id": "ee_012",
@@ -1440,61 +1505,65 @@
         },
         {
           "id": "ee_014",
-          "type": "COMPUTE",
-          "problem": "Solve: {a}x + {b} = {c}.",
+          "type": "APPLY",
+          "context": "membership",
+          "problem": "A club charges ${b} to join plus ${a} per month. After some months the total paid is ${c}. How many months? Solve {a}x + {b} = {c}.",
           "constraints": {
             "a": [
-              2,
-              5
+              5,
+              15
             ],
             "b": [
-              5,
-              20
+              10,
+              40
             ],
             "c": [
-              15,
-              50
+              40,
+              160
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "(c - b) / a"
+          "answer_formula": "(c - b) / a",
+          "constraints_note": "(c-b) divisible by a"
         },
         {
           "id": "ee_015",
           "type": "COMPARE",
-          "problem": "Expression A: {a}x + {b}. Expression B: {c}x - {d}. For x = {e}, which expression has the greater value?",
+          "problem": "How much greater is {a}x + {b} than {c}x + {d} when x = {e}? Enter the absolute difference.",
           "constraints": {
             "a": [
               1,
-              5
+              8
             ],
             "b": [
               1,
-              10
+              20
             ],
             "c": [
               1,
-              5
+              8
             ],
             "d": [
               1,
-              10
+              20
             ],
             "e": [
               1,
               10
             ]
           },
-          "answer_type": "comparison"
+          "answer_type": "numeric",
+          "answer_formula": "abs((a * e + b) - (c * e + d))"
         },
         {
           "id": "ee_016",
-          "type": "COMPUTE",
-          "problem": "Solve for x: x - {a} = {b}",
+          "type": "APPLY",
+          "context": "balance",
+          "problem": "A scale reading starts at x, then decreases by {a} to reach {b}. Solve x - {a} = {b} for x.",
           "constraints": {
             "a": [
-              -30,
-              30
+              -25,
+              25
             ],
             "b": [
               -30,
@@ -1506,16 +1575,17 @@
         },
         {
           "id": "ee_017",
-          "type": "COMPUTE",
-          "problem": "Solve for x: {a} - x = {b}",
+          "type": "APPLY",
+          "context": "countdown",
+          "problem": "A timer starts at {a} and shows {b} after some time passes. If x minutes passed, solve {a} - x = {b}.",
           "constraints": {
             "a": [
-              5,
-              50
+              20,
+              90
             ],
             "b": [
-              -20,
-              40
+              -10,
+              50
             ]
           },
           "answer_type": "numeric",
@@ -1523,12 +1593,13 @@
         },
         {
           "id": "ee_018",
-          "type": "COMPUTE",
-          "problem": "Solve for x: x ÷ {a} = {b}",
+          "type": "APPLY",
+          "context": "sharing",
+          "problem": "When a number x is split into {a} equal groups, each group has {b}. What is x?",
           "constraints": {
             "a": [
               2,
-              10
+              12
             ],
             "b": [
               -15,
@@ -1541,15 +1612,15 @@
         {
           "id": "ee_019",
           "type": "COMPUTE",
-          "problem": "Evaluate {a}x - {b} when x = {c}.",
+          "problem": "Evaluate {a} - {b}x when x = {c}.",
           "constraints": {
             "a": [
-              2,
-              9
+              -20,
+              40
             ],
             "b": [
-              -20,
-              20
+              2,
+              9
             ],
             "c": [
               -10,
@@ -1557,7 +1628,7 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a * c - b"
+          "answer_formula": "a - b * c"
         },
         {
           "id": "ee_020",
@@ -1590,101 +1661,106 @@
       "templates": [
         {
           "id": "geo_001",
-          "type": "COMPUTE",
-          "problem": "Find the area of a triangle with base {a} cm and height {b} cm.",
+          "type": "APPLY",
+          "context": "sails",
+          "problem": "A triangular sail has base {a} feet and height {b} feet. What is its area in square feet?",
           "constraints": {
             "a": [
-              4,
-              24
+              6,
+              30
             ],
             "b": [
-              3,
-              20
+              4,
+              24
             ]
           },
+          "answer_type": "numeric",
           "answer_formula": "0.5 * a * b",
-          "answer_type": "numeric"
+          "constraints_note": "a*b even so area is whole"
         },
         {
           "id": "geo_002",
-          "type": "COMPUTE",
-          "problem": "Find the area of a parallelogram with base {a} units and height {b} units.",
+          "type": "APPLY",
+          "context": "plaza",
+          "problem": "A parallelogram plaza has base {a} meters and height {b} meters. Find its area.",
           "constraints": {
             "a": [
-              3,
-              20
+              8,
+              40
             ],
             "b": [
-              3,
-              20
+              5,
+              25
             ]
           },
-          "answer_formula": "a * b",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a * b"
         },
         {
           "id": "geo_003",
-          "type": "COMPUTE",
-          "problem": "Find the surface area of a rectangular prism with length {a}, width {b}, and height {c}.",
+          "type": "APPLY",
+          "context": "aquarium",
+          "problem": "An aquarium tank is {a} ft by {b} ft by {c} ft. How many square feet of glass are needed for all 6 faces?",
           "constraints": {
             "a": [
               2,
-              12
+              10
             ],
             "b": [
               2,
-              12
+              8
             ],
             "c": [
               2,
-              12
+              6
             ]
           },
-          "answer_formula": "2*(a*b + b*c + a*c)",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "2 * (a*b + b*c + a*c)"
         },
         {
           "id": "geo_004",
-          "type": "COMPUTE",
-          "problem": "Find the volume of a rectangular prism with length {a}, width {b}, and height {c}.",
+          "type": "APPLY",
+          "context": "shipping",
+          "problem": "A shipping crate measures {a} in by {b} in by {c} in. What is its volume in cubic inches?",
           "constraints": {
             "a": [
-              2,
-              15
+              4,
+              20
             ],
             "b": [
-              2,
-              15
+              4,
+              16
             ],
             "c": [
-              2,
-              15
+              4,
+              12
             ]
           },
-          "answer_formula": "a * b * c",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a * b * c"
         },
         {
           "id": "geo_005",
           "type": "APPLY",
-          "context": "packaging",
-          "problem": "A gift box is {a} inches long, {b} inches wide, and {c} inches tall. How many square inches of wrapping paper are needed to cover it completely?",
+          "context": "moving",
+          "problem": "A moving carton is {a} in long, {b} in wide, and {c} in tall. How many square inches of cardboard form the closed carton?",
           "constraints": {
             "a": [
-              4,
-              20
+              10,
+              30
             ],
             "b": [
-              4,
-              20
+              8,
+              24
             ],
             "c": [
-              4,
-              20
+              8,
+              24
             ]
           },
-          "answer_formula": "2*(a*b + b*c + a*c)",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "2 * (a*b + b*c + a*c)"
         },
         {
           "id": "geo_006",
@@ -1743,26 +1819,28 @@
         {
           "id": "geo_009",
           "type": "COMPARE",
-          "problem": "Shape A is a triangle with base {a} and height {b}. Shape B is a rectangle with length {c} and width {d}. Which has the greater area?",
+          "problem": "Rectangle A is {a} by {b}. Rectangle B is {c} by {d}. How much greater is the larger area than the smaller?",
           "constraints": {
             "a": [
-              6,
-              20
+              3,
+              12
             ],
             "b": [
-              6,
-              20
+              3,
+              12
             ],
             "c": [
-              4,
-              14
+              3,
+              12
             ],
             "d": [
-              4,
-              14
+              3,
+              12
             ]
           },
-          "answer_type": "comparison"
+          "answer_type": "numeric",
+          "context": "measurement",
+          "answer_formula": "abs(a * b - c * d)"
         },
         {
           "id": "geo_010",
@@ -1831,25 +1909,26 @@
         },
         {
           "id": "geo_013",
-          "type": "REVERSE",
-          "problem": "A rectangular prism has volume {a}, length {b}, and width {c}. Find its height.",
+          "type": "APPLY",
+          "problem": "A shipping crate has volume {a} cubic feet. Its base is a rectangle {b} ft by {c} ft. How tall is the crate in feet?",
           "constraints": {
             "a": [
-              24,
-              120
+              48,
+              240
             ],
             "b": [
-              2,
-              12
+              3,
+              10
             ],
             "c": [
               2,
-              12
+              8
             ]
           },
           "answer_type": "numeric",
           "constraints_note": "a divisible by b*c",
-          "answer_formula": "a / (b * c)"
+          "answer_formula": "a / (b * c)",
+          "context": "construction"
         },
         {
           "id": "geo_014",
@@ -1875,52 +1954,50 @@
         {
           "id": "geo_015",
           "type": "COMPARE",
-          "problem": "Box A has dimensions {a} × {b} × {c}. Box B has dimensions {d} × {e} × {f}. Which box holds more? By how much?",
-          "constraints": {
-            "a": [
-              2,
-              8
-            ],
-            "b": [
-              2,
-              8
-            ],
-            "c": [
-              2,
-              8
-            ],
-            "d": [
-              2,
-              8
-            ],
-            "e": [
-              2,
-              8
-            ],
-            "f": [
-              2,
-              8
-            ]
-          },
-          "answer_type": "comparison_plus_numeric",
-          "answer_formula": "abs(a*b*c - d*e*f)"
-        },
-        {
-          "id": "geo_016",
-          "type": "COMPUTE",
-          "problem": "Find the area of a rectangle with length {a} and width {b}.",
+          "problem": "A square has side {a}. A rectangle is {b} by {c}. How much greater is the larger area?",
           "constraints": {
             "a": [
               4,
-              24
+              15
             ],
             "b": [
               3,
-              20
+              12
+            ],
+            "c": [
+              3,
+              12
             ]
           },
-          "answer_formula": "a * b",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "abs(a * a - b * c)",
+          "context": "construction"
+        },
+        {
+          "id": "geo_016",
+          "type": "APPLY",
+          "context": "flooring",
+          "problem": "A classroom floor is an L-shape made of a {a}-by-{b} rectangle joined to a {c}-by-{d} rectangle. What is the total floor area?",
+          "constraints": {
+            "a": [
+              8,
+              20
+            ],
+            "b": [
+              6,
+              16
+            ],
+            "c": [
+              4,
+              12
+            ],
+            "d": [
+              3,
+              10
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a * b + c * d"
         }
       ]
     },
@@ -1932,50 +2009,52 @@
       "templates": [
         {
           "id": "cp_001",
-          "type": "COMPUTE",
-          "problem": "Find the distance between ({a}, {y}) and ({b}, {y}) using absolute value.",
+          "type": "APPLY",
+          "context": "harbor",
+          "problem": "Buoy A is at ({a}, {y}) and Buoy B is at ({b}, {y}) on a harbor chart. How many units apart are they?",
           "constraints": {
             "a": [
-              -8,
-              0
+              -12,
+              -1
             ],
             "b": [
               1,
-              8
+              12
             ],
             "y": [
-              -6,
-              6
+              -8,
+              8
             ]
           },
-          "answer_formula": "abs(b - a)",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "abs(b - a)"
         },
         {
           "id": "cp_002",
-          "type": "COMPUTE",
-          "problem": "Find the distance between ({x}, {a}) and ({x}, {b}) using absolute value.",
+          "type": "APPLY",
+          "context": "stadium",
+          "problem": "Seat A is at ({x}, {a}) and Seat B is at ({x}, {b}) on a seating chart. How many rows apart are they?",
           "constraints": {
             "x": [
-              -6,
-              6
+              -10,
+              10
             ],
             "a": [
-              -8,
-              0
+              -12,
+              -1
             ],
             "b": [
               1,
-              8
+              12
             ]
           },
-          "answer_formula": "abs(b - a)",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "abs(b - a)"
         },
         {
           "id": "cp_003",
           "type": "COMPUTE",
-          "problem": "What is the product of the coordinates of point ({a}, {b})?",
+          "problem": "Point P({a}, {b}) is reflected across the origin to P'. What is the product of the coordinates of P'?",
           "constraints": {
             "a": [
               -10,
@@ -1988,7 +2067,7 @@
           },
           "constraints_note": "a != 0, b != 0",
           "answer_type": "numeric",
-          "answer_formula": "a * b"
+          "answer_formula": "(-a) * (-b)"
         },
         {
           "id": "cp_004",
@@ -2062,34 +2141,27 @@
         {
           "id": "cp_007",
           "type": "COMPARE",
-          "problem": "Point M is at ({mx}, {my}). Is it closer to point A ({ax}, {ay}) or point B ({bx}, {by})? Use absolute value to justify.",
+          "problem": "Point A is ({a}, {b}) and point B is ({c}, {d}). How much greater is A's x-coordinate than B's?",
           "constraints": {
-            "mx": [
-              -5,
-              5
-            ],
-            "my": [
-              -5,
-              5
-            ],
-            "ax": [
+            "a": [
               -8,
               8
             ],
-            "ay": [
+            "b": [
               -8,
               8
             ],
-            "bx": [
+            "c": [
               -8,
               8
             ],
-            "by": [
+            "d": [
               -8,
               8
             ]
           },
-          "answer_type": "comparison"
+          "answer_type": "numeric",
+          "answer_formula": "a - c"
         },
         {
           "id": "cp_008",
@@ -2166,34 +2238,27 @@
         {
           "id": "cp_011",
           "type": "COMPARE",
-          "problem": "Points A({a},{b}), B({c},{d}), and C({e},{f}). Which pair has the same sign for both coordinates: A and B, A and C, or B and C?",
+          "problem": "How far apart vertically are ({a}, {b}) and ({c}, {d})?",
           "constraints": {
             "a": [
               -8,
-              -1
+              8
             ],
             "b": [
-              1,
+              -8,
               8
             ],
             "c": [
-              1,
+              -8,
               8
             ],
             "d": [
-              1,
-              8
-            ],
-            "e": [
-              1,
-              8
-            ],
-            "f": [
               -8,
-              -1
+              8
             ]
           },
-          "answer_type": "comparison"
+          "answer_type": "numeric",
+          "answer_formula": "abs(b - d)"
         },
         {
           "id": "cp_012",
@@ -2275,56 +2340,48 @@
         {
           "id": "cp_015",
           "type": "COMPARE",
-          "problem": "Segment AB goes from ({ax},{y}) to ({bx},{y}). Segment CD goes from ({cx},{y2}) to ({dx},{y2}). Which segment is longer?",
+          "problem": "Find the absolute difference of the y-coordinates of ({a}, {b}) and ({c}, {d}).",
           "constraints": {
-            "ax": [
-              -8,
-              0
+            "a": [
+              -10,
+              10
             ],
-            "bx": [
-              1,
-              8
+            "b": [
+              -10,
+              10
             ],
-            "cx": [
-              -8,
-              0
+            "c": [
+              -10,
+              10
             ],
-            "dx": [
-              1,
-              8
-            ],
-            "y": [
-              -5,
-              5
-            ],
-            "y2": [
-              -5,
-              5
+            "d": [
+              -10,
+              10
             ]
           },
-          "answer_type": "comparison_plus_numeric",
-          "answer_formula": "abs(abs(bx - ax) - abs(dx - cx))"
+          "answer_type": "numeric",
+          "answer_formula": "abs(b - d)"
         },
         {
           "id": "cp_016",
           "type": "COMPUTE",
-          "problem": "Find the distance between ({a}, {y}) and ({b}, {y}).",
+          "problem": "Find |{a} - {b}| for the horizontal segment from ({a}, {y}) to ({b}, {y}).",
           "constraints": {
             "a": [
-              -8,
+              -15,
               0
             ],
             "b": [
               1,
-              8
+              15
             ],
             "y": [
-              -6,
-              6
+              -10,
+              10
             ]
           },
-          "answer_formula": "abs(b - a)",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "abs(b - a)"
         }
       ]
     },
@@ -2336,37 +2393,96 @@
       "templates": [
         {
           "id": "sp_001",
-          "type": "COMPUTE",
-          "problem": "Find the mean of this data set: {a}, {b}, {c}, {d}, {e}",
+          "type": "APPLY",
+          "context": "steps",
+          "problem": "Daily step counts: {a}, {b}, {c}, {d}, {e}. What is the mean number of steps?",
           "constraints": {
             "a": [
-              10,
-              50
+              2000,
+              12000
             ],
             "b": [
-              10,
-              50
+              2000,
+              12000
             ],
             "c": [
-              10,
-              50
+              2000,
+              12000
             ],
             "d": [
-              10,
-              50
+              2000,
+              12000
             ],
             "e": [
-              10,
-              50
+              2000,
+              12000
             ]
           },
-          "answer_formula": "(a+b+c+d+e)/5",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "(a + b + c + d + e) / 5",
+          "constraints_note": "sum divisible by 5"
         },
         {
           "id": "sp_002",
           "type": "COMPUTE",
-          "problem": "Find the median of: {a}, {b}, {c}, {d}, {e}",
+          "problem": "Find the median of the ordered list: {a}, {b}, {c}, {d}, {e}.",
+          "constraints": {
+            "a": [
+              1,
+              20
+            ],
+            "b": [
+              5,
+              30
+            ],
+            "c": [
+              10,
+              40
+            ],
+            "d": [
+              15,
+              50
+            ],
+            "e": [
+              20,
+              60
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "c",
+          "constraints_note": "generator must enforce a <= b <= c <= d <= e"
+        },
+        {
+          "id": "sp_003",
+          "type": "COMPUTE",
+          "problem": "Find the mean of {a}, {b}, {c}, {d}.",
+          "constraints": {
+            "a": [
+              4,
+              20
+            ],
+            "b": [
+              4,
+              20
+            ],
+            "c": [
+              4,
+              20
+            ],
+            "d": [
+              4,
+              20
+            ]
+          },
+          "answer_type": "numeric",
+          "constraints_note": "sum divisible by 4",
+          "answer_formula": "(a + b + c + d) / 4"
+        },
+        {
+          "id": "sp_004",
+          "type": "COMPUTE",
+          "context": "test_scores",
+          "problem": "Find the range of {a}, {b}, {c}, {d}, {e}.",
           "constraints": {
             "a": [
               1,
@@ -2390,88 +2506,40 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "c"
-        },
-        {
-          "id": "sp_003",
-          "type": "COMPUTE",
-          "problem": "Find the range and mode of: {a}, {b}, {c}, {a}, {d}, {b}",
-          "constraints": {
-            "a": [
-              1,
-              20
-            ],
-            "b": [
-              1,
-              20
-            ],
-            "c": [
-              1,
-              20
-            ],
-            "d": [
-              1,
-              20
-            ]
-          },
-          "answer_type": "two_numeric"
-        },
-        {
-          "id": "sp_004",
-          "type": "APPLY",
-          "context": "test_scores",
-          "problem": "A student scored {a}, {b}, {c}, {d}, and {e} on five tests. What is their mean score? What score would they need on a 6th test to raise the mean to {f}?",
-          "constraints": {
-            "a": [
-              60,
-              95
-            ],
-            "b": [
-              60,
-              95
-            ],
-            "c": [
-              60,
-              95
-            ],
-            "d": [
-              60,
-              95
-            ],
-            "e": [
-              60,
-              95
-            ],
-            "f": [
-              70,
-              95
-            ]
-          },
-          "answer_type": "two_numeric"
+          "answer_formula": "max(a, b, c, d, e) - min(a, b, c, d, e)"
         },
         {
           "id": "sp_006",
           "type": "COMPARE",
-          "problem": "Class A test scores: mean = {a}, median = {b}. Class B test scores: mean = {c}, median = {d}. Which class performed better overall?",
+          "problem": "Data set A uses {a}, {b}, {c}. Data set B uses {d}, {e}, {f}. Enter the absolute difference of the sums.",
           "constraints": {
             "a": [
-              65,
-              90
+              5,
+              20
             ],
             "b": [
-              65,
-              90
+              5,
+              20
             ],
             "c": [
-              65,
-              90
+              5,
+              20
             ],
             "d": [
-              65,
-              90
+              5,
+              20
+            ],
+            "e": [
+              5,
+              20
+            ],
+            "f": [
+              5,
+              20
             ]
           },
-          "answer_type": "comparison"
+          "answer_type": "numeric",
+          "answer_formula": "abs((a + b + c) - (d + e + f))"
         },
         {
           "id": "sp_007",
@@ -2501,40 +2569,41 @@
         {
           "id": "sp_008",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student found the median of {a}, {b}, {c}, {d}, {e} by averaging the first and last values. What is the correct median?",
+          "problem": "For the ordered data {a}, {b}, {c}, {d}, {e}, a student averages the first and last values for the median. What is the correct median?",
           "constraints": {
             "a": [
               1,
-              20
+              15
             ],
             "b": [
-              1,
-              20
+              5,
+              25
             ],
             "c": [
-              1,
-              20
+              10,
+              35
             ],
             "d": [
-              1,
-              20
+              15,
+              45
             ],
             "e": [
-              1,
-              20
+              20,
+              55
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "c"
+          "answer_formula": "c",
+          "constraints_note": "enforce a <= b <= c <= d <= e"
         },
         {
           "id": "sp_009",
           "type": "COMPUTE",
-          "problem": "In the data set {a}, {b}, {c}, {d}, {e}, {a}, {b}, {c}, what is the mode?",
+          "problem": "In the data set {a}, {b}, {a}, {c}, {a}, what is the mode?",
           "constraints": {
             "a": [
-              1,
-              8
+              2,
+              9
             ],
             "b": [
               1,
@@ -2543,23 +2612,17 @@
             "c": [
               1,
               8
-            ],
-            "d": [
-              1,
-              8
-            ],
-            "e": [
-              1,
-              8
             ]
           },
           "answer_type": "numeric",
-          "generation_note": "mode is the value that appears most among a,b,c"
+          "generation_note": "mode is the value that appears most among a,b,c",
+          "constraints_note": "a appears most often",
+          "answer_formula": "a"
         },
         {
           "id": "sp_010",
           "type": "COMPUTE",
-          "problem": "Find the mean absolute deviation (MAD) for: {a}, {b}, {c}, {d}, {e}. First find the mean, then the average distance from the mean.",
+          "problem": "Find the mean absolute deviation (MAD) for: {a}, {b}, {c}, {d}, {e}. First find the mean m = ({a}+{b}+{c}+{d}+{e})/5, then the average distance from the mean.",
           "constraints": {
             "a": [
               5,
@@ -2584,70 +2647,70 @@
           },
           "answer_type": "numeric",
           "ccss_preview": "Bridges to 7.SP.B — variability measures",
-          "answer_formula": "((abs(a-m)+abs(b-m)+abs(c-m)+abs(d-m)+abs(e-m))/5)"
+          "answer_formula": "((abs(a-(a+b+c+d+e)/5)+abs(b-(a+b+c+d+e)/5)+abs(c-(a+b+c+d+e)/5)+abs(d-(a+b+c+d+e)/5)+abs(e-(a+b+c+d+e)/5))/5)",
+          "constraints_note": "prefer values so mean is a whole number"
         },
         {
           "id": "sp_011",
-          "type": "APPLY",
+          "type": "COMPUTE",
           "context": "weather",
-          "problem": "Daily high temperatures for a week: {a}, {b}, {c}, {d}, {e}, {f}, {g}°F. Find the mean, median, and range. Which measure best describes a typical day?",
+          "problem": "Find the median of the ordered list {a}, {b}, {c}, {d}, {e}.",
           "constraints": {
             "a": [
-              55,
-              95
+              1,
+              10
             ],
             "b": [
-              55,
-              95
+              5,
+              15
             ],
             "c": [
-              55,
-              95
+              10,
+              20
             ],
             "d": [
-              55,
-              95
+              15,
+              25
             ],
             "e": [
-              55,
-              95
-            ],
-            "f": [
-              55,
-              95
-            ],
-            "g": [
-              55,
-              95
+              20,
+              30
             ]
           },
-          "answer_type": "three_numeric"
+          "answer_type": "numeric",
+          "constraints_note": "values generated in nondecreasing order",
+          "answer_formula": "c"
         },
         {
           "id": "sp_012",
-          "type": "COMPUTE",
-          "problem": "The mean of {a}, {b}, {c}, and {d} is {m}. What is {d}?",
+          "type": "APPLY",
+          "context": "practice_times",
+          "problem": "Five practice times (minutes) have mean {m}. Four times are {a}, {b}, {c}, and {d}. What is the fifth time?",
           "constraints": {
+            "m": [
+              8,
+              20
+            ],
             "a": [
-              2,
-              15
+              5,
+              25
             ],
             "b": [
-              2,
-              15
+              5,
+              25
             ],
             "c": [
-              2,
-              15
-            ],
-            "m": [
               5,
-              20
+              25
+            ],
+            "d": [
+              5,
+              25
             ]
           },
           "answer_type": "numeric",
           "ccss_preview": "Connects integers to statistics",
-          "answer_formula": "4 * m - a - b - c"
+          "answer_formula": "5 * m - a - b - c - d"
         },
         {
           "id": "sp_013",
@@ -2676,28 +2739,29 @@
         },
         {
           "id": "sp_014",
-          "type": "COMPUTE",
-          "problem": "Find the range of: {a}, {b}, {c}, {d}, {e}",
+          "type": "APPLY",
+          "context": "rainfall",
+          "problem": "Rainfall (mm): {a}, {b}, {c}, {d}, {e}. What is the range?",
           "constraints": {
             "a": [
-              5,
-              25
+              0,
+              40
             ],
             "b": [
-              5,
-              25
+              0,
+              40
             ],
             "c": [
-              5,
-              25
+              0,
+              40
             ],
             "d": [
-              5,
-              25
+              0,
+              40
             ],
             "e": [
-              5,
-              25
+              0,
+              40
             ]
           },
           "answer_type": "numeric",
@@ -2811,23 +2875,26 @@
         },
         {
           "id": "pr_002",
-          "type": "COMPUTE",
-          "problem": "For every {a} hours worked, a person earns ${b}. How much do they earn per hour? How much for {c} hours?",
+          "type": "APPLY",
+          "problem": "A juice mix uses {a} parts water to {b} parts concentrate. For {c} cups of water, how many cups of concentrate are needed?",
           "constraints": {
             "a": [
               2,
               5
             ],
             "b": [
-              14,
-              60
+              1,
+              3
             ],
             "c": [
-              8,
-              40
+              6,
+              20
             ]
           },
-          "answer_type": "two_numeric"
+          "answer_type": "numeric",
+          "context": "cooking",
+          "constraints_note": "c divisible by a",
+          "answer_formula": "c * b / a"
         },
         {
           "id": "pr_003",
@@ -2857,43 +2924,50 @@
         {
           "id": "pr_004",
           "type": "APPLY",
-          "context": "shopping",
-          "problem": "{a} pounds of apples cost ${b}. At this rate, what is the cost per pound? How much would {c} pounds cost?",
+          "context": "maps",
+          "problem": "A map scale is {a} cm : {b} km. A road is {c} cm on the map. How many kilometers is the real road?",
           "constraints": {
             "a": [
-              2,
-              6
+              1,
+              3
             ],
             "b": [
-              3,
-              18
+              5,
+              20
             ],
             "c": [
-              5,
-              15
+              2,
+              12
             ]
           },
-          "answer_type": "two_numeric"
+          "answer_type": "numeric",
+          "answer_formula": "c * b / a"
         },
         {
           "id": "pr_005",
           "type": "COMPARE",
-          "problem": "Plan A: ${a} per month. Plan B: ${b} for {c} months up front. Which plan costs less per month?",
+          "problem": "Pack A is {a} for . Pack B is {c} for . Enter |b*c - d*a| to compare unit prices.",
           "constraints": {
             "a": [
-              10,
-              30
+              2,
+              8
             ],
             "b": [
-              40,
-              120
+              5,
+              24
             ],
             "c": [
-              3,
-              6
+              2,
+              8
+            ],
+            "d": [
+              5,
+              24
             ]
           },
-          "answer_type": "comparison"
+          "answer_type": "numeric",
+          "context": "shopping",
+          "answer_formula": "abs(b * c - d * a)"
         }
       ]
     },

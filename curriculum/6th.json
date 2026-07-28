@@ -187,7 +187,7 @@
         {
           "id": "df_008",
           "type": "COMPARE",
-          "problem": "Which is greater: {a}/{b} ÷ {c}/{d} or {a}/{b} ÷ {e}/{f}?",
+          "problem": "How much greater is one quotient than the other: {a}/{b} ÷ {c}/{d} versus {a}/{b} ÷ {e}/{f}?",
           "constraints": {
             "a": [
               2,
@@ -214,12 +214,14 @@
               8
             ]
           },
-          "answer_type": "comparison"
+          "answer_type": "numeric",
+          "answer_formula": "abs((a * d) / (b * c) - (a * f) / (b * e))"
         },
         {
           "id": "df_009",
-          "type": "COMPUTE",
-          "problem": "Compute {a}/{b} ÷ {c}/{d}.",
+          "type": "APPLY",
+          "context": "garden",
+          "problem": "A garden bed is {a}/{b} of a square meter. Each seedling needs {c}/{d} square meter. How many whole seedlings fit?",
           "constraints": {
             "a": [
               2,
@@ -238,13 +240,14 @@
               6
             ]
           },
-          "answer_type": "fraction_simplified",
-          "answer_formula": "(a/b) / (c/d)"
+          "constraints_note": "(a*d) divisible by (b*c); answer is a whole number",
+          "answer_type": "numeric",
+          "answer_formula": "(a * d) / (b * c)"
         },
         {
           "id": "df_010",
-          "type": "IDENTIFY",
-          "problem": "Without calculating, will {a}/{b} ÷ {c}/{d} be greater or less than {a}/{b}?",
+          "type": "COMPUTE",
+          "problem": "How much greater is {a}/{b} ÷ {c}/{d} than {a}/{b}?",
           "constraints": {
             "a": [
               2,
@@ -263,7 +266,8 @@
               4
             ]
           },
-          "answer_type": "comparison"
+          "answer_type": "numeric",
+          "answer_formula": "abs((a * d) / (b * c) - a / b)"
         }
       ]
     },
@@ -334,11 +338,11 @@
               144
             ],
             "b": [
-              -12,
+              1,
               12
             ]
           },
-          "constraints_note": "b != 0, a divisible by b",
+          "constraints_note": "a divisible by b",
           "answer_type": "numeric",
           "answer_formula": "a / b"
         },
@@ -376,16 +380,17 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a + b - c - d"
+          "answer_formula": "a - b"
         },
         {
           "id": "int_007",
-          "type": "COMPUTE",
-          "problem": "Compute {a} × {b}.",
+          "type": "APPLY",
+          "context": "elevation",
+          "problem": "A hiker descends {a} meters each hour for {b} hours. What is the total elevation change?",
           "constraints": {
             "a": [
-              -15,
-              -2
+              2,
+              15
             ],
             "b": [
               2,
@@ -393,12 +398,12 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a * b"
+          "answer_formula": "-a * b"
         },
         {
           "id": "int_008",
           "type": "COMPARE",
-          "problem": "Which is greatest: {a}, {b}, {c}, or {d}?",
+          "problem": "How much greater is the greatest of {a}, {b}, {c}, {d} than the least?",
           "constraints": {
             "a": [
               -20,
@@ -417,21 +422,26 @@
               20
             ]
           },
-          "answer_type": "comparison"
+          "answer_type": "numeric",
+          "answer_formula": "max(a, b, c, d) - min(a, b, c, d)"
         },
         {
           "id": "int_009",
           "type": "REVERSE",
-          "problem": "Find the missing integer in __ × {a} = ? (the product is a whole-number multiple of {a}).",
+          "problem": "Find the missing factor: __ × {a} = {p}",
           "constraints": {
             "a": [
               -8,
               -2
             ],
-            "product_note": "a * random(-8,8)"
+            "p": [
+              -64,
+              64
+            ]
           },
+          "constraints_note": "p divisible by a, p != 0",
           "answer_type": "numeric",
-          "answer_formula": "product / a"
+          "answer_formula": "p / a"
         },
         {
           "id": "int_010",
@@ -540,7 +550,7 @@
         {
           "id": "rp_003",
           "type": "COMPARE",
-          "problem": "Compare {a} × {d} and {b} × {c}. Are the ratios {a}:{b} and {c}:{d} equivalent?",
+          "problem": "Find |{a}×{d} - {b}×{c}|. If the ratios {a}:{b} and {c}:{d} are equivalent this is 0.",
           "constraints": {
             "a": [
               2,
@@ -559,7 +569,8 @@
               27
             ]
           },
-          "answer_type": "comparison"
+          "answer_type": "numeric",
+          "answer_formula": "abs(a * d - b * c)"
         },
         {
           "id": "rp_004",
@@ -611,7 +622,7 @@
         {
           "id": "rp_006",
           "type": "COMPARE",
-          "problem": "Store A: {a} items for ${b}. Store B: {c} items for ${d}. Which is the better deal?",
+          "problem": "Store A: {a} items for ${b}. Store B: {c} items for ${d}. How much greater is one store's price per item than the other's?",
           "constraints": {
             "a": [
               3,
@@ -630,7 +641,8 @@
               30
             ]
           },
-          "answer_type": "comparison"
+          "answer_type": "numeric",
+          "answer_formula": "abs(b / a - d / c)"
         },
         {
           "id": "rp_007",
@@ -694,7 +706,7 @@
         {
           "id": "rp_010",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student says the unit rate for {a} items costing ${b} is wrong (they multiplied price by quantity). Is that right? What is the correct unit rate?",
+          "problem": "A student says the unit price for {a} items costing  is ×{b}. What is the correct unit price in dollars?",
           "constraints": {
             "a": [
               4,
@@ -706,8 +718,10 @@
             ]
           },
           "generation_note": "c = b * a (wrong — multiplied instead of divided)",
-          "answer_type": "boolean_plus_numeric",
-          "answer_formula": "b / a"
+          "answer_type": "numeric",
+          "answer_formula": "b / a",
+          "context": "shopping",
+          "constraints_note": "b divisible by a"
         },
         {
           "id": "rp_011",
@@ -829,7 +843,7 @@
         {
           "id": "eq_005",
           "type": "COMPUTE",
-          "problem": "Solve: x - {a} = {b}.",
+          "problem": "Solve: {a} + x = {b}",
           "constraints": {
             "a": [
               5,
@@ -841,7 +855,7 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "b + a"
+          "answer_formula": "b - a"
         },
         {
           "id": "eq_006",
@@ -864,8 +878,9 @@
         },
         {
           "id": "eq_007",
-          "type": "COMPUTE",
-          "problem": "Solve: {a}x = {b}.",
+          "type": "APPLY",
+          "context": "markers",
+          "problem": "Markers come in packs of {a}. You need {b} markers. How many packs do you need? Solve: {a}x = {b}",
           "constraints": {
             "a": [
               3,
@@ -876,7 +891,7 @@
               81
             ]
           },
-          "generation_note": "one of w, r, s = b/a exactly",
+          "constraints_note": "b divisible by a",
           "answer_type": "numeric",
           "answer_formula": "b / a"
         },
@@ -918,8 +933,9 @@
         },
         {
           "id": "eq_010",
-          "type": "COMPUTE",
-          "problem": "Solve: x + {a} = {b}.",
+          "type": "APPLY",
+          "context": "elevator",
+          "problem": "An elevator starts on floor {b} and goes down {a} floors to floor x. Solve: x + {a} = {b}. What floor is it on now?",
           "constraints": {
             "a": [
               10,
@@ -935,8 +951,9 @@
         },
         {
           "id": "eq_011",
-          "type": "COMPUTE",
-          "problem": "Solve: x - {a} = {b}",
+          "type": "APPLY",
+          "context": "savings",
+          "problem": "After spending ${a}, Maya has ${b} left. Solve: x - {a} = {b}. How much did she start with?",
           "constraints": {
             "a": [
               5,
@@ -1102,7 +1119,7 @@
         {
           "id": "exp_007",
           "type": "COMPARE",
-          "problem": "Evaluate both expressions when n = {c}: Expression A: {a}n + {b}. Expression B: {d}n - {e}. Which is greater?",
+          "problem": "Evaluate both expressions when n = {c}: Expression A: {a}n + {b}. Expression B: {d}n - {e}. How much greater is one than the other?",
           "constraints": {
             "a": [
               2,
@@ -1125,7 +1142,8 @@
               10
             ]
           },
-          "answer_type": "comparison"
+          "answer_type": "numeric",
+          "answer_formula": "abs((a * c + b) - (d * c - e))"
         },
         {
           "id": "exp_008",
@@ -1152,7 +1170,7 @@
         {
           "id": "exp_009",
           "type": "COMPUTE",
-          "problem": "Evaluate {a}x - {b} when x = {c}.",
+          "problem": "Evaluate {a}(x - {b}) when x = {c}",
           "constraints": {
             "a": [
               2,
@@ -1168,7 +1186,7 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a * c - b"
+          "answer_formula": "a * (c - b)"
         }
       ]
     },
@@ -1279,21 +1297,25 @@
         {
           "id": "geo_006",
           "type": "REVERSE",
-          "problem": "A triangle with base {a} has a known whole-number area. What is its height?",
+          "problem": "A triangle has base {a} cm and area {area} square cm. What is its height in cm?",
           "constraints": {
             "a": [
               4,
               20
             ],
-            "area_note": "0.5*a*random(3,14)"
+            "area": [
+              12,
+              120
+            ]
           },
+          "constraints_note": "2*area divisible by a (whole-number height)",
           "answer_type": "numeric",
           "answer_formula": "2 * area / a"
         },
         {
           "id": "geo_007",
           "type": "COMPARE",
-          "problem": "Shape A: triangle base {a} height {b}. Shape B: parallelogram base {c} height {d}. Which has greater area?",
+          "problem": "Shape A: triangle base {a} height {b}. Shape B: parallelogram base {c} height {d}. How much greater is the larger area?",
           "constraints": {
             "a": [
               6,
@@ -1312,7 +1334,8 @@
               14
             ]
           },
-          "answer_type": "comparison"
+          "answer_type": "numeric",
+          "answer_formula": "abs(0.5 * a * b - c * d)"
         },
         {
           "id": "geo_008",
@@ -1402,8 +1425,9 @@
         },
         {
           "id": "cp_003",
-          "type": "COMPUTE",
-          "problem": "Find the distance between ({x}, {a}) and ({x}, {b}).",
+          "type": "APPLY",
+          "context": "map",
+          "problem": "On a map, points are ({x},{a}) and ({x},{b}). Each unit is {s} miles. What is the real distance in miles?",
           "constraints": {
             "x": [
               -6,
@@ -1416,9 +1440,13 @@
             "b": [
               1,
               8
+            ],
+            "s": [
+              2,
+              10
             ]
           },
-          "answer_formula": "abs(b-a)",
+          "answer_formula": "abs(b - a) * s",
           "answer_type": "numeric"
         },
         {
@@ -1450,7 +1478,7 @@
         {
           "id": "cp_005",
           "type": "COMPUTE",
-          "problem": "A rectangle has vertices at ({a},{b}), ({c},{b}), ({c},{d}), ({a},{d}). Find its perimeter and area.",
+          "problem": "A rectangle has vertices at ({a},{b}), ({c},{b}), ({c},{d}), ({a},{d}). Find its area.",
           "constraints": {
             "a": [
               -6,
@@ -1469,7 +1497,8 @@
               6
             ]
           },
-          "answer_type": "two_numeric"
+          "answer_type": "numeric",
+          "answer_formula": "abs(c - a) * abs(d - b)"
         },
         {
           "id": "cp_006",
@@ -1598,13 +1627,14 @@
               30
             ]
           },
+          "constraints_note": "values generated already sorted: a <= b <= c <= d <= e",
           "answer_type": "numeric",
           "answer_formula": "c"
         },
         {
           "id": "sp_003",
           "type": "COMPUTE",
-          "problem": "Find the mode and range of: {a}, {b}, {c}, {a}, {d}, {b}",
+          "problem": "Find the range of: {a}, {b}, {c}, {a}, {d}, {b}",
           "constraints": {
             "a": [
               1,
@@ -1623,7 +1653,8 @@
               20
             ]
           },
-          "answer_type": "two_numeric"
+          "answer_type": "numeric",
+          "answer_formula": "max(a, b, c, d) - min(a, b, c, d)"
         },
         {
           "id": "sp_004",
@@ -1706,13 +1737,14 @@
               20
             ]
           },
+          "constraints_note": "values generated already sorted: a <= b <= c <= d <= e",
           "answer_type": "numeric",
           "answer_formula": "c"
         },
         {
           "id": "sp_007",
           "type": "COMPARE",
-          "problem": "Group A mean = {a}, median = {b}. Group B mean = {c}, median = {d}. Which group has more consistent data?",
+          "problem": "Group A mean = {a}, median = {b}. Group B mean = {c}, median = {d}. Find the absolute difference between the |mean − median| gaps.",
           "constraints": {
             "a": [
               60,
@@ -1731,7 +1763,8 @@
               85
             ]
           },
-          "answer_type": "comparison"
+          "answer_type": "numeric",
+          "answer_formula": "abs(abs(a - b) - abs(c - d))"
         },
         {
           "id": "sp_008",

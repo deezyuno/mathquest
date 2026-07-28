@@ -23,27 +23,20 @@
         {
           "id": "le_001",
           "type": "COMPUTE",
-          "problem": "Find the slope of the line through ({a}, {b}) and ({c}, {d}).",
+          "context": "construction",
+          "problem": "A wheelchair ramp rises {b} inches over a horizontal run of {a} inches. What is the slope of the ramp?",
           "constraints": {
             "a": [
-              -6,
-              6
+              12,
+              60
             ],
             "b": [
-              -8,
-              8
-            ],
-            "c": [
-              -6,
-              6
-            ],
-            "d": [
-              -8,
-              8
+              1,
+              12
             ]
           },
-          "constraints_note": "a != c",
-          "answer_formula": "(d-b)/(c-a)",
+          "constraints_note": "a != 0",
+          "answer_formula": "b / a",
           "answer_type": "numeric"
         },
         {
@@ -84,7 +77,7 @@
         {
           "id": "le_004",
           "type": "COMPUTE",
-          "problem": "Does the line through ({a},{b}) and ({c},{d}) have the same slope as y = {m}x + {k}? Compare the slopes.",
+          "problem": "How much greater is the slope through ({a},{b}) and ({c},{d}) than the slope of y = {m}x + {k}? Enter the absolute difference.",
           "constraints": {
             "a": [
               0,
@@ -111,25 +104,31 @@
               8
             ]
           },
-          "answer_type": "comparison"
+          "constraints_note": "a != c",
+          "answer_type": "numeric",
+          "answer_formula": "abs((d - b) / (c - a) - m)"
         },
         {
           "id": "le_005",
           "type": "COMPUTE",
-          "context": "distance",
-          "problem": "A car travels at {m} mph. How far does it travel in {t} hours?",
+          "context": "money",
+          "problem": "A linear cost function is C(x) = {m}x + {b}, where x is the number of items. What is the cost for {t} items?",
           "constraints": {
             "m": [
-              30,
-              70
+              3,
+              20
+            ],
+            "b": [
+              10,
+              50
             ],
             "t": [
               2,
-              6
+              12
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "m * t"
+          "answer_formula": "m * t + b"
         },
         {
           "id": "le_006",
@@ -155,8 +154,8 @@
         },
         {
           "id": "le_007",
-          "type": "COMPARE",
-          "problem": "Line A: y = {m1}x + {b1}. Line B: y = {m2}x + {b2}. Which line is steeper? Do they intersect?",
+          "type": "COMPUTE",
+          "problem": "Line A: y = {m1}x + {b1}. Line B: y = {m2}x + {b2}. How much greater is |m1| than |m2|? Enter the absolute difference of the absolute slopes.",
           "constraints": {
             "m1": [
               -4,
@@ -175,7 +174,8 @@
               6
             ]
           },
-          "answer_type": "comparison"
+          "answer_type": "numeric",
+          "answer_formula": "abs(abs(m1) - abs(m2))"
         },
         {
           "id": "le_008",
@@ -226,20 +226,21 @@
         },
         {
           "id": "le_010",
-          "type": "COMPUTE",
-          "problem": "A line passes through ({a}, {b}) with slope {m}. What is y when x = 0?",
+          "type": "APPLY",
+          "context": "maps",
+          "problem": "A trail rises with slope {m} feet per mile. At mile marker {a} the elevation is {b} feet. What is the elevation at the trailhead (x = 0)?",
           "constraints": {
             "a": [
-              -4,
-              4
+              1,
+              6
             ],
             "b": [
-              -8,
-              8
+              200,
+              800
             ],
             "m": [
-              -3,
-              3
+              20,
+              80
             ]
           },
           "answer_type": "numeric",
@@ -248,7 +249,7 @@
         {
           "id": "le_011",
           "type": "COMPUTE",
-          "problem": "Find f({c}) if f(x) = {m}x + {b}.",
+          "problem": "A linear function has slope {m} and y-intercept {b}. By how much does f({c}) exceed f(0)?",
           "constraints": {
             "m": [
               -5,
@@ -259,33 +260,39 @@
               10
             ],
             "c": [
-              -6,
-              6
+              1,
+              8
             ]
           },
+          "constraints_note": "m != 0",
           "answer_type": "numeric",
-          "answer_formula": "m * c + b"
+          "answer_formula": "m * c"
         },
         {
           "id": "le_012",
           "type": "COMPUTE",
-          "problem": "Solve for x: {a}x + {b} = {c}",
+          "problem": "Solve the system: {a}x + {b}y = {c} and y = {d}. What is x?",
           "constraints": {
             "a": [
               2,
               8
             ],
             "b": [
-              -20,
-              20
+              -6,
+              6
             ],
             "c": [
               -40,
               60
+            ],
+            "d": [
+              -5,
+              10
             ]
           },
+          "constraints_note": "a != 0",
           "answer_type": "numeric",
-          "answer_formula": "(c - b) / a"
+          "answer_formula": "(c - b * d) / a"
         }
       ]
     },
@@ -323,42 +330,35 @@
         },
         {
           "id": "sys_002",
-          "type": "COMPUTE",
-          "problem": "Solve: y = {a}x + {b} and y = {c}x + {d}. What is the x-coordinate of the solution?",
+          "type": "APPLY",
+          "context": "money",
+          "problem": "Account A grows as y = {a}x + {b} and Account B as y = {c}x + {d}, where x is months. After how many months are the balances equal?",
           "constraints": {
             "a": [
-              1,
-              4
+              5,
+              20
             ],
             "b": [
-              1,
-              4
+              50,
+              200
             ],
             "c": [
-              5,
-              30
+              10,
+              40
             ],
             "d": [
-              1,
-              4
-            ],
-            "e": [
-              1,
-              4
-            ],
-            "f": [
-              5,
-              30
+              10,
+              100
             ]
           },
-          "answer_type": "numeric",
           "constraints_note": "a != c",
+          "answer_type": "numeric",
           "answer_formula": "(d - b) / (a - c)"
         },
         {
           "id": "sys_003",
-          "type": "COMPARE",
-          "problem": "Lines y = {a}x + {b} and y = {a}x + {c}. Are they parallel or the same line?",
+          "type": "COMPUTE",
+          "problem": "Lines y = {a}x + {b} and y = {a}x + {c} are parallel. How much greater is intercept b than intercept c? Enter the absolute difference.",
           "constraints": {
             "a": [
               1,
@@ -373,14 +373,14 @@
               8
             ]
           },
-          "constraints_note": "compare b and c",
-          "answer_type": "comparison"
+          "answer_type": "numeric",
+          "answer_formula": "abs(b - c)"
         },
         {
           "id": "sys_004",
           "type": "APPLY",
           "context": "tickets",
-          "problem": "Adult tickets cost ${a} and child tickets cost ${b}. A total of {c} tickets were sold for a known total revenue. How many of each were sold?",
+          "problem": "Adult tickets cost ${a} and child tickets cost ${b}. A total of {c} tickets were sold for ${r}. How many adult tickets were sold?",
           "constraints": {
             "a": [
               8,
@@ -394,15 +394,20 @@
               20,
               50
             ],
-            "d_note": "a*x + b*(c-x) for valid x"
+            "r": [
+              150,
+              600
+            ]
           },
-          "answer_type": "two_numeric"
+          "constraints_note": "a != b; r between b*c and a*c; whole-number adults",
+          "answer_type": "numeric",
+          "answer_formula": "(r - b * c) / (a - b)"
         },
         {
           "id": "sys_005",
           "type": "APPLY",
           "context": "mixing",
-          "problem": "Solution A is {a}% acid. Solution B is {b}% acid. You need {c} liters of {d}% acid. How many liters of each?",
+          "problem": "Solution A is {a}% acid and Solution B is {b}% acid. You need {c} liters of {d}% acid. How many liters of Solution A should you use?",
           "constraints": {
             "a": [
               10,
@@ -421,7 +426,9 @@
               60
             ]
           },
-          "answer_type": "two_numeric"
+          "constraints_note": "a != b; d between a and b for a positive mix",
+          "answer_type": "numeric",
+          "answer_formula": "c * (d - b) / (a - b)"
         },
         {
           "id": "sys_006",
@@ -479,6 +486,14 @@
           "type": "COMPUTE",
           "problem": "If (x, y) = ({a}, {b}) satisfies x + y = {s} and x - y = {t}, verify: what is x + y?",
           "constraints": {
+            "a": [
+              1,
+              10
+            ],
+            "b": [
+              -5,
+              5
+            ],
             "s": [
               0,
               10
@@ -546,19 +561,20 @@
         {
           "id": "fn_002",
           "type": "COMPUTE",
-          "problem": "Given f(x) = {a}x + {b}, find f({c}).",
+          "context": "weather",
+          "problem": "Temperature follows T(h) = {a}h + {b}, where h is hours after noon. Find T({c}).",
           "constraints": {
             "a": [
-              2,
-              6
+              -3,
+              4
             ],
             "b": [
-              -10,
-              10
+              50,
+              90
             ],
             "c": [
-              -5,
-              8
+              1,
+              6
             ]
           },
           "answer_type": "numeric",
@@ -566,8 +582,8 @@
         },
         {
           "id": "fn_003",
-          "type": "COMPARE",
-          "problem": "f(x) = {a}x + {b} and g(x) = {c}x + {d}. For x = {e}, which function has a greater value?",
+          "type": "COMPUTE",
+          "problem": "f(x) = {a}x + {b} and g(x) = {c}x + {d}. For x = {e}, how much greater is f({e}) than g({e})? Enter the absolute difference.",
           "constraints": {
             "a": [
               1,
@@ -590,7 +606,8 @@
               8
             ]
           },
-          "answer_type": "comparison"
+          "answer_type": "numeric",
+          "answer_formula": "abs((a * e + b) - (c * e + d))"
         },
         {
           "id": "fn_004",
@@ -811,8 +828,8 @@
         },
         {
           "id": "pt_006",
-          "type": "COMPARE",
-          "problem": "A triangle has sides {a}, {b}, and {c}. Does a² + b² = c²?",
+          "type": "COMPUTE",
+          "problem": "A triangle has sides {a}, {b}, and {c}. How far is a² + b² from c²? Enter the absolute difference |a² + b² − c²|.",
           "constraints": {
             "a": [
               3,
@@ -827,8 +844,8 @@
               17
             ]
           },
-          "generation_note": "half are Pythagorean triples (yes), half are not",
-          "answer_type": "comparison"
+          "answer_type": "numeric",
+          "answer_formula": "abs(a*a + b*b - c*c)"
         },
         {
           "id": "pt_007",
@@ -851,7 +868,8 @@
         {
           "id": "pt_008",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student finds the hypotenuse for legs {a} and {b} incorrectly by adding a + b. What is the correct answer?",
+          "context": "drone",
+          "problem": "A drone flies {a} meters east and {b} meters straight up. A student incorrectly adds a + b for the straight-line distance from the start. What is the correct distance?",
           "constraints": {
             "a": [
               3,
@@ -868,21 +886,21 @@
         },
         {
           "id": "pt_009",
-          "type": "COMPUTE",
-          "problem": "A right triangle has legs {a} and {b}. Find the hypotenuse.",
+          "type": "APPLY",
+          "context": "sports",
+          "problem": "A soccer field is {a} yards long and {b} yards wide. How long is the diagonal from one corner to the opposite corner?",
           "constraints": {
             "a": [
-              3,
-              12
+              80,
+              120
             ],
             "b": [
-              4,
-              12
+              40,
+              80
             ]
           },
-          "constraints_note": "use Pythagorean triples for whole-number answers",
           "answer_formula": "sqrt(a*a + b*b)",
-          "answer_type": "numeric"
+          "answer_type": "decimal_1dp"
         }
       ]
     },
@@ -920,7 +938,7 @@
         {
           "id": "tr_002",
           "type": "COMPUTE",
-          "problem": "Reflect ({a}, {b}) across the x-axis. What is the new y-coordinate?",
+          "problem": "Rotate point ({a}, {b}) 90° clockwise about the origin. What is the new x-coordinate?",
           "constraints": {
             "a": [
               -8,
@@ -932,12 +950,12 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "-b"
+          "answer_formula": "b"
         },
         {
           "id": "tr_003",
           "type": "COMPUTE",
-          "problem": "Reflect ({a}, {b}) across the y-axis. What is the new x-coordinate?",
+          "problem": "Dilate point ({a}, {b}) by scale factor {k} from the origin. What is the new y-coordinate?",
           "constraints": {
             "a": [
               -8,
@@ -946,10 +964,14 @@
             "b": [
               -8,
               8
+            ],
+            "k": [
+              2,
+              5
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "-a"
+          "answer_formula": "k * b"
         },
         {
           "id": "tr_004",
@@ -1024,6 +1046,14 @@
           "context": "design",
           "problem": "A point at ({a},{b}) is translated by ({tx},{ty}) then reflected across the x-axis. What is its final y-coordinate?",
           "constraints": {
+            "a": [
+              -6,
+              6
+            ],
+            "b": [
+              -6,
+              6
+            ],
             "tx": [
               -3,
               3
@@ -1084,16 +1114,17 @@
         },
         {
           "id": "sn_002",
-          "type": "REPRESENT",
-          "problem": "Write {a} × 10^{b} in standard form.",
+          "type": "APPLY",
+          "context": "science",
+          "problem": "A bacterium measures {a} × 10^{b} meters across. Write this length in standard form.",
           "constraints": {
             "a": [
               1,
               9
             ],
             "b": [
-              -5,
-              6
+              -8,
+              -2
             ]
           },
           "answer_type": "numeric",
@@ -1151,8 +1182,8 @@
         },
         {
           "id": "sn_005",
-          "type": "COMPARE",
-          "problem": "Which is greater: {a} × 10^{b} or {c} × 10^{d}?",
+          "type": "COMPUTE",
+          "problem": "How much greater is {a} × 10^{b} than {c} × 10^{d}? Enter the absolute difference.",
           "constraints": {
             "a": [
               1,
@@ -1171,7 +1202,8 @@
               9
             ]
           },
-          "answer_type": "comparison"
+          "answer_type": "numeric",
+          "answer_formula": "abs(a * pow(10, b) - c * pow(10, d))"
         },
         {
           "id": "sn_006",
@@ -1230,30 +1262,39 @@
               3
             ]
           },
-          "answer_type": "fraction_simplified",
+          "answer_type": "numeric",
           "answer_formula": "1 / pow(a, b)"
         },
         {
           "id": "sn_009",
           "type": "COMPUTE",
-          "problem": "Evaluate: {a}^{b}",
+          "problem": "Compute ({a} × 10^{c}) ÷ ({b} × 10^{d}) and write the result in standard form.",
           "constraints": {
             "a": [
               2,
-              5
+              9
             ],
             "b": [
-              2,
-              4
+              1,
+              5
+            ],
+            "c": [
+              4,
+              10
+            ],
+            "d": [
+              1,
+              6
             ]
           },
+          "constraints_note": "b != 0",
           "answer_type": "numeric",
-          "answer_formula": "pow(a, b)"
+          "answer_formula": "(a / b) * pow(10, c - d)"
         },
         {
           "id": "sn_010",
           "type": "COMPUTE",
-          "problem": "Write {a} × 10^{b} as a standard number.",
+          "problem": "Compute ({a} × 10^{b}) + ({c} × 10^{b}) and write the result in standard form.",
           "constraints": {
             "a": [
               1,
@@ -1261,11 +1302,15 @@
             ],
             "b": [
               2,
-              5
+              6
+            ],
+            "c": [
+              1,
+              9
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a * pow(10, b)"
+          "answer_formula": "(a + c) * pow(10, b)"
         }
       ]
     },
@@ -1277,10 +1322,17 @@
       "templates": [
         {
           "id": "bv_001",
-          "type": "COMPARE",
-          "problem": "As x increases, y increases. Is the association positive or negative?",
-          "constraints": {},
-          "answer_type": "comparison"
+          "type": "COMPUTE",
+          "problem": "A scatter plot's line of best fit has slope {m}. How much greater than 0 is this slope? Enter the absolute value of the slope.",
+          "constraints": {
+            "m": [
+              -8,
+              8
+            ]
+          },
+          "constraints_note": "m != 0",
+          "answer_type": "numeric",
+          "answer_formula": "abs(m)"
         },
         {
           "id": "bv_002",
@@ -1309,6 +1361,14 @@
           "type": "COMPUTE",
           "problem": "A line of best fit is y = {m}x + {b} for hours studied (x) and test score (y). What is the predicted score for {c} hours?",
           "constraints": {
+            "m": [
+              2,
+              10
+            ],
+            "b": [
+              40,
+              70
+            ],
             "c": [
               2,
               10
@@ -1336,10 +1396,20 @@
         },
         {
           "id": "bv_005",
-          "type": "COMPARE",
-          "problem": "Scatter plot A has a tight cluster around the line of best fit. Scatter plot B has points spread far from it. Which shows a stronger association?",
-          "constraints": {},
-          "answer_type": "comparison"
+          "type": "COMPUTE",
+          "problem": "Scatter plot A has an average residual of {a}. Scatter plot B has an average residual of {b}. How much smaller is A's average residual than B's? Enter the absolute difference.",
+          "constraints": {
+            "a": [
+              1,
+              5
+            ],
+            "b": [
+              6,
+              20
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "abs(b - a)"
         },
         {
           "id": "bv_006",
@@ -1366,7 +1436,8 @@
         {
           "id": "bv_007",
           "type": "COMPUTE",
-          "problem": "Using y = {m}x + {b}, find y when x = {c}.",
+          "context": "residual",
+          "problem": "A line of best fit is y = {m}x + {b}. At x = {c} the observed y-value is {obs}. What is the residual (observed − predicted)?",
           "constraints": {
             "m": [
               2,
@@ -1379,15 +1450,19 @@
             "c": [
               3,
               12
+            ],
+            "obs": [
+              20,
+              120
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "m * c + b"
+          "answer_formula": "obs - (m * c + b)"
         },
         {
           "id": "bv_008",
           "type": "COMPUTE",
-          "problem": "Using y = {m}x + {b}, find x when y = {target}.",
+          "problem": "A line of best fit is y = {m}x + {b}. How much does the predicted y-value increase when x increases by {h}?",
           "constraints": {
             "m": [
               2,
@@ -1397,13 +1472,13 @@
               10,
               40
             ],
-            "target": [
-              30,
-              100
+            "h": [
+              1,
+              5
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "(target - b) / m"
+          "answer_formula": "m * h"
         }
       ]
     }
