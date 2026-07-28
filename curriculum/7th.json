@@ -553,7 +553,7 @@
         {
           "id": "rn_011",
           "type": "COMPUTE",
-          "problem": "Compute {a}/{b} + {c}/{d}. Enter the numerator of the unsimplified sum over common denominator b×d.",
+          "problem": "Compute {a}/{b} + {c}/{d}.",
           "constraints": {
             "a": [
               1,
@@ -572,8 +572,8 @@
               9
             ]
           },
-          "answer_type": "numeric",
-          "answer_formula": "a * d + c * b"
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a * d + c * b) / (b * d)"
         },
         {
           "id": "rn_012",
@@ -774,13 +774,13 @@
               10
             ],
             "p": [
-              36,
+              48,
               120
             ]
           },
-          "constraints_note": "p > 2*a and (p - 2*a) divisible by 6",
           "answer_type": "numeric",
-          "answer_formula": "(p - 2 * a) / 6"
+          "answer_formula": "(p - 2 * a) / 6",
+          "generation_note": "require (p - 2*a) divisible by 6 and width > 0"
         },
         {
           "id": "ee_009",

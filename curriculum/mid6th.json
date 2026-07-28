@@ -180,27 +180,28 @@
         {
           "id": "rn_010",
           "type": "COMPARE",
-          "problem": "How much greater is {a}/{b} than {c}/{d}? Enter the numerator of the difference over denominator {b}×{d}.",
+          "problem": "How much greater is {a}/{b} than {c}/{d}?",
           "constraints": {
             "a": [
-              1,
+              5,
               9
             ],
             "b": [
               2,
-              9
+              4
             ],
             "c": [
               1,
-              9
+              2
             ],
             "d": [
-              2,
+              5,
               9
             ]
           },
-          "answer_type": "numeric",
-          "answer_formula": "a * d - c * b"
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a * d - c * b) / (b * d)",
+          "generation_note": "ranges enforce a/b > c/d so difference is positive"
         },
         {
           "id": "rn_011",
@@ -889,7 +890,7 @@
         {
           "id": "rr_005",
           "type": "COMPARE",
-          "problem": "Store A sells {a} ounces for . Store B sells {c} ounces for . Enter |b*c - d*a|.",
+          "problem": "Store A sells {a} ounces for ${b}. Store B sells {c} ounces for ${d}. How much greater is one store's price per ounce than the other's?",
           "constraints": {
             "a": [
               2,
@@ -897,7 +898,7 @@
             ],
             "b": [
               4,
-              20
+              24
             ],
             "c": [
               2,
@@ -905,12 +906,13 @@
             ],
             "d": [
               4,
-              20
+              24
             ]
           },
           "answer_type": "numeric",
           "context": "shopping",
-          "answer_formula": "abs(b * c - d * a)"
+          "answer_formula": "abs(b / a - d / c)",
+          "generation_note": "a != 0 and c != 0 (guaranteed); prefer values with clean tenths"
         },
         {
           "id": "rr_006",
@@ -1390,7 +1392,7 @@
           "problem": "A rectangle has perimeter {a} cm and width {b} cm. What is its length?",
           "constraints": {
             "a": [
-              20,
+              40,
               80
             ],
             "b": [
@@ -1399,7 +1401,8 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a / 2 - b"
+          "answer_formula": "a / 2 - b",
+          "generation_note": "require a even so length is a whole number; a/2 > b enforced by ranges"
         },
         {
           "id": "ee_009",
@@ -1422,7 +1425,7 @@
           },
           "answer_type": "numeric",
           "answer_formula": "(c + b) / a",
-          "constraints_note": "(c+b) divisible by a; x whole"
+          "generation_note": "require (c + b) divisible by a and x = (c+b)/a >= 1"
         },
         {
           "id": "ee_010",
@@ -2144,7 +2147,7 @@
           "problem": "Point A is ({a}, {b}) and point B is ({c}, {d}). How much greater is A's x-coordinate than B's?",
           "constraints": {
             "a": [
-              -8,
+              1,
               8
             ],
             "b": [
@@ -2153,7 +2156,7 @@
             ],
             "c": [
               -8,
-              8
+              0
             ],
             "d": [
               -8,
@@ -2161,7 +2164,8 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a - c"
+          "answer_formula": "a - c",
+          "generation_note": "a > c enforced by ranges"
         },
         {
           "id": "cp_008",
@@ -2946,7 +2950,7 @@
         {
           "id": "pr_005",
           "type": "COMPARE",
-          "problem": "Pack A is {a} for . Pack B is {c} for . Enter |b*c - d*a| to compare unit prices.",
+          "problem": "Pack A is {a} items for ${b}. Pack B is {c} items for ${d}. How much greater is one pack's price per item than the other's?",
           "constraints": {
             "a": [
               2,
@@ -2967,7 +2971,8 @@
           },
           "answer_type": "numeric",
           "context": "shopping",
-          "answer_formula": "abs(b * c - d * a)"
+          "answer_formula": "abs(b / a - d / c)",
+          "generation_note": "a != 0 and c != 0 (guaranteed)"
         }
       ]
     },

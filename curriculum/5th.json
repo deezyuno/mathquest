@@ -605,7 +605,7 @@
         {
           "id": "fas_003",
           "type": "APPLY",
-          "problem": "A recipe uses {a}/{b} cup of milk and {c}/{d} cup of cream. Enter the numerator of the total when written over denominator {b}×{d}.",
+          "problem": "A recipe uses {a}/{b} cup of milk and {c}/{d} cup of cream. How much liquid is needed in total?",
           "constraints": {
             "a": [
               1,
@@ -624,37 +624,37 @@
               8
             ]
           },
-          "constraints_note": "b != d, use unlike denominators with LCD ≤ 24",
-          "answer_type": "numeric",
-          "answer_formula": "a * d + c * b",
-          "context": "cooking"
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a * d + c * b) / (b * d)",
+          "context": "cooking",
+          "generation_note": "b != 0, d != 0 (guaranteed by ranges)"
         },
         {
           "id": "fas_004",
           "type": "APPLY",
-          "problem": "A board is {a}/{b} meter long. You cut off {c}/{d} meter. Enter the numerator of the remaining length over denominator {b}×{d}.",
+          "problem": "A board is {a}/{b} meter long. You cut off {c}/{d} meter. How much board is left?",
           "constraints": {
             "a": [
-              3,
+              5,
               8
             ],
             "b": [
               4,
-              10
+              6
             ],
             "c": [
               1,
-              4
+              2
             ],
             "d": [
-              4,
+              7,
               10
             ]
           },
-          "constraints_note": "a/b > c/d",
-          "answer_type": "numeric",
-          "answer_formula": "a * d - c * b",
-          "context": "measurement"
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a * d - c * b) / (b * d)",
+          "context": "measurement",
+          "generation_note": "ranges enforce a/b > c/d so remaining length is positive"
         },
         {
           "id": "fas_005",
@@ -720,13 +720,13 @@
         },
         {
           "type": "COMPUTE",
-          "problem": "Find {a}/{b} - {c}/{b} as a single fraction with denominator {b}. Enter the numerator.",
-          "answer_type": "numeric",
-          "answer_formula": "a - c",
+          "problem": "Find {a}/{b} - {c}/{b}.",
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a - c) / b",
           "constraints": {
             "a": [
-              3,
-              8
+              5,
+              9
             ],
             "b": [
               6,
@@ -737,8 +737,8 @@
               4
             ]
           },
-          "constraints_note": "a > c",
-          "id": "fas_008"
+          "id": "fas_008",
+          "generation_note": "a > c enforced by ranges"
         },
         {
           "id": "fas_009",
@@ -791,13 +791,13 @@
         },
         {
           "type": "COMPARE",
-          "problem": "How much greater is {a}/{b} than {c}/{b}? Enter the numerator of the difference with denominator {b}.",
-          "answer_type": "numeric",
-          "answer_formula": "a - c",
+          "problem": "How much greater is {a}/{b} than {c}/{b}?",
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a - c) / b",
           "constraints": {
             "a": [
-              3,
-              8
+              5,
+              9
             ],
             "b": [
               2,
@@ -808,8 +808,8 @@
               4
             ]
           },
-          "constraints_note": "a > c; same denominator b",
-          "id": "fas_011"
+          "id": "fas_011",
+          "generation_note": "a > c enforced by ranges"
         }
       ]
     },
@@ -978,9 +978,9 @@
         },
         {
           "type": "IDENTIFY",
-          "problem": "How much greater is {a}/{b} × {c} than {a}/{b} × {d}? Enter the numerator of the difference with denominator {b}.",
-          "answer_type": "numeric",
-          "answer_formula": "abs(a*c - a*d)",
+          "problem": "How much greater is {a}/{b} × {c} than {a}/{b} × {d}?",
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a * (c - d)) / b",
           "constraints": {
             "a": [
               1,
@@ -991,16 +991,16 @@
               8
             ],
             "c": [
-              2,
-              6
+              4,
+              8
             ],
             "d": [
-              2,
-              6
+              1,
+              3
             ]
           },
-          "constraints_note": "c != d",
-          "id": "fmd_008"
+          "id": "fmd_008",
+          "generation_note": "c > d enforced by ranges"
         },
         {
           "id": "fmd_009",

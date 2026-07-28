@@ -876,7 +876,7 @@
         {
           "id": "pl_001",
           "type": "COMPUTE",
-          "problem": "A car travels {b} miles in {a} hours, then {c} miles in the next equal time interval of {a} hours. What is the constant rate of change in miles per hour?",
+          "problem": "After {a} hours a car has traveled {b} miles. After another {a} hours, it has traveled a total of {c} miles. What was its speed during the second interval in miles per hour?",
           "constraints": {
             "a": [
               1,
@@ -887,15 +887,14 @@
               60
             ],
             "c": [
-              40,
-              120
+              80,
+              180
             ]
           },
-          "generation_note": "d, e, f = k*a,k*b,k*c for integer k or add noise",
+          "generation_note": "c > b enforced by ranges; require (c-b) divisible by a",
           "answer_type": "numeric",
           "answer_formula": "(c - b) / a",
-          "context": "travel",
-          "constraints_note": "(c-b) divisible by a; a > 0"
+          "context": "travel"
         },
         {
           "id": "pl_002",
@@ -1025,7 +1024,7 @@
         {
           "id": "pp_001",
           "type": "COMPUTE",
-          "problem": "A right triangle has legs {a} and {b} and hypotenuse {c}. Compute a² + b² - c².",
+          "problem": "Compute {a}² + {b}² − {c}².",
           "constraints": {
             "a": [
               3,
@@ -1040,7 +1039,6 @@
               25
             ]
           },
-          "constraints_note": "use Pythagorean triples so a²+b²=c² (answer 0)",
           "answer_type": "numeric",
           "answer_formula": "a*a + b*b - c*c"
         },

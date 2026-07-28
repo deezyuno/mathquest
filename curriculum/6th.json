@@ -706,7 +706,7 @@
         {
           "id": "rp_010",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student says the unit price for {a} items costing  is ×{b}. What is the correct unit price in dollars?",
+          "problem": "A student says the unit price for {a} items costing ${b} is ${a} times {b}. What is the correct unit price in dollars?",
           "constraints": {
             "a": [
               4,
@@ -717,11 +717,10 @@
               48
             ]
           },
-          "generation_note": "c = b * a (wrong — multiplied instead of divided)",
+          "generation_note": "require b divisible by a",
           "answer_type": "numeric",
           "answer_formula": "b / a",
-          "context": "shopping",
-          "constraints_note": "b divisible by a"
+          "context": "shopping"
         },
         {
           "id": "rp_011",
@@ -938,16 +937,17 @@
           "problem": "An elevator starts on floor {b} and goes down {a} floors to floor x. Solve: x + {a} = {b}. What floor is it on now?",
           "constraints": {
             "a": [
-              10,
-              30
+              5,
+              20
             ],
             "b": [
-              20,
+              25,
               60
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "b - a"
+          "answer_formula": "b - a",
+          "generation_note": "b > a enforced by ranges (positive floor)"
         },
         {
           "id": "eq_011",
