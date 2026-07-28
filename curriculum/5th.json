@@ -925,45 +925,55 @@
         {
           "id": "fas_001",
           "type": "COMPUTE",
-          "problem": "{a}/{b} + {c}/{b}",
+          "problem": "{a}/{b} + {c}/{d}",
           "constraints": {
             "a": [
               1,
-              7
+              5
             ],
             "b": [
               2,
-              12
-            ],
-            "c": [
-              1,
-              7
-            ]
-          },
-          "answer_type": "fraction_simplified",
-          "answer_formula": "(a + c) / b"
-        },
-        {
-          "id": "fas_002",
-          "type": "COMPUTE",
-          "problem": "{a}/{b} - {c}/{b}",
-          "constraints": {
-            "a": [
-              3,
-              9
-            ],
-            "b": [
-              2,
-              12
+              8
             ],
             "c": [
               1,
               5
+            ],
+            "d": [
+              3,
+              9
             ]
           },
-          "constraints_note": "a > c",
+          "generation_note": "prefer b != d (unlike denominators)",
           "answer_type": "fraction_simplified",
-          "answer_formula": "(a - c) / b"
+          "answer_formula": "(a * d + c * b) / (b * d)"
+        },
+        {
+          "id": "fas_002",
+          "type": "COMPUTE",
+          "problem": "{a}/{b} - {c}/{d}",
+          "constraints": {
+            "a": [
+              3,
+              8
+            ],
+            "b": [
+              3,
+              6
+            ],
+            "c": [
+              1,
+              3
+            ],
+            "d": [
+              4,
+              10
+            ]
+          },
+          "constraints_note": "a/b > c/d so difference is positive",
+          "generation_note": "unlike denominators; require a/b > c/d",
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a * d - c * b) / (b * d)"
         },
         {
           "id": "fas_003",
@@ -1023,85 +1033,108 @@
           "id": "fas_005",
           "type": "APPLY",
           "context": "cooking",
-          "problem": "A recipe needs {a}/{b} cup of sugar and {c}/{b} cup of brown sugar. How much sugar is needed in total?",
+          "problem": "A recipe needs {a}/{b} cup of white sugar and {c}/{d} cup of brown sugar. How much sugar is needed in all?",
           "constraints": {
             "a": [
               1,
               3
             ],
             "b": [
-              4,
-              8
+              2,
+              6
             ],
             "c": [
               1,
               3
+            ],
+            "d": [
+              3,
+              8
+            ]
+          },
+          "generation_note": "unlike denominators; b != d preferred",
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a * d + c * b) / (b * d)"
+        },
+        {
+          "id": "fas_006",
+          "type": "APPLY",
+          "context": "sports",
+          "problem": "Lia ran {a}/{b} mile before lunch and {c}/{d} mile after lunch. How far did she run in all?",
+          "constraints": {
+            "a": [
+              1,
+              3
+            ],
+            "b": [
+              2,
+              5
+            ],
+            "c": [
+              1,
+              3
+            ],
+            "d": [
+              3,
+              8
             ]
           },
           "answer_type": "fraction_simplified",
-          "answer_formula": "(a + c) / b"
-        },
-        {
-          "type": "APPLY",
-          "problem": "A rain gauge collected {a} millimeters on Monday and {b} millimeters on Tuesday. How many millimeters were collected in all?",
-          "answer_type": "numeric",
-          "answer_formula": "a + b",
-          "constraints": {
-            "a": [
-              12,
-              48
-            ],
-            "b": [
-              10,
-              40
-            ]
-          },
-          "context": "weather",
-          "id": "fas_006"
+          "answer_formula": "(a * d + c * b) / (b * d)",
+          "generation_note": "unlike denominators; 5.NF.A.2 word problem"
         },
         {
           "id": "fas_007",
           "type": "REVERSE",
-          "problem": "{a}/{b} + __ = {c}/{b}. What is the missing fraction?",
+          "problem": "{a}/{b} + __ = {c}/{d}. What is the missing fraction?",
           "constraints": {
             "a": [
               1,
-              4
+              3
             ],
             "b": [
-              5,
-              12
+              2,
+              6
             ],
             "c": [
-              5,
-              9
+              3,
+              8
+            ],
+            "d": [
+              3,
+              8
             ]
           },
-          "constraints_note": "c > a",
-          "answer_type": "fraction",
-          "answer_formula": "(c - a) / b"
+          "constraints_note": "c/d > a/b; unlike denominators preferred",
+          "generation_note": "missing = c/d - a/b; require c/d > a/b",
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(c * b - a * d) / (b * d)"
         },
         {
+          "id": "fas_008",
           "type": "COMPUTE",
-          "problem": "Find {a}/{b} - {c}/{b}.",
-          "answer_type": "fraction_simplified",
-          "answer_formula": "(a - c) / b",
+          "problem": "Find {a}/{b} - {c}/{d}.",
           "constraints": {
             "a": [
-              5,
+              4,
               9
             ],
             "b": [
-              6,
-              12
+              4,
+              6
             ],
             "c": [
               1,
-              4
+              3
+            ],
+            "d": [
+              5,
+              10
             ]
           },
-          "id": "fas_008",
-          "generation_note": "a > c enforced by ranges"
+          "generation_note": "unlike denominators; require a/b > c/d",
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a * d - c * b) / (b * d)"
         },
         {
           "id": "fas_009",
@@ -1130,49 +1163,57 @@
           "answer_formula": "(a * d + c * b) / (b * d)"
         },
         {
+          "id": "fas_010",
           "type": "APPLY",
-          "problem": "A shelter has {a} dogs. {b}/{c} of them got walks today. How many dogs got walks?",
-          "answer_type": "numeric",
-          "answer_formula": "a * b / c",
+          "context": "school",
+          "problem": "A class used {a}/{b} of a pack of paper on Monday and {c}/{d} of a pack on Tuesday. How much of the pack was used in all?",
           "constraints": {
             "a": [
-              12,
-              36
-            ],
-            "b": [
               1,
               3
             ],
-            "c": [
-              4,
-              6
-            ]
-          },
-          "constraints_note": "a divisible by c",
-          "context": "animals",
-          "id": "fas_010"
-        },
-        {
-          "type": "COMPARE",
-          "problem": "How much greater is {a}/{b} than {c}/{b}?",
-          "answer_type": "fraction_simplified",
-          "answer_formula": "(a - c) / b",
-          "constraints": {
-            "a": [
-              5,
-              9
-            ],
             "b": [
-              2,
-              12
+              4,
+              8
             ],
             "c": [
               1,
-              4
+              3
+            ],
+            "d": [
+              3,
+              6
             ]
           },
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a * d + c * b) / (b * d)",
+          "generation_note": "5.NF.A.2 unlike-denominator addition"
+        },
+        {
           "id": "fas_011",
-          "generation_note": "a > c enforced by ranges"
+          "type": "COMPARE",
+          "problem": "How much greater is {a}/{b} than {c}/{d}?",
+          "constraints": {
+            "a": [
+              3,
+              8
+            ],
+            "b": [
+              3,
+              6
+            ],
+            "c": [
+              1,
+              3
+            ],
+            "d": [
+              4,
+              10
+            ]
+          },
+          "generation_note": "unlike denominators; require a/b > c/d",
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a * d - c * b) / (b * d)"
         }
       ]
     },
@@ -1231,44 +1272,38 @@
         {
           "id": "fmd_003",
           "type": "COMPUTE",
-          "problem": "{a} ÷ {b}/{c}",
+          "problem": "{a} ÷ 1/{b}",
           "constraints": {
             "a": [
               2,
-              8
+              9
             ],
             "b": [
-              1,
-              4
-            ],
-            "c": [
               2,
-              6
+              8
             ]
           },
-          "answer_type": "fraction_simplified",
-          "answer_formula": "a / (b/c)"
+          "generation_note": "5.NF.B.7.b whole number ÷ unit fraction",
+          "answer_type": "numeric",
+          "answer_formula": "a * b"
         },
         {
           "id": "fmd_004",
           "type": "COMPUTE",
-          "problem": "{a}/{b} ÷ {c}",
+          "problem": "1/{b} ÷ {c}",
           "constraints": {
-            "a": [
-              2,
-              8
-            ],
             "b": [
-              3,
-              10
+              2,
+              9
             ],
             "c": [
               2,
-              4
+              5
             ]
           },
+          "generation_note": "5.NF.B.7.a unit fraction ÷ whole number",
           "answer_type": "fraction_simplified",
-          "answer_formula": "(a/b) / c"
+          "answer_formula": "1 / (b * c)"
         },
         {
           "id": "fmd_005",
@@ -1340,30 +1375,22 @@
           "answer_formula": "(c * b) / (a * d)"
         },
         {
-          "type": "IDENTIFY",
-          "problem": "How much greater is {a}/{b} × {c} than {a}/{b} × {d}?",
-          "answer_type": "fraction_simplified",
-          "answer_formula": "(a * (c - d)) / b",
+          "id": "fmd_008",
+          "type": "COMPUTE",
+          "problem": "Write {a} ÷ {b} as a fraction.",
           "constraints": {
             "a": [
               1,
-              3
+              9
             ],
             "b": [
-              4,
-              8
-            ],
-            "c": [
-              4,
-              8
-            ],
-            "d": [
-              1,
-              3
+              2,
+              12
             ]
           },
-          "id": "fmd_008",
-          "generation_note": "c > d enforced by ranges"
+          "generation_note": "5.NF.B.3 interpret a fraction as division",
+          "answer_type": "fraction_simplified",
+          "answer_formula": "a / b"
         },
         {
           "id": "fmd_009",
