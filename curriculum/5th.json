@@ -151,6 +151,60 @@
           "answer_formula": "p / b",
           "generation_note": "p divisible by b; answer is p/b",
           "constraints_note": "p divisible by b"
+        },
+        {
+          "id": "wn_013",
+          "type": "APPLY",
+          "context": "sports",
+          "problem": "A soccer team scores {a} points in each of {b} games. How many points did they score in all?",
+          "constraints": {
+            "a": [
+              12,
+              48
+            ],
+            "b": [
+              4,
+              16
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a * b"
+        },
+        {
+          "id": "wn_014",
+          "type": "APPLY",
+          "context": "construction",
+          "problem": "Workers lay {a} bricks on each of {b} rows of a wall. How many bricks are used in total?",
+          "constraints": {
+            "a": [
+              15,
+              60
+            ],
+            "b": [
+              8,
+              24
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a * b"
+        },
+        {
+          "id": "wn_015",
+          "type": "APPLY",
+          "context": "animals",
+          "problem": "A wildlife preserve has {a} nests. Each nest has {b} eggs. How many eggs are there altogether?",
+          "constraints": {
+            "a": [
+              12,
+              40
+            ],
+            "b": [
+              2,
+              8
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a * b"
         }
       ]
     },
@@ -215,6 +269,139 @@
           "constraints_note": "a divisible by b",
           "context": "food",
           "id": "wn_009"
+        },
+        {
+          "id": "wn_016",
+          "type": "APPLY",
+          "context": "sports",
+          "problem": "A coach divides {a} soccer balls equally among {b} players. How many balls does each player get?",
+          "constraints": {
+            "a": [
+              48,
+              240
+            ],
+            "b": [
+              8,
+              16
+            ]
+          },
+          "constraints_note": "a divisible by b",
+          "answer_type": "numeric",
+          "answer_formula": "a / b"
+        },
+        {
+          "id": "wn_017",
+          "type": "APPLY",
+          "context": "money",
+          "problem": "{a} dollars is shared equally by {b} teammates for a team trip. How many dollars does each teammate receive?",
+          "constraints": {
+            "a": [
+              60,
+              480
+            ],
+            "b": [
+              5,
+              12
+            ]
+          },
+          "constraints_note": "a divisible by b",
+          "answer_type": "numeric",
+          "answer_formula": "a / b"
+        },
+        {
+          "id": "wn_018",
+          "type": "APPLY",
+          "context": "travel",
+          "problem": "A bus travels {a} miles in {b} hours at a steady speed. How many miles does it travel each hour?",
+          "constraints": {
+            "a": [
+              120,
+              720
+            ],
+            "b": [
+              3,
+              12
+            ]
+          },
+          "constraints_note": "a divisible by b",
+          "answer_type": "numeric",
+          "answer_formula": "a / b"
+        },
+        {
+          "id": "wn_019",
+          "type": "APPLY",
+          "context": "science",
+          "problem": "A lab has {a} test tubes to place equally on {b} trays. How many test tubes go on each tray?",
+          "constraints": {
+            "a": [
+              36,
+              216
+            ],
+            "b": [
+              4,
+              12
+            ]
+          },
+          "constraints_note": "a divisible by b",
+          "answer_type": "numeric",
+          "answer_formula": "a / b"
+        },
+        {
+          "id": "wn_020",
+          "type": "APPLY",
+          "context": "games",
+          "problem": "A game awards {a} tokens. Players split them equally among {b} friends. How many tokens does each friend get?",
+          "constraints": {
+            "a": [
+              40,
+              280
+            ],
+            "b": [
+              4,
+              10
+            ]
+          },
+          "constraints_note": "a divisible by b",
+          "answer_type": "numeric",
+          "answer_formula": "a / b"
+        },
+        {
+          "id": "wn_021",
+          "type": "ERROR_ANALYSIS",
+          "problem": "A student divides {a} ÷ {b} incorrectly. What is the correct quotient?",
+          "constraints": {
+            "a": [
+              100,
+              900
+            ],
+            "b": [
+              10,
+              25
+            ]
+          },
+          "constraints_note": "a divisible by b",
+          "generation_note": "wrong = a/b ± random small amount",
+          "answer_type": "numeric",
+          "answer_formula": "a / b"
+        },
+        {
+          "id": "wn_022",
+          "type": "REVERSE",
+          "problem": "Find the missing divisor: {a} ÷ __ = {q}.",
+          "constraints": {
+            "a": [
+              100,
+              800
+            ],
+            "q": [
+              4,
+              20
+            ]
+          },
+          "constraints_note": "a divisible by q; answer is a/q",
+          "generation_note": "a divisible by q",
+          "answer_type": "numeric",
+          "answer_formula": "a / q"
         }
       ]
     },
@@ -266,6 +453,142 @@
           "constraints_note": "(a + b) divisible by c",
           "answer_type": "numeric",
           "answer_formula": "(a + b) / c"
+        },
+        {
+          "id": "wn_023",
+          "type": "COMPUTE",
+          "problem": "{a} × {b} + {c}",
+          "constraints": {
+            "a": [
+              2,
+              12
+            ],
+            "b": [
+              2,
+              12
+            ],
+            "c": [
+              1,
+              40
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a * b + c"
+        },
+        {
+          "id": "wn_024",
+          "type": "COMPUTE",
+          "problem": "{a} × ({b} + {c})",
+          "constraints": {
+            "a": [
+              2,
+              12
+            ],
+            "b": [
+              2,
+              20
+            ],
+            "c": [
+              2,
+              20
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a * (b + c)"
+        },
+        {
+          "id": "wn_025",
+          "type": "COMPUTE",
+          "problem": "({a} × {b}) - {c}",
+          "constraints": {
+            "a": [
+              5,
+              20
+            ],
+            "b": [
+              5,
+              20
+            ],
+            "c": [
+              1,
+              40
+            ]
+          },
+          "constraints_note": "a*b > c so answer is positive",
+          "generation_note": "require a*b > c",
+          "answer_type": "numeric",
+          "answer_formula": "a * b - c"
+        },
+        {
+          "id": "wn_026",
+          "type": "COMPUTE",
+          "problem": "{a} + {b} × {c} - {d}",
+          "constraints": {
+            "a": [
+              1,
+              20
+            ],
+            "b": [
+              2,
+              10
+            ],
+            "c": [
+              2,
+              10
+            ],
+            "d": [
+              1,
+              15
+            ]
+          },
+          "constraints_note": "a + b*c > d so answer is positive",
+          "generation_note": "require a + b*c > d",
+          "answer_type": "numeric",
+          "answer_formula": "a + b * c - d"
+        },
+        {
+          "id": "wn_027",
+          "type": "ERROR_ANALYSIS",
+          "problem": "A student evaluates {a} + {b} × {c} by adding first. What is the correct value?",
+          "constraints": {
+            "a": [
+              2,
+              20
+            ],
+            "b": [
+              2,
+              12
+            ],
+            "c": [
+              2,
+              12
+            ]
+          },
+          "generation_note": "wrong = (a+b)*c; correct multiplies first",
+          "answer_type": "numeric",
+          "answer_formula": "a + b * c"
+        },
+        {
+          "id": "wn_028",
+          "type": "APPLY",
+          "context": "games",
+          "problem": "A player earns {a} points, then gets {b} bonus packs worth {c} points each. What is the total score: {a} + {b} × {c}?",
+          "constraints": {
+            "a": [
+              10,
+              50
+            ],
+            "b": [
+              2,
+              8
+            ],
+            "c": [
+              5,
+              15
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a + b * c"
         }
       ]
     },
