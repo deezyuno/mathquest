@@ -1077,7 +1077,7 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a * pow(10, b)"
+          "answer_formula": "a * 10^b"
         },
         {
           "id": "pv_002",
@@ -1094,7 +1094,7 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a / pow(10, b)"
+          "answer_formula": "a / 10^b"
         },
         {
           "id": "pv_003",
@@ -1281,24 +1281,20 @@
         },
         {
           "type": "APPLY",
-          "problem": "A storage box is {a} inches long, {b} inches wide, and {c} inches tall. What is its volume in cubic inches?",
+          "problem": "On a map, 1 inch represents {a} miles. Two towns are {b} inches apart on the map. How many miles apart are the towns?",
           "answer_type": "numeric",
-          "answer_formula": "a * b * c",
+          "answer_formula": "a * b",
           "constraints": {
             "a": [
-              4,
-              12
+              5,
+              25
             ],
             "b": [
-              3,
-              10
-            ],
-            "c": [
               2,
-              8
+              12
             ]
           },
-          "context": "storage",
+          "context": "maps",
           "id": "gv_003"
         },
         {
@@ -1359,32 +1355,33 @@
         {
           "id": "gv_006",
           "type": "COMPUTE",
-          "problem": "A cube has edge length {a} cm. What is its volume in cubic centimeters?",
+          "problem": "A square has side length {a}. What is its perimeter?",
           "constraints": {
             "a": [
-              2,
-              12
+              3,
+              20
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a * a * a"
+          "answer_formula": "4 * a"
         },
         {
           "id": "gv_007",
           "type": "COMPUTE",
-          "problem": "A rectangular prism has a base of {a} square units and a height of {b} units. What is its volume?",
+          "problem": "A triangle has angles of {a}° and {b}°. What is the measure of the third angle?",
           "constraints": {
             "a": [
-              12,
-              48
+              30,
+              80
             ],
             "b": [
-              2,
-              10
-            ]
+              30,
+              80
+            ],
+            "c_note": "180 - a - b"
           },
           "answer_type": "numeric",
-          "answer_formula": "a * b"
+          "answer_formula": "180 - a - b"
         },
         {
           "id": "gv_008",
@@ -1411,22 +1408,18 @@
         {
           "id": "gv_009",
           "type": "COMPUTE",
-          "problem": "Find the volume of a rectangular prism with length {a}, width {b}, and height {c}.",
+          "problem": "Find the perimeter of a rectangle with length {a} and width {b}.",
           "constraints": {
             "a": [
               3,
-              15
+              20
             ],
             "b": [
-              2,
-              12
-            ],
-            "c": [
-              2,
-              10
+              3,
+              20
             ]
           },
-          "answer_formula": "a * b * c",
+          "answer_formula": "2 * (a + b)",
           "answer_type": "numeric"
         }
       ]

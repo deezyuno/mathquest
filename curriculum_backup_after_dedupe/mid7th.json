@@ -797,7 +797,7 @@
               6
             ]
           },
-          "answer_formula": "(a * a) / ((a + b) * (a + b))",
+          "answer_formula": "(a/(a+b))^2",
           "answer_type": "fraction_simplified"
         },
         {
@@ -819,7 +819,7 @@
               90
             ]
           },
-          "answer_formula": "pow(a / 100, 2)",
+          "answer_formula": "(a/100)^2",
           "answer_type": "decimal"
         },
         {

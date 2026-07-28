@@ -823,7 +823,7 @@
               4
             ]
           },
-          "answer_formula": "sqrt(pow(c - a, 2) + pow(d - b, 2))",
+          "answer_formula": "sqrt((c-a)^2+(d-b)^2)",
           "answer_type": "decimal_1dp"
         },
         {

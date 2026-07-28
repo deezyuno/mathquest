@@ -1310,19 +1310,23 @@
         {
           "id": "ee_004",
           "type": "COMPUTE",
-          "problem": "Solve for x: {a}x = {c}.",
+          "problem": "Solve for x: {a}x + {b} = {c}",
           "constraints": {
             "a": [
               2,
               8
             ],
+            "b": [
+              -20,
+              20
+            ],
             "c": [
-              12,
-              72
+              -40,
+              40
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "c / a"
+          "answer_formula": "(c - b) / a"
         },
         {
           "id": "ee_005",
@@ -1344,19 +1348,23 @@
         {
           "id": "ee_006",
           "type": "COMPUTE",
-          "problem": "Solve: x - {b} = {c}",
+          "problem": "Solve: {a}x - {b} = {c}.",
           "constraints": {
+            "a": [
+              2,
+              8
+            ],
             "b": [
               1,
               20
             ],
             "c": [
-              -20,
+              -40,
               40
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "c + b"
+          "answer_formula": "(c + b) / a"
         },
         {
           "id": "ee_007",
@@ -1400,26 +1408,34 @@
           "id": "ee_009",
           "type": "APPLY",
           "context": "tickets",
-          "problem": "Tickets cost ${a} each. The total cost for some tickets is ${c}. How many tickets were bought?",
+          "problem": "Tickets cost ${a} each. After a ${b} discount on the total, the amount paid is ${c}. How many tickets were bought? Solve {a}x - {b} = {c}.",
           "constraints": {
             "a": [
               4,
               12
             ],
+            "b": [
+              2,
+              20
+            ],
             "c": [
-              20,
-              96
+              10,
+              80
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "c / a",
-          "generation_note": "c divisible by a; x >= 1"
+          "answer_formula": "(c + b) / a",
+          "generation_note": "require (c + b) divisible by a and x = (c+b)/a >= 1"
         },
         {
           "id": "ee_010",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student solves x + {b} = {c} incorrectly by computing {b} - {c} instead of {c} - {b}. What is the correct value of x?",
+          "problem": "A student solved {a}x + {b} = {c} incorrectly by dividing before subtracting b. What is the correct value of x?",
           "constraints": {
+            "a": [
+              2,
+              6
+            ],
             "b": [
               2,
               15
@@ -1429,9 +1445,9 @@
               40
             ]
           },
-          "generation_note": "c > b so x is positive",
+          "generation_note": "wrong = c/a (student ignored adding b first)",
           "answer_type": "numeric",
-          "answer_formula": "c - b"
+          "answer_formula": "(c - b) / a"
         },
         {
           "id": "ee_011",
@@ -1494,20 +1510,24 @@
           "id": "ee_014",
           "type": "APPLY",
           "context": "membership",
-          "problem": "A club charges ${a} per month with no signup fee. After some months the total paid is ${c}. How many months were paid? Solve {a}x = {c}.",
+          "problem": "A club charges ${b} to join plus ${a} per month. After some months the total paid is ${c}. How many months? Solve {a}x + {b} = {c}.",
           "constraints": {
             "a": [
               5,
               15
             ],
+            "b": [
+              10,
+              40
+            ],
             "c": [
-              30,
-              150
+              40,
+              160
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "c / a",
-          "constraints_note": "c divisible by a; whole-number months"
+          "answer_formula": "(c - b) / a",
+          "constraints_note": "(c-b) divisible by a"
         },
         {
           "id": "ee_015",
@@ -2144,7 +2164,7 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "abs(a - c)",
+          "answer_formula": "a - c",
           "generation_note": "a > c enforced by ranges"
         },
         {
