@@ -39,68 +39,67 @@
         {
           "id": "wn_003",
           "type": "APPLY",
-          "context": "shopping",
-          "problem": "A store sells {a} boxes of crayons. Each box has {b} crayons. How many crayons are there in total?",
+          "context": "money",
+          "problem": "Movie tickets cost ${a} each. A family buys {b} tickets. How much do they spend in all?",
           "constraints": {
             "a": [
-              12,
-              50
+              8,
+              18
             ],
             "b": [
-              12,
-              24
+              3,
+              9
             ]
           },
           "answer_type": "numeric",
           "answer_formula": "a * b"
         },
         {
-          "type": "APPLY",
-          "problem": "A tablet downloads {a} megabytes each second for {b} seconds. How many megabytes were downloaded?",
-          "answer_type": "numeric",
-          "answer_formula": "a * b",
+          "id": "wn_005",
+          "type": "COMPUTE",
+          "problem": "Find the product of {a} and {b}.",
           "constraints": {
             "a": [
-              12,
-              48
+              23,
+              78
             ],
             "b": [
-              10,
-              30
+              14,
+              36
             ]
           },
-          "context": "technology",
-          "id": "wn_005"
+          "answer_type": "numeric",
+          "answer_formula": "a * b"
         },
         {
+          "id": "wn_006",
           "type": "COMPARE",
           "problem": "How much greater is {a} × {b} than {c} × {d}?",
-          "answer_type": "numeric",
-          "answer_formula": "abs(a*b - c*d)",
           "constraints": {
             "a": [
               10,
-              50
+              40
             ],
             "b": [
               10,
-              50
+              40
             ],
             "c": [
               10,
-              50
+              40
             ],
             "d": [
               10,
-              50
+              40
             ]
           },
-          "id": "wn_006"
+          "answer_type": "numeric",
+          "answer_formula": "abs(a * b - c * d)"
         },
         {
           "id": "wn_007",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student multiplies {a} × {b} and gets the wrong answer. What is the correct answer?",
+          "problem": "Maya multiplies {a} × {b}. Her work shows {a} + {b}. What is the correct product?",
           "constraints": {
             "a": [
               12,
@@ -111,27 +110,27 @@
               30
             ]
           },
-          "generation_note": "wrong = a * b - random(10,50)",
+          "generation_note": "student added instead of multiplying; correct = a*b",
           "answer_type": "numeric",
           "answer_formula": "a * b"
         },
         {
+          "id": "wn_008",
           "type": "APPLY",
-          "problem": "A band practices {a} minutes each rehearsal. They have {b} rehearsals this month. How many total practice minutes is that?",
-          "answer_type": "numeric",
-          "answer_formula": "a * b",
+          "context": "sports",
+          "problem": "A basketball player scores {a} points in each of {b} games. How many points did the player score altogether?",
           "constraints": {
             "a": [
-              15,
-              45
+              8,
+              28
             ],
             "b": [
               4,
               12
             ]
           },
-          "context": "music",
-          "id": "wn_008"
+          "answer_type": "numeric",
+          "answer_formula": "a * b"
         },
         {
           "id": "wn_010",
@@ -149,36 +148,43 @@
           },
           "answer_type": "numeric",
           "answer_formula": "p / b",
-          "generation_note": "p divisible by b; answer is p/b",
+          "generation_note": "p divisible by b",
           "constraints_note": "p divisible by b"
         },
         {
           "id": "wn_013",
-          "type": "APPLY",
-          "context": "sports",
-          "problem": "A soccer team scores {a} points in each of {b} games. How many points did they score in all?",
+          "type": "COMPARE",
+          "problem": "Pack A has {a} packs of cards with {b} cards in each. Pack B has {c} packs with {d} cards in each. How many more cards does the larger pack set have?",
           "constraints": {
             "a": [
-              12,
-              48
+              6,
+              15
             ],
             "b": [
-              4,
-              16
+              8,
+              20
+            ],
+            "c": [
+              6,
+              15
+            ],
+            "d": [
+              8,
+              20
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a * b"
+          "answer_formula": "abs(a * b - c * d)"
         },
         {
           "id": "wn_014",
           "type": "APPLY",
-          "context": "construction",
-          "problem": "Workers lay {a} bricks on each of {b} rows of a wall. How many bricks are used in total?",
+          "context": "science",
+          "problem": "A rectangular garden is {a} feet long and {b} feet wide. What is the area of the garden in square feet?",
           "constraints": {
             "a": [
-              15,
-              60
+              12,
+              48
             ],
             "b": [
               8,
@@ -190,21 +196,24 @@
         },
         {
           "id": "wn_015",
-          "type": "APPLY",
-          "context": "animals",
-          "problem": "A wildlife preserve has {a} nests. Each nest has {b} eggs. How many eggs are there altogether?",
+          "type": "COMPUTE",
+          "problem": "{a} × {b} × {c}",
           "constraints": {
             "a": [
-              12,
-              40
+              2,
+              9
             ],
             "b": [
               2,
-              8
+              9
+            ],
+            "c": [
+              2,
+              9
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a * b"
+          "answer_formula": "a * b * c"
         }
       ]
     },
@@ -235,16 +244,16 @@
         {
           "id": "wn_004",
           "type": "APPLY",
-          "context": "school",
-          "problem": "{a} students are divided equally into {b} classrooms. How many students are in each classroom?",
+          "context": "travel",
+          "problem": "A road trip covers {a} miles over {b} days with the same distance each day. How many miles are driven each day?",
           "constraints": {
             "a": [
-              100,
-              500
+              120,
+              600
             ],
             "b": [
-              10,
-              25
+              3,
+              10
             ]
           },
           "constraints_note": "a divisible by b",
@@ -252,37 +261,44 @@
           "answer_formula": "a / b"
         },
         {
-          "type": "APPLY",
-          "problem": "There are {a} apples packed {b} per bag. How many full bags can be filled?",
-          "answer_type": "numeric",
-          "answer_formula": "a / b",
+          "id": "wn_009",
+          "type": "COMPARE",
+          "problem": "Which quotient is greater, and by how much: {a} ÷ {b} or {c} ÷ {d}? Enter the positive difference.",
           "constraints": {
             "a": [
-              50,
-              200
+              120,
+              480
             ],
             "b": [
               6,
               12
+            ],
+            "c": [
+              120,
+              480
+            ],
+            "d": [
+              6,
+              12
             ]
           },
-          "constraints_note": "a divisible by b",
-          "context": "food",
-          "id": "wn_009"
+          "constraints_note": "a divisible by b; c divisible by d",
+          "answer_type": "numeric",
+          "answer_formula": "abs(a / b - c / d)"
         },
         {
           "id": "wn_016",
           "type": "APPLY",
-          "context": "sports",
-          "problem": "A coach divides {a} soccer balls equally among {b} players. How many balls does each player get?",
+          "context": "games",
+          "problem": "A video game has {a} gems to unlock equally across {b} levels. How many gems are unlocked on each level?",
           "constraints": {
             "a": [
               48,
               240
             ],
             "b": [
-              8,
-              16
+              4,
+              12
             ]
           },
           "constraints_note": "a divisible by b",
@@ -291,17 +307,16 @@
         },
         {
           "id": "wn_017",
-          "type": "APPLY",
-          "context": "money",
-          "problem": "{a} dollars is shared equally by {b} teammates for a team trip. How many dollars does each teammate receive?",
+          "type": "COMPUTE",
+          "problem": "Divide: {a} ÷ {b}",
           "constraints": {
             "a": [
-              60,
-              480
+              200,
+              4800
             ],
             "b": [
-              5,
-              12
+              12,
+              48
             ]
           },
           "constraints_note": "a divisible by b",
@@ -311,15 +326,15 @@
         {
           "id": "wn_018",
           "type": "APPLY",
-          "context": "travel",
-          "problem": "A bus travels {a} miles in {b} hours at a steady speed. How many miles does it travel each hour?",
+          "context": "animals",
+          "problem": "A shelter has {a} dog treats to share equally among {b} dogs. How many treats does each dog get?",
           "constraints": {
             "a": [
-              120,
-              720
+              36,
+              180
             ],
             "b": [
-              3,
+              4,
               12
             ]
           },
@@ -329,36 +344,42 @@
         },
         {
           "id": "wn_019",
-          "type": "APPLY",
-          "context": "science",
-          "problem": "A lab has {a} test tubes to place equally on {b} trays. How many test tubes go on each tray?",
+          "type": "COMPARE",
+          "problem": "Team A splits {a} stickers among {b} players. Team B splits {c} stickers among {d} players. How many more stickers does each player on the team with the larger share get?",
           "constraints": {
             "a": [
-              36,
-              216
+              60,
+              240
             ],
             "b": [
-              4,
+              5,
+              12
+            ],
+            "c": [
+              60,
+              240
+            ],
+            "d": [
+              5,
               12
             ]
           },
-          "constraints_note": "a divisible by b",
+          "constraints_note": "a divisible by b; c divisible by d",
           "answer_type": "numeric",
-          "answer_formula": "a / b"
+          "answer_formula": "abs(a / b - c / d)"
         },
         {
           "id": "wn_020",
-          "type": "APPLY",
-          "context": "games",
-          "problem": "A game awards {a} tokens. Players split them equally among {b} friends. How many tokens does each friend get?",
+          "type": "COMPUTE",
+          "problem": "What is {a} divided by {b}?",
           "constraints": {
             "a": [
-              40,
-              280
+              144,
+              3600
             ],
             "b": [
-              4,
-              10
+              12,
+              36
             ]
           },
           "constraints_note": "a divisible by b",
@@ -368,19 +389,19 @@
         {
           "id": "wn_021",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student divides {a} ÷ {b} incorrectly. What is the correct quotient?",
+          "problem": "Jordan solves {a} ÷ {b} and writes {b} as the answer. Jordan swapped the dividend and the divisor. What is the correct quotient?",
           "constraints": {
             "a": [
-              100,
-              900
+              120,
+              600
             ],
             "b": [
               10,
               25
             ]
           },
-          "constraints_note": "a divisible by b",
-          "generation_note": "wrong = a/b ± random small amount",
+          "constraints_note": "a divisible by b; a/b != b",
+          "generation_note": "student answered b (swapped); correct = a/b",
           "answer_type": "numeric",
           "answer_formula": "a / b"
         },
@@ -456,24 +477,27 @@
         },
         {
           "id": "wn_023",
-          "type": "COMPUTE",
-          "problem": "{a} × {b} + {c}",
+          "type": "APPLY",
+          "context": "money",
+          "problem": "Sam has ${a}, then buys {b} snacks that cost ${c} each. How much money does Sam have left? Use {a} - {b} × {c}.",
           "constraints": {
             "a": [
-              2,
-              12
+              40,
+              100
             ],
             "b": [
               2,
-              12
+              6
             ],
             "c": [
-              1,
-              40
+              3,
+              12
             ]
           },
+          "constraints_note": "a > b*c so answer is positive",
+          "generation_note": "require a > b*c",
           "answer_type": "numeric",
-          "answer_formula": "a * b + c"
+          "answer_formula": "a - b * c"
         },
         {
           "id": "wn_024",
@@ -498,50 +522,49 @@
         },
         {
           "id": "wn_025",
-          "type": "COMPUTE",
-          "problem": "({a} × {b}) - {c}",
+          "type": "COMPARE",
+          "problem": "How much greater is {a} × ({b} + {c}) than {a} × {b} + {c}?",
           "constraints": {
             "a": [
-              5,
-              20
+              2,
+              10
             ],
             "b": [
-              5,
-              20
+              2,
+              12
             ],
             "c": [
-              1,
-              40
+              2,
+              12
             ]
           },
-          "constraints_note": "a*b > c so answer is positive",
-          "generation_note": "require a*b > c",
           "answer_type": "numeric",
-          "answer_formula": "a * b - c"
+          "answer_formula": "abs(a * (b + c) - (a * b + c))"
         },
         {
           "id": "wn_026",
-          "type": "COMPUTE",
-          "problem": "{a} + {b} × {c} - {d}",
+          "type": "APPLY",
+          "context": "sports",
+          "problem": "A team earns {a} points, then scores {b} goals worth {c} points each, and later loses {d} points. What is the final score: {a} + {b} × {c} - {d}?",
           "constraints": {
             "a": [
-              1,
-              20
+              5,
+              30
             ],
             "b": [
               2,
-              10
+              8
             ],
             "c": [
               2,
-              10
+              6
             ],
             "d": [
               1,
-              15
+              10
             ]
           },
-          "constraints_note": "a + b*c > d so answer is positive",
+          "constraints_note": "a + b*c > d",
           "generation_note": "require a + b*c > d",
           "answer_type": "numeric",
           "answer_formula": "a + b * c - d"
@@ -549,7 +572,7 @@
         {
           "id": "wn_027",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student evaluates {a} + {b} × {c} by adding first. What is the correct value?",
+          "problem": "Alex evaluates {a} + {b} × {c}. Alex's work shows ({a} + {b}) × {c}. What is the correct value?",
           "constraints": {
             "a": [
               2,
@@ -564,31 +587,32 @@
               12
             ]
           },
-          "generation_note": "wrong = (a+b)*c; correct multiplies first",
+          "generation_note": "student added first; correct multiplies first",
           "answer_type": "numeric",
           "answer_formula": "a + b * c"
         },
         {
           "id": "wn_028",
-          "type": "APPLY",
-          "context": "games",
-          "problem": "A player earns {a} points, then gets {b} bonus packs worth {c} points each. What is the total score: {a} + {b} × {c}?",
+          "type": "REVERSE",
+          "problem": "The expression {a} + __ × {c} equals {r}. What number goes in the blank?",
           "constraints": {
             "a": [
-              10,
-              50
-            ],
-            "b": [
               2,
-              8
+              20
             ],
             "c": [
-              5,
-              15
+              2,
+              10
+            ],
+            "r": [
+              20,
+              80
             ]
           },
+          "constraints_note": "(r - a) divisible by c; blank = (r-a)/c",
+          "generation_note": "(r-a) divisible by c and positive",
           "answer_type": "numeric",
-          "answer_formula": "a + b * c"
+          "answer_formula": "(r - a) / c"
         }
       ]
     },
