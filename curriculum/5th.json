@@ -39,16 +39,16 @@
         {
           "id": "wn_003",
           "type": "APPLY",
-          "context": "money",
-          "problem": "Movie tickets cost ${a} each. A family buys {b} tickets. How much do they spend in all?",
+          "context": "shopping",
+          "problem": "A store orders {a} packs of markers. Each pack costs ${b}. What is the total cost?",
           "constraints": {
             "a": [
-              8,
-              18
+              12,
+              48
             ],
             "b": [
-              3,
-              9
+              12,
+              36
             ]
           },
           "answer_type": "numeric",
@@ -73,28 +73,20 @@
         },
         {
           "id": "wn_006",
-          "type": "COMPARE",
-          "problem": "How much greater is {a} × {b} than {c} × {d}?",
+          "type": "COMPUTE",
+          "problem": "{a} × {b}",
           "constraints": {
             "a": [
-              10,
-              40
+              23,
+              78
             ],
             "b": [
-              10,
-              40
-            ],
-            "c": [
-              10,
-              40
-            ],
-            "d": [
-              10,
-              40
+              14,
+              46
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "abs(a * b - c * d)"
+          "answer_formula": "a * b"
         },
         {
           "id": "wn_007",
@@ -118,15 +110,15 @@
           "id": "wn_008",
           "type": "APPLY",
           "context": "sports",
-          "problem": "A basketball player scores {a} points in each of {b} games. How many points did the player score altogether?",
+          "problem": "A basketball player scores {a} points in each of {b} games. How many points did the player score in all?",
           "constraints": {
             "a": [
-              8,
-              28
+              12,
+              36
             ],
             "b": [
-              4,
-              12
+              12,
+              24
             ]
           },
           "answer_type": "numeric",
@@ -153,28 +145,21 @@
         },
         {
           "id": "wn_013",
-          "type": "COMPARE",
-          "problem": "Pack A has {a} packs of cards with {b} cards in each. Pack B has {c} packs with {d} cards in each. How many more cards does the larger pack set have?",
+          "type": "APPLY",
+          "context": "school",
+          "problem": "A theater has {a} rows of seats with {b} seats in each row. How many seats are there in all?",
           "constraints": {
             "a": [
-              6,
-              15
+              15,
+              42
             ],
             "b": [
-              8,
-              20
-            ],
-            "c": [
-              6,
-              15
-            ],
-            "d": [
-              8,
-              20
+              12,
+              28
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "abs(a * b - c * d)"
+          "answer_formula": "a * b"
         },
         {
           "id": "wn_014",
@@ -197,23 +182,19 @@
         {
           "id": "wn_015",
           "type": "COMPUTE",
-          "problem": "{a} × {b} × {c}",
+          "problem": "{a} × {b}",
           "constraints": {
             "a": [
-              2,
-              9
+              16,
+              89
             ],
             "b": [
-              2,
-              9
-            ],
-            "c": [
-              2,
-              9
+              13,
+              47
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a * b * c"
+          "answer_formula": "a * b"
         }
       ]
     },
@@ -262,29 +243,22 @@
         },
         {
           "id": "wn_009",
-          "type": "COMPARE",
-          "problem": "Which quotient is greater, and by how much: {a} ÷ {b} or {c} ÷ {d}? Enter the positive difference.",
+          "type": "APPLY",
+          "context": "school",
+          "problem": "A school has {a} pencils to place equally into {b} boxes. How many pencils go in each box?",
           "constraints": {
             "a": [
               120,
-              480
+              840
             ],
             "b": [
-              6,
-              12
-            ],
-            "c": [
-              120,
-              480
-            ],
-            "d": [
-              6,
-              12
+              12,
+              28
             ]
           },
-          "constraints_note": "a divisible by b; c divisible by d",
+          "constraints_note": "a divisible by b",
           "answer_type": "numeric",
-          "answer_formula": "abs(a / b - c / d)"
+          "answer_formula": "a / b"
         },
         {
           "id": "wn_016",
@@ -344,29 +318,22 @@
         },
         {
           "id": "wn_019",
-          "type": "COMPARE",
-          "problem": "Team A splits {a} stickers among {b} players. Team B splits {c} stickers among {d} players. How many more stickers does each player on the team with the larger share get?",
+          "type": "APPLY",
+          "context": "sports",
+          "problem": "A coach divides {a} wristbands equally among {b} players. How many wristbands does each player get?",
           "constraints": {
             "a": [
-              60,
-              240
+              96,
+              480
             ],
             "b": [
-              5,
-              12
-            ],
-            "c": [
-              60,
-              240
-            ],
-            "d": [
-              5,
-              12
+              12,
+              24
             ]
           },
-          "constraints_note": "a divisible by b; c divisible by d",
+          "constraints_note": "a divisible by b",
           "answer_type": "numeric",
-          "answer_formula": "abs(a / b - c / d)"
+          "answer_formula": "a / b"
         },
         {
           "id": "wn_020",
@@ -856,7 +823,7 @@
         {
           "id": "dec_010",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student adds {a}.{b} + {c}.{d} incorrectly by misaligning the decimal places. What is the correct answer?",
+          "problem": "Maya adds {a}.{b} + {c}.{d}. Her work shows {a}.{b} + {c}{d} (she lined {d} under the tenths place). What is the correct sum?",
           "constraints": {
             "a": [
               1,
@@ -875,7 +842,7 @@
               99
             ]
           },
-          "generation_note": "wrong = a+c concatenated wrong (e.g. misaligned decimals)",
+          "generation_note": "student misaligned decimals; correct = (a+b/100)+(c+d/100)",
           "answer_type": "numeric",
           "answer_formula": "a + b/100 + c + d/100"
         },
@@ -1489,7 +1456,7 @@
         {
           "id": "pv_003",
           "type": "COMPUTE",
-          "problem": "What is {a} × 1000 + {b} × 100 + {c} × 10 + {d}?",
+          "problem": "What is the value of {a} × 1 + {b} × (1/10) + {c} × (1/100) + {d} × (1/1000)?",
           "constraints": {
             "a": [
               1,
@@ -1508,8 +1475,9 @@
               9
             ]
           },
-          "answer_type": "numeric",
-          "answer_formula": "a * 1000 + b * 100 + c * 10 + d"
+          "generation_note": "5.NBT.A.3.a decimal expanded form to thousandths",
+          "answer_type": "decimal",
+          "answer_formula": "a + b/10 + c/100 + d/1000"
         },
         {
           "type": "IDENTIFY",
@@ -1534,10 +1502,9 @@
           "id": "pv_004"
         },
         {
-          "type": "COMPARE",
-          "problem": "How much greater is {a} × 10^{b} than {c} × 10^{d}?",
-          "answer_type": "numeric",
-          "answer_formula": "abs(a * 10**b - c * 10**d)",
+          "id": "pv_005",
+          "type": "COMPUTE",
+          "problem": "{a} × 10^{b}",
           "constraints": {
             "a": [
               2,
@@ -1546,39 +1513,37 @@
             "b": [
               2,
               4
-            ],
-            "c": [
-              2,
-              9
-            ],
-            "d": [
-              2,
-              4
             ]
           },
-          "id": "pv_005"
+          "generation_note": "5.NBT.A.2 multiply by powers of 10",
+          "answer_type": "numeric",
+          "answer_formula": "a * pow(10, b)"
         },
         {
+          "id": "pv_006",
           "type": "COMPUTE",
-          "problem": "Round {a} to the nearest hundred.",
-          "answer_type": "numeric",
-          "answer_formula": "round(a / 100) * 100",
-          "constraints": {
-            "a": [
-              1000,
-              99999
-            ]
-          },
-          "id": "pv_006"
-        },
-        {
-          "type": "REPRESENT",
-          "problem": "Write the number with a {a} in the ten-thousands place, {b} in the thousands place, {c} in the hundreds place, {d} in the tens place, and {e} in the ones place.",
-          "answer_type": "numeric",
-          "answer_formula": "a*10000 + b*1000 + c*100 + d*10 + e",
+          "problem": "Round {a}.{b} to the nearest tenth.",
           "constraints": {
             "a": [
               1,
+              99
+            ],
+            "b": [
+              0,
+              99
+            ]
+          },
+          "generation_note": "b is hundredths; 5.NBT.A.4 round decimals",
+          "answer_type": "decimal",
+          "answer_formula": "round((a + b/100) * 10) / 10"
+        },
+        {
+          "id": "pv_007",
+          "type": "REPRESENT",
+          "problem": "Write the decimal with {a} ones, {b} tenths, {c} hundredths, and {d} thousandths.",
+          "constraints": {
+            "a": [
+              0,
               9
             ],
             "b": [
@@ -1592,18 +1557,16 @@
             "d": [
               0,
               9
-            ],
-            "e": [
-              0,
-              9
             ]
           },
-          "id": "pv_007"
+          "generation_note": "5.NBT.A.3.a read/write decimals to thousandths",
+          "answer_type": "decimal",
+          "answer_formula": "a + b/10 + c/100 + d/1000"
         },
         {
           "id": "pv_008",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student computes {a} × 10^{b} incorrectly. What is the correct answer?",
+          "problem": "Alex computes {a} × 10^{b}. Alex's work shows {a} × {b}. What is the correct value?",
           "constraints": {
             "a": [
               3,
@@ -1614,7 +1577,7 @@
               4
             ]
           },
-          "generation_note": "wrong = a * b (multiplied instead of using power of 10)",
+          "generation_note": "student multiplied by the exponent; correct = a * 10^b",
           "answer_type": "numeric",
           "answer_formula": "a * pow(10, b)"
         }
@@ -1714,10 +1677,10 @@
           "id": "gv_004"
         },
         {
-          "type": "COMPARE",
-          "problem": "How much greater is the volume of prism A ({a}×{b}×{c}) than prism B ({d}×{e}×{f})?",
-          "answer_type": "numeric",
-          "answer_formula": "abs(a*b*c - d*e*f)",
+          "id": "gv_005",
+          "type": "APPLY",
+          "context": "construction",
+          "problem": "A solid figure is made of two rectangular prisms. One prism is {a} by {b} by {c} units. The other is {d} by {e} by {f} units. What is the total volume in cubic units?",
           "constraints": {
             "a": [
               2,
@@ -1744,7 +1707,9 @@
               8
             ]
           },
-          "id": "gv_005"
+          "generation_note": "5.MD.C.5b volume of figure composed of two prisms",
+          "answer_type": "numeric",
+          "answer_formula": "a * b * c + d * e * f"
         },
         {
           "id": "gv_006",
@@ -1801,23 +1766,24 @@
         {
           "id": "gv_009",
           "type": "COMPUTE",
-          "problem": "Find the volume of a rectangular prism with length {a}, width {b}, and height {c}.",
+          "problem": "A rectangular prism is packed with {a} layers of unit cubes. Each layer has {b} rows with {c} cubes in each row. How many unit cubes fill the prism?",
           "constraints": {
             "a": [
-              3,
-              15
+              2,
+              10
             ],
             "b": [
               2,
-              12
+              10
             ],
             "c": [
               2,
               10
             ]
           },
-          "answer_formula": "a * b * c",
-          "answer_type": "numeric"
+          "generation_note": "5.MD.C.4 pack unit cubes; volume as count of unit cubes",
+          "answer_type": "numeric",
+          "answer_formula": "a * b * c"
         }
       ]
     },
@@ -2060,22 +2026,18 @@
           "answer_type": "numeric"
         },
         {
+          "id": "mc_005",
           "type": "APPLY",
-          "problem": "A train travels {a} miles each hour for {b} hours. How far does it go?",
-          "answer_type": "numeric",
-          "answer_formula": "a * b",
+          "context": "measurement",
+          "problem": "A rope is {a} yards long. How many feet long is the rope? (1 yard = 3 feet)",
           "constraints": {
             "a": [
-              40,
-              80
-            ],
-            "b": [
               2,
-              8
+              40
             ]
           },
-          "context": "travel",
-          "id": "mc_005"
+          "answer_type": "numeric",
+          "answer_formula": "a * 3"
         },
         {
           "type": "COMPARE",
@@ -2124,23 +2086,15 @@
         {
           "id": "mc_009",
           "type": "COMPUTE",
-          "problem": "Find the mean of {a}, {b}, and {c}.",
+          "problem": "Convert {a} meters to centimeters. (1 meter = 100 centimeters)",
           "constraints": {
             "a": [
-              10,
-              50
-            ],
-            "b": [
-              10,
-              50
-            ],
-            "c": [
-              10,
-              50
+              2,
+              25
             ]
           },
-          "answer_formula": "(a + b + c) / 3",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "answer_formula": "a * 100"
         }
       ]
     }
