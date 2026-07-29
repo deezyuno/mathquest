@@ -9,43 +9,44 @@
     "7.SP.C"
   ],
   "ccss_preview": [
+    "8.EE.A",
     "8.EE.B",
+    "8.EE.C",
+    "8.NS.A",
+    "8.F.A",
     "8.G.A",
-    "8.G.B",
-    "8.F.A"
+    "8.G.B"
   ],
   "skills": [
     {
       "id": "multi_step_equations",
       "name": "Multi-Step Equations and Inequalities",
-      "ccss": "7.EE.B.3, 7.EE.B.4",
+      "ccss": "7.EE.B.3, 7.EE.B.4, 8.EE.C.7, 8.EE.C.8, 8.EE.A.3, 8.F.A.1",
       "level": "solidify",
       "templates": [
         {
           "id": "mse_001",
           "type": "COMPUTE",
-          "problem": "Solve: {a}x + {b} = {c}x + {d}",
+          "context": "money",
+          "problem": "Movie tickets cost ${a} each. You have ${c} and must keep at least ${b} for snacks. What is the greatest whole number of tickets you can buy?",
           "constraints": {
             "a": [
-              2,
-              8
+              8,
+              20
             ],
             "b": [
-              -20,
-              20
+              5,
+              30
             ],
             "c": [
-              1,
-              6
-            ],
-            "d": [
-              -20,
-              20
+              50,
+              200
             ]
           },
-          "constraints_note": "a != c",
+          "generation_note": "7.EE.B.4.b inequality; answer = floor((c-b)/a)",
+          "constraints_note": "c > b; floor((c-b)/a) >= 1",
           "answer_type": "numeric",
-          "answer_formula": "(d - b) / (a - c)"
+          "answer_formula": "floor((c - b) / a)"
         },
         {
           "id": "mse_002",
@@ -100,28 +101,25 @@
         {
           "id": "mse_004",
           "type": "COMPUTE",
-          "problem": "Solve: {a}(x + {b}) = {c}x + {d}",
+          "problem": "Solve: {a}(x + {b}) = {c}",
           "constraints": {
             "a": [
               2,
               6
             ],
             "b": [
-              2,
-              10
+              1,
+              8
             ],
             "c": [
-              1,
-              5
-            ],
-            "d": [
-              5,
-              40
+              12,
+              60
             ]
           },
-          "constraints_note": "a != c",
+          "generation_note": "8.EE.C.7 preview (Grade 8); distribute and solve; c divisible by a",
+          "constraints_note": "c divisible by a",
           "answer_type": "numeric",
-          "answer_formula": "(d - a*b) / (a - c)"
+          "answer_formula": "c / a - b"
         },
         {
           "id": "mse_005",
@@ -191,81 +189,82 @@
         },
         {
           "id": "mse_008",
-          "type": "ERROR_ANALYSIS",
-          "problem": "A student solves {a}x + {b} = {c}x + {d} incorrectly by adding b and d instead of subtracting. What is the correct value of x?",
-          "constraints": {
-            "a": [
-              3,
-              8
-            ],
-            "b": [
-              5,
-              20
-            ],
-            "c": [
-              1,
-              5
-            ],
-            "d": [
-              2,
-              15
-            ]
-          },
-          "generation_note": "wrong = (b+d)/(a-c) (added instead of subtracted b and d)",
-          "answer_type": "numeric",
-          "answer_formula": "(d - b) / (a - c)"
-        },
-        {
-          "id": "mse_009",
           "type": "COMPUTE",
-          "problem": "Solve: {a}x + {b} = {c}x + {d} given the solution is x = {s}. Compute {a}×{s} + {b}.",
+          "problem": "Estimate: {a} × 10^{b} is how many times as much as {c} × 10^{d}?",
           "constraints": {
             "a": [
-              3,
-              8
-            ],
-            "b": [
-              5,
-              20
-            ],
-            "c": [
-              1,
-              5
-            ],
-            "d": [
               2,
-              15
-            ],
-            "s": [
-              -5,
-              10
-            ]
-          },
-          "generation_note": "choose a,b,c,d so solution is s (a*s+b = c*s+d)",
-          "answer_type": "numeric",
-          "answer_formula": "a * s + b"
-        },
-        {
-          "id": "mse_010",
-          "type": "COMPUTE",
-          "problem": "Three times a number plus {a} equals {b} times the number minus {c}. What is the number?",
-          "constraints": {
-            "a": [
-              5,
-              20
+              9
             ],
             "b": [
-              4,
+              5,
               9
             ],
             "c": [
+              1,
+              3
+            ],
+            "d": [
               2,
-              15
+              4
             ]
           },
-          "constraints_note": "b != 3",
+          "generation_note": "8.EE.A.3 how many times as much using single-digit × power of 10",
+          "constraints_note": "prefer clean integer result (a/c)*10^(b-d)",
           "answer_type": "numeric",
-          "answer_formula": "(a + c) / (b - 3)"
+          "answer_formula": "(a / c) * pow(10, b - d)"
+        },
+        {
+          "id": "mse_009",
+          "type": "IDENTIFY",
+          "problem": "A relation contains the pairs ({a},{b}), ({c},{d}), and ({a},{e}) where {b} is not equal to {e}. Enter 1 if it is a function, or 0 if it is not.",
+          "constraints": {
+            "a": [
+              1,
+              5
+            ],
+            "b": [
+              2,
+              5
+            ],
+            "c": [
+              6,
+              10
+            ],
+            "d": [
+              1,
+              8
+            ],
+            "e": [
+              6,
+              9
+            ]
+          },
+          "generation_note": "8.F.A.1 preview; repeated input different outputs → not a function",
+          "answer_type": "numeric",
+          "answer_formula": "0"
+        },
+        {
+          "id": "mse_010",
+          "type": "IDENTIFY",
+          "problem": "How many solutions does {a}x + {b} = {a}x + {c} have when {b} is not equal to {c}? Enter 0 for no solution or 2 for infinitely many.",
+          "constraints": {
+            "a": [
+              2,
+              8
+            ],
+            "b": [
+              1,
+              5
+            ],
+            "c": [
+              6,
+              12
+            ]
+          },
+          "generation_note": "8.EE.C.7.a preview; no solution when same x-coeff, different constants",
+          "answer_type": "numeric",
+          "answer_formula": "0"
         },
         {
           "id": "mse_011",
@@ -294,36 +293,38 @@
         },
         {
           "id": "mse_012",
-          "type": "COMPUTE",
-          "problem": "Solve: {a}x + {b} = {c}(x - {d})",
+          "type": "APPLY",
+          "context": "phones",
+          "problem": "Plan A costs ${a} per month plus ${b} per GB. Plan B costs ${c} per month plus ${d} per GB. For how many GB are the monthly costs equal?",
           "constraints": {
             "a": [
-              1,
-              5
+              20,
+              40
             ],
             "b": [
-              4,
-              25
+              5,
+              12
             ],
             "c": [
-              2,
-              8
+              10,
+              25
             ],
             "d": [
-              2,
-              12
+              8,
+              18
             ]
           },
-          "constraints_note": "c != a",
+          "generation_note": "8.EE.C.8 preview simple system",
+          "constraints_note": "d > b; (a-c) divisible by (d-b); result > 0",
           "answer_type": "numeric",
-          "answer_formula": "(b + c*d) / (c - a)"
+          "answer_formula": "(a - c) / (d - b)"
         }
       ]
     },
     {
       "id": "percent_applications",
       "name": "Percent Applications",
-      "ccss": "7.RP.A.3",
+      "ccss": "7.RP.A.1, 7.RP.A.2, 7.RP.A.3, 7.NS.A, 8.EE.A.4",
       "level": "solidify",
       "templates": [
         {
@@ -422,44 +423,51 @@
         {
           "id": "pct_006",
           "type": "COMPUTE",
-          "problem": "A population of {a} increases by {b}%. What is the new population?",
+          "problem": "A runner travels {a}/{b} mile in {c}/{d} hour. What is the unit rate in miles per hour?",
           "constraints": {
             "a": [
-              100,
-              2000
+              1,
+              5
             ],
             "b": [
-              5,
-              50
+              2,
+              8
+            ],
+            "c": [
+              1,
+              3
+            ],
+            "d": [
+              2,
+              8
             ]
           },
-          "answer_type": "numeric",
-          "answer_formula": "a * (1 + b/100)"
+          "generation_note": "7.RP.A.1 unit rate from ratio of fractions",
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a * d) / (b * c)"
         },
         {
           "id": "pct_007",
-          "type": "COMPARE",
-          "problem": "Item A: original price ${a}, discount {b}%. Item B: original price ${c}, discount {d}%. How much more is the larger savings than the smaller savings?",
+          "type": "COMPUTE",
+          "problem": "A proportional relationship has the table (1, {k}), (2, {a}), (3, {b}). What is the constant of proportionality?",
           "constraints": {
+            "k": [
+              3,
+              12
+            ],
             "a": [
-              40,
-              100
+              6,
+              24
             ],
             "b": [
-              10,
-              40
-            ],
-            "c": [
-              40,
-              100
-            ],
-            "d": [
-              10,
-              40
+              9,
+              36
             ]
           },
+          "generation_note": "7.RP.A.2; require a=2k, b=3k",
+          "constraints_note": "a = 2*k, b = 3*k",
           "answer_type": "numeric",
-          "answer_formula": "abs(a*(b/100) - c*(d/100))"
+          "answer_formula": "k"
         },
         {
           "id": "pct_008",
@@ -485,21 +493,29 @@
         },
         {
           "id": "pct_009",
-          "type": "ERROR_ANALYSIS",
-          "problem": "A student finds {a}% of ${b} incorrectly by moving the decimal point incorrectly. What is the correct answer?",
+          "type": "COMPUTE",
+          "problem": "{a}/{b} × {c}/{d}",
           "constraints": {
             "a": [
-              15,
-              40
+              1,
+              6
             ],
             "b": [
-              80,
-              200
+              2,
+              8
+            ],
+            "c": [
+              1,
+              6
+            ],
+            "d": [
+              2,
+              8
             ]
           },
-          "generation_note": "wrong is off by factor of 10",
-          "answer_type": "numeric",
-          "answer_formula": "(a / 100) * b"
+          "generation_note": "7.NS.A.2 multiply rational numbers",
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a * c) / (b * d)"
         },
         {
           "id": "pct_010",
@@ -542,32 +558,36 @@
         },
         {
           "id": "pct_012",
-          "type": "APPLY",
-          "context": "shopping",
-          "problem": "A ${a} coat is {b}% off, then an extra {c}% off the sale price. What is the final price?",
+          "type": "COMPUTE",
+          "problem": "({a} × 10^{b}) × ({c} × 10^{d}). Write the result in standard form.",
           "constraints": {
             "a": [
-              50,
-              200
+              1,
+              9
             ],
             "b": [
-              10,
-              40
+              2,
+              5
             ],
             "c": [
-              5,
-              25
+              1,
+              9
+            ],
+            "d": [
+              1,
+              4
             ]
           },
+          "generation_note": "8.EE.A.4 preview scientific notation multiplication",
           "answer_type": "numeric",
-          "answer_formula": "a*(1-b/100)*(1-c/100)"
+          "answer_formula": "a * c * pow(10, b + d)"
         }
       ]
     },
     {
       "id": "geometry_composite_3d",
       "name": "Composite Figures and 3D Geometry",
-      "ccss": "7.G.B.4, 7.G.B.6",
+      "ccss": "7.G.A.2, 7.G.B.4, 7.G.B.5, 7.G.B.6, 8.G.A.4",
       "level": "solidify",
       "templates": [
         {
@@ -665,20 +685,17 @@
         },
         {
           "id": "gc_006",
-          "type": "COMPARE",
-          "problem": "Shape A: circle radius {a}. Shape B: square side {b}. By how much does the larger area exceed the smaller? Use π ≈ 3.14.",
+          "type": "COMPUTE",
+          "problem": "Two angles are supplementary. One measures {a}°. What is the other?",
           "constraints": {
             "a": [
-              3,
-              8
-            ],
-            "b": [
-              5,
-              14
+              20,
+              160
             ]
           },
+          "generation_note": "7.G.B.5 supplementary angles",
           "answer_type": "numeric",
-          "answer_formula": "abs(3.14*a*a - b*b)"
+          "answer_formula": "180 - a"
         },
         {
           "id": "gc_007",
@@ -701,37 +718,38 @@
         {
           "id": "gc_008",
           "type": "COMPUTE",
-          "context": "music",
-          "problem": "A music stage is a rectangle {a} m by {b} m with a semicircle of diameter {a} attached along one side. Find the total area. Use π ≈ 3.14.",
+          "problem": "Two sides of a triangle measure {a} cm and {b} cm. What is the largest whole-number length (in cm) the third side can be?",
           "constraints": {
             "a": [
-              4,
-              14
+              5,
+              20
             ],
             "b": [
-              3,
-              12
+              5,
+              20
             ]
           },
+          "generation_note": "7.G.A.2 triangle inequality; max third side = a+b-1",
           "answer_type": "numeric",
-          "answer_formula": "a * b + 0.5 * 3.14 * (a/2) * (a/2)"
+          "answer_formula": "a + b - 1"
         },
         {
           "id": "gc_009",
           "type": "COMPUTE",
-          "problem": "Find the surface area of a square prism with base side {a} and height {b}.",
+          "problem": "A figure is dilated by scale factor {k} from the origin. A side of length {a} maps to what length?",
           "constraints": {
+            "k": [
+              2,
+              5
+            ],
             "a": [
               3,
               12
-            ],
-            "b": [
-              4,
-              20
             ]
           },
-          "answer_formula": "2*a*a + 4*a*b",
-          "answer_type": "numeric"
+          "generation_note": "8.G.A.4 preview dilation/similarity scale factor",
+          "answer_type": "numeric",
+          "answer_formula": "k * a"
         },
         {
           "id": "gc_010",
@@ -763,25 +781,30 @@
     {
       "id": "probability_compound",
       "name": "Compound Probability",
-      "ccss": "7.SP.C.8",
+      "ccss": "7.SP.A.1, 7.SP.B.3, 7.SP.C.8, 8.EE.A.1",
       "level": "solidify",
       "templates": [
         {
           "id": "pc_001",
-          "type": "COMPUTE",
-          "problem": "You flip a coin and roll a {a}-sided die. What is the probability of getting heads AND rolling a {b}?",
+          "type": "IDENTIFY",
+          "problem": "A school has {b} students. Which sample better represents the whole school? Enter 1 for randomly selecting {a} students from every grade, or 2 for surveying only the {c} students in one elective class.",
           "constraints": {
             "a": [
-              4,
-              8
+              10,
+              40
             ],
             "b": [
-              1,
-              6
+              400,
+              1200
+            ],
+            "c": [
+              15,
+              35
             ]
           },
-          "answer_formula": "1/(2*a)",
-          "answer_type": "fraction_simplified"
+          "generation_note": "7.SP.A.1 representative sample; correct choice always 1",
+          "answer_type": "numeric",
+          "answer_formula": "1"
         },
         {
           "id": "pc_002",
@@ -825,51 +848,50 @@
         {
           "id": "pc_005",
           "type": "COMPUTE",
-          "problem": "Independent events: P(A) = {a}/{b} and P(B) = {c}/{d}. Enter P(A and B) as a decimal rounded to the nearest hundredth.",
+          "problem": "Group A has mean {a} and Group B has mean {b}. Each group's MAD is about {m}. The difference of the means is how many times the MAD?",
           "constraints": {
             "a": [
-              1,
-              3
+              60,
+              90
             ],
             "b": [
-              4,
-              8
+              50,
+              85
             ],
-            "c": [
-              1,
-              3
-            ],
-            "d": [
-              4,
+            "m": [
+              2,
               8
             ]
           },
-          "answer_type": "decimal",
-          "answer_formula": "(a * c) / (b * d)"
+          "generation_note": "7.SP.B.3 difference of means as multiple of MAD",
+          "constraints_note": "abs(a-b) divisible by m; a != b",
+          "answer_type": "numeric",
+          "answer_formula": "abs(a - b) / m"
         },
         {
           "id": "pc_006",
           "type": "COMPUTE",
-          "problem": "P(A) = {a}/100 and P(B) = {b}/100. If independent, enter P(A and B) as a decimal.",
+          "problem": "Using a^m × a^n = a^(m+n), evaluate 10^{b} × 10^{c} as a whole number.",
           "constraints": {
-            "a": [
-              20,
-              80
-            ],
             "b": [
-              20,
-              80
+              1,
+              3
+            ],
+            "c": [
+              1,
+              3
             ]
           },
-          "answer_type": "decimal",
-          "answer_formula": "(a/100)*(b/100)"
+          "generation_note": "8.EE.A.1 preview integer exponent product rule",
+          "answer_type": "numeric",
+          "answer_formula": "pow(10, b + c)"
         }
       ]
     },
     {
       "id": "preview_linear_relationships",
       "name": "Preview: Linear Relationships and Slope (8th Grade Intro)",
-      "ccss_preview": "8.EE.B.5, 8.F.A.1, 8.F.A.3",
+      "ccss_preview": "8.EE.B.5, 8.EE.B.6, 8.F.A.1, 8.F.A.3",
       "level": "preview",
       "note": "Introduces the concept of constant rate of change (slope) informally through tables and graphs. No y=mx+b notation yet — that is core 8th grade.",
       "templates": [
@@ -899,28 +921,25 @@
         {
           "id": "pl_002",
           "type": "COMPUTE",
-          "context": "walking",
-          "problem": "A hiker walks at {a} mph for {b} hours, then at {c} mph for {d} hours. How many miles did the hiker walk in total?",
+          "problem": "A non-vertical line passes through (0, {b}) and ({a}, {c}). What is its slope?",
           "constraints": {
-            "a": [
-              2,
-              5
-            ],
             "b": [
+              -8,
+              8
+            ],
+            "a": [
               1,
-              4
+              6
             ],
             "c": [
-              1,
-              4
-            ],
-            "d": [
-              1,
-              4
+              -10,
+              20
             ]
           },
+          "generation_note": "8.EE.B.6 slope from y-intercept and another point",
+          "constraints_note": "prefer (c-b) divisible by a",
           "answer_type": "numeric",
-          "answer_formula": "a*b + c*d"
+          "answer_formula": "(c - b) / a"
         },
         {
           "id": "pl_003",
@@ -949,28 +968,21 @@
         },
         {
           "id": "pl_004",
-          "type": "COMPARE",
-          "problem": "Line A passes through (0,0) and ({a},{b}). Line B passes through (0,0) and ({c},{d}). By how much does the steeper rate of change exceed the other?",
+          "type": "IDENTIFY",
+          "problem": "Which equation is linear? Enter 1 for y = {m}x + {b}, or 2 for y = {m}x^2 + {b}.",
           "constraints": {
-            "a": [
+            "m": [
               2,
-              6
+              8
             ],
             "b": [
-              4,
-              18
-            ],
-            "c": [
-              2,
-              6
-            ],
-            "d": [
-              4,
-              18
+              1,
+              10
             ]
           },
+          "generation_note": "8.F.A.3 linear vs nonlinear; correct choice always 1",
           "answer_type": "numeric",
-          "answer_formula": "abs(b/a - d/c)"
+          "answer_formula": "1"
         },
         {
           "id": "pl_005",
@@ -1017,30 +1029,24 @@
     {
       "id": "preview_pythagorean_theorem",
       "name": "Preview: The Pythagorean Theorem (8th Grade Intro)",
-      "ccss_preview": "8.G.B.7",
+      "ccss_preview": "8.G.B.7, 8.NS.A.2, 8.EE.A.2",
       "level": "preview",
       "note": "Introduces the Pythagorean theorem using whole-number Pythagorean triples only. No decimal answers, no square roots — just recognition and application of a² + b² = c².",
       "templates": [
         {
           "id": "pp_001",
           "type": "COMPUTE",
-          "problem": "Compute {a}² + {b}² − {c}².",
+          "problem": "Between which two consecutive whole numbers does √{n} lie? Enter the lesser whole number.",
           "constraints": {
-            "a": [
-              3,
-              15
-            ],
-            "b": [
-              4,
-              15
-            ],
-            "c": [
-              5,
-              25
+            "n": [
+              2,
+              80
             ]
           },
+          "generation_note": "8.NS.A.2 approximate irrationals; prefer non-perfect squares",
+          "constraints_note": "n not a perfect square",
           "answer_type": "numeric",
-          "answer_formula": "a*a + b*b - c*c"
+          "answer_formula": "floor(sqrt(n))"
         },
         {
           "id": "pp_002",
@@ -1100,29 +1106,25 @@
         },
         {
           "id": "pp_005",
-          "type": "ERROR_ANALYSIS",
-          "problem": "A student finds the hypotenuse of a right triangle with legs {a} and {b} by adding the legs. Using a² + b² = c², what is the correct hypotenuse?",
+          "type": "COMPUTE",
+          "problem": "Solve x^2 = {p} for the positive value of x.",
           "constraints": {
-            "a": [
-              3,
-              12
-            ],
-            "b": [
+            "p": [
               4,
-              15
+              144
             ]
           },
-          "constraints_note": "use Pythagorean triples for whole-number answers",
-          "generation_note": "wrong = a + b",
+          "generation_note": "8.EE.A.2 preview; prefer perfect squares",
+          "constraints_note": "p is a perfect square",
           "answer_type": "numeric",
-          "answer_formula": "sqrt(a*a + b*b)"
+          "answer_formula": "sqrt(p)"
         }
       ]
     },
     {
       "id": "preview_transformations",
       "name": "Preview: Transformations on the Coordinate Plane (8th Grade Intro)",
-      "ccss_preview": "8.G.A.1, 8.G.A.3",
+      "ccss_preview": "8.G.A.1, 8.G.A.3, 8.G.A.4",
       "level": "preview",
       "note": "Introduces translations and reflections informally. No rotation formulas — just understanding movement and symmetry.",
       "templates": [
@@ -1215,8 +1217,7 @@
         {
           "id": "pt_005",
           "type": "COMPUTE",
-          "context": "game",
-          "problem": "A game piece at ({a}, {b}) is reflected across the y-axis then moved up {c} units. What is its final y-coordinate?",
+          "problem": "Dilate point ({a}, {b}) by scale factor {k} from the origin. What is the new y-coordinate?",
           "constraints": {
             "a": [
               -6,
@@ -1226,13 +1227,14 @@
               -6,
               6
             ],
-            "c": [
-              1,
-              6
+            "k": [
+              2,
+              5
             ]
           },
+          "generation_note": "8.G.A.4 dilation from origin",
           "answer_type": "numeric",
-          "answer_formula": "b + c"
+          "answer_formula": "k * b"
         }
       ]
     }

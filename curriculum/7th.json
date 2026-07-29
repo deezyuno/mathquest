@@ -39,24 +39,28 @@
         {
           "id": "pr_002",
           "type": "COMPUTE",
-          "problem": "Hours 1, 2, and 3 correspond to {a}, {b}, and {c} miles. What is the unit rate in miles per hour for hour 1?",
+          "problem": "A runner travels {a}/{b} mile in {c}/{d} hour. What is the unit rate in miles per hour?",
           "constraints": {
             "a": [
               1,
-              3
+              5
             ],
             "b": [
               2,
-              6
+              8
             ],
             "c": [
-              3,
-              9
+              1,
+              3
+            ],
+            "d": [
+              2,
+              8
             ]
           },
-          "generation_note": "half the time proportional, half not",
-          "answer_type": "numeric",
-          "answer_formula": "a"
+          "generation_note": "7.RP.A.1 unit rate from a ratio of fractions; prefer simplified integer or clean fraction answers",
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a * d) / (b * c)"
         },
         {
           "id": "pr_003",
@@ -197,20 +201,24 @@
         {
           "id": "pr_010",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student finds {a}% of ${b} incorrectly by forgetting to divide by 100. What is the correct answer?",
+          "problem": "A proportional relationship has the table (2, {a}), (4, {b}), (6, {c}). A student writes the constant of proportionality as {a} ÷ {b}. What is the correct constant of proportionality?",
           "constraints": {
             "a": [
-              10,
-              50
+              4,
+              20
             ],
             "b": [
-              40,
-              200
+              8,
+              40
+            ],
+            "c": [
+              12,
+              60
             ]
           },
-          "generation_note": "wrong = a * b (forgot /100)",
+          "generation_note": "7.RP.A.2; require a=2k, b=4k, c=6k for integer k; student divided wrong pair",
           "answer_type": "numeric",
-          "answer_formula": "(a / 100) * b"
+          "answer_formula": "a / 2"
         },
         {
           "id": "pr_011",
@@ -553,27 +561,21 @@
         {
           "id": "rn_011",
           "type": "COMPUTE",
-          "problem": "Compute {a}/{b} + {c}/{d}.",
+          "problem": "Write {a}/{b} as a decimal.",
           "constraints": {
             "a": [
               1,
-              9
+              19
             ],
             "b": [
               2,
-              9
-            ],
-            "c": [
-              1,
-              9
-            ],
-            "d": [
-              2,
-              9
+              10
             ]
           },
-          "answer_type": "fraction_simplified",
-          "answer_formula": "(a * d + c * b) / (b * d)"
+          "generation_note": "7.NS.A.2.d; prefer terminating decimals (b in {2,4,5,8,10})",
+          "constraints_note": "prefer denominators that yield terminating decimals",
+          "answer_type": "decimal",
+          "answer_formula": "a / b"
         },
         {
           "id": "rn_012",
@@ -611,7 +613,7 @@
         {
           "id": "ee_001",
           "type": "COMPUTE",
-          "problem": "Evaluate {a}(x + {b}) when x = {c}.",
+          "problem": "Expand {a}(x + {b}). What is the constant term?",
           "constraints": {
             "a": [
               2,
@@ -620,35 +622,29 @@
             "b": [
               2,
               10
-            ],
-            "c": [
-              1,
-              8
             ]
           },
+          "generation_note": "7.EE.A.1 expand linear expression; answer is a*b",
           "answer_type": "numeric",
-          "answer_formula": "a * (c + b)"
+          "answer_formula": "a * b"
         },
         {
           "id": "ee_002",
           "type": "COMPUTE",
-          "problem": "Evaluate {a}(x - {b}) when x = {c}.",
+          "problem": "An item costs ${a} with a ${b} discount for each of x items, written as {a}x - {b}x. Combine like terms. What is the coefficient of x?",
           "constraints": {
             "a": [
-              2,
-              8
+              5,
+              20
             ],
             "b": [
-              2,
-              10
-            ],
-            "c": [
-              3,
-              12
+              1,
+              8
             ]
           },
+          "generation_note": "7.EE.A.2 rewrite expression in a different form by combining like terms",
           "answer_type": "numeric",
-          "answer_formula": "a * (c - b)"
+          "answer_formula": "a - b"
         },
         {
           "id": "ee_003",
@@ -745,23 +741,25 @@
           "id": "ee_007",
           "type": "COMPUTE",
           "context": "money",
-          "problem": "You earn ${a} per hour plus a ${b} bonus. How many hours must you work to earn at least ${c}?",
+          "problem": "Movie tickets cost ${a} each. You have ${c} and must keep at least ${b} for snacks. What is the greatest whole number of tickets you can buy?",
           "constraints": {
             "a": [
               8,
               20
             ],
             "b": [
-              10,
-              50
+              5,
+              30
             ],
             "c": [
               50,
               200
             ]
           },
+          "generation_note": "7.EE.B.4.b inequality word problem; answer = floor((c-b)/a)",
+          "constraints_note": "require c > b and floor((c-b)/a) >= 1",
           "answer_type": "numeric",
-          "answer_formula": "(c - b) / a"
+          "answer_formula": "floor((c - b) / a)"
         },
         {
           "id": "ee_008",
@@ -785,7 +783,7 @@
         {
           "id": "ee_009",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student solves {a}x + {b} = {c} incorrectly by adding b instead of subtracting before dividing. What is the correct value of x?",
+          "problem": "A student solves {a}x + {b} = {c}. The student's work shows ({c} + {b}) ÷ {a}. What is the correct value of x?",
           "constraints": {
             "a": [
               2,
@@ -800,41 +798,42 @@
               50
             ]
           },
-          "generation_note": "wrong = (c+b)/a (added b instead of subtracting)",
+          "generation_note": "7.EE.B.4.a; student added b instead of subtracting; wrong = (c+b)/a",
+          "constraints_note": "(c-b) divisible by a",
           "answer_type": "numeric",
           "answer_formula": "(c - b) / a"
         },
         {
           "id": "ee_010",
           "type": "COMPUTE",
-          "problem": "Solve: {a}x + {b} = {c} given that the solution is x = {s}. Verify by computing {a}×{s} + {b}.",
+          "problem": "Simplify ({a}x + {b}) + ({c}x - {d}). What is the constant term?",
           "constraints": {
             "a": [
               2,
-              5
+              8
             ],
             "b": [
               5,
               20
             ],
             "c": [
-              15,
-              50
+              1,
+              6
             ],
-            "s": [
-              -10,
-              10
+            "d": [
+              1,
+              15
             ]
           },
+          "generation_note": "7.EE.A.1 add linear expressions; constant term = b - d",
           "answer_type": "numeric",
-          "generation_note": "c = a*s + b",
-          "answer_formula": "a * s + b"
+          "answer_formula": "b - d"
         },
         {
           "id": "ee_011",
           "type": "APPLY",
           "context": "concert",
-          "problem": "Concert tickets cost ${a} each plus a ${b} service fee for the order. What is the total for {c} tickets?",
+          "problem": "Concert tickets cost ${a} each plus a ${b} service fee for the order. The total charge is ${c}. How many tickets were bought?",
           "constraints": {
             "a": [
               15,
@@ -845,12 +844,14 @@
               25
             ],
             "c": [
-              2,
-              8
+              35,
+              400
             ]
           },
+          "generation_note": "7.EE.B.4.a two-step equation word problem ax+b=c",
+          "constraints_note": "(c-b) divisible by a and positive",
           "answer_type": "numeric",
-          "answer_formula": "a * c + b"
+          "answer_formula": "(c - b) / a"
         },
         {
           "id": "ee_012",
@@ -878,7 +879,7 @@
           "id": "ee_013",
           "type": "APPLY",
           "context": "bike_rental",
-          "problem": "A bike rental costs ${a} per hour plus a ${b} flat fee. What is the total cost for {c} hours?",
+          "problem": "A bike rental costs ${a} per hour plus a ${b} flat fee. The total charge is ${c}. How many hours was the bike rented?",
           "constraints": {
             "a": [
               5,
@@ -889,12 +890,14 @@
               15
             ],
             "c": [
-              1,
-              6
+              10,
+              150
             ]
           },
+          "generation_note": "7.EE.B.4.a two-step equation; solve ax+b=c for hours",
+          "constraints_note": "(c-b) divisible by a and positive",
           "answer_type": "numeric",
-          "answer_formula": "a * c + b"
+          "answer_formula": "(c - b) / a"
         },
         {
           "id": "ee_014",
@@ -1002,20 +1005,21 @@
         {
           "id": "geo_006",
           "type": "APPLY",
-          "context": "map",
-          "problem": "A map scale is 1 in = {a} miles. Two cities are {b} in apart on the map. How far apart are they?",
+          "context": "construction",
+          "problem": "Two sides of a triangle measure {a} cm and {b} cm. What is the largest whole-number length (in cm) the third side can be?",
           "constraints": {
             "a": [
-              20,
-              100
+              5,
+              20
             ],
             "b": [
-              2,
-              8
+              5,
+              20
             ]
           },
+          "generation_note": "7.G.A.2 triangle inequality; max third side = a+b-1",
           "answer_type": "numeric",
-          "answer_formula": "a * b"
+          "answer_formula": "a + b - 1"
         },
         {
           "id": "geo_007",
@@ -1065,22 +1069,23 @@
         {
           "id": "geo_010",
           "type": "COMPUTE",
-          "problem": "Find the area of a trapezoid with bases {a} and {b} and height {c}.",
+          "problem": "A right rectangular prism has length {a}, width {b}, and height {c}. What is its volume?",
           "constraints": {
             "a": [
-              4,
-              16
-            ],
-            "b": [
-              6,
-              20
-            ],
-            "c": [
               3,
               12
+            ],
+            "b": [
+              2,
+              10
+            ],
+            "c": [
+              2,
+              8
             ]
           },
-          "answer_formula": "0.5*(a+b)*c",
+          "generation_note": "7.G.B.6 volume of a right rectangular prism",
+          "answer_formula": "a * b * c",
           "answer_type": "numeric"
         },
         {
@@ -1198,28 +1203,17 @@
         },
         {
           "id": "prob_006",
-          "type": "COMPARE",
-          "problem": "Event A has probability {a}/{b}. Event B has probability {c}/{d}. What is the absolute difference between the two probabilities?",
+          "type": "COMPUTE",
+          "problem": "You flip a coin and roll a standard die. What is the probability of getting heads and a number greater than {a}?",
           "constraints": {
             "a": [
-              1,
-              5
-            ],
-            "b": [
-              6,
-              12
-            ],
-            "c": [
               2,
-              6
-            ],
-            "d": [
-              6,
-              12
+              5
             ]
           },
-          "answer_type": "numeric",
-          "answer_formula": "abs(a / b - c / d)"
+          "generation_note": "7.SP.C.8 compound probability; sample space size 12",
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(6 - a) / 12"
         },
         {
           "id": "prob_007",
@@ -1233,27 +1227,20 @@
           "id": "prob_008",
           "type": "COMPUTE",
           "context": "experiment",
-          "problem": "In {a} trials, an event occurred {b} times. What is the experimental probability as a decimal to the nearest hundredth?",
+          "problem": "A bag has {a} red and {b} blue marbles. You draw one marble, replace it, then draw again. What is the probability both draws are red?",
           "constraints": {
             "a": [
-              20,
-              100
+              2,
+              8
             ],
             "b": [
-              5,
-              40
-            ],
-            "c": [
-              1,
-              3
-            ],
-            "d": [
-              4,
+              2,
               8
             ]
           },
-          "answer_type": "decimal",
-          "answer_formula": "b / a"
+          "generation_note": "7.SP.C.8 compound probability with replacement",
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a * a) / ((a + b) * (a + b))"
         },
         {
           "id": "prob_009",
@@ -1312,75 +1299,72 @@
       "templates": [
         {
           "id": "si_001",
-          "type": "COMPUTE",
-          "problem": "A researcher surveys {a} students from a school of {b}. What percent of the school is in the sample? (Round to the nearest whole percent.)",
+          "type": "IDENTIFY",
+          "problem": "A school has {b} students. Which sample better represents the whole school? Enter 1 for randomly selecting {a} students from every grade, or 2 for surveying only the {c} students in one elective class.",
           "constraints": {
             "a": [
               10,
-              50
+              40
             ],
             "b": [
-              200,
-              1000
+              400,
+              1200
+            ],
+            "c": [
+              15,
+              35
             ]
           },
+          "generation_note": "7.SP.A.1 representative sample; correct choice is always 1",
           "answer_type": "numeric",
-          "answer_formula": "100 * a / b"
+          "answer_formula": "1"
         },
         {
           "id": "si_002",
           "type": "COMPUTE",
-          "problem": "Find the MAD of: {a}, {b}, {c}, {d}, {e}",
+          "problem": "Group A has mean {a} and Group B has mean {b}. Each group's MAD is about {m}. The difference of the means is how many times the MAD?",
           "constraints": {
             "a": [
-              10,
-              40
+              60,
+              90
             ],
             "b": [
-              10,
-              40
+              50,
+              85
             ],
-            "c": [
-              10,
-              40
-            ],
-            "d": [
-              10,
-              40
-            ],
-            "e": [
-              10,
-              40
+            "m": [
+              2,
+              8
             ]
           },
+          "generation_note": "7.SP.B.3 express difference of means as a multiple of MAD",
+          "constraints_note": "abs(a-b) divisible by m; prefer a != b",
           "answer_type": "numeric",
-          "answer_formula": "((abs(a-(a+b+c+d+e)/5)+abs(b-(a+b+c+d+e)/5)+abs(c-(a+b+c+d+e)/5)+abs(d-(a+b+c+d+e)/5)+abs(e-(a+b+c+d+e)/5))/5)",
-          "constraints_note": "prefer values so mean is a whole number"
+          "answer_formula": "abs(a - b) / m"
         },
         {
           "id": "si_003",
-          "type": "COMPARE",
-          "problem": "Class A: mean = {a}, MAD = {b}. Class B: mean = {c}, MAD = {d}. What is the absolute difference between the two MAD values?",
+          "type": "APPLY",
+          "context": "survey",
+          "problem": "In a random sample of {a} voters, {b} support a candidate. Based on this sample, about how many of {c} voters in the district would you expect to support the candidate?",
           "constraints": {
             "a": [
-              70,
-              85
+              20,
+              50
             ],
             "b": [
-              2,
-              8
+              5,
+              40
             ],
             "c": [
-              70,
-              85
-            ],
-            "d": [
-              2,
-              8
+              200,
+              800
             ]
           },
+          "generation_note": "7.SP.A.2 use sample to draw inference about population",
+          "constraints_note": "b <= a; prefer c*b divisible by a",
           "answer_type": "numeric",
-          "answer_formula": "abs(b - d)"
+          "answer_formula": "c * b / a"
         },
         {
           "id": "si_004",
@@ -1406,46 +1390,50 @@
         },
         {
           "id": "si_005",
-          "type": "REPRESENT",
-          "problem": "Two data sets: Set A has mean {a} and median {b}. Set B has mean {c} and median {d}. What is the absolute difference between |mean−median| for Set A and |mean−median| for Set B?",
+          "type": "COMPUTE",
+          "problem": "Team A mean score = {a} and Team B mean score = {c}. Each team's MAD is {m}. By how many MAD units do the means differ?",
           "constraints": {
             "a": [
-              60,
-              80
-            ],
-            "b": [
-              55,
-              85
+              70,
+              95
             ],
             "c": [
-              60,
-              80
-            ],
-            "d": [
               55,
               85
+            ],
+            "m": [
+              2,
+              10
             ]
           },
+          "generation_note": "7.SP.B.3 second context; difference of means as multiple of MAD",
+          "constraints_note": "abs(a-c) divisible by m; prefer a != c",
           "answer_type": "numeric",
-          "answer_formula": "abs(abs(a - b) - abs(c - d))"
+          "answer_formula": "abs(a - c) / m"
         },
         {
           "id": "si_006",
           "type": "APPLY",
           "context": "school",
-          "problem": "Based on a sample where {b}% of students play in band, about how many of the {c} students in the school would you predict play in band?",
+          "problem": "In a sample of {a} households, {b} recycle weekly. About how many of {c} households in the town would you predict recycle weekly?",
           "constraints": {
+            "a": [
+              25,
+              60
+            ],
             "b": [
-              15,
-              55
+              5,
+              40
             ],
             "c": [
               200,
               800
             ]
           },
+          "generation_note": "7.SP.A.2 sample inference distinct from percent-based si_004",
+          "constraints_note": "b <= a; prefer c*b divisible by a",
           "answer_type": "numeric",
-          "answer_formula": "c * b / 100"
+          "answer_formula": "c * b / a"
         }
       ]
     }

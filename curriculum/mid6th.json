@@ -11,36 +11,42 @@
   "ccss_preview": [
     "7.NS.A",
     "7.RP.A",
-    "7.EE.A"
+    "7.EE.A",
+    "7.EE.B",
+    "7.G.A",
+    "7.G.B",
+    "7.SP.C"
   ],
   "skills": [
     {
       "id": "rational_numbers",
       "name": "Rational Numbers on the Number Line",
-      "ccss": "6.NS.C.5, 6.NS.C.6, 6.NS.C.7",
+      "ccss": "6.NS.A.1, 6.NS.B.2, 6.NS.B.3, 6.NS.B.4, 6.NS.C.5, 6.NS.C.6, 6.NS.C.7, 7.NS.A.1",
       "level": "solidify",
       "templates": [
         {
           "id": "rn_001",
-          "type": "COMPARE",
-          "problem": "How much greater is {a} than {b}?",
+          "type": "IDENTIFY",
+          "problem": "Which integer is greater? Enter the greater value: {a} or {b}.",
           "constraints": {
             "a": [
-              -5,
+              -20,
               20
             ],
             "b": [
               -20,
-              5
+              20
             ]
           },
+          "generation_note": "6.NS.C.7 compare; prefer a != b",
+          "constraints_note": "a != b",
           "answer_type": "numeric",
-          "answer_formula": "abs(a - b)"
+          "answer_formula": "max(a, b)"
         },
         {
           "id": "rn_002",
-          "type": "COMPARE",
-          "problem": "Find the spread of {a}, {b}, {c}, and {d} by subtracting the least value from the greatest value.",
+          "type": "COMPUTE",
+          "problem": "Among {a}, {b}, {c}, and {d}, what is the greatest value?",
           "constraints": {
             "a": [
               -20,
@@ -59,8 +65,9 @@
               20
             ]
           },
+          "generation_note": "6.NS.C.7 order integers; report greatest",
           "answer_type": "numeric",
-          "answer_formula": "max(a, b, c, d) - min(a, b, c, d)"
+          "answer_formula": "max(a, b, c, d)"
         },
         {
           "id": "rn_003",
@@ -77,21 +84,29 @@
         },
         {
           "id": "rn_004",
-          "type": "COMPARE",
-          "context": "temperature",
-          "problem": "Find |{a}| - |{b}|.",
+          "type": "COMPUTE",
+          "problem": "{a}/{b} ÷ {c}/{d}",
           "constraints": {
             "a": [
-              -15,
-              15
+              1,
+              5
             ],
             "b": [
-              -15,
-              15
+              2,
+              8
+            ],
+            "c": [
+              1,
+              4
+            ],
+            "d": [
+              2,
+              8
             ]
           },
-          "answer_type": "numeric",
-          "answer_formula": "abs(a) - abs(b)"
+          "generation_note": "6.NS.A.1 fraction ÷ fraction",
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a * d) / (b * c)"
         },
         {
           "id": "rn_005",
@@ -114,21 +129,17 @@
         {
           "id": "rn_006",
           "type": "COMPUTE",
-          "problem": "Find the midpoint between {a} and {b} on a number line.",
+          "problem": "What is the opposite of {a}?",
           "constraints": {
             "a": [
-              -10,
-              0
-            ],
-            "b": [
-              2,
-              12
+              -20,
+              20
             ]
           },
+          "generation_note": "6.NS.C.6 opposite on the number line",
+          "constraints_note": "a != 0",
           "answer_type": "numeric",
-          "generation_note": "one of c,d,e lies strictly between a and b",
-          "constraints_note": "(a+b) even so midpoint whole",
-          "answer_formula": "(a + b) / 2"
+          "answer_formula": "-a"
         },
         {
           "id": "rn_007",
@@ -145,20 +156,29 @@
         },
         {
           "id": "rn_008",
-          "type": "COMPARE",
-          "problem": "Compute |{a}| - |{b}|. Enter the result.",
+          "type": "COMPUTE",
+          "problem": "{a}.{b} + {c}.{d}",
           "constraints": {
             "a": [
-              -12,
-              12
+              1,
+              20
             ],
             "b": [
-              -12,
-              12
+              10,
+              99
+            ],
+            "c": [
+              1,
+              20
+            ],
+            "d": [
+              10,
+              99
             ]
           },
+          "generation_note": "6.NS.B.3 add decimals to hundredths",
           "answer_type": "numeric",
-          "answer_formula": "abs(a) - abs(b)"
+          "answer_formula": "(a + b / 100) + (c + d / 100)"
         },
         {
           "id": "rn_009",
@@ -206,19 +226,21 @@
         {
           "id": "rn_011",
           "type": "COMPUTE",
-          "problem": "How much greater is |{a}| than |{b}|?",
+          "problem": "What is the least common multiple (LCM) of {a} and {b}?",
           "constraints": {
             "a": [
-              -20,
-              20
+              3,
+              9
             ],
             "b": [
-              -20,
-              20
+              6,
+              18
             ]
           },
+          "generation_note": "6.NS.B.4; require b is multiple of a so LCM = b",
+          "constraints_note": "b multiple of a",
           "answer_type": "numeric",
-          "answer_formula": "abs(abs(a)-abs(b))"
+          "answer_formula": "b"
         },
         {
           "id": "rn_012",
@@ -252,46 +274,44 @@
         },
         {
           "id": "rn_014",
-          "type": "COMPUTE",
+          "type": "APPLY",
           "context": "finance",
-          "problem": "A business had profits and losses over 4 days: {a}, {b}, {c}, {d} dollars. What is the total change?",
+          "problem": "A business recorded daily changes of {a}, {b}, and {c} dollars. What is the total change?",
           "constraints": {
             "a": [
-              -200,
-              200
+              -100,
+              100
             ],
             "b": [
-              -200,
-              200
+              -100,
+              100
             ],
             "c": [
-              -200,
-              200
-            ],
-            "d": [
-              -200,
-              200
+              -100,
+              100
             ]
           },
+          "generation_note": "7.NS.A.1 directed sum of signed values",
           "answer_type": "numeric",
-          "answer_formula": "a + b + c + d"
+          "answer_formula": "a + b + c"
         },
         {
           "id": "rn_015",
           "type": "APPLY",
-          "problem": "A temperature starts at {a}°C and changes by {b}°C. What is the new temperature?",
+          "context": "weather",
+          "problem": "The temperature starts at {a}°C and changes by {b}°C. What is the new temperature?",
           "constraints": {
             "a": [
               -10,
               30
             ],
             "b": [
-              -15,
-              15
+              -20,
+              20
             ]
           },
+          "generation_note": "7.NS.A.1 signed temperature change",
           "answer_type": "numeric",
-          "context": "weather",
           "answer_formula": "a + b"
         },
         {
@@ -314,20 +334,30 @@
         },
         {
           "id": "rn_017",
-          "type": "COMPUTE",
-          "problem": "|{a} - {b}|",
+          "type": "APPLY",
+          "context": "cooking",
+          "problem": "How many {c}/{d}-cup servings are in {a}/{b} cup of yogurt?",
           "constraints": {
             "a": [
-              -30,
-              30
+              2,
+              5
             ],
             "b": [
-              -30,
-              30
+              3,
+              6
+            ],
+            "c": [
+              1,
+              3
+            ],
+            "d": [
+              4,
+              8
             ]
           },
-          "answer_type": "numeric",
-          "answer_formula": "abs(a - b)"
+          "generation_note": "6.NS.A.1 fraction ÷ fraction word problem",
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a * d) / (b * c)"
         },
         {
           "id": "rn_018",
@@ -344,46 +374,52 @@
         },
         {
           "id": "rn_019",
-          "type": "APPLY",
-          "context": "temperature",
-          "problem": "Morning temperature was {a}°F and afternoon was {b}°F. How much greater is |{a}| than |{b}|?",
+          "type": "COMPUTE",
+          "problem": "{a} ÷ {b}",
           "constraints": {
             "a": [
-              -25,
-              25
+              100,
+              900
             ],
             "b": [
-              -25,
-              25
+              2,
+              9
             ]
           },
+          "generation_note": "6.NS.B.2 multi-digit ÷ one-digit; a divisible by b",
+          "constraints_note": "a divisible by b",
           "answer_type": "numeric",
-          "answer_formula": "abs(abs(a)-abs(b))"
+          "answer_formula": "a / b"
         },
         {
           "id": "rn_020",
           "type": "COMPUTE",
-          "problem": "{a} + ({b})",
+          "problem": "{a}.{b} × {c}",
           "constraints": {
             "a": [
-              -40,
-              40
+              1,
+              9
             ],
             "b": [
-              -40,
-              40
+              1,
+              99
+            ],
+            "c": [
+              2,
+              9
             ]
           },
+          "generation_note": "6.NS.B.3 multiply decimal (hundredths) by whole",
           "answer_type": "numeric",
-          "answer_formula": "a + b"
+          "answer_formula": "(a + b / 100) * c"
         }
       ]
     },
     {
       "id": "integer_operations",
       "name": "Integer Operations",
-      "ccss": "6.NS.C.5, 6.NS.C.6",
-      "level": "solidify",
+      "ccss": "7.NS.A.1, 7.NS.A.2",
+      "level": "preview",
       "templates": [
         {
           "id": "int_001",
@@ -427,25 +463,22 @@
         },
         {
           "id": "int_003",
-          "type": "APPLY",
-          "context": "science",
-          "problem": "A lab cools a sample by {a}°C per minute for {b} minutes, then multiplies the total change by a scale factor of {c}. What is the scaled total change?",
+          "type": "COMPUTE",
+          "problem": "{a} × {b}",
           "constraints": {
             "a": [
-              -8,
-              -1
+              -12,
+              -2
             ],
             "b": [
-              2,
+              -8,
               8
-            ],
-            "c": [
-              -6,
-              -1
             ]
           },
+          "generation_note": "7.NS.A.2 multiply signed integers; prefer b != 0",
+          "constraints_note": "b != 0",
           "answer_type": "numeric",
-          "answer_formula": "a * b * c"
+          "answer_formula": "a * b"
         },
         {
           "id": "int_004",
@@ -505,36 +538,37 @@
         {
           "id": "int_007",
           "type": "COMPUTE",
-          "context": "finance",
-          "problem": "You owe ${a} on each of {b} library books. How much do you owe in total?",
+          "problem": "{a} ÷ {b}",
           "constraints": {
             "a": [
-              1,
-              10
+              -80,
+              80
             ],
             "b": [
-              2,
-              8
+              -10,
+              -2
             ]
           },
+          "generation_note": "7.NS.A.2 divide signed integers",
+          "constraints_note": "a divisible by b; b != 0",
           "answer_type": "numeric",
-          "answer_formula": "a * b"
+          "answer_formula": "a / b"
         },
         {
           "id": "int_008",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student computes {a} - {b} incorrectly by adding instead of subtracting. What is the correct answer?",
+          "problem": "A student computes {a} - ({b}). The student's work shows {a} + {b}. What is the correct value?",
           "constraints": {
             "a": [
               -10,
-              5
+              10
             ],
             "b": [
               -10,
-              5
+              -1
             ]
           },
-          "generation_note": "wrong = a + b (student added instead of subtracting a negative)",
+          "generation_note": "7.NS.A.1; student added instead of subtracting a negative; shown work in stem",
           "answer_type": "numeric",
           "answer_formula": "a - b"
         },
@@ -558,53 +592,40 @@
         },
         {
           "id": "int_010",
-          "type": "COMPARE",
-          "problem": "How much greater is {a} + {b} than {c} + {d}?",
+          "type": "COMPUTE",
+          "problem": "What is the product of {a} and {b}?",
           "constraints": {
             "a": [
-              -20,
-              20
+              -9,
+              9
             ],
             "b": [
-              -20,
-              20
-            ],
-            "c": [
-              -20,
-              20
-            ],
-            "d": [
-              -20,
-              20
+              -9,
+              9
             ]
           },
+          "generation_note": "7.NS.A.2 product of signed integers",
+          "constraints_note": "a != 0, b != 0",
           "answer_type": "numeric",
-          "answer_formula": "abs((a + b) - (c + d))"
+          "answer_formula": "a * b"
         },
         {
           "id": "int_011",
           "type": "COMPUTE",
-          "problem": "{a} + {b} + {c} + {d}",
+          "problem": "Rewrite {a} - ({b}) as addition, then evaluate. What is the value?",
           "constraints": {
             "a": [
-              -30,
-              30
+              -20,
+              20
             ],
             "b": [
-              -30,
-              30
-            ],
-            "c": [
-              -30,
-              30
-            ],
-            "d": [
-              -30,
-              30
+              -15,
+              -1
             ]
           },
+          "generation_note": "7.NS.A.1 subtract as add opposite",
           "answer_type": "numeric",
-          "answer_formula": "a + b + c + d"
+          "answer_formula": "a - b"
         },
         {
           "id": "int_012",
@@ -651,22 +672,24 @@
         },
         {
           "id": "int_014",
-          "type": "COMPUTE",
-          "problem": "A stock changed {a}, {b}, and {c} dollars over three days. What was the total change?",
+          "type": "APPLY",
+          "context": "sports",
+          "problem": "A team's score changes by {a}, then {b}, then {c} points. What is the net change?",
           "constraints": {
             "a": [
-              -15,
-              15
+              -20,
+              20
             ],
             "b": [
-              -15,
-              15
+              -20,
+              20
             ],
             "c": [
-              -15,
-              15
+              -20,
+              20
             ]
           },
+          "generation_note": "7.NS.A.1 multi-step signed add; distinct from int_001 wording",
           "answer_type": "numeric",
           "answer_formula": "a + b + c"
         },
@@ -790,12 +813,13 @@
           "answer_type": "numeric",
           "answer_formula": "a + b * c"
         }
-      ]
+      ],
+      "note": "Grade 7 preview: fluent operations with signed integers (7.NS.A). Not Grade 6 NS.C meaning/ordering."
     },
     {
       "id": "ratios_and_rates",
       "name": "Ratios, Unit Rates, and Proportional Relationships",
-      "ccss": "6.RP.A.1, 6.RP.A.2, 6.RP.A.3",
+      "ccss": "6.RP.A.1, 6.RP.A.2, 6.RP.A.3, 7.RP.A.1, 7.RP.A.2, 7.RP.A.3",
       "level": "solidify",
       "templates": [
         {
@@ -845,28 +869,26 @@
         },
         {
           "id": "rr_003",
-          "type": "COMPUTE",
-          "problem": "For ratios {a}:{b} and {c}:{d}, compute |{a}×{d} - {b}×{c}|. Enter 0 if the ratios are equivalent.",
+          "type": "IDENTIFY",
+          "problem": "A table shows x = 1, 2, 3 and y = {k}, {a}, {b}. Is y proportional to x? Enter 1 for yes or 0 for no.",
           "constraints": {
-            "a": [
-              2,
-              8
-            ],
-            "b": [
-              3,
+            "k": [
+              4,
               12
             ],
-            "c": [
-              4,
+            "a": [
+              8,
               24
             ],
-            "d": [
-              6,
-              36
+            "b": [
+              10,
+              40
             ]
           },
+          "generation_note": "7.RP.A.2; when a=2k and b=3k answer 1; else often 0. Prefer generate proportional: a=2k, b=3k → 1",
+          "constraints_note": "prefer a=2*k, b=3*k so proportional",
           "answer_type": "numeric",
-          "answer_formula": "abs(a * d - b * c)"
+          "answer_formula": "1"
         },
         {
           "id": "rr_004",
@@ -889,30 +911,26 @@
         },
         {
           "id": "rr_005",
-          "type": "COMPARE",
-          "problem": "Store A sells {a} ounces for ${b}. Store B sells {c} ounces for ${d}. How much greater is one store's price per ounce than the other's?",
+          "type": "COMPUTE",
+          "problem": "A proportional relationship has the table (2, {a}), (4, {b}), (6, {c}). What is the constant of proportionality?",
           "constraints": {
             "a": [
-              2,
-              8
+              4,
+              20
             ],
             "b": [
-              4,
-              24
+              8,
+              40
             ],
             "c": [
-              2,
-              8
-            ],
-            "d": [
-              4,
-              24
+              12,
+              60
             ]
           },
+          "generation_note": "7.RP.A.2; require a=2k, b=4k, c=6k",
+          "constraints_note": "a=2*k, b=4*k, c=6*k for integer k",
           "answer_type": "numeric",
-          "context": "shopping",
-          "answer_formula": "abs(b / a - d / c)",
-          "generation_note": "a != 0 and c != 0 (guaranteed); prefer values with clean tenths"
+          "answer_formula": "a / 2"
         },
         {
           "id": "rr_006",
@@ -957,31 +975,20 @@
         {
           "id": "rr_008",
           "type": "COMPUTE",
-          "problem": "If {a} tickets cost ${b}, how much do {c} tickets cost at the same rate?",
+          "problem": "What is {a}% of {b}?",
           "constraints": {
             "a": [
-              2,
-              5
+              10,
+              50
             ],
             "b": [
-              4,
-              25
-            ],
-            "c": [
-              5,
-              10
-            ],
-            "d": [
-              10,
-              20
-            ],
-            "e": [
-              20,
-              50
+              40,
+              200
             ]
           },
+          "generation_note": "7.RP.A.3 percent of a number",
           "answer_type": "numeric",
-          "answer_formula": "c * b / a"
+          "answer_formula": "(a / 100) * b"
         },
         {
           "id": "rr_009",
@@ -1004,22 +1011,21 @@
         {
           "id": "rr_010",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student wrongly multiplies and says a car traveling {a} miles in {b} hours goes {a}*{b} mph. What is the correct unit rate in mph?",
+          "context": "shopping",
+          "problem": "A student finds {a}% of ${b}. The student's work shows {a} × {b}. What is the correct amount?",
           "constraints": {
             "a": [
-              60,
-              300
+              10,
+              40
             ],
             "b": [
-              2,
-              6
+              50,
+              200
             ]
           },
-          "generation_note": "c = b * a (student multiplied instead of divided)",
+          "generation_note": "7.RP.A.3; student forgot to divide by 100; shown work in stem",
           "answer_type": "numeric",
-          "answer_formula": "a / b",
-          "context": "travel",
-          "constraints_note": "a divisible by b"
+          "answer_formula": "(a / 100) * b"
         },
         {
           "id": "rr_011",
@@ -1102,28 +1108,29 @@
         },
         {
           "id": "rr_015",
-          "type": "COMPARE",
-          "problem": "Find |{a}×{d} - {b}×{c}| for ratios {a}:{b} and {c}:{d}.",
+          "type": "COMPUTE",
+          "problem": "A runner travels {a}/{b} mile in {c}/{d} hour. What is the unit rate in miles per hour?",
           "constraints": {
             "a": [
               1,
-              9
+              5
             ],
             "b": [
-              1,
-              9
+              2,
+              8
             ],
             "c": [
               1,
-              9
+              3
             ],
             "d": [
-              1,
-              9
+              2,
+              8
             ]
           },
-          "answer_type": "numeric",
-          "answer_formula": "abs(a * d - b * c)"
+          "generation_note": "7.RP.A.1 unit rate from ratio of fractions",
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a * d) / (b * c)"
         },
         {
           "id": "rr_016",
@@ -1241,7 +1248,7 @@
     {
       "id": "expressions_and_equations",
       "name": "Expressions, Equations, and Variables",
-      "ccss": "6.EE.A.1, 6.EE.A.2, 6.EE.B.5, 6.EE.B.7",
+      "ccss": "6.EE.A.1, 6.EE.A.2, 6.EE.A.3, 6.EE.B.5, 6.EE.B.7, 6.EE.B.8, 6.EE.C.9, 7.EE.B.4",
       "level": "solidify",
       "templates": [
         {
@@ -1418,20 +1425,25 @@
         {
           "id": "ee_010",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student solves x + {b} = {c} incorrectly by computing {b} - {c} instead of {c} - {b}. What is the correct value of x?",
+          "problem": "A student solves {a}x + {b} = {c}. The student's work shows ({c} + {b}) ÷ {a}. What is the correct value of x?",
           "constraints": {
+            "a": [
+              2,
+              6
+            ],
             "b": [
               2,
               15
             ],
             "c": [
-              10,
-              40
+              20,
+              50
             ]
           },
-          "generation_note": "c > b so x is positive",
+          "generation_note": "7.EE.B.4.a; student added b instead of subtracting; shown work",
+          "constraints_note": "(c-b) divisible by a",
           "answer_type": "numeric",
-          "answer_formula": "c - b"
+          "answer_formula": "(c - b) / a"
         },
         {
           "id": "ee_011",
@@ -1475,20 +1487,26 @@
         {
           "id": "ee_013",
           "type": "COMPUTE",
-          "context": "age",
-          "problem": "Maya is {a} years older than her brother. If her brother is {c} years old, how old is Maya?",
+          "context": "money",
+          "problem": "Movie tickets cost ${a} each. You have ${c} and must keep at least ${b} for snacks. What is the greatest whole number of tickets you can buy?",
           "constraints": {
             "a": [
-              2,
-              10
+              8,
+              20
+            ],
+            "b": [
+              5,
+              30
             ],
             "c": [
-              5,
-              15
+              50,
+              200
             ]
           },
+          "generation_note": "7.EE.B.4.b inequality; no graphing; answer = floor((c-b)/a)",
+          "constraints_note": "c > b; floor((c-b)/a) >= 1",
           "answer_type": "numeric",
-          "answer_formula": "a + c"
+          "answer_formula": "floor((c - b) / a)"
         },
         {
           "id": "ee_014",
@@ -1511,32 +1529,21 @@
         },
         {
           "id": "ee_015",
-          "type": "COMPARE",
-          "problem": "How much greater is {a}x + {b} than {c}x + {d} when x = {e}? Enter the absolute difference.",
+          "type": "COMPUTE",
+          "problem": "Expand {a}(x + {b}). What is the constant term?",
           "constraints": {
             "a": [
-              1,
-              8
+              2,
+              9
             ],
             "b": [
-              1,
-              20
-            ],
-            "c": [
-              1,
-              8
-            ],
-            "d": [
-              1,
-              20
-            ],
-            "e": [
-              1,
-              10
+              2,
+              12
             ]
           },
+          "generation_note": "6.EE.A.3 distributive property; constant term = a*b",
           "answer_type": "numeric",
-          "answer_formula": "abs((a * e + b) - (c * e + d))"
+          "answer_formula": "a * b"
         },
         {
           "id": "ee_016",
@@ -1639,7 +1646,7 @@
     {
       "id": "geometry_area_surface",
       "name": "Area, Surface Area, and Volume",
-      "ccss": "6.G.A.1, 6.G.A.2, 6.G.A.4",
+      "ccss": "6.G.A.1, 6.G.A.2, 6.G.A.3, 6.G.A.4, 7.G.B.4",
       "level": "solidify",
       "templates": [
         {
@@ -1801,34 +1808,22 @@
         },
         {
           "id": "geo_009",
-          "type": "COMPARE",
-          "problem": "Rectangle A is {a} by {b}. Rectangle B is {c} by {d}. How much greater is the larger area than the smaller?",
+          "type": "COMPUTE",
+          "problem": "Find the area of a circle with radius {a}. Use π ≈ 3.14.",
           "constraints": {
             "a": [
-              3,
-              12
-            ],
-            "b": [
-              3,
-              12
-            ],
-            "c": [
-              3,
-              12
-            ],
-            "d": [
-              3,
-              12
+              2,
+              10
             ]
           },
+          "generation_note": "7.G.B.4 circle area",
           "answer_type": "numeric",
-          "context": "measurement",
-          "answer_formula": "abs(a * b - c * d)"
+          "answer_formula": "3.14 * a * a"
         },
         {
           "id": "geo_010",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student found the area of a triangle with base {a} and height {b} incorrectly by forgetting to multiply by 1/2. What is the correct area?",
+          "problem": "A student finds the area of a triangle with base {a} and height {b}. The student's work shows {a} × {b}. What is the correct area?",
           "constraints": {
             "a": [
               6,
@@ -1839,7 +1834,8 @@
               16
             ]
           },
-          "generation_note": "wrong = a * b (forgot to multiply by 1/2)",
+          "generation_note": "6.G.A.1; student forgot ×1/2; shown work in stem",
+          "constraints_note": "a*b even so area whole",
           "answer_type": "numeric",
           "answer_formula": "0.5 * a * b"
         },
@@ -1936,25 +1932,29 @@
         },
         {
           "id": "geo_015",
-          "type": "COMPARE",
-          "problem": "A square has side {a}. A rectangle is {b} by {c}. How much greater is the larger area?",
+          "type": "COMPUTE",
+          "problem": "A rectangle has vertices at ({a},{b}), ({c},{b}), ({c},{d}), and ({a},{d}). What is its area?",
           "constraints": {
             "a": [
-              4,
-              15
+              -6,
+              0
             ],
             "b": [
-              3,
-              12
+              -6,
+              0
             ],
             "c": [
-              3,
-              12
+              1,
+              6
+            ],
+            "d": [
+              1,
+              6
             ]
           },
+          "generation_note": "6.G.A.3 axis-aligned rectangle on coordinate plane",
           "answer_type": "numeric",
-          "answer_formula": "abs(a * a - b * c)",
-          "context": "construction"
+          "answer_formula": "abs(c - a) * abs(d - b)"
         },
         {
           "id": "geo_016",
@@ -1987,7 +1987,7 @@
     {
       "id": "coordinate_plane",
       "name": "Coordinate Plane and Distance",
-      "ccss": "6.NS.C.6, 6.NS.C.8",
+      "ccss": "6.NS.C.6, 6.NS.C.8, 6.G.A.3, 7.G.A.1, 7.G.B.5, 7.SP.C.7",
       "level": "solidify",
       "templates": [
         {
@@ -2036,21 +2036,21 @@
         },
         {
           "id": "cp_003",
-          "type": "COMPUTE",
-          "problem": "Point P({a}, {b}) is reflected across the origin to P'. What is the product of the coordinates of P'?",
+          "type": "IDENTIFY",
+          "problem": "Point ({a}, {b}) is in which quadrant? Enter 1, 2, 3, or 4.",
           "constraints": {
             "a": [
               -10,
-              10
+              -1
             ],
             "b": [
-              -10,
+              1,
               10
             ]
           },
-          "constraints_note": "a != 0, b != 0",
+          "generation_note": "6.NS.C.6 Quadrant II (x<0, y>0); answer 2",
           "answer_type": "numeric",
-          "answer_formula": "(-a) * (-b)"
+          "answer_formula": "2"
         },
         {
           "id": "cp_004",
@@ -2200,7 +2200,7 @@
         {
           "id": "cp_010",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student finds the distance between ({a}, {y}) and ({b}, {y}) incorrectly by adding the coordinates instead of using the absolute difference. What is the correct distance?",
+          "problem": "A student finds the distance between ({a}, {y}) and ({b}, {y}). The student's work shows {a} + {b}. What is the correct distance?",
           "constraints": {
             "a": [
               -6,
@@ -2215,34 +2215,31 @@
               5
             ]
           },
-          "generation_note": "wrong = a + b (student added instead of using absolute value of difference)",
+          "generation_note": "6.NS.C.8; student added coordinates; shown work in stem",
           "answer_type": "numeric",
           "answer_formula": "abs(b - a)"
         },
         {
           "id": "cp_011",
-          "type": "COMPARE",
-          "problem": "How far apart vertically are ({a}, {b}) and ({c}, {d})?",
+          "type": "COMPUTE",
+          "problem": "Points ({a}, {b}) and ({c}, {b}) are vertices of a polygon. How long is the horizontal side between them?",
           "constraints": {
             "a": [
               -8,
-              8
+              0
             ],
             "b": [
-              -8,
-              8
+              -5,
+              5
             ],
             "c": [
-              -8,
-              8
-            ],
-            "d": [
-              -8,
+              1,
               8
             ]
           },
+          "generation_note": "6.G.A.3 axis-aligned side length; no square roots",
           "answer_type": "numeric",
-          "answer_formula": "abs(b - d)"
+          "answer_formula": "abs(c - a)"
         },
         {
           "id": "cp_012",
@@ -2293,86 +2290,65 @@
         },
         {
           "id": "cp_014",
-          "type": "COMPUTE",
-          "problem": "What is the perimeter of a triangle with vertices at ({a}, {y}), ({b}, {y}), and ({x}, {c}), where the base is horizontal and height is |{c} - {y}|?",
+          "type": "APPLY",
+          "context": "maps",
+          "problem": "A map scale is {a} cm = {b} km. A road measures {c} cm on the map. How many kilometers long is the real road?",
           "constraints": {
             "a": [
-              -6,
-              0
-            ],
-            "b": [
               1,
-              6
-            ],
-            "y": [
-              -4,
-              4
-            ],
-            "x": [
-              -3,
               3
             ],
+            "b": [
+              5,
+              20
+            ],
             "c": [
-              -6,
-              6
+              2,
+              12
             ]
           },
-          "generation_note": "Base = abs(b-a). Side lengths use distance formula only for the two slant sides.",
+          "generation_note": "7.G.A.1 scale drawing; no Pythagorean",
           "answer_type": "numeric",
-          "answer_formula": "abs(b - a) + sqrt(pow(x - a, 2) + pow(c - y, 2)) + sqrt(pow(x - b, 2) + pow(c - y, 2))"
+          "answer_formula": "c * b / a"
         },
         {
           "id": "cp_015",
-          "type": "COMPARE",
-          "problem": "Find the absolute difference of the y-coordinates of ({a}, {b}) and ({c}, {d}).",
+          "type": "COMPUTE",
+          "problem": "Two angles are complementary. One measures {a}°. What is the other?",
           "constraints": {
             "a": [
-              -10,
-              10
-            ],
-            "b": [
-              -10,
-              10
-            ],
-            "c": [
-              -10,
-              10
-            ],
-            "d": [
-              -10,
-              10
+              10,
+              80
             ]
           },
+          "generation_note": "7.G.B.5 complementary angles",
           "answer_type": "numeric",
-          "answer_formula": "abs(b - d)"
+          "answer_formula": "90 - a"
         },
         {
           "id": "cp_016",
           "type": "COMPUTE",
-          "problem": "Find |{a} - {b}| for the horizontal segment from ({a}, {y}) to ({b}, {y}).",
+          "problem": "A bag has {a} red and {b} blue marbles. What is the probability of picking red?",
           "constraints": {
             "a": [
-              -15,
-              0
+              2,
+              8
             ],
             "b": [
-              1,
-              15
-            ],
-            "y": [
-              -10,
-              10
+              2,
+              8
             ]
           },
-          "answer_type": "numeric",
-          "answer_formula": "abs(b - a)"
+          "generation_note": "7.SP.C.7 simple theoretical probability",
+          "answer_type": "fraction_simplified",
+          "answer_formula": "a / (a + b)"
         }
       ]
     },
     {
       "id": "statistics_intro",
       "name": "Statistical Thinking and Data Distributions",
-      "ccss": "6.SP.A.1, 6.SP.A.2, 6.SP.A.3, 6.SP.B.4, 6.SP.B.5",
+      "ccss": "6.SP.A.1, 6.SP.A.2, 6.SP.A.3, 6.SP.B.4, 6.SP.B.5, 6.EE.C.9, 7.SP.C.5, 7.EE.A.1",
       "level": "solidify",
       "templates": [
         {
@@ -2494,36 +2470,12 @@
         },
         {
           "id": "sp_006",
-          "type": "COMPARE",
-          "problem": "Data set A uses {a}, {b}, {c}. Data set B uses {d}, {e}, {f}. Enter the absolute difference of the sums.",
-          "constraints": {
-            "a": [
-              5,
-              20
-            ],
-            "b": [
-              5,
-              20
-            ],
-            "c": [
-              5,
-              20
-            ],
-            "d": [
-              5,
-              20
-            ],
-            "e": [
-              5,
-              20
-            ],
-            "f": [
-              5,
-              20
-            ]
-          },
+          "type": "IDENTIFY",
+          "problem": "Which is a statistical question? Enter 1 for \"How old are the students in our class?\" or 2 for \"How old is the teacher?\"",
+          "constraints": {},
+          "generation_note": "6.SP.A.1 statistical vs non-statistical",
           "answer_type": "numeric",
-          "answer_formula": "abs((a + b + c) - (d + e + f))"
+          "answer_formula": "1"
         },
         {
           "id": "sp_007",
@@ -2698,28 +2650,12 @@
         },
         {
           "id": "sp_013",
-          "type": "COMPUTE",
-          "problem": "Find the mean of: {a}, {b}, {c}, {d}",
-          "constraints": {
-            "a": [
-              10,
-              40
-            ],
-            "b": [
-              10,
-              40
-            ],
-            "c": [
-              10,
-              40
-            ],
-            "d": [
-              10,
-              40
-            ]
-          },
-          "answer_formula": "(a + b + c + d) / 4",
-          "answer_type": "numeric"
+          "type": "IDENTIFY",
+          "problem": "What is the probability of an impossible event? Enter 0 for impossible or 1 for certain.",
+          "constraints": {},
+          "generation_note": "7.SP.C.5 probability of impossible event is 0",
+          "answer_type": "numeric",
+          "answer_formula": "0"
         },
         {
           "id": "sp_014",
@@ -2754,27 +2690,24 @@
         {
           "id": "sp_015",
           "type": "COMPUTE",
-          "problem": "Find the median of: {a}, {b}, {c}, {d}",
+          "problem": "A rule is y = {a}x + {b}. What is y when x = {c}?",
           "constraints": {
             "a": [
-              1,
-              30
+              2,
+              8
             ],
             "b": [
               1,
-              30
+              20
             ],
             "c": [
               1,
-              30
-            ],
-            "d": [
-              1,
-              30
+              10
             ]
           },
+          "generation_note": "6.EE.C.9 dependent variable from independent input",
           "answer_type": "numeric",
-          "answer_formula": "(b + c) / 2"
+          "answer_formula": "a * c + b"
         },
         {
           "id": "sp_016",
@@ -2800,85 +2733,83 @@
         {
           "id": "sp_017",
           "type": "COMPUTE",
-          "problem": "Find the sum of: {a}, {b}, {c}, {d}, {e}",
+          "problem": "Simplify ({a}x + {b}) + ({c}x + {d}). What is the coefficient of x?",
           "constraints": {
             "a": [
-              2,
-              20
+              1,
+              8
             ],
             "b": [
-              2,
-              20
+              1,
+              15
             ],
             "c": [
-              2,
-              20
+              1,
+              8
             ],
             "d": [
-              2,
-              20
-            ],
-            "e": [
-              2,
-              20
+              1,
+              15
             ]
           },
+          "generation_note": "7.EE.A.1 add linear expressions; coefficient of x",
           "answer_type": "numeric",
-          "answer_formula": "a + b + c + d + e"
+          "answer_formula": "a + c"
         }
       ]
     },
     {
       "id": "preview_proportional_reasoning",
       "name": "Preview: Proportional Relationships (7th Grade Intro)",
-      "ccss_preview": "7.RP.A.1, 7.RP.A.2",
+      "ccss_preview": "7.RP.A.1, 7.RP.A.2, 7.RP.A.3",
       "level": "preview",
       "note": "Introduces 7th grade concept of constant of proportionality at accessible level. Problems use simple numbers and avoid formal y=kx notation.",
       "templates": [
         {
           "id": "pr_001",
           "type": "COMPUTE",
-          "problem": "A car travels {a} miles in 1 hour, {b} miles in 2 hours, and {c} miles in 3 hours. What is the miles per hour in hour 1?",
+          "problem": "A proportional relationship has the table (1, {k}), (2, {a}), (3, {b}). What is the constant of proportionality?",
           "constraints": {
+            "k": [
+              5,
+              15
+            ],
             "a": [
-              30,
-              60
+              10,
+              30
             ],
             "b": [
-              60,
-              120
-            ],
-            "c": [
-              90,
-              180
+              15,
+              45
             ]
           },
+          "generation_note": "7.RP.A.2; require a=2k, b=3k",
+          "constraints_note": "a=2*k, b=3*k",
           "answer_type": "numeric",
-          "generation_note": "half the time b=2a and c=3a (proportional); half not",
-          "answer_formula": "a"
+          "answer_formula": "k"
         },
         {
           "id": "pr_002",
-          "type": "APPLY",
-          "problem": "A juice mix uses {a} parts water to {b} parts concentrate. For {c} cups of water, how many cups of concentrate are needed?",
+          "type": "IDENTIFY",
+          "problem": "A table shows x = 1, 2, 3 and y = {a}, {b}, {c}. Is the relationship proportional? Enter 1 for yes or 0 for no.",
           "constraints": {
             "a": [
-              2,
-              5
+              5,
+              10
             ],
             "b": [
-              1,
-              3
+              10,
+              20
             ],
             "c": [
-              6,
-              20
+              15,
+              30
             ]
           },
+          "generation_note": "7.RP.A.2; prefer b=2a, c=3a → yes (1)",
+          "constraints_note": "prefer b=2*a, c=3*a",
           "answer_type": "numeric",
-          "context": "cooking",
-          "constraints_note": "c divisible by a",
-          "answer_formula": "c * b / a"
+          "answer_formula": "1"
         },
         {
           "id": "pr_003",
@@ -2929,44 +2860,36 @@
         },
         {
           "id": "pr_005",
-          "type": "COMPARE",
-          "problem": "Pack A is {a} items for ${b}. Pack B is {c} items for ${d}. How much greater is one pack's price per item than the other's?",
+          "type": "APPLY",
+          "context": "shopping",
+          "problem": "A jacket costs ${a}. It is marked {b}% off. What is the sale price?",
           "constraints": {
             "a": [
-              2,
-              8
+              40,
+              150
             ],
             "b": [
-              5,
-              24
-            ],
-            "c": [
-              2,
-              8
-            ],
-            "d": [
-              5,
-              24
+              10,
+              50
             ]
           },
+          "generation_note": "7.RP.A.3 percent discount",
           "answer_type": "numeric",
-          "context": "shopping",
-          "answer_formula": "abs(b / a - d / c)",
-          "generation_note": "a != 0 and c != 0 (guaranteed)"
+          "answer_formula": "a - (b / 100) * a"
         }
       ]
     },
     {
       "id": "preview_negative_number_operations",
       "name": "Preview: Adding and Subtracting Negative Numbers in Context (7th Grade Intro)",
-      "ccss_preview": "7.NS.A.1",
+      "ccss_preview": "7.NS.A.1, 7.NS.A.2",
       "level": "preview",
       "note": "Students have done integer multiplication and division (6.NS). This previews the 7.NS framework of understanding p + q on a number line with direction.",
       "templates": [
         {
           "id": "pn_001",
           "type": "COMPUTE",
-          "problem": "Compute {a} + ({b}).",
+          "problem": "Start at {a} on a number line and move {b} units (negative means left). Where do you end?",
           "constraints": {
             "a": [
               -10,
@@ -2977,44 +2900,46 @@
               10
             ]
           },
-          "generation_note": "direction = left if b < 0, right if b > 0",
+          "generation_note": "7.NS.A.1 p+q with direction",
           "answer_type": "numeric",
           "answer_formula": "a + b"
         },
         {
           "id": "pn_002",
           "type": "COMPUTE",
-          "context": "temperature",
-          "problem": "It was {a}°F and the temperature changed by {b}°F. What is the new temperature?",
+          "problem": "Compute {a} - ({b}).",
           "constraints": {
             "a": [
               -15,
-              30
+              20
             ],
             "b": [
               -20,
-              20
+              -1
             ]
           },
+          "generation_note": "7.NS.A.1 subtract a negative",
           "answer_type": "numeric",
-          "answer_formula": "a + b"
+          "answer_formula": "a - b"
         },
         {
           "id": "pn_003",
           "type": "COMPUTE",
-          "problem": "Compute {a} + {b}.",
+          "problem": "{a} × ({b})",
           "constraints": {
             "a": [
-              -20,
-              20
+              -8,
+              -1
             ],
             "b": [
-              -20,
-              20
+              -6,
+              6
             ]
           },
+          "generation_note": "7.NS.A.2 multiply signed integers",
+          "constraints_note": "b != 0",
           "answer_type": "numeric",
-          "answer_formula": "a + b"
+          "answer_formula": "a * b"
         },
         {
           "id": "pn_004",

@@ -10,6 +10,7 @@
   ],
   "ccss_preview": [
     "6.NS.C",
+    "6.NS.A",
     "6.RP.A",
     "6.EE.A"
   ],
@@ -17,67 +18,65 @@
     {
       "id": "fraction_operations_advanced",
       "name": "Fraction Operations with Mixed Numbers",
-      "ccss": "5.NF.A.1, 5.NF.B.4, 5.NF.B.6",
+      "ccss": "5.NF.A.1, 5.NF.B.4, 5.NF.B.6, 5.NF.B.7, 6.NS.A.1",
       "level": "solidify",
       "templates": [
         {
           "id": "fm_001",
           "type": "COMPUTE",
-          "problem": "{a} {b}/{c} + {d} {e}/{c}",
+          "problem": "{a}/{b} + {c}/{d}",
           "constraints": {
             "a": [
               1,
               5
             ],
             "b": [
-              1,
-              5
+              2,
+              6
             ],
             "c": [
-              4,
-              8
+              1,
+              5
             ],
             "d": [
-              1,
-              5
-            ],
-            "e": [
-              1,
-              5
+              3,
+              8
             ]
           },
-          "answer_type": "mixed_number",
-          "answer_formula": "(a + d) + (b + e) / c"
+          "generation_note": "5.NF.A.1 unlike denominators; prefer b != d",
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a * d + c * b) / (b * d)"
         },
         {
           "id": "fm_002",
           "type": "COMPUTE",
-          "problem": "{a} {b}/{c} - {d} {e}/{c}",
+          "problem": "{a} {b}/{c} - {d}/{e}",
           "constraints": {
             "a": [
-              3,
-              8
+              2,
+              6
             ],
             "b": [
-              3,
-              7
+              1,
+              5
             ],
             "c": [
-              4,
-              8
+              2,
+              6
             ],
             "d": [
               1,
               4
             ],
             "e": [
-              1,
-              6
+              3,
+              8
             ]
           },
+          "generation_note": "5.NF.A.1 mixed minus unlike fraction; result positive",
           "constraints_note": "result positive",
-          "answer_type": "mixed_number",
-          "answer_formula": "(a - d) + (b - e) / c"
+          "answer_type": "fraction_simplified",
+          "answer_formula": "((a * c + b) * e - d * c) / (c * e)"
         },
         {
           "id": "fm_003",
@@ -132,177 +131,172 @@
         },
         {
           "id": "fm_005",
-          "type": "APPLY",
-          "context": "cooking",
-          "problem": "A pitcher has {a}/{b} cup of juice. You pour out {c}/{b} cup. How much juice remains?",
+          "type": "COMPUTE",
+          "problem": "{a}/{b} - {c}/{d}",
           "constraints": {
             "a": [
-              5,
-              9
+              3,
+              8
             ],
             "b": [
-              6,
-              12
+              3,
+              6
             ],
             "c": [
               1,
-              4
+              3
+            ],
+            "d": [
+              4,
+              10
             ]
           },
+          "generation_note": "5.NF.A.1 unlike denominators; prefer positive difference",
+          "constraints_note": "a/b > c/d",
           "answer_type": "fraction_simplified",
-          "answer_formula": "(a - c) / b",
-          "generation_note": "a > c enforced by ranges"
+          "answer_formula": "(a * d - c * b) / (b * d)"
         },
         {
           "id": "fm_006",
           "type": "REVERSE",
-          "problem": "{a} {b}/{c} + __ = {d} {e}/{c}. Find the missing mixed number.",
+          "problem": "{a}/{b} + __ = {c}/{d}. Find the missing fraction.",
           "constraints": {
             "a": [
               1,
-              3
-            ],
-            "b": [
-              1,
               4
             ],
+            "b": [
+              2,
+              6
+            ],
             "c": [
-              6,
-              8
+              3,
+              9
             ],
             "d": [
-              4,
-              7
-            ],
-            "e": [
               3,
-              7
+              8
             ]
           },
-          "answer_type": "mixed_number",
-          "answer_formula": "(d - a) + (e - b) / c"
+          "generation_note": "5.NF.A.1 missing addend with unlike denominators",
+          "constraints_note": "c/d > a/b",
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(c * b - a * d) / (b * d)"
         },
         {
           "id": "fm_007",
           "type": "COMPARE",
-          "problem": "How much greater is {a} {b}/{c} than {d} {e}/{c}?",
-          "constraints": {
-            "a": [
-              4,
-              6
-            ],
-            "b": [
-              4,
-              7
-            ],
-            "c": [
-              6,
-              8
-            ],
-            "d": [
-              1,
-              2
-            ],
-            "e": [
-              1,
-              3
-            ]
-          },
-          "answer_type": "fraction_simplified",
-          "answer_formula": "((a * c + b) - (d * c + e)) / c",
-          "generation_note": "first mixed number greater than second (enforced by ranges)"
-        },
-        {
-          "id": "fm_008",
-          "type": "APPLY",
-          "context": "school",
-          "problem": "A classroom has {a} rows of desks with {b} desks in each row. If {c} desks are removed, how many desks remain?",
+          "problem": "How much greater is {a}/{b} than {c}/{d}?",
           "constraints": {
             "a": [
               3,
               8
             ],
             "b": [
-              4,
-              8
+              3,
+              6
             ],
             "c": [
               1,
+              3
+            ],
+            "d": [
+              4,
               10
             ]
           },
+          "generation_note": "5.NF.A.1 unlike denominators difference",
+          "constraints_note": "a/b > c/d",
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a * d - c * b) / (b * d)"
+        },
+        {
+          "id": "fm_008",
+          "type": "COMPUTE",
+          "problem": "How many 1/{b}-sized pieces are in {a} wholes?",
+          "constraints": {
+            "a": [
+              2,
+              8
+            ],
+            "b": [
+              2,
+              8
+            ]
+          },
+          "generation_note": "5.NF.B.7 whole ÷ unit fraction = a * b",
           "answer_type": "numeric",
-          "answer_formula": "a * b - c",
-          "constraints_note": "a * b > c"
+          "answer_formula": "a * b"
         },
         {
           "id": "fm_009",
-          "type": "APPLY",
-          "context": "shopping",
-          "problem": "A store sells batteries in packs of {b}. You buy {a} packs and {c} loose batteries. How many batteries do you have in all?",
+          "type": "COMPUTE",
+          "problem": "1/{b} ÷ {a}",
           "constraints": {
             "a": [
               2,
-              8
+              6
             ],
             "b": [
-              4,
-              12
-            ],
-            "c": [
-              1,
-              10
+              2,
+              8
             ]
           },
-          "answer_type": "numeric",
-          "answer_formula": "a * b + c"
+          "generation_note": "5.NF.B.7 unit fraction ÷ whole",
+          "answer_type": "fraction_simplified",
+          "answer_formula": "1 / (a * b)"
         },
         {
           "id": "fm_010",
-          "type": "APPLY",
-          "context": "music",
-          "problem": "A song has {a} sections with {b} measures each, plus {c} extra measures at the end. How many measures are in the song?",
+          "type": "COMPUTE",
+          "problem": "{a}/{b} ÷ {c}/{d}",
           "constraints": {
             "a": [
-              2,
-              8
+              1,
+              4
             ],
             "b": [
-              4,
-              16
+              2,
+              6
             ],
             "c": [
               1,
-              12
+              3
+            ],
+            "d": [
+              2,
+              6
             ]
           },
-          "answer_type": "numeric",
-          "answer_formula": "a * b + c"
+          "generation_note": "6.NS.A.1 preview fraction ÷ fraction",
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a * d) / (b * c)"
         },
         {
           "id": "fm_011",
           "type": "APPLY",
-          "context": "travel",
-          "problem": "A trip takes {a} hours on a train and then {b} more hours on a bus. How many hours did the trip take?",
+          "context": "cooking",
+          "problem": "You have {a} cups of flour. Each batch uses 1/{b} cup. How many batches can you make?",
           "constraints": {
             "a": [
-              1,
+              2,
               8
             ],
             "b": [
-              1,
+              2,
               6
             ]
           },
+          "generation_note": "5.NF.B.7 whole ÷ unit fraction word problem",
           "answer_type": "numeric",
-          "answer_formula": "a + b"
+          "answer_formula": "a * b"
         }
       ]
     },
     {
       "id": "decimal_place_value",
       "name": "Decimal Place Value and Comparison",
-      "ccss": "5.NBT.A.3, 5.NBT.A.4",
+      "ccss": "5.NBT.A.1, 5.NBT.A.2, 5.NBT.A.3, 5.NBT.A.4, 5.NBT.B.7",
       "level": "solidify",
       "templates": [
         {
@@ -334,20 +328,20 @@
         {
           "id": "dpv_002",
           "type": "COMPUTE",
-          "context": "science",
-          "problem": "Write {a} and {b} hundredths as a decimal, then multiply by 100. What whole number do you get?",
+          "problem": "What is {a}.{b} × 10?",
           "constraints": {
             "a": [
               1,
-              99
+              20
             ],
             "b": [
-              0,
+              1,
               99
             ]
           },
+          "generation_note": "5.NBT.A.1 place-value shift ×10; b is hundredths digits",
           "answer_type": "numeric",
-          "answer_formula": "a * 100 + b"
+          "answer_formula": "(a + b / 100) * 10"
         },
         {
           "id": "dpv_003",
@@ -369,28 +363,29 @@
         },
         {
           "id": "dpv_004",
-          "type": "COMPARE",
-          "problem": "How much greater is {a}.{b} than {c}.{d}? Enter the positive difference.",
+          "type": "IDENTIFY",
+          "problem": "Which is greater? Enter 1 for {a}.{b} or 2 for {c}.{d}.",
           "constraints": {
             "a": [
-              1,
+              5,
               9
             ],
             "b": [
-              100,
-              999
+              10,
+              99
             ],
             "c": [
               1,
-              9
+              4
             ],
             "d": [
-              100,
-              999
+              10,
+              99
             ]
           },
+          "generation_note": "5.NBT.A.3 compare decimals; a > c so first is greater",
           "answer_type": "numeric",
-          "answer_formula": "abs((a + b/1000) - (c + d/1000))"
+          "answer_formula": "1"
         },
         {
           "id": "dpv_005",
@@ -411,8 +406,26 @@
         },
         {
           "id": "dpv_006",
-          "type": "COMPARE",
-          "problem": "What is the absolute difference between {a}.{b} and {c}?",
+          "type": "COMPUTE",
+          "problem": "What is {a} × 10^{b}?",
+          "constraints": {
+            "a": [
+              2,
+              9
+            ],
+            "b": [
+              1,
+              3
+            ]
+          },
+          "generation_note": "5.NBT.A.2 patterns with powers of 10",
+          "answer_type": "numeric",
+          "answer_formula": "a * pow(10, b)"
+        },
+        {
+          "id": "dpv_007",
+          "type": "COMPUTE",
+          "problem": "{a}.{b} × {c}",
           "constraints": {
             "a": [
               1,
@@ -423,38 +436,13 @@
               99
             ],
             "c": [
-              1,
-              10
+              2,
+              9
             ]
           },
+          "generation_note": "5.NBT.B.7 multiply decimal (hundredths) by whole",
           "answer_type": "numeric",
-          "answer_formula": "abs((a + b/100) - c)"
-        },
-        {
-          "id": "dpv_007",
-          "type": "APPLY",
-          "context": "science",
-          "problem": "Student A measured a worm at {a}.{b} cm and student B measured {c}.{d} cm. How much greater is the longer measurement? Enter the positive difference.",
-          "constraints": {
-            "a": [
-              4,
-              8
-            ],
-            "b": [
-              10,
-              99
-            ],
-            "c": [
-              4,
-              8
-            ],
-            "d": [
-              10,
-              99
-            ]
-          },
-          "answer_type": "numeric",
-          "answer_formula": "abs((a + b/100) - (c + d/100))"
+          "answer_formula": "(a + b / 100) * c"
         },
         {
           "id": "dpv_008",
@@ -485,42 +473,35 @@
         {
           "id": "dpv_009",
           "type": "COMPUTE",
-          "problem": "Find the mean of {a}.{b}, {c}.{d}, and {e}.{f}.",
+          "problem": "{a}.{b} + {c}.{d}",
           "constraints": {
             "a": [
-              4,
-              8
+              1,
+              20
             ],
             "b": [
-              100,
-              999
+              10,
+              99
             ],
             "c": [
-              4,
-              8
+              1,
+              20
             ],
             "d": [
-              100,
-              999
-            ],
-            "e": [
-              4,
-              8
-            ],
-            "f": [
-              100,
-              999
+              10,
+              99
             ]
           },
+          "generation_note": "5.NBT.B.7 add decimals to hundredths",
           "answer_type": "numeric",
-          "answer_formula": "(a + b/1000 + c + d/1000 + e + f/1000) / 3"
+          "answer_formula": "(a + b / 100) + (c + d / 100)"
         }
       ]
     },
     {
       "id": "multi_step_word_problems",
       "name": "Multi-Step Word Problems",
-      "ccss": "5.NBT.B.5, 5.NBT.B.6, 5.NF.A.2",
+      "ccss": "5.NBT.B.5, 5.NBT.B.6, 5.NF.A.2, 5.MD.C, 5.G.A, 6.RP.A.2",
       "level": "solidify",
       "templates": [
         {
@@ -643,28 +624,23 @@
         },
         {
           "id": "ms_006",
-          "type": "COMPUTE",
-          "problem": "You buy {a} items at ${b} each and get ${c} change from ${d}. How much did you spend?",
+          "type": "APPLY",
+          "context": "travel",
+          "problem": "A car travels {a} miles in {b} hours. What is the unit rate in miles per hour?",
           "constraints": {
             "a": [
-              2,
-              6
+              60,
+              300
             ],
             "b": [
-              3,
-              10
-            ],
-            "c": [
-              5,
-              20
-            ],
-            "d": [
-              20,
-              50
+              2,
+              6
             ]
           },
+          "generation_note": "6.RP.A.2 preview unit rate",
+          "constraints_note": "a divisible by b",
           "answer_type": "numeric",
-          "answer_formula": "d - c"
+          "answer_formula": "a / b"
         },
         {
           "id": "ms_007",
@@ -690,41 +666,48 @@
         {
           "id": "ms_008",
           "type": "COMPUTE",
-          "problem": "{a} × {b} + {c}",
+          "problem": "Point A is at ({a}, {b}) and point B is at ({c}, {b}) in the first quadrant. How many units apart are they horizontally?",
           "constraints": {
             "a": [
-              12,
-              50
+              1,
+              8
             ],
             "b": [
-              2,
-              9
+              1,
+              8
             ],
             "c": [
-              10,
-              99
+              2,
+              12
             ]
           },
+          "generation_note": "5.G.A coordinate plane Q1 horizontal distance",
+          "constraints_note": "c != a; prefer c > a",
           "answer_type": "numeric",
-          "answer_formula": "a * b + c"
+          "answer_formula": "abs(c - a)"
         },
         {
           "id": "ms_009",
           "type": "APPLY",
           "context": "construction",
-          "problem": "A rectangular patio is {a} meters long and {b} meters wide. What is the area of the patio in square meters?",
+          "problem": "A rectangular prism packing box measures {a} cm by {b} cm by {c} cm. What is its volume in cubic centimeters?",
           "constraints": {
             "a": [
-              4,
-              20
+              2,
+              10
             ],
             "b": [
-              3,
-              16
+              2,
+              10
+            ],
+            "c": [
+              2,
+              8
             ]
           },
+          "generation_note": "5.MD.C volume of right rectangular prism",
           "answer_type": "numeric",
-          "answer_formula": "a * b"
+          "answer_formula": "a * b * c"
         }
       ]
     },
@@ -752,20 +735,20 @@
           "id": "pn_002",
           "type": "APPLY",
           "context": "weather",
-          "problem": "The temperature starts at {a} degrees and drops by {b} degrees. What is the temperature now?",
+          "problem": "The temperature starts at {a}°F and drops by {b} degrees. What is the temperature now?",
           "constraints": {
             "a": [
-              20,
-              90
+              -5,
+              15
             ],
             "b": [
-              5,
-              20
+              10,
+              30
             ]
           },
+          "generation_note": "6.NS.C.5 temperature that can finish below zero",
           "answer_type": "numeric",
-          "answer_formula": "a - b",
-          "constraints_note": "non-negative result"
+          "answer_formula": "a - b"
         },
         {
           "id": "pn_003",
@@ -788,15 +771,16 @@
         {
           "id": "pn_004",
           "type": "COMPUTE",
-          "problem": "What is the distance from zero to {a}?",
+          "problem": "What is the distance from zero to -{a} on the number line?",
           "constraints": {
             "a": [
               2,
               20
             ]
           },
+          "generation_note": "6.NS.C.6 absolute value of a negative number",
           "answer_type": "numeric",
-          "answer_formula": "abs(a)"
+          "answer_formula": "a"
         },
         {
           "id": "pn_005",
@@ -819,20 +803,16 @@
           "id": "pn_006",
           "type": "APPLY",
           "context": "money",
-          "problem": "You have ${a} in your wallet and spend ${b}. How much money remains?",
+          "problem": "You owe ${a}. Write this debt as a negative number.",
           "constraints": {
             "a": [
-              20,
-              100
-            ],
-            "b": [
               5,
-              40
+              80
             ]
           },
+          "generation_note": "6.NS.C.5 negative numbers for debt",
           "answer_type": "numeric",
-          "answer_formula": "a - b",
-          "constraints_note": "a > b"
+          "answer_formula": "-a"
         },
         {
           "id": "pn_007",
@@ -864,7 +844,7 @@
     {
       "id": "preview_ratio_language",
       "name": "Preview: Ratio Language and Thinking",
-      "ccss_preview": "6.RP.A.1",
+      "ccss_preview": "6.RP.A.1, 6.RP.A.2",
       "level": "preview",
       "note": "Introduces ratio language informally. No cross-multiplication, no solving proportions. Just expressing and understanding ratios.",
       "templates": [
@@ -888,20 +868,21 @@
         {
           "id": "pr_002",
           "type": "COMPUTE",
-          "problem": "In a bag of {a} fruits, {b} are apples. How many oranges are there?",
+          "problem": "{a} apples cost ${b}. What is the unit price in dollars per apple?",
           "constraints": {
             "a": [
-              8,
-              20
+              2,
+              8
             ],
             "b": [
-              2,
-              10
+              4,
+              24
             ]
           },
-          "constraints_note": "b < a",
+          "generation_note": "6.RP.A.2 unit rate",
+          "constraints_note": "b divisible by a",
           "answer_type": "numeric",
-          "answer_formula": "a - b"
+          "answer_formula": "b / a"
         },
         {
           "id": "pr_003",
@@ -928,28 +909,30 @@
         },
         {
           "id": "pr_004",
-          "type": "COMPARE",
-          "problem": "Class A has {a} boys and {b} girls. Class B has {c} boys and {d} girls. How much greater is Class A's boys-to-girls ratio (a/b) than Class B's (c/d)? Enter the absolute difference.",
+          "type": "IDENTIFY",
+          "problem": "Store A sells {a} pencils for ${b}. Store B sells {c} pencils for ${d}. Which has the greater unit price? Enter 1 for Store A or 2 for Store B.",
           "constraints": {
             "a": [
-              5,
-              15
+              2,
+              4
             ],
             "b": [
-              5,
-              15
+              10,
+              20
             ],
             "c": [
-              5,
-              15
+              4,
+              8
             ],
             "d": [
-              5,
-              15
+              4,
+              12
             ]
           },
+          "generation_note": "6.RP.A.2; prefer b/a > d/c so answer 1; enforce in generation",
+          "constraints_note": "b/a > d/c",
           "answer_type": "numeric",
-          "answer_formula": "abs(a/b - c/d)"
+          "answer_formula": "1"
         },
         {
           "id": "pr_005",
@@ -1001,7 +984,7 @@
     {
       "id": "preview_algebraic_thinking",
       "name": "Preview: Algebraic Thinking with Variables",
-      "ccss_preview": "6.EE.A.2",
+      "ccss_preview": "6.EE.A.1, 6.EE.A.2",
       "level": "preview",
       "note": "Introduces variables as placeholders. Students evaluate simple expressions — no solving equations yet.",
       "templates": [
@@ -1041,27 +1024,23 @@
         },
         {
           "id": "pa_003",
-          "type": "APPLY",
-          "context": "animals",
-          "problem": "A zoo uses {a} feed carts each day, and each cart holds {b} scoops of feed. How many scoops are used in one day?",
+          "type": "COMPUTE",
+          "problem": "If n = {a}, what is n^2?",
           "constraints": {
             "a": [
               2,
-              10
-            ],
-            "b": [
-              6,
-              24
+              12
             ]
           },
+          "generation_note": "6.EE.A.1 evaluate numerical expression with whole-number exponent",
           "answer_type": "numeric",
-          "answer_formula": "a * b"
+          "answer_formula": "a * a"
         },
         {
           "id": "pa_004",
           "type": "COMPUTE",
           "context": "money",
-          "problem": "You earn ${a} per hour. How much do you earn in {b} hours?",
+          "problem": "You earn ${a} per hour. If h = {b}, how much do you earn for h hours?",
           "constraints": {
             "a": [
               8,
@@ -1072,6 +1051,7 @@
               10
             ]
           },
+          "generation_note": "6.EE.A.2 evaluate expression with variable in context",
           "answer_type": "numeric",
           "answer_formula": "a * b"
         },
@@ -1115,25 +1095,26 @@
         },
         {
           "id": "pa_007",
-          "type": "APPLY",
+          "type": "COMPUTE",
           "context": "games",
-          "problem": "In a game, you score {a} points in each of {b} rounds, then get a bonus of {c} points. What is your total score?",
+          "problem": "Your score is {a}n + {b}. If n = {c}, what is your score?",
           "constraints": {
             "a": [
               2,
-              15
+              10
             ],
             "b": [
-              2,
-              8
+              1,
+              20
             ],
             "c": [
-              1,
-              25
+              2,
+              8
             ]
           },
+          "generation_note": "6.EE.A.2 evaluate an+b with given n",
           "answer_type": "numeric",
-          "answer_formula": "a * b + c"
+          "answer_formula": "a * c + b"
         }
       ]
     }

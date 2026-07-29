@@ -17,7 +17,7 @@
     {
       "id": "linear_equations",
       "name": "Linear Equations and Slope",
-      "ccss": "8.EE.B.5, 8.EE.B.6, 8.F.A.3",
+      "ccss": "8.EE.B.5, 8.EE.B.6, 8.EE.C.7, 8.F.A.3",
       "level": "solidify",
       "templates": [
         {
@@ -60,53 +60,48 @@
         {
           "id": "le_003",
           "type": "COMPUTE",
-          "problem": "Find the y-intercept of y = {m}x + {b}.",
+          "problem": "A non-vertical line passes through (0, {b}) and ({a}, {c}). What is its slope?",
           "constraints": {
-            "m": [
-              -4,
-              4
-            ],
             "b": [
-              -12,
-              12
+              -8,
+              8
+            ],
+            "a": [
+              1,
+              6
+            ],
+            "c": [
+              -10,
+              20
             ]
           },
+          "generation_note": "8.EE.B.6 derive slope from intercept point and another point; m = (c-b)/a",
+          "constraints_note": "a != 0; prefer (c-b) divisible by a",
           "answer_type": "numeric",
-          "answer_formula": "b"
+          "answer_formula": "(c - b) / a"
         },
         {
           "id": "le_004",
-          "type": "COMPUTE",
-          "problem": "How much greater is the slope through ({a},{b}) and ({c},{d}) than the slope of y = {m}x + {k}? Enter the absolute difference.",
+          "type": "COMPARE",
+          "problem": "Car A travels {a} miles in {b} hours. Car B follows d = {m}t. How much greater is Car A's unit rate (mph) than Car B's? Enter the absolute difference.",
           "constraints": {
             "a": [
-              0,
-              4
+              60,
+              240
             ],
             "b": [
-              -8,
-              8
-            ],
-            "c": [
               2,
-              8
-            ],
-            "d": [
-              -8,
-              8
+              6
             ],
             "m": [
-              -3,
-              3
-            ],
-            "k": [
-              -8,
-              8
+              20,
+              70
             ]
           },
-          "constraints_note": "a != c",
+          "generation_note": "8.EE.B.5 compare proportional relationships (rate vs equation)",
+          "constraints_note": "a divisible by b",
           "answer_type": "numeric",
-          "answer_formula": "abs((d - b) / (c - a) - m)"
+          "answer_formula": "abs(a / b - m)"
         },
         {
           "id": "le_005",
@@ -133,49 +128,43 @@
         {
           "id": "le_006",
           "type": "COMPUTE",
-          "context": "money",
-          "problem": "A plumber charges ${b} plus ${m} per hour. What is the cost for {t} hours?",
+          "problem": "Solve: {a}(x + {b}) = {c}",
           "constraints": {
-            "b": [
-              50,
-              150
-            ],
-            "m": [
-              40,
-              90
-            ],
-            "t": [
+            "a": [
               2,
               6
+            ],
+            "b": [
+              1,
+              8
+            ],
+            "c": [
+              10,
+              60
             ]
           },
+          "generation_note": "8.EE.C.7.b distribute and solve",
+          "constraints_note": "c divisible by a",
           "answer_type": "numeric",
-          "answer_formula": "b + m * t"
+          "answer_formula": "c / a - b"
         },
         {
           "id": "le_007",
-          "type": "COMPUTE",
-          "problem": "Line A: y = {m1}x + {b1}. Line B: y = {m2}x + {b2}. How much greater is |m1| than |m2|? Enter the absolute difference of the absolute slopes.",
+          "type": "IDENTIFY",
+          "problem": "Which equation is linear? Enter 1 for y = {m}x + {b}, or 2 for y = {m}x^2 + {b}.",
           "constraints": {
-            "m1": [
-              -4,
-              4
+            "m": [
+              2,
+              8
             ],
-            "b1": [
-              -6,
-              6
-            ],
-            "m2": [
-              -4,
-              4
-            ],
-            "b2": [
-              -6,
-              6
+            "b": [
+              1,
+              10
             ]
           },
+          "generation_note": "8.F.A.3 linear vs nonlinear; correct choice is always 1",
           "answer_type": "numeric",
-          "answer_formula": "abs(abs(m1) - abs(m2))"
+          "answer_formula": "1"
         },
         {
           "id": "le_008",
@@ -201,7 +190,7 @@
         {
           "id": "le_009",
           "type": "ERROR_ANALYSIS",
-          "problem": "A student finds the slope through ({a},{b}) and ({c},{d}) incorrectly by using (c-a)/(d-b) instead of rise over run. What is the correct slope?",
+          "problem": "A student finds the slope through ({a},{b}) and ({c},{d}). The student's work shows ({c} - {a}) / ({d} - {b}). What is the correct slope?",
           "constraints": {
             "a": [
               0,
@@ -220,7 +209,8 @@
               16
             ]
           },
-          "generation_note": "wrong = (c-a)/(d-b) (flipped rise and run)",
+          "generation_note": "8.EE.B.6; student flipped rise/run",
+          "constraints_note": "a != c",
           "answer_type": "numeric",
           "answer_formula": "(d - b) / (c - a)"
         },
@@ -270,29 +260,25 @@
         },
         {
           "id": "le_012",
-          "type": "COMPUTE",
-          "problem": "Solve the system: {a}x + {b}y = {c} and y = {d}. What is x?",
+          "type": "IDENTIFY",
+          "problem": "How many solutions does {a}x + {b} = {a}x + {c} have when {b} is not equal to {c}? Enter 0 for no solution or 2 for infinitely many.",
           "constraints": {
             "a": [
               2,
               8
             ],
             "b": [
-              -6,
-              6
+              1,
+              5
             ],
             "c": [
-              -40,
-              60
-            ],
-            "d": [
-              -5,
-              10
+              6,
+              12
             ]
           },
-          "constraints_note": "a != 0",
+          "generation_note": "8.EE.C.7.a no solution (same x-coefficient, different constants)",
           "answer_type": "numeric",
-          "answer_formula": "(c - b * d) / a"
+          "answer_formula": "0"
         }
       ]
     },
@@ -332,33 +318,34 @@
           "id": "sys_002",
           "type": "APPLY",
           "context": "money",
-          "problem": "Account A grows as y = {a}x + {b} and Account B as y = {c}x + {d}, where x is months. After how many months are the balances equal?",
+          "problem": "Plan A costs ${b} plus ${a} per month. Plan B costs ${d} plus ${c} per month. After how many months are the total costs equal?",
           "constraints": {
             "a": [
-              5,
-              20
+              10,
+              25
             ],
             "b": [
-              50,
-              200
+              20,
+              80
             ],
             "c": [
-              10,
-              40
+              5,
+              15
             ],
             "d": [
-              10,
-              100
+              40,
+              120
             ]
           },
-          "constraints_note": "a != c",
+          "generation_note": "8.EE.C.8.c real-world system",
+          "constraints_note": "a > c; (d-b) divisible by (a-c); result > 0",
           "answer_type": "numeric",
           "answer_formula": "(d - b) / (a - c)"
         },
         {
           "id": "sys_003",
-          "type": "COMPUTE",
-          "problem": "Lines y = {a}x + {b} and y = {a}x + {c} are parallel. How much greater is intercept b than intercept c? Enter the absolute difference.",
+          "type": "IDENTIFY",
+          "problem": "The system y = {a}x + {b} and y = {a}x + {c} has how many solutions when {b} is not equal to {c}? Enter 0 for none or 2 for infinitely many.",
           "constraints": {
             "a": [
               1,
@@ -366,15 +353,16 @@
             ],
             "b": [
               -8,
-              8
+              -1
             ],
             "c": [
-              -8,
+              1,
               8
             ]
           },
+          "generation_note": "8.EE.C.8.b parallel distinct lines → no solution",
           "answer_type": "numeric",
-          "answer_formula": "abs(b - c)"
+          "answer_formula": "0"
         },
         {
           "id": "sys_004",
@@ -432,101 +420,103 @@
         },
         {
           "id": "sys_006",
-          "type": "COMPUTE",
-          "problem": "Find the x-coordinate where y = {m1}x + {b1} and y = {m2}x + {b2} intersect.",
+          "type": "IDENTIFY",
+          "problem": "The system {a}x + {b}y = {c} and {d}x + {e}y = {f} consists of equivalent equations (the second is a multiple of the first). How many solutions? Enter 2 for infinitely many.",
           "constraints": {
-            "m1": [
-              -3,
+            "a": [
+              1,
               3
             ],
-            "b1": [
-              -6,
-              6
-            ],
-            "m2": [
-              -3,
+            "b": [
+              1,
               3
             ],
-            "b2": [
-              -6,
+            "c": [
+              2,
+              9
+            ],
+            "d": [
+              2,
               6
+            ],
+            "e": [
+              2,
+              6
+            ],
+            "f": [
+              4,
+              18
             ]
           },
-          "constraints_note": "m1 != m2",
+          "generation_note": "8.EE.C.8.b infinitely many",
+          "constraints_note": "d=2*a, e=2*b, f=2*c",
           "answer_type": "numeric",
-          "answer_formula": "(b2 - b1) / (m1 - m2)"
+          "answer_formula": "2"
         },
         {
           "id": "sys_007",
           "type": "COMPUTE",
-          "problem": "For y = {a}x + {b} and y = {c}x + {d}, what is the x-coordinate of the intersection?",
+          "problem": "The graphs of two lines intersect at the point ({a}, {b}). What is the y-coordinate of the solution to the system?",
           "constraints": {
             "a": [
-              1,
-              3
+              -5,
+              8
             ],
             "b": [
               -6,
-              6
-            ],
-            "c": [
-              2,
-              5
-            ],
-            "d": [
-              -6,
-              6
+              10
             ]
           },
+          "generation_note": "8.EE.C.8.a intersection point satisfies both equations",
           "answer_type": "numeric",
-          "answer_formula": "(d - b) / (a - c)"
+          "answer_formula": "b"
         },
         {
           "id": "sys_008",
           "type": "COMPUTE",
-          "problem": "If (x, y) = ({a}, {b}) satisfies x + y = {s} and x - y = {t}, verify: what is x + y?",
+          "problem": "Solve the system: x + y = {s} and x - y = {t}. What is x?",
           "constraints": {
-            "a": [
-              1,
-              10
-            ],
-            "b": [
-              -5,
-              5
-            ],
             "s": [
-              0,
-              10
+              2,
+              20
             ],
             "t": [
-              -5,
-              5
+              -8,
+              8
             ]
           },
+          "generation_note": "8.EE.C.8.b elimination/substitution",
+          "constraints_note": "s+t even so x is integer",
           "answer_type": "numeric",
-          "generation_note": "s = a+b, t = a-b",
-          "answer_formula": "a + b"
+          "answer_formula": "(s + t) / 2"
         },
         {
           "id": "sys_009",
-          "type": "COMPUTE",
-          "problem": "Solve: y = {a}x + {b} and y = {c}. Find x.",
+          "type": "APPLY",
+          "context": "phones",
+          "problem": "Phone plan A: ${a} per month plus ${b} per GB. Plan B: ${c} per month plus ${d} per GB. For how many GB of data are the monthly costs equal?",
           "constraints": {
             "a": [
-              2,
-              6
+              20,
+              40
             ],
             "b": [
-              -10,
-              10
+              5,
+              12
             ],
             "c": [
-              5,
-              40
+              10,
+              25
+            ],
+            "d": [
+              8,
+              18
             ]
           },
+          "generation_note": "8.EE.C.8.c real-world system distinct from tickets/mixture",
+          "constraints_note": "d > b; (a-c) divisible by (d-b); result > 0",
           "answer_type": "numeric",
-          "answer_formula": "(c - b) / a"
+          "answer_formula": "(a - c) / (d - b)"
         }
       ]
     },
@@ -538,76 +528,66 @@
       "templates": [
         {
           "id": "fn_001",
-          "type": "COMPUTE",
-          "problem": "Given f(x) = {a}x + {b}, find f({c}).",
+          "type": "IDENTIFY",
+          "problem": "A relation contains the pairs ({a},{b}), ({c},{d}), and ({a},{e}) where {b} is not equal to {e}. Enter 1 if it is a function, or 0 if it is not.",
           "constraints": {
             "a": [
-              2,
-              6
+              1,
+              5
             ],
             "b": [
-              -10,
+              2,
+              5
+            ],
+            "c": [
+              6,
               10
             ],
-            "c": [
-              -5,
-              8
-            ]
-          },
-          "generation_note": "half the time repeat an x value to make it NOT a function",
-          "answer_type": "numeric",
-          "answer_formula": "a * c + b"
-        },
-        {
-          "id": "fn_002",
-          "type": "COMPUTE",
-          "context": "weather",
-          "problem": "Temperature follows T(h) = {a}h + {b}, where h is hours after noon. Find T({c}).",
-          "constraints": {
-            "a": [
-              -3,
-              4
-            ],
-            "b": [
-              50,
-              90
-            ],
-            "c": [
-              1,
-              6
-            ]
-          },
-          "answer_type": "numeric",
-          "answer_formula": "a * c + b"
-        },
-        {
-          "id": "fn_003",
-          "type": "COMPUTE",
-          "problem": "f(x) = {a}x + {b} and g(x) = {c}x + {d}. For x = {e}, how much greater is f({e}) than g({e})? Enter the absolute difference.",
-          "constraints": {
-            "a": [
-              1,
-              5
-            ],
-            "b": [
-              -8,
-              8
-            ],
-            "c": [
-              1,
-              5
-            ],
             "d": [
-              -8,
+              1,
               8
             ],
             "e": [
-              1,
-              8
+              6,
+              9
             ]
           },
+          "generation_note": "8.F.A.1 repeated input with different outputs → not a function",
+          "constraints_note": "b != e by ranges",
           "answer_type": "numeric",
-          "answer_formula": "abs((a * e + b) - (c * e + d))"
+          "answer_formula": "0"
+        },
+        {
+          "id": "fn_002",
+          "type": "IDENTIFY",
+          "context": "weather",
+          "problem": "A graph of temperature over time steadily rises in a straight line. Enter 1 if the relationship is linear and increasing, or 2 if it is nonlinear and decreasing.",
+          "constraints": {},
+          "generation_note": "8.F.B.5 qualitative features from verbal graph description",
+          "answer_type": "numeric",
+          "answer_formula": "1"
+        },
+        {
+          "id": "fn_003",
+          "type": "COMPARE",
+          "problem": "Function f is given by a table: when x increases by 1, y increases by {a}. Function g is g(x) = {c}x + {d}. How much greater is the rate of change of f than of g? Enter the absolute difference.",
+          "constraints": {
+            "a": [
+              2,
+              10
+            ],
+            "c": [
+              1,
+              8
+            ],
+            "d": [
+              -5,
+              5
+            ]
+          },
+          "generation_note": "8.F.A.2 compare rates from table description vs equation",
+          "answer_type": "numeric",
+          "answer_formula": "abs(a - c)"
         },
         {
           "id": "fn_004",
@@ -625,37 +605,48 @@
         },
         {
           "id": "fn_005",
-          "type": "COMPUTE",
-          "problem": "For f(x) = {a}x + {b}, what is the rate of change (slope)?",
+          "type": "IDENTIFY",
+          "problem": "Which equation is NOT linear? Enter 1 for y = {a}x + {b}, or 2 for y = {a}/x (x > 0).",
           "constraints": {
             "a": [
-              5,
-              15
+              2,
+              9
             ],
             "b": [
-              20,
-              50
+              1,
+              10
             ]
           },
+          "generation_note": "8.F.A.3; nonlinear choice is always 2",
           "answer_type": "numeric",
-          "answer_formula": "a"
+          "answer_formula": "2"
         },
         {
           "id": "fn_006",
           "type": "COMPUTE",
-          "problem": "For f(x) = {a}x + {b}, what is f(0)?",
+          "problem": "A linear function passes through ({a}, {b}) and ({c}, {d}). What is the rate of change?",
           "constraints": {
             "a": [
-              1,
-              6
+              0,
+              4
             ],
             "b": [
-              -10,
+              2,
+              20
+            ],
+            "c": [
+              5,
               10
+            ],
+            "d": [
+              10,
+              40
             ]
           },
+          "generation_note": "8.F.B.4 rate from two points",
+          "constraints_note": "a != c; prefer (d-b) divisible by (c-a)",
           "answer_type": "numeric",
-          "answer_formula": "b"
+          "answer_formula": "(d - b) / (c - a)"
         },
         {
           "id": "fn_007",
@@ -701,31 +692,19 @@
         },
         {
           "id": "fn_009",
-          "type": "COMPUTE",
-          "problem": "Given g(x) = {a}x - {b}, find g({c}).",
-          "constraints": {
-            "a": [
-              2,
-              6
-            ],
-            "b": [
-              -10,
-              10
-            ],
-            "c": [
-              -5,
-              8
-            ]
-          },
+          "type": "IDENTIFY",
+          "problem": "A graph falls steeply, then levels off. Enter 1 if it is decreasing then roughly constant, or 2 if it is always linear and increasing.",
+          "constraints": {},
+          "generation_note": "8.F.B.5 qualitative description of a graph",
           "answer_type": "numeric",
-          "answer_formula": "a * c - b"
+          "answer_formula": "1"
         }
       ]
     },
     {
       "id": "pythagorean_theorem",
       "name": "Pythagorean Theorem",
-      "ccss": "8.G.B.7, 8.G.B.8",
+      "ccss": "8.G.B.7, 8.G.B.8, 8.G.C.9",
       "level": "solidify",
       "templates": [
         {
@@ -828,24 +807,17 @@
         },
         {
           "id": "pt_006",
-          "type": "COMPUTE",
-          "problem": "A triangle has sides {a}, {b}, and {c}. How far is a² + b² from c²? Enter the absolute difference |a² + b² − c²|.",
+          "type": "IDENTIFY",
+          "problem": "A triangle has sides 3, 4, and {c}. Enter 1 if it is a right triangle, or 0 if it is not.",
           "constraints": {
-            "a": [
-              3,
-              12
-            ],
-            "b": [
-              4,
-              15
-            ],
             "c": [
               5,
-              17
+              6
             ]
           },
+          "generation_note": "8.G.B.6 converse; c=5 → right (1); c=6 → not (0); answer = 6-c",
           "answer_type": "numeric",
-          "answer_formula": "abs(a*a + b*b - c*c)"
+          "answer_formula": "6 - c"
         },
         {
           "id": "pt_007",
@@ -867,22 +839,22 @@
         },
         {
           "id": "pt_008",
-          "type": "ERROR_ANALYSIS",
-          "context": "drone",
-          "problem": "A drone flies {a} meters east and {b} meters straight up. A student incorrectly adds a + b for the straight-line distance from the start. What is the correct distance?",
+          "type": "COMPUTE",
+          "context": "science",
+          "problem": "A cylinder has radius {r} and height {h}. What is its volume? Use π ≈ 3.14.",
           "constraints": {
-            "a": [
-              3,
-              12
+            "r": [
+              2,
+              8
             ],
-            "b": [
-              4,
+            "h": [
+              3,
               12
             ]
           },
-          "generation_note": "wrong = a + b",
-          "answer_type": "decimal_1dp",
-          "answer_formula": "sqrt(a*a + b*b)"
+          "generation_note": "8.G.C.9 volume of cylinder V = π r^2 h",
+          "answer_type": "numeric",
+          "answer_formula": "3.14 * r * r * h"
         },
         {
           "id": "pt_009",
@@ -907,7 +879,7 @@
     {
       "id": "transformations",
       "name": "Transformations",
-      "ccss": "8.G.A.1, 8.G.A.2, 8.G.A.3, 8.G.A.4",
+      "ccss": "8.G.A.1, 8.G.A.2, 8.G.A.3, 8.G.A.4, 8.G.A.5",
       "level": "solidify",
       "templates": [
         {
@@ -1010,35 +982,16 @@
         {
           "id": "tr_006",
           "type": "COMPUTE",
-          "problem": "Triangle A has a vertex at ({a},{b}). Triangle B maps it to (-{a},{b}). What is the x-coordinate after the transformation?",
+          "problem": "Two parallel lines are cut by a transversal. One of the alternate interior angles measures {a}°. What is the measure of the other alternate interior angle?",
           "constraints": {
             "a": [
-              1,
-              5
-            ],
-            "b": [
-              1,
-              5
-            ],
-            "c": [
-              2,
-              6
-            ],
-            "d": [
-              3,
-              7
-            ],
-            "e": [
-              3,
-              7
-            ],
-            "f": [
-              1,
-              4
+              35,
+              145
             ]
           },
+          "generation_note": "8.G.A.5 parallel lines alternate interior angles congruent",
           "answer_type": "numeric",
-          "answer_formula": "-a"
+          "answer_formula": "a"
         },
         {
           "id": "tr_007",
@@ -1069,30 +1022,27 @@
         {
           "id": "tr_008",
           "type": "COMPUTE",
-          "problem": "A shape is dilated by scale factor {k} from the origin. Point ({a},{b}) maps to what x-coordinate?",
+          "problem": "Two similar triangles have scale factor {k} (image to original). A side of the original measures {a}. What is the corresponding side of the image?",
           "constraints": {
             "k": [
               2,
-              4
+              5
             ],
             "a": [
-              -4,
-              4
-            ],
-            "b": [
-              -4,
-              4
+              3,
+              12
             ]
           },
-          "answer_formula": "k * a",
-          "answer_type": "numeric"
+          "generation_note": "8.G.A.4 similarity / dilation scale factor",
+          "answer_type": "numeric",
+          "answer_formula": "k * a"
         }
       ]
     },
     {
       "id": "scientific_notation",
       "name": "Scientific Notation and Integer Exponents",
-      "ccss": "8.EE.A.1, 8.EE.A.2, 8.EE.A.3, 8.EE.A.4",
+      "ccss": "8.NS.A.1, 8.NS.A.2, 8.EE.A.1, 8.EE.A.2, 8.EE.A.3, 8.EE.A.4",
       "level": "solidify",
       "templates": [
         {
@@ -1114,21 +1064,18 @@
         },
         {
           "id": "sn_002",
-          "type": "APPLY",
-          "context": "science",
-          "problem": "A bacterium measures {a} × 10^{b} meters across. Write this length in standard form.",
+          "type": "COMPUTE",
+          "problem": "Solve x^2 = {p} for the positive value of x.",
           "constraints": {
-            "a": [
-              1,
-              9
-            ],
-            "b": [
-              -8,
-              -2
+            "p": [
+              4,
+              144
             ]
           },
+          "generation_note": "8.EE.A.2; prefer perfect squares 4,9,16,...,144",
+          "constraints_note": "p is a perfect square",
           "answer_type": "numeric",
-          "answer_formula": "a * pow(10, b)"
+          "answer_formula": "sqrt(p)"
         },
         {
           "id": "sn_003",
@@ -1183,27 +1130,17 @@
         {
           "id": "sn_005",
           "type": "COMPUTE",
-          "problem": "How much greater is {a} × 10^{b} than {c} × 10^{d}? Enter the absolute difference.",
+          "problem": "Between which two consecutive whole numbers does √{n} lie? Enter the lesser whole number.",
           "constraints": {
-            "a": [
-              1,
-              9
-            ],
-            "b": [
-              3,
-              9
-            ],
-            "c": [
-              1,
-              9
-            ],
-            "d": [
-              3,
-              9
+            "n": [
+              2,
+              80
             ]
           },
+          "generation_note": "8.NS.A.2 approximate irrationals",
+          "constraints_note": "n not a perfect square",
           "answer_type": "numeric",
-          "answer_formula": "abs(a * pow(10, b) - c * pow(10, d))"
+          "answer_formula": "floor(sqrt(n))"
         },
         {
           "id": "sn_006",
@@ -1268,29 +1205,17 @@
         },
         {
           "id": "sn_009",
-          "type": "COMPUTE",
-          "problem": "Compute ({a} × 10^{c}) ÷ ({b} × 10^{d}) and write the result in standard form.",
+          "type": "IDENTIFY",
+          "problem": "Is √{n} rational or irrational? Enter 1 for rational, or 0 for irrational.",
           "constraints": {
-            "a": [
+            "n": [
               2,
-              9
-            ],
-            "b": [
-              1,
-              1
-            ],
-            "c": [
-              4,
-              8
-            ],
-            "d": [
-              1,
               3
             ]
           },
+          "generation_note": "8.NS.A.1; n is 2 or 3 (non-square) so always irrational",
           "answer_type": "numeric",
-          "answer_formula": "(a / b) * pow(10, c - d)",
-          "generation_note": "b=1 and c>d so result is a whole number"
+          "answer_formula": "0"
         },
         {
           "id": "sn_010",
@@ -1318,22 +1243,27 @@
     {
       "id": "bivariate_data",
       "name": "Scatter Plots and Bivariate Data",
-      "ccss": "8.SP.A.1, 8.SP.A.2, 8.SP.A.3",
+      "ccss": "8.SP.A.1, 8.SP.A.2, 8.SP.A.3, 8.SP.A.4",
       "level": "solidify",
       "templates": [
         {
           "id": "bv_001",
           "type": "COMPUTE",
-          "problem": "A scatter plot's line of best fit has slope {m}. How much greater than 0 is this slope? Enter the absolute value of the slope.",
+          "problem": "In a two-way table, {a} out of {b} surveyed students have a curfew. What is this relative frequency as a decimal?",
           "constraints": {
-            "m": [
-              -8,
-              8
+            "a": [
+              5,
+              40
+            ],
+            "b": [
+              20,
+              80
             ]
           },
-          "constraints_note": "m != 0",
-          "answer_type": "numeric",
-          "answer_formula": "abs(m)"
+          "generation_note": "8.SP.A.4 relative frequency from two-way table context",
+          "constraints_note": "a <= b",
+          "answer_type": "decimal",
+          "answer_formula": "a / b"
         },
         {
           "id": "bv_002",
@@ -1359,58 +1289,53 @@
         },
         {
           "id": "bv_003",
-          "type": "COMPUTE",
-          "problem": "A line of best fit is y = {m}x + {b} for hours studied (x) and test score (y). What is the predicted score for {c} hours?",
-          "constraints": {
-            "m": [
-              2,
-              10
-            ],
-            "b": [
-              40,
-              70
-            ],
-            "c": [
-              2,
-              10
-            ]
-          },
+          "type": "IDENTIFY",
+          "problem": "A scatter plot of hours studied (x) vs test score (y) trends upward. Enter 1 for positive association, 2 for negative association, or 0 for no association.",
+          "constraints": {},
+          "generation_note": "8.SP.A.1 positive association",
           "answer_type": "numeric",
-          "answer_formula": "m * c + b"
+          "answer_formula": "1"
         },
         {
           "id": "bv_004",
           "type": "COMPUTE",
-          "problem": "A line of best fit is y = {m}x + {b}. What is the predicted y-value when x = 0?",
+          "problem": "A linear model for plant height is y = {m}x + {b}, where x is hours of sunlight per day and y is height in cm. By how many cm does predicted height increase for each additional hour of sunlight?",
           "constraints": {
             "m": [
-              2,
-              6
-            ],
-            "b": [
-              10,
-              50
-            ]
-          },
-          "answer_type": "numeric",
-          "answer_formula": "b"
-        },
-        {
-          "id": "bv_005",
-          "type": "COMPUTE",
-          "problem": "Scatter plot A has an average residual of {a}. Scatter plot B has an average residual of {b}. How much smaller is A's average residual than B's? Enter the absolute difference.",
-          "constraints": {
-            "a": [
               1,
               5
             ],
             "b": [
-              6,
-              20
+              5,
+              30
             ]
           },
+          "generation_note": "8.SP.A.3 interpret slope in context",
           "answer_type": "numeric",
-          "answer_formula": "abs(b - a)"
+          "answer_formula": "m"
+        },
+        {
+          "id": "bv_005",
+          "type": "IDENTIFY",
+          "problem": "Line A passes through {a} of {n} data points. Line B passes through {b} of {n} data points. Which line is a better informal fit? Enter 1 for Line A or 2 for Line B.",
+          "constraints": {
+            "a": [
+              6,
+              9
+            ],
+            "b": [
+              2,
+              4
+            ],
+            "n": [
+              10,
+              12
+            ]
+          },
+          "generation_note": "8.SP.A.2 informal assess closeness; A always better",
+          "constraints_note": "a > b",
+          "answer_type": "numeric",
+          "answer_formula": "1"
         },
         {
           "id": "bv_006",
@@ -1436,29 +1361,13 @@
         },
         {
           "id": "bv_007",
-          "type": "COMPUTE",
-          "context": "residual",
-          "problem": "A line of best fit is y = {m}x + {b}. At x = {c} the observed y-value is {obs}. What is the residual (observed − predicted)?",
-          "constraints": {
-            "m": [
-              2,
-              8
-            ],
-            "b": [
-              5,
-              30
-            ],
-            "c": [
-              3,
-              12
-            ],
-            "obs": [
-              20,
-              120
-            ]
-          },
+          "type": "IDENTIFY",
+          "context": "outlier",
+          "problem": "Most points in a scatter plot cluster near a rising line, but one point is far above the others. Enter 1 if that point is best described as an outlier, or 2 if the plot shows no association.",
+          "constraints": {},
+          "generation_note": "8.SP.A.1 identify outlier pattern",
           "answer_type": "numeric",
-          "answer_formula": "obs - (m * c + b)"
+          "answer_formula": "1"
         },
         {
           "id": "bv_008",
