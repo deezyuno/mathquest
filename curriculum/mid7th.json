@@ -46,7 +46,9 @@
           "generation_note": "7.EE.B.4.b inequality; answer = floor((c-b)/a)",
           "constraints_note": "c > b; floor((c-b)/a) >= 1",
           "answer_type": "numeric",
-          "answer_formula": "floor((c - b) / a)"
+          "answer_formula": "floor((c - b) / a)",
+          "topic": "expressions_equations",
+          "formatFamily": "inequality_word_problem"
         },
         {
           "id": "mse_002",
@@ -71,7 +73,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "(d + c) / a - b"
+          "answer_formula": "(d + c) / a - b",
+          "topic": "expressions_equations",
+          "formatFamily": "equation_with_distribution"
         },
         {
           "id": "mse_003",
@@ -96,7 +100,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "(d - c) / a + b"
+          "answer_formula": "(d - c) / a + b",
+          "topic": "expressions_equations",
+          "formatFamily": "equation_with_distribution"
         },
         {
           "id": "mse_004",
@@ -119,7 +125,9 @@
           "generation_note": "8.EE.C.7 preview (Grade 8); distribute and solve; c divisible by a",
           "constraints_note": "c divisible by a",
           "answer_type": "numeric",
-          "answer_formula": "c / a - b"
+          "answer_formula": "c / a - b",
+          "topic": "expressions_equations",
+          "formatFamily": "equation_with_distribution"
         },
         {
           "id": "mse_005",
@@ -144,7 +152,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "(d * c + b) / a"
+          "answer_formula": "(d * c + b) / a",
+          "topic": "expressions_equations",
+          "formatFamily": "two_step_equation"
         },
         {
           "id": "mse_006",
@@ -167,7 +177,9 @@
           },
           "constraints_note": "c > b",
           "answer_type": "numeric",
-          "answer_formula": "a / (c - b)"
+          "answer_formula": "a / (c - b)",
+          "topic": "expressions_equations",
+          "formatFamily": "algebraic_expression"
         },
         {
           "id": "mse_007",
@@ -185,7 +197,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a / (b - 1)"
+          "answer_formula": "a / (b - 1)",
+          "topic": "expressions_equations",
+          "formatFamily": "algebraic_expression"
         },
         {
           "id": "mse_008",
@@ -212,7 +226,9 @@
           "generation_note": "8.EE.A.3 how many times as much using single-digit × power of 10",
           "constraints_note": "prefer clean integer result (a/c)*10^(b-d)",
           "answer_type": "numeric",
-          "answer_formula": "(a / c) * pow(10, b - d)"
+          "answer_formula": "(a / c) * pow(10, b - d)",
+          "topic": "number_sense_place_value",
+          "formatFamily": "scientific_notation_compare"
         },
         {
           "id": "mse_009",
@@ -242,7 +258,9 @@
           },
           "generation_note": "8.F.A.1 preview; repeated input different outputs → not a function",
           "answer_type": "numeric",
-          "answer_formula": "0"
+          "answer_formula": "0",
+          "topic": "functions_linear_relationships",
+          "formatFamily": "function_identification"
         },
         {
           "id": "mse_010",
@@ -264,7 +282,9 @@
           },
           "generation_note": "8.EE.C.7.a preview; no solution when same x-coeff, different constants",
           "answer_type": "numeric",
-          "answer_formula": "0"
+          "answer_formula": "0",
+          "topic": "expressions_equations",
+          "formatFamily": "two_step_equation"
         },
         {
           "id": "mse_011",
@@ -289,7 +309,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "(d + a*b) / (a + c)"
+          "answer_formula": "(d + a*b) / (a + c)",
+          "topic": "expressions_equations",
+          "formatFamily": "equation_with_distribution"
         },
         {
           "id": "mse_012",
@@ -317,7 +339,9 @@
           "generation_note": "8.EE.C.8 preview simple system",
           "constraints_note": "d > b; (a-c) divisible by (d-b); result > 0",
           "answer_type": "numeric",
-          "answer_formula": "(a - c) / (d - b)"
+          "answer_formula": "(a - c) / (d - b)",
+          "topic": "expressions_equations",
+          "formatFamily": "algebraic_expression"
         }
       ]
     },
@@ -347,7 +371,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a*(1+b/100)*(1+c/100)"
+          "answer_formula": "a*(1+b/100)*(1+c/100)",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "percent_tax"
         },
         {
           "id": "pct_002",
@@ -365,7 +391,9 @@
           },
           "constraints_note": "a < b, a/b gives clean percent",
           "answer_type": "numeric",
-          "answer_formula": "100 * a / b"
+          "answer_formula": "100 * a / b",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "percent_application"
         },
         {
           "id": "pct_003",
@@ -383,7 +411,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a - (b / 100) * a"
+          "answer_formula": "a - (b / 100) * a",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "percent_discount"
         },
         {
           "id": "pct_004",
@@ -401,7 +431,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a * (1 + b/100)"
+          "answer_formula": "a * (1 + b/100)",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "percent_tip"
         },
         {
           "id": "pct_005",
@@ -418,7 +450,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "b / (1 + a/100)"
+          "answer_formula": "b / (1 + a/100)",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "percent_application"
         },
         {
           "id": "pct_006",
@@ -444,7 +478,9 @@
           },
           "generation_note": "7.RP.A.1 unit rate from ratio of fractions",
           "answer_type": "fraction_simplified",
-          "answer_formula": "(a * d) / (b * c)"
+          "answer_formula": "(a * d) / (b * c)",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "unit_rate"
         },
         {
           "id": "pct_007",
@@ -467,7 +503,9 @@
           "generation_note": "7.RP.A.2; require a=2k, b=3k",
           "constraints_note": "a = 2*k, b = 3*k",
           "answer_type": "numeric",
-          "answer_formula": "k"
+          "answer_formula": "k",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "constant_of_proportionality"
         },
         {
           "id": "pct_008",
@@ -489,7 +527,9 @@
             ]
           },
           "answer_formula": "a + a*b*c/100",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "simple_interest"
         },
         {
           "id": "pct_009",
@@ -515,7 +555,9 @@
           },
           "generation_note": "7.NS.A.2 multiply rational numbers",
           "answer_type": "fraction_simplified",
-          "answer_formula": "(a * c) / (b * d)"
+          "answer_formula": "(a * c) / (b * d)",
+          "topic": "fractions",
+          "formatFamily": "fraction_multiplication"
         },
         {
           "id": "pct_010",
@@ -532,7 +574,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a / (1 - b/100)"
+          "answer_formula": "a / (1 - b/100)",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "percent_discount"
         },
         {
           "id": "pct_011",
@@ -554,7 +598,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "c*(1+a/100)*(1-b/100)"
+          "answer_formula": "c*(1+a/100)*(1-b/100)",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "percent_application"
         },
         {
           "id": "pct_012",
@@ -580,7 +626,9 @@
           },
           "generation_note": "8.EE.A.4 preview scientific notation multiplication",
           "answer_type": "numeric",
-          "answer_formula": "a * c * pow(10, b + d)"
+          "answer_formula": "a * c * pow(10, b + d)",
+          "topic": "number_sense_place_value",
+          "formatFamily": "scientific_notation_multiply"
         }
       ]
     },
@@ -609,7 +657,9 @@
             ]
           },
           "answer_formula": "a*b + 0.5*a*c",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "topic": "geometry_measurement",
+          "formatFamily": "area"
         },
         {
           "id": "gc_002",
@@ -628,7 +678,9 @@
           },
           "constraints_note": "3.14*a*a > b*b",
           "answer_formula": "3.14*a*a - b*b",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "topic": "geometry_measurement",
+          "formatFamily": "area"
         },
         {
           "id": "gc_003",
@@ -649,7 +701,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "2*(a*b + b*c + a*c)"
+          "answer_formula": "2*(a*b + b*c + a*c)",
+          "topic": "geometry_measurement",
+          "formatFamily": "surface_area"
         },
         {
           "id": "gc_004",
@@ -667,7 +721,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a * b + 0.5 * 3.14 * (a/2) * (a/2)"
+          "answer_formula": "a * b + 0.5 * 3.14 * (a/2) * (a/2)",
+          "topic": "geometry_measurement",
+          "formatFamily": "area"
         },
         {
           "id": "gc_005",
@@ -681,7 +737,9 @@
           },
           "generation_note": "choose a = 3.14 * r * r for integer r in 2-10",
           "answer_type": "numeric",
-          "answer_formula": "sqrt(a / 3.14)"
+          "answer_formula": "sqrt(a / 3.14)",
+          "topic": "geometry_measurement",
+          "formatFamily": "area"
         },
         {
           "id": "gc_006",
@@ -695,7 +753,9 @@
           },
           "generation_note": "7.G.B.5 supplementary angles",
           "answer_type": "numeric",
-          "answer_formula": "180 - a"
+          "answer_formula": "180 - a",
+          "topic": "geometry_measurement",
+          "formatFamily": "angle_measure"
         },
         {
           "id": "gc_007",
@@ -713,7 +773,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a * b + 3.14 * (b/2) * (b/2)"
+          "answer_formula": "a * b + 3.14 * (b/2) * (b/2)",
+          "topic": "geometry_measurement",
+          "formatFamily": "area"
         },
         {
           "id": "gc_008",
@@ -731,7 +793,9 @@
           },
           "generation_note": "7.G.A.2 triangle inequality; max third side = a+b-1",
           "answer_type": "numeric",
-          "answer_formula": "a + b - 1"
+          "answer_formula": "a + b - 1",
+          "topic": "geometry_measurement",
+          "formatFamily": "angle_measure"
         },
         {
           "id": "gc_009",
@@ -749,7 +813,9 @@
           },
           "generation_note": "8.G.A.4 preview dilation/similarity scale factor",
           "answer_type": "numeric",
-          "answer_formula": "k * a"
+          "answer_formula": "k * a",
+          "topic": "geometry_measurement",
+          "formatFamily": "scale_drawing"
         },
         {
           "id": "gc_010",
@@ -774,7 +840,9 @@
             ]
           },
           "answer_formula": "0.5*(a+b)*c + b*d",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "topic": "geometry_measurement",
+          "formatFamily": "area"
         }
       ]
     },
@@ -804,7 +872,9 @@
           },
           "generation_note": "7.SP.A.1 representative sample; correct choice always 1",
           "answer_type": "numeric",
-          "answer_formula": "1"
+          "answer_formula": "1",
+          "topic": "statistics_probability",
+          "formatFamily": "statistical_inference"
         },
         {
           "id": "pc_002",
@@ -821,7 +891,9 @@
             ]
           },
           "answer_formula": "(a * a) / ((a + b) * (a + b))",
-          "answer_type": "fraction_simplified"
+          "answer_type": "fraction_simplified",
+          "topic": "statistics_probability",
+          "formatFamily": "probability_compound"
         },
         {
           "id": "pc_003",
@@ -829,7 +901,9 @@
           "problem": "You flip a coin twice. What is the probability of at least one heads?",
           "constraints": {},
           "answer_type": "fraction_simplified",
-          "answer_formula": "3/4"
+          "answer_formula": "3/4",
+          "topic": "statistics_probability",
+          "formatFamily": "probability_simple"
         },
         {
           "id": "pc_004",
@@ -843,7 +917,9 @@
             ]
           },
           "answer_formula": "pow(a / 100, 2)",
-          "answer_type": "decimal"
+          "answer_type": "decimal",
+          "topic": "statistics_probability",
+          "formatFamily": "probability_simple"
         },
         {
           "id": "pc_005",
@@ -866,7 +942,9 @@
           "generation_note": "7.SP.B.3 difference of means as multiple of MAD",
           "constraints_note": "abs(a-b) divisible by m; a != b",
           "answer_type": "numeric",
-          "answer_formula": "abs(a - b) / m"
+          "answer_formula": "abs(a - b) / m",
+          "topic": "statistics_probability",
+          "formatFamily": "mean"
         },
         {
           "id": "pc_006",
@@ -884,7 +962,9 @@
           },
           "generation_note": "8.EE.A.1 preview integer exponent product rule",
           "answer_type": "numeric",
-          "answer_formula": "pow(10, b + c)"
+          "answer_formula": "pow(10, b + c)",
+          "topic": "number_sense_place_value",
+          "formatFamily": "scientific_notation_multiply"
         }
       ]
     },
@@ -916,7 +996,9 @@
           "generation_note": "c > b enforced by ranges; require (c-b) divisible by a",
           "answer_type": "numeric",
           "answer_formula": "(c - b) / a",
-          "context": "travel"
+          "context": "travel",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "unit_rate"
         },
         {
           "id": "pl_002",
@@ -939,7 +1021,9 @@
           "generation_note": "8.EE.B.6 slope from y-intercept and another point",
           "constraints_note": "prefer (c-b) divisible by a",
           "answer_type": "numeric",
-          "answer_formula": "(c - b) / a"
+          "answer_formula": "(c - b) / a",
+          "topic": "functions_linear_relationships",
+          "formatFamily": "slope"
         },
         {
           "id": "pl_003",
@@ -964,7 +1048,9 @@
             ]
           },
           "answer_formula": "(d-b)/(c-a)",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "topic": "functions_linear_relationships",
+          "formatFamily": "rate_of_change"
         },
         {
           "id": "pl_004",
@@ -982,7 +1068,9 @@
           },
           "generation_note": "8.F.A.3 linear vs nonlinear; correct choice always 1",
           "answer_type": "numeric",
-          "answer_formula": "1"
+          "answer_formula": "1",
+          "topic": "functions_linear_relationships",
+          "formatFamily": "linear_relationship"
         },
         {
           "id": "pl_005",
@@ -999,7 +1087,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a + 3 * b"
+          "answer_formula": "a + 3 * b",
+          "topic": "functions_linear_relationships",
+          "formatFamily": "function_linear"
         },
         {
           "id": "pl_006",
@@ -1022,7 +1112,9 @@
           },
           "constraints_note": "b > a",
           "answer_formula": "(b - a) / c",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "topic": "functions_linear_relationships",
+          "formatFamily": "function_linear"
         }
       ]
     },
@@ -1046,7 +1138,9 @@
           "generation_note": "8.NS.A.2 approximate irrationals; prefer non-perfect squares",
           "constraints_note": "n not a perfect square",
           "answer_type": "numeric",
-          "answer_formula": "floor(sqrt(n))"
+          "answer_formula": "floor(sqrt(n))",
+          "topic": "geometry_measurement",
+          "formatFamily": "geometry_measurement"
         },
         {
           "id": "pp_002",
@@ -1064,7 +1158,9 @@
           },
           "constraints_note": "use Pythagorean triples for whole-number answers",
           "answer_type": "numeric",
-          "answer_formula": "sqrt(a*a + b*b)"
+          "answer_formula": "sqrt(a*a + b*b)",
+          "topic": "geometry_measurement",
+          "formatFamily": "pythagorean_side_length"
         },
         {
           "id": "pp_003",
@@ -1083,7 +1179,9 @@
           },
           "constraints_note": "use Pythagorean triples; c is hypotenuse, a is one leg",
           "answer_type": "numeric",
-          "answer_formula": "sqrt(c*c - a*a)"
+          "answer_formula": "sqrt(c*c - a*a)",
+          "topic": "geometry_measurement",
+          "formatFamily": "geometry_measurement"
         },
         {
           "id": "pp_004",
@@ -1102,7 +1200,9 @@
           },
           "constraints_note": "use Pythagorean triples for whole-number answers",
           "answer_type": "numeric",
-          "answer_formula": "sqrt(a*a + b*b)"
+          "answer_formula": "sqrt(a*a + b*b)",
+          "topic": "geometry_measurement",
+          "formatFamily": "pythagorean_side_length"
         },
         {
           "id": "pp_005",
@@ -1117,7 +1217,9 @@
           "generation_note": "8.EE.A.2 preview; prefer perfect squares",
           "constraints_note": "p is a perfect square",
           "answer_type": "numeric",
-          "answer_formula": "sqrt(p)"
+          "answer_formula": "sqrt(p)",
+          "topic": "expressions_equations",
+          "formatFamily": "quadratic_equation_positive_root"
         }
       ]
     },
@@ -1151,7 +1253,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a + c"
+          "answer_formula": "a + c",
+          "topic": "geometry_measurement",
+          "formatFamily": "transformation"
         },
         {
           "id": "pt_002",
@@ -1169,7 +1273,9 @@
           },
           "constraints_note": "b != 0",
           "answer_type": "numeric",
-          "answer_formula": "-b"
+          "answer_formula": "-b",
+          "topic": "geometry_measurement",
+          "formatFamily": "transformation"
         },
         {
           "id": "pt_003",
@@ -1187,7 +1293,9 @@
           },
           "constraints_note": "a != 0",
           "answer_type": "numeric",
-          "answer_formula": "-a"
+          "answer_formula": "-a",
+          "topic": "geometry_measurement",
+          "formatFamily": "transformation"
         },
         {
           "id": "pt_004",
@@ -1212,7 +1320,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "c - a"
+          "answer_formula": "c - a",
+          "topic": "geometry_measurement",
+          "formatFamily": "transformation"
         },
         {
           "id": "pt_005",
@@ -1234,7 +1344,9 @@
           },
           "generation_note": "8.G.A.4 dilation from origin",
           "answer_type": "numeric",
-          "answer_formula": "k * b"
+          "answer_formula": "k * b",
+          "topic": "geometry_measurement",
+          "formatFamily": "scale_drawing"
         }
       ]
     }

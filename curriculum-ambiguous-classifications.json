@@ -1,0 +1,218 @@
+[
+  {
+    "grade": "mid-5th",
+    "skillId": "multi_step_word_problems",
+    "templateId": "ms_001",
+    "problem": "You have ${a}. You buy {b} notebooks for ${c} each and a pencil case for ${d}. How much money do you have left?",
+    "chosenTopic": "add_subtract_multiply",
+    "chosenFormatFamily": "whole_number_subtraction",
+    "reason": "Multi-step whole-number word problem; primary objective treated as add/subtract/multiply"
+  },
+  {
+    "grade": "mid-5th",
+    "skillId": "multi_step_word_problems",
+    "templateId": "ms_002",
+    "problem": "A bus travels {a} miles in the morning and {b} miles in the afternoon. The total trip is {c} miles. How many miles are left to travel?",
+    "chosenTopic": "add_subtract_multiply",
+    "chosenFormatFamily": "whole_number_subtraction",
+    "reason": "Multi-step whole-number word problem; primary objective treated as add/subtract/multiply"
+  },
+  {
+    "grade": "mid-5th",
+    "skillId": "multi_step_word_problems",
+    "templateId": "ms_003",
+    "problem": "A baker makes {a} cookies per batch. She bakes {b} batches in the morning and {c} batches in the afternoon. She sells {d} cookies. How many are left?",
+    "chosenTopic": "add_subtract_multiply",
+    "chosenFormatFamily": "whole_number_subtraction",
+    "reason": "Multi-step whole-number word problem; primary objective treated as add/subtract/multiply"
+  },
+  {
+    "grade": "mid-5th",
+    "skillId": "multi_step_word_problems",
+    "templateId": "ms_004",
+    "problem": "A class needs to raise ${a}. They have already raised ${b}. If {c} students each raise the same amount to meet the goal, how much does each student need to raise?",
+    "chosenTopic": "add_subtract_multiply",
+    "chosenFormatFamily": "whole_number_arithmetic",
+    "reason": "Multi-step whole-number word problem; primary objective treated as add/subtract/multiply"
+  },
+  {
+    "grade": "mid-5th",
+    "skillId": "multi_step_word_problems",
+    "templateId": "ms_005",
+    "problem": "A team played {a} games. They won {b} more games than they lost. How many games did they win?",
+    "chosenTopic": "add_subtract_multiply",
+    "chosenFormatFamily": "whole_number_arithmetic",
+    "reason": "Multi-step whole-number word problem; primary objective treated as add/subtract/multiply"
+  },
+  {
+    "grade": "mid-5th",
+    "skillId": "multi_step_word_problems",
+    "templateId": "ms_007",
+    "problem": "After buying {a} items at ${b} each, you have ${c} left. How much did you start with?",
+    "chosenTopic": "add_subtract_multiply",
+    "chosenFormatFamily": "whole_number_subtraction",
+    "reason": "Multi-step whole-number word problem; primary objective treated as add/subtract/multiply"
+  },
+  {
+    "grade": "mid-5th",
+    "skillId": "multi_step_word_problems",
+    "templateId": "ms_008",
+    "problem": "Point A is at ({a}, {b}) and point B is at ({c}, {b}) in the first quadrant. How many units apart are they horizontally?",
+    "chosenTopic": "geometry_measurement",
+    "chosenFormatFamily": "coordinate_distance",
+    "reason": "Horizontal distance on coordinate plane; mentions quadrant only as context"
+  },
+  {
+    "grade": "mid-5th",
+    "skillId": "preview_ratio_language",
+    "templateId": "pr_001",
+    "problem": "There are {a} red marbles and {b} blue marbles. How many blue marbles per red marble? (Give blue ÷ red as a decimal to the nearest tenth.)",
+    "chosenTopic": "ratios_rates_proportions",
+    "chosenFormatFamily": "ratio_comparison",
+    "reason": "Marble ratio language under preview_ratio_language; not probability"
+  },
+  {
+    "grade": "6th",
+    "skillId": "integer_operations",
+    "templateId": "int_007",
+    "problem": "{a}.{b} + {c}.{d}",
+    "chosenTopic": "percent_decimals",
+    "chosenFormatFamily": "decimal_addition",
+    "reason": "Decimal addition lived under integer_operations skill"
+  },
+  {
+    "grade": "mid-6th",
+    "skillId": "rational_numbers",
+    "templateId": "rn_004",
+    "problem": "{a}/{b} ÷ {c}/{d}",
+    "chosenTopic": "fractions",
+    "chosenFormatFamily": "fraction_division",
+    "reason": "Fraction division lived under rational_numbers skill"
+  },
+  {
+    "grade": "mid-6th",
+    "skillId": "rational_numbers",
+    "templateId": "rn_008",
+    "problem": "{a}.{b} + {c}.{d}",
+    "chosenTopic": "percent_decimals",
+    "chosenFormatFamily": "decimal_addition",
+    "reason": "Decimal addition lived under rational_numbers skill"
+  },
+  {
+    "grade": "mid-6th",
+    "skillId": "rational_numbers",
+    "templateId": "rn_010",
+    "problem": "How much greater is {a}/{b} than {c}/{d}?",
+    "chosenTopic": "fractions",
+    "chosenFormatFamily": "fraction_comparison",
+    "reason": "Fraction comparison lived under rational_numbers skill"
+  },
+  {
+    "grade": "mid-6th",
+    "skillId": "rational_numbers",
+    "templateId": "rn_017",
+    "problem": "How many {c}/{d}-cup servings are in {a}/{b} cup of yogurt?",
+    "chosenTopic": "fractions",
+    "chosenFormatFamily": "fraction_of_quantity",
+    "reason": "Fraction-of-quantity lived under rational_numbers skill"
+  },
+  {
+    "grade": "mid-6th",
+    "skillId": "rational_numbers",
+    "templateId": "rn_020",
+    "problem": "{a}.{b} × {c}",
+    "chosenTopic": "percent_decimals",
+    "chosenFormatFamily": "decimal_multiplication",
+    "reason": "Decimal multiplication lived under rational_numbers skill"
+  },
+  {
+    "grade": "mid-7th",
+    "skillId": "multi_step_equations",
+    "templateId": "mse_008",
+    "problem": "Estimate: {a} × 10^{b} is how many times as much as {c} × 10^{d}?",
+    "chosenTopic": "number_sense_place_value",
+    "chosenFormatFamily": "scientific_notation_compare",
+    "reason": "Scientific notation lived under multi_step_equations skill"
+  },
+  {
+    "grade": "mid-7th",
+    "skillId": "multi_step_equations",
+    "templateId": "mse_009",
+    "problem": "A relation contains the pairs ({a},{b}), ({c},{d}), and ({a},{e}) where {b} is not equal to {e}. Enter 1 if it is a function, or 0 if it is not.",
+    "chosenTopic": "functions_linear_relationships",
+    "chosenFormatFamily": "function_identification",
+    "reason": "Function identification lived under multi_step_equations skill"
+  },
+  {
+    "grade": "mid-7th",
+    "skillId": "percent_applications",
+    "templateId": "pct_009",
+    "problem": "{a}/{b} × {c}/{d}",
+    "chosenTopic": "fractions",
+    "chosenFormatFamily": "fraction_multiplication",
+    "reason": "Fraction multiply lived under percent_applications skill"
+  },
+  {
+    "grade": "mid-7th",
+    "skillId": "percent_applications",
+    "templateId": "pct_012",
+    "problem": "({a} × 10^{b}) × ({c} × 10^{d}). Write the result in standard form.",
+    "chosenTopic": "number_sense_place_value",
+    "chosenFormatFamily": "scientific_notation_multiply",
+    "reason": "Scientific notation lived under percent_applications skill"
+  },
+  {
+    "grade": "mid-7th",
+    "skillId": "preview_pythagorean_theorem",
+    "templateId": "pp_005",
+    "problem": "Solve x^2 = {p} for the positive value of x.",
+    "chosenTopic": "expressions_equations",
+    "chosenFormatFamily": "quadratic_equation_positive_root",
+    "reason": "Standalone x^2=n under preview_pythagorean_theorem skill"
+  },
+  {
+    "grade": "8th",
+    "skillId": "linear_equations",
+    "templateId": "le_002",
+    "problem": "A line has slope {m} and y-intercept {b}. What is y when x = 1?",
+    "chosenTopic": "functions_linear_relationships",
+    "chosenFormatFamily": "function_evaluation",
+    "reason": "Slope-intercept evaluation; not algebraic substitution topic"
+  },
+  {
+    "grade": "8th",
+    "skillId": "linear_equations",
+    "templateId": "le_006",
+    "problem": "Solve: {a}(x + {b}) = {c}",
+    "chosenTopic": "expressions_equations",
+    "chosenFormatFamily": "equation_with_distribution",
+    "reason": "Equation solving under linear_equations skill without slope context"
+  },
+  {
+    "grade": "8th",
+    "skillId": "linear_equations",
+    "templateId": "le_012",
+    "problem": "How many solutions does {a}x + {b} = {a}x + {c} have when {b} is not equal to {c}? Enter 0 for no solution or 2 for infinitely many.",
+    "chosenTopic": "expressions_equations",
+    "chosenFormatFamily": "equation_solution_count",
+    "reason": "No-solution/infinite-solution equation classification"
+  },
+  {
+    "grade": "8th",
+    "skillId": "pythagorean_theorem",
+    "templateId": "pt_008",
+    "problem": "A cylinder has radius {r} and height {h}. What is its volume? Use π ≈ 3.14.",
+    "chosenTopic": "geometry_measurement",
+    "chosenFormatFamily": "cylinder_volume",
+    "reason": "Cylinder volume lived under pythagorean_theorem skill"
+  },
+  {
+    "grade": "8th",
+    "skillId": "scientific_notation",
+    "templateId": "sn_002",
+    "problem": "Solve x^2 = {p} for the positive value of x.",
+    "chosenTopic": "expressions_equations",
+    "chosenFormatFamily": "quadratic_equation_positive_root",
+    "reason": "Standalone x^2=n under scientific_notation skill"
+  }
+]

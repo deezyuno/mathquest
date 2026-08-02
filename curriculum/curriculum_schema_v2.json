@@ -1,14 +1,95 @@
 {
-  "schema_version": "2.0",
+  "schema_version": "2.1",
 
   "structure": ["grade", "skills", "templates"],
+
+  "template_required_fields": [
+    "id",
+    "type",
+    "problem",
+    "constraints",
+    "answer_type",
+    "answer_formula",
+    "topic",
+    "formatFamily"
+  ],
+
+  "template_metadata": {
+    "topic": {
+      "required": true,
+      "description": "Visible curriculum section. Runtime source of truth — do not infer from skill ID or prompt text.",
+      "enum": [
+        "add_subtract_multiply",
+        "division",
+        "fractions",
+        "integers",
+        "percent_decimals",
+        "number_sense_place_value",
+        "ratios_rates_proportions",
+        "expressions_equations",
+        "order_of_operations",
+        "geometry_measurement",
+        "statistics_probability",
+        "functions_linear_relationships",
+        "mixed_practice"
+      ]
+    },
+    "formatFamily": {
+      "required": true,
+      "description": "Structural problem family for anti-repetition (stable snake_case). Do not encode numeric parameters.",
+      "pattern": "^[a-z][a-z0-9_]*$"
+    }
+  },
+
+  "topic_labels": {
+    "add_subtract_multiply": "Addition, Subtraction & Multiplication",
+    "division": "Division",
+    "fractions": "Fractions",
+    "integers": "Integers",
+    "percent_decimals": "Percent & Decimals",
+    "number_sense_place_value": "Number Sense / Place Value",
+    "ratios_rates_proportions": "Ratios, Rates & Proportions",
+    "expressions_equations": "Expressions & Equations",
+    "order_of_operations": "Order of Operations",
+    "geometry_measurement": "Geometry & Measurement",
+    "statistics_probability": "Statistics & Probability",
+    "functions_linear_relationships": "Functions & Linear Relationships",
+    "mixed_practice": "Mixed Practice"
+  },
+
+  "runtime_selection_contract": {
+    "authoritative_category_field": "template.topic",
+    "do_not_categorize_from": [
+      "skill.id",
+      "prompt_keywords",
+      "exponent_detection",
+      "decimal_detection",
+      "coordinate_detection",
+      "regex_section_inference"
+    ],
+    "flow": [
+      "load_grade",
+      "flatten_templates",
+      "filter_by_template.topic",
+      "choose_eligible_template",
+      "apply_format_family_diversity",
+      "generate_problem"
+    ],
+    "format_family_rules": [
+      "no_same_template_id_within_recent_window",
+      "no_same_formatFamily_more_than_twice_in_last_five_when_alternatives_exist",
+      "no_three_consecutive_identical_formatFamily_when_alternatives_exist",
+      "prefer_least_recently_used_formatFamily",
+      "if_diversity_empties_pool_relax_diversity_only_and_retry"
+    ]
+  },
 
   "global_rules": {
     "enforce_skill_boundaries": true,
     "reject_cross_grade_operations": true,
     "no_default_arithmetic_in_higher_grades": true,
 
-      "grade_purity_rules": {
+    "grade_purity_rules": {
       "5th": ["whole_numbers_only", "basic_fractions_conceptual"],
       "mid-5th": ["whole_numbers", "intro_fractions", "no_negatives"],
       "6th": ["integers", "fraction_operations", "decimals", "ratios_intro"],
@@ -63,13 +144,15 @@
     "step_2": "validate_skill_belongs_to_grade_band",
     "step_3": "reject_if_any_forbidden_operation_detected",
     "step_4": "reject_if_problem_is_lower_grade_skill_without_transformation",
-    "step_5": "regenerate_from_valid_template_only"
+    "step_5": "regenerate_from_valid_template_only",
+    "step_6": "require_template_topic_and_formatFamily"
   },
 
   "generation_contract": {
     "only_generate_from_templates": true,
     "never_infer_math_outside_grade_band": true,
     "no_freeform_arithmetic_generation": true,
-    "strict_grade_isolation": true
+    "strict_grade_isolation": true,
+    "categorize_only_from_template_topic": true
   }
 }

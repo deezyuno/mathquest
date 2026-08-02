@@ -34,7 +34,9 @@
           },
           "constraints_note": "a divisible by b",
           "answer_type": "numeric",
-          "answer_formula": "a / b"
+          "answer_formula": "a / b",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "unit_rate"
         },
         {
           "id": "pr_002",
@@ -60,7 +62,9 @@
           },
           "generation_note": "7.RP.A.1 unit rate from a ratio of fractions; prefer simplified integer or clean fraction answers",
           "answer_type": "fraction_simplified",
-          "answer_formula": "(a * d) / (b * c)"
+          "answer_formula": "(a * d) / (b * c)",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "unit_rate"
         },
         {
           "id": "pr_003",
@@ -81,7 +85,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "c * b / a"
+          "answer_formula": "c * b / a",
+          "topic": "expressions_equations",
+          "formatFamily": "algebraic_substitution_linear"
         },
         {
           "id": "pr_004",
@@ -103,7 +109,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "c * b / a"
+          "answer_formula": "c * b / a",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "ratio_rate_proportion"
         },
         {
           "id": "pr_005",
@@ -122,7 +130,9 @@
           "generation_note": "d=k*a, e=k*b, f=k*c for integer k",
           "answer_type": "numeric",
           "constraints_note": "d divisible by a",
-          "answer_formula": "d / a"
+          "answer_formula": "d / a",
+          "topic": "expressions_equations",
+          "formatFamily": "algebraic_substitution_linear"
         },
         {
           "id": "pr_006",
@@ -140,7 +150,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a - (b / 100) * a"
+          "answer_formula": "a - (b / 100) * a",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "percent_discount"
         },
         {
           "id": "pr_007",
@@ -158,7 +170,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a + (b / 100) * a"
+          "answer_formula": "a + (b / 100) * a",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "percent_tax"
         },
         {
           "id": "pr_008",
@@ -175,7 +189,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a / (1 - b/100)"
+          "answer_formula": "a / (1 - b/100)",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "percent_discount"
         },
         {
           "id": "pr_009",
@@ -196,7 +212,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "abs(a - b / c)"
+          "answer_formula": "abs(a - b / c)",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "proportion_missing_value"
         },
         {
           "id": "pr_010",
@@ -218,7 +236,9 @@
           },
           "generation_note": "7.RP.A.2; require a=2k, b=4k, c=6k for integer k; student divided wrong pair",
           "answer_type": "numeric",
-          "answer_formula": "a / 2"
+          "answer_formula": "a / 2",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "constant_of_proportionality"
         },
         {
           "id": "pr_011",
@@ -240,7 +260,9 @@
             ]
           },
           "answer_formula": "a*b*c/100",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "simple_interest"
         },
         {
           "id": "pr_012",
@@ -257,7 +279,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "k * a"
+          "answer_formula": "k * a",
+          "topic": "expressions_equations",
+          "formatFamily": "algebraic_substitution_linear"
         },
         {
           "id": "pr_013",
@@ -279,7 +303,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a * (1 + b / 100) * (1 - c / 100)"
+          "answer_formula": "a * (1 + b / 100) * (1 - c / 100)",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "percent_discount"
         },
         {
           "id": "pr_014",
@@ -301,7 +327,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "c * b / a"
+          "answer_formula": "c * b / a",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "ratio_rate_proportion"
         }
       ]
     },
@@ -335,7 +363,9 @@
           },
           "constraints_note": "includes negative fractions",
           "answer_type": "fraction_simplified",
-          "answer_formula": "(a * d + c * b) / (b * d)"
+          "answer_formula": "(a * d + c * b) / (b * d)",
+          "topic": "fractions",
+          "formatFamily": "fraction_addition"
         },
         {
           "id": "rn_002",
@@ -360,7 +390,9 @@
             ]
           },
           "answer_type": "fraction_simplified",
-          "answer_formula": "(a * d - c * b) / (b * d)"
+          "answer_formula": "(a * d - c * b) / (b * d)",
+          "topic": "fractions",
+          "formatFamily": "fraction_operations"
         },
         {
           "id": "rn_003",
@@ -385,7 +417,9 @@
             ]
           },
           "answer_type": "fraction_simplified",
-          "answer_formula": "(a/b) * (c/d)"
+          "answer_formula": "(a/b) * (c/d)",
+          "topic": "fractions",
+          "formatFamily": "fraction_multiplication"
         },
         {
           "id": "rn_004",
@@ -410,7 +444,9 @@
             ]
           },
           "answer_type": "fraction_simplified",
-          "answer_formula": "(a/b) / (c/d)"
+          "answer_formula": "(a/b) / (c/d)",
+          "topic": "fractions",
+          "formatFamily": "fraction_division"
         },
         {
           "id": "rn_005",
@@ -435,7 +471,9 @@
             ]
           },
           "answer_type": "decimal",
-          "answer_formula": "(a + b/100) + (c + d/100)"
+          "answer_formula": "(a + b/100) + (c + d/100)",
+          "topic": "percent_decimals",
+          "formatFamily": "decimal_addition"
         },
         {
           "id": "rn_006",
@@ -457,7 +495,9 @@
             ]
           },
           "answer_type": "fraction_simplified",
-          "answer_formula": "(a * c) / b"
+          "answer_formula": "(a * c) / b",
+          "topic": "fractions",
+          "formatFamily": "fraction_operations"
         },
         {
           "id": "rn_007",
@@ -483,7 +523,9 @@
             ]
           },
           "answer_type": "fraction_simplified",
-          "answer_formula": "(a * d - c * b) / (b * d)"
+          "answer_formula": "(a * d - c * b) / (b * d)",
+          "topic": "fractions",
+          "formatFamily": "fraction_operations"
         },
         {
           "id": "rn_008",
@@ -508,7 +550,9 @@
             ]
           },
           "answer_type": "fraction_simplified",
-          "answer_formula": "(c * b - a * d) / (b * d)"
+          "answer_formula": "(c * b - a * d) / (b * d)",
+          "topic": "fractions",
+          "formatFamily": "fraction_addition"
         },
         {
           "id": "rn_009",
@@ -534,7 +578,9 @@
             ]
           },
           "answer_type": "decimal",
-          "answer_formula": "a + b/100 - (c + d/100)"
+          "answer_formula": "a + b/100 - (c + d/100)",
+          "topic": "percent_decimals",
+          "formatFamily": "decimal_operations"
         },
         {
           "id": "rn_010",
@@ -556,7 +602,9 @@
           },
           "generation_note": "wrong = -(a+c) (student treated both as negative)",
           "answer_type": "fraction",
-          "answer_formula": "(-a + c) / b"
+          "answer_formula": "(-a + c) / b",
+          "topic": "fractions",
+          "formatFamily": "fraction_addition"
         },
         {
           "id": "rn_011",
@@ -575,7 +623,9 @@
           "generation_note": "7.NS.A.2.d; prefer terminating decimals (b in {2,4,5,8,10})",
           "constraints_note": "prefer denominators that yield terminating decimals",
           "answer_type": "decimal",
-          "answer_formula": "a / b"
+          "answer_formula": "a / b",
+          "topic": "fractions",
+          "formatFamily": "fraction_to_decimal"
         },
         {
           "id": "rn_012",
@@ -600,7 +650,9 @@
             ]
           },
           "answer_type": "fraction_simplified",
-          "answer_formula": "abs(a/b) + abs(c/d)"
+          "answer_formula": "abs(a/b) + abs(c/d)",
+          "topic": "fractions",
+          "formatFamily": "fraction_absolute_value"
         }
       ]
     },
@@ -626,7 +678,9 @@
           },
           "generation_note": "7.EE.A.1 expand linear expression; answer is a*b",
           "answer_type": "numeric",
-          "answer_formula": "a * b"
+          "answer_formula": "a * b",
+          "topic": "expressions_equations",
+          "formatFamily": "algebraic_simplify"
         },
         {
           "id": "ee_002",
@@ -644,7 +698,9 @@
           },
           "generation_note": "7.EE.A.2 rewrite expression in a different form by combining like terms",
           "answer_type": "numeric",
-          "answer_formula": "a - b"
+          "answer_formula": "a - b",
+          "topic": "expressions_equations",
+          "formatFamily": "algebraic_simplify"
         },
         {
           "id": "ee_003",
@@ -670,7 +726,9 @@
           },
           "answer_type": "numeric",
           "answer_formula": "a * d + b - c",
-          "context": "technology"
+          "context": "technology",
+          "topic": "expressions_equations",
+          "formatFamily": "algebraic_substitution_linear"
         },
         {
           "id": "ee_004",
@@ -691,7 +749,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "(c - b) / a"
+          "answer_formula": "(c - b) / a",
+          "topic": "expressions_equations",
+          "formatFamily": "two_step_equation"
         },
         {
           "id": "ee_005",
@@ -714,7 +774,9 @@
           "answer_type": "numeric",
           "answer_formula": "(c + b) / a",
           "context": "construction",
-          "constraints_note": "(c+b) divisible by a"
+          "constraints_note": "(c+b) divisible by a",
+          "topic": "expressions_equations",
+          "formatFamily": "two_step_equation"
         },
         {
           "id": "ee_006",
@@ -735,7 +797,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "(c - b) * a"
+          "answer_formula": "(c - b) * a",
+          "topic": "expressions_equations",
+          "formatFamily": "one_step_equation"
         },
         {
           "id": "ee_007",
@@ -759,7 +823,9 @@
           "generation_note": "7.EE.B.4.b inequality word problem; answer = floor((c-b)/a)",
           "constraints_note": "require c > b and floor((c-b)/a) >= 1",
           "answer_type": "numeric",
-          "answer_formula": "floor((c - b) / a)"
+          "answer_formula": "floor((c - b) / a)",
+          "topic": "expressions_equations",
+          "formatFamily": "inequality_word_problem"
         },
         {
           "id": "ee_008",
@@ -778,7 +844,9 @@
           },
           "answer_type": "numeric",
           "answer_formula": "(p - 2 * a) / 6",
-          "generation_note": "require (p - 2*a) divisible by 6 and width > 0"
+          "generation_note": "require (p - 2*a) divisible by 6 and width > 0",
+          "topic": "expressions_equations",
+          "formatFamily": "algebraic_expression"
         },
         {
           "id": "ee_009",
@@ -801,7 +869,9 @@
           "generation_note": "7.EE.B.4.a; student added b instead of subtracting; wrong = (c+b)/a",
           "constraints_note": "(c-b) divisible by a",
           "answer_type": "numeric",
-          "answer_formula": "(c - b) / a"
+          "answer_formula": "(c - b) / a",
+          "topic": "expressions_equations",
+          "formatFamily": "two_step_equation"
         },
         {
           "id": "ee_010",
@@ -827,7 +897,9 @@
           },
           "generation_note": "7.EE.A.1 add linear expressions; constant term = b - d",
           "answer_type": "numeric",
-          "answer_formula": "b - d"
+          "answer_formula": "b - d",
+          "topic": "expressions_equations",
+          "formatFamily": "algebraic_simplify"
         },
         {
           "id": "ee_011",
@@ -851,7 +923,9 @@
           "generation_note": "7.EE.B.4.a two-step equation word problem ax+b=c",
           "constraints_note": "(c-b) divisible by a and positive",
           "answer_type": "numeric",
-          "answer_formula": "(c - b) / a"
+          "answer_formula": "(c - b) / a",
+          "topic": "expressions_equations",
+          "formatFamily": "algebraic_expression"
         },
         {
           "id": "ee_012",
@@ -873,7 +947,9 @@
           },
           "constraints_note": "c divisible by a",
           "answer_type": "numeric",
-          "answer_formula": "c / a - b"
+          "answer_formula": "c / a - b",
+          "topic": "expressions_equations",
+          "formatFamily": "equation_with_distribution"
         },
         {
           "id": "ee_013",
@@ -897,7 +973,9 @@
           "generation_note": "7.EE.B.4.a two-step equation; solve ax+b=c for hours",
           "constraints_note": "(c-b) divisible by a and positive",
           "answer_type": "numeric",
-          "answer_formula": "(c - b) / a"
+          "answer_formula": "(c - b) / a",
+          "topic": "expressions_equations",
+          "formatFamily": "algebraic_expression"
         },
         {
           "id": "ee_014",
@@ -919,7 +997,9 @@
           },
           "constraints_note": "c divisible by a",
           "answer_type": "numeric",
-          "answer_formula": "c / a + b"
+          "answer_formula": "c / a + b",
+          "topic": "expressions_equations",
+          "formatFamily": "equation_with_distribution"
         }
       ]
     },
@@ -948,7 +1028,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "(b / a) * c"
+          "answer_formula": "(b / a) * c",
+          "topic": "geometry_measurement",
+          "formatFamily": "scale_drawing"
         },
         {
           "id": "geo_002",
@@ -961,7 +1043,9 @@
             ]
           },
           "answer_formula": "180 - a",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "topic": "geometry_measurement",
+          "formatFamily": "angle_measure"
         },
         {
           "id": "geo_003",
@@ -974,7 +1058,9 @@
             ]
           },
           "answer_formula": "90 - a",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "topic": "geometry_measurement",
+          "formatFamily": "angle_measure"
         },
         {
           "id": "geo_004",
@@ -987,7 +1073,9 @@
             ]
           },
           "answer_formula": "3.14*a*a",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "topic": "geometry_measurement",
+          "formatFamily": "area"
         },
         {
           "id": "geo_005",
@@ -1000,7 +1088,9 @@
             ]
           },
           "answer_formula": "3.14*a",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "topic": "geometry_measurement",
+          "formatFamily": "geometry_measurement"
         },
         {
           "id": "geo_006",
@@ -1019,7 +1109,9 @@
           },
           "generation_note": "7.G.A.2 triangle inequality; max third side = a+b-1",
           "answer_type": "numeric",
-          "answer_formula": "a + b - 1"
+          "answer_formula": "a + b - 1",
+          "topic": "geometry_measurement",
+          "formatFamily": "angle_measure"
         },
         {
           "id": "geo_007",
@@ -1033,7 +1125,9 @@
           },
           "constraints_note": "prefer c = 3.14 * 2 * r for integer r in 3–15",
           "answer_type": "numeric",
-          "answer_formula": "c / (2 * 3.14)"
+          "answer_formula": "c / (2 * 3.14)",
+          "topic": "geometry_measurement",
+          "formatFamily": "geometry_measurement"
         },
         {
           "id": "geo_008",
@@ -1051,7 +1145,9 @@
             ]
           },
           "answer_formula": "3.14*(b*b - a*a)",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "topic": "geometry_measurement",
+          "formatFamily": "area"
         },
         {
           "id": "geo_009",
@@ -1064,7 +1160,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a"
+          "answer_formula": "a",
+          "topic": "geometry_measurement",
+          "formatFamily": "angle_measure"
         },
         {
           "id": "geo_010",
@@ -1086,7 +1184,9 @@
           },
           "generation_note": "7.G.B.6 volume of a right rectangular prism",
           "answer_formula": "a * b * c",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "topic": "geometry_measurement",
+          "formatFamily": "rectangular_prism_volume"
         },
         {
           "id": "geo_011",
@@ -1107,7 +1207,9 @@
             ]
           },
           "answer_formula": "a * b * c * c",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "topic": "geometry_measurement",
+          "formatFamily": "area"
         }
       ]
     },
@@ -1132,7 +1234,9 @@
             ]
           },
           "answer_formula": "a/(a+b)",
-          "answer_type": "fraction_simplified"
+          "answer_type": "fraction_simplified",
+          "topic": "statistics_probability",
+          "formatFamily": "probability_simple"
         },
         {
           "id": "prob_002",
@@ -1145,7 +1249,9 @@
             ]
           },
           "answer_type": "fraction_simplified",
-          "answer_formula": "(6 - a) / 6"
+          "answer_formula": "(6 - a) / 6",
+          "topic": "statistics_probability",
+          "formatFamily": "probability_simple"
         },
         {
           "id": "prob_003",
@@ -1160,7 +1266,9 @@
           },
           "answer_type": "fraction_simplified",
           "answer_formula": "floor(a / 2) / a",
-          "constraints_note": "prefer even a for a clean count of even sections"
+          "constraints_note": "prefer even a for a clean count of even sections",
+          "topic": "statistics_probability",
+          "formatFamily": "probability_simple"
         },
         {
           "id": "prob_004",
@@ -1181,7 +1289,9 @@
             ]
           },
           "answer_formula": "(a+b)/(a+b+c)",
-          "answer_type": "fraction_simplified"
+          "answer_type": "fraction_simplified",
+          "topic": "statistics_probability",
+          "formatFamily": "probability_simple"
         },
         {
           "id": "prob_005",
@@ -1199,7 +1309,9 @@
             ]
           },
           "answer_type": "fraction_simplified",
-          "answer_formula": "floor(a / b) / a"
+          "answer_formula": "floor(a / b) / a",
+          "topic": "statistics_probability",
+          "formatFamily": "probability_simple"
         },
         {
           "id": "prob_006",
@@ -1213,7 +1325,9 @@
           },
           "generation_note": "7.SP.C.8 compound probability; sample space size 12",
           "answer_type": "fraction_simplified",
-          "answer_formula": "(6 - a) / 12"
+          "answer_formula": "(6 - a) / 12",
+          "topic": "statistics_probability",
+          "formatFamily": "probability_compound"
         },
         {
           "id": "prob_007",
@@ -1221,7 +1335,9 @@
           "problem": "You flip a coin and roll a die. How many possible outcomes are there?",
           "constraints": {},
           "answer_type": "numeric",
-          "answer_formula": "12"
+          "answer_formula": "12",
+          "topic": "statistics_probability",
+          "formatFamily": "probability_simple"
         },
         {
           "id": "prob_008",
@@ -1240,7 +1356,9 @@
           },
           "generation_note": "7.SP.C.8 compound probability with replacement",
           "answer_type": "fraction_simplified",
-          "answer_formula": "(a * a) / ((a + b) * (a + b))"
+          "answer_formula": "(a * a) / ((a + b) * (a + b))",
+          "topic": "statistics_probability",
+          "formatFamily": "probability_compound"
         },
         {
           "id": "prob_009",
@@ -1261,7 +1379,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "c * a / b"
+          "answer_formula": "c * a / b",
+          "topic": "statistics_probability",
+          "formatFamily": "probability_simple"
         },
         {
           "id": "prob_010",
@@ -1270,7 +1390,9 @@
           "constraints": {},
           "generation_note": "wrong = 0 (student confused complement rule)",
           "answer_type": "numeric",
-          "answer_formula": "1"
+          "answer_formula": "1",
+          "topic": "statistics_probability",
+          "formatFamily": "probability_simple"
         },
         {
           "id": "prob_011",
@@ -1287,7 +1409,9 @@
             ]
           },
           "answer_formula": "b/(a+b)",
-          "answer_type": "fraction_simplified"
+          "answer_type": "fraction_simplified",
+          "topic": "statistics_probability",
+          "formatFamily": "probability_simple"
         }
       ]
     },
@@ -1317,7 +1441,9 @@
           },
           "generation_note": "7.SP.A.1 representative sample; correct choice is always 1",
           "answer_type": "numeric",
-          "answer_formula": "1"
+          "answer_formula": "1",
+          "topic": "statistics_probability",
+          "formatFamily": "statistical_inference"
         },
         {
           "id": "si_002",
@@ -1340,7 +1466,9 @@
           "generation_note": "7.SP.B.3 express difference of means as a multiple of MAD",
           "constraints_note": "abs(a-b) divisible by m; prefer a != b",
           "answer_type": "numeric",
-          "answer_formula": "abs(a - b) / m"
+          "answer_formula": "abs(a - b) / m",
+          "topic": "statistics_probability",
+          "formatFamily": "mean"
         },
         {
           "id": "si_003",
@@ -1364,7 +1492,9 @@
           "generation_note": "7.SP.A.2 use sample to draw inference about population",
           "constraints_note": "b <= a; prefer c*b divisible by a",
           "answer_type": "numeric",
-          "answer_formula": "c * b / a"
+          "answer_formula": "c * b / a",
+          "topic": "statistics_probability",
+          "formatFamily": "statistical_inference"
         },
         {
           "id": "si_004",
@@ -1386,7 +1516,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "c * b / 100"
+          "answer_formula": "c * b / 100",
+          "topic": "statistics_probability",
+          "formatFamily": "data_interpretation"
         },
         {
           "id": "si_005",
@@ -1409,7 +1541,9 @@
           "generation_note": "7.SP.B.3 second context; difference of means as multiple of MAD",
           "constraints_note": "abs(a-c) divisible by m; prefer a != c",
           "answer_type": "numeric",
-          "answer_formula": "abs(a - c) / m"
+          "answer_formula": "abs(a - c) / m",
+          "topic": "statistics_probability",
+          "formatFamily": "mean"
         },
         {
           "id": "si_006",
@@ -1433,10 +1567,11 @@
           "generation_note": "7.SP.A.2 sample inference distinct from percent-based si_004",
           "constraints_note": "b <= a; prefer c*b divisible by a",
           "answer_type": "numeric",
-          "answer_formula": "c * b / a"
+          "answer_formula": "c * b / a",
+          "topic": "statistics_probability",
+          "formatFamily": "statistical_inference"
         }
       ]
     }
   ]
 }
-

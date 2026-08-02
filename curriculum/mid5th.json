@@ -45,7 +45,9 @@
           },
           "generation_note": "5.NF.A.1 unlike denominators; prefer b != d",
           "answer_type": "fraction_simplified",
-          "answer_formula": "(a * d + c * b) / (b * d)"
+          "answer_formula": "(a * d + c * b) / (b * d)",
+          "topic": "fractions",
+          "formatFamily": "fraction_addition"
         },
         {
           "id": "fm_002",
@@ -76,7 +78,9 @@
           "generation_note": "5.NF.A.1 mixed minus unlike fraction; result positive",
           "constraints_note": "result positive",
           "answer_type": "fraction_simplified",
-          "answer_formula": "((a * c + b) * e - d * c) / (c * e)"
+          "answer_formula": "((a * c + b) * e - d * c) / (c * e)",
+          "topic": "fractions",
+          "formatFamily": "fraction_operations"
         },
         {
           "id": "fm_003",
@@ -101,7 +105,9 @@
             ]
           },
           "answer_type": "mixed_number",
-          "answer_formula": "(a + b/c) * d"
+          "answer_formula": "(a + b/c) * d",
+          "topic": "fractions",
+          "formatFamily": "fraction_multiplication"
         },
         {
           "id": "fm_004",
@@ -127,7 +133,9 @@
             ]
           },
           "answer_type": "mixed_number",
-          "answer_formula": "((a * c + b) * d) / c"
+          "answer_formula": "((a * c + b) * d) / c",
+          "topic": "fractions",
+          "formatFamily": "fraction_operations"
         },
         {
           "id": "fm_005",
@@ -154,7 +162,9 @@
           "generation_note": "5.NF.A.1 unlike denominators; prefer positive difference",
           "constraints_note": "a/b > c/d",
           "answer_type": "fraction_simplified",
-          "answer_formula": "(a * d - c * b) / (b * d)"
+          "answer_formula": "(a * d - c * b) / (b * d)",
+          "topic": "fractions",
+          "formatFamily": "fraction_operations"
         },
         {
           "id": "fm_006",
@@ -181,7 +191,9 @@
           "generation_note": "5.NF.A.1 missing addend with unlike denominators",
           "constraints_note": "c/d > a/b",
           "answer_type": "fraction_simplified",
-          "answer_formula": "(c * b - a * d) / (b * d)"
+          "answer_formula": "(c * b - a * d) / (b * d)",
+          "topic": "fractions",
+          "formatFamily": "fraction_addition"
         },
         {
           "id": "fm_007",
@@ -208,7 +220,9 @@
           "generation_note": "5.NF.A.1 unlike denominators difference",
           "constraints_note": "a/b > c/d",
           "answer_type": "fraction_simplified",
-          "answer_formula": "(a * d - c * b) / (b * d)"
+          "answer_formula": "(a * d - c * b) / (b * d)",
+          "topic": "fractions",
+          "formatFamily": "fraction_comparison"
         },
         {
           "id": "fm_008",
@@ -226,7 +240,9 @@
           },
           "generation_note": "5.NF.B.7 whole ÷ unit fraction = a * b",
           "answer_type": "numeric",
-          "answer_formula": "a * b"
+          "answer_formula": "a * b",
+          "topic": "fractions",
+          "formatFamily": "fraction_operations"
         },
         {
           "id": "fm_009",
@@ -244,7 +260,9 @@
           },
           "generation_note": "5.NF.B.7 unit fraction ÷ whole",
           "answer_type": "fraction_simplified",
-          "answer_formula": "1 / (a * b)"
+          "answer_formula": "1 / (a * b)",
+          "topic": "fractions",
+          "formatFamily": "fraction_division"
         },
         {
           "id": "fm_010",
@@ -270,7 +288,9 @@
           },
           "generation_note": "6.NS.A.1 preview fraction ÷ fraction",
           "answer_type": "fraction_simplified",
-          "answer_formula": "(a * d) / (b * c)"
+          "answer_formula": "(a * d) / (b * c)",
+          "topic": "fractions",
+          "formatFamily": "fraction_division"
         },
         {
           "id": "fm_011",
@@ -289,7 +309,9 @@
           },
           "generation_note": "5.NF.B.7 whole ÷ unit fraction word problem",
           "answer_type": "numeric",
-          "answer_formula": "a * b"
+          "answer_formula": "a * b",
+          "topic": "fractions",
+          "formatFamily": "fraction_operations"
         }
       ]
     },
@@ -323,7 +345,9 @@
           },
           "answer_type": "numeric",
           "generation_note": "b gives hundredths/thousandths digits from expanded fraction form",
-          "answer_formula": "a + b/1000 + c/100 + d/10"
+          "answer_formula": "a + b/1000 + c/100 + d/10",
+          "topic": "percent_decimals",
+          "formatFamily": "decimal_addition"
         },
         {
           "id": "dpv_002",
@@ -341,7 +365,9 @@
           },
           "generation_note": "5.NBT.A.1 place-value shift ×10; b is hundredths digits",
           "answer_type": "numeric",
-          "answer_formula": "(a + b / 100) * 10"
+          "answer_formula": "(a + b / 100) * 10",
+          "topic": "percent_decimals",
+          "formatFamily": "decimal_powers_of_ten"
         },
         {
           "id": "dpv_003",
@@ -359,7 +385,9 @@
           },
           "answer_type": "numeric",
           "answer_formula": "round((a + b/10000)*100)/100",
-          "constraints_note": "b is four decimal digits (ten-thousandths)"
+          "constraints_note": "b is four decimal digits (ten-thousandths)",
+          "topic": "percent_decimals",
+          "formatFamily": "decimal_rounding"
         },
         {
           "id": "dpv_004",
@@ -385,7 +413,9 @@
           },
           "generation_note": "5.NBT.A.3 compare decimals; a > c so first is greater",
           "answer_type": "numeric",
-          "answer_formula": "1"
+          "answer_formula": "1",
+          "topic": "percent_decimals",
+          "formatFamily": "decimal_comparison"
         },
         {
           "id": "dpv_005",
@@ -402,7 +432,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "b % 10"
+          "answer_formula": "b % 10",
+          "topic": "percent_decimals",
+          "formatFamily": "decimal_place_value"
         },
         {
           "id": "dpv_006",
@@ -420,7 +452,9 @@
           },
           "generation_note": "5.NBT.A.2 patterns with powers of 10",
           "answer_type": "numeric",
-          "answer_formula": "a * pow(10, b)"
+          "answer_formula": "a * pow(10, b)",
+          "topic": "number_sense_place_value",
+          "formatFamily": "scientific_notation_multiply"
         },
         {
           "id": "dpv_007",
@@ -442,7 +476,9 @@
           },
           "generation_note": "5.NBT.B.7 multiply decimal (hundredths) by whole",
           "answer_type": "numeric",
-          "answer_formula": "(a + b / 100) * c"
+          "answer_formula": "(a + b / 100) * c",
+          "topic": "percent_decimals",
+          "formatFamily": "decimal_multiplication"
         },
         {
           "id": "dpv_008",
@@ -468,7 +504,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "(a + b/100) + (c + d/100)"
+          "answer_formula": "(a + b/100) + (c + d/100)",
+          "topic": "percent_decimals",
+          "formatFamily": "decimal_addition"
         },
         {
           "id": "dpv_009",
@@ -494,7 +532,9 @@
           },
           "generation_note": "5.NBT.B.7 add decimals to hundredths",
           "answer_type": "numeric",
-          "answer_formula": "(a + b / 100) + (c + d / 100)"
+          "answer_formula": "(a + b / 100) + (c + d / 100)",
+          "topic": "percent_decimals",
+          "formatFamily": "decimal_addition"
         }
       ]
     },
@@ -528,7 +568,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a - b * c - d"
+          "answer_formula": "a - b * c - d",
+          "topic": "add_subtract_multiply",
+          "formatFamily": "whole_number_subtraction"
         },
         {
           "id": "ms_002",
@@ -551,7 +593,9 @@
           },
           "answer_type": "numeric",
           "answer_formula": "c - (a + b)",
-          "constraints_note": "c >= a + b"
+          "constraints_note": "c >= a + b",
+          "topic": "add_subtract_multiply",
+          "formatFamily": "whole_number_subtraction"
         },
         {
           "id": "ms_003",
@@ -578,7 +622,9 @@
           },
           "answer_type": "numeric",
           "answer_formula": "a * (b + c) - d",
-          "constraints_note": "a*(b+c) > d"
+          "constraints_note": "a*(b+c) > d",
+          "topic": "add_subtract_multiply",
+          "formatFamily": "whole_number_subtraction"
         },
         {
           "id": "ms_004",
@@ -601,7 +647,9 @@
           },
           "constraints_note": "(a-b) divisible by c",
           "answer_type": "numeric",
-          "answer_formula": "(a - b) / c"
+          "answer_formula": "(a - b) / c",
+          "topic": "add_subtract_multiply",
+          "formatFamily": "whole_number_arithmetic"
         },
         {
           "id": "ms_005",
@@ -620,7 +668,9 @@
           },
           "constraints_note": "a and b have same parity",
           "answer_type": "numeric",
-          "answer_formula": "(a + b) / 2"
+          "answer_formula": "(a + b) / 2",
+          "topic": "add_subtract_multiply",
+          "formatFamily": "whole_number_arithmetic"
         },
         {
           "id": "ms_006",
@@ -640,7 +690,9 @@
           "generation_note": "6.RP.A.2 preview unit rate",
           "constraints_note": "a divisible by b",
           "answer_type": "numeric",
-          "answer_formula": "a / b"
+          "answer_formula": "a / b",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "unit_rate"
         },
         {
           "id": "ms_007",
@@ -661,7 +713,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a * b + c"
+          "answer_formula": "a * b + c",
+          "topic": "add_subtract_multiply",
+          "formatFamily": "whole_number_subtraction"
         },
         {
           "id": "ms_008",
@@ -684,7 +738,9 @@
           "generation_note": "5.G.A coordinate plane Q1 horizontal distance",
           "constraints_note": "c != a; prefer c > a",
           "answer_type": "numeric",
-          "answer_formula": "abs(c - a)"
+          "answer_formula": "abs(c - a)",
+          "topic": "geometry_measurement",
+          "formatFamily": "coordinate_distance"
         },
         {
           "id": "ms_009",
@@ -707,7 +763,9 @@
           },
           "generation_note": "5.MD.C volume of right rectangular prism",
           "answer_type": "numeric",
-          "answer_formula": "a * b * c"
+          "answer_formula": "a * b * c",
+          "topic": "geometry_measurement",
+          "formatFamily": "rectangular_prism_volume"
         }
       ]
     },
@@ -729,7 +787,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "-a"
+          "answer_formula": "-a",
+          "topic": "integers",
+          "formatFamily": "integer_opposite"
         },
         {
           "id": "pn_002",
@@ -748,7 +808,9 @@
           },
           "generation_note": "6.NS.C.5 temperature that can finish below zero",
           "answer_type": "numeric",
-          "answer_formula": "a - b"
+          "answer_formula": "a - b",
+          "topic": "integers",
+          "formatFamily": "integer_temperature_change"
         },
         {
           "id": "pn_003",
@@ -766,7 +828,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "abs(a - b)"
+          "answer_formula": "abs(a - b)",
+          "topic": "integers",
+          "formatFamily": "integer_subtraction"
         },
         {
           "id": "pn_004",
@@ -780,7 +844,9 @@
           },
           "generation_note": "6.NS.C.6 absolute value of a negative number",
           "answer_type": "numeric",
-          "answer_formula": "a"
+          "answer_formula": "a",
+          "topic": "integers",
+          "formatFamily": "integer_absolute_value"
         },
         {
           "id": "pn_005",
@@ -797,7 +863,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a + b"
+          "answer_formula": "a + b",
+          "topic": "integers",
+          "formatFamily": "integer_operations"
         },
         {
           "id": "pn_006",
@@ -812,7 +880,9 @@
           },
           "generation_note": "6.NS.C.5 negative numbers for debt",
           "answer_type": "numeric",
-          "answer_formula": "-a"
+          "answer_formula": "-a",
+          "topic": "integers",
+          "formatFamily": "integer_opposite"
         },
         {
           "id": "pn_007",
@@ -837,7 +907,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "min(a, -b, c, -d)"
+          "answer_formula": "min(a, -b, c, -d)",
+          "topic": "integers",
+          "formatFamily": "integer_extreme_value"
         }
       ]
     },
@@ -863,7 +935,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "b / a"
+          "answer_formula": "b / a",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "ratio_comparison"
         },
         {
           "id": "pr_002",
@@ -882,7 +956,9 @@
           "generation_note": "6.RP.A.2 unit rate",
           "constraints_note": "b divisible by a",
           "answer_type": "numeric",
-          "answer_formula": "b / a"
+          "answer_formula": "b / a",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "ratio_rate_proportion"
         },
         {
           "id": "pr_003",
@@ -905,7 +981,9 @@
           },
           "constraints_note": "c is a multiple of a",
           "answer_type": "numeric",
-          "answer_formula": "c * b / a"
+          "answer_formula": "c * b / a",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "ratio_comparison"
         },
         {
           "id": "pr_004",
@@ -932,7 +1010,9 @@
           "generation_note": "6.RP.A.2; prefer b/a > d/c so answer 1; enforce in generation",
           "constraints_note": "b/a > d/c",
           "answer_type": "numeric",
-          "answer_formula": "1"
+          "answer_formula": "1",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "ratio_rate_proportion"
         },
         {
           "id": "pr_005",
@@ -954,7 +1034,9 @@
           },
           "answer_type": "numeric",
           "answer_formula": "c * a / (a + b)",
-          "constraints_note": "c is a multiple of (a+b)"
+          "constraints_note": "c is a multiple of (a+b)",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "ratio_rate_proportion"
         },
         {
           "id": "pr_006",
@@ -977,7 +1059,9 @@
           "constraints_note": "c divisible by a",
           "answer_type": "numeric",
           "answer_formula": "c * b / a",
-          "context": "music"
+          "context": "music",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "ratio_comparison"
         }
       ]
     },
@@ -1003,7 +1087,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a + b"
+          "answer_formula": "a + b",
+          "topic": "expressions_equations",
+          "formatFamily": "algebraic_substitution_linear"
         },
         {
           "id": "pa_002",
@@ -1020,7 +1106,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a * b"
+          "answer_formula": "a * b",
+          "topic": "expressions_equations",
+          "formatFamily": "algebraic_substitution_linear"
         },
         {
           "id": "pa_003",
@@ -1034,7 +1122,9 @@
           },
           "generation_note": "6.EE.A.1 evaluate numerical expression with whole-number exponent",
           "answer_type": "numeric",
-          "answer_formula": "a * a"
+          "answer_formula": "a * a",
+          "topic": "expressions_equations",
+          "formatFamily": "algebraic_substitution_exponent"
         },
         {
           "id": "pa_004",
@@ -1053,7 +1143,9 @@
           },
           "generation_note": "6.EE.A.2 evaluate expression with variable in context",
           "answer_type": "numeric",
-          "answer_formula": "a * b"
+          "answer_formula": "a * b",
+          "topic": "expressions_equations",
+          "formatFamily": "algebraic_substitution_linear"
         },
         {
           "id": "pa_005",
@@ -1070,7 +1162,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "2 * a + b"
+          "answer_formula": "2 * a + b",
+          "topic": "expressions_equations",
+          "formatFamily": "algebraic_substitution_linear"
         },
         {
           "id": "pa_006",
@@ -1091,7 +1185,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "b * a - c"
+          "answer_formula": "b * a - c",
+          "topic": "expressions_equations",
+          "formatFamily": "algebraic_substitution_linear"
         },
         {
           "id": "pa_007",
@@ -1114,7 +1210,9 @@
           },
           "generation_note": "6.EE.A.2 evaluate an+b with given n",
           "answer_type": "numeric",
-          "answer_formula": "a * c + b"
+          "answer_formula": "a * c + b",
+          "topic": "expressions_equations",
+          "formatFamily": "algebraic_substitution_linear"
         }
       ]
     }

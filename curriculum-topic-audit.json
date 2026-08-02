@@ -1,0 +1,1468 @@
+[
+  {
+    "grade": "5th",
+    "topics": {
+      "add_subtract_multiply": {
+        "templateCount": 10,
+        "formatFamilyCount": 3,
+        "templateIds": [
+          "wn_001",
+          "wn_003",
+          "wn_005",
+          "wn_006",
+          "wn_007",
+          "wn_008",
+          "wn_010",
+          "wn_013",
+          "wn_014",
+          "wn_015"
+        ],
+        "formatFamilies": {
+          "whole_number_multiplication": 6,
+          "whole_number_addition": 1,
+          "whole_number_arithmetic": 3
+        }
+      },
+      "division": {
+        "templateCount": 10,
+        "formatFamilyCount": 1,
+        "templateIds": [
+          "wn_002",
+          "wn_004",
+          "wn_009",
+          "wn_016",
+          "wn_017",
+          "wn_018",
+          "wn_019",
+          "wn_020",
+          "wn_021",
+          "wn_022"
+        ],
+        "formatFamilies": {
+          "whole_number_division": 10
+        }
+      },
+      "order_of_operations": {
+        "templateCount": 8,
+        "formatFamilyCount": 2,
+        "templateIds": [
+          "wn_011",
+          "wn_012",
+          "wn_023",
+          "wn_024",
+          "wn_025",
+          "wn_026",
+          "wn_027",
+          "wn_028"
+        ],
+        "formatFamilies": {
+          "numeric_order_operations_multistep": 4,
+          "numeric_order_operations_parentheses": 4
+        }
+      },
+      "percent_decimals": {
+        "templateCount": 12,
+        "formatFamilyCount": 7,
+        "templateIds": [
+          "dec_001",
+          "dec_002",
+          "dec_003",
+          "dec_004",
+          "dec_005",
+          "dec_006",
+          "dec_007",
+          "dec_008",
+          "dec_009",
+          "dec_010",
+          "dec_011",
+          "dec_012"
+        ],
+        "formatFamilies": {
+          "decimal_addition": 4,
+          "decimal_operations": 2,
+          "decimal_multiplication": 1,
+          "decimal_division": 1,
+          "decimal_subtraction": 2,
+          "decimal_rounding": 1,
+          "decimal_powers_of_ten": 1
+        }
+      },
+      "fractions": {
+        "templateCount": 21,
+        "formatFamilyCount": 5,
+        "templateIds": [
+          "fas_001",
+          "fas_002",
+          "fas_003",
+          "fas_004",
+          "fas_005",
+          "fas_006",
+          "fas_007",
+          "fas_008",
+          "fas_009",
+          "fas_010",
+          "fas_011",
+          "fmd_001",
+          "fmd_002",
+          "fmd_003",
+          "fmd_004",
+          "fmd_005",
+          "fmd_006",
+          "fmd_007",
+          "fmd_008",
+          "fmd_009",
+          "fmd_010"
+        ],
+        "formatFamilies": {
+          "fraction_addition": 3,
+          "fraction_operations": 10,
+          "fraction_comparison": 1,
+          "fraction_multiplication": 4,
+          "fraction_division": 3
+        }
+      },
+      "number_sense_place_value": {
+        "templateCount": 8,
+        "formatFamilyCount": 5,
+        "templateIds": [
+          "pv_001",
+          "pv_002",
+          "pv_003",
+          "pv_004",
+          "pv_005",
+          "pv_006",
+          "pv_007",
+          "pv_008"
+        ],
+        "formatFamilies": {
+          "scientific_notation_multiply": 3,
+          "scientific_notation_divide": 1,
+          "number_sense": 2,
+          "place_value": 1,
+          "rounding": 1
+        }
+      },
+      "geometry_measurement": {
+        "templateCount": 26,
+        "formatFamilyCount": 5,
+        "templateIds": [
+          "gv_001",
+          "gv_002",
+          "gv_003",
+          "gv_004",
+          "gv_005",
+          "gv_006",
+          "gv_007",
+          "gv_008",
+          "gv_009",
+          "cp_001",
+          "cp_002",
+          "cp_003",
+          "cp_004",
+          "cp_005",
+          "cp_006",
+          "cp_007",
+          "cp_008",
+          "mc_001",
+          "mc_002",
+          "mc_003",
+          "mc_004",
+          "mc_005",
+          "mc_006",
+          "mc_007",
+          "mc_008",
+          "mc_009"
+        ],
+        "formatFamilies": {
+          "rectangular_prism_volume": 4,
+          "volume": 3,
+          "geometry_measurement": 2,
+          "coordinate_plane": 8,
+          "measurement_conversion": 9
+        }
+      }
+    },
+    "topicsWithFewerThanThreeFormatFamilies": [
+      "division",
+      "order_of_operations"
+    ],
+    "mixedPracticeTemplateIds": [],
+    "ambiguousClassifications": []
+  },
+  {
+    "grade": "mid-5th",
+    "topics": {
+      "fractions": {
+        "templateCount": 11,
+        "formatFamilyCount": 5,
+        "templateIds": [
+          "fm_001",
+          "fm_002",
+          "fm_003",
+          "fm_004",
+          "fm_005",
+          "fm_006",
+          "fm_007",
+          "fm_008",
+          "fm_009",
+          "fm_010",
+          "fm_011"
+        ],
+        "formatFamilies": {
+          "fraction_addition": 2,
+          "fraction_operations": 5,
+          "fraction_multiplication": 1,
+          "fraction_comparison": 1,
+          "fraction_division": 2
+        }
+      },
+      "percent_decimals": {
+        "templateCount": 8,
+        "formatFamilyCount": 6,
+        "templateIds": [
+          "dpv_001",
+          "dpv_002",
+          "dpv_003",
+          "dpv_004",
+          "dpv_005",
+          "dpv_007",
+          "dpv_008",
+          "dpv_009"
+        ],
+        "formatFamilies": {
+          "decimal_addition": 3,
+          "decimal_powers_of_ten": 1,
+          "decimal_rounding": 1,
+          "decimal_comparison": 1,
+          "decimal_place_value": 1,
+          "decimal_multiplication": 1
+        }
+      },
+      "number_sense_place_value": {
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "templateIds": [
+          "dpv_006"
+        ],
+        "formatFamilies": {
+          "scientific_notation_multiply": 1
+        }
+      },
+      "add_subtract_multiply": {
+        "templateCount": 6,
+        "formatFamilyCount": 2,
+        "templateIds": [
+          "ms_001",
+          "ms_002",
+          "ms_003",
+          "ms_004",
+          "ms_005",
+          "ms_007"
+        ],
+        "formatFamilies": {
+          "whole_number_subtraction": 4,
+          "whole_number_arithmetic": 2
+        }
+      },
+      "ratios_rates_proportions": {
+        "templateCount": 7,
+        "formatFamilyCount": 3,
+        "templateIds": [
+          "ms_006",
+          "pr_001",
+          "pr_002",
+          "pr_003",
+          "pr_004",
+          "pr_005",
+          "pr_006"
+        ],
+        "formatFamilies": {
+          "unit_rate": 1,
+          "ratio_comparison": 3,
+          "ratio_rate_proportion": 3
+        }
+      },
+      "geometry_measurement": {
+        "templateCount": 2,
+        "formatFamilyCount": 2,
+        "templateIds": [
+          "ms_008",
+          "ms_009"
+        ],
+        "formatFamilies": {
+          "coordinate_distance": 1,
+          "rectangular_prism_volume": 1
+        }
+      },
+      "integers": {
+        "templateCount": 7,
+        "formatFamilyCount": 6,
+        "templateIds": [
+          "pn_001",
+          "pn_002",
+          "pn_003",
+          "pn_004",
+          "pn_005",
+          "pn_006",
+          "pn_007"
+        ],
+        "formatFamilies": {
+          "integer_opposite": 2,
+          "integer_temperature_change": 1,
+          "integer_subtraction": 1,
+          "integer_absolute_value": 1,
+          "integer_operations": 1,
+          "integer_extreme_value": 1
+        }
+      },
+      "expressions_equations": {
+        "templateCount": 7,
+        "formatFamilyCount": 2,
+        "templateIds": [
+          "pa_001",
+          "pa_002",
+          "pa_003",
+          "pa_004",
+          "pa_005",
+          "pa_006",
+          "pa_007"
+        ],
+        "formatFamilies": {
+          "algebraic_substitution_linear": 6,
+          "algebraic_substitution_exponent": 1
+        }
+      }
+    },
+    "topicsWithFewerThanThreeFormatFamilies": [
+      "number_sense_place_value",
+      "add_subtract_multiply",
+      "geometry_measurement",
+      "expressions_equations"
+    ],
+    "mixedPracticeTemplateIds": [],
+    "ambiguousClassifications": [
+      {
+        "grade": "mid-5th",
+        "skillId": "multi_step_word_problems",
+        "templateId": "ms_001",
+        "problem": "You have ${a}. You buy {b} notebooks for ${c} each and a pencil case for ${d}. How much money do you have left?",
+        "chosenTopic": "add_subtract_multiply",
+        "chosenFormatFamily": "whole_number_subtraction",
+        "reason": "Multi-step whole-number word problem; primary objective treated as add/subtract/multiply"
+      },
+      {
+        "grade": "mid-5th",
+        "skillId": "multi_step_word_problems",
+        "templateId": "ms_002",
+        "problem": "A bus travels {a} miles in the morning and {b} miles in the afternoon. The total trip is {c} miles. How many miles are left to travel?",
+        "chosenTopic": "add_subtract_multiply",
+        "chosenFormatFamily": "whole_number_subtraction",
+        "reason": "Multi-step whole-number word problem; primary objective treated as add/subtract/multiply"
+      },
+      {
+        "grade": "mid-5th",
+        "skillId": "multi_step_word_problems",
+        "templateId": "ms_003",
+        "problem": "A baker makes {a} cookies per batch. She bakes {b} batches in the morning and {c} batches in the afternoon. She sells {d} cookies. How many are left?",
+        "chosenTopic": "add_subtract_multiply",
+        "chosenFormatFamily": "whole_number_subtraction",
+        "reason": "Multi-step whole-number word problem; primary objective treated as add/subtract/multiply"
+      },
+      {
+        "grade": "mid-5th",
+        "skillId": "multi_step_word_problems",
+        "templateId": "ms_004",
+        "problem": "A class needs to raise ${a}. They have already raised ${b}. If {c} students each raise the same amount to meet the goal, how much does each student need to raise?",
+        "chosenTopic": "add_subtract_multiply",
+        "chosenFormatFamily": "whole_number_arithmetic",
+        "reason": "Multi-step whole-number word problem; primary objective treated as add/subtract/multiply"
+      },
+      {
+        "grade": "mid-5th",
+        "skillId": "multi_step_word_problems",
+        "templateId": "ms_005",
+        "problem": "A team played {a} games. They won {b} more games than they lost. How many games did they win?",
+        "chosenTopic": "add_subtract_multiply",
+        "chosenFormatFamily": "whole_number_arithmetic",
+        "reason": "Multi-step whole-number word problem; primary objective treated as add/subtract/multiply"
+      },
+      {
+        "grade": "mid-5th",
+        "skillId": "multi_step_word_problems",
+        "templateId": "ms_007",
+        "problem": "After buying {a} items at ${b} each, you have ${c} left. How much did you start with?",
+        "chosenTopic": "add_subtract_multiply",
+        "chosenFormatFamily": "whole_number_subtraction",
+        "reason": "Multi-step whole-number word problem; primary objective treated as add/subtract/multiply"
+      },
+      {
+        "grade": "mid-5th",
+        "skillId": "multi_step_word_problems",
+        "templateId": "ms_008",
+        "problem": "Point A is at ({a}, {b}) and point B is at ({c}, {b}) in the first quadrant. How many units apart are they horizontally?",
+        "chosenTopic": "geometry_measurement",
+        "chosenFormatFamily": "coordinate_distance",
+        "reason": "Horizontal distance on coordinate plane; mentions quadrant only as context"
+      },
+      {
+        "grade": "mid-5th",
+        "skillId": "preview_ratio_language",
+        "templateId": "pr_001",
+        "problem": "There are {a} red marbles and {b} blue marbles. How many blue marbles per red marble? (Give blue ÷ red as a decimal to the nearest tenth.)",
+        "chosenTopic": "ratios_rates_proportions",
+        "chosenFormatFamily": "ratio_comparison",
+        "reason": "Marble ratio language under preview_ratio_language; not probability"
+      }
+    ]
+  },
+  {
+    "grade": "6th",
+    "topics": {
+      "fractions": {
+        "templateCount": 10,
+        "formatFamilyCount": 2,
+        "templateIds": [
+          "df_001",
+          "df_002",
+          "df_003",
+          "df_004",
+          "df_005",
+          "df_006",
+          "df_007",
+          "df_008",
+          "df_009",
+          "df_010"
+        ],
+        "formatFamilies": {
+          "fraction_division": 6,
+          "fraction_operations": 4
+        }
+      },
+      "integers": {
+        "templateCount": 11,
+        "formatFamilyCount": 6,
+        "templateIds": [
+          "int_001",
+          "int_002",
+          "int_003",
+          "int_004",
+          "int_005",
+          "int_006",
+          "int_008",
+          "int_009",
+          "int_010",
+          "int_011",
+          "int_012"
+        ],
+        "formatFamilies": {
+          "integer_absolute_value": 4,
+          "integer_multiplication": 1,
+          "integer_division": 1,
+          "integer_subtraction": 2,
+          "integer_comparison": 2,
+          "integer_opposite": 1
+        }
+      },
+      "percent_decimals": {
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "templateIds": [
+          "int_007"
+        ],
+        "formatFamilies": {
+          "decimal_addition": 1
+        }
+      },
+      "ratios_rates_proportions": {
+        "templateCount": 12,
+        "formatFamilyCount": 6,
+        "templateIds": [
+          "rp_001",
+          "rp_002",
+          "rp_003",
+          "rp_004",
+          "rp_005",
+          "rp_006",
+          "rp_007",
+          "rp_008",
+          "rp_009",
+          "rp_010",
+          "rp_011",
+          "rp_012"
+        ],
+        "formatFamilies": {
+          "ratio_comparison": 3,
+          "unit_rate": 2,
+          "ratio_rate_proportion": 3,
+          "percent_application": 1,
+          "proportion_missing_value": 2,
+          "scale_factor": 1
+        }
+      },
+      "expressions_equations": {
+        "templateCount": 20,
+        "formatFamilyCount": 4,
+        "templateIds": [
+          "eq_001",
+          "eq_002",
+          "eq_003",
+          "eq_004",
+          "eq_005",
+          "eq_006",
+          "eq_007",
+          "eq_008",
+          "eq_009",
+          "eq_010",
+          "eq_011",
+          "eq_012",
+          "exp_001",
+          "exp_003",
+          "exp_004",
+          "exp_005",
+          "exp_006",
+          "exp_007",
+          "exp_008",
+          "exp_009"
+        ],
+        "formatFamilies": {
+          "one_step_equation": 10,
+          "inequality_word_problem": 1,
+          "algebraic_expression": 1,
+          "algebraic_substitution_linear": 8
+        }
+      },
+      "order_of_operations": {
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "templateIds": [
+          "exp_002"
+        ],
+        "formatFamilies": {
+          "numeric_order_operations_exponents": 1
+        }
+      },
+      "geometry_measurement": {
+        "templateCount": 17,
+        "formatFamilyCount": 6,
+        "templateIds": [
+          "geo_001",
+          "geo_002",
+          "geo_003",
+          "geo_004",
+          "geo_005",
+          "geo_006",
+          "geo_007",
+          "geo_008",
+          "geo_009",
+          "cp_001",
+          "cp_002",
+          "cp_003",
+          "cp_004",
+          "cp_005",
+          "cp_006",
+          "cp_007",
+          "cp_008"
+        ],
+        "formatFamilies": {
+          "area": 5,
+          "surface_area": 2,
+          "rectangular_prism_volume": 2,
+          "geometry_measurement": 1,
+          "coordinate_plane": 6,
+          "coordinate_distance": 1
+        }
+      },
+      "statistics_probability": {
+        "templateCount": 8,
+        "formatFamilyCount": 4,
+        "templateIds": [
+          "sp_001",
+          "sp_002",
+          "sp_003",
+          "sp_004",
+          "sp_005",
+          "sp_006",
+          "sp_007",
+          "sp_008"
+        ],
+        "formatFamilies": {
+          "mean": 3,
+          "median": 2,
+          "range": 1,
+          "data_interpretation": 2
+        }
+      }
+    },
+    "topicsWithFewerThanThreeFormatFamilies": [
+      "fractions",
+      "percent_decimals",
+      "order_of_operations"
+    ],
+    "mixedPracticeTemplateIds": [],
+    "ambiguousClassifications": [
+      {
+        "grade": "6th",
+        "skillId": "integer_operations",
+        "templateId": "int_007",
+        "problem": "{a}.{b} + {c}.{d}",
+        "chosenTopic": "percent_decimals",
+        "chosenFormatFamily": "decimal_addition",
+        "reason": "Decimal addition lived under integer_operations skill"
+      }
+    ]
+  },
+  {
+    "grade": "mid-6th",
+    "topics": {
+      "integers": {
+        "templateCount": 40,
+        "formatFamilyCount": 11,
+        "templateIds": [
+          "rn_001",
+          "rn_002",
+          "rn_003",
+          "rn_005",
+          "rn_006",
+          "rn_007",
+          "rn_009",
+          "rn_011",
+          "rn_012",
+          "rn_013",
+          "rn_014",
+          "rn_015",
+          "rn_016",
+          "rn_018",
+          "rn_019",
+          "int_001",
+          "int_002",
+          "int_003",
+          "int_004",
+          "int_005",
+          "int_006",
+          "int_007",
+          "int_008",
+          "int_009",
+          "int_010",
+          "int_011",
+          "int_012",
+          "int_013",
+          "int_014",
+          "int_015",
+          "int_016",
+          "int_017",
+          "int_018",
+          "int_019",
+          "int_020",
+          "pn_001",
+          "pn_002",
+          "pn_003",
+          "pn_004",
+          "pn_005"
+        ],
+        "formatFamilies": {
+          "integer_comparison": 2,
+          "integer_extreme_value": 2,
+          "integer_absolute_value": 2,
+          "integer_number_line": 4,
+          "integer_opposite": 4,
+          "integer_addition": 3,
+          "integer_temperature_change": 3,
+          "integer_division": 2,
+          "integer_operations": 3,
+          "integer_multiplication": 9,
+          "integer_subtraction": 6
+        }
+      },
+      "fractions": {
+        "templateCount": 3,
+        "formatFamilyCount": 3,
+        "templateIds": [
+          "rn_004",
+          "rn_010",
+          "rn_017"
+        ],
+        "formatFamilies": {
+          "fraction_division": 1,
+          "fraction_comparison": 1,
+          "fraction_of_quantity": 1
+        }
+      },
+      "percent_decimals": {
+        "templateCount": 2,
+        "formatFamilyCount": 2,
+        "templateIds": [
+          "rn_008",
+          "rn_020"
+        ],
+        "formatFamilies": {
+          "decimal_addition": 1,
+          "decimal_multiplication": 1
+        }
+      },
+      "ratios_rates_proportions": {
+        "templateCount": 25,
+        "formatFamilyCount": 8,
+        "templateIds": [
+          "rr_001",
+          "rr_002",
+          "rr_003",
+          "rr_004",
+          "rr_005",
+          "rr_006",
+          "rr_007",
+          "rr_008",
+          "rr_009",
+          "rr_010",
+          "rr_011",
+          "rr_012",
+          "rr_013",
+          "rr_014",
+          "rr_015",
+          "rr_016",
+          "rr_017",
+          "rr_018",
+          "rr_019",
+          "rr_020",
+          "pr_001",
+          "pr_002",
+          "pr_003",
+          "pr_004",
+          "pr_005"
+        ],
+        "formatFamilies": {
+          "ratio_comparison": 4,
+          "proportion_missing_value": 3,
+          "unit_rate": 4,
+          "constant_of_proportionality": 2,
+          "ratio_rate_proportion": 6,
+          "scale_factor": 2,
+          "percent_application": 3,
+          "percent_discount": 1
+        }
+      },
+      "expressions_equations": {
+        "templateCount": 21,
+        "formatFamilyCount": 7,
+        "templateIds": [
+          "ee_001",
+          "ee_002",
+          "ee_003",
+          "ee_004",
+          "ee_005",
+          "ee_006",
+          "ee_007",
+          "ee_008",
+          "ee_009",
+          "ee_010",
+          "ee_011",
+          "ee_012",
+          "ee_013",
+          "ee_014",
+          "ee_015",
+          "ee_016",
+          "ee_017",
+          "ee_018",
+          "ee_019",
+          "ee_020",
+          "sp_015"
+        ],
+        "formatFamilies": {
+          "algebraic_substitution_linear": 6,
+          "algebraic_expression": 5,
+          "one_step_equation": 6,
+          "two_step_equation": 1,
+          "algebraic_substitution_exponent": 1,
+          "inequality_word_problem": 1,
+          "algebraic_simplify": 1
+        }
+      },
+      "geometry_measurement": {
+        "templateCount": 31,
+        "formatFamilyCount": 12,
+        "templateIds": [
+          "geo_001",
+          "geo_002",
+          "geo_003",
+          "geo_004",
+          "geo_005",
+          "geo_006",
+          "geo_007",
+          "geo_008",
+          "geo_009",
+          "geo_010",
+          "geo_011",
+          "geo_012",
+          "geo_013",
+          "geo_014",
+          "geo_015",
+          "geo_016",
+          "cp_001",
+          "cp_002",
+          "cp_003",
+          "cp_004",
+          "cp_005",
+          "cp_006",
+          "cp_007",
+          "cp_008",
+          "cp_009",
+          "cp_010",
+          "cp_011",
+          "cp_012",
+          "cp_013",
+          "cp_014",
+          "cp_015"
+        ],
+        "formatFamilies": {
+          "area": 9,
+          "geometry_measurement": 2,
+          "volume": 3,
+          "measurement_conversion": 1,
+          "rectangular_prism_volume": 1,
+          "surface_area": 1,
+          "coordinate_distance": 2,
+          "coordinate_plane": 8,
+          "quadrant_identification": 1,
+          "perimeter": 1,
+          "scale_drawing": 1,
+          "angle_measure": 1
+        }
+      },
+      "statistics_probability": {
+        "templateCount": 16,
+        "formatFamilyCount": 6,
+        "templateIds": [
+          "cp_016",
+          "sp_001",
+          "sp_002",
+          "sp_003",
+          "sp_004",
+          "sp_006",
+          "sp_007",
+          "sp_008",
+          "sp_009",
+          "sp_010",
+          "sp_011",
+          "sp_012",
+          "sp_013",
+          "sp_014",
+          "sp_016",
+          "sp_017"
+        ],
+        "formatFamilies": {
+          "probability_simple": 2,
+          "mean": 7,
+          "median": 2,
+          "range": 2,
+          "data_interpretation": 2,
+          "mode": 1
+        }
+      }
+    },
+    "topicsWithFewerThanThreeFormatFamilies": [
+      "percent_decimals"
+    ],
+    "mixedPracticeTemplateIds": [],
+    "ambiguousClassifications": [
+      {
+        "grade": "mid-6th",
+        "skillId": "rational_numbers",
+        "templateId": "rn_004",
+        "problem": "{a}/{b} ÷ {c}/{d}",
+        "chosenTopic": "fractions",
+        "chosenFormatFamily": "fraction_division",
+        "reason": "Fraction division lived under rational_numbers skill"
+      },
+      {
+        "grade": "mid-6th",
+        "skillId": "rational_numbers",
+        "templateId": "rn_008",
+        "problem": "{a}.{b} + {c}.{d}",
+        "chosenTopic": "percent_decimals",
+        "chosenFormatFamily": "decimal_addition",
+        "reason": "Decimal addition lived under rational_numbers skill"
+      },
+      {
+        "grade": "mid-6th",
+        "skillId": "rational_numbers",
+        "templateId": "rn_010",
+        "problem": "How much greater is {a}/{b} than {c}/{d}?",
+        "chosenTopic": "fractions",
+        "chosenFormatFamily": "fraction_comparison",
+        "reason": "Fraction comparison lived under rational_numbers skill"
+      },
+      {
+        "grade": "mid-6th",
+        "skillId": "rational_numbers",
+        "templateId": "rn_017",
+        "problem": "How many {c}/{d}-cup servings are in {a}/{b} cup of yogurt?",
+        "chosenTopic": "fractions",
+        "chosenFormatFamily": "fraction_of_quantity",
+        "reason": "Fraction-of-quantity lived under rational_numbers skill"
+      },
+      {
+        "grade": "mid-6th",
+        "skillId": "rational_numbers",
+        "templateId": "rn_020",
+        "problem": "{a}.{b} × {c}",
+        "chosenTopic": "percent_decimals",
+        "chosenFormatFamily": "decimal_multiplication",
+        "reason": "Decimal multiplication lived under rational_numbers skill"
+      }
+    ]
+  },
+  {
+    "grade": "7th",
+    "topics": {
+      "ratios_rates_proportions": {
+        "templateCount": 11,
+        "formatFamilyCount": 7,
+        "templateIds": [
+          "pr_001",
+          "pr_002",
+          "pr_004",
+          "pr_006",
+          "pr_007",
+          "pr_008",
+          "pr_009",
+          "pr_010",
+          "pr_011",
+          "pr_013",
+          "pr_014"
+        ],
+        "formatFamilies": {
+          "unit_rate": 2,
+          "ratio_rate_proportion": 2,
+          "percent_discount": 3,
+          "percent_tax": 1,
+          "proportion_missing_value": 1,
+          "constant_of_proportionality": 1,
+          "simple_interest": 1
+        }
+      },
+      "expressions_equations": {
+        "templateCount": 17,
+        "formatFamilyCount": 7,
+        "templateIds": [
+          "pr_003",
+          "pr_005",
+          "pr_012",
+          "ee_001",
+          "ee_002",
+          "ee_003",
+          "ee_004",
+          "ee_005",
+          "ee_006",
+          "ee_007",
+          "ee_008",
+          "ee_009",
+          "ee_010",
+          "ee_011",
+          "ee_012",
+          "ee_013",
+          "ee_014"
+        ],
+        "formatFamilies": {
+          "algebraic_substitution_linear": 4,
+          "algebraic_simplify": 3,
+          "two_step_equation": 3,
+          "one_step_equation": 1,
+          "inequality_word_problem": 1,
+          "algebraic_expression": 3,
+          "equation_with_distribution": 2
+        }
+      },
+      "fractions": {
+        "templateCount": 10,
+        "formatFamilyCount": 6,
+        "templateIds": [
+          "rn_001",
+          "rn_002",
+          "rn_003",
+          "rn_004",
+          "rn_006",
+          "rn_007",
+          "rn_008",
+          "rn_010",
+          "rn_011",
+          "rn_012"
+        ],
+        "formatFamilies": {
+          "fraction_addition": 3,
+          "fraction_operations": 3,
+          "fraction_multiplication": 1,
+          "fraction_division": 1,
+          "fraction_to_decimal": 1,
+          "fraction_absolute_value": 1
+        }
+      },
+      "percent_decimals": {
+        "templateCount": 2,
+        "formatFamilyCount": 2,
+        "templateIds": [
+          "rn_005",
+          "rn_009"
+        ],
+        "formatFamilies": {
+          "decimal_addition": 1,
+          "decimal_operations": 1
+        }
+      },
+      "geometry_measurement": {
+        "templateCount": 11,
+        "formatFamilyCount": 5,
+        "templateIds": [
+          "geo_001",
+          "geo_002",
+          "geo_003",
+          "geo_004",
+          "geo_005",
+          "geo_006",
+          "geo_007",
+          "geo_008",
+          "geo_009",
+          "geo_010",
+          "geo_011"
+        ],
+        "formatFamilies": {
+          "scale_drawing": 1,
+          "angle_measure": 4,
+          "area": 3,
+          "geometry_measurement": 2,
+          "rectangular_prism_volume": 1
+        }
+      },
+      "statistics_probability": {
+        "templateCount": 17,
+        "formatFamilyCount": 5,
+        "templateIds": [
+          "prob_001",
+          "prob_002",
+          "prob_003",
+          "prob_004",
+          "prob_005",
+          "prob_006",
+          "prob_007",
+          "prob_008",
+          "prob_009",
+          "prob_010",
+          "prob_011",
+          "si_001",
+          "si_002",
+          "si_003",
+          "si_004",
+          "si_005",
+          "si_006"
+        ],
+        "formatFamilies": {
+          "probability_simple": 9,
+          "probability_compound": 2,
+          "statistical_inference": 3,
+          "mean": 2,
+          "data_interpretation": 1
+        }
+      }
+    },
+    "topicsWithFewerThanThreeFormatFamilies": [
+      "percent_decimals"
+    ],
+    "mixedPracticeTemplateIds": [],
+    "ambiguousClassifications": []
+  },
+  {
+    "grade": "mid-7th",
+    "topics": {
+      "expressions_equations": {
+        "templateCount": 11,
+        "formatFamilyCount": 5,
+        "templateIds": [
+          "mse_001",
+          "mse_002",
+          "mse_003",
+          "mse_004",
+          "mse_005",
+          "mse_006",
+          "mse_007",
+          "mse_010",
+          "mse_011",
+          "mse_012",
+          "pp_005"
+        ],
+        "formatFamilies": {
+          "inequality_word_problem": 1,
+          "equation_with_distribution": 4,
+          "two_step_equation": 2,
+          "algebraic_expression": 3,
+          "quadratic_equation_positive_root": 1
+        }
+      },
+      "number_sense_place_value": {
+        "templateCount": 3,
+        "formatFamilyCount": 2,
+        "templateIds": [
+          "mse_008",
+          "pct_012",
+          "pc_006"
+        ],
+        "formatFamilies": {
+          "scientific_notation_compare": 1,
+          "scientific_notation_multiply": 2
+        }
+      },
+      "functions_linear_relationships": {
+        "templateCount": 6,
+        "formatFamilyCount": 5,
+        "templateIds": [
+          "mse_009",
+          "pl_002",
+          "pl_003",
+          "pl_004",
+          "pl_005",
+          "pl_006"
+        ],
+        "formatFamilies": {
+          "function_identification": 1,
+          "slope": 1,
+          "rate_of_change": 1,
+          "linear_relationship": 1,
+          "function_linear": 2
+        }
+      },
+      "ratios_rates_proportions": {
+        "templateCount": 11,
+        "formatFamilyCount": 7,
+        "templateIds": [
+          "pct_001",
+          "pct_002",
+          "pct_003",
+          "pct_004",
+          "pct_005",
+          "pct_006",
+          "pct_007",
+          "pct_008",
+          "pct_010",
+          "pct_011",
+          "pl_001"
+        ],
+        "formatFamilies": {
+          "percent_tax": 1,
+          "percent_application": 3,
+          "percent_discount": 2,
+          "percent_tip": 1,
+          "unit_rate": 2,
+          "constant_of_proportionality": 1,
+          "simple_interest": 1
+        }
+      },
+      "fractions": {
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "templateIds": [
+          "pct_009"
+        ],
+        "formatFamilies": {
+          "fraction_multiplication": 1
+        }
+      },
+      "geometry_measurement": {
+        "templateCount": 19,
+        "formatFamilyCount": 7,
+        "templateIds": [
+          "gc_001",
+          "gc_002",
+          "gc_003",
+          "gc_004",
+          "gc_005",
+          "gc_006",
+          "gc_007",
+          "gc_008",
+          "gc_009",
+          "gc_010",
+          "pp_001",
+          "pp_002",
+          "pp_003",
+          "pp_004",
+          "pt_001",
+          "pt_002",
+          "pt_003",
+          "pt_004",
+          "pt_005"
+        ],
+        "formatFamilies": {
+          "area": 6,
+          "surface_area": 1,
+          "angle_measure": 2,
+          "scale_drawing": 2,
+          "geometry_measurement": 2,
+          "pythagorean_side_length": 2,
+          "transformation": 4
+        }
+      },
+      "statistics_probability": {
+        "templateCount": 5,
+        "formatFamilyCount": 4,
+        "templateIds": [
+          "pc_001",
+          "pc_002",
+          "pc_003",
+          "pc_004",
+          "pc_005"
+        ],
+        "formatFamilies": {
+          "statistical_inference": 1,
+          "probability_compound": 1,
+          "probability_simple": 2,
+          "mean": 1
+        }
+      }
+    },
+    "topicsWithFewerThanThreeFormatFamilies": [
+      "number_sense_place_value",
+      "fractions"
+    ],
+    "mixedPracticeTemplateIds": [],
+    "ambiguousClassifications": [
+      {
+        "grade": "mid-7th",
+        "skillId": "multi_step_equations",
+        "templateId": "mse_008",
+        "problem": "Estimate: {a} × 10^{b} is how many times as much as {c} × 10^{d}?",
+        "chosenTopic": "number_sense_place_value",
+        "chosenFormatFamily": "scientific_notation_compare",
+        "reason": "Scientific notation lived under multi_step_equations skill"
+      },
+      {
+        "grade": "mid-7th",
+        "skillId": "multi_step_equations",
+        "templateId": "mse_009",
+        "problem": "A relation contains the pairs ({a},{b}), ({c},{d}), and ({a},{e}) where {b} is not equal to {e}. Enter 1 if it is a function, or 0 if it is not.",
+        "chosenTopic": "functions_linear_relationships",
+        "chosenFormatFamily": "function_identification",
+        "reason": "Function identification lived under multi_step_equations skill"
+      },
+      {
+        "grade": "mid-7th",
+        "skillId": "percent_applications",
+        "templateId": "pct_009",
+        "problem": "{a}/{b} × {c}/{d}",
+        "chosenTopic": "fractions",
+        "chosenFormatFamily": "fraction_multiplication",
+        "reason": "Fraction multiply lived under percent_applications skill"
+      },
+      {
+        "grade": "mid-7th",
+        "skillId": "percent_applications",
+        "templateId": "pct_012",
+        "problem": "({a} × 10^{b}) × ({c} × 10^{d}). Write the result in standard form.",
+        "chosenTopic": "number_sense_place_value",
+        "chosenFormatFamily": "scientific_notation_multiply",
+        "reason": "Scientific notation lived under percent_applications skill"
+      },
+      {
+        "grade": "mid-7th",
+        "skillId": "preview_pythagorean_theorem",
+        "templateId": "pp_005",
+        "problem": "Solve x^2 = {p} for the positive value of x.",
+        "chosenTopic": "expressions_equations",
+        "chosenFormatFamily": "quadratic_equation_positive_root",
+        "reason": "Standalone x^2=n under preview_pythagorean_theorem skill"
+      }
+    ]
+  },
+  {
+    "grade": "8th",
+    "topics": {
+      "functions_linear_relationships": {
+        "templateCount": 18,
+        "formatFamilyCount": 6,
+        "templateIds": [
+          "le_001",
+          "le_002",
+          "le_003",
+          "le_005",
+          "le_007",
+          "le_008",
+          "le_009",
+          "le_010",
+          "le_011",
+          "fn_001",
+          "fn_002",
+          "fn_003",
+          "fn_004",
+          "fn_005",
+          "fn_006",
+          "fn_007",
+          "fn_008",
+          "fn_009"
+        ],
+        "formatFamilies": {
+          "slope": 5,
+          "function_evaluation": 4,
+          "linear_relationship": 5,
+          "function_identification": 1,
+          "rate_of_change": 2,
+          "function_linear": 1
+        }
+      },
+      "ratios_rates_proportions": {
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "templateIds": [
+          "le_004"
+        ],
+        "formatFamilies": {
+          "unit_rate": 1
+        }
+      },
+      "expressions_equations": {
+        "templateCount": 14,
+        "formatFamilyCount": 7,
+        "templateIds": [
+          "le_006",
+          "le_012",
+          "sys_001",
+          "sys_002",
+          "sys_003",
+          "sys_004",
+          "sys_005",
+          "sys_006",
+          "sys_007",
+          "sys_008",
+          "sys_009",
+          "sn_002",
+          "bv_002",
+          "bv_006"
+        ],
+        "formatFamilies": {
+          "equation_with_distribution": 1,
+          "equation_solution_count": 1,
+          "two_step_equation": 3,
+          "algebraic_expression": 5,
+          "one_step_equation": 1,
+          "quadratic_equation_positive_root": 1,
+          "algebraic_substitution_linear": 2
+        }
+      },
+      "geometry_measurement": {
+        "templateCount": 17,
+        "formatFamilyCount": 7,
+        "templateIds": [
+          "pt_001",
+          "pt_002",
+          "pt_003",
+          "pt_004",
+          "pt_005",
+          "pt_006",
+          "pt_007",
+          "pt_008",
+          "pt_009",
+          "tr_001",
+          "tr_002",
+          "tr_003",
+          "tr_004",
+          "tr_005",
+          "tr_006",
+          "tr_007",
+          "tr_008"
+        ],
+        "formatFamilies": {
+          "pythagorean_side_length": 5,
+          "geometry_measurement": 2,
+          "coordinate_distance": 1,
+          "cylinder_volume": 1,
+          "transformation": 5,
+          "scale_drawing": 1,
+          "angle_measure": 2
+        }
+      },
+      "number_sense_place_value": {
+        "templateCount": 9,
+        "formatFamilyCount": 4,
+        "templateIds": [
+          "sn_001",
+          "sn_003",
+          "sn_004",
+          "sn_005",
+          "sn_006",
+          "sn_007",
+          "sn_008",
+          "sn_009",
+          "sn_010"
+        ],
+        "formatFamilies": {
+          "scientific_notation_multiply": 5,
+          "scientific_notation_divide": 1,
+          "square_root_estimate": 2,
+          "number_sense": 1
+        }
+      },
+      "statistics_probability": {
+        "templateCount": 6,
+        "formatFamilyCount": 3,
+        "templateIds": [
+          "bv_001",
+          "bv_003",
+          "bv_004",
+          "bv_005",
+          "bv_007",
+          "bv_008"
+        ],
+        "formatFamilies": {
+          "data_interpretation": 2,
+          "bivariate_data": 3,
+          "mode": 1
+        }
+      }
+    },
+    "topicsWithFewerThanThreeFormatFamilies": [
+      "ratios_rates_proportions"
+    ],
+    "mixedPracticeTemplateIds": [],
+    "ambiguousClassifications": [
+      {
+        "grade": "8th",
+        "skillId": "linear_equations",
+        "templateId": "le_002",
+        "problem": "A line has slope {m} and y-intercept {b}. What is y when x = 1?",
+        "chosenTopic": "functions_linear_relationships",
+        "chosenFormatFamily": "function_evaluation",
+        "reason": "Slope-intercept evaluation; not algebraic substitution topic"
+      },
+      {
+        "grade": "8th",
+        "skillId": "linear_equations",
+        "templateId": "le_006",
+        "problem": "Solve: {a}(x + {b}) = {c}",
+        "chosenTopic": "expressions_equations",
+        "chosenFormatFamily": "equation_with_distribution",
+        "reason": "Equation solving under linear_equations skill without slope context"
+      },
+      {
+        "grade": "8th",
+        "skillId": "linear_equations",
+        "templateId": "le_012",
+        "problem": "How many solutions does {a}x + {b} = {a}x + {c} have when {b} is not equal to {c}? Enter 0 for no solution or 2 for infinitely many.",
+        "chosenTopic": "expressions_equations",
+        "chosenFormatFamily": "equation_solution_count",
+        "reason": "No-solution/infinite-solution equation classification"
+      },
+      {
+        "grade": "8th",
+        "skillId": "pythagorean_theorem",
+        "templateId": "pt_008",
+        "problem": "A cylinder has radius {r} and height {h}. What is its volume? Use π ≈ 3.14.",
+        "chosenTopic": "geometry_measurement",
+        "chosenFormatFamily": "cylinder_volume",
+        "reason": "Cylinder volume lived under pythagorean_theorem skill"
+      },
+      {
+        "grade": "8th",
+        "skillId": "scientific_notation",
+        "templateId": "sn_002",
+        "problem": "Solve x^2 = {p} for the positive value of x.",
+        "chosenTopic": "expressions_equations",
+        "chosenFormatFamily": "quadratic_equation_positive_root",
+        "reason": "Standalone x^2=n under scientific_notation skill"
+      }
+    ]
+  }
+]

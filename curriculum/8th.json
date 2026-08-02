@@ -37,7 +37,9 @@
           },
           "constraints_note": "a != 0",
           "answer_formula": "b / a",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "topic": "functions_linear_relationships",
+          "formatFamily": "slope"
         },
         {
           "id": "le_002",
@@ -55,7 +57,9 @@
           },
           "constraints_note": "m != 0",
           "answer_type": "numeric",
-          "answer_formula": "m + b"
+          "answer_formula": "m + b",
+          "topic": "functions_linear_relationships",
+          "formatFamily": "function_evaluation"
         },
         {
           "id": "le_003",
@@ -78,7 +82,9 @@
           "generation_note": "8.EE.B.6 derive slope from intercept point and another point; m = (c-b)/a",
           "constraints_note": "a != 0; prefer (c-b) divisible by a",
           "answer_type": "numeric",
-          "answer_formula": "(c - b) / a"
+          "answer_formula": "(c - b) / a",
+          "topic": "functions_linear_relationships",
+          "formatFamily": "slope"
         },
         {
           "id": "le_004",
@@ -101,7 +107,9 @@
           "generation_note": "8.EE.B.5 compare proportional relationships (rate vs equation)",
           "constraints_note": "a divisible by b",
           "answer_type": "numeric",
-          "answer_formula": "abs(a / b - m)"
+          "answer_formula": "abs(a / b - m)",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "unit_rate"
         },
         {
           "id": "le_005",
@@ -123,7 +131,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "m * t + b"
+          "answer_formula": "m * t + b",
+          "topic": "functions_linear_relationships",
+          "formatFamily": "linear_relationship"
         },
         {
           "id": "le_006",
@@ -146,7 +156,9 @@
           "generation_note": "8.EE.C.7.b distribute and solve",
           "constraints_note": "c divisible by a",
           "answer_type": "numeric",
-          "answer_formula": "c / a - b"
+          "answer_formula": "c / a - b",
+          "topic": "expressions_equations",
+          "formatFamily": "equation_with_distribution"
         },
         {
           "id": "le_007",
@@ -164,7 +176,9 @@
           },
           "generation_note": "8.F.A.3 linear vs nonlinear; correct choice is always 1",
           "answer_type": "numeric",
-          "answer_formula": "1"
+          "answer_formula": "1",
+          "topic": "functions_linear_relationships",
+          "formatFamily": "linear_relationship"
         },
         {
           "id": "le_008",
@@ -185,7 +199,9 @@
             ]
           },
           "answer_formula": "b - m*a",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "topic": "functions_linear_relationships",
+          "formatFamily": "slope"
         },
         {
           "id": "le_009",
@@ -212,7 +228,9 @@
           "generation_note": "8.EE.B.6; student flipped rise/run",
           "constraints_note": "a != c",
           "answer_type": "numeric",
-          "answer_formula": "(d - b) / (c - a)"
+          "answer_formula": "(d - b) / (c - a)",
+          "topic": "functions_linear_relationships",
+          "formatFamily": "slope"
         },
         {
           "id": "le_010",
@@ -234,7 +252,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "b - m * a"
+          "answer_formula": "b - m * a",
+          "topic": "functions_linear_relationships",
+          "formatFamily": "slope"
         },
         {
           "id": "le_011",
@@ -256,7 +276,9 @@
           },
           "constraints_note": "m != 0",
           "answer_type": "numeric",
-          "answer_formula": "m * c"
+          "answer_formula": "m * c",
+          "topic": "functions_linear_relationships",
+          "formatFamily": "function_evaluation"
         },
         {
           "id": "le_012",
@@ -278,7 +300,9 @@
           },
           "generation_note": "8.EE.C.7.a no solution (same x-coefficient, different constants)",
           "answer_type": "numeric",
-          "answer_formula": "0"
+          "answer_formula": "0",
+          "topic": "expressions_equations",
+          "formatFamily": "equation_solution_count"
         }
       ]
     },
@@ -312,7 +336,9 @@
           },
           "constraints_note": "a != c",
           "answer_type": "numeric",
-          "answer_formula": "(d - b) / (a - c)"
+          "answer_formula": "(d - b) / (a - c)",
+          "topic": "expressions_equations",
+          "formatFamily": "two_step_equation"
         },
         {
           "id": "sys_002",
@@ -340,7 +366,9 @@
           "generation_note": "8.EE.C.8.c real-world system",
           "constraints_note": "a > c; (d-b) divisible by (a-c); result > 0",
           "answer_type": "numeric",
-          "answer_formula": "(d - b) / (a - c)"
+          "answer_formula": "(d - b) / (a - c)",
+          "topic": "expressions_equations",
+          "formatFamily": "algebraic_expression"
         },
         {
           "id": "sys_003",
@@ -362,7 +390,9 @@
           },
           "generation_note": "8.EE.C.8.b parallel distinct lines → no solution",
           "answer_type": "numeric",
-          "answer_formula": "0"
+          "answer_formula": "0",
+          "topic": "expressions_equations",
+          "formatFamily": "two_step_equation"
         },
         {
           "id": "sys_004",
@@ -389,7 +419,9 @@
           },
           "answer_type": "numeric",
           "answer_formula": "(r - b * c) / (a - b)",
-          "generation_note": "require a > b; adults x = (r-b*c)/(a-b) is an integer with 0 <= x <= c"
+          "generation_note": "require a > b; adults x = (r-b*c)/(a-b) is an integer with 0 <= x <= c",
+          "topic": "expressions_equations",
+          "formatFamily": "algebraic_expression"
         },
         {
           "id": "sys_005",
@@ -416,7 +448,9 @@
           },
           "answer_type": "numeric",
           "answer_formula": "c * (d - b) / (a - b)",
-          "generation_note": "require a < d < b; result x in [0,c] and whole number liters"
+          "generation_note": "require a < d < b; result x in [0,c] and whole number liters",
+          "topic": "expressions_equations",
+          "formatFamily": "algebraic_expression"
         },
         {
           "id": "sys_006",
@@ -451,7 +485,9 @@
           "generation_note": "8.EE.C.8.b infinitely many",
           "constraints_note": "d=2*a, e=2*b, f=2*c",
           "answer_type": "numeric",
-          "answer_formula": "2"
+          "answer_formula": "2",
+          "topic": "expressions_equations",
+          "formatFamily": "two_step_equation"
         },
         {
           "id": "sys_007",
@@ -469,7 +505,9 @@
           },
           "generation_note": "8.EE.C.8.a intersection point satisfies both equations",
           "answer_type": "numeric",
-          "answer_formula": "b"
+          "answer_formula": "b",
+          "topic": "expressions_equations",
+          "formatFamily": "algebraic_expression"
         },
         {
           "id": "sys_008",
@@ -488,7 +526,9 @@
           "generation_note": "8.EE.C.8.b elimination/substitution",
           "constraints_note": "s+t even so x is integer",
           "answer_type": "numeric",
-          "answer_formula": "(s + t) / 2"
+          "answer_formula": "(s + t) / 2",
+          "topic": "expressions_equations",
+          "formatFamily": "one_step_equation"
         },
         {
           "id": "sys_009",
@@ -516,7 +556,9 @@
           "generation_note": "8.EE.C.8.c real-world system distinct from tickets/mixture",
           "constraints_note": "d > b; (a-c) divisible by (d-b); result > 0",
           "answer_type": "numeric",
-          "answer_formula": "(a - c) / (d - b)"
+          "answer_formula": "(a - c) / (d - b)",
+          "topic": "expressions_equations",
+          "formatFamily": "algebraic_expression"
         }
       ]
     },
@@ -555,7 +597,9 @@
           "generation_note": "8.F.A.1 repeated input with different outputs → not a function",
           "constraints_note": "b != e by ranges",
           "answer_type": "numeric",
-          "answer_formula": "0"
+          "answer_formula": "0",
+          "topic": "functions_linear_relationships",
+          "formatFamily": "function_identification"
         },
         {
           "id": "fn_002",
@@ -565,7 +609,9 @@
           "constraints": {},
           "generation_note": "8.F.B.5 qualitative features from verbal graph description",
           "answer_type": "numeric",
-          "answer_formula": "1"
+          "answer_formula": "1",
+          "topic": "functions_linear_relationships",
+          "formatFamily": "linear_relationship"
         },
         {
           "id": "fn_003",
@@ -587,7 +633,9 @@
           },
           "generation_note": "8.F.A.2 compare rates from table description vs equation",
           "answer_type": "numeric",
-          "answer_formula": "abs(a - c)"
+          "answer_formula": "abs(a - c)",
+          "topic": "functions_linear_relationships",
+          "formatFamily": "rate_of_change"
         },
         {
           "id": "fn_004",
@@ -601,7 +649,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "(a - 32) * 5 / 9"
+          "answer_formula": "(a - 32) * 5 / 9",
+          "topic": "functions_linear_relationships",
+          "formatFamily": "function_linear"
         },
         {
           "id": "fn_005",
@@ -619,7 +669,9 @@
           },
           "generation_note": "8.F.A.3; nonlinear choice is always 2",
           "answer_type": "numeric",
-          "answer_formula": "2"
+          "answer_formula": "2",
+          "topic": "functions_linear_relationships",
+          "formatFamily": "linear_relationship"
         },
         {
           "id": "fn_006",
@@ -646,7 +698,9 @@
           "generation_note": "8.F.B.4 rate from two points",
           "constraints_note": "a != c; prefer (d-b) divisible by (c-a)",
           "answer_type": "numeric",
-          "answer_formula": "(d - b) / (c - a)"
+          "answer_formula": "(d - b) / (c - a)",
+          "topic": "functions_linear_relationships",
+          "formatFamily": "rate_of_change"
         },
         {
           "id": "fn_007",
@@ -667,7 +721,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "(result - b) / a"
+          "answer_formula": "(result - b) / a",
+          "topic": "functions_linear_relationships",
+          "formatFamily": "function_evaluation"
         },
         {
           "id": "fn_008",
@@ -688,7 +744,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "b - m * a"
+          "answer_formula": "b - m * a",
+          "topic": "functions_linear_relationships",
+          "formatFamily": "function_evaluation"
         },
         {
           "id": "fn_009",
@@ -697,7 +755,9 @@
           "constraints": {},
           "generation_note": "8.F.B.5 qualitative description of a graph",
           "answer_type": "numeric",
-          "answer_formula": "1"
+          "answer_formula": "1",
+          "topic": "functions_linear_relationships",
+          "formatFamily": "linear_relationship"
         }
       ]
     },
@@ -723,7 +783,9 @@
           },
           "answer_formula": "sqrt(a*a + b*b)",
           "answer_type": "numeric",
-          "constraints_note": "use Pythagorean triples for whole-number answers"
+          "constraints_note": "use Pythagorean triples for whole-number answers",
+          "topic": "geometry_measurement",
+          "formatFamily": "pythagorean_side_length"
         },
         {
           "id": "pt_002",
@@ -741,7 +803,9 @@
           },
           "constraints_note": "c > a, result is whole number (Pythagorean triples)",
           "answer_type": "numeric",
-          "answer_formula": "sqrt(c*c - a*a)"
+          "answer_formula": "sqrt(c*c - a*a)",
+          "topic": "geometry_measurement",
+          "formatFamily": "pythagorean_side_length"
         },
         {
           "id": "pt_003",
@@ -760,7 +824,9 @@
           },
           "constraints_note": "use Pythagorean triples for clean answers",
           "answer_type": "numeric",
-          "answer_formula": "sqrt(a*a - b*b)"
+          "answer_formula": "sqrt(a*a - b*b)",
+          "topic": "geometry_measurement",
+          "formatFamily": "geometry_measurement"
         },
         {
           "id": "pt_004",
@@ -778,7 +844,9 @@
             ]
           },
           "answer_formula": "sqrt(a*a+b*b)",
-          "answer_type": "decimal_1dp"
+          "answer_type": "decimal_1dp",
+          "topic": "geometry_measurement",
+          "formatFamily": "geometry_measurement"
         },
         {
           "id": "pt_005",
@@ -803,7 +871,9 @@
             ]
           },
           "answer_formula": "sqrt(pow(c - a, 2) + pow(d - b, 2))",
-          "answer_type": "decimal_1dp"
+          "answer_type": "decimal_1dp",
+          "topic": "geometry_measurement",
+          "formatFamily": "coordinate_distance"
         },
         {
           "id": "pt_006",
@@ -817,7 +887,9 @@
           },
           "generation_note": "8.G.B.6 converse; c=5 → right (1); c=6 → not (0); answer = 6-c",
           "answer_type": "numeric",
-          "answer_formula": "6 - c"
+          "answer_formula": "6 - c",
+          "topic": "geometry_measurement",
+          "formatFamily": "pythagorean_side_length"
         },
         {
           "id": "pt_007",
@@ -835,7 +907,9 @@
             ]
           },
           "answer_formula": "sqrt(a*a+b*b)",
-          "answer_type": "decimal_1dp"
+          "answer_type": "decimal_1dp",
+          "topic": "geometry_measurement",
+          "formatFamily": "pythagorean_side_length"
         },
         {
           "id": "pt_008",
@@ -854,7 +928,9 @@
           },
           "generation_note": "8.G.C.9 volume of cylinder V = π r^2 h",
           "answer_type": "numeric",
-          "answer_formula": "3.14 * r * r * h"
+          "answer_formula": "3.14 * r * r * h",
+          "topic": "geometry_measurement",
+          "formatFamily": "cylinder_volume"
         },
         {
           "id": "pt_009",
@@ -872,7 +948,9 @@
             ]
           },
           "answer_formula": "sqrt(a*a + b*b)",
-          "answer_type": "decimal_1dp"
+          "answer_type": "decimal_1dp",
+          "topic": "geometry_measurement",
+          "formatFamily": "pythagorean_side_length"
         }
       ]
     },
@@ -905,7 +983,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a + c"
+          "answer_formula": "a + c",
+          "topic": "geometry_measurement",
+          "formatFamily": "transformation"
         },
         {
           "id": "tr_002",
@@ -922,7 +1002,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "b"
+          "answer_formula": "b",
+          "topic": "geometry_measurement",
+          "formatFamily": "transformation"
         },
         {
           "id": "tr_003",
@@ -943,7 +1025,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "k * b"
+          "answer_formula": "k * b",
+          "topic": "geometry_measurement",
+          "formatFamily": "scale_drawing"
         },
         {
           "id": "tr_004",
@@ -960,7 +1044,9 @@
             ]
           },
           "answer_formula": "-b",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "topic": "geometry_measurement",
+          "formatFamily": "transformation"
         },
         {
           "id": "tr_005",
@@ -977,7 +1063,9 @@
             ]
           },
           "answer_formula": "-a",
-          "answer_type": "numeric"
+          "answer_type": "numeric",
+          "topic": "geometry_measurement",
+          "formatFamily": "transformation"
         },
         {
           "id": "tr_006",
@@ -991,7 +1079,9 @@
           },
           "generation_note": "8.G.A.5 parallel lines alternate interior angles congruent",
           "answer_type": "numeric",
-          "answer_formula": "a"
+          "answer_formula": "a",
+          "topic": "geometry_measurement",
+          "formatFamily": "angle_measure"
         },
         {
           "id": "tr_007",
@@ -1017,7 +1107,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "-(b + ty)"
+          "answer_formula": "-(b + ty)",
+          "topic": "geometry_measurement",
+          "formatFamily": "transformation"
         },
         {
           "id": "tr_008",
@@ -1035,7 +1127,9 @@
           },
           "generation_note": "8.G.A.4 similarity / dilation scale factor",
           "answer_type": "numeric",
-          "answer_formula": "k * a"
+          "answer_formula": "k * a",
+          "topic": "geometry_measurement",
+          "formatFamily": "angle_measure"
         }
       ]
     },
@@ -1060,7 +1154,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a * pow(10, b)"
+          "answer_formula": "a * pow(10, b)",
+          "topic": "number_sense_place_value",
+          "formatFamily": "scientific_notation_multiply"
         },
         {
           "id": "sn_002",
@@ -1075,7 +1171,9 @@
           "generation_note": "8.EE.A.2; prefer perfect squares 4,9,16,...,144",
           "constraints_note": "p is a perfect square",
           "answer_type": "numeric",
-          "answer_formula": "sqrt(p)"
+          "answer_formula": "sqrt(p)",
+          "topic": "expressions_equations",
+          "formatFamily": "quadratic_equation_positive_root"
         },
         {
           "id": "sn_003",
@@ -1100,7 +1198,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "a * c * pow(10, b + d)"
+          "answer_formula": "a * c * pow(10, b + d)",
+          "topic": "number_sense_place_value",
+          "formatFamily": "scientific_notation_multiply"
         },
         {
           "id": "sn_004",
@@ -1125,7 +1225,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "(a / c) * pow(10, b - d)"
+          "answer_formula": "(a / c) * pow(10, b - d)",
+          "topic": "number_sense_place_value",
+          "formatFamily": "scientific_notation_divide"
         },
         {
           "id": "sn_005",
@@ -1140,7 +1242,9 @@
           "generation_note": "8.NS.A.2 approximate irrationals",
           "constraints_note": "n not a perfect square",
           "answer_type": "numeric",
-          "answer_formula": "floor(sqrt(n))"
+          "answer_formula": "floor(sqrt(n))",
+          "topic": "number_sense_place_value",
+          "formatFamily": "square_root_estimate"
         },
         {
           "id": "sn_006",
@@ -1166,7 +1270,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "(a / c) * pow(10, b - d)"
+          "answer_formula": "(a / c) * pow(10, b - d)",
+          "topic": "number_sense_place_value",
+          "formatFamily": "scientific_notation_multiply"
         },
         {
           "id": "sn_007",
@@ -1184,7 +1290,9 @@
           },
           "answer_type": "numeric",
           "answer_formula": "pow(10, b + c)",
-          "generation_note": "small exponents so the standard-form whole number fits keypad entry"
+          "generation_note": "small exponents so the standard-form whole number fits keypad entry",
+          "topic": "number_sense_place_value",
+          "formatFamily": "scientific_notation_multiply"
         },
         {
           "id": "sn_008",
@@ -1201,7 +1309,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "1 / pow(a, b)"
+          "answer_formula": "1 / pow(a, b)",
+          "topic": "number_sense_place_value",
+          "formatFamily": "number_sense"
         },
         {
           "id": "sn_009",
@@ -1215,7 +1325,9 @@
           },
           "generation_note": "8.NS.A.1; n is 2 or 3 (non-square) so always irrational",
           "answer_type": "numeric",
-          "answer_formula": "0"
+          "answer_formula": "0",
+          "topic": "number_sense_place_value",
+          "formatFamily": "square_root_estimate"
         },
         {
           "id": "sn_010",
@@ -1236,7 +1348,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "(a + c) * pow(10, b)"
+          "answer_formula": "(a + c) * pow(10, b)",
+          "topic": "number_sense_place_value",
+          "formatFamily": "scientific_notation_multiply"
         }
       ]
     },
@@ -1263,7 +1377,9 @@
           "generation_note": "8.SP.A.4 relative frequency from two-way table context",
           "constraints_note": "a <= b",
           "answer_type": "decimal",
-          "answer_formula": "a / b"
+          "answer_formula": "a / b",
+          "topic": "statistics_probability",
+          "formatFamily": "data_interpretation"
         },
         {
           "id": "bv_002",
@@ -1285,7 +1401,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "m * c + b"
+          "answer_formula": "m * c + b",
+          "topic": "expressions_equations",
+          "formatFamily": "algebraic_substitution_linear"
         },
         {
           "id": "bv_003",
@@ -1294,7 +1412,9 @@
           "constraints": {},
           "generation_note": "8.SP.A.1 positive association",
           "answer_type": "numeric",
-          "answer_formula": "1"
+          "answer_formula": "1",
+          "topic": "statistics_probability",
+          "formatFamily": "bivariate_data"
         },
         {
           "id": "bv_004",
@@ -1312,7 +1432,9 @@
           },
           "generation_note": "8.SP.A.3 interpret slope in context",
           "answer_type": "numeric",
-          "answer_formula": "m"
+          "answer_formula": "m",
+          "topic": "statistics_probability",
+          "formatFamily": "mode"
         },
         {
           "id": "bv_005",
@@ -1335,7 +1457,9 @@
           "generation_note": "8.SP.A.2 informal assess closeness; A always better",
           "constraints_note": "a > b",
           "answer_type": "numeric",
-          "answer_formula": "1"
+          "answer_formula": "1",
+          "topic": "statistics_probability",
+          "formatFamily": "data_interpretation"
         },
         {
           "id": "bv_006",
@@ -1357,7 +1481,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "(target - b) / m"
+          "answer_formula": "(target - b) / m",
+          "topic": "expressions_equations",
+          "formatFamily": "algebraic_substitution_linear"
         },
         {
           "id": "bv_007",
@@ -1367,7 +1493,9 @@
           "constraints": {},
           "generation_note": "8.SP.A.1 identify outlier pattern",
           "answer_type": "numeric",
-          "answer_formula": "1"
+          "answer_formula": "1",
+          "topic": "statistics_probability",
+          "formatFamily": "bivariate_data"
         },
         {
           "id": "bv_008",
@@ -1388,7 +1516,9 @@
             ]
           },
           "answer_type": "numeric",
-          "answer_formula": "m * h"
+          "answer_formula": "m * h",
+          "topic": "statistics_probability",
+          "formatFamily": "bivariate_data"
         }
       ]
     }
