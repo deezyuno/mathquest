@@ -224,6 +224,9 @@ export function assertTemplateMetadata(t) {
   if (!t.formatFamily) {
     throw new Error(`${LOG_PREFIX} template ${t.id} missing formatFamily`);
   }
+  if (!t.ccss_standard) {
+    throw new Error(`${LOG_PREFIX} template ${t.id} missing ccss_standard`);
+  }
   if (!(t.problem || "").trim()) {
     throw new Error(`${LOG_PREFIX} template ${t.id} has blank problem`);
   }

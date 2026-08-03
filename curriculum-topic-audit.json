@@ -3,7 +3,7 @@
     "grade": "5th",
     "topics": {
       "add_subtract_multiply": {
-        "templateCount": 10,
+        "templateCount": 11,
         "formatFamilyCount": 3,
         "templateIds": [
           "wn_001",
@@ -15,13 +15,17 @@
           "wn_010",
           "wn_013",
           "wn_014",
-          "wn_015"
+          "wn_015",
+          "ccss5_016"
         ],
         "formatFamilies": {
-          "whole_number_multiplication": 6,
+          "whole_number_multiplication": 7,
           "whole_number_addition": 1,
           "whole_number_arithmetic": 3
-        }
+        },
+        "standardsCovered": [
+          "5.NBT.B.5"
+        ]
       },
       "division": {
         "templateCount": 10,
@@ -40,56 +44,33 @@
         ],
         "formatFamilies": {
           "whole_number_division": 10
-        }
+        },
+        "standardsCovered": [
+          "5.NBT.B.6"
+        ]
       },
-      "order_of_operations": {
-        "templateCount": 8,
-        "formatFamilyCount": 2,
+      "expressions_equations": {
+        "templateCount": 5,
+        "formatFamilyCount": 3,
         "templateIds": [
-          "wn_011",
-          "wn_012",
-          "wn_023",
-          "wn_024",
-          "wn_025",
-          "wn_026",
-          "wn_027",
-          "wn_028"
+          "ccss5_001",
+          "ccss5_002",
+          "ccss5_003",
+          "gap5_oab3_001",
+          "gap5_oab3_002"
         ],
         "formatFamilies": {
-          "numeric_order_operations_multistep": 4,
-          "numeric_order_operations_parentheses": 4
-        }
-      },
-      "percent_decimals": {
-        "templateCount": 12,
-        "formatFamilyCount": 7,
-        "templateIds": [
-          "dec_001",
-          "dec_002",
-          "dec_003",
-          "dec_004",
-          "dec_005",
-          "dec_006",
-          "dec_007",
-          "dec_008",
-          "dec_009",
-          "dec_010",
-          "dec_011",
-          "dec_012"
-        ],
-        "formatFamilies": {
-          "decimal_addition": 4,
-          "decimal_operations": 2,
-          "decimal_multiplication": 1,
-          "decimal_division": 1,
-          "decimal_subtraction": 2,
-          "decimal_rounding": 1,
-          "decimal_powers_of_ten": 1
-        }
+          "numerical_pattern_terms": 3,
+          "numerical_pattern_compare": 1,
+          "numerical_pattern_multiply": 1
+        },
+        "standardsCovered": [
+          "5.OA.B.3"
+        ]
       },
       "fractions": {
-        "templateCount": 21,
-        "formatFamilyCount": 5,
+        "templateCount": 35,
+        "formatFamilyCount": 12,
         "templateIds": [
           "fas_001",
           "fas_002",
@@ -102,6 +83,7 @@
           "fas_009",
           "fas_010",
           "fas_011",
+          "ccss5_006",
           "fmd_001",
           "fmd_002",
           "fmd_003",
@@ -111,15 +93,111 @@
           "fmd_007",
           "fmd_008",
           "fmd_009",
-          "fmd_010"
+          "fmd_010",
+          "ccss5_010",
+          "ccss5_011",
+          "ccss5_012",
+          "ccss5_013",
+          "ccss5_014",
+          "ccss5_015",
+          "gap5_nf4_001",
+          "gap5_nf4_002",
+          "gap5_nf6_001",
+          "gap5_nfb3_001",
+          "gap5_nfb3_002",
+          "gap5_nfb5_001",
+          "gap5_nfb5_002"
         ],
         "formatFamilies": {
           "fraction_addition": 3,
           "fraction_operations": 10,
           "fraction_comparison": 1,
-          "fraction_multiplication": 4,
-          "fraction_division": 3
-        }
+          "line_plot_fraction_total": 1,
+          "fraction_multiplication": 5,
+          "fraction_division": 3,
+          "fraction_as_division": 4,
+          "fraction_as_division_decimal": 1,
+          "fraction_scaling_compare": 4,
+          "fraction_scaling_product": 1,
+          "fraction_area_product": 1,
+          "fraction_word_multiplication": 1
+        },
+        "standardsCovered": [
+          "5.MD.B.2",
+          "5.NF.A.1",
+          "5.NF.A.2",
+          "5.NF.B.3",
+          "5.NF.B.4",
+          "5.NF.B.5",
+          "5.NF.B.6",
+          "5.NF.B.7"
+        ]
+      },
+      "geometry_measurement": {
+        "templateCount": 37,
+        "formatFamilyCount": 11,
+        "templateIds": [
+          "gv_001",
+          "gv_002",
+          "gv_003",
+          "gv_004",
+          "gv_005",
+          "gv_006",
+          "gv_007",
+          "gv_008",
+          "gv_009",
+          "ccss5_007",
+          "ccss5_008",
+          "ccss5_009",
+          "gap5_md3_001",
+          "cp_001",
+          "cp_002",
+          "cp_003",
+          "cp_004",
+          "cp_005",
+          "cp_006",
+          "cp_007",
+          "cp_008",
+          "gap5_ga1_001",
+          "gap5_ga2_001",
+          "gap5_gb3_001",
+          "gap5_gb4_001",
+          "gap5_gb4_002",
+          "mc_001",
+          "mc_002",
+          "mc_003",
+          "mc_004",
+          "mc_005",
+          "mc_006",
+          "mc_007",
+          "mc_008",
+          "mc_009",
+          "gap5_md1_001",
+          "gap5_md1_002"
+        ],
+        "formatFamilies": {
+          "rectangular_prism_volume": 4,
+          "volume": 3,
+          "geometry_measurement": 2,
+          "quadrilateral_classification": 3,
+          "unit_cube_volume": 1,
+          "coordinate_plane": 8,
+          "coordinate_component": 1,
+          "coordinate_context_value": 1,
+          "shape_hierarchy_coded": 2,
+          "shape_property_count": 1,
+          "measurement_conversion": 11
+        },
+        "standardsCovered": [
+          "5.G.A.1",
+          "5.G.A.2",
+          "5.G.B.3",
+          "5.G.B.4",
+          "5.MD.A.1",
+          "5.MD.C.3",
+          "5.MD.C.4",
+          "5.MD.C.5"
+        ]
       },
       "number_sense_place_value": {
         "templateCount": 8,
@@ -140,51 +218,112 @@
           "number_sense": 2,
           "place_value": 1,
           "rounding": 1
-        }
+        },
+        "standardsCovered": [
+          "5.NBT.A.2",
+          "5.NBT.A.3",
+          "5.NBT.A.4",
+          "8.EE.A.4"
+        ]
       },
-      "geometry_measurement": {
-        "templateCount": 26,
-        "formatFamilyCount": 5,
+      "order_of_operations": {
+        "templateCount": 10,
+        "formatFamilyCount": 3,
         "templateIds": [
-          "gv_001",
-          "gv_002",
-          "gv_003",
-          "gv_004",
-          "gv_005",
-          "gv_006",
-          "gv_007",
-          "gv_008",
-          "gv_009",
-          "cp_001",
-          "cp_002",
-          "cp_003",
-          "cp_004",
-          "cp_005",
-          "cp_006",
-          "cp_007",
-          "cp_008",
-          "mc_001",
-          "mc_002",
-          "mc_003",
-          "mc_004",
-          "mc_005",
-          "mc_006",
-          "mc_007",
-          "mc_008",
-          "mc_009"
+          "wn_011",
+          "wn_012",
+          "wn_023",
+          "wn_024",
+          "wn_025",
+          "wn_026",
+          "wn_027",
+          "wn_028",
+          "ccss5_017",
+          "gap5_oa2_001"
         ],
         "formatFamilies": {
-          "rectangular_prism_volume": 4,
-          "volume": 3,
-          "geometry_measurement": 2,
-          "coordinate_plane": 8,
-          "measurement_conversion": 9
-        }
+          "numeric_order_operations_multistep": 5,
+          "numeric_order_operations_parentheses": 4,
+          "expression_comparison_factor": 1
+        },
+        "standardsCovered": [
+          "5.OA.A.1",
+          "5.OA.A.2"
+        ]
+      },
+      "percent_decimals": {
+        "templateCount": 13,
+        "formatFamilyCount": 7,
+        "templateIds": [
+          "dec_001",
+          "dec_002",
+          "dec_003",
+          "dec_004",
+          "dec_005",
+          "dec_006",
+          "dec_007",
+          "dec_008",
+          "dec_009",
+          "dec_010",
+          "dec_011",
+          "dec_012",
+          "ccss5_018"
+        ],
+        "formatFamilies": {
+          "decimal_addition": 5,
+          "decimal_operations": 2,
+          "decimal_multiplication": 1,
+          "decimal_division": 1,
+          "decimal_subtraction": 2,
+          "decimal_rounding": 1,
+          "decimal_powers_of_ten": 1
+        },
+        "standardsCovered": [
+          "5.NBT.B.7"
+        ]
+      },
+      "statistics_probability": {
+        "templateCount": 4,
+        "formatFamilyCount": 4,
+        "templateIds": [
+          "ccss5_004",
+          "ccss5_005",
+          "gap5_mdb2_001",
+          "gap5_mdb2_002"
+        ],
+        "formatFamilies": {
+          "line_plot_data_total": 1,
+          "line_plot_data_mean": 1,
+          "line_plot_fraction_redistribute": 1,
+          "line_plot_fraction_total": 1
+        },
+        "standardsCovered": [
+          "5.MD.B.2"
+        ]
       }
     },
     "topicsWithFewerThanThreeFormatFamilies": [
-      "division",
-      "order_of_operations"
+      "division"
+    ],
+    "diversityFlags": [
+      {
+        "topic": "add_subtract_multiply",
+        "reason": "more_than_50pct_one_family",
+        "dominantFamily": "whole_number_multiplication",
+        "share": 0.636
+      },
+      {
+        "topic": "division",
+        "reason": "more_than_50pct_one_family",
+        "dominantFamily": "whole_number_division",
+        "share": 1.0
+      },
+      {
+        "topic": "expressions_equations",
+        "reason": "more_than_50pct_one_family",
+        "dominantFamily": "numerical_pattern_terms",
+        "share": 0.6
+      }
     ],
     "mixedPracticeTemplateIds": [],
     "ambiguousClassifications": []
@@ -192,8 +331,53 @@
   {
     "grade": "mid-5th",
     "topics": {
+      "add_subtract_multiply": {
+        "templateCount": 9,
+        "formatFamilyCount": 5,
+        "templateIds": [
+          "ms_001",
+          "ms_002",
+          "ms_003",
+          "ms_004",
+          "ms_005",
+          "ms_007",
+          "m5x_004",
+          "m5x_005",
+          "m5x_006"
+        ],
+        "formatFamilies": {
+          "whole_number_subtraction": 4,
+          "whole_number_arithmetic": 2,
+          "multi_step_money": 1,
+          "multi_step_inventory": 1,
+          "whole_number_multi_step": 1
+        },
+        "standardsCovered": [
+          "5.NBT.B.5"
+        ]
+      },
+      "expressions_equations": {
+        "templateCount": 7,
+        "formatFamilyCount": 2,
+        "templateIds": [
+          "pa_001",
+          "pa_002",
+          "pa_003",
+          "pa_004",
+          "pa_005",
+          "pa_006",
+          "pa_007"
+        ],
+        "formatFamilies": {
+          "algebraic_substitution_linear": 6,
+          "algebraic_substitution_exponent": 1
+        },
+        "standardsCovered": [
+          "6.EE.A.2"
+        ]
+      },
       "fractions": {
-        "templateCount": 11,
+        "templateCount": 13,
         "formatFamilyCount": 5,
         "templateIds": [
           "fm_001",
@@ -206,81 +390,23 @@
           "fm_008",
           "fm_009",
           "fm_010",
-          "fm_011"
+          "fm_011",
+          "m5x_010",
+          "m5x_011"
         ],
         "formatFamilies": {
-          "fraction_addition": 2,
-          "fraction_operations": 5,
+          "fraction_addition": 3,
+          "fraction_operations": 6,
           "fraction_multiplication": 1,
           "fraction_comparison": 1,
           "fraction_division": 2
-        }
-      },
-      "percent_decimals": {
-        "templateCount": 8,
-        "formatFamilyCount": 6,
-        "templateIds": [
-          "dpv_001",
-          "dpv_002",
-          "dpv_003",
-          "dpv_004",
-          "dpv_005",
-          "dpv_007",
-          "dpv_008",
-          "dpv_009"
-        ],
-        "formatFamilies": {
-          "decimal_addition": 3,
-          "decimal_powers_of_ten": 1,
-          "decimal_rounding": 1,
-          "decimal_comparison": 1,
-          "decimal_place_value": 1,
-          "decimal_multiplication": 1
-        }
-      },
-      "number_sense_place_value": {
-        "templateCount": 1,
-        "formatFamilyCount": 1,
-        "templateIds": [
-          "dpv_006"
-        ],
-        "formatFamilies": {
-          "scientific_notation_multiply": 1
-        }
-      },
-      "add_subtract_multiply": {
-        "templateCount": 6,
-        "formatFamilyCount": 2,
-        "templateIds": [
-          "ms_001",
-          "ms_002",
-          "ms_003",
-          "ms_004",
-          "ms_005",
-          "ms_007"
-        ],
-        "formatFamilies": {
-          "whole_number_subtraction": 4,
-          "whole_number_arithmetic": 2
-        }
-      },
-      "ratios_rates_proportions": {
-        "templateCount": 7,
-        "formatFamilyCount": 3,
-        "templateIds": [
-          "ms_006",
-          "pr_001",
-          "pr_002",
-          "pr_003",
-          "pr_004",
-          "pr_005",
-          "pr_006"
-        ],
-        "formatFamilies": {
-          "unit_rate": 1,
-          "ratio_comparison": 3,
-          "ratio_rate_proportion": 3
-        }
+        },
+        "standardsCovered": [
+          "5.NF.A.1",
+          "5.NF.A.2",
+          "5.NF.B.4",
+          "5.NF.B.7"
+        ]
       },
       "geometry_measurement": {
         "templateCount": 2,
@@ -292,7 +418,11 @@
         "formatFamilies": {
           "coordinate_distance": 1,
           "rectangular_prism_volume": 1
-        }
+        },
+        "standardsCovered": [
+          "5.MD.C.5",
+          "6.NS.C.8"
+        ]
       },
       "integers": {
         "templateCount": 7,
@@ -313,31 +443,113 @@
           "integer_absolute_value": 1,
           "integer_operations": 1,
           "integer_extreme_value": 1
-        }
+        },
+        "standardsCovered": [
+          "6.NS.C.5",
+          "6.NS.C.6"
+        ]
       },
-      "expressions_equations": {
-        "templateCount": 7,
+      "number_sense_place_value": {
+        "templateCount": 2,
         "formatFamilyCount": 2,
         "templateIds": [
-          "pa_001",
-          "pa_002",
-          "pa_003",
-          "pa_004",
-          "pa_005",
-          "pa_006",
-          "pa_007"
+          "dpv_006",
+          "m5x_009"
         ],
         "formatFamilies": {
-          "algebraic_substitution_linear": 6,
-          "algebraic_substitution_exponent": 1
-        }
+          "scientific_notation_multiply": 1,
+          "decimal_comparison": 1
+        },
+        "standardsCovered": [
+          "5.NBT.A.3",
+          "8.EE.A.4"
+        ]
+      },
+      "order_of_operations": {
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "templateIds": [
+          "m5x_012"
+        ],
+        "formatFamilies": {
+          "numeric_order_operations_exponents": 1
+        },
+        "standardsCovered": [
+          "6.EE.A.1"
+        ]
+      },
+      "percent_decimals": {
+        "templateCount": 10,
+        "formatFamilyCount": 7,
+        "templateIds": [
+          "dpv_001",
+          "dpv_002",
+          "dpv_003",
+          "dpv_004",
+          "dpv_005",
+          "dpv_007",
+          "dpv_008",
+          "dpv_009",
+          "m5x_007",
+          "m5x_008"
+        ],
+        "formatFamilies": {
+          "decimal_addition": 3,
+          "decimal_powers_of_ten": 2,
+          "decimal_rounding": 1,
+          "decimal_comparison": 1,
+          "decimal_place_value": 1,
+          "decimal_multiplication": 1,
+          "decimal_subtraction": 1
+        },
+        "standardsCovered": [
+          "5.NBT.A.1",
+          "5.NBT.A.2",
+          "5.NBT.A.3",
+          "5.NBT.B.7"
+        ]
+      },
+      "ratios_rates_proportions": {
+        "templateCount": 10,
+        "formatFamilyCount": 4,
+        "templateIds": [
+          "ms_006",
+          "pr_001",
+          "pr_002",
+          "pr_003",
+          "pr_004",
+          "pr_005",
+          "pr_006",
+          "m5x_001",
+          "m5x_002",
+          "m5x_003"
+        ],
+        "formatFamilies": {
+          "unit_rate": 2,
+          "ratio_comparison": 3,
+          "ratio_rate_proportion": 4,
+          "ratio_language": 1
+        },
+        "standardsCovered": [
+          "6.RP.A.1",
+          "6.RP.A.2",
+          "6.RP.A.3"
+        ]
       }
     },
     "topicsWithFewerThanThreeFormatFamilies": [
-      "number_sense_place_value",
-      "add_subtract_multiply",
+      "expressions_equations",
       "geometry_measurement",
-      "expressions_equations"
+      "number_sense_place_value",
+      "order_of_operations"
+    ],
+    "diversityFlags": [
+      {
+        "topic": "expressions_equations",
+        "reason": "more_than_50pct_one_family",
+        "dominantFamily": "algebraic_substitution_linear",
+        "share": 0.857
+      }
     ],
     "mixedPracticeTemplateIds": [],
     "ambiguousClassifications": [
@@ -418,6 +630,78 @@
   {
     "grade": "6th",
     "topics": {
+      "division": {
+        "templateCount": 2,
+        "formatFamilyCount": 1,
+        "templateIds": [
+          "ccss6_001",
+          "ccss6_002"
+        ],
+        "formatFamilies": {
+          "multi_digit_division": 2
+        },
+        "standardsCovered": [
+          "6.NS.B.2"
+        ]
+      },
+      "expressions_equations": {
+        "templateCount": 29,
+        "formatFamilyCount": 11,
+        "templateIds": [
+          "eq_001",
+          "eq_002",
+          "eq_003",
+          "eq_004",
+          "eq_005",
+          "eq_006",
+          "eq_007",
+          "eq_008",
+          "eq_009",
+          "eq_010",
+          "eq_011",
+          "eq_012",
+          "gap6_eeb5_001",
+          "exp_001",
+          "exp_003",
+          "exp_004",
+          "exp_005",
+          "exp_006",
+          "exp_007",
+          "exp_008",
+          "exp_009",
+          "ccss6_009",
+          "ccss6_010",
+          "gap6_eeb6_001",
+          "gap6_eec9_001",
+          "gap6_eec9_002",
+          "gap6_eea3_001",
+          "gap6_eea3_002",
+          "gap6_eea3_003"
+        ],
+        "formatFamilies": {
+          "one_step_equation": 10,
+          "inequality_word_problem": 1,
+          "algebraic_expression": 1,
+          "equation_substitution_check": 1,
+          "algebraic_substitution_linear": 8,
+          "equivalent_expressions": 2,
+          "variable_expression_evaluate": 1,
+          "dependent_independent_evaluate": 2,
+          "distributive_constant_term": 1,
+          "distributive_coefficient": 1,
+          "equivalent_expression_coefficient": 1
+        },
+        "standardsCovered": [
+          "6.EE.A.2",
+          "6.EE.A.3",
+          "6.EE.A.4",
+          "6.EE.B.5",
+          "6.EE.B.6",
+          "6.EE.B.7",
+          "6.EE.C.9",
+          "7.EE.B.4"
+        ]
+      },
       "fractions": {
         "templateCount": 10,
         "formatFamilyCount": 2,
@@ -436,114 +720,28 @@
         "formatFamilies": {
           "fraction_division": 6,
           "fraction_operations": 4
-        }
+        },
+        "standardsCovered": [
+          "6.NS.A.1"
+        ]
       },
-      "integers": {
-        "templateCount": 11,
-        "formatFamilyCount": 6,
-        "templateIds": [
-          "int_001",
-          "int_002",
-          "int_003",
-          "int_004",
-          "int_005",
-          "int_006",
-          "int_008",
-          "int_009",
-          "int_010",
-          "int_011",
-          "int_012"
-        ],
-        "formatFamilies": {
-          "integer_absolute_value": 4,
-          "integer_multiplication": 1,
-          "integer_division": 1,
-          "integer_subtraction": 2,
-          "integer_comparison": 2,
-          "integer_opposite": 1
-        }
-      },
-      "percent_decimals": {
-        "templateCount": 1,
+      "functions_linear_relationships": {
+        "templateCount": 2,
         "formatFamilyCount": 1,
         "templateIds": [
-          "int_007"
+          "ccss6_011",
+          "ccss6_012"
         ],
         "formatFamilies": {
-          "decimal_addition": 1
-        }
-      },
-      "ratios_rates_proportions": {
-        "templateCount": 12,
-        "formatFamilyCount": 6,
-        "templateIds": [
-          "rp_001",
-          "rp_002",
-          "rp_003",
-          "rp_004",
-          "rp_005",
-          "rp_006",
-          "rp_007",
-          "rp_008",
-          "rp_009",
-          "rp_010",
-          "rp_011",
-          "rp_012"
-        ],
-        "formatFamilies": {
-          "ratio_comparison": 3,
-          "unit_rate": 2,
-          "ratio_rate_proportion": 3,
-          "percent_application": 1,
-          "proportion_missing_value": 2,
-          "scale_factor": 1
-        }
-      },
-      "expressions_equations": {
-        "templateCount": 20,
-        "formatFamilyCount": 4,
-        "templateIds": [
-          "eq_001",
-          "eq_002",
-          "eq_003",
-          "eq_004",
-          "eq_005",
-          "eq_006",
-          "eq_007",
-          "eq_008",
-          "eq_009",
-          "eq_010",
-          "eq_011",
-          "eq_012",
-          "exp_001",
-          "exp_003",
-          "exp_004",
-          "exp_005",
-          "exp_006",
-          "exp_007",
-          "exp_008",
-          "exp_009"
-        ],
-        "formatFamilies": {
-          "one_step_equation": 10,
-          "inequality_word_problem": 1,
-          "algebraic_expression": 1,
-          "algebraic_substitution_linear": 8
-        }
-      },
-      "order_of_operations": {
-        "templateCount": 1,
-        "formatFamilyCount": 1,
-        "templateIds": [
-          "exp_002"
-        ],
-        "formatFamilies": {
-          "numeric_order_operations_exponents": 1
-        }
+          "dependent_independent_eval": 2
+        },
+        "standardsCovered": [
+          "6.EE.C.9"
+        ]
       },
       "geometry_measurement": {
-        "templateCount": 17,
-        "formatFamilyCount": 6,
+        "templateCount": 19,
+        "formatFamilyCount": 7,
         "templateIds": [
           "geo_001",
           "geo_002",
@@ -554,6 +752,8 @@
           "geo_007",
           "geo_008",
           "geo_009",
+          "ccss6_016",
+          "ccss6_017",
           "cp_001",
           "cp_002",
           "cp_003",
@@ -568,13 +768,121 @@
           "surface_area": 2,
           "rectangular_prism_volume": 2,
           "geometry_measurement": 1,
+          "net_surface_area": 2,
           "coordinate_plane": 6,
           "coordinate_distance": 1
-        }
+        },
+        "standardsCovered": [
+          "6.G.A.1",
+          "6.G.A.2",
+          "6.G.A.3",
+          "6.G.A.4",
+          "6.NS.C.8"
+        ]
+      },
+      "integers": {
+        "templateCount": 14,
+        "formatFamilyCount": 7,
+        "templateIds": [
+          "int_001",
+          "int_002",
+          "int_003",
+          "int_004",
+          "int_005",
+          "int_006",
+          "int_008",
+          "int_009",
+          "int_010",
+          "int_011",
+          "int_012",
+          "ccss6_003",
+          "ccss6_004",
+          "ccss6_005"
+        ],
+        "formatFamilies": {
+          "integer_absolute_value": 4,
+          "integer_multiplication": 1,
+          "integer_division": 1,
+          "integer_subtraction": 2,
+          "integer_comparison": 2,
+          "integer_opposite": 1,
+          "gcf_lcm": 3
+        },
+        "standardsCovered": [
+          "6.NS.B.4",
+          "6.NS.C.5",
+          "6.NS.C.6",
+          "6.NS.C.7",
+          "7.NS.A.1",
+          "7.NS.A.2"
+        ]
+      },
+      "order_of_operations": {
+        "templateCount": 4,
+        "formatFamilyCount": 1,
+        "templateIds": [
+          "exp_002",
+          "ccss6_006",
+          "ccss6_007",
+          "ccss6_008"
+        ],
+        "formatFamilies": {
+          "numeric_order_operations_exponents": 4
+        },
+        "standardsCovered": [
+          "6.EE.A.1"
+        ]
+      },
+      "percent_decimals": {
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "templateIds": [
+          "int_007"
+        ],
+        "formatFamilies": {
+          "decimal_addition": 1
+        },
+        "standardsCovered": [
+          "6.NS.C.6"
+        ]
+      },
+      "ratios_rates_proportions": {
+        "templateCount": 15,
+        "formatFamilyCount": 6,
+        "templateIds": [
+          "rp_001",
+          "rp_002",
+          "rp_003",
+          "rp_004",
+          "rp_005",
+          "rp_006",
+          "rp_007",
+          "rp_008",
+          "rp_009",
+          "rp_010",
+          "rp_011",
+          "rp_012",
+          "ccss6_018",
+          "gap6_rp2_001",
+          "gap6_rp2_002"
+        ],
+        "formatFamilies": {
+          "ratio_comparison": 3,
+          "unit_rate": 4,
+          "ratio_rate_proportion": 4,
+          "percent_application": 1,
+          "proportion_missing_value": 2,
+          "scale_factor": 1
+        },
+        "standardsCovered": [
+          "6.RP.A.1",
+          "6.RP.A.2",
+          "6.RP.A.3"
+        ]
       },
       "statistics_probability": {
-        "templateCount": 8,
-        "formatFamilyCount": 4,
+        "templateCount": 16,
+        "formatFamilyCount": 9,
         "templateIds": [
           "sp_001",
           "sp_002",
@@ -583,20 +891,55 @@
           "sp_005",
           "sp_006",
           "sp_007",
-          "sp_008"
+          "sp_008",
+          "ccss6_013",
+          "ccss6_014",
+          "ccss6_015",
+          "gap6_spa2_001",
+          "gap6_spa3_001",
+          "gap6_spa3_002",
+          "gap6_spa1_001",
+          "gap6_spa1_002"
         ],
         "formatFamilies": {
-          "mean": 3,
+          "mean": 4,
           "median": 2,
-          "range": 1,
-          "data_interpretation": 2
-        }
+          "range": 2,
+          "data_interpretation": 2,
+          "statistical_question": 1,
+          "data_iqr": 1,
+          "data_mad": 1,
+          "distribution_shape_coded": 1,
+          "statistical_question_coded": 2
+        },
+        "standardsCovered": [
+          "6.SP.A.1",
+          "6.SP.A.2",
+          "6.SP.A.3",
+          "6.SP.B.5"
+        ]
       }
     },
     "topicsWithFewerThanThreeFormatFamilies": [
+      "division",
       "fractions",
-      "percent_decimals",
-      "order_of_operations"
+      "functions_linear_relationships",
+      "order_of_operations",
+      "percent_decimals"
+    ],
+    "diversityFlags": [
+      {
+        "topic": "fractions",
+        "reason": "more_than_50pct_one_family",
+        "dominantFamily": "fraction_division",
+        "share": 0.6
+      },
+      {
+        "topic": "order_of_operations",
+        "reason": "more_than_50pct_one_family",
+        "dominantFamily": "numeric_order_operations_exponents",
+        "share": 1.0
+      }
     ],
     "mixedPracticeTemplateIds": [],
     "ambiguousClassifications": [
@@ -614,9 +957,165 @@
   {
     "grade": "mid-6th",
     "topics": {
+      "division": {
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "templateIds": [
+          "ccss6_019"
+        ],
+        "formatFamilies": {
+          "multi_digit_division": 1
+        },
+        "standardsCovered": [
+          "6.NS.B.2"
+        ]
+      },
+      "expressions_equations": {
+        "templateCount": 24,
+        "formatFamilyCount": 10,
+        "templateIds": [
+          "ee_001",
+          "ee_002",
+          "ee_003",
+          "ee_004",
+          "ee_005",
+          "ee_006",
+          "ee_007",
+          "ee_008",
+          "ee_009",
+          "ee_010",
+          "ee_011",
+          "ee_012",
+          "ee_013",
+          "ee_014",
+          "ee_015",
+          "ee_016",
+          "ee_017",
+          "ee_018",
+          "ee_019",
+          "ee_020",
+          "ccss6_021",
+          "gapm6_eec9_001",
+          "gapm6_eea3_001",
+          "sp_015"
+        ],
+        "formatFamilies": {
+          "algebraic_substitution_linear": 6,
+          "algebraic_expression": 5,
+          "one_step_equation": 6,
+          "two_step_equation": 1,
+          "algebraic_substitution_exponent": 1,
+          "inequality_word_problem": 1,
+          "algebraic_simplify": 1,
+          "equivalent_expressions": 1,
+          "dependent_independent_evaluate": 1,
+          "distributive_constant_term": 1
+        },
+        "standardsCovered": [
+          "6.EE.A.2",
+          "6.EE.A.3",
+          "6.EE.A.4",
+          "6.EE.B.7",
+          "6.EE.B.8",
+          "6.EE.C.9",
+          "7.EE.B.4"
+        ]
+      },
+      "fractions": {
+        "templateCount": 3,
+        "formatFamilyCount": 3,
+        "templateIds": [
+          "rn_004",
+          "rn_010",
+          "rn_017"
+        ],
+        "formatFamilies": {
+          "fraction_division": 1,
+          "fraction_comparison": 1,
+          "fraction_of_quantity": 1
+        },
+        "standardsCovered": [
+          "5.NF.A.1",
+          "6.NS.A.1"
+        ]
+      },
+      "functions_linear_relationships": {
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "templateIds": [
+          "ccss6_024"
+        ],
+        "formatFamilies": {
+          "dependent_independent_eval": 1
+        },
+        "standardsCovered": [
+          "6.EE.C.9"
+        ]
+      },
+      "geometry_measurement": {
+        "templateCount": 32,
+        "formatFamilyCount": 13,
+        "templateIds": [
+          "geo_001",
+          "geo_002",
+          "geo_003",
+          "geo_004",
+          "geo_005",
+          "geo_006",
+          "geo_007",
+          "geo_008",
+          "geo_009",
+          "geo_010",
+          "geo_011",
+          "geo_012",
+          "geo_013",
+          "geo_014",
+          "geo_015",
+          "geo_016",
+          "ccss6_023",
+          "cp_001",
+          "cp_002",
+          "cp_003",
+          "cp_004",
+          "cp_005",
+          "cp_006",
+          "cp_007",
+          "cp_008",
+          "cp_009",
+          "cp_010",
+          "cp_011",
+          "cp_012",
+          "cp_013",
+          "cp_014",
+          "cp_015"
+        ],
+        "formatFamilies": {
+          "area": 9,
+          "geometry_measurement": 2,
+          "volume": 3,
+          "measurement_conversion": 1,
+          "rectangular_prism_volume": 1,
+          "surface_area": 1,
+          "net_surface_area": 1,
+          "coordinate_distance": 2,
+          "coordinate_plane": 8,
+          "quadrant_identification": 1,
+          "perimeter": 1,
+          "scale_drawing": 1,
+          "angle_measure": 1
+        },
+        "standardsCovered": [
+          "6.G.A.1",
+          "6.G.A.2",
+          "6.G.A.3",
+          "6.G.A.4",
+          "6.NS.C.6",
+          "6.NS.C.8"
+        ]
+      },
       "integers": {
-        "templateCount": 40,
-        "formatFamilyCount": 11,
+        "templateCount": 41,
+        "formatFamilyCount": 12,
         "templateIds": [
           "rn_001",
           "rn_002",
@@ -633,6 +1132,7 @@
           "rn_016",
           "rn_018",
           "rn_019",
+          "ccss6_020",
           "int_001",
           "int_002",
           "int_003",
@@ -668,24 +1168,50 @@
           "integer_addition": 3,
           "integer_temperature_change": 3,
           "integer_division": 2,
+          "gcf_lcm": 1,
           "integer_operations": 3,
           "integer_multiplication": 9,
           "integer_subtraction": 6
-        }
+        },
+        "standardsCovered": [
+          "6.NS.B.2",
+          "6.NS.B.4",
+          "6.NS.C.5",
+          "6.NS.C.6",
+          "6.NS.C.7",
+          "7.NS.A.1",
+          "7.NS.A.2"
+        ]
       },
-      "fractions": {
-        "templateCount": 3,
-        "formatFamilyCount": 3,
+      "order_of_operations": {
+        "templateCount": 12,
+        "formatFamilyCount": 7,
         "templateIds": [
-          "rn_004",
-          "rn_010",
-          "rn_017"
+          "m6oo_001",
+          "m6oo_002",
+          "m6oo_003",
+          "m6oo_004",
+          "m6oo_005",
+          "m6oo_006",
+          "m6oo_007",
+          "m6oo_008",
+          "m6oo_009",
+          "m6oo_010",
+          "m6oo_011",
+          "m6oo_012"
         ],
         "formatFamilies": {
-          "fraction_division": 1,
-          "fraction_comparison": 1,
-          "fraction_of_quantity": 1
-        }
+          "order_operations_multiplication_division": 2,
+          "order_operations_parentheses": 2,
+          "order_operations_exponents": 2,
+          "order_operations_addition_subtraction": 1,
+          "order_operations_nested_grouping": 2,
+          "order_operations_multi_step_numeric": 1,
+          "order_operations_fraction_decimal_numeric": 2
+        },
+        "standardsCovered": [
+          "6.EE.A.1"
+        ]
       },
       "percent_decimals": {
         "templateCount": 2,
@@ -697,10 +1223,13 @@
         "formatFamilies": {
           "decimal_addition": 1,
           "decimal_multiplication": 1
-        }
+        },
+        "standardsCovered": [
+          "6.NS.B.3"
+        ]
       },
       "ratios_rates_proportions": {
-        "templateCount": 25,
+        "templateCount": 26,
         "formatFamilyCount": 8,
         "templateIds": [
           "rr_001",
@@ -723,6 +1252,7 @@
           "rr_018",
           "rr_019",
           "rr_020",
+          "gapm6_rp2_001",
           "pr_001",
           "pr_002",
           "pr_003",
@@ -732,104 +1262,25 @@
         "formatFamilies": {
           "ratio_comparison": 4,
           "proportion_missing_value": 3,
-          "unit_rate": 4,
+          "unit_rate": 5,
           "constant_of_proportionality": 2,
           "ratio_rate_proportion": 6,
           "scale_factor": 2,
           "percent_application": 3,
           "percent_discount": 1
-        }
-      },
-      "expressions_equations": {
-        "templateCount": 21,
-        "formatFamilyCount": 7,
-        "templateIds": [
-          "ee_001",
-          "ee_002",
-          "ee_003",
-          "ee_004",
-          "ee_005",
-          "ee_006",
-          "ee_007",
-          "ee_008",
-          "ee_009",
-          "ee_010",
-          "ee_011",
-          "ee_012",
-          "ee_013",
-          "ee_014",
-          "ee_015",
-          "ee_016",
-          "ee_017",
-          "ee_018",
-          "ee_019",
-          "ee_020",
-          "sp_015"
-        ],
-        "formatFamilies": {
-          "algebraic_substitution_linear": 6,
-          "algebraic_expression": 5,
-          "one_step_equation": 6,
-          "two_step_equation": 1,
-          "algebraic_substitution_exponent": 1,
-          "inequality_word_problem": 1,
-          "algebraic_simplify": 1
-        }
-      },
-      "geometry_measurement": {
-        "templateCount": 31,
-        "formatFamilyCount": 12,
-        "templateIds": [
-          "geo_001",
-          "geo_002",
-          "geo_003",
-          "geo_004",
-          "geo_005",
-          "geo_006",
-          "geo_007",
-          "geo_008",
-          "geo_009",
-          "geo_010",
-          "geo_011",
-          "geo_012",
-          "geo_013",
-          "geo_014",
-          "geo_015",
-          "geo_016",
-          "cp_001",
-          "cp_002",
-          "cp_003",
-          "cp_004",
-          "cp_005",
-          "cp_006",
-          "cp_007",
-          "cp_008",
-          "cp_009",
-          "cp_010",
-          "cp_011",
-          "cp_012",
-          "cp_013",
-          "cp_014",
-          "cp_015"
-        ],
-        "formatFamilies": {
-          "area": 9,
-          "geometry_measurement": 2,
-          "volume": 3,
-          "measurement_conversion": 1,
-          "rectangular_prism_volume": 1,
-          "surface_area": 1,
-          "coordinate_distance": 2,
-          "coordinate_plane": 8,
-          "quadrant_identification": 1,
-          "perimeter": 1,
-          "scale_drawing": 1,
-          "angle_measure": 1
-        }
+        },
+        "standardsCovered": [
+          "6.RP.A.1",
+          "6.RP.A.2",
+          "6.RP.A.3",
+          "7.RP.A.1",
+          "7.RP.A.2",
+          "7.RP.A.3"
+        ]
       },
       "statistics_probability": {
-        "templateCount": 16,
-        "formatFamilyCount": 6,
+        "templateCount": 17,
+        "formatFamilyCount": 7,
         "templateIds": [
           "cp_016",
           "sp_001",
@@ -846,7 +1297,8 @@
           "sp_013",
           "sp_014",
           "sp_016",
-          "sp_017"
+          "sp_017",
+          "ccss6_022"
         ],
         "formatFamilies": {
           "probability_simple": 2,
@@ -854,13 +1306,22 @@
           "median": 2,
           "range": 2,
           "data_interpretation": 2,
-          "mode": 1
-        }
+          "mode": 1,
+          "data_iqr": 1
+        },
+        "standardsCovered": [
+          "6.SP.A.3",
+          "6.SP.B.5",
+          "7.SP.C.7"
+        ]
       }
     },
     "topicsWithFewerThanThreeFormatFamilies": [
+      "division",
+      "functions_linear_relationships",
       "percent_decimals"
     ],
+    "diversityFlags": [],
     "mixedPracticeTemplateIds": [],
     "ambiguousClassifications": [
       {
@@ -913,35 +1374,9 @@
   {
     "grade": "7th",
     "topics": {
-      "ratios_rates_proportions": {
-        "templateCount": 11,
-        "formatFamilyCount": 7,
-        "templateIds": [
-          "pr_001",
-          "pr_002",
-          "pr_004",
-          "pr_006",
-          "pr_007",
-          "pr_008",
-          "pr_009",
-          "pr_010",
-          "pr_011",
-          "pr_013",
-          "pr_014"
-        ],
-        "formatFamilies": {
-          "unit_rate": 2,
-          "ratio_rate_proportion": 2,
-          "percent_discount": 3,
-          "percent_tax": 1,
-          "proportion_missing_value": 1,
-          "constant_of_proportionality": 1,
-          "simple_interest": 1
-        }
-      },
       "expressions_equations": {
-        "templateCount": 17,
-        "formatFamilyCount": 7,
+        "templateCount": 19,
+        "formatFamilyCount": 8,
         "templateIds": [
           "pr_003",
           "pr_005",
@@ -959,17 +1394,28 @@
           "ee_011",
           "ee_012",
           "ee_013",
-          "ee_014"
+          "ee_014",
+          "ccss7_015",
+          "gap7_eeb3_001"
         ],
         "formatFamilies": {
           "algebraic_substitution_linear": 4,
           "algebraic_simplify": 3,
-          "two_step_equation": 3,
+          "two_step_equation": 4,
           "one_step_equation": 1,
           "inequality_word_problem": 1,
           "algebraic_expression": 3,
-          "equation_with_distribution": 2
-        }
+          "equation_with_distribution": 2,
+          "multi_step_percent_wage": 1
+        },
+        "standardsCovered": [
+          "6.EE.A.2",
+          "6.EE.B.7",
+          "7.EE.A.1",
+          "7.EE.A.2",
+          "7.EE.B.3",
+          "7.EE.B.4"
+        ]
       },
       "fractions": {
         "templateCount": 10,
@@ -993,23 +1439,16 @@
           "fraction_division": 1,
           "fraction_to_decimal": 1,
           "fraction_absolute_value": 1
-        }
-      },
-      "percent_decimals": {
-        "templateCount": 2,
-        "formatFamilyCount": 2,
-        "templateIds": [
-          "rn_005",
-          "rn_009"
-        ],
-        "formatFamilies": {
-          "decimal_addition": 1,
-          "decimal_operations": 1
-        }
+        },
+        "standardsCovered": [
+          "7.NS.A.1",
+          "7.NS.A.2",
+          "7.NS.A.3"
+        ]
       },
       "geometry_measurement": {
-        "templateCount": 11,
-        "formatFamilyCount": 5,
+        "templateCount": 17,
+        "formatFamilyCount": 8,
         "templateIds": [
           "geo_001",
           "geo_002",
@@ -1021,19 +1460,110 @@
           "geo_008",
           "geo_009",
           "geo_010",
-          "geo_011"
+          "geo_011",
+          "ccss7_001",
+          "ccss7_002",
+          "ccss7_003",
+          "ccss7_004",
+          "ccss7_005",
+          "gap7_ga3_001"
         ],
         "formatFamilies": {
-          "scale_drawing": 1,
+          "scale_drawing": 3,
           "angle_measure": 4,
           "area": 3,
           "geometry_measurement": 2,
-          "rectangular_prism_volume": 1
-        }
+          "rectangular_prism_volume": 1,
+          "circle_area": 2,
+          "circle_circumference": 1,
+          "cross_section_sides": 1
+        },
+        "standardsCovered": [
+          "7.G.A.1",
+          "7.G.A.3",
+          "7.G.B.4",
+          "7.G.B.5",
+          "7.G.B.6"
+        ]
+      },
+      "integers": {
+        "templateCount": 4,
+        "formatFamilyCount": 4,
+        "templateIds": [
+          "ccss7_016",
+          "gap7_ns1_001",
+          "gap7_ns1_002",
+          "gap7_ns3_001"
+        ],
+        "formatFamilies": {
+          "integer_operations": 1,
+          "integer_addition": 1,
+          "integer_number_line": 1,
+          "rational_word_operations": 1
+        },
+        "standardsCovered": [
+          "7.NS.A.1",
+          "7.NS.A.2",
+          "7.NS.A.3"
+        ]
+      },
+      "percent_decimals": {
+        "templateCount": 4,
+        "formatFamilyCount": 3,
+        "templateIds": [
+          "rn_005",
+          "rn_009",
+          "ccss7_011",
+          "ccss7_012"
+        ],
+        "formatFamilies": {
+          "decimal_addition": 1,
+          "decimal_operations": 1,
+          "fraction_to_decimal": 2
+        },
+        "standardsCovered": [
+          "7.NS.A.2",
+          "7.NS.A.3"
+        ]
+      },
+      "ratios_rates_proportions": {
+        "templateCount": 13,
+        "formatFamilyCount": 8,
+        "templateIds": [
+          "pr_001",
+          "pr_002",
+          "pr_004",
+          "pr_006",
+          "pr_007",
+          "pr_008",
+          "pr_009",
+          "pr_010",
+          "pr_011",
+          "pr_013",
+          "pr_014",
+          "ccss7_013",
+          "ccss7_014"
+        ],
+        "formatFamilies": {
+          "unit_rate": 2,
+          "ratio_rate_proportion": 2,
+          "percent_discount": 3,
+          "percent_tax": 1,
+          "proportion_missing_value": 1,
+          "constant_of_proportionality": 1,
+          "simple_interest": 1,
+          "percent_commission": 2
+        },
+        "standardsCovered": [
+          "6.RP.A.2",
+          "7.RP.A.1",
+          "7.RP.A.2",
+          "7.RP.A.3"
+        ]
       },
       "statistics_probability": {
-        "templateCount": 17,
-        "formatFamilyCount": 5,
+        "templateCount": 25,
+        "formatFamilyCount": 8,
         "templateIds": [
           "prob_001",
           "prob_002",
@@ -1046,25 +1576,45 @@
           "prob_009",
           "prob_010",
           "prob_011",
+          "ccss7_006",
+          "ccss7_007",
+          "ccss7_008",
+          "gap7_spc5_001",
+          "gap7_spc6_001",
           "si_001",
           "si_002",
           "si_003",
           "si_004",
           "si_005",
-          "si_006"
+          "si_006",
+          "ccss7_009",
+          "ccss7_010",
+          "gap7_spb4_001"
         ],
         "formatFamilies": {
           "probability_simple": 9,
-          "probability_compound": 2,
-          "statistical_inference": 3,
+          "probability_compound": 5,
+          "probability_likelihood_coded": 1,
+          "expected_frequency": 1,
+          "statistical_inference": 5,
           "mean": 2,
-          "data_interpretation": 1
-        }
+          "data_interpretation": 1,
+          "sample_mean_compare": 1
+        },
+        "standardsCovered": [
+          "7.SP.A.1",
+          "7.SP.A.2",
+          "7.SP.B.3",
+          "7.SP.B.4",
+          "7.SP.C.5",
+          "7.SP.C.6",
+          "7.SP.C.7",
+          "7.SP.C.8"
+        ]
       }
     },
-    "topicsWithFewerThanThreeFormatFamilies": [
-      "percent_decimals"
-    ],
+    "topicsWithFewerThanThreeFormatFamilies": [],
+    "diversityFlags": [],
     "mixedPracticeTemplateIds": [],
     "ambiguousClassifications": []
   },
@@ -1072,7 +1622,7 @@
     "grade": "mid-7th",
     "topics": {
       "expressions_equations": {
-        "templateCount": 11,
+        "templateCount": 12,
         "formatFamilyCount": 5,
         "templateIds": [
           "mse_001",
@@ -1085,31 +1635,41 @@
           "mse_010",
           "mse_011",
           "mse_012",
+          "m7x_005",
           "pp_005"
         ],
         "formatFamilies": {
           "inequality_word_problem": 1,
-          "equation_with_distribution": 4,
+          "equation_with_distribution": 5,
           "two_step_equation": 2,
           "algebraic_expression": 3,
           "quadratic_equation_positive_root": 1
-        }
+        },
+        "standardsCovered": [
+          "7.EE.B.3",
+          "7.EE.B.4",
+          "8.EE.A.2",
+          "8.EE.C.7"
+        ]
       },
-      "number_sense_place_value": {
-        "templateCount": 3,
+      "fractions": {
+        "templateCount": 2,
         "formatFamilyCount": 2,
         "templateIds": [
-          "mse_008",
-          "pct_012",
-          "pc_006"
+          "m7x_007",
+          "pct_009"
         ],
         "formatFamilies": {
-          "scientific_notation_compare": 1,
-          "scientific_notation_multiply": 2
-        }
+          "fraction_division": 1,
+          "fraction_multiplication": 1
+        },
+        "standardsCovered": [
+          "7.NS.A.2",
+          "7.RP.A.3"
+        ]
       },
       "functions_linear_relationships": {
-        "templateCount": 6,
+        "templateCount": 8,
         "formatFamilyCount": 5,
         "templateIds": [
           "mse_009",
@@ -1117,55 +1677,27 @@
           "pl_003",
           "pl_004",
           "pl_005",
-          "pl_006"
+          "pl_006",
+          "m7x_008",
+          "m7x_009"
         ],
         "formatFamilies": {
           "function_identification": 1,
-          "slope": 1,
+          "slope": 2,
           "rate_of_change": 1,
           "linear_relationship": 1,
-          "function_linear": 2
-        }
-      },
-      "ratios_rates_proportions": {
-        "templateCount": 11,
-        "formatFamilyCount": 7,
-        "templateIds": [
-          "pct_001",
-          "pct_002",
-          "pct_003",
-          "pct_004",
-          "pct_005",
-          "pct_006",
-          "pct_007",
-          "pct_008",
-          "pct_010",
-          "pct_011",
-          "pl_001"
-        ],
-        "formatFamilies": {
-          "percent_tax": 1,
-          "percent_application": 3,
-          "percent_discount": 2,
-          "percent_tip": 1,
-          "unit_rate": 2,
-          "constant_of_proportionality": 1,
-          "simple_interest": 1
-        }
-      },
-      "fractions": {
-        "templateCount": 1,
-        "formatFamilyCount": 1,
-        "templateIds": [
-          "pct_009"
-        ],
-        "formatFamilies": {
-          "fraction_multiplication": 1
-        }
+          "function_linear": 3
+        },
+        "standardsCovered": [
+          "8.EE.B.5",
+          "8.EE.C.7",
+          "8.F.A.1",
+          "8.F.A.3"
+        ]
       },
       "geometry_measurement": {
-        "templateCount": 19,
-        "formatFamilyCount": 7,
+        "templateCount": 20,
+        "formatFamilyCount": 8,
         "templateIds": [
           "gc_001",
           "gc_002",
@@ -1177,6 +1709,7 @@
           "gc_008",
           "gc_009",
           "gc_010",
+          "m7x_010",
           "pp_001",
           "pp_002",
           "pp_003",
@@ -1192,33 +1725,126 @@
           "surface_area": 1,
           "angle_measure": 2,
           "scale_drawing": 2,
+          "circle_circumference": 1,
           "geometry_measurement": 2,
           "pythagorean_side_length": 2,
           "transformation": 4
-        }
+        },
+        "standardsCovered": [
+          "7.G.B.4",
+          "7.G.B.6",
+          "8.G.A.1",
+          "8.G.A.3",
+          "8.G.B.7"
+        ]
+      },
+      "integers": {
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "templateIds": [
+          "m7x_006"
+        ],
+        "formatFamilies": {
+          "integer_operations": 1
+        },
+        "standardsCovered": [
+          "7.NS.A.2"
+        ]
+      },
+      "number_sense_place_value": {
+        "templateCount": 3,
+        "formatFamilyCount": 2,
+        "templateIds": [
+          "mse_008",
+          "pct_012",
+          "pc_006"
+        ],
+        "formatFamilies": {
+          "scientific_notation_compare": 1,
+          "scientific_notation_multiply": 2
+        },
+        "standardsCovered": [
+          "8.EE.A.4"
+        ]
+      },
+      "percent_decimals": {
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "templateIds": [
+          "m7x_004"
+        ],
+        "formatFamilies": {
+          "percent_application": 1
+        },
+        "standardsCovered": [
+          "7.RP.A.3"
+        ]
+      },
+      "ratios_rates_proportions": {
+        "templateCount": 15,
+        "formatFamilyCount": 8,
+        "templateIds": [
+          "pct_001",
+          "pct_002",
+          "pct_003",
+          "pct_004",
+          "pct_005",
+          "pct_006",
+          "pct_007",
+          "pct_008",
+          "pct_010",
+          "pct_011",
+          "m7x_001",
+          "m7x_002",
+          "m7x_003",
+          "m7x_012",
+          "pl_001"
+        ],
+        "formatFamilies": {
+          "percent_tax": 2,
+          "percent_application": 3,
+          "percent_discount": 3,
+          "percent_tip": 2,
+          "unit_rate": 2,
+          "constant_of_proportionality": 1,
+          "simple_interest": 1,
+          "percent_commission": 1
+        },
+        "standardsCovered": [
+          "6.RP.A.2",
+          "7.RP.A.3"
+        ]
       },
       "statistics_probability": {
-        "templateCount": 5,
+        "templateCount": 6,
         "formatFamilyCount": 4,
         "templateIds": [
           "pc_001",
           "pc_002",
           "pc_003",
           "pc_004",
-          "pc_005"
+          "pc_005",
+          "m7x_011"
         ],
         "formatFamilies": {
           "statistical_inference": 1,
-          "probability_compound": 1,
+          "probability_compound": 2,
           "probability_simple": 2,
           "mean": 1
-        }
+        },
+        "standardsCovered": [
+          "7.SP.C.7",
+          "7.SP.C.8"
+        ]
       }
     },
     "topicsWithFewerThanThreeFormatFamilies": [
+      "fractions",
+      "integers",
       "number_sense_place_value",
-      "fractions"
+      "percent_decimals"
     ],
+    "diversityFlags": [],
     "mixedPracticeTemplateIds": [],
     "ambiguousClassifications": [
       {
@@ -1271,8 +1897,54 @@
   {
     "grade": "8th",
     "topics": {
+      "expressions_equations": {
+        "templateCount": 20,
+        "formatFamilyCount": 9,
+        "templateIds": [
+          "le_006",
+          "le_012",
+          "sys_001",
+          "sys_002",
+          "sys_003",
+          "sys_004",
+          "sys_005",
+          "sys_006",
+          "sys_007",
+          "sys_008",
+          "sys_009",
+          "ccss8_015",
+          "ccss8_016",
+          "ccss8_017",
+          "sn_002",
+          "ccss8_005",
+          "ccss8_006",
+          "gap8_eea2_001",
+          "bv_002",
+          "bv_006"
+        ],
+        "formatFamilies": {
+          "equation_with_distribution": 1,
+          "equation_solution_count": 1,
+          "two_step_equation": 3,
+          "algebraic_expression": 5,
+          "one_step_equation": 1,
+          "systems_solution": 3,
+          "quadratic_equation_positive_root": 2,
+          "cube_root": 2,
+          "algebraic_substitution_linear": 2
+        },
+        "standardsCovered": [
+          "6.EE.A.2",
+          "6.EE.B.7",
+          "7.EE.B.4",
+          "8.EE.A.2",
+          "8.EE.B.6",
+          "8.EE.C.8",
+          "8.F.A.3"
+        ]
+      },
       "functions_linear_relationships": {
-        "templateCount": 18,
+        "templateCount": 19,
         "formatFamilyCount": 6,
         "templateIds": [
           "le_001",
@@ -1284,6 +1956,7 @@
           "le_009",
           "le_010",
           "le_011",
+          "ccss8_018",
           "fn_001",
           "fn_002",
           "fn_003",
@@ -1298,53 +1971,23 @@
           "slope": 5,
           "function_evaluation": 4,
           "linear_relationship": 5,
+          "function_linear": 2,
           "function_identification": 1,
-          "rate_of_change": 2,
-          "function_linear": 1
-        }
-      },
-      "ratios_rates_proportions": {
-        "templateCount": 1,
-        "formatFamilyCount": 1,
-        "templateIds": [
-          "le_004"
-        ],
-        "formatFamilies": {
-          "unit_rate": 1
-        }
-      },
-      "expressions_equations": {
-        "templateCount": 14,
-        "formatFamilyCount": 7,
-        "templateIds": [
-          "le_006",
-          "le_012",
-          "sys_001",
-          "sys_002",
-          "sys_003",
-          "sys_004",
-          "sys_005",
-          "sys_006",
-          "sys_007",
-          "sys_008",
-          "sys_009",
-          "sn_002",
-          "bv_002",
-          "bv_006"
-        ],
-        "formatFamilies": {
-          "equation_with_distribution": 1,
-          "equation_solution_count": 1,
-          "two_step_equation": 3,
-          "algebraic_expression": 5,
-          "one_step_equation": 1,
-          "quadratic_equation_positive_root": 1,
-          "algebraic_substitution_linear": 2
-        }
+          "rate_of_change": 2
+        },
+        "standardsCovered": [
+          "8.EE.B.5",
+          "8.EE.C.7",
+          "8.F.A.1",
+          "8.F.A.2",
+          "8.F.A.3",
+          "8.F.B.4",
+          "8.F.B.5"
+        ]
       },
       "geometry_measurement": {
-        "templateCount": 17,
-        "formatFamilyCount": 7,
+        "templateCount": 28,
+        "formatFamilyCount": 12,
         "templateIds": [
           "pt_001",
           "pt_002",
@@ -1355,6 +1998,13 @@
           "pt_007",
           "pt_008",
           "pt_009",
+          "ccss8_007",
+          "ccss8_008",
+          "ccss8_009",
+          "gap8_gb7_001",
+          "gap8_gb7_002",
+          "gap8_gb8_001",
+          "gap8_gb8_002",
           "tr_001",
           "tr_002",
           "tr_003",
@@ -1362,21 +2012,38 @@
           "tr_005",
           "tr_006",
           "tr_007",
-          "tr_008"
+          "tr_008",
+          "ccss8_013",
+          "ccss8_014",
+          "gap8_ga1_001",
+          "gap8_ga3_001"
         ],
         "formatFamilies": {
-          "pythagorean_side_length": 5,
+          "pythagorean_side_length": 7,
           "geometry_measurement": 2,
-          "coordinate_distance": 1,
+          "coordinate_distance": 3,
           "cylinder_volume": 1,
+          "cone_volume": 2,
+          "sphere_volume": 1,
           "transformation": 5,
           "scale_drawing": 1,
-          "angle_measure": 2
-        }
+          "angle_measure": 2,
+          "triangle_angle_sum": 2,
+          "rigid_motion_length_preserve": 1,
+          "transformation_coordinate": 1
+        },
+        "standardsCovered": [
+          "8.G.A.1",
+          "8.G.A.3",
+          "8.G.A.5",
+          "8.G.B.7",
+          "8.G.B.8",
+          "8.G.C.9"
+        ]
       },
       "number_sense_place_value": {
-        "templateCount": 9,
-        "formatFamilyCount": 4,
+        "templateCount": 19,
+        "formatFamilyCount": 10,
         "templateIds": [
           "sn_001",
           "sn_003",
@@ -1386,36 +2053,90 @@
           "sn_007",
           "sn_008",
           "sn_009",
-          "sn_010"
+          "sn_010",
+          "ccss8_001",
+          "ccss8_002",
+          "ccss8_003",
+          "ccss8_004",
+          "gap8_eea1_001",
+          "gap8_eea1_002",
+          "gap8_eea3_001",
+          "gap8_eea4_001",
+          "gap8_eea2_002",
+          "gap8_eea2_003"
         ],
         "formatFamilies": {
-          "scientific_notation_multiply": 5,
+          "scientific_notation_multiply": 6,
           "scientific_notation_divide": 1,
-          "square_root_estimate": 2,
-          "number_sense": 1
-        }
+          "square_root_estimate": 4,
+          "number_sense": 1,
+          "rational_irrational": 2,
+          "integer_exponent_add": 1,
+          "integer_exponent_power": 1,
+          "scientific_notation_compare": 1,
+          "cube_root_perfect": 1,
+          "square_root_perfect": 1
+        },
+        "standardsCovered": [
+          "8.EE.A.1",
+          "8.EE.A.2",
+          "8.EE.A.3",
+          "8.EE.A.4",
+          "8.NS.A.1",
+          "8.NS.A.2"
+        ]
+      },
+      "ratios_rates_proportions": {
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "templateIds": [
+          "le_004"
+        ],
+        "formatFamilies": {
+          "unit_rate": 1
+        },
+        "standardsCovered": [
+          "6.RP.A.2"
+        ]
       },
       "statistics_probability": {
-        "templateCount": 6,
-        "formatFamilyCount": 3,
+        "templateCount": 12,
+        "formatFamilyCount": 7,
         "templateIds": [
           "bv_001",
           "bv_003",
           "bv_004",
           "bv_005",
           "bv_007",
-          "bv_008"
+          "bv_008",
+          "ccss8_010",
+          "ccss8_011",
+          "ccss8_012",
+          "gap8_spa2_001",
+          "gap8_spa2_002",
+          "gap8_spa2_003"
         ],
         "formatFamilies": {
           "data_interpretation": 2,
-          "bivariate_data": 3,
-          "mode": 1
-        }
+          "bivariate_data": 4,
+          "mode": 1,
+          "two_way_relative_frequency": 2,
+          "line_of_best_fit_slope": 1,
+          "line_of_best_fit_predict": 1,
+          "linear_model_reasonableness": 1
+        },
+        "standardsCovered": [
+          "8.SP.A.1",
+          "8.SP.A.2",
+          "8.SP.A.3",
+          "8.SP.A.4"
+        ]
       }
     },
     "topicsWithFewerThanThreeFormatFamilies": [
       "ratios_rates_proportions"
     ],
+    "diversityFlags": [],
     "mixedPracticeTemplateIds": [],
     "ambiguousClassifications": [
       {

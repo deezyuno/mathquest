@@ -56,7 +56,7 @@ export type AnswerType =
   | string;
 
 /**
- * Problem template. `topic` and `formatFamily` are required metadata.
+ * Problem template. `topic`, `formatFamily`, and `ccss_standard` are required metadata.
  */
 export interface ProblemTemplate {
   id: string;
@@ -69,6 +69,11 @@ export interface ProblemTemplate {
   topic: CurriculumTopic;
   /** Structural format for diversity / anti-repetition. */
   formatFamily: FormatFamily;
+  /**
+   * Official CCSS leaf standard(s) this template assesses.
+   * Do not infer at runtime — store explicitly.
+   */
+  ccss_standard: string | string[];
   generation_note?: string;
   context?: string;
   constraints_note?: string;

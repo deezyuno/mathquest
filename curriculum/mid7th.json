@@ -48,7 +48,8 @@
           "answer_type": "numeric",
           "answer_formula": "floor((c - b) / a)",
           "topic": "expressions_equations",
-          "formatFamily": "inequality_word_problem"
+          "formatFamily": "inequality_word_problem",
+          "ccss_standard": "7.EE.B.4"
         },
         {
           "id": "mse_002",
@@ -75,7 +76,8 @@
           "answer_type": "numeric",
           "answer_formula": "(d + c) / a - b",
           "topic": "expressions_equations",
-          "formatFamily": "equation_with_distribution"
+          "formatFamily": "equation_with_distribution",
+          "ccss_standard": "7.EE.B.4"
         },
         {
           "id": "mse_003",
@@ -102,7 +104,8 @@
           "answer_type": "numeric",
           "answer_formula": "(d - c) / a + b",
           "topic": "expressions_equations",
-          "formatFamily": "equation_with_distribution"
+          "formatFamily": "equation_with_distribution",
+          "ccss_standard": "8.EE.C.7"
         },
         {
           "id": "mse_004",
@@ -127,7 +130,8 @@
           "answer_type": "numeric",
           "answer_formula": "c / a - b",
           "topic": "expressions_equations",
-          "formatFamily": "equation_with_distribution"
+          "formatFamily": "equation_with_distribution",
+          "ccss_standard": "7.EE.B.3"
         },
         {
           "id": "mse_005",
@@ -154,7 +158,8 @@
           "answer_type": "numeric",
           "answer_formula": "(d * c + b) / a",
           "topic": "expressions_equations",
-          "formatFamily": "two_step_equation"
+          "formatFamily": "two_step_equation",
+          "ccss_standard": "7.EE.B.4"
         },
         {
           "id": "mse_006",
@@ -179,7 +184,8 @@
           "answer_type": "numeric",
           "answer_formula": "a / (c - b)",
           "topic": "expressions_equations",
-          "formatFamily": "algebraic_expression"
+          "formatFamily": "algebraic_expression",
+          "ccss_standard": "8.EE.C.7"
         },
         {
           "id": "mse_007",
@@ -199,7 +205,8 @@
           "answer_type": "numeric",
           "answer_formula": "a / (b - 1)",
           "topic": "expressions_equations",
-          "formatFamily": "algebraic_expression"
+          "formatFamily": "algebraic_expression",
+          "ccss_standard": "7.EE.B.3"
         },
         {
           "id": "mse_008",
@@ -228,7 +235,8 @@
           "answer_type": "numeric",
           "answer_formula": "(a / c) * pow(10, b - d)",
           "topic": "number_sense_place_value",
-          "formatFamily": "scientific_notation_compare"
+          "formatFamily": "scientific_notation_compare",
+          "ccss_standard": "8.EE.A.4"
         },
         {
           "id": "mse_009",
@@ -260,7 +268,8 @@
           "answer_type": "numeric",
           "answer_formula": "0",
           "topic": "functions_linear_relationships",
-          "formatFamily": "function_identification"
+          "formatFamily": "function_identification",
+          "ccss_standard": "8.EE.C.7"
         },
         {
           "id": "mse_010",
@@ -284,7 +293,8 @@
           "answer_type": "numeric",
           "answer_formula": "0",
           "topic": "expressions_equations",
-          "formatFamily": "two_step_equation"
+          "formatFamily": "two_step_equation",
+          "ccss_standard": "7.EE.B.4"
         },
         {
           "id": "mse_011",
@@ -311,7 +321,8 @@
           "answer_type": "numeric",
           "answer_formula": "(d + a*b) / (a + c)",
           "topic": "expressions_equations",
-          "formatFamily": "equation_with_distribution"
+          "formatFamily": "equation_with_distribution",
+          "ccss_standard": "7.EE.B.4"
         },
         {
           "id": "mse_012",
@@ -341,7 +352,85 @@
           "answer_type": "numeric",
           "answer_formula": "(a - c) / (d - b)",
           "topic": "expressions_equations",
-          "formatFamily": "algebraic_expression"
+          "formatFamily": "algebraic_expression",
+          "ccss_standard": "8.EE.C.7"
+        },
+        {
+          "id": "m7x_005",
+          "type": "COMPUTE",
+          "problem": "Solve {a}(x + {b}) = {c}. Enter x.",
+          "constraints": {
+            "a": [
+              2,
+              8
+            ],
+            "b": [
+              1,
+              10
+            ],
+            "c": [
+              20,
+              120
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "c / a - b",
+          "topic": "expressions_equations",
+          "formatFamily": "equation_with_distribution",
+          "ccss_standard": "7.EE.B.4",
+          "generation_note": "require c divisible by a"
+        },
+        {
+          "id": "m7x_006",
+          "type": "COMPUTE",
+          "problem": "Compute (−{a}) + {b} × (−{c}).",
+          "constraints": {
+            "a": [
+              1,
+              20
+            ],
+            "b": [
+              2,
+              9
+            ],
+            "c": [
+              2,
+              9
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "-a + b * (-c)",
+          "topic": "integers",
+          "formatFamily": "integer_operations",
+          "ccss_standard": "7.NS.A.2"
+        },
+        {
+          "id": "m7x_007",
+          "type": "COMPUTE",
+          "problem": "Compute ({a}/{b}) ÷ ({c}/{d}). Enter as a simplified fraction.",
+          "constraints": {
+            "a": [
+              1,
+              9
+            ],
+            "b": [
+              2,
+              9
+            ],
+            "c": [
+              1,
+              8
+            ],
+            "d": [
+              2,
+              9
+            ]
+          },
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a * d) / (b * c)",
+          "topic": "fractions",
+          "formatFamily": "fraction_division",
+          "ccss_standard": "7.NS.A.2"
         }
       ]
     },
@@ -373,7 +462,8 @@
           "answer_type": "numeric",
           "answer_formula": "a*(1+b/100)*(1+c/100)",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "percent_tax"
+          "formatFamily": "percent_tax",
+          "ccss_standard": "7.RP.A.3"
         },
         {
           "id": "pct_002",
@@ -393,7 +483,8 @@
           "answer_type": "numeric",
           "answer_formula": "100 * a / b",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "percent_application"
+          "formatFamily": "percent_application",
+          "ccss_standard": "7.RP.A.3"
         },
         {
           "id": "pct_003",
@@ -413,7 +504,8 @@
           "answer_type": "numeric",
           "answer_formula": "a - (b / 100) * a",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "percent_discount"
+          "formatFamily": "percent_discount",
+          "ccss_standard": "7.RP.A.3"
         },
         {
           "id": "pct_004",
@@ -433,7 +525,8 @@
           "answer_type": "numeric",
           "answer_formula": "a * (1 + b/100)",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "percent_tip"
+          "formatFamily": "percent_tip",
+          "ccss_standard": "7.RP.A.3"
         },
         {
           "id": "pct_005",
@@ -452,7 +545,8 @@
           "answer_type": "numeric",
           "answer_formula": "b / (1 + a/100)",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "percent_application"
+          "formatFamily": "percent_application",
+          "ccss_standard": "7.RP.A.3"
         },
         {
           "id": "pct_006",
@@ -480,7 +574,8 @@
           "answer_type": "fraction_simplified",
           "answer_formula": "(a * d) / (b * c)",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "unit_rate"
+          "formatFamily": "unit_rate",
+          "ccss_standard": "6.RP.A.2"
         },
         {
           "id": "pct_007",
@@ -505,7 +600,8 @@
           "answer_type": "numeric",
           "answer_formula": "k",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "constant_of_proportionality"
+          "formatFamily": "constant_of_proportionality",
+          "ccss_standard": "7.RP.A.3"
         },
         {
           "id": "pct_008",
@@ -529,7 +625,8 @@
           "answer_formula": "a + a*b*c/100",
           "answer_type": "numeric",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "simple_interest"
+          "formatFamily": "simple_interest",
+          "ccss_standard": "7.RP.A.3"
         },
         {
           "id": "pct_009",
@@ -557,7 +654,8 @@
           "answer_type": "fraction_simplified",
           "answer_formula": "(a * c) / (b * d)",
           "topic": "fractions",
-          "formatFamily": "fraction_multiplication"
+          "formatFamily": "fraction_multiplication",
+          "ccss_standard": "7.RP.A.3"
         },
         {
           "id": "pct_010",
@@ -576,7 +674,8 @@
           "answer_type": "numeric",
           "answer_formula": "a / (1 - b/100)",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "percent_discount"
+          "formatFamily": "percent_discount",
+          "ccss_standard": "7.RP.A.3"
         },
         {
           "id": "pct_011",
@@ -600,7 +699,8 @@
           "answer_type": "numeric",
           "answer_formula": "c*(1+a/100)*(1-b/100)",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "percent_application"
+          "formatFamily": "percent_application",
+          "ccss_standard": "7.RP.A.3"
         },
         {
           "id": "pct_012",
@@ -628,7 +728,109 @@
           "answer_type": "numeric",
           "answer_formula": "a * c * pow(10, b + d)",
           "topic": "number_sense_place_value",
-          "formatFamily": "scientific_notation_multiply"
+          "formatFamily": "scientific_notation_multiply",
+          "ccss_standard": "8.EE.A.4"
+        },
+        {
+          "id": "m7x_001",
+          "type": "APPLY",
+          "problem": "An item costs ${p}. After a {d}% discount, what is the sale price?",
+          "constraints": {
+            "p": [
+              40,
+              200
+            ],
+            "d": [
+              5,
+              40
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "p - (p * d) / 100",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "percent_discount",
+          "ccss_standard": "7.RP.A.3",
+          "generation_note": "prefer exact integer sale price"
+        },
+        {
+          "id": "m7x_002",
+          "type": "APPLY",
+          "problem": "A bill is ${b}. With a {t}% tip, what is the total?",
+          "constraints": {
+            "b": [
+              20,
+              120
+            ],
+            "t": [
+              10,
+              20
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "b + (b * t) / 100",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "percent_tip",
+          "ccss_standard": "7.RP.A.3"
+        },
+        {
+          "id": "m7x_003",
+          "type": "APPLY",
+          "problem": "Earn {p}% commission on ${s} in sales. How much is earned?",
+          "constraints": {
+            "p": [
+              5,
+              18
+            ],
+            "s": [
+              200,
+              1800
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "(p * s) / 100",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "percent_commission",
+          "ccss_standard": "7.RP.A.3"
+        },
+        {
+          "id": "m7x_004",
+          "type": "COMPUTE",
+          "problem": "What is {a}% of {b}?",
+          "constraints": {
+            "a": [
+              5,
+              90
+            ],
+            "b": [
+              40,
+              400
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "(a * b) / 100",
+          "topic": "percent_decimals",
+          "formatFamily": "percent_application",
+          "ccss_standard": "7.RP.A.3"
+        },
+        {
+          "id": "m7x_012",
+          "type": "APPLY",
+          "problem": "Tax is {t}% on a ${p} purchase. What is the total cost?",
+          "constraints": {
+            "t": [
+              5,
+              10
+            ],
+            "p": [
+              20,
+              200
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "p + (p * t) / 100",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "percent_tax",
+          "ccss_standard": "7.RP.A.3"
         }
       ]
     },
@@ -659,7 +861,8 @@
           "answer_formula": "a*b + 0.5*a*c",
           "answer_type": "numeric",
           "topic": "geometry_measurement",
-          "formatFamily": "area"
+          "formatFamily": "area",
+          "ccss_standard": "7.G.B.6"
         },
         {
           "id": "gc_002",
@@ -680,7 +883,8 @@
           "answer_formula": "3.14*a*a - b*b",
           "answer_type": "numeric",
           "topic": "geometry_measurement",
-          "formatFamily": "area"
+          "formatFamily": "area",
+          "ccss_standard": "7.G.B.4"
         },
         {
           "id": "gc_003",
@@ -703,7 +907,8 @@
           "answer_type": "numeric",
           "answer_formula": "2*(a*b + b*c + a*c)",
           "topic": "geometry_measurement",
-          "formatFamily": "surface_area"
+          "formatFamily": "surface_area",
+          "ccss_standard": "7.G.B.6"
         },
         {
           "id": "gc_004",
@@ -723,7 +928,8 @@
           "answer_type": "numeric",
           "answer_formula": "a * b + 0.5 * 3.14 * (a/2) * (a/2)",
           "topic": "geometry_measurement",
-          "formatFamily": "area"
+          "formatFamily": "area",
+          "ccss_standard": "7.G.B.4"
         },
         {
           "id": "gc_005",
@@ -739,7 +945,8 @@
           "answer_type": "numeric",
           "answer_formula": "sqrt(a / 3.14)",
           "topic": "geometry_measurement",
-          "formatFamily": "area"
+          "formatFamily": "area",
+          "ccss_standard": "7.G.B.6"
         },
         {
           "id": "gc_006",
@@ -755,7 +962,8 @@
           "answer_type": "numeric",
           "answer_formula": "180 - a",
           "topic": "geometry_measurement",
-          "formatFamily": "angle_measure"
+          "formatFamily": "angle_measure",
+          "ccss_standard": "7.G.B.4"
         },
         {
           "id": "gc_007",
@@ -775,7 +983,8 @@
           "answer_type": "numeric",
           "answer_formula": "a * b + 3.14 * (b/2) * (b/2)",
           "topic": "geometry_measurement",
-          "formatFamily": "area"
+          "formatFamily": "area",
+          "ccss_standard": "7.G.B.6"
         },
         {
           "id": "gc_008",
@@ -795,7 +1004,8 @@
           "answer_type": "numeric",
           "answer_formula": "a + b - 1",
           "topic": "geometry_measurement",
-          "formatFamily": "angle_measure"
+          "formatFamily": "angle_measure",
+          "ccss_standard": "7.G.B.4"
         },
         {
           "id": "gc_009",
@@ -815,7 +1025,8 @@
           "answer_type": "numeric",
           "answer_formula": "k * a",
           "topic": "geometry_measurement",
-          "formatFamily": "scale_drawing"
+          "formatFamily": "scale_drawing",
+          "ccss_standard": "7.G.B.6"
         },
         {
           "id": "gc_010",
@@ -842,7 +1053,24 @@
           "answer_formula": "0.5*(a+b)*c + b*d",
           "answer_type": "numeric",
           "topic": "geometry_measurement",
-          "formatFamily": "area"
+          "formatFamily": "area",
+          "ccss_standard": "7.G.B.4"
+        },
+        {
+          "id": "m7x_010",
+          "type": "COMPUTE",
+          "problem": "Find the circumference of a circle with diameter {d}. Use π ≈ 3.14.",
+          "constraints": {
+            "d": [
+              4,
+              24
+            ]
+          },
+          "answer_type": "decimal",
+          "answer_formula": "3.14 * d",
+          "topic": "geometry_measurement",
+          "formatFamily": "circle_circumference",
+          "ccss_standard": "7.G.B.4"
         }
       ]
     },
@@ -874,7 +1102,8 @@
           "answer_type": "numeric",
           "answer_formula": "1",
           "topic": "statistics_probability",
-          "formatFamily": "statistical_inference"
+          "formatFamily": "statistical_inference",
+          "ccss_standard": "7.SP.C.8"
         },
         {
           "id": "pc_002",
@@ -893,7 +1122,8 @@
           "answer_formula": "(a * a) / ((a + b) * (a + b))",
           "answer_type": "fraction_simplified",
           "topic": "statistics_probability",
-          "formatFamily": "probability_compound"
+          "formatFamily": "probability_compound",
+          "ccss_standard": "7.SP.C.8"
         },
         {
           "id": "pc_003",
@@ -903,7 +1133,8 @@
           "answer_type": "fraction_simplified",
           "answer_formula": "3/4",
           "topic": "statistics_probability",
-          "formatFamily": "probability_simple"
+          "formatFamily": "probability_simple",
+          "ccss_standard": "7.SP.C.7"
         },
         {
           "id": "pc_004",
@@ -919,7 +1150,8 @@
           "answer_formula": "pow(a / 100, 2)",
           "answer_type": "decimal",
           "topic": "statistics_probability",
-          "formatFamily": "probability_simple"
+          "formatFamily": "probability_simple",
+          "ccss_standard": "7.SP.C.7"
         },
         {
           "id": "pc_005",
@@ -944,7 +1176,8 @@
           "answer_type": "numeric",
           "answer_formula": "abs(a - b) / m",
           "topic": "statistics_probability",
-          "formatFamily": "mean"
+          "formatFamily": "mean",
+          "ccss_standard": "7.SP.C.8"
         },
         {
           "id": "pc_006",
@@ -964,7 +1197,28 @@
           "answer_type": "numeric",
           "answer_formula": "pow(10, b + c)",
           "topic": "number_sense_place_value",
-          "formatFamily": "scientific_notation_multiply"
+          "formatFamily": "scientific_notation_multiply",
+          "ccss_standard": "8.EE.A.4"
+        },
+        {
+          "id": "m7x_011",
+          "type": "COMPUTE",
+          "problem": "A password is one letter from {a} choices then one digit from {b} choices. How many passwords?",
+          "constraints": {
+            "a": [
+              5,
+              26
+            ],
+            "b": [
+              2,
+              10
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a * b",
+          "topic": "statistics_probability",
+          "formatFamily": "probability_compound",
+          "ccss_standard": "7.SP.C.8"
         }
       ]
     },
@@ -998,7 +1252,8 @@
           "answer_formula": "(c - b) / a",
           "context": "travel",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "unit_rate"
+          "formatFamily": "unit_rate",
+          "ccss_standard": "6.RP.A.2"
         },
         {
           "id": "pl_002",
@@ -1023,7 +1278,8 @@
           "answer_type": "numeric",
           "answer_formula": "(c - b) / a",
           "topic": "functions_linear_relationships",
-          "formatFamily": "slope"
+          "formatFamily": "slope",
+          "ccss_standard": "8.EE.B.5"
         },
         {
           "id": "pl_003",
@@ -1050,7 +1306,8 @@
           "answer_formula": "(d-b)/(c-a)",
           "answer_type": "numeric",
           "topic": "functions_linear_relationships",
-          "formatFamily": "rate_of_change"
+          "formatFamily": "rate_of_change",
+          "ccss_standard": "8.F.A.1"
         },
         {
           "id": "pl_004",
@@ -1070,7 +1327,8 @@
           "answer_type": "numeric",
           "answer_formula": "1",
           "topic": "functions_linear_relationships",
-          "formatFamily": "linear_relationship"
+          "formatFamily": "linear_relationship",
+          "ccss_standard": "8.EE.B.5"
         },
         {
           "id": "pl_005",
@@ -1089,7 +1347,8 @@
           "answer_type": "numeric",
           "answer_formula": "a + 3 * b",
           "topic": "functions_linear_relationships",
-          "formatFamily": "function_linear"
+          "formatFamily": "function_linear",
+          "ccss_standard": "8.F.A.1"
         },
         {
           "id": "pl_006",
@@ -1114,7 +1373,62 @@
           "answer_formula": "(b - a) / c",
           "answer_type": "numeric",
           "topic": "functions_linear_relationships",
-          "formatFamily": "function_linear"
+          "formatFamily": "function_linear",
+          "ccss_standard": "8.EE.B.5"
+        },
+        {
+          "id": "m7x_008",
+          "type": "COMPUTE",
+          "problem": "A line has slope {m} and y-intercept {b}. What is y when x = {x}?",
+          "constraints": {
+            "m": [
+              1,
+              6
+            ],
+            "b": [
+              0,
+              10
+            ],
+            "x": [
+              1,
+              8
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "m * x + b",
+          "topic": "functions_linear_relationships",
+          "formatFamily": "function_linear",
+          "ccss_standard": "8.F.A.3",
+          "generation_note": "gentle linear preview"
+        },
+        {
+          "id": "m7x_009",
+          "type": "COMPUTE",
+          "problem": "Find the slope between ({x1}, {y1}) and ({x2}, {y2}).",
+          "constraints": {
+            "x1": [
+              0,
+              5
+            ],
+            "y1": [
+              0,
+              10
+            ],
+            "x2": [
+              6,
+              12
+            ],
+            "y2": [
+              0,
+              20
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "(y2 - y1) / (x2 - x1)",
+          "topic": "functions_linear_relationships",
+          "formatFamily": "slope",
+          "ccss_standard": "8.EE.B.5",
+          "generation_note": "require x2 != x1; prefer exact integer slope"
         }
       ]
     },
@@ -1140,7 +1454,8 @@
           "answer_type": "numeric",
           "answer_formula": "floor(sqrt(n))",
           "topic": "geometry_measurement",
-          "formatFamily": "geometry_measurement"
+          "formatFamily": "geometry_measurement",
+          "ccss_standard": "8.G.B.7"
         },
         {
           "id": "pp_002",
@@ -1160,7 +1475,8 @@
           "answer_type": "numeric",
           "answer_formula": "sqrt(a*a + b*b)",
           "topic": "geometry_measurement",
-          "formatFamily": "pythagorean_side_length"
+          "formatFamily": "pythagorean_side_length",
+          "ccss_standard": "8.G.B.7"
         },
         {
           "id": "pp_003",
@@ -1181,7 +1497,8 @@
           "answer_type": "numeric",
           "answer_formula": "sqrt(c*c - a*a)",
           "topic": "geometry_measurement",
-          "formatFamily": "geometry_measurement"
+          "formatFamily": "geometry_measurement",
+          "ccss_standard": "8.G.B.7"
         },
         {
           "id": "pp_004",
@@ -1202,7 +1519,8 @@
           "answer_type": "numeric",
           "answer_formula": "sqrt(a*a + b*b)",
           "topic": "geometry_measurement",
-          "formatFamily": "pythagorean_side_length"
+          "formatFamily": "pythagorean_side_length",
+          "ccss_standard": "8.G.B.7"
         },
         {
           "id": "pp_005",
@@ -1219,7 +1537,8 @@
           "answer_type": "numeric",
           "answer_formula": "sqrt(p)",
           "topic": "expressions_equations",
-          "formatFamily": "quadratic_equation_positive_root"
+          "formatFamily": "quadratic_equation_positive_root",
+          "ccss_standard": "8.EE.A.2"
         }
       ]
     },
@@ -1255,7 +1574,8 @@
           "answer_type": "numeric",
           "answer_formula": "a + c",
           "topic": "geometry_measurement",
-          "formatFamily": "transformation"
+          "formatFamily": "transformation",
+          "ccss_standard": "8.G.A.3"
         },
         {
           "id": "pt_002",
@@ -1275,7 +1595,8 @@
           "answer_type": "numeric",
           "answer_formula": "-b",
           "topic": "geometry_measurement",
-          "formatFamily": "transformation"
+          "formatFamily": "transformation",
+          "ccss_standard": "8.G.A.1"
         },
         {
           "id": "pt_003",
@@ -1295,7 +1616,8 @@
           "answer_type": "numeric",
           "answer_formula": "-a",
           "topic": "geometry_measurement",
-          "formatFamily": "transformation"
+          "formatFamily": "transformation",
+          "ccss_standard": "8.G.A.3"
         },
         {
           "id": "pt_004",
@@ -1322,7 +1644,8 @@
           "answer_type": "numeric",
           "answer_formula": "c - a",
           "topic": "geometry_measurement",
-          "formatFamily": "transformation"
+          "formatFamily": "transformation",
+          "ccss_standard": "8.G.A.1"
         },
         {
           "id": "pt_005",
@@ -1346,7 +1669,8 @@
           "answer_type": "numeric",
           "answer_formula": "k * b",
           "topic": "geometry_measurement",
-          "formatFamily": "scale_drawing"
+          "formatFamily": "scale_drawing",
+          "ccss_standard": "8.G.A.3"
         }
       ]
     }

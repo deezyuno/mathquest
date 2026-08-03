@@ -39,7 +39,8 @@
           "answer_formula": "b / a",
           "answer_type": "numeric",
           "topic": "functions_linear_relationships",
-          "formatFamily": "slope"
+          "formatFamily": "slope",
+          "ccss_standard": "8.EE.B.5"
         },
         {
           "id": "le_002",
@@ -59,7 +60,8 @@
           "answer_type": "numeric",
           "answer_formula": "m + b",
           "topic": "functions_linear_relationships",
-          "formatFamily": "function_evaluation"
+          "formatFamily": "function_evaluation",
+          "ccss_standard": "8.F.A.1"
         },
         {
           "id": "le_003",
@@ -84,7 +86,8 @@
           "answer_type": "numeric",
           "answer_formula": "(c - b) / a",
           "topic": "functions_linear_relationships",
-          "formatFamily": "slope"
+          "formatFamily": "slope",
+          "ccss_standard": "8.EE.B.5"
         },
         {
           "id": "le_004",
@@ -109,7 +112,8 @@
           "answer_type": "numeric",
           "answer_formula": "abs(a / b - m)",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "unit_rate"
+          "formatFamily": "unit_rate",
+          "ccss_standard": "6.RP.A.2"
         },
         {
           "id": "le_005",
@@ -133,7 +137,8 @@
           "answer_type": "numeric",
           "answer_formula": "m * t + b",
           "topic": "functions_linear_relationships",
-          "formatFamily": "linear_relationship"
+          "formatFamily": "linear_relationship",
+          "ccss_standard": "8.EE.B.5"
         },
         {
           "id": "le_006",
@@ -158,7 +163,8 @@
           "answer_type": "numeric",
           "answer_formula": "c / a - b",
           "topic": "expressions_equations",
-          "formatFamily": "equation_with_distribution"
+          "formatFamily": "equation_with_distribution",
+          "ccss_standard": "8.EE.B.6"
         },
         {
           "id": "le_007",
@@ -178,7 +184,8 @@
           "answer_type": "numeric",
           "answer_formula": "1",
           "topic": "functions_linear_relationships",
-          "formatFamily": "linear_relationship"
+          "formatFamily": "linear_relationship",
+          "ccss_standard": "8.EE.C.7"
         },
         {
           "id": "le_008",
@@ -201,7 +208,8 @@
           "answer_formula": "b - m*a",
           "answer_type": "numeric",
           "topic": "functions_linear_relationships",
-          "formatFamily": "slope"
+          "formatFamily": "slope",
+          "ccss_standard": "8.EE.B.5"
         },
         {
           "id": "le_009",
@@ -230,7 +238,8 @@
           "answer_type": "numeric",
           "answer_formula": "(d - b) / (c - a)",
           "topic": "functions_linear_relationships",
-          "formatFamily": "slope"
+          "formatFamily": "slope",
+          "ccss_standard": "8.EE.B.5"
         },
         {
           "id": "le_010",
@@ -254,7 +263,8 @@
           "answer_type": "numeric",
           "answer_formula": "b - m * a",
           "topic": "functions_linear_relationships",
-          "formatFamily": "slope"
+          "formatFamily": "slope",
+          "ccss_standard": "8.EE.B.5"
         },
         {
           "id": "le_011",
@@ -278,7 +288,8 @@
           "answer_type": "numeric",
           "answer_formula": "m * c",
           "topic": "functions_linear_relationships",
-          "formatFamily": "function_evaluation"
+          "formatFamily": "function_evaluation",
+          "ccss_standard": "8.F.A.1"
         },
         {
           "id": "le_012",
@@ -302,7 +313,32 @@
           "answer_type": "numeric",
           "answer_formula": "0",
           "topic": "expressions_equations",
-          "formatFamily": "equation_solution_count"
+          "formatFamily": "equation_solution_count",
+          "ccss_standard": "8.F.A.3"
+        },
+        {
+          "id": "ccss8_018",
+          "type": "COMPUTE",
+          "problem": "A line passes through (0, {b}) with slope {m}. What is y when x = {x}?",
+          "constraints": {
+            "m": [
+              1,
+              7
+            ],
+            "b": [
+              -5,
+              10
+            ],
+            "x": [
+              1,
+              10
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "m * x + b",
+          "topic": "functions_linear_relationships",
+          "formatFamily": "function_linear",
+          "ccss_standard": "8.F.B.4"
         }
       ]
     },
@@ -338,7 +374,8 @@
           "answer_type": "numeric",
           "answer_formula": "(d - b) / (a - c)",
           "topic": "expressions_equations",
-          "formatFamily": "two_step_equation"
+          "formatFamily": "two_step_equation",
+          "ccss_standard": "7.EE.B.4"
         },
         {
           "id": "sys_002",
@@ -368,7 +405,8 @@
           "answer_type": "numeric",
           "answer_formula": "(d - b) / (a - c)",
           "topic": "expressions_equations",
-          "formatFamily": "algebraic_expression"
+          "formatFamily": "algebraic_expression",
+          "ccss_standard": "8.EE.C.8"
         },
         {
           "id": "sys_003",
@@ -392,7 +430,8 @@
           "answer_type": "numeric",
           "answer_formula": "0",
           "topic": "expressions_equations",
-          "formatFamily": "two_step_equation"
+          "formatFamily": "two_step_equation",
+          "ccss_standard": "7.EE.B.4"
         },
         {
           "id": "sys_004",
@@ -421,7 +460,8 @@
           "answer_formula": "(r - b * c) / (a - b)",
           "generation_note": "require a > b; adults x = (r-b*c)/(a-b) is an integer with 0 <= x <= c",
           "topic": "expressions_equations",
-          "formatFamily": "algebraic_expression"
+          "formatFamily": "algebraic_expression",
+          "ccss_standard": "8.EE.C.8"
         },
         {
           "id": "sys_005",
@@ -450,7 +490,8 @@
           "answer_formula": "c * (d - b) / (a - b)",
           "generation_note": "require a < d < b; result x in [0,c] and whole number liters",
           "topic": "expressions_equations",
-          "formatFamily": "algebraic_expression"
+          "formatFamily": "algebraic_expression",
+          "ccss_standard": "8.EE.C.8"
         },
         {
           "id": "sys_006",
@@ -487,7 +528,8 @@
           "answer_type": "numeric",
           "answer_formula": "2",
           "topic": "expressions_equations",
-          "formatFamily": "two_step_equation"
+          "formatFamily": "two_step_equation",
+          "ccss_standard": "7.EE.B.4"
         },
         {
           "id": "sys_007",
@@ -507,7 +549,8 @@
           "answer_type": "numeric",
           "answer_formula": "b",
           "topic": "expressions_equations",
-          "formatFamily": "algebraic_expression"
+          "formatFamily": "algebraic_expression",
+          "ccss_standard": "8.EE.C.8"
         },
         {
           "id": "sys_008",
@@ -528,7 +571,8 @@
           "answer_type": "numeric",
           "answer_formula": "(s + t) / 2",
           "topic": "expressions_equations",
-          "formatFamily": "one_step_equation"
+          "formatFamily": "one_step_equation",
+          "ccss_standard": "6.EE.B.7"
         },
         {
           "id": "sys_009",
@@ -558,7 +602,79 @@
           "answer_type": "numeric",
           "answer_formula": "(a - c) / (d - b)",
           "topic": "expressions_equations",
-          "formatFamily": "algebraic_expression"
+          "formatFamily": "algebraic_expression",
+          "ccss_standard": "8.EE.C.8"
+        },
+        {
+          "id": "ccss8_015",
+          "type": "COMPUTE",
+          "problem": "Solve the system: x + y = {s} and x − y = {d}. What is x?",
+          "constraints": {
+            "s": [
+              10,
+              40
+            ],
+            "d": [
+              0,
+              20
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "(s + d) / 2",
+          "topic": "expressions_equations",
+          "formatFamily": "systems_solution",
+          "ccss_standard": "8.EE.C.8",
+          "generation_note": "require s+d even so x integer"
+        },
+        {
+          "id": "ccss8_016",
+          "type": "COMPUTE",
+          "problem": "Solve the system: x + y = {s} and x − y = {d}. What is y?",
+          "constraints": {
+            "s": [
+              8,
+              36
+            ],
+            "d": [
+              0,
+              16
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "(s - d) / 2",
+          "topic": "expressions_equations",
+          "formatFamily": "systems_solution",
+          "ccss_standard": "8.EE.C.8",
+          "generation_note": "require s-d even and s >= d"
+        },
+        {
+          "id": "ccss8_017",
+          "type": "COMPUTE",
+          "problem": "The lines y = {m}x + {b} and y = {n}x + {c} intersect where {m}x + {b} = {n}x + {c}. Find x.",
+          "constraints": {
+            "m": [
+              3,
+              8
+            ],
+            "n": [
+              1,
+              2
+            ],
+            "b": [
+              0,
+              5
+            ],
+            "c": [
+              6,
+              20
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "(c - b) / (m - n)",
+          "topic": "expressions_equations",
+          "formatFamily": "systems_solution",
+          "ccss_standard": "8.EE.C.8",
+          "generation_note": "require m != n and (c-b) divisible by (m-n)"
         }
       ]
     },
@@ -599,7 +715,8 @@
           "answer_type": "numeric",
           "answer_formula": "0",
           "topic": "functions_linear_relationships",
-          "formatFamily": "function_identification"
+          "formatFamily": "function_identification",
+          "ccss_standard": "8.F.A.1"
         },
         {
           "id": "fn_002",
@@ -611,7 +728,8 @@
           "answer_type": "numeric",
           "answer_formula": "1",
           "topic": "functions_linear_relationships",
-          "formatFamily": "linear_relationship"
+          "formatFamily": "linear_relationship",
+          "ccss_standard": "8.F.A.2"
         },
         {
           "id": "fn_003",
@@ -635,7 +753,8 @@
           "answer_type": "numeric",
           "answer_formula": "abs(a - c)",
           "topic": "functions_linear_relationships",
-          "formatFamily": "rate_of_change"
+          "formatFamily": "rate_of_change",
+          "ccss_standard": "8.F.A.3"
         },
         {
           "id": "fn_004",
@@ -651,7 +770,8 @@
           "answer_type": "numeric",
           "answer_formula": "(a - 32) * 5 / 9",
           "topic": "functions_linear_relationships",
-          "formatFamily": "function_linear"
+          "formatFamily": "function_linear",
+          "ccss_standard": "8.F.B.4"
         },
         {
           "id": "fn_005",
@@ -671,7 +791,8 @@
           "answer_type": "numeric",
           "answer_formula": "2",
           "topic": "functions_linear_relationships",
-          "formatFamily": "linear_relationship"
+          "formatFamily": "linear_relationship",
+          "ccss_standard": "8.F.B.5"
         },
         {
           "id": "fn_006",
@@ -700,7 +821,8 @@
           "answer_type": "numeric",
           "answer_formula": "(d - b) / (c - a)",
           "topic": "functions_linear_relationships",
-          "formatFamily": "rate_of_change"
+          "formatFamily": "rate_of_change",
+          "ccss_standard": "8.F.A.1"
         },
         {
           "id": "fn_007",
@@ -723,7 +845,8 @@
           "answer_type": "numeric",
           "answer_formula": "(result - b) / a",
           "topic": "functions_linear_relationships",
-          "formatFamily": "function_evaluation"
+          "formatFamily": "function_evaluation",
+          "ccss_standard": "8.F.A.1"
         },
         {
           "id": "fn_008",
@@ -746,7 +869,8 @@
           "answer_type": "numeric",
           "answer_formula": "b - m * a",
           "topic": "functions_linear_relationships",
-          "formatFamily": "function_evaluation"
+          "formatFamily": "function_evaluation",
+          "ccss_standard": "8.F.A.1"
         },
         {
           "id": "fn_009",
@@ -757,7 +881,8 @@
           "answer_type": "numeric",
           "answer_formula": "1",
           "topic": "functions_linear_relationships",
-          "formatFamily": "linear_relationship"
+          "formatFamily": "linear_relationship",
+          "ccss_standard": "8.F.B.4"
         }
       ]
     },
@@ -785,7 +910,8 @@
           "answer_type": "numeric",
           "constraints_note": "use Pythagorean triples for whole-number answers",
           "topic": "geometry_measurement",
-          "formatFamily": "pythagorean_side_length"
+          "formatFamily": "pythagorean_side_length",
+          "ccss_standard": "8.G.B.7"
         },
         {
           "id": "pt_002",
@@ -805,7 +931,8 @@
           "answer_type": "numeric",
           "answer_formula": "sqrt(c*c - a*a)",
           "topic": "geometry_measurement",
-          "formatFamily": "pythagorean_side_length"
+          "formatFamily": "pythagorean_side_length",
+          "ccss_standard": "8.G.B.7"
         },
         {
           "id": "pt_003",
@@ -826,7 +953,8 @@
           "answer_type": "numeric",
           "answer_formula": "sqrt(a*a - b*b)",
           "topic": "geometry_measurement",
-          "formatFamily": "geometry_measurement"
+          "formatFamily": "geometry_measurement",
+          "ccss_standard": "8.G.C.9"
         },
         {
           "id": "pt_004",
@@ -846,7 +974,8 @@
           "answer_formula": "sqrt(a*a+b*b)",
           "answer_type": "decimal_1dp",
           "topic": "geometry_measurement",
-          "formatFamily": "geometry_measurement"
+          "formatFamily": "geometry_measurement",
+          "ccss_standard": "8.G.B.7"
         },
         {
           "id": "pt_005",
@@ -873,7 +1002,8 @@
           "answer_formula": "sqrt(pow(c - a, 2) + pow(d - b, 2))",
           "answer_type": "decimal_1dp",
           "topic": "geometry_measurement",
-          "formatFamily": "coordinate_distance"
+          "formatFamily": "coordinate_distance",
+          "ccss_standard": "8.G.B.8"
         },
         {
           "id": "pt_006",
@@ -889,7 +1019,8 @@
           "answer_type": "numeric",
           "answer_formula": "6 - c",
           "topic": "geometry_measurement",
-          "formatFamily": "pythagorean_side_length"
+          "formatFamily": "pythagorean_side_length",
+          "ccss_standard": "8.G.B.7"
         },
         {
           "id": "pt_007",
@@ -909,7 +1040,8 @@
           "answer_formula": "sqrt(a*a+b*b)",
           "answer_type": "decimal_1dp",
           "topic": "geometry_measurement",
-          "formatFamily": "pythagorean_side_length"
+          "formatFamily": "pythagorean_side_length",
+          "ccss_standard": "8.G.B.7"
         },
         {
           "id": "pt_008",
@@ -930,7 +1062,8 @@
           "answer_type": "numeric",
           "answer_formula": "3.14 * r * r * h",
           "topic": "geometry_measurement",
-          "formatFamily": "cylinder_volume"
+          "formatFamily": "cylinder_volume",
+          "ccss_standard": "8.G.C.9"
         },
         {
           "id": "pt_009",
@@ -950,7 +1083,162 @@
           "answer_formula": "sqrt(a*a + b*b)",
           "answer_type": "decimal_1dp",
           "topic": "geometry_measurement",
-          "formatFamily": "pythagorean_side_length"
+          "formatFamily": "pythagorean_side_length",
+          "ccss_standard": "8.G.B.7"
+        },
+        {
+          "id": "ccss8_007",
+          "type": "COMPUTE",
+          "problem": "A cone has radius {r} and height {h}. Find its volume. Use π ≈ 3.14 and V = (1/3)πr²h.",
+          "constraints": {
+            "r": [
+              2,
+              9
+            ],
+            "h": [
+              3,
+              15
+            ]
+          },
+          "answer_type": "decimal",
+          "answer_formula": "(3.14 * r * r * h) / 3",
+          "topic": "geometry_measurement",
+          "formatFamily": "cone_volume",
+          "ccss_standard": "8.G.C.9"
+        },
+        {
+          "id": "ccss8_008",
+          "type": "COMPUTE",
+          "problem": "A sphere has radius {r}. Find its volume. Use π ≈ 3.14 and V = (4/3)πr³.",
+          "constraints": {
+            "r": [
+              2,
+              8
+            ]
+          },
+          "answer_type": "decimal",
+          "answer_formula": "(4 * 3.14 * r * r * r) / 3",
+          "topic": "geometry_measurement",
+          "formatFamily": "sphere_volume",
+          "ccss_standard": "8.G.C.9"
+        },
+        {
+          "id": "ccss8_009",
+          "type": "COMPUTE",
+          "problem": "A cone has radius {r} and height {h}. Find the volume using π ≈ 3.14.",
+          "constraints": {
+            "r": [
+              3,
+              10
+            ],
+            "h": [
+              6,
+              18
+            ]
+          },
+          "answer_type": "decimal",
+          "answer_formula": "(3.14 * r * r * h) / 3",
+          "topic": "geometry_measurement",
+          "formatFamily": "cone_volume",
+          "ccss_standard": "8.G.C.9"
+        },
+        {
+          "id": "gap8_gb7_001",
+          "type": "COMPUTE",
+          "problem": "A right triangle has legs {a} and {b}. What is the hypotenuse?",
+          "constraints": {
+            "a": [
+              3,
+              3
+            ],
+            "b": [
+              4,
+              4
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "5",
+          "topic": "geometry_measurement",
+          "formatFamily": "pythagorean_side_length",
+          "ccss_standard": "8.G.B.7",
+          "generation_note": "3-4-5 family; constraints fixed for perfect square"
+        },
+        {
+          "id": "gap8_gb7_002",
+          "type": "APPLY",
+          "problem": "A ladder reaches {a} feet up a wall with its base {b} feet from the wall. How long is the ladder? (Use a 6-8-10 triple when applicable.)",
+          "constraints": {
+            "a": [
+              8,
+              8
+            ],
+            "b": [
+              6,
+              6
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "10",
+          "topic": "geometry_measurement",
+          "formatFamily": "pythagorean_side_length",
+          "ccss_standard": "8.G.B.7"
+        },
+        {
+          "id": "gap8_gb8_001",
+          "type": "COMPUTE",
+          "problem": "Find the distance between ({a}, {b}) and ({c}, {d}).",
+          "constraints": {
+            "a": [
+              0,
+              0
+            ],
+            "b": [
+              0,
+              0
+            ],
+            "c": [
+              3,
+              3
+            ],
+            "d": [
+              4,
+              4
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "5",
+          "topic": "geometry_measurement",
+          "formatFamily": "coordinate_distance",
+          "ccss_standard": "8.G.B.8"
+        },
+        {
+          "id": "gap8_gb8_002",
+          "type": "COMPUTE",
+          "problem": "Find the distance between ({a}, {b}) and ({c}, {d}).",
+          "constraints": {
+            "a": [
+              1,
+              1
+            ],
+            "b": [
+              2,
+              2
+            ],
+            "c": [
+              4,
+              4
+            ],
+            "d": [
+              6,
+              6
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "5",
+          "topic": "geometry_measurement",
+          "formatFamily": "coordinate_distance",
+          "ccss_standard": "8.G.B.8",
+          "generation_note": "delta x=3, delta y=4"
         }
       ]
     },
@@ -985,7 +1273,8 @@
           "answer_type": "numeric",
           "answer_formula": "a + c",
           "topic": "geometry_measurement",
-          "formatFamily": "transformation"
+          "formatFamily": "transformation",
+          "ccss_standard": "8.G.A.1"
         },
         {
           "id": "tr_002",
@@ -1004,7 +1293,8 @@
           "answer_type": "numeric",
           "answer_formula": "b",
           "topic": "geometry_measurement",
-          "formatFamily": "transformation"
+          "formatFamily": "transformation",
+          "ccss_standard": "8.G.A.3"
         },
         {
           "id": "tr_003",
@@ -1027,7 +1317,8 @@
           "answer_type": "numeric",
           "answer_formula": "k * b",
           "topic": "geometry_measurement",
-          "formatFamily": "scale_drawing"
+          "formatFamily": "scale_drawing",
+          "ccss_standard": "8.G.A.5"
         },
         {
           "id": "tr_004",
@@ -1046,7 +1337,8 @@
           "answer_formula": "-b",
           "answer_type": "numeric",
           "topic": "geometry_measurement",
-          "formatFamily": "transformation"
+          "formatFamily": "transformation",
+          "ccss_standard": "8.G.A.1"
         },
         {
           "id": "tr_005",
@@ -1065,7 +1357,8 @@
           "answer_formula": "-a",
           "answer_type": "numeric",
           "topic": "geometry_measurement",
-          "formatFamily": "transformation"
+          "formatFamily": "transformation",
+          "ccss_standard": "8.G.A.3"
         },
         {
           "id": "tr_006",
@@ -1081,7 +1374,8 @@
           "answer_type": "numeric",
           "answer_formula": "a",
           "topic": "geometry_measurement",
-          "formatFamily": "angle_measure"
+          "formatFamily": "angle_measure",
+          "ccss_standard": "8.G.A.5"
         },
         {
           "id": "tr_007",
@@ -1109,7 +1403,8 @@
           "answer_type": "numeric",
           "answer_formula": "-(b + ty)",
           "topic": "geometry_measurement",
-          "formatFamily": "transformation"
+          "formatFamily": "transformation",
+          "ccss_standard": "8.G.A.1"
         },
         {
           "id": "tr_008",
@@ -1129,7 +1424,93 @@
           "answer_type": "numeric",
           "answer_formula": "k * a",
           "topic": "geometry_measurement",
-          "formatFamily": "angle_measure"
+          "formatFamily": "angle_measure",
+          "ccss_standard": "8.G.A.3"
+        },
+        {
+          "id": "ccss8_013",
+          "type": "COMPUTE",
+          "problem": "In triangle ABC, angle A is {a}° and angle B is {b}°. What is angle C?",
+          "constraints": {
+            "a": [
+              20,
+              80
+            ],
+            "b": [
+              20,
+              80
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "180 - a - b",
+          "topic": "geometry_measurement",
+          "formatFamily": "triangle_angle_sum",
+          "ccss_standard": "8.G.A.5",
+          "generation_note": "require a+b < 180"
+        },
+        {
+          "id": "ccss8_014",
+          "type": "COMPUTE",
+          "problem": "Two angles of a triangle measure {a}° and {b}°. Find the third angle.",
+          "constraints": {
+            "a": [
+              30,
+              90
+            ],
+            "b": [
+              20,
+              70
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "180 - a - b",
+          "topic": "geometry_measurement",
+          "formatFamily": "triangle_angle_sum",
+          "ccss_standard": "8.G.A.5"
+        },
+        {
+          "id": "gap8_ga1_001",
+          "type": "COMPUTE",
+          "problem": "Segment AB has length {a}. After a translation, A'B' has what length?",
+          "constraints": {
+            "a": [
+              3,
+              25
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a",
+          "topic": "geometry_measurement",
+          "formatFamily": "rigid_motion_length_preserve",
+          "ccss_standard": "8.G.A.1"
+        },
+        {
+          "id": "gap8_ga3_001",
+          "type": "COMPUTE",
+          "problem": "Point ({a}, {b}) is translated {c} units right and {d} units up. What is the new x-coordinate?",
+          "constraints": {
+            "a": [
+              -10,
+              10
+            ],
+            "b": [
+              -10,
+              10
+            ],
+            "c": [
+              1,
+              8
+            ],
+            "d": [
+              1,
+              8
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a + c",
+          "topic": "geometry_measurement",
+          "formatFamily": "transformation_coordinate",
+          "ccss_standard": "8.G.A.3"
         }
       ]
     },
@@ -1156,7 +1537,8 @@
           "answer_type": "numeric",
           "answer_formula": "a * pow(10, b)",
           "topic": "number_sense_place_value",
-          "formatFamily": "scientific_notation_multiply"
+          "formatFamily": "scientific_notation_multiply",
+          "ccss_standard": "8.EE.A.4"
         },
         {
           "id": "sn_002",
@@ -1173,7 +1555,8 @@
           "answer_type": "numeric",
           "answer_formula": "sqrt(p)",
           "topic": "expressions_equations",
-          "formatFamily": "quadratic_equation_positive_root"
+          "formatFamily": "quadratic_equation_positive_root",
+          "ccss_standard": "8.EE.A.2"
         },
         {
           "id": "sn_003",
@@ -1200,7 +1583,8 @@
           "answer_type": "numeric",
           "answer_formula": "a * c * pow(10, b + d)",
           "topic": "number_sense_place_value",
-          "formatFamily": "scientific_notation_multiply"
+          "formatFamily": "scientific_notation_multiply",
+          "ccss_standard": "8.EE.A.4"
         },
         {
           "id": "sn_004",
@@ -1227,7 +1611,8 @@
           "answer_type": "numeric",
           "answer_formula": "(a / c) * pow(10, b - d)",
           "topic": "number_sense_place_value",
-          "formatFamily": "scientific_notation_divide"
+          "formatFamily": "scientific_notation_divide",
+          "ccss_standard": "8.EE.A.4"
         },
         {
           "id": "sn_005",
@@ -1244,7 +1629,8 @@
           "answer_type": "numeric",
           "answer_formula": "floor(sqrt(n))",
           "topic": "number_sense_place_value",
-          "formatFamily": "square_root_estimate"
+          "formatFamily": "square_root_estimate",
+          "ccss_standard": "8.NS.A.2"
         },
         {
           "id": "sn_006",
@@ -1272,7 +1658,8 @@
           "answer_type": "numeric",
           "answer_formula": "(a / c) * pow(10, b - d)",
           "topic": "number_sense_place_value",
-          "formatFamily": "scientific_notation_multiply"
+          "formatFamily": "scientific_notation_multiply",
+          "ccss_standard": "8.EE.A.4"
         },
         {
           "id": "sn_007",
@@ -1292,7 +1679,8 @@
           "answer_formula": "pow(10, b + c)",
           "generation_note": "small exponents so the standard-form whole number fits keypad entry",
           "topic": "number_sense_place_value",
-          "formatFamily": "scientific_notation_multiply"
+          "formatFamily": "scientific_notation_multiply",
+          "ccss_standard": "8.EE.A.4"
         },
         {
           "id": "sn_008",
@@ -1311,7 +1699,8 @@
           "answer_type": "numeric",
           "answer_formula": "1 / pow(a, b)",
           "topic": "number_sense_place_value",
-          "formatFamily": "number_sense"
+          "formatFamily": "number_sense",
+          "ccss_standard": "8.EE.A.4"
         },
         {
           "id": "sn_009",
@@ -1327,7 +1716,8 @@
           "answer_type": "numeric",
           "answer_formula": "0",
           "topic": "number_sense_place_value",
-          "formatFamily": "square_root_estimate"
+          "formatFamily": "square_root_estimate",
+          "ccss_standard": "8.NS.A.1"
         },
         {
           "id": "sn_010",
@@ -1350,7 +1740,262 @@
           "answer_type": "numeric",
           "answer_formula": "(a + c) * pow(10, b)",
           "topic": "number_sense_place_value",
-          "formatFamily": "scientific_notation_multiply"
+          "formatFamily": "scientific_notation_multiply",
+          "ccss_standard": "8.EE.A.4"
+        },
+        {
+          "id": "ccss8_001",
+          "type": "IDENTIFY",
+          "problem": "Is √{n} rational? Enter 1 for rational or 0 for irrational.",
+          "constraints": {
+            "n": [
+              2,
+              3
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "0",
+          "topic": "number_sense_place_value",
+          "formatFamily": "rational_irrational",
+          "ccss_standard": "8.NS.A.1",
+          "generation_note": "n is 2 or 3 (non-squares)"
+        },
+        {
+          "id": "ccss8_002",
+          "type": "IDENTIFY",
+          "problem": "Is √{n} rational? Enter 1 for rational or 0 for irrational.",
+          "constraints": {
+            "n": [
+              4,
+              4
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "1",
+          "topic": "number_sense_place_value",
+          "formatFamily": "rational_irrational",
+          "ccss_standard": "8.NS.A.1",
+          "generation_note": "perfect square 4"
+        },
+        {
+          "id": "ccss8_003",
+          "type": "COMPUTE",
+          "problem": "√{n} lies between consecutive whole numbers. Given {a}² < {n} < ({a}+1)², enter the lesser whole number.",
+          "constraints": {
+            "a": [
+              3,
+              12
+            ],
+            "n": [
+              10,
+              170
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a",
+          "topic": "number_sense_place_value",
+          "formatFamily": "square_root_estimate",
+          "ccss_standard": "8.NS.A.2",
+          "generation_note": "require a*a < n < (a+1)*(a+1)"
+        },
+        {
+          "id": "ccss8_004",
+          "type": "COMPUTE",
+          "problem": "How far is {a}² from {n}? Enter the absolute difference |{a}² − {n}|.",
+          "constraints": {
+            "n": [
+              10,
+              80
+            ],
+            "a": [
+              3,
+              8
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "abs(a * a - n)",
+          "topic": "number_sense_place_value",
+          "formatFamily": "square_root_estimate",
+          "ccss_standard": "8.NS.A.2",
+          "generation_note": "supports approximating √n by testing nearby squares"
+        },
+        {
+          "id": "ccss8_005",
+          "type": "COMPUTE",
+          "problem": "Evaluate ∛({a}³).",
+          "constraints": {
+            "a": [
+              2,
+              12
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a",
+          "topic": "expressions_equations",
+          "formatFamily": "cube_root",
+          "ccss_standard": "8.EE.A.2"
+        },
+        {
+          "id": "ccss8_006",
+          "type": "COMPUTE",
+          "problem": "Solve x³ = {n} for the integer x, where {n} = {a}³.",
+          "constraints": {
+            "a": [
+              2,
+              8
+            ],
+            "n": [
+              8,
+              512
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a",
+          "topic": "expressions_equations",
+          "formatFamily": "cube_root",
+          "ccss_standard": "8.EE.A.2",
+          "generation_note": "require n == a**3"
+        },
+        {
+          "id": "gap8_eea1_001",
+          "type": "COMPUTE",
+          "problem": "Simplify 10^{a} × 10^{b}. Enter the result as a power of 10 by giving the exponent only (the n in 10^n).",
+          "constraints": {
+            "a": [
+              2,
+              8
+            ],
+            "b": [
+              2,
+              8
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a + b",
+          "topic": "number_sense_place_value",
+          "formatFamily": "integer_exponent_add",
+          "ccss_standard": "8.EE.A.1"
+        },
+        {
+          "id": "gap8_eea1_002",
+          "type": "COMPUTE",
+          "problem": "Evaluate (10^{a})^2 as a power of 10. Enter the exponent n in 10^n.",
+          "constraints": {
+            "a": [
+              2,
+              6
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "2 * a",
+          "topic": "number_sense_place_value",
+          "formatFamily": "integer_exponent_power",
+          "ccss_standard": "8.EE.A.1"
+        },
+        {
+          "id": "gap8_eea3_001",
+          "type": "COMPUTE",
+          "problem": "Estimate: {a} × 10^{b} is how many times as much as {c} × 10^{d}?",
+          "constraints": {
+            "a": [
+              2,
+              9
+            ],
+            "b": [
+              5,
+              9
+            ],
+            "c": [
+              1,
+              9
+            ],
+            "d": [
+              2,
+              6
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "(a * (10 ** b)) / (c * (10 ** d))",
+          "topic": "number_sense_place_value",
+          "formatFamily": "scientific_notation_compare",
+          "ccss_standard": "8.EE.A.3",
+          "constraints_note": "prefer b > d and exact integer ratio"
+        },
+        {
+          "id": "gap8_eea4_001",
+          "type": "COMPUTE",
+          "problem": "Compute ({a} × 10^{b}) × ({c} × 10^{d}) and write the result in standard form.",
+          "constraints": {
+            "a": [
+              2,
+              9
+            ],
+            "b": [
+              2,
+              5
+            ],
+            "c": [
+              2,
+              9
+            ],
+            "d": [
+              1,
+              4
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "(a * c) * (10 ** (b + d))",
+          "topic": "number_sense_place_value",
+          "formatFamily": "scientific_notation_multiply",
+          "ccss_standard": "8.EE.A.4"
+        },
+        {
+          "id": "gap8_eea2_001",
+          "type": "COMPUTE",
+          "problem": "Solve x² = {p} for the positive value of x.",
+          "constraints": {
+            "p": [
+              49,
+              49
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "7",
+          "topic": "expressions_equations",
+          "formatFamily": "quadratic_equation_positive_root",
+          "ccss_standard": "8.EE.A.2"
+        },
+        {
+          "id": "gap8_eea2_002",
+          "type": "COMPUTE",
+          "problem": "What is the cube root of {p}?",
+          "constraints": {
+            "p": [
+              27,
+              27
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "3",
+          "topic": "number_sense_place_value",
+          "formatFamily": "cube_root_perfect",
+          "ccss_standard": "8.EE.A.2"
+        },
+        {
+          "id": "gap8_eea2_003",
+          "type": "COMPUTE",
+          "problem": "Evaluate √{p}.",
+          "constraints": {
+            "p": [
+              81,
+              81
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "9",
+          "topic": "number_sense_place_value",
+          "formatFamily": "square_root_perfect",
+          "ccss_standard": "8.EE.A.2"
         }
       ]
     },
@@ -1379,7 +2024,8 @@
           "answer_type": "decimal",
           "answer_formula": "a / b",
           "topic": "statistics_probability",
-          "formatFamily": "data_interpretation"
+          "formatFamily": "data_interpretation",
+          "ccss_standard": "8.SP.A.1"
         },
         {
           "id": "bv_002",
@@ -1403,7 +2049,8 @@
           "answer_type": "numeric",
           "answer_formula": "m * c + b",
           "topic": "expressions_equations",
-          "formatFamily": "algebraic_substitution_linear"
+          "formatFamily": "algebraic_substitution_linear",
+          "ccss_standard": "6.EE.A.2"
         },
         {
           "id": "bv_003",
@@ -1414,7 +2061,8 @@
           "answer_type": "numeric",
           "answer_formula": "1",
           "topic": "statistics_probability",
-          "formatFamily": "bivariate_data"
+          "formatFamily": "bivariate_data",
+          "ccss_standard": "8.SP.A.3"
         },
         {
           "id": "bv_004",
@@ -1434,7 +2082,8 @@
           "answer_type": "numeric",
           "answer_formula": "m",
           "topic": "statistics_probability",
-          "formatFamily": "mode"
+          "formatFamily": "mode",
+          "ccss_standard": "8.SP.A.4"
         },
         {
           "id": "bv_005",
@@ -1459,7 +2108,8 @@
           "answer_type": "numeric",
           "answer_formula": "1",
           "topic": "statistics_probability",
-          "formatFamily": "data_interpretation"
+          "formatFamily": "data_interpretation",
+          "ccss_standard": "8.SP.A.1"
         },
         {
           "id": "bv_006",
@@ -1483,7 +2133,8 @@
           "answer_type": "numeric",
           "answer_formula": "(target - b) / m",
           "topic": "expressions_equations",
-          "formatFamily": "algebraic_substitution_linear"
+          "formatFamily": "algebraic_substitution_linear",
+          "ccss_standard": "6.EE.A.2"
         },
         {
           "id": "bv_007",
@@ -1495,7 +2146,8 @@
           "answer_type": "numeric",
           "answer_formula": "1",
           "topic": "statistics_probability",
-          "formatFamily": "bivariate_data"
+          "formatFamily": "bivariate_data",
+          "ccss_standard": "8.SP.A.3"
         },
         {
           "id": "bv_008",
@@ -1518,7 +2170,149 @@
           "answer_type": "numeric",
           "answer_formula": "m * h",
           "topic": "statistics_probability",
-          "formatFamily": "bivariate_data"
+          "formatFamily": "bivariate_data",
+          "ccss_standard": "8.SP.A.4"
+        },
+        {
+          "id": "ccss8_010",
+          "type": "COMPUTE",
+          "problem": "In a two-way table, {a} of {n} students play sports. What is the relative frequency as a decimal?",
+          "constraints": {
+            "a": [
+              5,
+              40
+            ],
+            "n": [
+              20,
+              100
+            ]
+          },
+          "answer_type": "decimal",
+          "answer_formula": "a / n",
+          "topic": "statistics_probability",
+          "formatFamily": "two_way_relative_frequency",
+          "ccss_standard": "8.SP.A.4",
+          "generation_note": "prefer terminating decimals"
+        },
+        {
+          "id": "ccss8_011",
+          "type": "COMPUTE",
+          "problem": "A two-way table shows {a} phone owners out of {b} Grade 8 students and {c} phone owners out of {d} Grade 7 students. What is the relative frequency of phone ownership in Grade 8?",
+          "constraints": {
+            "a": [
+              10,
+              40
+            ],
+            "b": [
+              20,
+              50
+            ],
+            "c": [
+              8,
+              35
+            ],
+            "d": [
+              20,
+              50
+            ]
+          },
+          "answer_type": "decimal",
+          "answer_formula": "a / b",
+          "topic": "statistics_probability",
+          "formatFamily": "two_way_relative_frequency",
+          "ccss_standard": [
+            "8.SP.A.3",
+            "8.SP.A.4"
+          ]
+        },
+        {
+          "id": "ccss8_012",
+          "type": "APPLY",
+          "problem": "A trend line predicts y = {m}x + {b}. What y-value does it predict when x = {x}?",
+          "constraints": {
+            "m": [
+              1,
+              8
+            ],
+            "b": [
+              0,
+              20
+            ],
+            "x": [
+              2,
+              15
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "m * x + b",
+          "topic": "statistics_probability",
+          "formatFamily": "bivariate_data",
+          "ccss_standard": "8.SP.A.3"
+        },
+        {
+          "id": "gap8_spa2_001",
+          "type": "COMPUTE",
+          "problem": "An informal line of best fit through (0, {b}) and ({a}, {c}) has what slope?",
+          "constraints": {
+            "a": [
+              2,
+              10
+            ],
+            "b": [
+              0,
+              8
+            ],
+            "c": [
+              4,
+              30
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "(c - b) / a",
+          "topic": "statistics_probability",
+          "formatFamily": "line_of_best_fit_slope",
+          "ccss_standard": "8.SP.A.2",
+          "constraints_note": "prefer (c-b) divisible by a"
+        },
+        {
+          "id": "gap8_spa2_002",
+          "type": "COMPUTE",
+          "problem": "A trend line has slope {m} and passes through (0, {b}). What is the predicted y when x = {x}?",
+          "constraints": {
+            "m": [
+              1,
+              6
+            ],
+            "b": [
+              0,
+              10
+            ],
+            "x": [
+              2,
+              8
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "m * x + b",
+          "topic": "statistics_probability",
+          "formatFamily": "line_of_best_fit_predict",
+          "ccss_standard": "8.SP.A.2"
+        },
+        {
+          "id": "gap8_spa2_003",
+          "type": "IDENTIFY",
+          "problem": "Points roughly follow a straight upward trend. Enter 1 if a linear model is reasonable, or 0 if not.",
+          "constraints": {
+            "a": [
+              1,
+              1
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "1",
+          "topic": "statistics_probability",
+          "formatFamily": "linear_model_reasonableness",
+          "ccss_standard": "8.SP.A.2"
         }
       ]
     }

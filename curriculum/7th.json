@@ -36,7 +36,8 @@
           "answer_type": "numeric",
           "answer_formula": "a / b",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "unit_rate"
+          "formatFamily": "unit_rate",
+          "ccss_standard": "6.RP.A.2"
         },
         {
           "id": "pr_002",
@@ -64,7 +65,8 @@
           "answer_type": "fraction_simplified",
           "answer_formula": "(a * d) / (b * c)",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "unit_rate"
+          "formatFamily": "unit_rate",
+          "ccss_standard": "6.RP.A.2"
         },
         {
           "id": "pr_003",
@@ -87,7 +89,8 @@
           "answer_type": "numeric",
           "answer_formula": "c * b / a",
           "topic": "expressions_equations",
-          "formatFamily": "algebraic_substitution_linear"
+          "formatFamily": "algebraic_substitution_linear",
+          "ccss_standard": "6.EE.A.2"
         },
         {
           "id": "pr_004",
@@ -111,7 +114,8 @@
           "answer_type": "numeric",
           "answer_formula": "c * b / a",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "ratio_rate_proportion"
+          "formatFamily": "ratio_rate_proportion",
+          "ccss_standard": "7.RP.A.1"
         },
         {
           "id": "pr_005",
@@ -132,7 +136,8 @@
           "constraints_note": "d divisible by a",
           "answer_formula": "d / a",
           "topic": "expressions_equations",
-          "formatFamily": "algebraic_substitution_linear"
+          "formatFamily": "algebraic_substitution_linear",
+          "ccss_standard": "6.EE.A.2"
         },
         {
           "id": "pr_006",
@@ -152,7 +157,8 @@
           "answer_type": "numeric",
           "answer_formula": "a - (b / 100) * a",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "percent_discount"
+          "formatFamily": "percent_discount",
+          "ccss_standard": "7.RP.A.3"
         },
         {
           "id": "pr_007",
@@ -172,7 +178,8 @@
           "answer_type": "numeric",
           "answer_formula": "a + (b / 100) * a",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "percent_tax"
+          "formatFamily": "percent_tax",
+          "ccss_standard": "7.RP.A.3"
         },
         {
           "id": "pr_008",
@@ -191,7 +198,8 @@
           "answer_type": "numeric",
           "answer_formula": "a / (1 - b/100)",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "percent_discount"
+          "formatFamily": "percent_discount",
+          "ccss_standard": "7.RP.A.3"
         },
         {
           "id": "pr_009",
@@ -214,7 +222,8 @@
           "answer_type": "numeric",
           "answer_formula": "abs(a - b / c)",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "proportion_missing_value"
+          "formatFamily": "proportion_missing_value",
+          "ccss_standard": "7.RP.A.3"
         },
         {
           "id": "pr_010",
@@ -238,7 +247,8 @@
           "answer_type": "numeric",
           "answer_formula": "a / 2",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "constant_of_proportionality"
+          "formatFamily": "constant_of_proportionality",
+          "ccss_standard": "7.RP.A.1"
         },
         {
           "id": "pr_011",
@@ -262,7 +272,8 @@
           "answer_formula": "a*b*c/100",
           "answer_type": "numeric",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "simple_interest"
+          "formatFamily": "simple_interest",
+          "ccss_standard": "7.RP.A.3"
         },
         {
           "id": "pr_012",
@@ -281,7 +292,8 @@
           "answer_type": "numeric",
           "answer_formula": "k * a",
           "topic": "expressions_equations",
-          "formatFamily": "algebraic_substitution_linear"
+          "formatFamily": "algebraic_substitution_linear",
+          "ccss_standard": "6.EE.A.2"
         },
         {
           "id": "pr_013",
@@ -305,7 +317,8 @@
           "answer_type": "numeric",
           "answer_formula": "a * (1 + b / 100) * (1 - c / 100)",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "percent_discount"
+          "formatFamily": "percent_discount",
+          "ccss_standard": "7.RP.A.3"
         },
         {
           "id": "pr_014",
@@ -329,7 +342,49 @@
           "answer_type": "numeric",
           "answer_formula": "c * b / a",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "ratio_rate_proportion"
+          "formatFamily": "ratio_rate_proportion",
+          "ccss_standard": "7.RP.A.2"
+        },
+        {
+          "id": "ccss7_013",
+          "type": "APPLY",
+          "problem": "A salesperson earns a {p}% commission on sales of ${s}. How much commission is earned?",
+          "constraints": {
+            "p": [
+              5,
+              20
+            ],
+            "s": [
+              200,
+              2000
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "(p * s) / 100",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "percent_commission",
+          "ccss_standard": "7.RP.A.3",
+          "generation_note": "prefer (p*s) divisible by 100"
+        },
+        {
+          "id": "ccss7_014",
+          "type": "APPLY",
+          "problem": "Jordan sold ${s} of merchandise and earns {p}% commission. What is the commission?",
+          "constraints": {
+            "s": [
+              150,
+              1500
+            ],
+            "p": [
+              4,
+              15
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "(p * s) / 100",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "percent_commission",
+          "ccss_standard": "7.RP.A.3"
         }
       ]
     },
@@ -365,7 +420,8 @@
           "answer_type": "fraction_simplified",
           "answer_formula": "(a * d + c * b) / (b * d)",
           "topic": "fractions",
-          "formatFamily": "fraction_addition"
+          "formatFamily": "fraction_addition",
+          "ccss_standard": "7.NS.A.1"
         },
         {
           "id": "rn_002",
@@ -392,7 +448,8 @@
           "answer_type": "fraction_simplified",
           "answer_formula": "(a * d - c * b) / (b * d)",
           "topic": "fractions",
-          "formatFamily": "fraction_operations"
+          "formatFamily": "fraction_operations",
+          "ccss_standard": "7.NS.A.2"
         },
         {
           "id": "rn_003",
@@ -419,7 +476,8 @@
           "answer_type": "fraction_simplified",
           "answer_formula": "(a/b) * (c/d)",
           "topic": "fractions",
-          "formatFamily": "fraction_multiplication"
+          "formatFamily": "fraction_multiplication",
+          "ccss_standard": "7.NS.A.3"
         },
         {
           "id": "rn_004",
@@ -446,7 +504,8 @@
           "answer_type": "fraction_simplified",
           "answer_formula": "(a/b) / (c/d)",
           "topic": "fractions",
-          "formatFamily": "fraction_division"
+          "formatFamily": "fraction_division",
+          "ccss_standard": "7.NS.A.1"
         },
         {
           "id": "rn_005",
@@ -473,7 +532,8 @@
           "answer_type": "decimal",
           "answer_formula": "(a + b/100) + (c + d/100)",
           "topic": "percent_decimals",
-          "formatFamily": "decimal_addition"
+          "formatFamily": "decimal_addition",
+          "ccss_standard": "7.NS.A.2"
         },
         {
           "id": "rn_006",
@@ -497,7 +557,8 @@
           "answer_type": "fraction_simplified",
           "answer_formula": "(a * c) / b",
           "topic": "fractions",
-          "formatFamily": "fraction_operations"
+          "formatFamily": "fraction_operations",
+          "ccss_standard": "7.NS.A.3"
         },
         {
           "id": "rn_007",
@@ -525,7 +586,8 @@
           "answer_type": "fraction_simplified",
           "answer_formula": "(a * d - c * b) / (b * d)",
           "topic": "fractions",
-          "formatFamily": "fraction_operations"
+          "formatFamily": "fraction_operations",
+          "ccss_standard": "7.NS.A.1"
         },
         {
           "id": "rn_008",
@@ -552,7 +614,8 @@
           "answer_type": "fraction_simplified",
           "answer_formula": "(c * b - a * d) / (b * d)",
           "topic": "fractions",
-          "formatFamily": "fraction_addition"
+          "formatFamily": "fraction_addition",
+          "ccss_standard": "7.NS.A.2"
         },
         {
           "id": "rn_009",
@@ -580,7 +643,8 @@
           "answer_type": "decimal",
           "answer_formula": "a + b/100 - (c + d/100)",
           "topic": "percent_decimals",
-          "formatFamily": "decimal_operations"
+          "formatFamily": "decimal_operations",
+          "ccss_standard": "7.NS.A.3"
         },
         {
           "id": "rn_010",
@@ -604,7 +668,8 @@
           "answer_type": "fraction",
           "answer_formula": "(-a + c) / b",
           "topic": "fractions",
-          "formatFamily": "fraction_addition"
+          "formatFamily": "fraction_addition",
+          "ccss_standard": "7.NS.A.1"
         },
         {
           "id": "rn_011",
@@ -625,7 +690,8 @@
           "answer_type": "decimal",
           "answer_formula": "a / b",
           "topic": "fractions",
-          "formatFamily": "fraction_to_decimal"
+          "formatFamily": "fraction_to_decimal",
+          "ccss_standard": "7.NS.A.2"
         },
         {
           "id": "rn_012",
@@ -652,7 +718,138 @@
           "answer_type": "fraction_simplified",
           "answer_formula": "abs(a/b) + abs(c/d)",
           "topic": "fractions",
-          "formatFamily": "fraction_absolute_value"
+          "formatFamily": "fraction_absolute_value",
+          "ccss_standard": "7.NS.A.3"
+        },
+        {
+          "id": "ccss7_011",
+          "type": "COMPUTE",
+          "problem": "Convert {a}/{b} to a decimal.",
+          "constraints": {
+            "a": [
+              1,
+              19
+            ],
+            "b": [
+              2,
+              10
+            ]
+          },
+          "answer_type": "decimal",
+          "answer_formula": "a / b",
+          "topic": "percent_decimals",
+          "formatFamily": "fraction_to_decimal",
+          "ccss_standard": "7.NS.A.2",
+          "generation_note": "prefer terminating decimals"
+        },
+        {
+          "id": "ccss7_012",
+          "type": "COMPUTE",
+          "problem": "Write {a}/{b} as a decimal.",
+          "constraints": {
+            "a": [
+              1,
+              9
+            ],
+            "b": [
+              4,
+              8
+            ]
+          },
+          "answer_type": "decimal",
+          "answer_formula": "a / b",
+          "topic": "percent_decimals",
+          "formatFamily": "fraction_to_decimal",
+          "ccss_standard": "7.NS.A.2"
+        },
+        {
+          "id": "ccss7_016",
+          "type": "COMPUTE",
+          "problem": "Compute −{a} × {b} + (−{c}).",
+          "constraints": {
+            "a": [
+              2,
+              12
+            ],
+            "b": [
+              2,
+              9
+            ],
+            "c": [
+              1,
+              15
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "-a * b + (-c)",
+          "topic": "integers",
+          "formatFamily": "integer_operations",
+          "ccss_standard": "7.NS.A.2"
+        },
+        {
+          "id": "gap7_ns1_001",
+          "type": "COMPUTE",
+          "problem": "Compute {a} + ({b}).",
+          "constraints": {
+            "a": [
+              -20,
+              20
+            ],
+            "b": [
+              -20,
+              20
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a + b",
+          "topic": "integers",
+          "formatFamily": "integer_addition",
+          "ccss_standard": "7.NS.A.1"
+        },
+        {
+          "id": "gap7_ns1_002",
+          "type": "COMPUTE",
+          "problem": "What is the distance between {a} and {b} on a number line?",
+          "constraints": {
+            "a": [
+              -30,
+              30
+            ],
+            "b": [
+              -30,
+              30
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "abs(a - b)",
+          "topic": "integers",
+          "formatFamily": "integer_number_line",
+          "ccss_standard": "7.NS.A.1",
+          "constraints_note": "prefer a != b"
+        },
+        {
+          "id": "gap7_ns3_001",
+          "type": "APPLY",
+          "problem": "A stock is at ${a}. It rises by ${b}, then falls by ${c}. What is the final price?",
+          "constraints": {
+            "a": [
+              20,
+              80
+            ],
+            "b": [
+              1,
+              15
+            ],
+            "c": [
+              1,
+              15
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a + b - c",
+          "topic": "integers",
+          "formatFamily": "rational_word_operations",
+          "ccss_standard": "7.NS.A.3"
         }
       ]
     },
@@ -680,7 +877,8 @@
           "answer_type": "numeric",
           "answer_formula": "a * b",
           "topic": "expressions_equations",
-          "formatFamily": "algebraic_simplify"
+          "formatFamily": "algebraic_simplify",
+          "ccss_standard": "7.EE.A.1"
         },
         {
           "id": "ee_002",
@@ -700,7 +898,8 @@
           "answer_type": "numeric",
           "answer_formula": "a - b",
           "topic": "expressions_equations",
-          "formatFamily": "algebraic_simplify"
+          "formatFamily": "algebraic_simplify",
+          "ccss_standard": "7.EE.A.2"
         },
         {
           "id": "ee_003",
@@ -728,7 +927,8 @@
           "answer_formula": "a * d + b - c",
           "context": "technology",
           "topic": "expressions_equations",
-          "formatFamily": "algebraic_substitution_linear"
+          "formatFamily": "algebraic_substitution_linear",
+          "ccss_standard": "6.EE.A.2"
         },
         {
           "id": "ee_004",
@@ -751,7 +951,8 @@
           "answer_type": "numeric",
           "answer_formula": "(c - b) / a",
           "topic": "expressions_equations",
-          "formatFamily": "two_step_equation"
+          "formatFamily": "two_step_equation",
+          "ccss_standard": "7.EE.B.4"
         },
         {
           "id": "ee_005",
@@ -776,7 +977,8 @@
           "context": "construction",
           "constraints_note": "(c+b) divisible by a",
           "topic": "expressions_equations",
-          "formatFamily": "two_step_equation"
+          "formatFamily": "two_step_equation",
+          "ccss_standard": "7.EE.B.4"
         },
         {
           "id": "ee_006",
@@ -799,7 +1001,8 @@
           "answer_type": "numeric",
           "answer_formula": "(c - b) * a",
           "topic": "expressions_equations",
-          "formatFamily": "one_step_equation"
+          "formatFamily": "one_step_equation",
+          "ccss_standard": "6.EE.B.7"
         },
         {
           "id": "ee_007",
@@ -825,7 +1028,8 @@
           "answer_type": "numeric",
           "answer_formula": "floor((c - b) / a)",
           "topic": "expressions_equations",
-          "formatFamily": "inequality_word_problem"
+          "formatFamily": "inequality_word_problem",
+          "ccss_standard": "7.EE.B.4"
         },
         {
           "id": "ee_008",
@@ -846,7 +1050,8 @@
           "answer_formula": "(p - 2 * a) / 6",
           "generation_note": "require (p - 2*a) divisible by 6 and width > 0",
           "topic": "expressions_equations",
-          "formatFamily": "algebraic_expression"
+          "formatFamily": "algebraic_expression",
+          "ccss_standard": "7.EE.B.4"
         },
         {
           "id": "ee_009",
@@ -871,7 +1076,8 @@
           "answer_type": "numeric",
           "answer_formula": "(c - b) / a",
           "topic": "expressions_equations",
-          "formatFamily": "two_step_equation"
+          "formatFamily": "two_step_equation",
+          "ccss_standard": "7.EE.B.4"
         },
         {
           "id": "ee_010",
@@ -899,7 +1105,8 @@
           "answer_type": "numeric",
           "answer_formula": "b - d",
           "topic": "expressions_equations",
-          "formatFamily": "algebraic_simplify"
+          "formatFamily": "algebraic_simplify",
+          "ccss_standard": "7.EE.A.2"
         },
         {
           "id": "ee_011",
@@ -925,7 +1132,8 @@
           "answer_type": "numeric",
           "answer_formula": "(c - b) / a",
           "topic": "expressions_equations",
-          "formatFamily": "algebraic_expression"
+          "formatFamily": "algebraic_expression",
+          "ccss_standard": "7.EE.B.3"
         },
         {
           "id": "ee_012",
@@ -949,7 +1157,8 @@
           "answer_type": "numeric",
           "answer_formula": "c / a - b",
           "topic": "expressions_equations",
-          "formatFamily": "equation_with_distribution"
+          "formatFamily": "equation_with_distribution",
+          "ccss_standard": "7.EE.B.4"
         },
         {
           "id": "ee_013",
@@ -975,7 +1184,8 @@
           "answer_type": "numeric",
           "answer_formula": "(c - b) / a",
           "topic": "expressions_equations",
-          "formatFamily": "algebraic_expression"
+          "formatFamily": "algebraic_expression",
+          "ccss_standard": "7.EE.A.1"
         },
         {
           "id": "ee_014",
@@ -999,7 +1209,53 @@
           "answer_type": "numeric",
           "answer_formula": "c / a + b",
           "topic": "expressions_equations",
-          "formatFamily": "equation_with_distribution"
+          "formatFamily": "equation_with_distribution",
+          "ccss_standard": "7.EE.A.2"
+        },
+        {
+          "id": "ccss7_015",
+          "type": "COMPUTE",
+          "problem": "Solve: {a}x + {b} = {c}. Enter x.",
+          "constraints": {
+            "a": [
+              2,
+              9
+            ],
+            "b": [
+              1,
+              20
+            ],
+            "c": [
+              10,
+              80
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "(c - b) / a",
+          "topic": "expressions_equations",
+          "formatFamily": "two_step_equation",
+          "ccss_standard": "7.EE.B.4",
+          "generation_note": "require (c-b) divisible by a and c > b"
+        },
+        {
+          "id": "gap7_eeb3_001",
+          "type": "APPLY",
+          "problem": "A worker earns ${a} per hour and gets a {b}% raise. What is the new hourly wage?",
+          "constraints": {
+            "a": [
+              10,
+              40
+            ],
+            "b": [
+              5,
+              20
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a * (1 + b / 100)",
+          "topic": "expressions_equations",
+          "formatFamily": "multi_step_percent_wage",
+          "ccss_standard": "7.EE.B.3"
         }
       ]
     },
@@ -1030,7 +1286,8 @@
           "answer_type": "numeric",
           "answer_formula": "(b / a) * c",
           "topic": "geometry_measurement",
-          "formatFamily": "scale_drawing"
+          "formatFamily": "scale_drawing",
+          "ccss_standard": "7.G.A.1"
         },
         {
           "id": "geo_002",
@@ -1045,7 +1302,8 @@
           "answer_formula": "180 - a",
           "answer_type": "numeric",
           "topic": "geometry_measurement",
-          "formatFamily": "angle_measure"
+          "formatFamily": "angle_measure",
+          "ccss_standard": "7.G.B.4"
         },
         {
           "id": "geo_003",
@@ -1060,7 +1318,8 @@
           "answer_formula": "90 - a",
           "answer_type": "numeric",
           "topic": "geometry_measurement",
-          "formatFamily": "angle_measure"
+          "formatFamily": "angle_measure",
+          "ccss_standard": "7.G.B.5"
         },
         {
           "id": "geo_004",
@@ -1075,7 +1334,8 @@
           "answer_formula": "3.14*a*a",
           "answer_type": "numeric",
           "topic": "geometry_measurement",
-          "formatFamily": "area"
+          "formatFamily": "area",
+          "ccss_standard": "7.G.B.6"
         },
         {
           "id": "geo_005",
@@ -1090,7 +1350,8 @@
           "answer_formula": "3.14*a",
           "answer_type": "numeric",
           "topic": "geometry_measurement",
-          "formatFamily": "geometry_measurement"
+          "formatFamily": "geometry_measurement",
+          "ccss_standard": "7.G.A.1"
         },
         {
           "id": "geo_006",
@@ -1111,7 +1372,8 @@
           "answer_type": "numeric",
           "answer_formula": "a + b - 1",
           "topic": "geometry_measurement",
-          "formatFamily": "angle_measure"
+          "formatFamily": "angle_measure",
+          "ccss_standard": "7.G.B.4"
         },
         {
           "id": "geo_007",
@@ -1127,7 +1389,8 @@
           "answer_type": "numeric",
           "answer_formula": "c / (2 * 3.14)",
           "topic": "geometry_measurement",
-          "formatFamily": "geometry_measurement"
+          "formatFamily": "geometry_measurement",
+          "ccss_standard": "7.G.B.5"
         },
         {
           "id": "geo_008",
@@ -1147,7 +1410,8 @@
           "answer_formula": "3.14*(b*b - a*a)",
           "answer_type": "numeric",
           "topic": "geometry_measurement",
-          "formatFamily": "area"
+          "formatFamily": "area",
+          "ccss_standard": "7.G.B.6"
         },
         {
           "id": "geo_009",
@@ -1162,7 +1426,8 @@
           "answer_type": "numeric",
           "answer_formula": "a",
           "topic": "geometry_measurement",
-          "formatFamily": "angle_measure"
+          "formatFamily": "angle_measure",
+          "ccss_standard": "7.G.A.1"
         },
         {
           "id": "geo_010",
@@ -1186,7 +1451,8 @@
           "answer_formula": "a * b * c",
           "answer_type": "numeric",
           "topic": "geometry_measurement",
-          "formatFamily": "rectangular_prism_volume"
+          "formatFamily": "rectangular_prism_volume",
+          "ccss_standard": "7.G.B.4"
         },
         {
           "id": "geo_011",
@@ -1209,7 +1475,122 @@
           "answer_formula": "a * b * c * c",
           "answer_type": "numeric",
           "topic": "geometry_measurement",
-          "formatFamily": "area"
+          "formatFamily": "area",
+          "ccss_standard": "7.G.B.5"
+        },
+        {
+          "id": "ccss7_001",
+          "type": "COMPUTE",
+          "problem": "Find the area of a circle with radius {r}. Use π ≈ 3.14.",
+          "constraints": {
+            "r": [
+              2,
+              15
+            ]
+          },
+          "answer_type": "decimal",
+          "answer_formula": "3.14 * r * r",
+          "topic": "geometry_measurement",
+          "formatFamily": "circle_area",
+          "ccss_standard": "7.G.B.4"
+        },
+        {
+          "id": "ccss7_002",
+          "type": "COMPUTE",
+          "problem": "Find the circumference of a circle with radius {r}. Use π ≈ 3.14.",
+          "constraints": {
+            "r": [
+              2,
+              15
+            ]
+          },
+          "answer_type": "decimal",
+          "answer_formula": "2 * 3.14 * r",
+          "topic": "geometry_measurement",
+          "formatFamily": "circle_circumference",
+          "ccss_standard": "7.G.B.4"
+        },
+        {
+          "id": "ccss7_003",
+          "type": "COMPUTE",
+          "problem": "A circle has diameter {d}. Find its area. Use π ≈ 3.14.",
+          "constraints": {
+            "d": [
+              4,
+              20
+            ]
+          },
+          "answer_type": "decimal",
+          "answer_formula": "3.14 * (d / 2) * (d / 2)",
+          "topic": "geometry_measurement",
+          "formatFamily": "circle_area",
+          "ccss_standard": "7.G.B.4"
+        },
+        {
+          "id": "ccss7_004",
+          "type": "APPLY",
+          "problem": "A scale drawing uses scale {a} cm = {b} m. A hallway is {c} cm on the drawing. What is the actual length in meters?",
+          "constraints": {
+            "a": [
+              1,
+              4
+            ],
+            "b": [
+              2,
+              10
+            ],
+            "c": [
+              3,
+              20
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "(c / a) * b",
+          "topic": "geometry_measurement",
+          "formatFamily": "scale_drawing",
+          "ccss_standard": "7.G.A.1",
+          "generation_note": "prefer c divisible by a"
+        },
+        {
+          "id": "ccss7_005",
+          "type": "APPLY",
+          "problem": "On a map, {a} cm represents {b} km. Two towns are {c} cm apart on the map. How many km apart are they?",
+          "constraints": {
+            "a": [
+              1,
+              5
+            ],
+            "b": [
+              5,
+              25
+            ],
+            "c": [
+              2,
+              15
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "(c / a) * b",
+          "topic": "geometry_measurement",
+          "formatFamily": "scale_drawing",
+          "ccss_standard": "7.G.A.1",
+          "generation_note": "prefer c divisible by a"
+        },
+        {
+          "id": "gap7_ga3_001",
+          "type": "IDENTIFY",
+          "problem": "A plane slices a right rectangular prism parallel to its base. The base is a rectangle. Enter the number of sides of the cross-section polygon.",
+          "constraints": {
+            "a": [
+              1,
+              1
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "4",
+          "topic": "geometry_measurement",
+          "formatFamily": "cross_section_sides",
+          "ccss_standard": "7.G.A.3"
         }
       ]
     },
@@ -1236,7 +1617,8 @@
           "answer_formula": "a/(a+b)",
           "answer_type": "fraction_simplified",
           "topic": "statistics_probability",
-          "formatFamily": "probability_simple"
+          "formatFamily": "probability_simple",
+          "ccss_standard": "7.SP.C.7"
         },
         {
           "id": "prob_002",
@@ -1251,7 +1633,8 @@
           "answer_type": "fraction_simplified",
           "answer_formula": "(6 - a) / 6",
           "topic": "statistics_probability",
-          "formatFamily": "probability_simple"
+          "formatFamily": "probability_simple",
+          "ccss_standard": "7.SP.C.7"
         },
         {
           "id": "prob_003",
@@ -1268,7 +1651,8 @@
           "answer_formula": "floor(a / 2) / a",
           "constraints_note": "prefer even a for a clean count of even sections",
           "topic": "statistics_probability",
-          "formatFamily": "probability_simple"
+          "formatFamily": "probability_simple",
+          "ccss_standard": "7.SP.C.7"
         },
         {
           "id": "prob_004",
@@ -1291,7 +1675,8 @@
           "answer_formula": "(a+b)/(a+b+c)",
           "answer_type": "fraction_simplified",
           "topic": "statistics_probability",
-          "formatFamily": "probability_simple"
+          "formatFamily": "probability_simple",
+          "ccss_standard": "7.SP.C.7"
         },
         {
           "id": "prob_005",
@@ -1311,7 +1696,8 @@
           "answer_type": "fraction_simplified",
           "answer_formula": "floor(a / b) / a",
           "topic": "statistics_probability",
-          "formatFamily": "probability_simple"
+          "formatFamily": "probability_simple",
+          "ccss_standard": "7.SP.C.7"
         },
         {
           "id": "prob_006",
@@ -1327,7 +1713,8 @@
           "answer_type": "fraction_simplified",
           "answer_formula": "(6 - a) / 12",
           "topic": "statistics_probability",
-          "formatFamily": "probability_compound"
+          "formatFamily": "probability_compound",
+          "ccss_standard": "7.SP.C.8"
         },
         {
           "id": "prob_007",
@@ -1337,7 +1724,8 @@
           "answer_type": "numeric",
           "answer_formula": "12",
           "topic": "statistics_probability",
-          "formatFamily": "probability_simple"
+          "formatFamily": "probability_simple",
+          "ccss_standard": "7.SP.C.7"
         },
         {
           "id": "prob_008",
@@ -1358,7 +1746,8 @@
           "answer_type": "fraction_simplified",
           "answer_formula": "(a * a) / ((a + b) * (a + b))",
           "topic": "statistics_probability",
-          "formatFamily": "probability_compound"
+          "formatFamily": "probability_compound",
+          "ccss_standard": "7.SP.C.8"
         },
         {
           "id": "prob_009",
@@ -1381,7 +1770,8 @@
           "answer_type": "numeric",
           "answer_formula": "c * a / b",
           "topic": "statistics_probability",
-          "formatFamily": "probability_simple"
+          "formatFamily": "probability_simple",
+          "ccss_standard": "7.SP.C.7"
         },
         {
           "id": "prob_010",
@@ -1392,7 +1782,8 @@
           "answer_type": "numeric",
           "answer_formula": "1",
           "topic": "statistics_probability",
-          "formatFamily": "probability_simple"
+          "formatFamily": "probability_simple",
+          "ccss_standard": "7.SP.C.7"
         },
         {
           "id": "prob_011",
@@ -1411,7 +1802,109 @@
           "answer_formula": "b/(a+b)",
           "answer_type": "fraction_simplified",
           "topic": "statistics_probability",
-          "formatFamily": "probability_simple"
+          "formatFamily": "probability_simple",
+          "ccss_standard": "7.SP.C.7"
+        },
+        {
+          "id": "ccss7_006",
+          "type": "COMPUTE",
+          "problem": "A spinner has {a} equal sections and a coin has 2 sides. In one spin and one flip, how many equally likely outcomes are there?",
+          "constraints": {
+            "a": [
+              3,
+              8
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a * 2",
+          "topic": "statistics_probability",
+          "formatFamily": "probability_compound",
+          "ccss_standard": "7.SP.C.8"
+        },
+        {
+          "id": "ccss7_007",
+          "type": "COMPUTE",
+          "problem": "A bag has {r} red and {b} blue marbles. You draw one, replace it, then draw again. How many equally likely ordered outcomes (first, second) are possible?",
+          "constraints": {
+            "r": [
+              2,
+              6
+            ],
+            "b": [
+              2,
+              6
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "(r + b) * (r + b)",
+          "topic": "statistics_probability",
+          "formatFamily": "probability_compound",
+          "ccss_standard": "7.SP.C.8"
+        },
+        {
+          "id": "ccss7_008",
+          "type": "COMPUTE",
+          "problem": "Die A has {a} faces and Die B has {b} faces. How many outcomes are in the sample space for rolling both?",
+          "constraints": {
+            "a": [
+              4,
+              8
+            ],
+            "b": [
+              4,
+              8
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a * b",
+          "topic": "statistics_probability",
+          "formatFamily": "probability_compound",
+          "ccss_standard": "7.SP.C.8"
+        },
+        {
+          "id": "gap7_spc5_001",
+          "type": "IDENTIFY",
+          "problem": "An event has probability {a}/{b}. Enter 1 if this is closer to unlikely (near 0) than to certain (near 1), or 2 if closer to certain.",
+          "constraints": {
+            "a": [
+              1,
+              9
+            ],
+            "b": [
+              10,
+              20
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "1 if (a/b) < 0.5 else 2",
+          "topic": "statistics_probability",
+          "formatFamily": "probability_likelihood_coded",
+          "ccss_standard": "7.SP.C.5"
+        },
+        {
+          "id": "gap7_spc6_001",
+          "type": "COMPUTE",
+          "problem": "A spinner lands on blue with probability {a}/{b}. About how many blues are expected in {c} spins?",
+          "constraints": {
+            "a": [
+              1,
+              5
+            ],
+            "b": [
+              4,
+              10
+            ],
+            "c": [
+              40,
+              200
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "(a * c) / b",
+          "topic": "statistics_probability",
+          "formatFamily": "expected_frequency",
+          "ccss_standard": "7.SP.C.6",
+          "constraints_note": "prefer a*c divisible by b"
         }
       ]
     },
@@ -1443,7 +1936,8 @@
           "answer_type": "numeric",
           "answer_formula": "1",
           "topic": "statistics_probability",
-          "formatFamily": "statistical_inference"
+          "formatFamily": "statistical_inference",
+          "ccss_standard": "7.SP.A.1"
         },
         {
           "id": "si_002",
@@ -1468,7 +1962,8 @@
           "answer_type": "numeric",
           "answer_formula": "abs(a - b) / m",
           "topic": "statistics_probability",
-          "formatFamily": "mean"
+          "formatFamily": "mean",
+          "ccss_standard": "7.SP.A.2"
         },
         {
           "id": "si_003",
@@ -1494,7 +1989,8 @@
           "answer_type": "numeric",
           "answer_formula": "c * b / a",
           "topic": "statistics_probability",
-          "formatFamily": "statistical_inference"
+          "formatFamily": "statistical_inference",
+          "ccss_standard": "7.SP.B.3"
         },
         {
           "id": "si_004",
@@ -1518,7 +2014,8 @@
           "answer_type": "numeric",
           "answer_formula": "c * b / 100",
           "topic": "statistics_probability",
-          "formatFamily": "data_interpretation"
+          "formatFamily": "data_interpretation",
+          "ccss_standard": "7.SP.B.4"
         },
         {
           "id": "si_005",
@@ -1543,7 +2040,8 @@
           "answer_type": "numeric",
           "answer_formula": "abs(a - c) / m",
           "topic": "statistics_probability",
-          "formatFamily": "mean"
+          "formatFamily": "mean",
+          "ccss_standard": "7.SP.A.1"
         },
         {
           "id": "si_006",
@@ -1569,7 +2067,79 @@
           "answer_type": "numeric",
           "answer_formula": "c * b / a",
           "topic": "statistics_probability",
-          "formatFamily": "statistical_inference"
+          "formatFamily": "statistical_inference",
+          "ccss_standard": "7.SP.A.2"
+        },
+        {
+          "id": "ccss7_009",
+          "type": "APPLY",
+          "problem": "In a random sample of {n} students, {k} prefer soccer. Based on this sample, about how many of {p} students in the school prefer soccer?",
+          "constraints": {
+            "n": [
+              20,
+              50
+            ],
+            "k": [
+              5,
+              25
+            ],
+            "p": [
+              200,
+              800
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "(k * p) / n",
+          "topic": "statistics_probability",
+          "formatFamily": "statistical_inference",
+          "ccss_standard": "7.SP.A.2",
+          "generation_note": "prefer (k*p) divisible by n"
+        },
+        {
+          "id": "ccss7_010",
+          "type": "APPLY",
+          "problem": "A sample of {n} voters includes {k} who support a proposal. Estimate supporters among {p} voters.",
+          "constraints": {
+            "n": [
+              25,
+              100
+            ],
+            "k": [
+              10,
+              60
+            ],
+            "p": [
+              500,
+              2000
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "(k * p) / n",
+          "topic": "statistics_probability",
+          "formatFamily": "statistical_inference",
+          "ccss_standard": "7.SP.A.2",
+          "generation_note": "prefer exact integer estimate"
+        },
+        {
+          "id": "gap7_spb4_001",
+          "type": "COMPARE",
+          "problem": "Sample A mean word length is {a} letters. Sample B mean is {b} letters. How much greater is Sample A's mean than Sample B's?",
+          "constraints": {
+            "a": [
+              5,
+              12
+            ],
+            "b": [
+              3,
+              10
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a - b",
+          "topic": "statistics_probability",
+          "formatFamily": "sample_mean_compare",
+          "ccss_standard": "7.SP.B.4",
+          "constraints_note": "prefer a > b"
         }
       ]
     }

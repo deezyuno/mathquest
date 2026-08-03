@@ -47,7 +47,8 @@
           "answer_type": "fraction_simplified",
           "answer_formula": "(a * d + c * b) / (b * d)",
           "topic": "fractions",
-          "formatFamily": "fraction_addition"
+          "formatFamily": "fraction_addition",
+          "ccss_standard": "5.NF.A.1"
         },
         {
           "id": "fm_002",
@@ -80,7 +81,8 @@
           "answer_type": "fraction_simplified",
           "answer_formula": "((a * c + b) * e - d * c) / (c * e)",
           "topic": "fractions",
-          "formatFamily": "fraction_operations"
+          "formatFamily": "fraction_operations",
+          "ccss_standard": "5.NF.A.1"
         },
         {
           "id": "fm_003",
@@ -107,7 +109,8 @@
           "answer_type": "mixed_number",
           "answer_formula": "(a + b/c) * d",
           "topic": "fractions",
-          "formatFamily": "fraction_multiplication"
+          "formatFamily": "fraction_multiplication",
+          "ccss_standard": "5.NF.B.4"
         },
         {
           "id": "fm_004",
@@ -135,7 +138,8 @@
           "answer_type": "mixed_number",
           "answer_formula": "((a * c + b) * d) / c",
           "topic": "fractions",
-          "formatFamily": "fraction_operations"
+          "formatFamily": "fraction_operations",
+          "ccss_standard": "5.NF.A.1"
         },
         {
           "id": "fm_005",
@@ -164,7 +168,8 @@
           "answer_type": "fraction_simplified",
           "answer_formula": "(a * d - c * b) / (b * d)",
           "topic": "fractions",
-          "formatFamily": "fraction_operations"
+          "formatFamily": "fraction_operations",
+          "ccss_standard": "5.NF.A.1"
         },
         {
           "id": "fm_006",
@@ -193,7 +198,8 @@
           "answer_type": "fraction_simplified",
           "answer_formula": "(c * b - a * d) / (b * d)",
           "topic": "fractions",
-          "formatFamily": "fraction_addition"
+          "formatFamily": "fraction_addition",
+          "ccss_standard": "5.NF.A.1"
         },
         {
           "id": "fm_007",
@@ -222,7 +228,8 @@
           "answer_type": "fraction_simplified",
           "answer_formula": "(a * d - c * b) / (b * d)",
           "topic": "fractions",
-          "formatFamily": "fraction_comparison"
+          "formatFamily": "fraction_comparison",
+          "ccss_standard": "5.NF.A.1"
         },
         {
           "id": "fm_008",
@@ -242,7 +249,8 @@
           "answer_type": "numeric",
           "answer_formula": "a * b",
           "topic": "fractions",
-          "formatFamily": "fraction_operations"
+          "formatFamily": "fraction_operations",
+          "ccss_standard": "5.NF.B.7"
         },
         {
           "id": "fm_009",
@@ -262,7 +270,8 @@
           "answer_type": "fraction_simplified",
           "answer_formula": "1 / (a * b)",
           "topic": "fractions",
-          "formatFamily": "fraction_division"
+          "formatFamily": "fraction_division",
+          "ccss_standard": "5.NF.B.7"
         },
         {
           "id": "fm_010",
@@ -290,7 +299,8 @@
           "answer_type": "fraction_simplified",
           "answer_formula": "(a * d) / (b * c)",
           "topic": "fractions",
-          "formatFamily": "fraction_division"
+          "formatFamily": "fraction_division",
+          "ccss_standard": "5.NF.B.7"
         },
         {
           "id": "fm_011",
@@ -311,7 +321,57 @@
           "answer_type": "numeric",
           "answer_formula": "a * b",
           "topic": "fractions",
-          "formatFamily": "fraction_operations"
+          "formatFamily": "fraction_operations",
+          "ccss_standard": "5.NF.B.7"
+        },
+        {
+          "id": "m5x_010",
+          "type": "COMPUTE",
+          "problem": "Compute {a}/{b} + {c}/{b}. Enter as a simplified fraction.",
+          "constraints": {
+            "a": [
+              1,
+              8
+            ],
+            "b": [
+              3,
+              12
+            ],
+            "c": [
+              1,
+              8
+            ]
+          },
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a + c) / b",
+          "topic": "fractions",
+          "formatFamily": "fraction_addition",
+          "ccss_standard": "5.NF.A.1"
+        },
+        {
+          "id": "m5x_011",
+          "type": "APPLY",
+          "problem": "A trail is {a}/{b} mile long. Jordan walks {c}/{b} mile. How much of the trail remains? Enter a simplified fraction.",
+          "constraints": {
+            "a": [
+              5,
+              11
+            ],
+            "b": [
+              6,
+              12
+            ],
+            "c": [
+              1,
+              4
+            ]
+          },
+          "answer_type": "fraction_simplified",
+          "answer_formula": "(a - c) / b",
+          "topic": "fractions",
+          "formatFamily": "fraction_operations",
+          "ccss_standard": "5.NF.A.2",
+          "generation_note": "require a > c"
         }
       ]
     },
@@ -347,7 +407,8 @@
           "generation_note": "b gives hundredths/thousandths digits from expanded fraction form",
           "answer_formula": "a + b/1000 + c/100 + d/10",
           "topic": "percent_decimals",
-          "formatFamily": "decimal_addition"
+          "formatFamily": "decimal_addition",
+          "ccss_standard": "5.NBT.B.7"
         },
         {
           "id": "dpv_002",
@@ -367,7 +428,8 @@
           "answer_type": "numeric",
           "answer_formula": "(a + b / 100) * 10",
           "topic": "percent_decimals",
-          "formatFamily": "decimal_powers_of_ten"
+          "formatFamily": "decimal_powers_of_ten",
+          "ccss_standard": "5.NBT.A.1"
         },
         {
           "id": "dpv_003",
@@ -387,7 +449,8 @@
           "answer_formula": "round((a + b/10000)*100)/100",
           "constraints_note": "b is four decimal digits (ten-thousandths)",
           "topic": "percent_decimals",
-          "formatFamily": "decimal_rounding"
+          "formatFamily": "decimal_rounding",
+          "ccss_standard": "5.NBT.B.7"
         },
         {
           "id": "dpv_004",
@@ -415,7 +478,8 @@
           "answer_type": "numeric",
           "answer_formula": "1",
           "topic": "percent_decimals",
-          "formatFamily": "decimal_comparison"
+          "formatFamily": "decimal_comparison",
+          "ccss_standard": "5.NBT.A.3"
         },
         {
           "id": "dpv_005",
@@ -434,7 +498,8 @@
           "answer_type": "numeric",
           "answer_formula": "b % 10",
           "topic": "percent_decimals",
-          "formatFamily": "decimal_place_value"
+          "formatFamily": "decimal_place_value",
+          "ccss_standard": "5.NBT.B.7"
         },
         {
           "id": "dpv_006",
@@ -454,7 +519,8 @@
           "answer_type": "numeric",
           "answer_formula": "a * pow(10, b)",
           "topic": "number_sense_place_value",
-          "formatFamily": "scientific_notation_multiply"
+          "formatFamily": "scientific_notation_multiply",
+          "ccss_standard": "8.EE.A.4"
         },
         {
           "id": "dpv_007",
@@ -478,7 +544,8 @@
           "answer_type": "numeric",
           "answer_formula": "(a + b / 100) * c",
           "topic": "percent_decimals",
-          "formatFamily": "decimal_multiplication"
+          "formatFamily": "decimal_multiplication",
+          "ccss_standard": "5.NBT.B.7"
         },
         {
           "id": "dpv_008",
@@ -506,7 +573,8 @@
           "answer_type": "numeric",
           "answer_formula": "(a + b/100) + (c + d/100)",
           "topic": "percent_decimals",
-          "formatFamily": "decimal_addition"
+          "formatFamily": "decimal_addition",
+          "ccss_standard": "5.NBT.B.7"
         },
         {
           "id": "dpv_009",
@@ -534,7 +602,84 @@
           "answer_type": "numeric",
           "answer_formula": "(a + b / 100) + (c + d / 100)",
           "topic": "percent_decimals",
-          "formatFamily": "decimal_addition"
+          "formatFamily": "decimal_addition",
+          "ccss_standard": "5.NBT.B.7"
+        },
+        {
+          "id": "m5x_007",
+          "type": "COMPUTE",
+          "problem": "Compute {a}.{b} × 10, where {b} is two digits (10–99).",
+          "constraints": {
+            "a": [
+              1,
+              50
+            ],
+            "b": [
+              10,
+              99
+            ]
+          },
+          "answer_type": "decimal",
+          "answer_formula": "(a * 100 + b) / 10",
+          "topic": "percent_decimals",
+          "formatFamily": "decimal_powers_of_ten",
+          "ccss_standard": "5.NBT.A.2"
+        },
+        {
+          "id": "m5x_008",
+          "type": "COMPUTE",
+          "problem": "Subtract {a}.{b} − {c}.{d}, where b and d are hundredths (10–99). Enter the difference as a decimal.",
+          "constraints": {
+            "a": [
+              5,
+              30
+            ],
+            "b": [
+              50,
+              99
+            ],
+            "c": [
+              1,
+              10
+            ],
+            "d": [
+              10,
+              49
+            ]
+          },
+          "answer_type": "decimal",
+          "answer_formula": "(a * 100 + b - (c * 100 + d)) / 100",
+          "topic": "percent_decimals",
+          "formatFamily": "decimal_subtraction",
+          "ccss_standard": "5.NBT.B.7"
+        },
+        {
+          "id": "m5x_009",
+          "type": "COMPARE",
+          "problem": "Which is greater: {a}.{b} or {c}.{d}? Enter the greater decimal value. (b,d are hundredths 10–99.)",
+          "constraints": {
+            "a": [
+              1,
+              20
+            ],
+            "b": [
+              10,
+              99
+            ],
+            "c": [
+              1,
+              20
+            ],
+            "d": [
+              10,
+              99
+            ]
+          },
+          "answer_type": "decimal",
+          "answer_formula": "max(a * 100 + b, c * 100 + d) / 100",
+          "topic": "number_sense_place_value",
+          "formatFamily": "decimal_comparison",
+          "ccss_standard": "5.NBT.A.3"
         }
       ]
     },
@@ -570,7 +715,8 @@
           "answer_type": "numeric",
           "answer_formula": "a - b * c - d",
           "topic": "add_subtract_multiply",
-          "formatFamily": "whole_number_subtraction"
+          "formatFamily": "whole_number_subtraction",
+          "ccss_standard": "5.NBT.B.5"
         },
         {
           "id": "ms_002",
@@ -595,7 +741,8 @@
           "answer_formula": "c - (a + b)",
           "constraints_note": "c >= a + b",
           "topic": "add_subtract_multiply",
-          "formatFamily": "whole_number_subtraction"
+          "formatFamily": "whole_number_subtraction",
+          "ccss_standard": "5.NBT.B.5"
         },
         {
           "id": "ms_003",
@@ -624,7 +771,8 @@
           "answer_formula": "a * (b + c) - d",
           "constraints_note": "a*(b+c) > d",
           "topic": "add_subtract_multiply",
-          "formatFamily": "whole_number_subtraction"
+          "formatFamily": "whole_number_subtraction",
+          "ccss_standard": "5.NBT.B.5"
         },
         {
           "id": "ms_004",
@@ -649,7 +797,8 @@
           "answer_type": "numeric",
           "answer_formula": "(a - b) / c",
           "topic": "add_subtract_multiply",
-          "formatFamily": "whole_number_arithmetic"
+          "formatFamily": "whole_number_arithmetic",
+          "ccss_standard": "5.NBT.B.5"
         },
         {
           "id": "ms_005",
@@ -670,7 +819,8 @@
           "answer_type": "numeric",
           "answer_formula": "(a + b) / 2",
           "topic": "add_subtract_multiply",
-          "formatFamily": "whole_number_arithmetic"
+          "formatFamily": "whole_number_arithmetic",
+          "ccss_standard": "5.NBT.B.5"
         },
         {
           "id": "ms_006",
@@ -692,7 +842,8 @@
           "answer_type": "numeric",
           "answer_formula": "a / b",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "unit_rate"
+          "formatFamily": "unit_rate",
+          "ccss_standard": "6.RP.A.2"
         },
         {
           "id": "ms_007",
@@ -715,7 +866,8 @@
           "answer_type": "numeric",
           "answer_formula": "a * b + c",
           "topic": "add_subtract_multiply",
-          "formatFamily": "whole_number_subtraction"
+          "formatFamily": "whole_number_subtraction",
+          "ccss_standard": "5.NBT.B.5"
         },
         {
           "id": "ms_008",
@@ -740,7 +892,8 @@
           "answer_type": "numeric",
           "answer_formula": "abs(c - a)",
           "topic": "geometry_measurement",
-          "formatFamily": "coordinate_distance"
+          "formatFamily": "coordinate_distance",
+          "ccss_standard": "6.NS.C.8"
         },
         {
           "id": "ms_009",
@@ -765,7 +918,82 @@
           "answer_type": "numeric",
           "answer_formula": "a * b * c",
           "topic": "geometry_measurement",
-          "formatFamily": "rectangular_prism_volume"
+          "formatFamily": "rectangular_prism_volume",
+          "ccss_standard": "5.MD.C.5"
+        },
+        {
+          "id": "m5x_004",
+          "type": "APPLY",
+          "problem": "Maya buys {a} packs of markers at ${b} each and a notebook for ${c}. What is her total cost?",
+          "constraints": {
+            "a": [
+              2,
+              8
+            ],
+            "b": [
+              2,
+              9
+            ],
+            "c": [
+              1,
+              12
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a * b + c",
+          "topic": "add_subtract_multiply",
+          "formatFamily": "multi_step_money",
+          "ccss_standard": "5.NBT.B.5"
+        },
+        {
+          "id": "m5x_005",
+          "type": "APPLY",
+          "problem": "A school orders {a} boxes with {b} pencils each, then gives away {c} pencils. How many pencils remain?",
+          "constraints": {
+            "a": [
+              3,
+              12
+            ],
+            "b": [
+              8,
+              24
+            ],
+            "c": [
+              5,
+              40
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a * b - c",
+          "topic": "add_subtract_multiply",
+          "formatFamily": "multi_step_inventory",
+          "ccss_standard": "5.NBT.B.5",
+          "generation_note": "require a*b > c"
+        },
+        {
+          "id": "m5x_006",
+          "type": "APPLY",
+          "problem": "A trip is {a} miles. After driving {b} miles each day for {c} days, how many miles remain?",
+          "constraints": {
+            "a": [
+              100,
+              400
+            ],
+            "b": [
+              20,
+              60
+            ],
+            "c": [
+              2,
+              5
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a - b * c",
+          "topic": "add_subtract_multiply",
+          "formatFamily": "whole_number_multi_step",
+          "ccss_standard": "5.NBT.B.5",
+          "generation_note": "require a > b*c"
         }
       ]
     },
@@ -789,7 +1017,8 @@
           "answer_type": "numeric",
           "answer_formula": "-a",
           "topic": "integers",
-          "formatFamily": "integer_opposite"
+          "formatFamily": "integer_opposite",
+          "ccss_standard": "6.NS.C.5"
         },
         {
           "id": "pn_002",
@@ -810,7 +1039,8 @@
           "answer_type": "numeric",
           "answer_formula": "a - b",
           "topic": "integers",
-          "formatFamily": "integer_temperature_change"
+          "formatFamily": "integer_temperature_change",
+          "ccss_standard": "6.NS.C.5"
         },
         {
           "id": "pn_003",
@@ -830,7 +1060,8 @@
           "answer_type": "numeric",
           "answer_formula": "abs(a - b)",
           "topic": "integers",
-          "formatFamily": "integer_subtraction"
+          "formatFamily": "integer_subtraction",
+          "ccss_standard": "6.NS.C.5"
         },
         {
           "id": "pn_004",
@@ -846,7 +1077,8 @@
           "answer_type": "numeric",
           "answer_formula": "a",
           "topic": "integers",
-          "formatFamily": "integer_absolute_value"
+          "formatFamily": "integer_absolute_value",
+          "ccss_standard": "6.NS.C.6"
         },
         {
           "id": "pn_005",
@@ -865,7 +1097,8 @@
           "answer_type": "numeric",
           "answer_formula": "a + b",
           "topic": "integers",
-          "formatFamily": "integer_operations"
+          "formatFamily": "integer_operations",
+          "ccss_standard": "6.NS.C.5"
         },
         {
           "id": "pn_006",
@@ -882,7 +1115,8 @@
           "answer_type": "numeric",
           "answer_formula": "-a",
           "topic": "integers",
-          "formatFamily": "integer_opposite"
+          "formatFamily": "integer_opposite",
+          "ccss_standard": "6.NS.C.5"
         },
         {
           "id": "pn_007",
@@ -909,7 +1143,8 @@
           "answer_type": "numeric",
           "answer_formula": "min(a, -b, c, -d)",
           "topic": "integers",
-          "formatFamily": "integer_extreme_value"
+          "formatFamily": "integer_extreme_value",
+          "ccss_standard": "6.NS.C.5"
         }
       ]
     },
@@ -937,7 +1172,8 @@
           "answer_type": "numeric",
           "answer_formula": "b / a",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "ratio_comparison"
+          "formatFamily": "ratio_comparison",
+          "ccss_standard": "6.RP.A.1"
         },
         {
           "id": "pr_002",
@@ -958,7 +1194,8 @@
           "answer_type": "numeric",
           "answer_formula": "b / a",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "ratio_rate_proportion"
+          "formatFamily": "ratio_rate_proportion",
+          "ccss_standard": "6.RP.A.2"
         },
         {
           "id": "pr_003",
@@ -983,7 +1220,8 @@
           "answer_type": "numeric",
           "answer_formula": "c * b / a",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "ratio_comparison"
+          "formatFamily": "ratio_comparison",
+          "ccss_standard": "6.RP.A.1"
         },
         {
           "id": "pr_004",
@@ -1012,7 +1250,8 @@
           "answer_type": "numeric",
           "answer_formula": "1",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "ratio_rate_proportion"
+          "formatFamily": "ratio_rate_proportion",
+          "ccss_standard": "6.RP.A.2"
         },
         {
           "id": "pr_005",
@@ -1036,7 +1275,8 @@
           "answer_formula": "c * a / (a + b)",
           "constraints_note": "c is a multiple of (a+b)",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "ratio_rate_proportion"
+          "formatFamily": "ratio_rate_proportion",
+          "ccss_standard": "6.RP.A.1"
         },
         {
           "id": "pr_006",
@@ -1061,7 +1301,74 @@
           "answer_formula": "c * b / a",
           "context": "music",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "ratio_comparison"
+          "formatFamily": "ratio_comparison",
+          "ccss_standard": "6.RP.A.1"
+        },
+        {
+          "id": "m5x_001",
+          "type": "APPLY",
+          "problem": "The ratio of red to blue marbles is {a} to {b}. If there are {a} red marbles, how many blue marbles are there?",
+          "constraints": {
+            "a": [
+              2,
+              12
+            ],
+            "b": [
+              2,
+              12
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "b",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "ratio_language",
+          "ccss_standard": "6.RP.A.1"
+        },
+        {
+          "id": "m5x_002",
+          "type": "COMPUTE",
+          "problem": "A recipe uses {a} cups flour for every {b} cups sugar. How many cups of flour are needed for {c} cups sugar?",
+          "constraints": {
+            "a": [
+              2,
+              8
+            ],
+            "b": [
+              2,
+              6
+            ],
+            "c": [
+              4,
+              18
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a * (c // b)",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "ratio_rate_proportion",
+          "ccss_standard": "6.RP.A.3",
+          "generation_note": "require c divisible by b"
+        },
+        {
+          "id": "m5x_003",
+          "type": "COMPUTE",
+          "problem": "Find the unit rate: {a} miles in {b} hours. How many miles per hour?",
+          "constraints": {
+            "a": [
+              30,
+              180
+            ],
+            "b": [
+              2,
+              6
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a / b",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "unit_rate",
+          "ccss_standard": "6.RP.A.2",
+          "generation_note": "prefer a divisible by b"
         }
       ]
     },
@@ -1089,7 +1396,8 @@
           "answer_type": "numeric",
           "answer_formula": "a + b",
           "topic": "expressions_equations",
-          "formatFamily": "algebraic_substitution_linear"
+          "formatFamily": "algebraic_substitution_linear",
+          "ccss_standard": "6.EE.A.2"
         },
         {
           "id": "pa_002",
@@ -1108,7 +1416,8 @@
           "answer_type": "numeric",
           "answer_formula": "a * b",
           "topic": "expressions_equations",
-          "formatFamily": "algebraic_substitution_linear"
+          "formatFamily": "algebraic_substitution_linear",
+          "ccss_standard": "6.EE.A.2"
         },
         {
           "id": "pa_003",
@@ -1124,7 +1433,8 @@
           "answer_type": "numeric",
           "answer_formula": "a * a",
           "topic": "expressions_equations",
-          "formatFamily": "algebraic_substitution_exponent"
+          "formatFamily": "algebraic_substitution_exponent",
+          "ccss_standard": "6.EE.A.2"
         },
         {
           "id": "pa_004",
@@ -1145,7 +1455,8 @@
           "answer_type": "numeric",
           "answer_formula": "a * b",
           "topic": "expressions_equations",
-          "formatFamily": "algebraic_substitution_linear"
+          "formatFamily": "algebraic_substitution_linear",
+          "ccss_standard": "6.EE.A.2"
         },
         {
           "id": "pa_005",
@@ -1164,7 +1475,8 @@
           "answer_type": "numeric",
           "answer_formula": "2 * a + b",
           "topic": "expressions_equations",
-          "formatFamily": "algebraic_substitution_linear"
+          "formatFamily": "algebraic_substitution_linear",
+          "ccss_standard": "6.EE.A.2"
         },
         {
           "id": "pa_006",
@@ -1187,7 +1499,8 @@
           "answer_type": "numeric",
           "answer_formula": "b * a - c",
           "topic": "expressions_equations",
-          "formatFamily": "algebraic_substitution_linear"
+          "formatFamily": "algebraic_substitution_linear",
+          "ccss_standard": "6.EE.A.2"
         },
         {
           "id": "pa_007",
@@ -1212,7 +1525,33 @@
           "answer_type": "numeric",
           "answer_formula": "a * c + b",
           "topic": "expressions_equations",
-          "formatFamily": "algebraic_substitution_linear"
+          "formatFamily": "algebraic_substitution_linear",
+          "ccss_standard": "6.EE.A.2"
+        },
+        {
+          "id": "m5x_012",
+          "type": "COMPUTE",
+          "problem": "Evaluate {a}² + {b} × {c}.",
+          "constraints": {
+            "a": [
+              2,
+              9
+            ],
+            "b": [
+              2,
+              8
+            ],
+            "c": [
+              2,
+              8
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a * a + b * c",
+          "topic": "order_of_operations",
+          "formatFamily": "numeric_order_operations_exponents",
+          "ccss_standard": "6.EE.A.1",
+          "generation_note": "preview exponents with numeric OoO; no variable substitution"
         }
       ]
     }

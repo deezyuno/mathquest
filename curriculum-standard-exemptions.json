@@ -1,0 +1,32 @@
+[
+  {
+    "grade": "6th",
+    "standard": "6.SP.B.4",
+    "description": "Display numerical data in plots on a number line, including dot plots, histograms, and box plots.",
+    "reason": "Requires constructing dot plots, histograms, or box plots; the app cannot accept drawn displays."
+  },
+  {
+    "grade": "7th",
+    "standard": "7.G.A.2",
+    "description": "Draw geometric shapes with given conditions; focus on constructing triangles from three measures of angles or sides.",
+    "reason": "Requires freehand/ruler/protractor constructions of shapes; drawing is unsupported."
+  },
+  {
+    "grade": "8th",
+    "standard": "8.G.A.2",
+    "description": "Understand congruence via sequences of rotations, reflections, and translations; describe a congruence sequence.",
+    "reason": "Primary outcome is describing a congruence transformation sequence in words, not a single number."
+  },
+  {
+    "grade": "8th",
+    "standard": "8.G.A.4",
+    "description": "Understand similarity via rigid motions and dilations; describe a sequence that exhibits similarity.",
+    "reason": "Primary outcome is describing a similarity transformation sequence in words, not a single number."
+  },
+  {
+    "grade": "8th",
+    "standard": "8.G.B.6",
+    "description": "Explain a proof of the Pythagorean Theorem and its converse.",
+    "reason": "Requires explaining a proof of the Pythagorean Theorem or its converse in free text."
+  }
+]

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Validate curriculum topic / formatFamily metadata across all seven grades.
+ * Validate curriculum topic / formatFamily / ccss_standard coverage.
  * Usage: node scripts/validate-curriculum.mjs
  */
 import fs from "node:fs";
@@ -15,7 +15,9 @@ import {
 } from "../src/curriculum-engine.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const CUR = path.join(__dirname, "..", "curriculum");
+const ROOT = path.join(__dirname, "..");
+const CUR = path.join(ROOT, "curriculum");
+const DATA = path.join(ROOT, "data");
 
 const FILES = [
   ["5th", "5th.json"],
@@ -27,9 +29,17 @@ const FILES = [
   ["8th", "8th.json"],
 ];
 
-const VALID = new Set(CURRICULUM_TOPICS);
+const VALID_TOPICS = new Set(CURRICULUM_TOPICS);
+const ALLOWED_ANSWER_TYPES = new Set([
+  "numeric",
+  "fraction",
+  "fraction_simplified",
+  "decimal",
+  "decimal_1dp",
+  "mixed_number",
+  "unit_rate",
+]);
 
-/** Known regression expectations: [grade, templateId, expectedTopic] */
 const REGRESSION = [
   ["6th", "exp_001", "expressions_equations"],
   ["6th", "exp_002", "order_of_operations"],
@@ -52,6 +62,10 @@ const REGRESSION = [
 
 const errors = [];
 
+function loadJson(p) {
+  return JSON.parse(fs.readFileSync(p, "utf8"));
+}
+
 function findTemplate(data, tid) {
   for (const skill of data.skills) {
     for (const t of skill.templates) {
@@ -61,50 +75,71 @@ function findTemplate(data, tid) {
   return null;
 }
 
+function band(grade) {
+  if (grade === "mid-5th") return "5th";
+  if (grade === "mid-6th") return "6th";
+  if (grade === "mid-7th") return "7th";
+  return grade;
+}
+
+const catalog = loadJson(path.join(DATA, "ccss_leaf_standards.json"));
+const validStds = new Set(catalog.map((s) => s.standard));
+const exemptions = loadJson(path.join(ROOT, "curriculum-standard-exemptions.json"));
+const exemptSet = new Set(exemptions.map((e) => e.standard));
+
+const coverageByBand = new Map();
 for (const [grade, file] of FILES) {
-  const full = path.join(CUR, file);
-  if (!fs.existsSync(full)) {
-    errors.push(`Missing file ${file}`);
-    continue;
-  }
-  const data = JSON.parse(fs.readFileSync(full, "utf8"));
-  if (data.grade !== grade) {
-    errors.push(`${file}: grade field ${data.grade} !== ${grade}`);
-  }
-
+  const data = loadJson(path.join(CUR, file));
+  if (data.grade !== grade) errors.push(`${file}: grade mismatch`);
   const ids = new Map();
-  const topicCounts = new Map();
-
   for (const skill of data.skills) {
     for (const t of skill.templates) {
       if (!t.topic) errors.push(`${grade}/${t.id}: missing topic`);
-      else if (!VALID.has(t.topic)) {
+      else if (!VALID_TOPICS.has(t.topic)) {
         errors.push(`${grade}/${t.id}: invalid topic ${t.topic}`);
       }
       if (!t.formatFamily || !String(t.formatFamily).trim()) {
         errors.push(`${grade}/${t.id}: missing formatFamily`);
       }
+      if (!t.ccss_standard) {
+        errors.push(`${grade}/${t.id}: missing ccss_standard`);
+      } else {
+        const codes = Array.isArray(t.ccss_standard)
+          ? t.ccss_standard
+          : [t.ccss_standard];
+        for (const c of codes) {
+          if (!validStds.has(c)) {
+            errors.push(`${grade}/${t.id}: invalid ccss_standard ${c}`);
+          }
+          const b = band(grade);
+          if (!coverageByBand.has(b)) coverageByBand.set(b, new Map());
+          const m = coverageByBand.get(b);
+          if (!m.has(c)) m.set(c, []);
+          m.get(c).push({ id: t.id, family: t.formatFamily });
+        }
+      }
       if (!(t.problem || "").trim()) {
-        errors.push(`${grade}/${t.id}: blank problem prompt`);
+        errors.push(`${grade}/${t.id}: blank problem`);
       }
-      if (ids.has(t.id)) {
-        errors.push(`${grade}: duplicate template id ${t.id}`);
+      if (!t.answer_formula) {
+        errors.push(`${grade}/${t.id}: missing answer_formula`);
       }
+      if (t.answer_type && !ALLOWED_ANSWER_TYPES.has(t.answer_type)) {
+        errors.push(`${grade}/${t.id}: unsupported answer_type ${t.answer_type}`);
+      }
+      if (ids.has(t.id)) errors.push(`${grade}: duplicate id ${t.id}`);
       ids.set(t.id, true);
-      topicCounts.set(t.topic, (topicCounts.get(t.topic) || 0) + 1);
     }
   }
 
   const flat = flattenTemplates(data);
   for (const topic of visibleTopicsForGrade(flat)) {
     if (topic === "mixed_practice") continue;
-    const n = filterByTopic(flat, topic).length;
-    if (n === 0) {
+    if (filterByTopic(flat, topic).length === 0) {
       errors.push(`${grade}: visible topic ${topic} has zero templates`);
     }
   }
 
-  // Smoke: select each visible topic once
   for (const topic of visibleTopicsForGrade(flat)) {
     try {
       const { template } = selectTemplate(data, {
@@ -112,9 +147,9 @@ for (const [grade, file] of FILES) {
         selectedTopic: topic,
         random: () => 0.42,
       });
-      if (!template) errors.push(`${grade}/${topic}: select returned undefined`);
+      if (!template) errors.push(`${grade}/${topic}: undefined template`);
       if (!(template.problem || "").trim()) {
-        errors.push(`${grade}/${topic}: select returned blank prompt`);
+        errors.push(`${grade}/${topic}: blank selected prompt`);
       }
     } catch (e) {
       errors.push(`${grade}/${topic}: select failed: ${e.message}`);
@@ -122,27 +157,56 @@ for (const [grade, file] of FILES) {
   }
 }
 
+// Official standard coverage (non-exempt must have >=1 template)
+for (const meta of catalog) {
+  if (!meta.keypadFriendly || exemptSet.has(meta.standard)) continue;
+  const hits = coverageByBand.get(meta.grade)?.get(meta.standard) || [];
+  if (hits.length === 0) {
+    errors.push(
+      `Official standard ${meta.standard} has zero coverage and is not exempted`
+    );
+  }
+}
+
+// Mid-6th Order of Operations requirements
+{
+  const mid6 = loadJson(path.join(CUR, "mid6th.json"));
+  const oo = flattenTemplates(mid6).filter(
+    (t) => t.topic === "order_of_operations"
+  );
+  if (oo.length < 8) {
+    errors.push(`mid-6th order_of_operations has ${oo.length} templates; need >= 8`);
+  }
+  const fams = new Set(oo.map((t) => t.formatFamily));
+  if (fams.size < 5) {
+    errors.push(
+      `mid-6th order_of_operations has ${fams.size} families; need >= 5`
+    );
+  }
+  for (const t of oo) {
+    if (/when\s+[a-z]\s*=/i.test(t.problem || "")) {
+      errors.push(`${t.id}: algebraic substitution misfiled as OoO`);
+    }
+  }
+}
+
 for (const [grade, tid, expected] of REGRESSION) {
   const file = FILES.find(([g]) => g === grade)?.[1];
-  const data = JSON.parse(fs.readFileSync(path.join(CUR, file), "utf8"));
+  const data = loadJson(path.join(CUR, file));
   const t = findTemplate(data, tid);
   if (!t) {
-    errors.push(`Regression: ${grade}/${tid} not found`);
+    errors.push(`Regression missing ${grade}/${tid}`);
     continue;
   }
   if (t.topic !== expected) {
-    errors.push(
-      `Regression: ${grade}/${tid} topic=${t.topic} expected=${expected}`
-    );
+    errors.push(`Regression ${grade}/${tid} topic=${t.topic} expected=${expected}`);
   }
-  // Algebraic substitution must not be order_of_operations
-  if (
-    expected === "expressions_equations" &&
-    (tid.startsWith("ee_") || tid.startsWith("exp_"))
-  ) {
-    if (t.topic === "order_of_operations" && tid !== "exp_002") {
-      errors.push(`Regression: ${grade}/${tid} wrongly in order_of_operations`);
-    }
+}
+
+// Exemptions must have reasons
+for (const e of exemptions) {
+  if (!e.reason || !String(e.reason).trim()) {
+    errors.push(`Exemption ${e.standard} missing reason`);
   }
 }
 
@@ -152,4 +216,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log("validate:curriculum OK — all seven grades passed");
+console.log("validate:curriculum OK — standards coverage + metadata passed");

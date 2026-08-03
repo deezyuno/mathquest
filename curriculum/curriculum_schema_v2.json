@@ -11,7 +11,8 @@
     "answer_type",
     "answer_formula",
     "topic",
-    "formatFamily"
+    "formatFamily",
+    "ccss_standard"
   ],
 
   "template_metadata": {
@@ -38,6 +39,11 @@
       "required": true,
       "description": "Structural problem family for anti-repetition (stable snake_case). Do not encode numeric parameters.",
       "pattern": "^[a-z][a-z0-9_]*$"
+    },
+    "ccss_standard": {
+      "required": true,
+      "description": "Official CCSS leaf standard code or array of codes. Do not infer at runtime.",
+      "type": ["string", "array"]
     }
   },
 

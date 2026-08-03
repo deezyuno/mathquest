@@ -1,0 +1,3683 @@
+{
+  "5th": {
+    "solidify": [
+      {
+        "grade": "5th",
+        "standard": "5.OA.A.1",
+        "description": "Use parentheses, brackets, or braces in numerical expressions, and evaluate expressions with these symbols.",
+        "appTopic": "order_of_operations",
+        "templateIds": [
+          "wn_011",
+          "wn_012",
+          "wn_023",
+          "wn_024",
+          "wn_025",
+          "wn_026",
+          "wn_027",
+          "wn_028"
+        ],
+        "formatFamilies": [
+          "numeric_order_operations_multistep",
+          "numeric_order_operations_parentheses"
+        ],
+        "templateCount": 8,
+        "formatFamilyCount": 2,
+        "coverageStatus": "adequate",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.OA.A.2",
+        "description": "Write simple expressions that record calculations with numbers, and interpret numerical expressions without evaluating them.",
+        "appTopic": "order_of_operations",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.OA.B.3",
+        "description": "Generate two numerical patterns using two given rules; identify relationships between corresponding terms and form ordered pairs.",
+        "appTopic": "expressions_equations",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.NBT.A.1",
+        "description": "Recognize that in a multi-digit number, a digit in one place represents 10 times as much as in the place to its right and 1/10 of the place to its left.",
+        "appTopic": "number_sense_place_value",
+        "templateIds": [
+          "pv_001",
+          "pv_002",
+          "pv_004",
+          "pv_008"
+        ],
+        "formatFamilies": [
+          "place_value",
+          "scientific_notation_divide",
+          "scientific_notation_multiply"
+        ],
+        "templateCount": 4,
+        "formatFamilyCount": 3,
+        "coverageStatus": "adequate",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.NBT.A.2",
+        "description": "Explain patterns when multiplying or dividing by powers of 10; use whole-number exponents to denote powers of 10.",
+        "appTopic": "number_sense_place_value",
+        "templateIds": [
+          "pv_005"
+        ],
+        "formatFamilies": [
+          "scientific_notation_multiply"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.NBT.A.3",
+        "description": "Read, write, and compare decimals to thousandths.",
+        "appTopic": "number_sense_place_value",
+        "templateIds": [
+          "pv_003",
+          "pv_007"
+        ],
+        "formatFamilies": [
+          "number_sense"
+        ],
+        "templateCount": 2,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.NBT.A.4",
+        "description": "Use place value understanding to round decimals to any place.",
+        "appTopic": "number_sense_place_value",
+        "templateIds": [
+          "pv_006"
+        ],
+        "formatFamilies": [
+          "rounding"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.NBT.B.5",
+        "description": "Fluently multiply multi-digit whole numbers using the standard algorithm.",
+        "appTopic": "add_subtract_multiply",
+        "templateIds": [
+          "wn_001",
+          "wn_003",
+          "wn_005",
+          "wn_006",
+          "wn_007",
+          "wn_008",
+          "wn_010",
+          "wn_013",
+          "wn_014",
+          "wn_015"
+        ],
+        "formatFamilies": [
+          "whole_number_addition",
+          "whole_number_arithmetic",
+          "whole_number_multiplication"
+        ],
+        "templateCount": 10,
+        "formatFamilyCount": 3,
+        "coverageStatus": "strong",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.NBT.B.6",
+        "description": "Find whole-number quotients with up to four-digit dividends and two-digit divisors using place-value strategies.",
+        "appTopic": "division",
+        "templateIds": [
+          "wn_002",
+          "wn_004",
+          "wn_009",
+          "wn_016",
+          "wn_017",
+          "wn_018",
+          "wn_019",
+          "wn_020",
+          "wn_021",
+          "wn_022"
+        ],
+        "formatFamilies": [
+          "whole_number_division"
+        ],
+        "templateCount": 10,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.NBT.B.7",
+        "description": "Add, subtract, multiply, and divide decimals to hundredths using place-value strategies and written methods.",
+        "appTopic": "percent_decimals",
+        "templateIds": [
+          "dec_001",
+          "dec_002",
+          "dec_003",
+          "dec_004",
+          "dec_005",
+          "dec_006",
+          "dec_007",
+          "dec_008",
+          "dec_009",
+          "dec_010",
+          "dec_011",
+          "dec_012"
+        ],
+        "formatFamilies": [
+          "decimal_addition",
+          "decimal_division",
+          "decimal_multiplication",
+          "decimal_operations",
+          "decimal_powers_of_ten",
+          "decimal_rounding",
+          "decimal_subtraction"
+        ],
+        "templateCount": 12,
+        "formatFamilyCount": 7,
+        "coverageStatus": "strong",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.NF.A.1",
+        "description": "Add and subtract fractions with unlike denominators (including mixed numbers) by rewriting with like denominators.",
+        "appTopic": "fractions",
+        "templateIds": [
+          "fas_001",
+          "fas_002",
+          "fas_003",
+          "fas_004",
+          "fas_005",
+          "fas_007",
+          "fas_008",
+          "fas_009",
+          "fas_011",
+          "fmd_001",
+          "fmd_002",
+          "fmd_005",
+          "fmd_006",
+          "fmd_007",
+          "fmd_009",
+          "fmd_010"
+        ],
+        "formatFamilies": [
+          "fraction_addition",
+          "fraction_comparison",
+          "fraction_multiplication",
+          "fraction_operations"
+        ],
+        "templateCount": 16,
+        "formatFamilyCount": 4,
+        "coverageStatus": "strong",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.NF.A.2",
+        "description": "Solve word problems involving addition and subtraction of fractions with unlike denominators.",
+        "appTopic": "fractions",
+        "templateIds": [
+          "fas_006",
+          "fas_010"
+        ],
+        "formatFamilies": [
+          "fraction_operations"
+        ],
+        "templateCount": 2,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.NF.B.3",
+        "description": "Interpret a fraction as division of the numerator by the denominator; solve related word problems.",
+        "appTopic": "fractions",
+        "templateIds": [
+          "fmd_008"
+        ],
+        "formatFamilies": [
+          "fraction_division"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.NF.B.4",
+        "description": "Multiply a fraction or whole number by a fraction; find areas of rectangles with fractional side lengths.",
+        "appTopic": "fractions",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.NF.B.5",
+        "description": "Interpret multiplication as scaling by comparing product size based on the factors without always computing.",
+        "appTopic": "fractions",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.NF.B.6",
+        "description": "Solve real-world problems involving multiplication of fractions and mixed numbers.",
+        "appTopic": "fractions",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.NF.B.7",
+        "description": "Divide unit fractions by whole numbers and whole numbers by unit fractions; solve related real-world problems.",
+        "appTopic": "fractions",
+        "templateIds": [
+          "fmd_003",
+          "fmd_004"
+        ],
+        "formatFamilies": [
+          "fraction_division"
+        ],
+        "templateCount": 2,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.MD.A.1",
+        "description": "Convert among different-sized standard measurement units within a system and use conversions in multi-step problems.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.MD.B.2",
+        "description": "Make a line plot of fractional measurements and use fraction operations to solve problems from the data.",
+        "appTopic": "statistics_probability",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.MD.C.3",
+        "description": "Recognize volume as an attribute of solid figures and understand concepts of volume measurement with unit cubes.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.MD.C.4",
+        "description": "Measure volumes by counting unit cubes using cubic cm, cubic in, cubic ft, and improvised units.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [
+          "gv_009"
+        ],
+        "formatFamilies": [
+          "geometry_measurement"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.MD.C.5",
+        "description": "Relate volume to multiplication and addition; find volumes of rectangular prisms and additive solid figures.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [
+          "gv_001",
+          "gv_002",
+          "gv_003",
+          "gv_004",
+          "gv_005",
+          "gv_006",
+          "gv_007",
+          "gv_008",
+          "cp_001",
+          "cp_002",
+          "cp_003",
+          "cp_004",
+          "cp_005",
+          "cp_006",
+          "cp_007",
+          "cp_008",
+          "mc_001",
+          "mc_002",
+          "mc_003",
+          "mc_004",
+          "mc_005",
+          "mc_006",
+          "mc_007",
+          "mc_008",
+          "mc_009"
+        ],
+        "formatFamilies": [
+          "coordinate_plane",
+          "geometry_measurement",
+          "measurement_conversion",
+          "rectangular_prism_volume",
+          "volume"
+        ],
+        "templateCount": 25,
+        "formatFamilyCount": 5,
+        "coverageStatus": "strong",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.G.A.1",
+        "description": "Use perpendicular number lines (axes) to define a coordinate system and locate points by ordered pairs.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.G.A.2",
+        "description": "Represent real-world and mathematical problems by graphing points in the first quadrant and interpret coordinates.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.G.B.3",
+        "description": "Understand that attributes belonging to a category of two-dimensional figures also belong to all subcategories.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.G.B.4",
+        "description": "Classify two-dimensional figures in a hierarchy based on properties.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      }
+    ],
+    "withMid": [
+      {
+        "grade": "5th",
+        "standard": "5.OA.A.1",
+        "description": "Use parentheses, brackets, or braces in numerical expressions, and evaluate expressions with these symbols.",
+        "appTopic": "order_of_operations",
+        "templateIds": [
+          "wn_011",
+          "wn_012",
+          "wn_023",
+          "wn_024",
+          "wn_025",
+          "wn_026",
+          "wn_027",
+          "wn_028"
+        ],
+        "formatFamilies": [
+          "numeric_order_operations_multistep",
+          "numeric_order_operations_parentheses"
+        ],
+        "templateCount": 8,
+        "formatFamilyCount": 2,
+        "coverageStatus": "adequate",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.OA.A.2",
+        "description": "Write simple expressions that record calculations with numbers, and interpret numerical expressions without evaluating them.",
+        "appTopic": "order_of_operations",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.OA.B.3",
+        "description": "Generate two numerical patterns using two given rules; identify relationships between corresponding terms and form ordered pairs.",
+        "appTopic": "expressions_equations",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.NBT.A.1",
+        "description": "Recognize that in a multi-digit number, a digit in one place represents 10 times as much as in the place to its right and 1/10 of the place to its left.",
+        "appTopic": "number_sense_place_value",
+        "templateIds": [
+          "pv_001",
+          "pv_002",
+          "pv_004",
+          "pv_008",
+          "dpv_002"
+        ],
+        "formatFamilies": [
+          "decimal_powers_of_ten",
+          "place_value",
+          "scientific_notation_divide",
+          "scientific_notation_multiply"
+        ],
+        "templateCount": 5,
+        "formatFamilyCount": 4,
+        "coverageStatus": "strong",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.NBT.A.2",
+        "description": "Explain patterns when multiplying or dividing by powers of 10; use whole-number exponents to denote powers of 10.",
+        "appTopic": "number_sense_place_value",
+        "templateIds": [
+          "pv_005",
+          "dpv_006"
+        ],
+        "formatFamilies": [
+          "scientific_notation_multiply"
+        ],
+        "templateCount": 2,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.NBT.A.3",
+        "description": "Read, write, and compare decimals to thousandths.",
+        "appTopic": "number_sense_place_value",
+        "templateIds": [
+          "pv_003",
+          "pv_007",
+          "dpv_004"
+        ],
+        "formatFamilies": [
+          "decimal_comparison",
+          "number_sense"
+        ],
+        "templateCount": 3,
+        "formatFamilyCount": 2,
+        "coverageStatus": "adequate",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.NBT.A.4",
+        "description": "Use place value understanding to round decimals to any place.",
+        "appTopic": "number_sense_place_value",
+        "templateIds": [
+          "pv_006"
+        ],
+        "formatFamilies": [
+          "rounding"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.NBT.B.5",
+        "description": "Fluently multiply multi-digit whole numbers using the standard algorithm.",
+        "appTopic": "add_subtract_multiply",
+        "templateIds": [
+          "wn_001",
+          "wn_003",
+          "wn_005",
+          "wn_006",
+          "wn_007",
+          "wn_008",
+          "wn_010",
+          "wn_013",
+          "wn_014",
+          "wn_015",
+          "ms_001",
+          "ms_002",
+          "ms_003",
+          "ms_004",
+          "ms_005",
+          "ms_007"
+        ],
+        "formatFamilies": [
+          "whole_number_addition",
+          "whole_number_arithmetic",
+          "whole_number_multiplication",
+          "whole_number_subtraction"
+        ],
+        "templateCount": 16,
+        "formatFamilyCount": 4,
+        "coverageStatus": "strong",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.NBT.B.6",
+        "description": "Find whole-number quotients with up to four-digit dividends and two-digit divisors using place-value strategies.",
+        "appTopic": "division",
+        "templateIds": [
+          "wn_002",
+          "wn_004",
+          "wn_009",
+          "wn_016",
+          "wn_017",
+          "wn_018",
+          "wn_019",
+          "wn_020",
+          "wn_021",
+          "wn_022"
+        ],
+        "formatFamilies": [
+          "whole_number_division"
+        ],
+        "templateCount": 10,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.NBT.B.7",
+        "description": "Add, subtract, multiply, and divide decimals to hundredths using place-value strategies and written methods.",
+        "appTopic": "percent_decimals",
+        "templateIds": [
+          "dec_001",
+          "dec_002",
+          "dec_003",
+          "dec_004",
+          "dec_005",
+          "dec_006",
+          "dec_007",
+          "dec_008",
+          "dec_009",
+          "dec_010",
+          "dec_011",
+          "dec_012",
+          "dpv_001",
+          "dpv_003",
+          "dpv_005",
+          "dpv_007",
+          "dpv_008",
+          "dpv_009"
+        ],
+        "formatFamilies": [
+          "decimal_addition",
+          "decimal_division",
+          "decimal_multiplication",
+          "decimal_operations",
+          "decimal_place_value",
+          "decimal_powers_of_ten",
+          "decimal_rounding",
+          "decimal_subtraction"
+        ],
+        "templateCount": 18,
+        "formatFamilyCount": 8,
+        "coverageStatus": "strong",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.NF.A.1",
+        "description": "Add and subtract fractions with unlike denominators (including mixed numbers) by rewriting with like denominators.",
+        "appTopic": "fractions",
+        "templateIds": [
+          "fas_001",
+          "fas_002",
+          "fas_003",
+          "fas_004",
+          "fas_005",
+          "fas_007",
+          "fas_008",
+          "fas_009",
+          "fas_011",
+          "fmd_001",
+          "fmd_002",
+          "fmd_005",
+          "fmd_006",
+          "fmd_007",
+          "fmd_009",
+          "fmd_010",
+          "fm_001",
+          "fm_002",
+          "fm_003",
+          "fm_004",
+          "fm_005",
+          "fm_006",
+          "fm_007"
+        ],
+        "formatFamilies": [
+          "fraction_addition",
+          "fraction_comparison",
+          "fraction_multiplication",
+          "fraction_operations"
+        ],
+        "templateCount": 23,
+        "formatFamilyCount": 4,
+        "coverageStatus": "strong",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.NF.A.2",
+        "description": "Solve word problems involving addition and subtraction of fractions with unlike denominators.",
+        "appTopic": "fractions",
+        "templateIds": [
+          "fas_006",
+          "fas_010"
+        ],
+        "formatFamilies": [
+          "fraction_operations"
+        ],
+        "templateCount": 2,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.NF.B.3",
+        "description": "Interpret a fraction as division of the numerator by the denominator; solve related word problems.",
+        "appTopic": "fractions",
+        "templateIds": [
+          "fmd_008"
+        ],
+        "formatFamilies": [
+          "fraction_division"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.NF.B.4",
+        "description": "Multiply a fraction or whole number by a fraction; find areas of rectangles with fractional side lengths.",
+        "appTopic": "fractions",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.NF.B.5",
+        "description": "Interpret multiplication as scaling by comparing product size based on the factors without always computing.",
+        "appTopic": "fractions",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.NF.B.6",
+        "description": "Solve real-world problems involving multiplication of fractions and mixed numbers.",
+        "appTopic": "fractions",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.NF.B.7",
+        "description": "Divide unit fractions by whole numbers and whole numbers by unit fractions; solve related real-world problems.",
+        "appTopic": "fractions",
+        "templateIds": [
+          "fmd_003",
+          "fmd_004",
+          "fm_008",
+          "fm_009",
+          "fm_011"
+        ],
+        "formatFamilies": [
+          "fraction_division",
+          "fraction_operations"
+        ],
+        "templateCount": 5,
+        "formatFamilyCount": 2,
+        "coverageStatus": "adequate",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.MD.A.1",
+        "description": "Convert among different-sized standard measurement units within a system and use conversions in multi-step problems.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.MD.B.2",
+        "description": "Make a line plot of fractional measurements and use fraction operations to solve problems from the data.",
+        "appTopic": "statistics_probability",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.MD.C.3",
+        "description": "Recognize volume as an attribute of solid figures and understand concepts of volume measurement with unit cubes.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.MD.C.4",
+        "description": "Measure volumes by counting unit cubes using cubic cm, cubic in, cubic ft, and improvised units.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [
+          "gv_009"
+        ],
+        "formatFamilies": [
+          "geometry_measurement"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.MD.C.5",
+        "description": "Relate volume to multiplication and addition; find volumes of rectangular prisms and additive solid figures.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [
+          "gv_001",
+          "gv_002",
+          "gv_003",
+          "gv_004",
+          "gv_005",
+          "gv_006",
+          "gv_007",
+          "gv_008",
+          "cp_001",
+          "cp_002",
+          "cp_003",
+          "cp_004",
+          "cp_005",
+          "cp_006",
+          "cp_007",
+          "cp_008",
+          "mc_001",
+          "mc_002",
+          "mc_003",
+          "mc_004",
+          "mc_005",
+          "mc_006",
+          "mc_007",
+          "mc_008",
+          "mc_009",
+          "ms_008",
+          "ms_009"
+        ],
+        "formatFamilies": [
+          "coordinate_distance",
+          "coordinate_plane",
+          "geometry_measurement",
+          "measurement_conversion",
+          "rectangular_prism_volume",
+          "volume"
+        ],
+        "templateCount": 27,
+        "formatFamilyCount": 6,
+        "coverageStatus": "strong",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.G.A.1",
+        "description": "Use perpendicular number lines (axes) to define a coordinate system and locate points by ordered pairs.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.G.A.2",
+        "description": "Represent real-world and mathematical problems by graphing points in the first quadrant and interpret coordinates.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.G.B.3",
+        "description": "Understand that attributes belonging to a category of two-dimensional figures also belong to all subcategories.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "5th",
+        "standard": "5.G.B.4",
+        "description": "Classify two-dimensional figures in a hierarchy based on properties.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      }
+    ]
+  },
+  "6th": {
+    "solidify": [
+      {
+        "grade": "6th",
+        "standard": "6.RP.A.1",
+        "description": "Understand the concept of a ratio and use ratio language to describe a ratio relationship between two quantities.",
+        "appTopic": "ratios_rates_proportions",
+        "templateIds": [
+          "rp_001",
+          "rp_002",
+          "rp_004",
+          "rp_006",
+          "rp_007",
+          "rp_008",
+          "rp_009",
+          "rp_010",
+          "rp_011",
+          "rp_012"
+        ],
+        "formatFamilies": [
+          "proportion_missing_value",
+          "ratio_comparison",
+          "ratio_rate_proportion",
+          "scale_factor",
+          "unit_rate"
+        ],
+        "templateCount": 10,
+        "formatFamilyCount": 5,
+        "coverageStatus": "strong",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.RP.A.2",
+        "description": "Understand the concept of a unit rate a/b associated with a ratio a:b with b ≠ 0, and use rate language.",
+        "appTopic": "ratios_rates_proportions",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.RP.A.3",
+        "description": "Use ratio and rate reasoning to solve real-world and mathematical problems, including percents and unit conversions.",
+        "appTopic": "ratios_rates_proportions",
+        "templateIds": [
+          "rp_003",
+          "rp_005"
+        ],
+        "formatFamilies": [
+          "percent_application",
+          "ratio_comparison"
+        ],
+        "templateCount": 2,
+        "formatFamilyCount": 2,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.NS.A.1",
+        "description": "Interpret and compute quotients of fractions, and solve word problems involving division of fractions by fractions.",
+        "appTopic": "fractions",
+        "templateIds": [
+          "df_010"
+        ],
+        "formatFamilies": [
+          "fraction_operations"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.NS.B.2",
+        "description": "Fluently divide multi-digit numbers using the standard algorithm.",
+        "appTopic": "division",
+        "templateIds": [
+          "int_004"
+        ],
+        "formatFamilies": [
+          "integer_division"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.NS.B.3",
+        "description": "Fluently add, subtract, multiply, and divide multi-digit decimals using the standard algorithm for each operation.",
+        "appTopic": "percent_decimals",
+        "templateIds": [
+          "int_007"
+        ],
+        "formatFamilies": [
+          "decimal_addition"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.NS.B.4",
+        "description": "Find GCF of two whole numbers ≤ 100 and LCM of two whole numbers ≤ 12; use the distributive property with common factors.",
+        "appTopic": "number_sense_place_value",
+        "templateIds": [
+          "int_003"
+        ],
+        "formatFamilies": [
+          "integer_multiplication"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.NS.C.5",
+        "description": "Understand that positive and negative numbers describe opposite directions or values; represent quantities in real-world contexts.",
+        "appTopic": "integers",
+        "templateIds": [
+          "int_005",
+          "int_006",
+          "int_008",
+          "int_010",
+          "int_011"
+        ],
+        "formatFamilies": [
+          "integer_absolute_value",
+          "integer_comparison",
+          "integer_subtraction"
+        ],
+        "templateCount": 5,
+        "formatFamilyCount": 3,
+        "coverageStatus": "strong",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.NS.C.6",
+        "description": "Understand a rational number as a point on the number line; extend axes to represent points with negative coordinates.",
+        "appTopic": "integers",
+        "templateIds": [
+          "int_012"
+        ],
+        "formatFamilies": [
+          "integer_opposite"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.NS.C.7",
+        "description": "Understand ordering and absolute value of rational numbers; interpret inequalities and magnitude in context.",
+        "appTopic": "integers",
+        "templateIds": [
+          "int_001",
+          "int_002",
+          "int_009"
+        ],
+        "formatFamilies": [
+          "integer_absolute_value",
+          "integer_comparison"
+        ],
+        "templateCount": 3,
+        "formatFamilyCount": 2,
+        "coverageStatus": "adequate",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.NS.C.8",
+        "description": "Solve problems by graphing points in all four quadrants; use coordinates and absolute value to find distances between points.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [
+          "cp_004"
+        ],
+        "formatFamilies": [
+          "coordinate_plane"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.EE.A.1",
+        "description": "Write and evaluate numerical expressions involving whole-number exponents.",
+        "appTopic": "order_of_operations",
+        "templateIds": [
+          "exp_002"
+        ],
+        "formatFamilies": [
+          "numeric_order_operations_exponents"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.EE.A.2",
+        "description": "Write, read, and evaluate expressions in which letters stand for numbers.",
+        "appTopic": "expressions_equations",
+        "templateIds": [
+          "eq_001",
+          "eq_002",
+          "eq_003",
+          "eq_004",
+          "eq_005",
+          "eq_007",
+          "eq_008",
+          "eq_009",
+          "eq_010",
+          "eq_012",
+          "exp_001",
+          "exp_003",
+          "exp_004",
+          "exp_005",
+          "exp_006",
+          "exp_008",
+          "exp_009"
+        ],
+        "formatFamilies": [
+          "algebraic_expression",
+          "algebraic_substitution_linear",
+          "one_step_equation"
+        ],
+        "templateCount": 17,
+        "formatFamilyCount": 3,
+        "coverageStatus": "strong",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.EE.A.3",
+        "description": "Apply the properties of operations to generate equivalent expressions.",
+        "appTopic": "expressions_equations",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.EE.A.4",
+        "description": "Identify when two expressions are equivalent (they name the same number for any substitution).",
+        "appTopic": "expressions_equations",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.EE.B.5",
+        "description": "Understand solving an equation or inequality as finding which values from a set make it true; use substitution.",
+        "appTopic": "expressions_equations",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.EE.B.6",
+        "description": "Use variables to represent numbers and write expressions when solving real-world or mathematical problems.",
+        "appTopic": "expressions_equations",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.EE.B.7",
+        "description": "Solve real-world and mathematical problems by writing and solving equations of the form x + p = q and px = q.",
+        "appTopic": "expressions_equations",
+        "templateIds": [
+          "eq_011"
+        ],
+        "formatFamilies": [
+          "one_step_equation"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.EE.B.8",
+        "description": "Write inequalities of the form x > c or x < c and represent solutions on number line diagrams.",
+        "appTopic": "expressions_equations",
+        "templateIds": [
+          "eq_006"
+        ],
+        "formatFamilies": [
+          "inequality_word_problem"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.EE.C.9",
+        "description": "Use variables for related quantities; write an equation for the dependent variable and analyze with graphs and tables.",
+        "appTopic": "expressions_equations",
+        "templateIds": [
+          "exp_007"
+        ],
+        "formatFamilies": [
+          "algebraic_substitution_linear"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.G.A.1",
+        "description": "Find areas of triangles, special quadrilaterals, and polygons by composing or decomposing shapes.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.G.A.2",
+        "description": "Find the volume of a right rectangular prism with fractional edge lengths using unit cubes and volume formulas.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [
+          "geo_004"
+        ],
+        "formatFamilies": [
+          "rectangular_prism_volume"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.G.A.3",
+        "description": "Draw polygons in the coordinate plane given vertices; use coordinates to find side lengths.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [
+          "cp_001"
+        ],
+        "formatFamilies": [
+          "coordinate_plane"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.G.A.4",
+        "description": "Represent three-dimensional figures using nets of rectangles and triangles, and use nets to find surface area.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [
+          "geo_009"
+        ],
+        "formatFamilies": [
+          "surface_area"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.SP.A.1",
+        "description": "Recognize a statistical question as one that anticipates variability in the data related to the question.",
+        "appTopic": "statistics_probability",
+        "templateIds": [
+          "sp_007"
+        ],
+        "formatFamilies": [
+          "data_interpretation"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.SP.A.2",
+        "description": "Understand that a data set has a distribution that can be described by its center, spread, and overall shape.",
+        "appTopic": "statistics_probability",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.SP.A.3",
+        "description": "Recognize that a measure of center summarizes values with a single number, while a measure of variation describes spread.",
+        "appTopic": "statistics_probability",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.SP.B.4",
+        "description": "Display numerical data in plots on a number line, including dot plots, histograms, and box plots.",
+        "appTopic": "statistics_probability",
+        "templateIds": [
+          "sp_008"
+        ],
+        "formatFamilies": [
+          "data_interpretation"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": false
+      },
+      {
+        "grade": "6th",
+        "standard": "6.SP.B.5",
+        "description": "Summarize numerical data sets in context, including measures of center (median/mean) and variability.",
+        "appTopic": "statistics_probability",
+        "templateIds": [
+          "sp_001",
+          "sp_002",
+          "sp_003",
+          "sp_004",
+          "sp_005",
+          "sp_006"
+        ],
+        "formatFamilies": [
+          "mean",
+          "median",
+          "range"
+        ],
+        "templateCount": 6,
+        "formatFamilyCount": 3,
+        "coverageStatus": "strong",
+        "keypadFriendly": true
+      }
+    ],
+    "withMid": [
+      {
+        "grade": "6th",
+        "standard": "6.RP.A.1",
+        "description": "Understand the concept of a ratio and use ratio language to describe a ratio relationship between two quantities.",
+        "appTopic": "ratios_rates_proportions",
+        "templateIds": [
+          "rp_001",
+          "rp_002",
+          "rp_004",
+          "rp_006",
+          "rp_007",
+          "rp_008",
+          "rp_009",
+          "rp_010",
+          "rp_011",
+          "rp_012",
+          "rr_001",
+          "rr_002",
+          "rr_004",
+          "rr_006",
+          "rr_007",
+          "rr_009",
+          "rr_011",
+          "rr_012",
+          "rr_013",
+          "rr_014",
+          "rr_016",
+          "rr_017",
+          "rr_018",
+          "rr_019",
+          "rr_020",
+          "pr_003",
+          "pr_004"
+        ],
+        "formatFamilies": [
+          "percent_application",
+          "proportion_missing_value",
+          "ratio_comparison",
+          "ratio_rate_proportion",
+          "scale_factor",
+          "unit_rate"
+        ],
+        "templateCount": 27,
+        "formatFamilyCount": 6,
+        "coverageStatus": "strong",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.RP.A.2",
+        "description": "Understand the concept of a unit rate a/b associated with a ratio a:b with b ≠ 0, and use rate language.",
+        "appTopic": "ratios_rates_proportions",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.RP.A.3",
+        "description": "Use ratio and rate reasoning to solve real-world and mathematical problems, including percents and unit conversions.",
+        "appTopic": "ratios_rates_proportions",
+        "templateIds": [
+          "rp_003",
+          "rp_005"
+        ],
+        "formatFamilies": [
+          "percent_application",
+          "ratio_comparison"
+        ],
+        "templateCount": 2,
+        "formatFamilyCount": 2,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.NS.A.1",
+        "description": "Interpret and compute quotients of fractions, and solve word problems involving division of fractions by fractions.",
+        "appTopic": "fractions",
+        "templateIds": [
+          "df_010",
+          "rn_004",
+          "rn_017"
+        ],
+        "formatFamilies": [
+          "fraction_division",
+          "fraction_of_quantity",
+          "fraction_operations"
+        ],
+        "templateCount": 3,
+        "formatFamilyCount": 3,
+        "coverageStatus": "adequate",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.NS.B.2",
+        "description": "Fluently divide multi-digit numbers using the standard algorithm.",
+        "appTopic": "division",
+        "templateIds": [
+          "int_004",
+          "rn_019"
+        ],
+        "formatFamilies": [
+          "integer_division"
+        ],
+        "templateCount": 2,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.NS.B.3",
+        "description": "Fluently add, subtract, multiply, and divide multi-digit decimals using the standard algorithm for each operation.",
+        "appTopic": "percent_decimals",
+        "templateIds": [
+          "int_007",
+          "rn_008",
+          "rn_020"
+        ],
+        "formatFamilies": [
+          "decimal_addition",
+          "decimal_multiplication"
+        ],
+        "templateCount": 3,
+        "formatFamilyCount": 2,
+        "coverageStatus": "adequate",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.NS.B.4",
+        "description": "Find GCF of two whole numbers ≤ 100 and LCM of two whole numbers ≤ 12; use the distributive property with common factors.",
+        "appTopic": "number_sense_place_value",
+        "templateIds": [
+          "int_003",
+          "rn_011"
+        ],
+        "formatFamilies": [
+          "integer_extreme_value",
+          "integer_multiplication"
+        ],
+        "templateCount": 2,
+        "formatFamilyCount": 2,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.NS.C.5",
+        "description": "Understand that positive and negative numbers describe opposite directions or values; represent quantities in real-world contexts.",
+        "appTopic": "integers",
+        "templateIds": [
+          "int_005",
+          "int_006",
+          "int_008",
+          "int_010",
+          "int_011",
+          "rn_003",
+          "rn_005",
+          "rn_007",
+          "rn_009",
+          "rn_012",
+          "rn_013",
+          "rn_015",
+          "rn_016",
+          "rn_018",
+          "int_001",
+          "int_002",
+          "int_004",
+          "int_005",
+          "int_006",
+          "int_009",
+          "int_012",
+          "int_013",
+          "int_015",
+          "int_016",
+          "int_017",
+          "int_018",
+          "int_019",
+          "int_020",
+          "pn_004",
+          "pn_005"
+        ],
+        "formatFamilies": [
+          "integer_absolute_value",
+          "integer_addition",
+          "integer_comparison",
+          "integer_multiplication",
+          "integer_number_line",
+          "integer_operations",
+          "integer_opposite",
+          "integer_subtraction",
+          "integer_temperature_change"
+        ],
+        "templateCount": 30,
+        "formatFamilyCount": 9,
+        "coverageStatus": "strong",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.NS.C.6",
+        "description": "Understand a rational number as a point on the number line; extend axes to represent points with negative coordinates.",
+        "appTopic": "integers",
+        "templateIds": [
+          "int_012",
+          "rn_006",
+          "cp_003"
+        ],
+        "formatFamilies": [
+          "integer_opposite",
+          "quadrant_identification"
+        ],
+        "templateCount": 3,
+        "formatFamilyCount": 2,
+        "coverageStatus": "adequate",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.NS.C.7",
+        "description": "Understand ordering and absolute value of rational numbers; interpret inequalities and magnitude in context.",
+        "appTopic": "integers",
+        "templateIds": [
+          "int_001",
+          "int_002",
+          "int_009",
+          "rn_001",
+          "rn_002"
+        ],
+        "formatFamilies": [
+          "integer_absolute_value",
+          "integer_comparison",
+          "integer_extreme_value"
+        ],
+        "templateCount": 5,
+        "formatFamilyCount": 3,
+        "coverageStatus": "strong",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.NS.C.8",
+        "description": "Solve problems by graphing points in all four quadrants; use coordinates and absolute value to find distances between points.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [
+          "cp_004",
+          "cp_010"
+        ],
+        "formatFamilies": [
+          "coordinate_plane"
+        ],
+        "templateCount": 2,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.EE.A.1",
+        "description": "Write and evaluate numerical expressions involving whole-number exponents.",
+        "appTopic": "order_of_operations",
+        "templateIds": [
+          "exp_002"
+        ],
+        "formatFamilies": [
+          "numeric_order_operations_exponents"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.EE.A.2",
+        "description": "Write, read, and evaluate expressions in which letters stand for numbers.",
+        "appTopic": "expressions_equations",
+        "templateIds": [
+          "eq_001",
+          "eq_002",
+          "eq_003",
+          "eq_004",
+          "eq_005",
+          "eq_007",
+          "eq_008",
+          "eq_009",
+          "eq_010",
+          "eq_012",
+          "exp_001",
+          "exp_003",
+          "exp_004",
+          "exp_005",
+          "exp_006",
+          "exp_008",
+          "exp_009",
+          "ee_001",
+          "ee_002",
+          "ee_003",
+          "ee_004",
+          "ee_005",
+          "ee_006",
+          "ee_007",
+          "ee_008",
+          "ee_009",
+          "ee_011",
+          "ee_012",
+          "ee_014",
+          "ee_016",
+          "ee_017",
+          "ee_018",
+          "ee_019",
+          "ee_020"
+        ],
+        "formatFamilies": [
+          "algebraic_expression",
+          "algebraic_substitution_exponent",
+          "algebraic_substitution_linear",
+          "one_step_equation"
+        ],
+        "templateCount": 34,
+        "formatFamilyCount": 4,
+        "coverageStatus": "strong",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.EE.A.3",
+        "description": "Apply the properties of operations to generate equivalent expressions.",
+        "appTopic": "expressions_equations",
+        "templateIds": [
+          "ee_015"
+        ],
+        "formatFamilies": [
+          "algebraic_simplify"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.EE.A.4",
+        "description": "Identify when two expressions are equivalent (they name the same number for any substitution).",
+        "appTopic": "expressions_equations",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.EE.B.5",
+        "description": "Understand solving an equation or inequality as finding which values from a set make it true; use substitution.",
+        "appTopic": "expressions_equations",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.EE.B.6",
+        "description": "Use variables to represent numbers and write expressions when solving real-world or mathematical problems.",
+        "appTopic": "expressions_equations",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.EE.B.7",
+        "description": "Solve real-world and mathematical problems by writing and solving equations of the form x + p = q and px = q.",
+        "appTopic": "expressions_equations",
+        "templateIds": [
+          "eq_011"
+        ],
+        "formatFamilies": [
+          "one_step_equation"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.EE.B.8",
+        "description": "Write inequalities of the form x > c or x < c and represent solutions on number line diagrams.",
+        "appTopic": "expressions_equations",
+        "templateIds": [
+          "eq_006"
+        ],
+        "formatFamilies": [
+          "inequality_word_problem"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.EE.C.9",
+        "description": "Use variables for related quantities; write an equation for the dependent variable and analyze with graphs and tables.",
+        "appTopic": "expressions_equations",
+        "templateIds": [
+          "exp_007",
+          "sp_015"
+        ],
+        "formatFamilies": [
+          "algebraic_substitution_linear"
+        ],
+        "templateCount": 2,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.G.A.1",
+        "description": "Find areas of triangles, special quadrilaterals, and polygons by composing or decomposing shapes.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [
+          "geo_010"
+        ],
+        "formatFamilies": [
+          "area"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.G.A.2",
+        "description": "Find the volume of a right rectangular prism with fractional edge lengths using unit cubes and volume formulas.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [
+          "geo_004"
+        ],
+        "formatFamilies": [
+          "rectangular_prism_volume"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.G.A.3",
+        "description": "Draw polygons in the coordinate plane given vertices; use coordinates to find side lengths.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [
+          "cp_001",
+          "geo_015",
+          "cp_011"
+        ],
+        "formatFamilies": [
+          "area",
+          "coordinate_plane"
+        ],
+        "templateCount": 3,
+        "formatFamilyCount": 2,
+        "coverageStatus": "adequate",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.G.A.4",
+        "description": "Represent three-dimensional figures using nets of rectangles and triangles, and use nets to find surface area.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [
+          "geo_009"
+        ],
+        "formatFamilies": [
+          "surface_area"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.SP.A.1",
+        "description": "Recognize a statistical question as one that anticipates variability in the data related to the question.",
+        "appTopic": "statistics_probability",
+        "templateIds": [
+          "sp_007",
+          "sp_006"
+        ],
+        "formatFamilies": [
+          "data_interpretation"
+        ],
+        "templateCount": 2,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.SP.A.2",
+        "description": "Understand that a data set has a distribution that can be described by its center, spread, and overall shape.",
+        "appTopic": "statistics_probability",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.SP.A.3",
+        "description": "Recognize that a measure of center summarizes values with a single number, while a measure of variation describes spread.",
+        "appTopic": "statistics_probability",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "6th",
+        "standard": "6.SP.B.4",
+        "description": "Display numerical data in plots on a number line, including dot plots, histograms, and box plots.",
+        "appTopic": "statistics_probability",
+        "templateIds": [
+          "sp_008"
+        ],
+        "formatFamilies": [
+          "data_interpretation"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": false
+      },
+      {
+        "grade": "6th",
+        "standard": "6.SP.B.5",
+        "description": "Summarize numerical data sets in context, including measures of center (median/mean) and variability.",
+        "appTopic": "statistics_probability",
+        "templateIds": [
+          "sp_001",
+          "sp_002",
+          "sp_003",
+          "sp_004",
+          "sp_005",
+          "sp_006",
+          "sp_001",
+          "sp_002",
+          "sp_003",
+          "sp_004",
+          "sp_007",
+          "sp_008",
+          "sp_009",
+          "sp_010",
+          "sp_011",
+          "sp_012",
+          "sp_014",
+          "sp_016"
+        ],
+        "formatFamilies": [
+          "mean",
+          "median",
+          "mode",
+          "range"
+        ],
+        "templateCount": 18,
+        "formatFamilyCount": 4,
+        "coverageStatus": "strong",
+        "keypadFriendly": true
+      }
+    ]
+  },
+  "7th": {
+    "solidify": [
+      {
+        "grade": "7th",
+        "standard": "7.RP.A.1",
+        "description": "Compute unit rates associated with ratios of fractions, including lengths, areas, and other quantities.",
+        "appTopic": "ratios_rates_proportions",
+        "templateIds": [
+          "pr_002"
+        ],
+        "formatFamilies": [
+          "unit_rate"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.RP.A.2",
+        "description": "Recognize and represent proportional relationships between quantities, including the constant of proportionality.",
+        "appTopic": "ratios_rates_proportions",
+        "templateIds": [
+          "pr_010"
+        ],
+        "formatFamilies": [
+          "constant_of_proportionality"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.RP.A.3",
+        "description": "Use proportional relationships to solve multistep ratio and percent problems.",
+        "appTopic": "ratios_rates_proportions",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.NS.A.1",
+        "description": "Apply and extend previous understandings of addition and subtraction to add and subtract rational numbers.",
+        "appTopic": "integers",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.NS.A.2",
+        "description": "Multiply and divide rational numbers; convert a rational number to a terminating or repeating decimal.",
+        "appTopic": "percent_decimals",
+        "templateIds": [
+          "rn_011"
+        ],
+        "formatFamilies": [
+          "fraction_to_decimal"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.NS.A.3",
+        "description": "Solve real-world and mathematical problems involving the four operations with rational numbers.",
+        "appTopic": "integers",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.EE.A.1",
+        "description": "Apply properties of operations to add, subtract, factor, and expand linear expressions with rational coefficients.",
+        "appTopic": "expressions_equations",
+        "templateIds": [
+          "ee_001",
+          "ee_010"
+        ],
+        "formatFamilies": [
+          "algebraic_simplify"
+        ],
+        "templateCount": 2,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.EE.A.2",
+        "description": "Understand that rewriting an expression in different forms can shed light on the problem and related quantities.",
+        "appTopic": "expressions_equations",
+        "templateIds": [
+          "ee_002"
+        ],
+        "formatFamilies": [
+          "algebraic_simplify"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.EE.B.3",
+        "description": "Solve multi-step real-life and mathematical problems with positive and negative rational numbers in any form.",
+        "appTopic": "expressions_equations",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.EE.B.4",
+        "description": "Use variables to construct simple equations and inequalities to solve real-world and mathematical problems.",
+        "appTopic": "expressions_equations",
+        "templateIds": [
+          "ee_007",
+          "ee_009",
+          "ee_011",
+          "ee_013"
+        ],
+        "formatFamilies": [
+          "algebraic_expression",
+          "inequality_word_problem",
+          "two_step_equation"
+        ],
+        "templateCount": 4,
+        "formatFamilyCount": 3,
+        "coverageStatus": "adequate",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.G.A.1",
+        "description": "Solve problems involving scale drawings of geometric figures, including computing actual lengths and areas.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.G.A.2",
+        "description": "Draw geometric shapes with given conditions; focus on constructing triangles from three measures of angles or sides.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [
+          "geo_006"
+        ],
+        "formatFamilies": [
+          "angle_measure"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": false
+      },
+      {
+        "grade": "7th",
+        "standard": "7.G.A.3",
+        "description": "Describe the two-dimensional figures that result from slicing three-dimensional figures.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.G.B.4",
+        "description": "Know the formulas for the area and circumference of a circle and use them to solve problems.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.G.B.5",
+        "description": "Use facts about supplementary, complementary, vertical, and adjacent angles to solve for an unknown angle.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.G.B.6",
+        "description": "Solve real-world and mathematical problems involving area, volume, and surface area of 2D and 3D objects.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [
+          "geo_010"
+        ],
+        "formatFamilies": [
+          "rectangular_prism_volume"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.SP.A.1",
+        "description": "Understand that statistics about a population from a sample are valid only if the sample is representative.",
+        "appTopic": "statistics_probability",
+        "templateIds": [
+          "si_001"
+        ],
+        "formatFamilies": [
+          "statistical_inference"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.SP.A.2",
+        "description": "Use data from a random sample to draw inferences about a population; gauge variation in estimates.",
+        "appTopic": "statistics_probability",
+        "templateIds": [
+          "si_003",
+          "si_006"
+        ],
+        "formatFamilies": [
+          "statistical_inference"
+        ],
+        "templateCount": 2,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.SP.B.3",
+        "description": "Informally assess visual overlap of two distributions; express difference of centers as a multiple of variability.",
+        "appTopic": "statistics_probability",
+        "templateIds": [
+          "si_002",
+          "si_005"
+        ],
+        "formatFamilies": [
+          "mean"
+        ],
+        "templateCount": 2,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.SP.B.4",
+        "description": "Use measures of center and variability from random samples to draw informal comparative inferences.",
+        "appTopic": "statistics_probability",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.SP.C.5",
+        "description": "Understand that the probability of a chance event is a number between 0 and 1 expressing likelihood.",
+        "appTopic": "statistics_probability",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.SP.C.6",
+        "description": "Approximate probability by long-run relative frequency; predict approximate relative frequency given a probability.",
+        "appTopic": "statistics_probability",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.SP.C.7",
+        "description": "Develop a probability model and use it to find probabilities of events; compare to observed frequencies.",
+        "appTopic": "statistics_probability",
+        "templateIds": [
+          "prob_001",
+          "prob_002",
+          "prob_003",
+          "prob_004",
+          "prob_005",
+          "prob_007",
+          "prob_009",
+          "prob_010",
+          "prob_011"
+        ],
+        "formatFamilies": [
+          "probability_simple"
+        ],
+        "templateCount": 9,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.SP.C.8",
+        "description": "Find probabilities of compound events using organized lists, tables, tree diagrams, and simulation.",
+        "appTopic": "statistics_probability",
+        "templateIds": [
+          "prob_006",
+          "prob_008"
+        ],
+        "formatFamilies": [
+          "probability_compound"
+        ],
+        "templateCount": 2,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      }
+    ],
+    "withMid": [
+      {
+        "grade": "7th",
+        "standard": "7.RP.A.1",
+        "description": "Compute unit rates associated with ratios of fractions, including lengths, areas, and other quantities.",
+        "appTopic": "ratios_rates_proportions",
+        "templateIds": [
+          "pr_002",
+          "pct_006"
+        ],
+        "formatFamilies": [
+          "unit_rate"
+        ],
+        "templateCount": 2,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.RP.A.2",
+        "description": "Recognize and represent proportional relationships between quantities, including the constant of proportionality.",
+        "appTopic": "ratios_rates_proportions",
+        "templateIds": [
+          "pr_010",
+          "pct_007"
+        ],
+        "formatFamilies": [
+          "constant_of_proportionality"
+        ],
+        "templateCount": 2,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.RP.A.3",
+        "description": "Use proportional relationships to solve multistep ratio and percent problems.",
+        "appTopic": "ratios_rates_proportions",
+        "templateIds": [
+          "pct_003"
+        ],
+        "formatFamilies": [
+          "percent_discount"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.NS.A.1",
+        "description": "Apply and extend previous understandings of addition and subtraction to add and subtract rational numbers.",
+        "appTopic": "integers",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.NS.A.2",
+        "description": "Multiply and divide rational numbers; convert a rational number to a terminating or repeating decimal.",
+        "appTopic": "percent_decimals",
+        "templateIds": [
+          "rn_011",
+          "pct_009"
+        ],
+        "formatFamilies": [
+          "fraction_multiplication",
+          "fraction_to_decimal"
+        ],
+        "templateCount": 2,
+        "formatFamilyCount": 2,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.NS.A.3",
+        "description": "Solve real-world and mathematical problems involving the four operations with rational numbers.",
+        "appTopic": "integers",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.EE.A.1",
+        "description": "Apply properties of operations to add, subtract, factor, and expand linear expressions with rational coefficients.",
+        "appTopic": "expressions_equations",
+        "templateIds": [
+          "ee_001",
+          "ee_010"
+        ],
+        "formatFamilies": [
+          "algebraic_simplify"
+        ],
+        "templateCount": 2,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.EE.A.2",
+        "description": "Understand that rewriting an expression in different forms can shed light on the problem and related quantities.",
+        "appTopic": "expressions_equations",
+        "templateIds": [
+          "ee_002"
+        ],
+        "formatFamilies": [
+          "algebraic_simplify"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.EE.B.3",
+        "description": "Solve multi-step real-life and mathematical problems with positive and negative rational numbers in any form.",
+        "appTopic": "expressions_equations",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.EE.B.4",
+        "description": "Use variables to construct simple equations and inequalities to solve real-world and mathematical problems.",
+        "appTopic": "expressions_equations",
+        "templateIds": [
+          "ee_007",
+          "ee_009",
+          "ee_011",
+          "ee_013",
+          "mse_001"
+        ],
+        "formatFamilies": [
+          "algebraic_expression",
+          "inequality_word_problem",
+          "two_step_equation"
+        ],
+        "templateCount": 5,
+        "formatFamilyCount": 3,
+        "coverageStatus": "strong",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.G.A.1",
+        "description": "Solve problems involving scale drawings of geometric figures, including computing actual lengths and areas.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.G.A.2",
+        "description": "Draw geometric shapes with given conditions; focus on constructing triangles from three measures of angles or sides.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [
+          "geo_006",
+          "gc_008"
+        ],
+        "formatFamilies": [
+          "angle_measure"
+        ],
+        "templateCount": 2,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": false
+      },
+      {
+        "grade": "7th",
+        "standard": "7.G.A.3",
+        "description": "Describe the two-dimensional figures that result from slicing three-dimensional figures.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.G.B.4",
+        "description": "Know the formulas for the area and circumference of a circle and use them to solve problems.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.G.B.5",
+        "description": "Use facts about supplementary, complementary, vertical, and adjacent angles to solve for an unknown angle.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [
+          "gc_006"
+        ],
+        "formatFamilies": [
+          "angle_measure"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.G.B.6",
+        "description": "Solve real-world and mathematical problems involving area, volume, and surface area of 2D and 3D objects.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [
+          "geo_010"
+        ],
+        "formatFamilies": [
+          "rectangular_prism_volume"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.SP.A.1",
+        "description": "Understand that statistics about a population from a sample are valid only if the sample is representative.",
+        "appTopic": "statistics_probability",
+        "templateIds": [
+          "si_001",
+          "pc_001"
+        ],
+        "formatFamilies": [
+          "statistical_inference"
+        ],
+        "templateCount": 2,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.SP.A.2",
+        "description": "Use data from a random sample to draw inferences about a population; gauge variation in estimates.",
+        "appTopic": "statistics_probability",
+        "templateIds": [
+          "si_003",
+          "si_006"
+        ],
+        "formatFamilies": [
+          "statistical_inference"
+        ],
+        "templateCount": 2,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.SP.B.3",
+        "description": "Informally assess visual overlap of two distributions; express difference of centers as a multiple of variability.",
+        "appTopic": "statistics_probability",
+        "templateIds": [
+          "si_002",
+          "si_005",
+          "pc_005"
+        ],
+        "formatFamilies": [
+          "mean"
+        ],
+        "templateCount": 3,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.SP.B.4",
+        "description": "Use measures of center and variability from random samples to draw informal comparative inferences.",
+        "appTopic": "statistics_probability",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.SP.C.5",
+        "description": "Understand that the probability of a chance event is a number between 0 and 1 expressing likelihood.",
+        "appTopic": "statistics_probability",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.SP.C.6",
+        "description": "Approximate probability by long-run relative frequency; predict approximate relative frequency given a probability.",
+        "appTopic": "statistics_probability",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.SP.C.7",
+        "description": "Develop a probability model and use it to find probabilities of events; compare to observed frequencies.",
+        "appTopic": "statistics_probability",
+        "templateIds": [
+          "prob_001",
+          "prob_002",
+          "prob_003",
+          "prob_004",
+          "prob_005",
+          "prob_007",
+          "prob_009",
+          "prob_010",
+          "prob_011",
+          "pc_002",
+          "pc_003",
+          "pc_004"
+        ],
+        "formatFamilies": [
+          "probability_compound",
+          "probability_simple"
+        ],
+        "templateCount": 12,
+        "formatFamilyCount": 2,
+        "coverageStatus": "adequate",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "7th",
+        "standard": "7.SP.C.8",
+        "description": "Find probabilities of compound events using organized lists, tables, tree diagrams, and simulation.",
+        "appTopic": "statistics_probability",
+        "templateIds": [
+          "prob_006",
+          "prob_008"
+        ],
+        "formatFamilies": [
+          "probability_compound"
+        ],
+        "templateCount": 2,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      }
+    ]
+  },
+  "8th": {
+    "solidify": [
+      {
+        "grade": "8th",
+        "standard": "8.NS.A.1",
+        "description": "Know that irrational numbers are not rational; show repeating decimals and convert repeating decimals to rationals.",
+        "appTopic": "number_sense_place_value",
+        "templateIds": [
+          "sn_009"
+        ],
+        "formatFamilies": [
+          "square_root_estimate"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.NS.A.2",
+        "description": "Use rational approximations of irrational numbers to compare sizes, locate on a number line, and estimate expressions.",
+        "appTopic": "number_sense_place_value",
+        "templateIds": [
+          "sn_005"
+        ],
+        "formatFamilies": [
+          "square_root_estimate"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.EE.A.1",
+        "description": "Know and apply the properties of integer exponents to generate equivalent numerical expressions.",
+        "appTopic": "number_sense_place_value",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.EE.A.2",
+        "description": "Use square root and cube root symbols; evaluate roots of small perfect squares and cubes; know √2 is irrational.",
+        "appTopic": "number_sense_place_value",
+        "templateIds": [
+          "sn_002"
+        ],
+        "formatFamilies": [
+          "quadratic_equation_positive_root"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.EE.A.3",
+        "description": "Use single-digit times an integer power of 10 to estimate very large or very small quantities and compare them.",
+        "appTopic": "number_sense_place_value",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.EE.A.4",
+        "description": "Perform operations with numbers in scientific notation, including mixed decimal and scientific notation problems.",
+        "appTopic": "number_sense_place_value",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.EE.B.5",
+        "description": "Graph proportional relationships, interpreting unit rate as slope; compare proportional relationships in different forms.",
+        "appTopic": "functions_linear_relationships",
+        "templateIds": [
+          "le_004"
+        ],
+        "formatFamilies": [
+          "unit_rate"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.EE.B.6",
+        "description": "Use similar triangles to explain constant slope; derive y = mx and y = mx + b.",
+        "appTopic": "functions_linear_relationships",
+        "templateIds": [
+          "le_003",
+          "le_009"
+        ],
+        "formatFamilies": [
+          "slope"
+        ],
+        "templateCount": 2,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.EE.C.7",
+        "description": "Solve linear equations in one variable, including cases with one, infinitely many, or no solutions.",
+        "appTopic": "expressions_equations",
+        "templateIds": [
+          "le_006",
+          "le_012"
+        ],
+        "formatFamilies": [
+          "equation_solution_count",
+          "equation_with_distribution"
+        ],
+        "templateCount": 2,
+        "formatFamilyCount": 2,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.EE.C.8",
+        "description": "Analyze and solve pairs of simultaneous linear equations algebraically and by graphing.",
+        "appTopic": "expressions_equations",
+        "templateIds": [
+          "sys_002",
+          "sys_003",
+          "sys_006",
+          "sys_007",
+          "sys_008",
+          "sys_009"
+        ],
+        "formatFamilies": [
+          "algebraic_expression",
+          "one_step_equation",
+          "two_step_equation"
+        ],
+        "templateCount": 6,
+        "formatFamilyCount": 3,
+        "coverageStatus": "strong",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.F.A.1",
+        "description": "Understand that a function assigns to each input exactly one output; the graph is the set of input-output ordered pairs.",
+        "appTopic": "functions_linear_relationships",
+        "templateIds": [
+          "le_001",
+          "le_002",
+          "le_005",
+          "le_008",
+          "le_010",
+          "le_011",
+          "fn_001",
+          "fn_004",
+          "fn_007",
+          "fn_008"
+        ],
+        "formatFamilies": [
+          "function_evaluation",
+          "function_identification",
+          "function_linear",
+          "linear_relationship",
+          "slope"
+        ],
+        "templateCount": 10,
+        "formatFamilyCount": 5,
+        "coverageStatus": "strong",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.F.A.2",
+        "description": "Compare properties of two functions each represented in a different way (algebraically, graphically, numerically, or verbally).",
+        "appTopic": "functions_linear_relationships",
+        "templateIds": [
+          "fn_003"
+        ],
+        "formatFamilies": [
+          "rate_of_change"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.F.A.3",
+        "description": "Interpret y = mx + b as a linear function; give examples of functions that are not linear.",
+        "appTopic": "functions_linear_relationships",
+        "templateIds": [
+          "le_007",
+          "fn_005"
+        ],
+        "formatFamilies": [
+          "linear_relationship"
+        ],
+        "templateCount": 2,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.F.B.4",
+        "description": "Construct a function to model a linear relationship; determine rate of change and initial value from a description or values.",
+        "appTopic": "functions_linear_relationships",
+        "templateIds": [
+          "fn_006"
+        ],
+        "formatFamilies": [
+          "rate_of_change"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.F.B.5",
+        "description": "Describe qualitatively the functional relationship between two quantities by analyzing a graph; sketch qualitative graphs.",
+        "appTopic": "functions_linear_relationships",
+        "templateIds": [
+          "fn_002",
+          "fn_009"
+        ],
+        "formatFamilies": [
+          "linear_relationship"
+        ],
+        "templateCount": 2,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.G.A.1",
+        "description": "Verify experimentally the properties of rotations, reflections, and translations on lines, angles, and parallel lines.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.G.A.2",
+        "description": "Understand congruence via sequences of rotations, reflections, and translations; describe a congruence sequence.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": false
+      },
+      {
+        "grade": "8th",
+        "standard": "8.G.A.3",
+        "description": "Describe the effect of dilations, translations, rotations, and reflections on two-dimensional figures using coordinates.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.G.A.4",
+        "description": "Understand similarity via rigid motions and dilations; describe a sequence that exhibits similarity.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [
+          "tr_008"
+        ],
+        "formatFamilies": [
+          "angle_measure"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": false
+      },
+      {
+        "grade": "8th",
+        "standard": "8.G.A.5",
+        "description": "Use informal arguments about triangle angle sum, exterior angles, transversal angles, and AA similarity.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [
+          "tr_006"
+        ],
+        "formatFamilies": [
+          "angle_measure"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.G.B.6",
+        "description": "Explain a proof of the Pythagorean Theorem and its converse.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [
+          "pt_006"
+        ],
+        "formatFamilies": [
+          "pythagorean_side_length"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": false
+      },
+      {
+        "grade": "8th",
+        "standard": "8.G.B.7",
+        "description": "Apply the Pythagorean Theorem to determine unknown side lengths in right triangles in 2D and 3D problems.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.G.B.8",
+        "description": "Apply the Pythagorean Theorem to find the distance between two points in a coordinate system.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.G.C.9",
+        "description": "Know the formulas for the volumes of cones, cylinders, and spheres and use them to solve real-world problems.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [
+          "pt_008"
+        ],
+        "formatFamilies": [
+          "cylinder_volume"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.SP.A.1",
+        "description": "Construct and interpret scatter plots for bivariate measurement data; describe patterns of association.",
+        "appTopic": "statistics_probability",
+        "templateIds": [
+          "bv_003",
+          "bv_007"
+        ],
+        "formatFamilies": [
+          "bivariate_data"
+        ],
+        "templateCount": 2,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.SP.A.2",
+        "description": "For scatter plots suggesting linear association, informally fit a straight line and assess model fit.",
+        "appTopic": "statistics_probability",
+        "templateIds": [
+          "bv_005"
+        ],
+        "formatFamilies": [
+          "data_interpretation"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.SP.A.3",
+        "description": "Use the equation of a linear model to solve problems in bivariate measurement data, interpreting slope and intercept.",
+        "appTopic": "statistics_probability",
+        "templateIds": [
+          "bv_004"
+        ],
+        "formatFamilies": [
+          "mode"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.SP.A.4",
+        "description": "Construct and interpret two-way tables of bivariate categorical data; use relative frequencies to describe association.",
+        "appTopic": "statistics_probability",
+        "templateIds": [
+          "bv_001"
+        ],
+        "formatFamilies": [
+          "data_interpretation"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      }
+    ],
+    "withMid": [
+      {
+        "grade": "8th",
+        "standard": "8.NS.A.1",
+        "description": "Know that irrational numbers are not rational; show repeating decimals and convert repeating decimals to rationals.",
+        "appTopic": "number_sense_place_value",
+        "templateIds": [
+          "sn_009"
+        ],
+        "formatFamilies": [
+          "square_root_estimate"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.NS.A.2",
+        "description": "Use rational approximations of irrational numbers to compare sizes, locate on a number line, and estimate expressions.",
+        "appTopic": "number_sense_place_value",
+        "templateIds": [
+          "sn_005"
+        ],
+        "formatFamilies": [
+          "square_root_estimate"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.EE.A.1",
+        "description": "Know and apply the properties of integer exponents to generate equivalent numerical expressions.",
+        "appTopic": "number_sense_place_value",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.EE.A.2",
+        "description": "Use square root and cube root symbols; evaluate roots of small perfect squares and cubes; know √2 is irrational.",
+        "appTopic": "number_sense_place_value",
+        "templateIds": [
+          "sn_002"
+        ],
+        "formatFamilies": [
+          "quadratic_equation_positive_root"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.EE.A.3",
+        "description": "Use single-digit times an integer power of 10 to estimate very large or very small quantities and compare them.",
+        "appTopic": "number_sense_place_value",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.EE.A.4",
+        "description": "Perform operations with numbers in scientific notation, including mixed decimal and scientific notation problems.",
+        "appTopic": "number_sense_place_value",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.EE.B.5",
+        "description": "Graph proportional relationships, interpreting unit rate as slope; compare proportional relationships in different forms.",
+        "appTopic": "functions_linear_relationships",
+        "templateIds": [
+          "le_004"
+        ],
+        "formatFamilies": [
+          "unit_rate"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.EE.B.6",
+        "description": "Use similar triangles to explain constant slope; derive y = mx and y = mx + b.",
+        "appTopic": "functions_linear_relationships",
+        "templateIds": [
+          "le_003",
+          "le_009"
+        ],
+        "formatFamilies": [
+          "slope"
+        ],
+        "templateCount": 2,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.EE.C.7",
+        "description": "Solve linear equations in one variable, including cases with one, infinitely many, or no solutions.",
+        "appTopic": "expressions_equations",
+        "templateIds": [
+          "le_006",
+          "le_012"
+        ],
+        "formatFamilies": [
+          "equation_solution_count",
+          "equation_with_distribution"
+        ],
+        "templateCount": 2,
+        "formatFamilyCount": 2,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.EE.C.8",
+        "description": "Analyze and solve pairs of simultaneous linear equations algebraically and by graphing.",
+        "appTopic": "expressions_equations",
+        "templateIds": [
+          "sys_002",
+          "sys_003",
+          "sys_006",
+          "sys_007",
+          "sys_008",
+          "sys_009"
+        ],
+        "formatFamilies": [
+          "algebraic_expression",
+          "one_step_equation",
+          "two_step_equation"
+        ],
+        "templateCount": 6,
+        "formatFamilyCount": 3,
+        "coverageStatus": "strong",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.F.A.1",
+        "description": "Understand that a function assigns to each input exactly one output; the graph is the set of input-output ordered pairs.",
+        "appTopic": "functions_linear_relationships",
+        "templateIds": [
+          "le_001",
+          "le_002",
+          "le_005",
+          "le_008",
+          "le_010",
+          "le_011",
+          "fn_001",
+          "fn_004",
+          "fn_007",
+          "fn_008"
+        ],
+        "formatFamilies": [
+          "function_evaluation",
+          "function_identification",
+          "function_linear",
+          "linear_relationship",
+          "slope"
+        ],
+        "templateCount": 10,
+        "formatFamilyCount": 5,
+        "coverageStatus": "strong",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.F.A.2",
+        "description": "Compare properties of two functions each represented in a different way (algebraically, graphically, numerically, or verbally).",
+        "appTopic": "functions_linear_relationships",
+        "templateIds": [
+          "fn_003"
+        ],
+        "formatFamilies": [
+          "rate_of_change"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.F.A.3",
+        "description": "Interpret y = mx + b as a linear function; give examples of functions that are not linear.",
+        "appTopic": "functions_linear_relationships",
+        "templateIds": [
+          "le_007",
+          "fn_005"
+        ],
+        "formatFamilies": [
+          "linear_relationship"
+        ],
+        "templateCount": 2,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.F.B.4",
+        "description": "Construct a function to model a linear relationship; determine rate of change and initial value from a description or values.",
+        "appTopic": "functions_linear_relationships",
+        "templateIds": [
+          "fn_006"
+        ],
+        "formatFamilies": [
+          "rate_of_change"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.F.B.5",
+        "description": "Describe qualitatively the functional relationship between two quantities by analyzing a graph; sketch qualitative graphs.",
+        "appTopic": "functions_linear_relationships",
+        "templateIds": [
+          "fn_002",
+          "fn_009"
+        ],
+        "formatFamilies": [
+          "linear_relationship"
+        ],
+        "templateCount": 2,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.G.A.1",
+        "description": "Verify experimentally the properties of rotations, reflections, and translations on lines, angles, and parallel lines.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.G.A.2",
+        "description": "Understand congruence via sequences of rotations, reflections, and translations; describe a congruence sequence.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": false
+      },
+      {
+        "grade": "8th",
+        "standard": "8.G.A.3",
+        "description": "Describe the effect of dilations, translations, rotations, and reflections on two-dimensional figures using coordinates.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.G.A.4",
+        "description": "Understand similarity via rigid motions and dilations; describe a sequence that exhibits similarity.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [
+          "tr_008"
+        ],
+        "formatFamilies": [
+          "angle_measure"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": false
+      },
+      {
+        "grade": "8th",
+        "standard": "8.G.A.5",
+        "description": "Use informal arguments about triangle angle sum, exterior angles, transversal angles, and AA similarity.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [
+          "tr_006"
+        ],
+        "formatFamilies": [
+          "angle_measure"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.G.B.6",
+        "description": "Explain a proof of the Pythagorean Theorem and its converse.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [
+          "pt_006"
+        ],
+        "formatFamilies": [
+          "pythagorean_side_length"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": false
+      },
+      {
+        "grade": "8th",
+        "standard": "8.G.B.7",
+        "description": "Apply the Pythagorean Theorem to determine unknown side lengths in right triangles in 2D and 3D problems.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.G.B.8",
+        "description": "Apply the Pythagorean Theorem to find the distance between two points in a coordinate system.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [],
+        "formatFamilies": [],
+        "templateCount": 0,
+        "formatFamilyCount": 0,
+        "coverageStatus": "missing",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.G.C.9",
+        "description": "Know the formulas for the volumes of cones, cylinders, and spheres and use them to solve real-world problems.",
+        "appTopic": "geometry_measurement",
+        "templateIds": [
+          "pt_008"
+        ],
+        "formatFamilies": [
+          "cylinder_volume"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.SP.A.1",
+        "description": "Construct and interpret scatter plots for bivariate measurement data; describe patterns of association.",
+        "appTopic": "statistics_probability",
+        "templateIds": [
+          "bv_003",
+          "bv_007"
+        ],
+        "formatFamilies": [
+          "bivariate_data"
+        ],
+        "templateCount": 2,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.SP.A.2",
+        "description": "For scatter plots suggesting linear association, informally fit a straight line and assess model fit.",
+        "appTopic": "statistics_probability",
+        "templateIds": [
+          "bv_005"
+        ],
+        "formatFamilies": [
+          "data_interpretation"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.SP.A.3",
+        "description": "Use the equation of a linear model to solve problems in bivariate measurement data, interpreting slope and intercept.",
+        "appTopic": "statistics_probability",
+        "templateIds": [
+          "bv_004"
+        ],
+        "formatFamilies": [
+          "mode"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      },
+      {
+        "grade": "8th",
+        "standard": "8.SP.A.4",
+        "description": "Construct and interpret two-way tables of bivariate categorical data; use relative frequencies to describe association.",
+        "appTopic": "statistics_probability",
+        "templateIds": [
+          "bv_001"
+        ],
+        "formatFamilies": [
+          "data_interpretation"
+        ],
+        "templateCount": 1,
+        "formatFamilyCount": 1,
+        "coverageStatus": "weak",
+        "keypadFriendly": true
+      }
+    ]
+  }
+}

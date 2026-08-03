@@ -44,7 +44,8 @@
           "answer_type": "fraction_simplified",
           "answer_formula": "(a/b) / (c/d)",
           "topic": "fractions",
-          "formatFamily": "fraction_division"
+          "formatFamily": "fraction_division",
+          "ccss_standard": "6.NS.A.1"
         },
         {
           "id": "df_002",
@@ -67,7 +68,8 @@
           "answer_type": "fraction_simplified",
           "answer_formula": "a / (b/c)",
           "topic": "fractions",
-          "formatFamily": "fraction_division"
+          "formatFamily": "fraction_division",
+          "ccss_standard": "6.NS.A.1"
         },
         {
           "id": "df_003",
@@ -90,7 +92,8 @@
           "answer_type": "fraction_simplified",
           "answer_formula": "(a/b) / c",
           "topic": "fractions",
-          "formatFamily": "fraction_division"
+          "formatFamily": "fraction_division",
+          "ccss_standard": "6.NS.A.1"
         },
         {
           "id": "df_004",
@@ -118,7 +121,8 @@
           "answer_type": "fraction_simplified",
           "answer_formula": "(a * d) / (b * c)",
           "topic": "fractions",
-          "formatFamily": "fraction_operations"
+          "formatFamily": "fraction_operations",
+          "ccss_standard": "6.NS.A.1"
         },
         {
           "id": "df_005",
@@ -146,7 +150,8 @@
           "answer_type": "numeric",
           "answer_formula": "(a * d) / (b * c)",
           "topic": "fractions",
-          "formatFamily": "fraction_operations"
+          "formatFamily": "fraction_operations",
+          "ccss_standard": "6.NS.A.1"
         },
         {
           "id": "df_006",
@@ -169,7 +174,8 @@
           "answer_type": "fraction_simplified",
           "answer_formula": "c * b / a",
           "topic": "fractions",
-          "formatFamily": "fraction_division"
+          "formatFamily": "fraction_division",
+          "ccss_standard": "6.NS.A.1"
         },
         {
           "id": "df_007",
@@ -197,7 +203,8 @@
           "answer_type": "fraction_simplified",
           "answer_formula": "(a * d) / (b * c)",
           "topic": "fractions",
-          "formatFamily": "fraction_division"
+          "formatFamily": "fraction_division",
+          "ccss_standard": "6.NS.A.1"
         },
         {
           "id": "df_008",
@@ -224,7 +231,8 @@
           "answer_type": "fraction_simplified",
           "answer_formula": "(a * d) / (b * c)",
           "topic": "fractions",
-          "formatFamily": "fraction_division"
+          "formatFamily": "fraction_division",
+          "ccss_standard": "6.NS.A.1"
         },
         {
           "id": "df_009",
@@ -253,7 +261,8 @@
           "answer_type": "numeric",
           "answer_formula": "(a * d) / (b * c)",
           "topic": "fractions",
-          "formatFamily": "fraction_operations"
+          "formatFamily": "fraction_operations",
+          "ccss_standard": "6.NS.A.1"
         },
         {
           "id": "df_010",
@@ -282,7 +291,8 @@
           "answer_formula": "(a * d) / (b * c)",
           "generation_note": "6.NS.A.1 fraction division word problem",
           "topic": "fractions",
-          "formatFamily": "fraction_operations"
+          "formatFamily": "fraction_operations",
+          "ccss_standard": "6.NS.A.1"
         }
       ]
     },
@@ -310,7 +320,8 @@
           "answer_formula": "abs(abs(a) - abs(b))",
           "generation_note": "6.NS.C.7 absolute value comparison",
           "topic": "integers",
-          "formatFamily": "integer_absolute_value"
+          "formatFamily": "integer_absolute_value",
+          "ccss_standard": "6.NS.C.5"
         },
         {
           "id": "int_002",
@@ -326,7 +337,8 @@
           "answer_type": "numeric",
           "answer_formula": "abs(a)",
           "topic": "integers",
-          "formatFamily": "integer_absolute_value"
+          "formatFamily": "integer_absolute_value",
+          "ccss_standard": "6.NS.C.6"
         },
         {
           "id": "int_003",
@@ -350,7 +362,8 @@
           "answer_type": "numeric",
           "answer_formula": "m + n",
           "topic": "integers",
-          "formatFamily": "integer_multiplication"
+          "formatFamily": "integer_multiplication",
+          "ccss_standard": "6.NS.C.7"
         },
         {
           "id": "int_004",
@@ -371,7 +384,8 @@
           "answer_type": "numeric",
           "answer_formula": "a / b",
           "topic": "integers",
-          "formatFamily": "integer_division"
+          "formatFamily": "integer_division",
+          "ccss_standard": "7.NS.A.1"
         },
         {
           "id": "int_005",
@@ -388,7 +402,8 @@
           "answer_type": "numeric",
           "answer_formula": "-b",
           "topic": "integers",
-          "formatFamily": "integer_subtraction"
+          "formatFamily": "integer_subtraction",
+          "ccss_standard": "7.NS.A.2"
         },
         {
           "id": "int_006",
@@ -405,7 +420,8 @@
           "answer_type": "numeric",
           "answer_formula": "a",
           "topic": "integers",
-          "formatFamily": "integer_subtraction"
+          "formatFamily": "integer_subtraction",
+          "ccss_standard": "6.NS.C.5"
         },
         {
           "id": "int_007",
@@ -433,7 +449,8 @@
           "answer_type": "decimal",
           "answer_formula": "a + b/100 + c + d/100",
           "topic": "percent_decimals",
-          "formatFamily": "decimal_addition"
+          "formatFamily": "decimal_addition",
+          "ccss_standard": "6.NS.C.6"
         },
         {
           "id": "int_008",
@@ -460,7 +477,8 @@
           "answer_type": "numeric",
           "answer_formula": "max(a, b, c, d) - min(a, b, c, d)",
           "topic": "integers",
-          "formatFamily": "integer_comparison"
+          "formatFamily": "integer_comparison",
+          "ccss_standard": "6.NS.C.7"
         },
         {
           "id": "int_009",
@@ -481,7 +499,8 @@
           "answer_type": "numeric",
           "answer_formula": "max(a, b)",
           "topic": "integers",
-          "formatFamily": "integer_comparison"
+          "formatFamily": "integer_comparison",
+          "ccss_standard": "7.NS.A.1"
         },
         {
           "id": "int_010",
@@ -501,7 +520,8 @@
           "answer_type": "numeric",
           "answer_formula": "abs(a) + abs(b)",
           "topic": "integers",
-          "formatFamily": "integer_absolute_value"
+          "formatFamily": "integer_absolute_value",
+          "ccss_standard": "7.NS.A.2"
         },
         {
           "id": "int_011",
@@ -520,7 +540,8 @@
           "answer_type": "numeric",
           "answer_formula": "abs(a) + abs(b)",
           "topic": "integers",
-          "formatFamily": "integer_absolute_value"
+          "formatFamily": "integer_absolute_value",
+          "ccss_standard": "6.NS.C.5"
         },
         {
           "id": "int_012",
@@ -537,7 +558,113 @@
           "answer_type": "numeric",
           "answer_formula": "-a",
           "topic": "integers",
-          "formatFamily": "integer_opposite"
+          "formatFamily": "integer_opposite",
+          "ccss_standard": "6.NS.C.6"
+        },
+        {
+          "id": "ccss6_001",
+          "type": "COMPUTE",
+          "problem": "Divide: {a} ÷ {b}.",
+          "constraints": {
+            "a": [
+              120,
+              900
+            ],
+            "b": [
+              6,
+              25
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a / b",
+          "topic": "division",
+          "formatFamily": "multi_digit_division",
+          "ccss_standard": "6.NS.B.2",
+          "generation_note": "require a divisible by b"
+        },
+        {
+          "id": "ccss6_002",
+          "type": "APPLY",
+          "problem": "{a} students are split equally into {b} buses. How many students per bus?",
+          "constraints": {
+            "a": [
+              48,
+              360
+            ],
+            "b": [
+              3,
+              12
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a / b",
+          "topic": "division",
+          "formatFamily": "multi_digit_division",
+          "ccss_standard": "6.NS.B.2",
+          "generation_note": "require a divisible by b"
+        },
+        {
+          "id": "ccss6_003",
+          "type": "COMPUTE",
+          "problem": "What is the greatest common factor (GCF) of {a} and {b}?",
+          "constraints": {
+            "a": [
+              4,
+              18
+            ],
+            "b": [
+              8,
+              36
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a",
+          "topic": "integers",
+          "formatFamily": "gcf_lcm",
+          "ccss_standard": "6.NS.B.4",
+          "generation_note": "require b multiple of a so GCF = a"
+        },
+        {
+          "id": "ccss6_004",
+          "type": "COMPUTE",
+          "problem": "What is the least common multiple (LCM) of {a} and {b}?",
+          "constraints": {
+            "a": [
+              3,
+              12
+            ],
+            "b": [
+              6,
+              24
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "b",
+          "topic": "integers",
+          "formatFamily": "gcf_lcm",
+          "ccss_standard": "6.NS.B.4",
+          "generation_note": "require b multiple of a so LCM = b"
+        },
+        {
+          "id": "ccss6_005",
+          "type": "COMPUTE",
+          "problem": "Find GCF({a}, {b}) + LCM({a}, {b}).",
+          "constraints": {
+            "a": [
+              4,
+              15
+            ],
+            "b": [
+              8,
+              30
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a + b",
+          "topic": "integers",
+          "formatFamily": "gcf_lcm",
+          "ccss_standard": "6.NS.B.4",
+          "generation_note": "require b multiple of a: GCF=a, LCM=b"
         }
       ]
     },
@@ -569,7 +696,8 @@
           "constraints_note": "c is a multiple of a",
           "answer_formula": "c * b / a",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "ratio_comparison"
+          "formatFamily": "ratio_comparison",
+          "ccss_standard": "6.RP.A.1"
         },
         {
           "id": "rp_002",
@@ -589,7 +717,8 @@
           "answer_type": "unit_rate",
           "answer_formula": "a / b",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "unit_rate"
+          "formatFamily": "unit_rate",
+          "ccss_standard": "6.RP.A.2"
         },
         {
           "id": "rp_003",
@@ -614,7 +743,8 @@
           "answer_type": "numeric",
           "answer_formula": "c * b / a",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "ratio_comparison"
+          "formatFamily": "ratio_comparison",
+          "ccss_standard": "6.RP.A.3"
         },
         {
           "id": "rp_004",
@@ -638,7 +768,8 @@
           "answer_type": "numeric",
           "answer_formula": "c * b / a",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "ratio_rate_proportion"
+          "formatFamily": "ratio_rate_proportion",
+          "ccss_standard": "6.RP.A.1"
         },
         {
           "id": "rp_005",
@@ -658,7 +789,8 @@
           "answer_type": "numeric",
           "answer_formula": "a * b / 100",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "percent_application"
+          "formatFamily": "percent_application",
+          "ccss_standard": "6.RP.A.2"
         },
         {
           "id": "rp_006",
@@ -685,7 +817,8 @@
           "answer_type": "numeric",
           "answer_formula": "abs(b / a - d / c)",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "proportion_missing_value"
+          "formatFamily": "proportion_missing_value",
+          "ccss_standard": "6.RP.A.3"
         },
         {
           "id": "rp_007",
@@ -705,7 +838,8 @@
           "answer_type": "numeric",
           "answer_formula": "a * b",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "scale_factor"
+          "formatFamily": "scale_factor",
+          "ccss_standard": "6.RP.A.1"
         },
         {
           "id": "rp_008",
@@ -725,7 +859,8 @@
           "answer_type": "numeric",
           "answer_formula": "b / a",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "unit_rate"
+          "formatFamily": "unit_rate",
+          "ccss_standard": "6.RP.A.2"
         },
         {
           "id": "rp_009",
@@ -750,7 +885,8 @@
           "answer_type": "numeric",
           "answer_formula": "c * a / b",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "ratio_comparison"
+          "formatFamily": "ratio_comparison",
+          "ccss_standard": "6.RP.A.3"
         },
         {
           "id": "rp_010",
@@ -771,7 +907,8 @@
           "answer_formula": "b / a",
           "context": "shopping",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "ratio_rate_proportion"
+          "formatFamily": "ratio_rate_proportion",
+          "ccss_standard": "6.RP.A.1"
         },
         {
           "id": "rp_011",
@@ -795,7 +932,8 @@
           "answer_type": "numeric",
           "answer_formula": "c * b / a",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "proportion_missing_value"
+          "formatFamily": "proportion_missing_value",
+          "ccss_standard": "6.RP.A.2"
         },
         {
           "id": "rp_012",
@@ -815,7 +953,71 @@
           "answer_type": "numeric",
           "answer_formula": "b / a",
           "topic": "ratios_rates_proportions",
-          "formatFamily": "ratio_rate_proportion"
+          "formatFamily": "ratio_rate_proportion",
+          "ccss_standard": "6.RP.A.3"
+        },
+        {
+          "id": "ccss6_018",
+          "type": "COMPUTE",
+          "problem": "A tape diagram shows {a} parts equal {b} in total. What is the value of one part?",
+          "constraints": {
+            "a": [
+              2,
+              8
+            ],
+            "b": [
+              10,
+              80
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "b / a",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "ratio_rate_proportion",
+          "ccss_standard": "6.RP.A.3",
+          "generation_note": "require b divisible by a"
+        },
+        {
+          "id": "gap6_rp2_001",
+          "type": "COMPUTE",
+          "problem": "A store sells {a} apples for ${b}. What is the unit price in dollars per apple?",
+          "constraints": {
+            "a": [
+              2,
+              12
+            ],
+            "b": [
+              4,
+              36
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "b / a",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "unit_rate",
+          "ccss_standard": "6.RP.A.2",
+          "constraints_note": "prefer b divisible by a"
+        },
+        {
+          "id": "gap6_rp2_002",
+          "type": "APPLY",
+          "problem": "You travel {a} miles in {b} hours. What is your speed in miles per hour?",
+          "constraints": {
+            "a": [
+              30,
+              180
+            ],
+            "b": [
+              2,
+              6
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a / b",
+          "topic": "ratios_rates_proportions",
+          "formatFamily": "unit_rate",
+          "ccss_standard": "6.RP.A.2",
+          "constraints_note": "prefer a divisible by b"
         }
       ]
     },
@@ -842,7 +1044,8 @@
           "answer_type": "numeric",
           "answer_formula": "b - a",
           "topic": "expressions_equations",
-          "formatFamily": "one_step_equation"
+          "formatFamily": "one_step_equation",
+          "ccss_standard": "6.EE.B.7"
         },
         {
           "id": "eq_002",
@@ -861,7 +1064,8 @@
           "answer_type": "numeric",
           "answer_formula": "b + a",
           "topic": "expressions_equations",
-          "formatFamily": "one_step_equation"
+          "formatFamily": "one_step_equation",
+          "ccss_standard": "6.EE.B.7"
         },
         {
           "id": "eq_003",
@@ -881,7 +1085,8 @@
           "answer_type": "numeric",
           "answer_formula": "b / a",
           "topic": "expressions_equations",
-          "formatFamily": "one_step_equation"
+          "formatFamily": "one_step_equation",
+          "ccss_standard": "6.EE.B.7"
         },
         {
           "id": "eq_004",
@@ -900,7 +1105,8 @@
           "answer_type": "numeric",
           "answer_formula": "a * b",
           "topic": "expressions_equations",
-          "formatFamily": "one_step_equation"
+          "formatFamily": "one_step_equation",
+          "ccss_standard": "6.EE.B.7"
         },
         {
           "id": "eq_005",
@@ -919,7 +1125,8 @@
           "answer_type": "numeric",
           "answer_formula": "b - a",
           "topic": "expressions_equations",
-          "formatFamily": "one_step_equation"
+          "formatFamily": "one_step_equation",
+          "ccss_standard": "6.EE.B.7"
         },
         {
           "id": "eq_006",
@@ -935,7 +1142,8 @@
           "answer_type": "numeric",
           "answer_formula": "a + 1",
           "topic": "expressions_equations",
-          "formatFamily": "inequality_word_problem"
+          "formatFamily": "inequality_word_problem",
+          "ccss_standard": "7.EE.B.4"
         },
         {
           "id": "eq_007",
@@ -956,7 +1164,8 @@
           "answer_type": "numeric",
           "answer_formula": "b / a",
           "topic": "expressions_equations",
-          "formatFamily": "one_step_equation"
+          "formatFamily": "one_step_equation",
+          "ccss_standard": "6.EE.B.7"
         },
         {
           "id": "eq_008",
@@ -976,7 +1185,8 @@
           "answer_type": "numeric",
           "answer_formula": "b - a",
           "topic": "expressions_equations",
-          "formatFamily": "algebraic_expression"
+          "formatFamily": "algebraic_expression",
+          "ccss_standard": "6.EE.B.5"
         },
         {
           "id": "eq_009",
@@ -996,7 +1206,8 @@
           "answer_type": "numeric",
           "answer_formula": "b - a",
           "topic": "expressions_equations",
-          "formatFamily": "one_step_equation"
+          "formatFamily": "one_step_equation",
+          "ccss_standard": "6.EE.B.7"
         },
         {
           "id": "eq_010",
@@ -1017,7 +1228,8 @@
           "answer_formula": "b - a",
           "generation_note": "b > a enforced by ranges (positive floor)",
           "topic": "expressions_equations",
-          "formatFamily": "one_step_equation"
+          "formatFamily": "one_step_equation",
+          "ccss_standard": "6.EE.B.7"
         },
         {
           "id": "eq_011",
@@ -1038,7 +1250,8 @@
           "answer_type": "numeric",
           "answer_formula": "b + a",
           "topic": "expressions_equations",
-          "formatFamily": "one_step_equation"
+          "formatFamily": "one_step_equation",
+          "ccss_standard": "6.EE.B.7"
         },
         {
           "id": "eq_012",
@@ -1057,7 +1270,29 @@
           "answer_type": "numeric",
           "answer_formula": "a - b",
           "topic": "expressions_equations",
-          "formatFamily": "one_step_equation"
+          "formatFamily": "one_step_equation",
+          "ccss_standard": "6.EE.B.7"
+        },
+        {
+          "id": "gap6_eeb5_001",
+          "type": "IDENTIFY",
+          "problem": "Which value makes x + {a} = {b} true? Enter that value of x.",
+          "constraints": {
+            "a": [
+              2,
+              20
+            ],
+            "b": [
+              10,
+              40
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "b - a",
+          "topic": "expressions_equations",
+          "formatFamily": "equation_substitution_check",
+          "ccss_standard": "6.EE.B.5",
+          "constraints_note": "b > a"
         }
       ]
     },
@@ -1088,7 +1323,8 @@
           "answer_type": "numeric",
           "answer_formula": "a * c + b",
           "topic": "expressions_equations",
-          "formatFamily": "algebraic_substitution_linear"
+          "formatFamily": "algebraic_substitution_linear",
+          "ccss_standard": "6.EE.A.2"
         },
         {
           "id": "exp_002",
@@ -1107,7 +1343,8 @@
           "answer_type": "numeric",
           "answer_formula": "(a*a) + b",
           "topic": "order_of_operations",
-          "formatFamily": "numeric_order_operations_exponents"
+          "formatFamily": "numeric_order_operations_exponents",
+          "ccss_standard": "6.EE.A.1"
         },
         {
           "id": "exp_003",
@@ -1130,7 +1367,8 @@
           "answer_type": "numeric",
           "answer_formula": "a * c - b",
           "topic": "expressions_equations",
-          "formatFamily": "algebraic_substitution_linear"
+          "formatFamily": "algebraic_substitution_linear",
+          "ccss_standard": "6.EE.A.2"
         },
         {
           "id": "exp_004",
@@ -1154,7 +1392,8 @@
           "answer_type": "numeric",
           "answer_formula": "a * (c + b)",
           "topic": "expressions_equations",
-          "formatFamily": "algebraic_substitution_linear"
+          "formatFamily": "algebraic_substitution_linear",
+          "ccss_standard": "6.EE.A.2"
         },
         {
           "id": "exp_005",
@@ -1177,7 +1416,8 @@
           "answer_type": "numeric",
           "answer_formula": "(a + b) * c",
           "topic": "expressions_equations",
-          "formatFamily": "algebraic_substitution_linear"
+          "formatFamily": "algebraic_substitution_linear",
+          "ccss_standard": "6.EE.A.2"
         },
         {
           "id": "exp_006",
@@ -1201,7 +1441,8 @@
           "answer_type": "numeric",
           "answer_formula": "2 * (a * c + b)",
           "topic": "expressions_equations",
-          "formatFamily": "algebraic_substitution_linear"
+          "formatFamily": "algebraic_substitution_linear",
+          "ccss_standard": "6.EE.A.2"
         },
         {
           "id": "exp_007",
@@ -1221,7 +1462,8 @@
           "answer_type": "numeric",
           "answer_formula": "a * c",
           "topic": "expressions_equations",
-          "formatFamily": "algebraic_substitution_linear"
+          "formatFamily": "algebraic_substitution_linear",
+          "ccss_standard": "6.EE.A.2"
         },
         {
           "id": "exp_008",
@@ -1245,7 +1487,8 @@
           "answer_type": "numeric",
           "answer_formula": "a * c + b",
           "topic": "expressions_equations",
-          "formatFamily": "algebraic_substitution_linear"
+          "formatFamily": "algebraic_substitution_linear",
+          "ccss_standard": "6.EE.A.2"
         },
         {
           "id": "exp_009",
@@ -1268,7 +1511,281 @@
           "answer_type": "numeric",
           "answer_formula": "a * (c - b)",
           "topic": "expressions_equations",
-          "formatFamily": "algebraic_substitution_linear"
+          "formatFamily": "algebraic_substitution_linear",
+          "ccss_standard": "6.EE.A.2"
+        },
+        {
+          "id": "ccss6_006",
+          "type": "COMPUTE",
+          "problem": "Evaluate {a}^{b} + {c}.",
+          "constraints": {
+            "a": [
+              2,
+              6
+            ],
+            "b": [
+              2,
+              3
+            ],
+            "c": [
+              1,
+              20
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a ** b + c",
+          "topic": "order_of_operations",
+          "formatFamily": "numeric_order_operations_exponents",
+          "ccss_standard": "6.EE.A.1"
+        },
+        {
+          "id": "ccss6_007",
+          "type": "COMPUTE",
+          "problem": "Evaluate {a}² × {b} − {c}.",
+          "constraints": {
+            "a": [
+              2,
+              9
+            ],
+            "b": [
+              2,
+              8
+            ],
+            "c": [
+              1,
+              20
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a * a * b - c",
+          "topic": "order_of_operations",
+          "formatFamily": "numeric_order_operations_exponents",
+          "ccss_standard": "6.EE.A.1",
+          "generation_note": "prefer non-negative result"
+        },
+        {
+          "id": "ccss6_008",
+          "type": "COMPUTE",
+          "problem": "Evaluate ({a} + {b})².",
+          "constraints": {
+            "a": [
+              1,
+              9
+            ],
+            "b": [
+              1,
+              9
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "(a + b) ** 2",
+          "topic": "order_of_operations",
+          "formatFamily": "numeric_order_operations_exponents",
+          "ccss_standard": "6.EE.A.1"
+        },
+        {
+          "id": "ccss6_009",
+          "type": "IDENTIFY",
+          "problem": "Are {a}(x + {b}) and {a}x + {a}*{b} equivalent expressions? Enter 1 for yes or 0 for no.",
+          "constraints": {
+            "a": [
+              2,
+              9
+            ],
+            "b": [
+              1,
+              12
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "1",
+          "topic": "expressions_equations",
+          "formatFamily": "equivalent_expressions",
+          "ccss_standard": "6.EE.A.4"
+        },
+        {
+          "id": "ccss6_010",
+          "type": "IDENTIFY",
+          "problem": "Are {a}x + {b} and {a}(x + {b}) equivalent for all x? Enter 1 for yes or 0 for no.",
+          "constraints": {
+            "a": [
+              2,
+              8
+            ],
+            "b": [
+              2,
+              9
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "0",
+          "topic": "expressions_equations",
+          "formatFamily": "equivalent_expressions",
+          "ccss_standard": "6.EE.A.4"
+        },
+        {
+          "id": "ccss6_011",
+          "type": "APPLY",
+          "problem": "Distance d = r × t. If r = {r} and t = {t}, what is d?",
+          "constraints": {
+            "r": [
+              20,
+              70
+            ],
+            "t": [
+              2,
+              8
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "r * t",
+          "topic": "functions_linear_relationships",
+          "formatFamily": "dependent_independent_eval",
+          "ccss_standard": "6.EE.C.9"
+        },
+        {
+          "id": "ccss6_012",
+          "type": "APPLY",
+          "problem": "Using d = r × t with d = {d} and r = {r}, find t.",
+          "constraints": {
+            "d": [
+              40,
+              240
+            ],
+            "r": [
+              20,
+              60
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "d / r",
+          "topic": "functions_linear_relationships",
+          "formatFamily": "dependent_independent_eval",
+          "ccss_standard": "6.EE.C.9",
+          "generation_note": "require d divisible by r"
+        },
+        {
+          "id": "gap6_eeb6_001",
+          "type": "COMPUTE",
+          "problem": "A plumber charges ${a} per hour. If h is the number of hours, the cost is {a}h. What is the cost when h = {b}?",
+          "constraints": {
+            "a": [
+              20,
+              80
+            ],
+            "b": [
+              2,
+              8
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a * b",
+          "topic": "expressions_equations",
+          "formatFamily": "variable_expression_evaluate",
+          "ccss_standard": "6.EE.B.6"
+        },
+        {
+          "id": "gap6_eec9_001",
+          "type": "COMPUTE",
+          "problem": "Distance depends on time: d = {a}t. What is d when t = {b}?",
+          "constraints": {
+            "a": [
+              20,
+              70
+            ],
+            "b": [
+              2,
+              9
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a * b",
+          "topic": "expressions_equations",
+          "formatFamily": "dependent_independent_evaluate",
+          "ccss_standard": "6.EE.C.9"
+        },
+        {
+          "id": "gap6_eec9_002",
+          "type": "COMPUTE",
+          "problem": "Cost C depends on items n: C = {a}n + {b}. What is C when n = {c}?",
+          "constraints": {
+            "a": [
+              3,
+              12
+            ],
+            "b": [
+              1,
+              10
+            ],
+            "c": [
+              2,
+              8
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a * c + b",
+          "topic": "expressions_equations",
+          "formatFamily": "dependent_independent_evaluate",
+          "ccss_standard": "6.EE.C.9"
+        },
+        {
+          "id": "gap6_eea3_001",
+          "type": "COMPUTE",
+          "problem": "Expand {a}(x + {b}). What is the constant term?",
+          "constraints": {
+            "a": [
+              2,
+              9
+            ],
+            "b": [
+              1,
+              12
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a * b",
+          "topic": "expressions_equations",
+          "formatFamily": "distributive_constant_term",
+          "ccss_standard": "6.EE.A.3"
+        },
+        {
+          "id": "gap6_eea3_002",
+          "type": "COMPUTE",
+          "problem": "Apply the distributive property to {a}(x + {b}). What is the coefficient of x?",
+          "constraints": {
+            "a": [
+              2,
+              12
+            ],
+            "b": [
+              1,
+              10
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a",
+          "topic": "expressions_equations",
+          "formatFamily": "distributive_coefficient",
+          "ccss_standard": "6.EE.A.3"
+        },
+        {
+          "id": "gap6_eea3_003",
+          "type": "COMPUTE",
+          "problem": "Rewrite y + y + y as a product. What is the coefficient of y?",
+          "constraints": {
+            "a": [
+              1,
+              1
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "3",
+          "topic": "expressions_equations",
+          "formatFamily": "equivalent_expression_coefficient",
+          "ccss_standard": [
+            "6.EE.A.3",
+            "6.EE.A.4"
+          ]
         }
       ]
     },
@@ -1295,7 +1812,8 @@
           "answer_formula": "0.5*a*b",
           "answer_type": "numeric",
           "topic": "geometry_measurement",
-          "formatFamily": "area"
+          "formatFamily": "area",
+          "ccss_standard": "6.G.A.1"
         },
         {
           "id": "geo_002",
@@ -1314,7 +1832,8 @@
           "answer_formula": "a*b",
           "answer_type": "numeric",
           "topic": "geometry_measurement",
-          "formatFamily": "area"
+          "formatFamily": "area",
+          "ccss_standard": "6.G.A.2"
         },
         {
           "id": "geo_003",
@@ -1337,7 +1856,8 @@
           "answer_formula": "2*(a*b+b*c+a*c)",
           "answer_type": "numeric",
           "topic": "geometry_measurement",
-          "formatFamily": "surface_area"
+          "formatFamily": "surface_area",
+          "ccss_standard": "6.G.A.4"
         },
         {
           "id": "geo_004",
@@ -1365,7 +1885,8 @@
           "answer_type": "fraction_simplified",
           "answer_formula": "(a * c * d) / b",
           "topic": "geometry_measurement",
-          "formatFamily": "rectangular_prism_volume"
+          "formatFamily": "rectangular_prism_volume",
+          "ccss_standard": "6.G.A.1"
         },
         {
           "id": "geo_005",
@@ -1389,7 +1910,8 @@
           "answer_formula": "2*(a*b+b*c+a*c)",
           "answer_type": "numeric",
           "topic": "geometry_measurement",
-          "formatFamily": "geometry_measurement"
+          "formatFamily": "geometry_measurement",
+          "ccss_standard": "6.G.A.2"
         },
         {
           "id": "geo_006",
@@ -1409,7 +1931,8 @@
           "answer_type": "numeric",
           "answer_formula": "2 * area / a",
           "topic": "geometry_measurement",
-          "formatFamily": "area"
+          "formatFamily": "area",
+          "ccss_standard": "6.G.A.4"
         },
         {
           "id": "geo_007",
@@ -1429,7 +1952,8 @@
           "answer_type": "numeric",
           "answer_formula": "0.5 * a * b",
           "topic": "geometry_measurement",
-          "formatFamily": "area"
+          "formatFamily": "area",
+          "ccss_standard": "6.G.A.1"
         },
         {
           "id": "geo_008",
@@ -1453,7 +1977,8 @@
           "constraints_note": "v divisible by a*b",
           "answer_formula": "v / (a * b)",
           "topic": "geometry_measurement",
-          "formatFamily": "rectangular_prism_volume"
+          "formatFamily": "rectangular_prism_volume",
+          "ccss_standard": "6.G.A.2"
         },
         {
           "id": "geo_009",
@@ -1477,7 +2002,48 @@
           "answer_type": "numeric",
           "answer_formula": "2 * (a * b + b * c + a * c)",
           "topic": "geometry_measurement",
-          "formatFamily": "surface_area"
+          "formatFamily": "surface_area",
+          "ccss_standard": "6.G.A.4"
+        },
+        {
+          "id": "ccss6_016",
+          "type": "COMPUTE",
+          "problem": "A rectangular prism has length {l}, width {w}, and height {h}. Find the surface area of its net.",
+          "constraints": {
+            "l": [
+              2,
+              10
+            ],
+            "w": [
+              2,
+              10
+            ],
+            "h": [
+              2,
+              10
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "2 * (l * w + l * h + w * h)",
+          "topic": "geometry_measurement",
+          "formatFamily": "net_surface_area",
+          "ccss_standard": "6.G.A.4"
+        },
+        {
+          "id": "ccss6_017",
+          "type": "APPLY",
+          "problem": "A cube gift box has edge length {a}. What is the total surface area of its net?",
+          "constraints": {
+            "a": [
+              2,
+              12
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "6 * a * a",
+          "topic": "geometry_measurement",
+          "formatFamily": "net_surface_area",
+          "ccss_standard": "6.G.A.4"
         }
       ]
     },
@@ -1509,7 +2075,8 @@
           "answer_type": "numeric",
           "answer_formula": "abs(c - a)",
           "topic": "geometry_measurement",
-          "formatFamily": "coordinate_plane"
+          "formatFamily": "coordinate_plane",
+          "ccss_standard": "6.NS.C.8"
         },
         {
           "id": "cp_002",
@@ -1532,7 +2099,8 @@
           "answer_formula": "abs(b-a)",
           "answer_type": "numeric",
           "topic": "geometry_measurement",
-          "formatFamily": "coordinate_plane"
+          "formatFamily": "coordinate_plane",
+          "ccss_standard": "6.G.A.3"
         },
         {
           "id": "cp_003",
@@ -1560,7 +2128,8 @@
           "answer_formula": "abs(b - a) * s",
           "answer_type": "numeric",
           "topic": "geometry_measurement",
-          "formatFamily": "coordinate_plane"
+          "formatFamily": "coordinate_plane",
+          "ccss_standard": "6.NS.C.8"
         },
         {
           "id": "cp_004",
@@ -1589,7 +2158,8 @@
           "answer_type": "numeric",
           "answer_formula": "s * abs(b - a)",
           "topic": "geometry_measurement",
-          "formatFamily": "coordinate_plane"
+          "formatFamily": "coordinate_plane",
+          "ccss_standard": "6.G.A.3"
         },
         {
           "id": "cp_005",
@@ -1616,7 +2186,8 @@
           "answer_type": "numeric",
           "answer_formula": "abs(c - a) * abs(d - b)",
           "topic": "geometry_measurement",
-          "formatFamily": "area"
+          "formatFamily": "area",
+          "ccss_standard": "6.NS.C.8"
         },
         {
           "id": "cp_006",
@@ -1639,7 +2210,8 @@
           "answer_type": "numeric",
           "answer_formula": "b + d",
           "topic": "geometry_measurement",
-          "formatFamily": "coordinate_plane"
+          "formatFamily": "coordinate_plane",
+          "ccss_standard": "6.G.A.3"
         },
         {
           "id": "cp_007",
@@ -1663,7 +2235,8 @@
           "answer_type": "numeric",
           "answer_formula": "abs(b - a)",
           "topic": "geometry_measurement",
-          "formatFamily": "coordinate_plane"
+          "formatFamily": "coordinate_plane",
+          "ccss_standard": "6.NS.C.8"
         },
         {
           "id": "cp_008",
@@ -1686,7 +2259,8 @@
           "answer_type": "numeric",
           "answer_formula": "a - d",
           "topic": "geometry_measurement",
-          "formatFamily": "coordinate_distance"
+          "formatFamily": "coordinate_distance",
+          "ccss_standard": "6.NS.C.8"
         }
       ]
     },
@@ -1725,7 +2299,8 @@
           "answer_type": "numeric",
           "answer_formula": "(a + b + c + d + e) / 5",
           "topic": "statistics_probability",
-          "formatFamily": "mean"
+          "formatFamily": "mean",
+          "ccss_standard": "6.SP.B.5"
         },
         {
           "id": "sp_002",
@@ -1757,7 +2332,8 @@
           "answer_type": "numeric",
           "answer_formula": "c",
           "topic": "statistics_probability",
-          "formatFamily": "median"
+          "formatFamily": "median",
+          "ccss_standard": "6.SP.A.3"
         },
         {
           "id": "sp_003",
@@ -1784,7 +2360,8 @@
           "answer_type": "numeric",
           "answer_formula": "max(a, b, c, d) - min(a, b, c, d)",
           "topic": "statistics_probability",
-          "formatFamily": "range"
+          "formatFamily": "range",
+          "ccss_standard": "6.SP.A.2"
         },
         {
           "id": "sp_004",
@@ -1811,7 +2388,8 @@
           "answer_formula": "4*m-a-b-c",
           "answer_type": "numeric",
           "topic": "statistics_probability",
-          "formatFamily": "mean"
+          "formatFamily": "mean",
+          "ccss_standard": "6.SP.B.5"
         },
         {
           "id": "sp_005",
@@ -1843,7 +2421,8 @@
           "answer_type": "numeric",
           "answer_formula": "5 * target - a - b - c - d",
           "topic": "statistics_probability",
-          "formatFamily": "mean"
+          "formatFamily": "mean",
+          "ccss_standard": "6.SP.A.3"
         },
         {
           "id": "sp_006",
@@ -1875,7 +2454,8 @@
           "answer_type": "numeric",
           "answer_formula": "c",
           "topic": "statistics_probability",
-          "formatFamily": "median"
+          "formatFamily": "median",
+          "ccss_standard": "6.SP.A.2"
         },
         {
           "id": "sp_007",
@@ -1886,7 +2466,8 @@
           "answer_type": "numeric",
           "answer_formula": "1",
           "topic": "statistics_probability",
-          "formatFamily": "data_interpretation"
+          "formatFamily": "data_interpretation",
+          "ccss_standard": "6.SP.B.5"
         },
         {
           "id": "sp_008",
@@ -1910,7 +2491,214 @@
           "answer_type": "numeric",
           "answer_formula": "a + b + c",
           "topic": "statistics_probability",
-          "formatFamily": "data_interpretation"
+          "formatFamily": "data_interpretation",
+          "ccss_standard": "6.SP.A.3"
+        },
+        {
+          "id": "ccss6_013",
+          "type": "IDENTIFY",
+          "problem": "Which is a statistical question? Enter 1 for \"How many minutes do students in this class typically spend on homework?\" or 2 for \"How many minutes did Sam spend on homework last night?\"",
+          "constraints": {
+            "a": [
+              1,
+              1
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "a",
+          "topic": "statistics_probability",
+          "formatFamily": "statistical_question",
+          "ccss_standard": "6.SP.A.1"
+        },
+        {
+          "id": "ccss6_014",
+          "type": "COMPUTE",
+          "problem": "For the ordered data set {a}, {b}, {c}, {d}, {e}, what is the interquartile range (IQR = Q3 − Q1)? Use Q1 = {b} and Q3 = {d}.",
+          "constraints": {
+            "a": [
+              1,
+              5
+            ],
+            "b": [
+              4,
+              10
+            ],
+            "c": [
+              8,
+              15
+            ],
+            "d": [
+              12,
+              20
+            ],
+            "e": [
+              16,
+              30
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "d - b",
+          "topic": "statistics_probability",
+          "formatFamily": "data_iqr",
+          "ccss_standard": "6.SP.B.5",
+          "generation_note": "ranges roughly enforce a<=b<=c<=d<=e"
+        },
+        {
+          "id": "ccss6_015",
+          "type": "COMPUTE",
+          "problem": "Data values: {a}, {b}, {c}, {d}. Find the mean absolute deviation (MAD).",
+          "constraints": {
+            "a": [
+              2,
+              6
+            ],
+            "b": [
+              4,
+              8
+            ],
+            "c": [
+              6,
+              10
+            ],
+            "d": [
+              8,
+              12
+            ]
+          },
+          "answer_type": "decimal",
+          "answer_formula": "(abs(a - (a + b + c + d) / 4) + abs(b - (a + b + c + d) / 4) + abs(c - (a + b + c + d) / 4) + abs(d - (a + b + c + d) / 4)) / 4",
+          "topic": "statistics_probability",
+          "formatFamily": "data_mad",
+          "ccss_standard": "6.SP.B.5"
+        },
+        {
+          "id": "gap6_spa2_001",
+          "type": "IDENTIFY",
+          "problem": "A data set is: {a}, {b}, {c}, {d}, {e}. Enter 1 if the distribution is best described as having a clear high peak near the middle values, or 2 if the values steadily increase with no middle peak. (Use the numbers as listed.)",
+          "constraints": {
+            "a": [
+              1,
+              3
+            ],
+            "b": [
+              4,
+              6
+            ],
+            "c": [
+              10,
+              12
+            ],
+            "d": [
+              4,
+              6
+            ],
+            "e": [
+              1,
+              3
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "1",
+          "topic": "statistics_probability",
+          "formatFamily": "distribution_shape_coded",
+          "ccss_standard": "6.SP.A.2"
+        },
+        {
+          "id": "gap6_spa3_001",
+          "type": "COMPUTE",
+          "problem": "For the data set {a}, {b}, {c}, {d}, {e}, what is the mean (a measure of center)?",
+          "constraints": {
+            "a": [
+              2,
+              20
+            ],
+            "b": [
+              2,
+              20
+            ],
+            "c": [
+              2,
+              20
+            ],
+            "d": [
+              2,
+              20
+            ],
+            "e": [
+              2,
+              20
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "(a + b + c + d + e) / 5",
+          "topic": "statistics_probability",
+          "formatFamily": "mean",
+          "ccss_standard": "6.SP.A.3",
+          "constraints_note": "prefer sum divisible by 5"
+        },
+        {
+          "id": "gap6_spa3_002",
+          "type": "COMPUTE",
+          "problem": "For the data set {a}, {b}, {c}, {d}, {e} sorted ascending, what is the range (a measure of variation)?",
+          "constraints": {
+            "a": [
+              1,
+              10
+            ],
+            "b": [
+              5,
+              15
+            ],
+            "c": [
+              10,
+              20
+            ],
+            "d": [
+              15,
+              25
+            ],
+            "e": [
+              20,
+              30
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "max(a,b,c,d,e) - min(a,b,c,d,e)",
+          "topic": "statistics_probability",
+          "formatFamily": "range",
+          "ccss_standard": "6.SP.A.3"
+        },
+        {
+          "id": "gap6_spa1_001",
+          "type": "IDENTIFY",
+          "problem": "Enter 1 if this is a statistical question, or 0 if not: \"How old are the students in my school?\"",
+          "constraints": {
+            "a": [
+              1,
+              1
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "1",
+          "topic": "statistics_probability",
+          "formatFamily": "statistical_question_coded",
+          "ccss_standard": "6.SP.A.1"
+        },
+        {
+          "id": "gap6_spa1_002",
+          "type": "IDENTIFY",
+          "problem": "Enter 1 if this is a statistical question, or 0 if not: \"How old am I?\"",
+          "constraints": {
+            "a": [
+              1,
+              1
+            ]
+          },
+          "answer_type": "numeric",
+          "answer_formula": "0",
+          "topic": "statistics_probability",
+          "formatFamily": "statistical_question_coded",
+          "ccss_standard": "6.SP.A.1"
         }
       ]
     }
