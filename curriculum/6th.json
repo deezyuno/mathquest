@@ -1517,7 +1517,7 @@
         {
           "id": "ccss6_006",
           "type": "COMPUTE",
-          "problem": "Evaluate {a}^{b} + {c}.",
+          "problem": "Simplify {a}^{b} + {c}.",
           "constraints": {
             "a": [
               2,
@@ -1541,7 +1541,7 @@
         {
           "id": "ccss6_007",
           "type": "COMPUTE",
-          "problem": "Evaluate {a}² × {b} − {c}.",
+          "problem": "Find the value of {a}² × {b} − {c}.",
           "constraints": {
             "a": [
               2,
@@ -1566,7 +1566,7 @@
         {
           "id": "ccss6_008",
           "type": "COMPUTE",
-          "problem": "Evaluate ({a} + {b})².",
+          "problem": "Calculate ({a} + {b})².",
           "constraints": {
             "a": [
               1,

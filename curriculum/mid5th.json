@@ -1531,7 +1531,7 @@
         {
           "id": "m5x_012",
           "type": "COMPUTE",
-          "problem": "Evaluate {a}² + {b} × {c}.",
+          "problem": "Simplify {a}² + {b} × {c}.",
           "constraints": {
             "a": [
               2,

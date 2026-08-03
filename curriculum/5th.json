@@ -482,7 +482,7 @@
         {
           "id": "wn_011",
           "type": "COMPUTE",
-          "problem": "{a} + {b} × {c}",
+          "problem": "Find the value of {a} + {b} × {c}",
           "constraints": {
             "a": [
               2,
@@ -506,7 +506,7 @@
         {
           "id": "wn_012",
           "type": "COMPUTE",
-          "problem": "({a} + {b}) ÷ {c}",
+          "problem": "Calculate ({a} + {b}) ÷ {c}",
           "constraints": {
             "a": [
               10,
@@ -558,7 +558,7 @@
         {
           "id": "wn_024",
           "type": "COMPUTE",
-          "problem": "{a} × ({b} + {c})",
+          "problem": "Evaluate {a} × ({b} + {c})",
           "constraints": {
             "a": [
               2,

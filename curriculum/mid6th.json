@@ -3608,7 +3608,7 @@
         {
           "id": "m6oo_001",
           "type": "COMPUTE",
-          "problem": "Evaluate {a} + {b} × {c}.",
+          "problem": "Find the value of {a} + {b} × {c}.",
           "constraints": {
             "a": [
               2,
@@ -3632,7 +3632,7 @@
         {
           "id": "m6oo_002",
           "type": "COMPUTE",
-          "problem": "Evaluate {a} − {b} ÷ {c}.",
+          "problem": "Calculate {a} − {b} ÷ {c}.",
           "constraints": {
             "a": [
               20,
@@ -3682,7 +3682,7 @@
         {
           "id": "m6oo_004",
           "type": "COMPUTE",
-          "problem": "Evaluate ({a} + {b}) × {c}.",
+          "problem": "Simplify ({a} + {b}) × {c}.",
           "constraints": {
             "a": [
               2,
@@ -3706,7 +3706,7 @@
         {
           "id": "m6oo_005",
           "type": "COMPUTE",
-          "problem": "Evaluate {a}^{b} + {c} × {d}.",
+          "problem": "Find the value of {a}^{b} + {c} × {d}.",
           "constraints": {
             "a": [
               2,
@@ -3734,7 +3734,7 @@
         {
           "id": "m6oo_006",
           "type": "COMPUTE",
-          "problem": "Evaluate {a}² − {b} × {c}.",
+          "problem": "Calculate {a}² − {b} × {c}.",
           "constraints": {
             "a": [
               5,
@@ -3787,7 +3787,7 @@
         {
           "id": "m6oo_008",
           "type": "COMPUTE",
-          "problem": "Evaluate {a} − ({b} − {c}).",
+          "problem": "Simplify {a} − ({b} − {c}).",
           "constraints": {
             "a": [
               15,
@@ -3812,7 +3812,7 @@
         {
           "id": "m6oo_009",
           "type": "COMPUTE",
-          "problem": "Evaluate (({a} + {b}) × {c}) − {d}.",
+          "problem": "Find the value of (({a} + {b}) × {c}) − {d}.",
           "constraints": {
             "a": [
               2,
@@ -3840,7 +3840,7 @@
         {
           "id": "m6oo_010",
           "type": "COMPUTE",
-          "problem": "Evaluate {a} × {b} + {c} × {d} − {e}.",
+          "problem": "Calculate {a} × {b} + {c} × {d} − {e}.",
           "constraints": {
             "a": [
               2,
@@ -3900,7 +3900,7 @@
         {
           "id": "m6oo_012",
           "type": "COMPUTE",
-          "problem": "Evaluate ({a}/{b}) × {c} + {d}. Enter as a simplified fraction.",
+          "problem": "Simplify ({a}/{b}) × {c} + {d}. Enter as a simplified fraction.",
           "constraints": {
             "a": [
               1,
